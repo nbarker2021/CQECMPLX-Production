@@ -1,0 +1,45 @@
+{
+  "canonical_repo": "https://github.com/nbarker2021/CQECMPLX-Production",
+  "current_branch": "intake/production-kernel-map",
+  "policy": "promote explicit production-shaped slices; do not blind-copy raw workspaces",
+  "local_roots": [
+    {
+      "path": "D:\\CQECMPLX-Production",
+      "role": "local production body",
+      "status": "slice-review-ready"
+    },
+    {
+      "path": "D:\\CQECMPLX-AirLock",
+      "role": "airlock intake and lineage review",
+      "status": "staged"
+    },
+    {
+      "path": "D:\\CQE_CMPLX",
+      "role": "active development corpus",
+      "status": "staged"
+    },
+    {
+      "path": "D:\\CMPLX-Kernel",
+      "role": "sidecar kernel and package builder",
+      "status": "runtime-ready-corpus-staged"
+    }
+  ],
+  "git_roots_pending_review": [
+    "https://github.com/nbarker2021/CMPLX-1T",
+    "https://github.com/nbarker2021/CMPLX-Monorepo",
+    "https://github.com/nbarker2021/CMPLXUNI",
+    "https://github.com/nbarker2021/CMPLX",
+    "https://github.com/nbarker2021/CMPLXMCP",
+    "https://github.com/nbarker2021/CMPLXDevKit"
+  ],
+  "required_gates": [
+    "identity",
+    "manifest_or_index",
+    "portability_review",
+    "cqe_receipt_or_proof_anchor",
+    "adapter_boundary_if_external",
+    "training_mode_hidden_guess_result_when_applicable",
+    "no_local_runtime_artifacts"
+  ]
+}
+

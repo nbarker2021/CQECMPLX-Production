@@ -1,0 +1,19 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+node_modules/
+*.egg-info/
+*.dist-info/
+*.log
+*.tmp
+
+# Large local production packages should be attached through releases or LFS,
+# not committed blindly.
+*.tar.gz
+*.zip
+*.7z
+
