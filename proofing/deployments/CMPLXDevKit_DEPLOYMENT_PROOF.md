@@ -1,6 +1,6 @@
 # CMPLXDevKit Deployment Proof
 
-State: `raw`
+State: `cloned-pending-review`
 
 Canonical remote:
 
@@ -10,3 +10,14 @@ https://github.com/nbarker2021/CMPLXDevKit
 
 Awaiting clone/review.
 
+Local path:
+
+```text
+D:\g\CMPLXDevKit
+```
+
+Review branch:
+
+```text
+intake/review-for-cqecmplx-production
+```

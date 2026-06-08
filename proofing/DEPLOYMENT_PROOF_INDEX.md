@@ -53,9 +53,9 @@ Every deployment proof must answer:
 | `CMPLX-1T` | `deployments/CMPLX-1T_DEPLOYMENT_PROOF.md` | `slice-ready` |
 | `CMPLX-Monorepo` | `deployments/CMPLX-Monorepo_DEPLOYMENT_PROOF.md` | `slice-ready` |
 | `CMPLX` | `deployments/CMPLX_DEPLOYMENT_PROOF.md` | `slice-ready` |
-| `CMPLXUNI` | `deployments/CMPLXUNI_DEPLOYMENT_PROOF.md` | `raw` |
-| `CMPLXMCP` | `deployments/CMPLXMCP_DEPLOYMENT_PROOF.md` | `raw` |
-| `CMPLXDevKit` | `deployments/CMPLXDevKit_DEPLOYMENT_PROOF.md` | `raw` |
+| `CMPLXUNI` | `deployments/CMPLXUNI_DEPLOYMENT_PROOF.md` | `cloned-pending-review` |
+| `CMPLXMCP` | `deployments/CMPLXMCP_DEPLOYMENT_PROOF.md` | `cloned-pending-review` |
+| `CMPLXDevKit` | `deployments/CMPLXDevKit_DEPLOYMENT_PROOF.md` | `cloned-pending-review` |
 
 ## Next Required Work
 
