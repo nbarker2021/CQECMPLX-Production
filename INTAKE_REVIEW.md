@@ -19,8 +19,8 @@ Purpose:
 ## Next Review Order
 
 1. `CMPLX-1T` - reviewed; see `reviews/CMPLX-1T_INTAKE_REVIEW.md`
-2. `CMPLX-Monorepo` - poised next
-3. `CMPLX`
+2. `CMPLX-Monorepo` - reviewed; see `reviews/CMPLX-Monorepo_INTAKE_REVIEW.md`
+3. `CMPLX` - poised next
 4. `CMPLXUNI`
 5. `CMPLXMCP`
 6. `CMPLXDevKit`
@@ -31,7 +31,7 @@ existing monorepo and core/runtime surfaces.
 ## Current Poised Repo
 
 ```text
-https://github.com/nbarker2021/CMPLX-Monorepo
+https://github.com/nbarker2021/CMPLX
 ```
 
 Expected next branch:
