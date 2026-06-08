@@ -49,6 +49,7 @@ Every deployment proof must answer:
 | `CQECMPLX-Production` | `deployments/CQECMPLX-Production_DEPLOYMENT_PROOF.md` | `production-shaped` |
 | `CMPLX-Kernel` | `deployments/CMPLX-Kernel_DEPLOYMENT_PROOF.md` | `slice-ready` |
 | `CMPLX Operator Web` | `deployments/CMPLX-Operator-Web_DEPLOYMENT_PROOF.md` | `slice-ready` |
+| `CMPLX Kernel Docker` | `deployments/CMPLX-Kernel-Docker_DEPLOYMENT_PROOF.md` | `slice-ready` |
 | `Lib Kernel` | `deployments/Lib-Kernel_DEPLOYMENT_PROOF.md` | `slice-ready` |
 | `Lattice Kernel` | `deployments/Lattice-Kernel_DEPLOYMENT_PROOF.md` | `slice-ready` |
 | `ReForge Kernel` | `deployments/ReForge-Kernel_DEPLOYMENT_PROOF.md` | `slice-ready` |
