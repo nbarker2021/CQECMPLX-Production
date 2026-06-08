@@ -38,15 +38,21 @@
       "review_branch": "intake/review-for-cqecmplx-production",
       "review_file": "reviews/CMPLX-Monorepo_INTAKE_REVIEW.md",
       "decision": "high-priority portal/runtime candidate; promote by explicit slices"
+    },
+    {
+      "repo": "https://github.com/nbarker2021/CMPLX",
+      "local_clone": "D:\\g\\CMPLX",
+      "review_branch": "intake/review-for-cqecmplx-production",
+      "review_file": "reviews/CMPLX_INTAKE_REVIEW.md",
+      "decision": "core L1-L3 infrastructure candidate; promote by explicit slices"
     }
   ],
   "git_roots_pending_review": [
-    "https://github.com/nbarker2021/CMPLX",
     "https://github.com/nbarker2021/CMPLXUNI",
     "https://github.com/nbarker2021/CMPLXMCP",
     "https://github.com/nbarker2021/CMPLXDevKit"
   ],
-  "next_repo": "https://github.com/nbarker2021/CMPLX",
+  "next_repo": "https://github.com/nbarker2021/CMPLXUNI",
   "required_gates": [
     "identity",
     "manifest_or_index",

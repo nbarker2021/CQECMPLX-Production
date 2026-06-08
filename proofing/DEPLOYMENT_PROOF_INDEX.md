@@ -52,15 +52,14 @@ Every deployment proof must answer:
 | `CQE_CMPLX` | `deployments/CQE_CMPLX_WORKSPACE_PROOF.md` | `staged` |
 | `CMPLX-1T` | `deployments/CMPLX-1T_DEPLOYMENT_PROOF.md` | `slice-ready` |
 | `CMPLX-Monorepo` | `deployments/CMPLX-Monorepo_DEPLOYMENT_PROOF.md` | `slice-ready` |
-| `CMPLX` | `deployments/CMPLX_DEPLOYMENT_PROOF.md` | `raw` |
+| `CMPLX` | `deployments/CMPLX_DEPLOYMENT_PROOF.md` | `slice-ready` |
 | `CMPLXUNI` | `deployments/CMPLXUNI_DEPLOYMENT_PROOF.md` | `raw` |
 | `CMPLXMCP` | `deployments/CMPLXMCP_DEPLOYMENT_PROOF.md` | `raw` |
 | `CMPLXDevKit` | `deployments/CMPLXDevKit_DEPLOYMENT_PROOF.md` | `raw` |
 
 ## Next Required Work
 
-1. Clone and review `CMPLX`.
-2. Convert `CMPLX` review into a deployment proof.
+1. Clone and review `CMPLXUNI`.
+2. Convert `CMPLXUNI` review into a deployment proof.
 3. Continue repo-by-repo until all public/private roots have proof documents.
 4. Promote only exact slices named in promotion manifests.
-
