@@ -18,8 +18,8 @@ Purpose:
 
 ## Next Review Order
 
-1. `CMPLX-1T`
-2. `CMPLX-Monorepo`
+1. `CMPLX-1T` - reviewed; see `reviews/CMPLX-1T_INTAKE_REVIEW.md`
+2. `CMPLX-Monorepo` - poised next
 3. `CMPLX`
 4. `CMPLXUNI`
 5. `CMPLXMCP`
@@ -28,3 +28,14 @@ Purpose:
 This order starts with the broad identity root, then compares it against the
 existing monorepo and core/runtime surfaces.
 
+## Current Poised Repo
+
+```text
+https://github.com/nbarker2021/CMPLX-Monorepo
+```
+
+Expected next branch:
+
+```text
+intake/review-for-cqecmplx-production
+```

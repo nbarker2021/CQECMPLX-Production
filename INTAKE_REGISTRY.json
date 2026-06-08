@@ -24,14 +24,23 @@
       "status": "runtime-ready-corpus-staged"
     }
   ],
+  "git_roots_reviewed": [
+    {
+      "repo": "https://github.com/nbarker2021/CMPLX-1T",
+      "local_clone": "D:\\g\\CMPLX-1T",
+      "review_branch": "intake/review-for-cqecmplx-production",
+      "review_file": "reviews/CMPLX-1T_INTAKE_REVIEW.md",
+      "decision": "promote by explicit slices; do not merge wholesale"
+    }
+  ],
   "git_roots_pending_review": [
-    "https://github.com/nbarker2021/CMPLX-1T",
     "https://github.com/nbarker2021/CMPLX-Monorepo",
     "https://github.com/nbarker2021/CMPLXUNI",
     "https://github.com/nbarker2021/CMPLX",
     "https://github.com/nbarker2021/CMPLXMCP",
     "https://github.com/nbarker2021/CMPLXDevKit"
   ],
+  "next_repo": "https://github.com/nbarker2021/CMPLX-Monorepo",
   "required_gates": [
     "identity",
     "manifest_or_index",
@@ -42,4 +51,3 @@
     "no_local_runtime_artifacts"
   ]
 }
-
