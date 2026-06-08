@@ -56,6 +56,13 @@ Every deployment proof must answer:
 | `CMPLXUNI` | `deployments/CMPLXUNI_DEPLOYMENT_PROOF.md` | `cloned-pending-review` |
 | `CMPLXMCP` | `deployments/CMPLXMCP_DEPLOYMENT_PROOF.md` | `cloned-pending-review` |
 | `CMPLXDevKit` | `deployments/CMPLXDevKit_DEPLOYMENT_PROOF.md` | `cloned-pending-review` |
+| `CMPLX-Formalization` | `deployments/CMPLX-Formalization_DEPLOYMENT_PROOF.md` | `cloned-pending-review` |
+| `CMPLX-TMN1` | `deployments/CMPLX-TMN1_DEPLOYMENT_PROOF.md` | `cloned-pending-review` |
+| `CMPLX-TMN-main` | `deployments/CMPLX-TMN-main_DEPLOYMENT_PROOF.md` | `cloned-pending-review` |
+| `CMPLX-Manny` | `deployments/CMPLX-Manny_DEPLOYMENT_PROOF.md` | `cloned-pending-review` |
+| `CMPLX-PartsFactory` | `deployments/CMPLX-PartsFactory_DEPLOYMENT_PROOF.md` | `cloned-pending-review` |
+| `CMPLX-R30` | `deployments/CMPLX-R30_DEPLOYMENT_PROOF.md` | `cloned-pending-review` |
+| `scout-demo-service` | `deployments/scout-demo-service_DEPLOYMENT_PROOF.md` | `cloned-pending-review` |
 
 ## Next Required Work
 

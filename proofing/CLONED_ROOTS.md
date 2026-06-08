@@ -22,6 +22,13 @@ legacy/corpus paths. All review clones use `D:\g` with `core.longpaths=true`.
 | `CMPLXUNI` | `D:\g\CMPLXUNI` | `intake/review-for-cqecmplx-production` | cloned, pending review |
 | `CMPLXMCP` | `D:\g\CMPLXMCP` | `intake/review-for-cqecmplx-production` | cloned, pending review |
 | `CMPLXDevKit` | `D:\g\CMPLXDevKit` | `intake/review-for-cqecmplx-production` | cloned, pending review |
+| `scout-demo-service` | `D:\g\scout-demo-service` | `intake/review-for-cqecmplx-production` | cloned, pending review |
+| `CMPLX-Formalization` | `D:\g\CMPLX-Formalization` | `intake/review-for-cqecmplx-production` | cloned, pending review |
+| `CMPLX-TMN1` | `D:\g\CMPLX-TMN1` | `intake/review-for-cqecmplx-production` | cloned, pending review |
+| `CMPLX-TMN-main` | `D:\g\CMPLX-TMN-main` | `intake/review-for-cqecmplx-production` | cloned, pending review |
+| `CMPLX-Manny` | `D:\g\CMPLX-Manny` | `intake/review-for-cqecmplx-production` | cloned, pending review |
+| `CMPLX-PartsFactory` | `D:\g\CMPLX-PartsFactory` | `intake/review-for-cqecmplx-production` | cloned, pending review |
+| `CMPLX-R30` | `D:\g\CMPLX-R30` | `intake/review-for-cqecmplx-production` | cloned, pending review |
 
 ## Explicit Skip
 
@@ -33,3 +40,5 @@ Current check:
 D:\g contains no docker-scout clone.
 ```
 
+Note: `scout-demo-service` was cloned because its name does not match the
+explicit `docker-scout` exclusion.
