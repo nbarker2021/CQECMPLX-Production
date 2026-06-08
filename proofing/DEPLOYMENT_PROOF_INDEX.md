@@ -48,6 +48,9 @@ Every deployment proof must answer:
 |---|---|---|
 | `CQECMPLX-Production` | `deployments/CQECMPLX-Production_DEPLOYMENT_PROOF.md` | `production-shaped` |
 | `CMPLX-Kernel` | `deployments/CMPLX-Kernel_DEPLOYMENT_PROOF.md` | `slice-ready` |
+| `Lib Kernel` | `deployments/Lib-Kernel_DEPLOYMENT_PROOF.md` | `slice-ready` |
+| `Lattice Kernel` | `deployments/Lattice-Kernel_DEPLOYMENT_PROOF.md` | `slice-ready` |
+| `ReForge Kernel` | `deployments/ReForge-Kernel_DEPLOYMENT_PROOF.md` | `slice-ready` |
 | `CQECMPLX-AirLock` | `deployments/CQECMPLX-AirLock_DEPLOYMENT_PROOF.md` | `airlock` |
 | `CQE_CMPLX` | `deployments/CQE_CMPLX_WORKSPACE_PROOF.md` | `staged` |
 | `CMPLX-1T` | `deployments/CMPLX-1T_DEPLOYMENT_PROOF.md` | `slice-ready` |
