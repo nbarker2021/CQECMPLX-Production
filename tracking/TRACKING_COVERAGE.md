@@ -42,3 +42,9 @@ pieces needed before source movement:
 - `tracking/payload-ledger/PAYLOAD_LEDGER.json`
 - `tracking/paper-claim-bindings/PAPER_CLAIM_BINDING.md`
 - `tracking/paper-claim-bindings/PAPER_CLAIM_BINDING.json`
+
+## Promoted Slices
+
+| Slice | Status | Manifest |
+|---|---|---|
+| `production/PROMOTION_SLICE_2026-06-11_PAPER_PROOF_TEXT.md` | promoted | `tracking/promotion-manifests/CQECMPLX-Paper-Proof-Bundle.manifest.json` |

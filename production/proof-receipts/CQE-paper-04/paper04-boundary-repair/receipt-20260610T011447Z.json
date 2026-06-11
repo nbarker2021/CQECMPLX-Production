@@ -1,0 +1,35 @@
+{
+  "paper_id": "CQE-paper-04",
+  "tool": "paper04-boundary-repair",
+  "in_state": {
+    "C": "Boundary Repair",
+    "L": null,
+    "R": null,
+    "B": null,
+    "T": null,
+    "O": null,
+    "W": null,
+    "A": "INTENT.md at D:\\CQE_CMPLX\\CQECMPLX-Production\\papers\\CQE-paper-04\\INTENT.md"
+  },
+  "out_state": {
+    "C": "Boundary Repair",
+    "L": "left boundary",
+    "R": "right boundary",
+    "B": "boundary repair rule",
+    "T": null,
+    "O": null,
+    "W": "workbook analogue",
+    "A": "INTENT.md at D:\\CQE_CMPLX\\CQECMPLX-Production\\papers\\CQE-paper-04\\INTENT.md"
+  },
+  "obligation_delta": {
+    "closed": [
+      "B",
+      "L",
+      "R",
+      "W"
+    ],
+    "opened": []
+  },
+  "timestamp": "2026-06-10T01:14:47.463169Z",
+  "notes": []
+}

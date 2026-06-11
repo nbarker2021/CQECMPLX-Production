@@ -1,0 +1,35 @@
+{
+  "paper_id": "CQE-paper-03",
+  "tool": "paper03-triality",
+  "in_state": {
+    "C": "D4/J3 Triality",
+    "L": null,
+    "R": null,
+    "B": null,
+    "T": null,
+    "O": null,
+    "W": null,
+    "A": "INTENT.md at D:\\CQE_CMPLX\\CQECMPLX-Production\\papers\\CQE-paper-03\\INTENT.md"
+  },
+  "out_state": {
+    "C": "D4/J3 Triality",
+    "L": "left boundary",
+    "R": "right boundary",
+    "B": "triality rule",
+    "T": null,
+    "O": null,
+    "W": "workbook analogue",
+    "A": "INTENT.md at D:\\CQE_CMPLX\\CQECMPLX-Production\\papers\\CQE-paper-03\\INTENT.md"
+  },
+  "obligation_delta": {
+    "closed": [
+      "B",
+      "L",
+      "R",
+      "W"
+    ],
+    "opened": []
+  },
+  "timestamp": "2026-06-10T01:22:04.179756Z",
+  "notes": []
+}

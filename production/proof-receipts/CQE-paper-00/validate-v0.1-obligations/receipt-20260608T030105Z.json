@@ -1,0 +1,32 @@
+{
+  "paper_id": "CQE-paper-00",
+  "tool": "validate-v0.1-obligations",
+  "in_state": {
+    "C": "Baseline Transport Contract",
+    "L": "left boundary: any artifact may back-propagate, see paths.anchor()",
+    "R": "right boundary: receipt written to proof-receipts/<paper>/<tool>/",
+    "B": "transport rule: T(P_in) -> P_out with receipt, residue never erased",
+    "T": "CQE-engine v0.1 — relative-pathing launcher",
+    "O": null,
+    "W": "workbook analogue: arity table printed by _boot, hydrator notes by hydrate",
+    "A": "INTENT.md at D:\\CQECMPLX-Production\\papers\\CQE-paper-00\\INTENT.md"
+  },
+  "out_state": {
+    "C": "Baseline Transport Contract",
+    "L": "left boundary: any artifact may back-propagate, see paths.anchor()",
+    "R": "right boundary: receipt written to proof-receipts/<paper>/<tool>/",
+    "B": "transport rule: T(P_in) -> P_out with receipt, residue never erased",
+    "T": "CQE-engine v0.1 — relative-pathing launcher",
+    "O": "open obligations: complete Block A/B/C of the paper",
+    "W": "workbook analogue: arity table printed by _boot, hydrator notes by hydrate",
+    "A": "INTENT.md at D:\\CQECMPLX-Production\\papers\\CQE-paper-00\\INTENT.md"
+  },
+  "obligation_delta": {
+    "closed": [
+      "O"
+    ],
+    "opened": []
+  },
+  "timestamp": "2026-06-08T03:01:05.345762Z",
+  "notes": []
+}

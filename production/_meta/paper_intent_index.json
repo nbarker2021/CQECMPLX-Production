@@ -1,0 +1,290 @@
+[
+  {
+    "n": "00",
+    "title": "Baseline Transport Contract",
+    "status": "Formal refinement draft for peer-review-facing development",
+    "abstract": "This paper states a local transport problem, gives a formal vocabulary for it, binds it to a ForgeFactory/Rhenium tool surface, and supplies an analog workbook sheet. The paper is written as a proof-facing document rather than as a description of how the paper was produced. Build-method details are retained only in appendices, receipts, and the Paper 31 meta-walkthrough.",
+    "thesis": "Define the corpus-wide contract: every claim is a transported state with provenance, receipt, example, tool binding, and workbook representation.",
+    "scope": "The paper claims only what its tool, proof tree, citations, and workbook sheet can presently support. Any interpretation that exceeds that support is logged as an obligation rather than silently promoted to proof.",
+    "tool": "- Module: `forgefactory.transport-contract`\n- Required outputs: `receipt.json`, `workbook_sheet.json`, `example_result.json`, `obligation_ledger.csv`.\n- Minimum test: a smoke test that produces at least one proof-like row and one obligation-like row."
+  },
+  {
+    "n": "01",
+    "title": "LCR Chain Carrier",
+    "status": "Formal refinement draft for peer-review-facing development",
+    "abstract": "This paper states a local transport problem, gives a formal vocabulary for it, binds it to a ForgeFactory/Rhenium tool surface, and supplies an analog workbook sheet. The paper is written as a proof-facing document rather than as a description of how the paper was produced. Build-method details are retained only in appendices, receipts, and the Paper 31 meta-walkthrough.",
+    "thesis": "Formalize Left-Center-Right readout as the smallest chain carrier that preserves a center while allowing two opposed boundary directions.",
+    "scope": "The paper claims only what its tool, proof tree, citations, and workbook sheet can presently support. Any interpretation that exceeds that support is logged as an obligation rather than silently promoted to proof.",
+    "tool": "- Module: `forgefactory.paper01_lcr_chain_carrier`\n- Required outputs: `receipt.json`, `workbook_sheet.json`, `example_result.json`, `obligation_ledger.csv`.\n- Minimum test: a smoke test that produces at least one proof-like row and one obligation-like row."
+  },
+  {
+    "n": "02",
+    "title": "Correction Surface",
+    "status": "Formal refinement draft for peer-review-facing development",
+    "abstract": "This paper states a local transport problem, gives a formal vocabulary for it, binds it to a ForgeFactory/Rhenium tool surface, and supplies an analog workbook sheet. The paper is written as a proof-facing document rather than as a description of how the paper was produced. Build-method details are retained only in appendices, receipts, and the Paper 31 meta-walkthrough.",
+    "thesis": "Treat failure, mismatch, and nonlinear residue as positive correction data rather than dismissal.",
+    "scope": "The paper claims only what its tool, proof tree, citations, and workbook sheet can presently support. Any interpretation that exceeds that support is logged as an obligation rather than silently promoted to proof.",
+    "tool": "- Module: `forgefactory.paper02_correction_surface`\n- Required outputs: `receipt.json`, `workbook_sheet.json`, `example_result.json`, `obligation_ledger.csv`.\n- Minimum test: a smoke test that produces at least one proof-like row and one obligation-like row."
+  },
+  {
+    "n": "03",
+    "title": "D4/J3 Triality",
+    "status": "Formal refinement draft for peer-review-facing development",
+    "abstract": "This paper states a local transport problem, gives a formal vocabulary for it, binds it to a ForgeFactory/Rhenium tool surface, and supplies an analog workbook sheet. The paper is written as a proof-facing document rather than as a description of how the paper was produced. Build-method details are retained only in appendices, receipts, and the Paper 31 meta-walkthrough.",
+    "thesis": "Represent axis/sheet labeling, rotation/reflection equivalence, and Jordan carrier behavior as the first explicit triality surface.",
+    "scope": "The paper claims only what its tool, proof tree, citations, and workbook sheet can presently support. Any interpretation that exceeds that support is logged as an obligation rather than silently promoted to proof.",
+    "tool": "- Module: `forgefactory.paper03_d4_j3_triality`\n- Required outputs: `receipt.json`, `workbook_sheet.json`, `example_result.json`, `obligation_ledger.csv`.\n- Minimum test: a smoke test that produces at least one proof-like row and one obligation-like row."
+  },
+  {
+    "n": "04",
+    "title": "Boundary Repair",
+    "status": "Formal refinement draft for peer-review-facing development",
+    "abstract": "This paper states a local transport problem, gives a formal vocabulary for it, binds it to a ForgeFactory/Rhenium tool surface, and supplies an analog workbook sheet. The paper is written as a proof-facing document rather than as a description of how the paper was produced. Build-method details are retained only in appendices, receipts, and the Paper 31 meta-walkthrough.",
+    "thesis": "Define boundary repair as the transport operation that converts failed joins into typed constraints for the next legal route.",
+    "scope": "The paper claims only what its tool, proof tree, citations, and workbook sheet can presently support. Any interpretation that exceeds that support is logged as an obligation rather than silently promoted to proof.",
+    "tool": "- Module: `forgefactory.paper04_boundary_repair`\n- Required outputs: `receipt.json`, `workbook_sheet.json`, `example_result.json`, `obligation_ledger.csv`.\n- Minimum test: a smoke test that produces at least one proof-like row and one obligation-like row."
+  },
+  {
+    "n": "05",
+    "title": "Oloid Path Carrier",
+    "status": "Formal refinement draft for peer-review-facing development",
+    "abstract": "This paper states a local transport problem, gives a formal vocabulary for it, binds it to a ForgeFactory/Rhenium tool surface, and supplies an analog workbook sheet. The paper is written as a proof-facing document rather than as a description of how the paper was produced. Build-method details are retained only in appendices, receipts, and the Paper 31 meta-walkthrough.",
+    "thesis": "Use curved/rolling carriers to show that transport need not be straight-line to preserve continuity.",
+    "scope": "The paper claims only what its tool, proof tree, citations, and workbook sheet can presently support. Any interpretation that exceeds that support is logged as an obligation rather than silently promoted to proof.",
+    "tool": "- Module: `forgefactory.paper05_oloid_path_carrier`\n- Required outputs: `receipt.json`, `workbook_sheet.json`, `example_result.json`, `obligation_ledger.csv`.\n- Minimum test: a smoke test that produces at least one proof-like row and one obligation-like row."
+  },
+  {
+    "n": "06",
+    "title": "Causal Code",
+    "status": "Formal refinement draft for peer-review-facing development",
+    "abstract": "This paper states a local transport problem, gives a formal vocabulary for it, binds it to a ForgeFactory/Rhenium tool surface, and supplies an analog workbook sheet. The paper is written as a proof-facing document rather than as a description of how the paper was produced. Build-method details are retained only in appendices, receipts, and the Paper 31 meta-walkthrough.",
+    "thesis": "Cast every dependency between objects, proofs, tools, and papers as a typed causal edge.",
+    "scope": "The paper claims only what its tool, proof tree, citations, and workbook sheet can presently support. Any interpretation that exceeds that support is logged as an obligation rather than silently promoted to proof.",
+    "tool": "- Module: `forgefactory.paper06_causal_code`\n- Required outputs: `receipt.json`, `workbook_sheet.json`, `example_result.json`, `obligation_ledger.csv`.\n- Minimum test: a smoke test that produces at least one proof-like row and one obligation-like row."
+  },
+  {
+    "n": "07",
+    "title": "Discrete-Continuous Bridge",
+    "status": "Formal refinement draft for peer-review-facing development",
+    "abstract": "This paper states a local transport problem, gives a formal vocabulary for it, binds it to a ForgeFactory/Rhenium tool surface, and supplies an analog workbook sheet. The paper is written as a proof-facing document rather than as a description of how the paper was produced. Build-method details are retained only in appendices, receipts, and the Paper 31 meta-walkthrough.",
+    "thesis": "Define the bridge where discrete state changes approximate continuous dynamics through indexed windows.",
+    "scope": "The paper claims only what its tool, proof tree, citations, and workbook sheet can presently support. Any interpretation that exceeds that support is logged as an obligation rather than silently promoted to proof.",
+    "tool": "- Module: `forgefactory.paper07_discrete_continuous_bridge`\n- Required outputs: `receipt.json`, `workbook_sheet.json`, `example_result.json`, `obligation_ledger.csv`.\n- Minimum test: a smoke test that produces at least one proof-like row and one obligation-like row."
+  },
+  {
+    "n": "08",
+    "title": "E8/Niemeier/Leech Closure",
+    "status": "Formal refinement draft for peer-review-facing development",
+    "abstract": "This paper states a local transport problem, gives a formal vocabulary for it, binds it to a ForgeFactory/Rhenium tool surface, and supplies an analog workbook sheet. The paper is written as a proof-facing document rather than as a description of how the paper was produced. Build-method details are retained only in appendices, receipts, and the Paper 31 meta-walkthrough.",
+    "thesis": "Use high-dimensional lattice analogs as closure templates for transport without claiming global universality before local derivation.",
+    "scope": "The paper claims only what its tool, proof tree, citations, and workbook sheet can presently support. Any interpretation that exceeds that support is logged as an obligation rather than silently promoted to proof.",
+    "tool": "- Module: `forgefactory.paper08_lattice_closure`\n- Required outputs: `receipt.json`, `workbook_sheet.json`, `example_result.json`, `obligation_ledger.csv`.\n- Minimum test: a smoke test that produces at least one proof-like row and one obligation-like row."
+  },
+  {
+    "n": "09",
+    "title": "Hamiltonian Temporal Emergence",
+    "status": "Formal refinement draft for peer-review-facing development",
+    "abstract": "This paper states a local transport problem, gives a formal vocabulary for it, binds it to a ForgeFactory/Rhenium tool surface, and supplies an analog workbook sheet. The paper is written as a proof-facing document rather than as a description of how the paper was produced. Build-method details are retained only in appendices, receipts, and the Paper 31 meta-walkthrough.",
+    "thesis": "Describe local inside global temporal emergence as Hamiltonian-window readout over transported states.",
+    "scope": "The paper claims only what its tool, proof tree, citations, and workbook sheet can presently support. Any interpretation that exceeds that support is logged as an obligation rather than silently promoted to proof.",
+    "tool": "- Module: `forgefactory.paper09_hamiltonian_temporal`\n- Required outputs: `receipt.json`, `workbook_sheet.json`, `example_result.json`, `obligation_ledger.csv`.\n- Minimum test: a smoke test that produces at least one proof-like row and one obligation-like row."
+  },
+  {
+    "n": "10",
+    "title": "T10 Master Receipt",
+    "status": "Formal refinement draft for peer-review-facing development",
+    "abstract": "This paper states a local transport problem, gives a formal vocabulary for it, binds it to a ForgeFactory/Rhenium tool surface, and supplies an analog workbook sheet. The paper is written as a proof-facing document rather than as a description of how the paper was produced. Build-method details are retained only in appendices, receipts, and the Paper 31 meta-walkthrough.",
+    "thesis": "Bind Papers 00-09 into a master receipt that proves the stack is inspectable and replayable.",
+    "scope": "The paper claims only what its tool, proof tree, citations, and workbook sheet can presently support. Any interpretation that exceeds that support is logged as an obligation rather than silently promoted to proof.",
+    "tool": "- Module: `forgefactory.paper10_master_receipt`\n- Required outputs: `receipt.json`, `workbook_sheet.json`, `example_result.json`, `obligation_ledger.csv`.\n- Minimum test: a smoke test that produces at least one proof-like row and one obligation-like row."
+  },
+  {
+    "n": "11",
+    "title": "Theory Admission Gate",
+    "status": "Formal refinement draft for peer-review-facing development",
+    "abstract": "This paper states a local transport problem, gives a formal vocabulary for it, binds it to a ForgeFactory/Rhenium tool surface, and supplies an analog workbook sheet. The paper is written as a proof-facing document rather than as a description of how the paper was produced. Build-method details are retained only in appendices, receipts, and the Paper 31 meta-walkthrough.",
+    "thesis": "Admit external theories as transport candidates whose failures become boundary receipts rather than summary dismissals.",
+    "scope": "The paper claims only what its tool, proof tree, citations, and workbook sheet can presently support. Any interpretation that exceeds that support is logged as an obligation rather than silently promoted to proof.",
+    "tool": "- Module: `forgefactory.paper11_theory_admission`\n- Required outputs: `receipt.json`, `workbook_sheet.json`, `example_result.json`, `obligation_ledger.csv`.\n- Minimum test: a smoke test that produces at least one proof-like row and one obligation-like row."
+  },
+  {
+    "n": "12",
+    "title": "CA Prediction Surface",
+    "status": "Formal refinement draft for peer-review-facing development",
+    "abstract": "This paper states a local transport problem, gives a formal vocabulary for it, binds it to a ForgeFactory/Rhenium tool surface, and supplies an analog workbook sheet. The paper is written as a proof-facing document rather than as a description of how the paper was produced. Build-method details are retained only in appendices, receipts, and the Paper 31 meta-walkthrough.",
+    "thesis": "Convert digital-physics and cellular-automaton candidates into prediction surfaces tied to local rules.",
+    "scope": "The paper claims only what its tool, proof tree, citations, and workbook sheet can presently support. Any interpretation that exceeds that support is logged as an obligation rather than silently promoted to proof.",
+    "tool": "- Module: `forgefactory.paper12_ca_prediction`\n- Required outputs: `receipt.json`, `workbook_sheet.json`, `example_result.json`, `obligation_ledger.csv`.\n- Minimum test: a smoke test that produces at least one proof-like row and one obligation-like row."
+  },
+  {
+    "n": "13",
+    "title": "Standard-Model Quark-Face Transport",
+    "status": "Formal refinement draft for peer-review-facing development",
+    "abstract": "This paper states a local transport problem, gives a formal vocabulary for it, binds it to a ForgeFactory/Rhenium tool surface, and supplies an analog workbook sheet. The paper is written as a proof-facing document rather than as a description of how the paper was produced. Build-method details are retained only in appendices, receipts, and the Paper 31 meta-walkthrough.",
+    "thesis": "Map color-state and interaction analogs into a disciplined quark-face transport read, without overclaiming physical proof.",
+    "scope": "The paper claims only what its tool, proof tree, citations, and workbook sheet can presently support. Any interpretation that exceeds that support is logged as an obligation rather than silently promoted to proof.",
+    "tool": "- Module: `forgefactory.paper13_quark_face_transport`\n- Required outputs: `receipt.json`, `workbook_sheet.json`, `example_result.json`, `obligation_ledger.csv`.\n- Minimum test: a smoke test that produces at least one proof-like row and one obligation-like row."
+  },
+  {
+    "n": "14",
+    "title": "GR Boundary-Repair Curvature",
+    "status": "Formal refinement draft for peer-review-facing development",
+    "abstract": "This paper states a local transport problem, gives a formal vocabulary for it, binds it to a ForgeFactory/Rhenium tool surface, and supplies an analog workbook sheet. The paper is written as a proof-facing document rather than as a description of how the paper was produced. Build-method details are retained only in appendices, receipts, and the Paper 31 meta-walkthrough.",
+    "thesis": "Frame curvature as a boundary-repair demand in the transport view.",
+    "scope": "The paper claims only what its tool, proof tree, citations, and workbook sheet can presently support. Any interpretation that exceeds that support is logged as an obligation rather than silently promoted to proof.",
+    "tool": "- Module: `forgefactory.paper14_gr_boundary_repair`\n- Required outputs: `receipt.json`, `workbook_sheet.json`, `example_result.json`, `obligation_ledger.csv`.\n- Minimum test: a smoke test that produces at least one proof-like row and one obligation-like row."
+  },
+  {
+    "n": "15",
+    "title": "QFT/Higgs Mass-Residue Carrier",
+    "status": "Formal refinement draft for peer-review-facing development",
+    "abstract": "This paper states a local transport problem, gives a formal vocabulary for it, binds it to a ForgeFactory/Rhenium tool surface, and supplies an analog workbook sheet. The paper is written as a proof-facing document rather than as a description of how the paper was produced. Build-method details are retained only in appendices, receipts, and the Paper 31 meta-walkthrough.",
+    "thesis": "Treat mass/residue as a carrier effect requiring local transport evidence and explicit obligations.",
+    "scope": "The paper claims only what its tool, proof tree, citations, and workbook sheet can presently support. Any interpretation that exceeds that support is logged as an obligation rather than silently promoted to proof.",
+    "tool": "- Module: `forgefactory.paper15_mass_residue`\n- Required outputs: `receipt.json`, `workbook_sheet.json`, `example_result.json`, `obligation_ledger.csv`.\n- Minimum test: a smoke test that produces at least one proof-like row and one obligation-like row."
+  },
+  {
+    "n": "16",
+    "title": "Continuum Edge Residuals",
+    "status": "Formal refinement draft for peer-review-facing development",
+    "abstract": "This paper states a local transport problem, gives a formal vocabulary for it, binds it to a ForgeFactory/Rhenium tool surface, and supplies an analog workbook sheet. The paper is written as a proof-facing document rather than as a description of how the paper was produced. Build-method details are retained only in appendices, receipts, and the Paper 31 meta-walkthrough.",
+    "thesis": "Use powers of ten and edge residuals as practical windows into unsolved continuum depth.",
+    "scope": "The paper claims only what its tool, proof tree, citations, and workbook sheet can presently support. Any interpretation that exceeds that support is logged as an obligation rather than silently promoted to proof.",
+    "tool": "- Module: `forgefactory.paper16_continuum_edges`\n- Required outputs: `receipt.json`, `workbook_sheet.json`, `example_result.json`, `obligation_ledger.csv`.\n- Minimum test: a smoke test that produces at least one proof-like row and one obligation-like row."
+  },
+  {
+    "n": "17",
+    "title": "E6-E8 Error-Correction Tower",
+    "status": "Formal refinement draft for peer-review-facing development",
+    "abstract": "This paper states a local transport problem, gives a formal vocabulary for it, binds it to a ForgeFactory/Rhenium tool surface, and supplies an analog workbook sheet. The paper is written as a proof-facing document rather than as a description of how the paper was produced. Build-method details are retained only in appendices, receipts, and the Paper 31 meta-walkthrough.",
+    "thesis": "Represent error-correction candidates as towered lattice transitions from lower local roots to larger closure frames.",
+    "scope": "The paper claims only what its tool, proof tree, citations, and workbook sheet can presently support. Any interpretation that exceeds that support is logged as an obligation rather than silently promoted to proof.",
+    "tool": "- Module: `forgefactory.paper17_error_tower`\n- Required outputs: `receipt.json`, `workbook_sheet.json`, `example_result.json`, `obligation_ledger.csv`.\n- Minimum test: a smoke test that produces at least one proof-like row and one obligation-like row."
+  },
+  {
+    "n": "18",
+    "title": "VOA/Moonshine Representation Routes",
+    "status": "Formal refinement draft for peer-review-facing development",
+    "abstract": "This paper states a local transport problem, gives a formal vocabulary for it, binds it to a ForgeFactory/Rhenium tool surface, and supplies an analog workbook sheet. The paper is written as a proof-facing document rather than as a description of how the paper was produced. Build-method details are retained only in appendices, receipts, and the Paper 31 meta-walkthrough.",
+    "thesis": "Treat representation routes as upward/downward transport choices with strict receipt requirements.",
+    "scope": "The paper claims only what its tool, proof tree, citations, and workbook sheet can presently support. Any interpretation that exceeds that support is logged as an obligation rather than silently promoted to proof.",
+    "tool": "- Module: `forgefactory.paper18_voa_routes`\n- Required outputs: `receipt.json`, `workbook_sheet.json`, `example_result.json`, `obligation_ledger.csv`.\n- Minimum test: a smoke test that produces at least one proof-like row and one obligation-like row."
+  },
+  {
+    "n": "19",
+    "title": "Observer Face-Selection",
+    "status": "Formal refinement draft for peer-review-facing development",
+    "abstract": "This paper states a local transport problem, gives a formal vocabulary for it, binds it to a ForgeFactory/Rhenium tool surface, and supplies an analog workbook sheet. The paper is written as a proof-facing document rather than as a description of how the paper was produced. Build-method details are retained only in appendices, receipts, and the Paper 31 meta-walkthrough.",
+    "thesis": "Model observation as face selection with latent alternatives retained as obligations, not deleted.",
+    "scope": "The paper claims only what its tool, proof tree, citations, and workbook sheet can presently support. Any interpretation that exceeds that support is logged as an obligation rather than silently promoted to proof.",
+    "tool": "- Module: `forgefactory.paper19_observer_faces`\n- Required outputs: `receipt.json`, `workbook_sheet.json`, `example_result.json`, `obligation_ledger.csv`.\n- Minimum test: a smoke test that produces at least one proof-like row and one obligation-like row."
+  },
+  {
+    "n": "20",
+    "title": "Layer-2 Synthesis Ledger",
+    "status": "Formal refinement draft for peer-review-facing development",
+    "abstract": "This paper states a local transport problem, gives a formal vocabulary for it, binds it to a ForgeFactory/Rhenium tool surface, and supplies an analog workbook sheet. The paper is written as a proof-facing document rather than as a description of how the paper was produced. Build-method details are retained only in appendices, receipts, and the Paper 31 meta-walkthrough.",
+    "thesis": "Aggregate prediction and theory-admission results into a ledger of solved, open, failed, and transported routes.",
+    "scope": "The paper claims only what its tool, proof tree, citations, and workbook sheet can presently support. Any interpretation that exceeds that support is logged as an obligation rather than silently promoted to proof.",
+    "tool": "- Module: `forgefactory.paper20_layer2_ledger`\n- Required outputs: `receipt.json`, `workbook_sheet.json`, `example_result.json`, `obligation_ledger.csv`.\n- Minimum test: a smoke test that produces at least one proof-like row and one obligation-like row."
+  },
+  {
+    "n": "21",
+    "title": "MorphForge / PolyForge / MorphoniX",
+    "status": "Horizon/speculative layer with explicit obligations",
+    "abstract": "This paper states a local transport problem, gives a formal vocabulary for it, binds it to a ForgeFactory/Rhenium tool surface, and supplies an analog workbook sheet. The paper is written as a proof-facing document rather than as a description of how the paper was produced. Build-method details are retained only in appendices, receipts, and the Paper 31 meta-walkthrough.",
+    "thesis": "Read glyphs, numbers, shapes, and tokens as grid-swept ribbons whose bifurcations define folds and continuations.",
+    "scope": "The paper claims only what its tool, proof tree, citations, and workbook sheet can presently support. Any interpretation that exceeds that support is logged as an obligation rather than silently promoted to proof.",
+    "tool": "- Module: `forgefactory.morphonix`\n- Required outputs: `receipt.json`, `workbook_sheet.json`, `example_result.json`, `obligation_ledger.csv`.\n- Minimum test: a smoke test that produces at least one proof-like row and one obligation-like row."
+  },
+  {
+    "n": "22",
+    "title": "MetaForge Applied Materials",
+    "status": "Horizon/speculative layer with explicit obligations",
+    "abstract": "This paper states a local transport problem, gives a formal vocabulary for it, binds it to a ForgeFactory/Rhenium tool surface, and supplies an analog workbook sheet. The paper is written as a proof-facing document rather than as a description of how the paper was produced. Build-method details are retained only in appendices, receipts, and the Paper 31 meta-walkthrough.",
+    "thesis": "Use ForgeFactory methods to propose metamaterial candidates that reduce material demand, waste, and extraction pressure.",
+    "scope": "The paper claims only what its tool, proof tree, citations, and workbook sheet can presently support. Any interpretation that exceeds that support is logged as an obligation rather than silently promoted to proof.",
+    "tool": "- Module: `forgefactory.metaforge`\n- Required outputs: `receipt.json`, `workbook_sheet.json`, `example_result.json`, `obligation_ledger.csv`.\n- Minimum test: a smoke test that produces at least one proof-like row and one obligation-like row."
+  },
+  {
+    "n": "23",
+    "title": "FoldForge Protein Folding",
+    "status": "Horizon/speculative layer with explicit obligations",
+    "abstract": "This paper states a local transport problem, gives a formal vocabulary for it, binds it to a ForgeFactory/Rhenium tool surface, and supplies an analog workbook sheet. The paper is written as a proof-facing document rather than as a description of how the paper was produced. Build-method details are retained only in appendices, receipts, and the Paper 31 meta-walkthrough.",
+    "thesis": "Apply the same ribbon/bifurcation logic to protein-chain fold hypotheses with contact-map and topology receipts.",
+    "scope": "The paper claims only what its tool, proof tree, citations, and workbook sheet can presently support. Any interpretation that exceeds that support is logged as an obligation rather than silently promoted to proof.",
+    "tool": "- Module: `forgefactory.foldforge`\n- Required outputs: `receipt.json`, `workbook_sheet.json`, `example_result.json`, `obligation_ledger.csv`.\n- Minimum test: a smoke test that produces at least one proof-like row and one obligation-like row."
+  },
+  {
+    "n": "24",
+    "title": "KnightForge / N-Dimensional Chess Automata",
+    "status": "Horizon/speculative layer with explicit obligations",
+    "abstract": "This paper states a local transport problem, gives a formal vocabulary for it, binds it to a ForgeFactory/Rhenium tool surface, and supplies an analog workbook sheet. The paper is written as a proof-facing document rather than as a description of how the paper was produced. Build-method details are retained only in appendices, receipts, and the Paper 31 meta-walkthrough.",
+    "thesis": "Generalize red/black greedy knight placement as an L-conjugate CA and then as N-dimensional chess operators.",
+    "scope": "The paper claims only what its tool, proof tree, citations, and workbook sheet can presently support. Any interpretation that exceeds that support is logged as an obligation rather than silently promoted to proof.",
+    "tool": "- Module: `forgefactory.knightforge`\n- Required outputs: `receipt.json`, `workbook_sheet.json`, `example_result.json`, `obligation_ledger.csv`.\n- Minimum test: a smoke test that produces at least one proof-like row and one obligation-like row."
+  },
+  {
+    "n": "25",
+    "title": "Energetic Traversal Maps",
+    "status": "Horizon/speculative layer with explicit obligations",
+    "abstract": "This paper states a local transport problem, gives a formal vocabulary for it, binds it to a ForgeFactory/Rhenium tool surface, and supplies an analog workbook sheet. The paper is written as a proof-facing document rather than as a description of how the paper was produced. Build-method details are retained only in appendices, receipts, and the Paper 31 meta-walkthrough.",
+    "thesis": "Add energy and traversal ledgers to cross-language, figure, material, and fold transformations.",
+    "scope": "The paper claims only what its tool, proof tree, citations, and workbook sheet can presently support. Any interpretation that exceeds that support is logged as an obligation rather than silently promoted to proof.",
+    "tool": "- Module: `forgefactory.paper25_traversal_maps`\n- Required outputs: `receipt.json`, `workbook_sheet.json`, `example_result.json`, `obligation_ledger.csv`.\n- Minimum test: a smoke test that produces at least one proof-like row and one obligation-like row."
+  },
+  {
+    "n": "26",
+    "title": "Z-Pinch and Shear Horizon",
+    "status": "Horizon/speculative layer with explicit obligations",
+    "abstract": "This paper states a local transport problem, gives a formal vocabulary for it, binds it to a ForgeFactory/Rhenium tool surface, and supplies an analog workbook sheet. The paper is written as a proof-facing document rather than as a description of how the paper was produced. Build-method details are retained only in appendices, receipts, and the Paper 31 meta-walkthrough.",
+    "thesis": "Speculatively examine first-shear, pinch, and friction-like generation as a later horizon paper requiring strict separation from proven layers.",
+    "scope": "The paper claims only what its tool, proof tree, citations, and workbook sheet can presently support. Any interpretation that exceeds that support is logged as an obligation rather than silently promoted to proof.",
+    "tool": "- Module: `forgefactory.paper26_zpinch_shear`\n- Required outputs: `receipt.json`, `workbook_sheet.json`, `example_result.json`, `obligation_ledger.csv`.\n- Minimum test: a smoke test that produces at least one proof-like row and one obligation-like row."
+  },
+  {
+    "n": "27",
+    "title": "Observer Delay and Shared Reality",
+    "status": "Horizon/speculative layer with explicit obligations",
+    "abstract": "This paper states a local transport problem, gives a formal vocabulary for it, binds it to a ForgeFactory/Rhenium tool surface, and supplies an analog workbook sheet. The paper is written as a proof-facing document rather than as a description of how the paper was produced. Build-method details are retained only in appendices, receipts, and the Paper 31 meta-walkthrough.",
+    "thesis": "Explore observer delay, sampling buffers, and shared-state constraints as an interpretation layer beyond the proof stack.",
+    "scope": "The paper claims only what its tool, proof tree, citations, and workbook sheet can presently support. Any interpretation that exceeds that support is logged as an obligation rather than silently promoted to proof.",
+    "tool": "- Module: `forgefactory.paper27_observer_delay`\n- Required outputs: `receipt.json`, `workbook_sheet.json`, `example_result.json`, `obligation_ledger.csv`.\n- Minimum test: a smoke test that produces at least one proof-like row and one obligation-like row."
+  },
+  {
+    "n": "28",
+    "title": "N-Dimensional Game Lattices",
+    "status": "Horizon/speculative layer with explicit obligations",
+    "abstract": "This paper states a local transport problem, gives a formal vocabulary for it, binds it to a ForgeFactory/Rhenium tool surface, and supplies an analog workbook sheet. The paper is written as a proof-facing document rather than as a description of how the paper was produced. Build-method details are retained only in appendices, receipts, and the Paper 31 meta-walkthrough.",
+    "thesis": "Extend chess/board logic into arbitrary dimensional local-rule games and tool operators.",
+    "scope": "The paper claims only what its tool, proof tree, citations, and workbook sheet can presently support. Any interpretation that exceeds that support is logged as an obligation rather than silently promoted to proof.",
+    "tool": "- Module: `forgefactory.paper28_nd_game_lattices`\n- Required outputs: `receipt.json`, `workbook_sheet.json`, `example_result.json`, `obligation_ledger.csv`.\n- Minimum test: a smoke test that produces at least one proof-like row and one obligation-like row."
+  },
+  {
+    "n": "29",
+    "title": "Monster/Universal Energy-Bound Hypotheses",
+    "status": "Horizon/speculative layer with explicit obligations",
+    "abstract": "This paper states a local transport problem, gives a formal vocabulary for it, binds it to a ForgeFactory/Rhenium tool surface, and supplies an analog workbook sheet. The paper is written as a proof-facing document rather than as a description of how the paper was produced. Build-method details are retained only in appendices, receipts, and the Paper 31 meta-walkthrough.",
+    "thesis": "Record high-speculation finite-group/energy-bound ideas as candidate horizons with strict falsifier obligations.",
+    "scope": "The paper claims only what its tool, proof tree, citations, and workbook sheet can presently support. Any interpretation that exceeds that support is logged as an obligation rather than silently promoted to proof.",
+    "tool": "- Module: `forgefactory.paper29_monster_energy`\n- Required outputs: `receipt.json`, `workbook_sheet.json`, `example_result.json`, `obligation_ledger.csv`.\n- Minimum test: a smoke test that produces at least one proof-like row and one obligation-like row."
+  },
+  {
+    "n": "30",
+    "title": "Grand Ribbon Meta-Framer",
+    "status": "Horizon/speculative layer with explicit obligations",
+    "abstract": "This paper states a local transport problem, gives a formal vocabulary for it, binds it to a ForgeFactory/Rhenium tool surface, and supplies an analog workbook sheet. The paper is written as a proof-facing document rather than as a description of how the paper was produced. Build-method details are retained only in appendices, receipts, and the Paper 31 meta-walkthrough.",
+    "thesis": "Show the thirty-paper corpus as a ribboned local-rule presentation that prepares Paper 31 without making Paper 31 part of the proof stack.",
+    "scope": "The paper claims only what its tool, proof tree, citations, and workbook sheet can presently support. Any interpretation that exceeds that support is logged as an obligation rather than silently promoted to proof.",
+    "tool": "- Module: `forgefactory.paper30_grand_ribbon`\n- Required outputs: `receipt.json`, `workbook_sheet.json`, `example_result.json`, `obligation_ledger.csv`.\n- Minimum test: a smoke test that produces at least one proof-like row and one obligation-like row."
+  },
+  {
+    "n": "31",
+    "title": "It Was Still Just LCR",
+    "status": "Meta walkthrough / corpus-level explanatory paper",
+    "abstract": "This paper states a local transport problem, gives a formal vocabulary for it, binds it to a ForgeFactory/Rhenium tool surface, and supplies an analog workbook sheet. The paper is written as a proof-facing document rather than as a description of how the paper was produced. Build-method details are retained only in appendices, receipts, and the Paper 31 meta-walkthrough.",
+    "thesis": "Retrospective walkthrough showing that the full presentation order, tools, papers, workbook sheets, and receipts were an enacted LCR process.",
+    "scope": "The paper claims only what its tool, proof tree, citations, and workbook sheet can presently support. Any interpretation that exceeds that support is logged as an obligation rather than silently promoted to proof.",
+    "tool": "- Module: `forgefactory.paper31_meta_lcr`\n- Required outputs: `receipt.json`, `workbook_sheet.json`, `example_result.json`, `obligation_ledger.csv`.\n- Minimum test: a smoke test that produces at least one proof-like row and one obligation-like row."
+  }
+]

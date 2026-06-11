@@ -1,0 +1,35 @@
+{
+  "paper_id": "CQE-paper-00",
+  "tool": "paper00-foundation",
+  "in_state": {
+    "C": "Baseline Transport Contract",
+    "L": null,
+    "R": null,
+    "B": null,
+    "T": null,
+    "O": null,
+    "W": null,
+    "A": "INTENT.md at D:\\CQE_CMPLX\\CQECMPLX-Production\\papers\\CQE-paper-00\\INTENT.md"
+  },
+  "out_state": {
+    "C": "Baseline Transport Contract",
+    "L": "left",
+    "R": "right",
+    "B": "b rule",
+    "T": null,
+    "O": null,
+    "W": "workbook",
+    "A": "INTENT.md at D:\\CQE_CMPLX\\CQECMPLX-Production\\papers\\CQE-paper-00\\INTENT.md"
+  },
+  "obligation_delta": {
+    "closed": [
+      "B",
+      "L",
+      "R",
+      "W"
+    ],
+    "opened": []
+  },
+  "timestamp": "2026-06-10T01:13:21.717167Z",
+  "notes": []
+}

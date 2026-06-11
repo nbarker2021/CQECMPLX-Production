@@ -62,3 +62,9 @@ tracking/POPULATION_QUEUE.md
 
 That queue identifies source bodies that can populate this repo, binds them to
 local evidence paths, and keeps aggregation separate from final promotion.
+
+Curated promoted slices live in:
+
+```text
+production/
+```

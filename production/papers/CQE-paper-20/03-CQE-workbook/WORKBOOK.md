@@ -1,0 +1,43 @@
+# Paper 20 — Workbook: Layer-2 Synthesis Ledger Sheet
+
+## Sheet ⇄ Tool Isomorphism
+
+| Analog Operation | Tool Function | Data Structure |
+|------------------|---------------|----------------|
+| List 20 C-forms | `SynthesisLedger().papers` | `List[C_form]` |
+| XOR compose | `hash(⊕ C_i)` | `root_hash` |
+| Verify all receipts | `ledger.verify_all()` | `{"all_verified": True}` |
+| List obligations | `ledger.obligations` | `List[Obligation]` |
+
+## Human Execution Protocol (Paper 20)
+```
+1. List C₀ through C₁₉ as 20 beads
+2. XOR compose: C₀ ⊕ C₁ ⊕ ... ⊕ C₁₉
+3. Compute root hash = hash(⊕ C_i)
+5. Verify all 20 receipts valid
+6. List open obligations (none for 00-19)
+```
+
+## Tool Execution Protocol (identical)
+```python
+ledger = SynthesisLedger()
+for i in range(20):
+    ledger.add_paper(i, C_i)
+
+assert ledger.verify_all()["all_verified"]
+hash = ledger.root_hash()
+```
+
+## Receipt (identical)
+```
+synthesis-receipt =
+  papers: 20
+  root_hash: hash(⊕ C₀⋯C₁₉)
+  all_receipts_valid: true
+  open_obligations: 0
+  human_verifiable: true
+```
+
+---
+
+*This IS the algorithm. The workbook IS the code spec. Every analog operation has its exact digital twin.*

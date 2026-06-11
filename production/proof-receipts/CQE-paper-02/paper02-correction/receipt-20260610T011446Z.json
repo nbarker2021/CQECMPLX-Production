@@ -1,0 +1,35 @@
+{
+  "paper_id": "CQE-paper-02",
+  "tool": "paper02-correction",
+  "in_state": {
+    "C": "Correction Surface",
+    "L": null,
+    "R": null,
+    "B": null,
+    "T": null,
+    "O": null,
+    "W": null,
+    "A": "INTENT.md at D:\\CQE_CMPLX\\CQECMPLX-Production\\papers\\CQE-paper-02\\INTENT.md"
+  },
+  "out_state": {
+    "C": "Correction Surface",
+    "L": "left boundary: L readout",
+    "R": "right boundary: R readout",
+    "B": "correction surface rule",
+    "T": null,
+    "O": null,
+    "W": "workbook analogue",
+    "A": "INTENT.md at D:\\CQE_CMPLX\\CQECMPLX-Production\\papers\\CQE-paper-02\\INTENT.md"
+  },
+  "obligation_delta": {
+    "closed": [
+      "B",
+      "L",
+      "R",
+      "W"
+    ],
+    "opened": []
+  },
+  "timestamp": "2026-06-10T01:14:46.846480Z",
+  "notes": []
+}

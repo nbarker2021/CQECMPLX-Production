@@ -1,0 +1,35 @@
+{
+  "paper_id": "CQE-paper-05",
+  "tool": "paper05-oloid-path-carrier",
+  "in_state": {
+    "C": "Oloid Path Carrier",
+    "L": null,
+    "R": null,
+    "B": null,
+    "T": null,
+    "O": null,
+    "W": null,
+    "A": "INTENT.md at D:\\CQE_CMPLX\\CQECMPLX-Production\\papers\\CQE-paper-05\\INTENT.md"
+  },
+  "out_state": {
+    "C": "Oloid Path Carrier",
+    "L": "left boundary",
+    "R": "right boundary",
+    "B": "oloid path carrier rule",
+    "T": null,
+    "O": null,
+    "W": "workbook analogue",
+    "A": "INTENT.md at D:\\CQE_CMPLX\\CQECMPLX-Production\\papers\\CQE-paper-05\\INTENT.md"
+  },
+  "obligation_delta": {
+    "closed": [
+      "B",
+      "L",
+      "R",
+      "W"
+    ],
+    "opened": []
+  },
+  "timestamp": "2026-06-10T01:22:04.748539Z",
+  "notes": []
+}

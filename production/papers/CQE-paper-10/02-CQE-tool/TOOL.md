@@ -1,0 +1,62 @@
+# Paper 10 — Tool: T10 Master Receipt Verifier
+
+## Module
+`cqe_engine.master_receipt`
+
+## Public Surface
+```python
+from cqe_engine.master_receipt import (
+    compose_master_receipt,
+    verify_master_receipt,
+    MasterReceipt,
+)
+```
+
+## Verifiers
+
+### compose_master_receipt(papers: List[int] = range(10))
+Composes master receipt from papers 00-09:
+```python
+receipt = compose_master_receipt(range(10))
+# receipt.C = XOR of all 10 paper C-forms
+```
+
+### verify_master_receipt(receipt)
+Verifies:
+- All 10 papers have valid receipts
+- XOR composition is correct
+- No missing obligations
+- C_accumulated = C₀ ⊕ C₁ ⊕ ... ⊕ C₉
+
+### MasterReceipt
+```python
+mr = MasterReceipt()
+mr.papers                      # [0..9]
+mr.C_accumulated               # XOR of all C_i
+mr.verify()                    # → {"valid": True}
+```
+
+## CLI
+```bash
+python -m cqe_engine.master_receipt                  # compose + verify
+python -m cqe_engine.master_receipt verify           # verify existing
+python -m cqe_engine.master_receipt 0 1 2 3 4 5 6 7 8 9  # custom papers
+```
+
+## Receipts
+Written to `proof-receipts/CQE-paper-10/master-receipt-<timestamp>.json`
+
+## Example Result
+```json
+{
+  "paper_id": "CQE-paper-10",
+  "composed_papers": [0,1,2,3,4,5,6,7,8,9],
+  "C_accumulated": "XOR_of_all_C_forms",
+  "all_obligations_resolved": true,
+  "valid": true
+}
+```
+
+---
+
+*This tool IS the proof of the master receipt. Running it discharges every Paper 10 obligation.*

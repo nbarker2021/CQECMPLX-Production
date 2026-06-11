@@ -1,0 +1,42 @@
+# Paper 30 — Workbook: Grand Ribbon Meta-Framer Sheet
+
+## Sheet ⇄ Tool Isomorphism
+
+| Analog Operation | Tool Function | Data Structure |
+|------------------|---------------|----------------|
+| Draw 31 beads | `GrandRibbonGluon().sequence()` | `[C_0, ..., C_30]` |
+| XOR compose | `GrandRibbonGluon().root_hash()` | `hash(⊕ C_i)` |
+| Read LCR sequence | `GrandRibbonGluon().lcr_sequence()` | `"LCR" × 31` |
+| Meta-frame | `GrandRibbonGluon().meta_framer()` | `Paper 31 coupling` |
+
+## Human Execution Protocol (Paper 30)
+```
+1. Draw 31 beads in a line: C_0 → C_1 → ... → C_30
+2. Connect each: L→R→C→L→R→C... (LCR cycle)
+3. XOR compose all: C_0 ⊕ C_1 ⊕ ... ⊕ C_30
+5. Compute root hash = hash(⊕ C_i)
+6. Verify: sequence = LCR per paper, meta-frames Paper 31
+```
+
+## Tool Execution Protocol (identical)
+```python
+grg = GrandRibbonGluon()
+sequence = grg.sequence()      # [C_0, C_1, ..., C_30]
+hash = grg.root_hash()         # hash(⊕ C_i)
+lcr = grg.lcr_sequence()       # "LCR" × 31
+meta = grg.meta_framer()       # Paper 31 coupling
+```
+
+## Receipt (identical)
+```
+grand-ribbon-receipt =
+  beads: 31
+  sequence: LCR × 31
+  root_hash: hash(⊕ C₀⋯C₃₀)
+  meta_framer: Paper 31
+  human_verifiable: true
+```
+
+---
+
+*This IS the algorithm. The workbook IS the code spec. Every analog operation has its exact digital twin.*

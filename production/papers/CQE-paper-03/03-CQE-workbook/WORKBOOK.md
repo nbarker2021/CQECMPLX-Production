@@ -1,0 +1,40 @@
+# Paper 03 — Workbook: D4/J3 Triality Sheet (v1 — isomorphic to tool)
+
+## Sheet ⇄ Tool Isomorphism
+
+| Analog Operation | Tool Function | Data Structure |
+|------------------|---------------|----------------|
+| Place C token at local center | `verify_triality()` | `chart_state = (L,C,R)` |
+| Draw D4 axis labels (2,0)/(3,1) | `ANTIPODAL_LABEL[state]` | `int` |
+| Draw sheet signs (+/-) | `SHEET_SIGN[state]` | `int` |
+| Draw J3(O) diagonal | `phi = diag(L,C,R)` | `J3O_diagonal` |
+| Verify S3 action = axis/sheet rotation | `verify_s3_action()` | `bool` |
+
+## Human Execution Protocol (Paper 03)
+```
+1. Roll 3d2 → (L,C,R)
+2. Look up axis = ANTIPODAL_LABEL[state], sheet = SHEET_SIGN[state]
+3. Draw axis (2,0) or (3,1); draw sheet +/-
+4. Trace phi = diag(L,C,R) on J3(O) paper
+5. Apply S3 rotation/reflection — verify triality
+6. Record receipt: axis/sheet/J3(O) aligned
+```
+
+## Tool Execution Protocol (identical)
+```python
+from lattice_forge.chart_codec_d4 import ANTIPODAL_LABEL, SHEET_SIGN
+from lattice_forge.rule90_linearization import correction_from_chart
+states = [(L,C,R) for L in (0,1) for C in (0,1) for R in (0,1)]
+for s in states:
+    axis = ANTIPODAL_LABEL[s]; sheet = SHEET_SIGN[s]
+    corr = correction_from_chart(s)
+    # Triality: axis/sheet ↔ J3(O) diagonal ↔ S3 rotation
+```
+
+## Receipt
+```
+triality-receipt =
+  T_TRIALITY: D4 axis/sheet ↔ J3(O) diagonal ✓
+  T_TRIALITY: S3 rotation/reflection ↔ triality ✓
+  human_verifiable: true
+```
