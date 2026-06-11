@@ -1,0 +1,107 @@
+# TMN1 Master Image — the complete system manifold.
+#
+# Contains ALL code, ALL deps, ALL surfaces. You never run this whole.
+# Each container projects a single surface via TMN1_ROLE env var.
+#
+# Roles: gateway, engine, board, arena, sim, daemon, station, identity,
+#        trainer, thinktank, sap, speedlight, portal, dashboard,
+#        port_controller, trainer-gpu, ui, capsule
+#
+# Air-gappable: all Python deps from wheelhouse (no pip network).
+
+FROM tmn1-wheelhouse:latest AS wheels
+FROM tmn1-hf-assets:latest AS hf-assets
+FROM python:3.11-slim AS base
+
+WORKDIR /app
+
+# System deps (runtime only — no gcc, wheels are pre-built)
+RUN apt-get update && apt-get install -y --no-install-recommends \
+        curl sqlite3 git libpq-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+# ── Python deps: everything the system needs, from wheelhouse ────────────
+COPY --from=wheels /wheels /tmp/wheels
+# All deps pre-built in wheelhouse — fully air-gapped, no network required.
+RUN pip install --no-cache-dir --no-index --find-links=/tmp/wheels \
+    fastapi==0.115.0 \
+    "uvicorn[standard]==0.30.0" \
+    pydantic==2.9.0 \
+    jinja2==3.1.4 \
+    aiofiles==24.1.0 \
+    python-multipart==0.0.9 \
+    httpx==0.27.0 \
+    numpy==2.1.0 \
+    redis==5.0.8 \
+    psycopg2-binary==2.9.9 \
+    scipy==1.14.0 \
+    networkx==3.3 \
+    pyyaml==6.0.2 \
+    rich==13.9.0 \
+    requests==2.32.0 \
+    python-docx==1.1.2 \
+    pypdf \
+    pdfplumber \
+    pillow \
+    beautifulsoup4 \
+    lxml \
+    chardet \
+    torch \
+    transformers \
+    tokenizers \
+    huggingface-hub \
+    safetensors \
+    && rm -rf /tmp/wheels
+
+# ── HF Assets: tokenizer + configs, pre-fetched at build time ────────────
+# Never hits the network at runtime. TRANSFORMERS_OFFLINE=1 enforces this.
+COPY --from=hf-assets /hf-assets /opt/hf-assets
+
+# ── Retooling: the geometric reasoning substrate ─────────────────────────
+COPY retooling/pyproject.toml /tmp/retooling/pyproject.toml
+COPY retooling/src /tmp/retooling/src
+RUN pip install --no-cache-dir -e /tmp/retooling
+
+# ── Gateway surface ──────────────────────────────────────────────────────
+COPY infrastructure/gateway.py /app/gateway.py
+COPY infrastructure/cold_porter.py /app/cold_porter.py
+
+# ── Board surface (v4 — single file, board.db only) ─────────────────────
+COPY infrastructure/board/board.py /app/board.py
+
+# ── ThinkTank surface (v2 — 8 live nano-bots) ────────────────────────────
+COPY infrastructure/thinktank/thinktank.py /app/thinktank.py
+
+# ── Arena surface ────────────────────────────────────────────────────────
+COPY infrastructure/arena_server.py /app/arena_server.py
+
+# ── Entrypoint + hooks ───────────────────────────────────────────────────
+COPY infrastructure/entrypoint.py /app/entrypoint.py
+COPY hooks/ /app/hooks/
+
+# ── Validate: the master must be able to project any surface ─────────────
+RUN python -c "from retooling.pipeline.grain_chain import process; print('grain_chain: OK')" && \
+    python -c "from retooling.geometry.e8_full import E8Full; print('E8Full: OK')" && \
+    python -c "from retooling.core.snap_schema import SNAP; print('SNAP: OK')" && \
+    python -c "from retooling.agent.snap_ledger import SNAPLedger; print('SNAPLedger: OK')" && \
+    python -c "import sys; sys.path.insert(0,'/app'); import board; print(f'board v{board.app.version}: OK')" && \
+    python -c "import arena_server; print('arena_server: OK')" && \
+    python -c "from retooling.personal_node import AgentNode, TMNBrain, GlyphRegistry, Coalition, KubeAgent, birth_with_key, TMN_OPS_24; print(f'personal_node: OK ({len(TMN_OPS_24)} ops)')"
+
+# ── Build ID (unique per image build — used for brain image compatibility) ──
+ARG TMN_BUILD_DATE=unknown
+ARG TMN_BUILD_HASH=unknown
+ENV TMN_BUILD_ID="${TMN_BUILD_HASH}-${TMN_BUILD_DATE}"
+
+# ── Environment ──────────────────────────────────────────────────────────
+ENV PYTHONPATH="/src:/app" \
+    PYTHONUNBUFFERED=1 \
+    TMN1_ROLE=engine \
+    HF_HOME=/opt/hf-assets \
+    TRANSFORMERS_CACHE=/opt/hf-assets/transformers \
+    TRANSFORMERS_OFFLINE=1 \
+    HF_DATASETS_OFFLINE=1
+
+EXPOSE 8000 9090
+
+CMD ["python", "/app/entrypoint.py"]

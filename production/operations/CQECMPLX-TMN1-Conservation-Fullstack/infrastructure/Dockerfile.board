@@ -1,0 +1,35 @@
+# TMN1 Board — Agent communication + economy
+# Lightweight image. Deps from wheelhouse. No torch needed.
+FROM tmn1-wheelhouse:latest AS wheels
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# Install deps from wheelhouse (no network, no torch — board is lightweight)
+COPY --from=wheels /wheels /tmp/wheels
+RUN pip install --no-cache-dir --no-index --find-links=/tmp/wheels \
+    fastapi==0.115.0 \
+    "uvicorn[standard]==0.30.0" \
+    pydantic==2.9.0 \
+    jinja2==3.1.4 \
+    aiofiles==24.1.0 \
+    python-multipart==0.0.9 \
+    && rm -rf /tmp/wheels
+
+COPY infrastructure/board/board.py .
+COPY infrastructure/board/board_cli.py .
+COPY infrastructure/board/static/ static/
+COPY infrastructure/board/templates/ templates/
+
+ENV BOARD_DB_PATH=/data/board.db \
+    BOARD_PORT=9090 \
+    PYTHONUNBUFFERED=1
+
+EXPOSE 9090
+
+VOLUME /data
+
+HEALTHCHECK --interval=30s --timeout=5s --retries=3 \
+    CMD python -c "import urllib.request; urllib.request.urlopen('http://localhost:9090/health')" || exit 1
+
+CMD ["python", "-m", "uvicorn", "board:app", "--host", "0.0.0.0", "--port", "9090"]

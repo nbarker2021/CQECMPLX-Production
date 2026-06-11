@@ -1,0 +1,78 @@
+# TMN1 HF Assets Image — HuggingFace model files, baked in at build time.
+#
+# Downloads tokenizers, configs, and small model artifacts from HF Hub
+# during the build so containers NEVER need network access for HF assets.
+#
+# What's included:
+#   GPT-2 tokenizer (BPE vocab + merges, ~1MB)  — used by HFTrainBackend
+#   GPT-2 model config (no weights — we train from scratch)
+#
+# What's NOT included:
+#   Model weights — our agents train their own from scratch
+#   Large pretrained models — add below if needed later
+#
+# Usage:
+#   docker build -f infrastructure/Dockerfile.hf-assets -t tmn1-hf-assets:latest .
+#
+# Downstream images pull from this:
+#   FROM tmn1-hf-assets:latest AS hf-assets
+#   COPY --from=hf-assets /hf-assets /opt/hf-assets
+#   ENV HF_HOME=/opt/hf-assets TRANSFORMERS_OFFLINE=1
+
+FROM python:3.11-slim AS builder
+
+WORKDIR /hf-assets
+
+# Minimal install — just enough to run huggingface_hub + transformers
+RUN pip install --no-cache-dir \
+    huggingface-hub \
+    transformers \
+    tokenizers \
+    safetensors
+
+# Set HF cache to our target directory
+ENV HF_HOME=/hf-assets \
+    TRANSFORMERS_CACHE=/hf-assets/transformers
+
+ARG HF_TOKEN=""
+ENV HF_TOKEN=${HF_TOKEN}
+
+# ── GPT-2 tokenizer (BPE, ~1MB) ──────────────────────────────────────────────
+# Used by HFTrainBackend for all 8 domain training models.
+# Downloads: vocab.json, merges.txt, tokenizer.json, tokenizer_config.json
+# Does NOT download model weights (those are trained from scratch).
+RUN python3 - <<'PYEOF'
+from transformers import GPT2TokenizerFast, GPT2Config
+import os
+
+tok = GPT2TokenizerFast.from_pretrained('gpt2')
+tok.pad_token = tok.eos_token
+tok.save_pretrained('/hf-assets/gpt2-tokenizer')
+print('GPT-2 tokenizer saved:', os.listdir('/hf-assets/gpt2-tokenizer'))
+
+config = GPT2Config()
+config.save_pretrained('/hf-assets/gpt2-config')
+print('GPT-2 config saved:', os.listdir('/hf-assets/gpt2-config'))
+PYEOF
+
+# ── Sentinel config block — add more assets here as needed ───────────────────
+# Format:
+#   RUN python -c "
+#   from transformers import AutoTokenizer
+#   tok = AutoTokenizer.from_pretrained('your-model')
+#   tok.save_pretrained('/hf-assets/your-model-tokenizer')
+#   "
+
+# ── Verify ────────────────────────────────────────────────────────────────────
+RUN python3 - <<'PYEOF'
+from transformers import GPT2TokenizerFast, GPT2Config
+tok = GPT2TokenizerFast.from_pretrained('/hf-assets/gpt2-tokenizer')
+cfg = GPT2Config.from_pretrained('/hf-assets/gpt2-config')
+ids = tok.encode('geometry tarpit snap agent physics economics code philosophy')
+print(f'Tokenizer OK: vocab={tok.vocab_size}, test_encode={len(ids)} tokens')
+print(f'Config OK: n_embd={cfg.n_embd}, n_layer={cfg.n_layer}')
+PYEOF
+
+# ── Final stage: just the assets, no Python runtime ──────────────────────────
+FROM scratch
+COPY --from=builder /hf-assets /hf-assets

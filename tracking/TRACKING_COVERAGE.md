@@ -59,3 +59,4 @@ pieces needed before source movement:
 | `production/adapters/CQECMPLX-DevKit-MCPOS-MORSR-Runtime/PROMOTION_SLICE_2026-06-11_DEVKIT_MCPOS_DOCS_INVENTORY.md` | promoted docs/inventory | `tracking/promotion-manifests/CQECMPLX-DevKit-MCPOS-MORSR-Runtime.manifest.json` |
 | `production/orchestration/CQECMPLX-CMPLXUNI-Swarm-Frontend/PROMOTION_SLICE_2026-06-11_CMPLXUNI_DOCS_CONFIGS.md` | promoted docs/configs | `tracking/promotion-manifests/CQECMPLX-CMPLXUNI-Swarm-Frontend.manifest.json` |
 | `production/products/CQECMPLX-Product-Fourpack/PROMOTION_SLICE_2026-06-11_PRODUCT_FOURPACK_DOCS_DEPLOY.md` | promoted docs/deploy metadata | `tracking/promotion-manifests/CQECMPLX-Product-Fourpack.manifest.json` |
+| `production/operations/CQECMPLX-TMN1-Conservation-Fullstack/PROMOTION_SLICE_2026-06-11_TMN1_OPERATIONS_DOCKER_DOCS.md` | promoted docs/docker metadata | `tracking/promotion-manifests/CQECMPLX-TMN1-Conservation-Fullstack.manifest.json` |

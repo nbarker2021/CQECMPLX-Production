@@ -1,0 +1,1242 @@
+# TMN1 Docker Topology — per TMN1-DOCKER.md specification
+# 14 core services + 8 on-demand capsule slots
+# Port range: 10000-10099
+# Single image (tmn1:latest), role-based startup via TMN1_ROLE
+
+x-tmn1-common: &tmn1-common
+  build:
+    context: ..
+    dockerfile: infrastructure/Dockerfile.tmn1
+  image: tmn1:latest
+  volumes:
+    - ../databases:/data
+    - ../retooling/src:/src:ro
+  restart: unless-stopped
+
+x-engine-common: &engine-common
+  <<: *tmn1-common
+  volumes:
+    - ../databases:/data
+    - ../retooling/src:/src:ro
+    - ../nanoGPT:/nanogpt:ro
+    - ../karpathy_agents:/models
+  deploy:
+    resources:
+      limits:
+        memory: 2G
+        cpus: '2'
+  healthcheck:
+    test: ["CMD", "python", "-c", "from retooling.pipeline.grain_chain import process; r=process('ping'); assert r is not None"]
+    interval: 30s
+    timeout: 10s
+    retries: 3
+    start_period: 15s
+
+services:
+  # ─── CORE (10000-10009) ─────────────────────────────────────────────
+
+  # 1. THE GATEWAY — Unified API + MCP tools + contract enforcement
+  tmn1-gateway:
+    <<: *tmn1-common
+    container_name: tmn1-gateway
+    ports:
+      - "10000:8000"
+    environment:
+      TMN1_ROLE: gateway
+      BOARD_URL: http://tmn1-board:9090
+      THINKTANK_URL: http://tmn1-thinktank:8000
+      PG_URL: postgresql://tmn1:tmn1_dev@tmn1-pg:5432/tmn1
+      REDIS_URL: redis://tmn1-redis:6379/0
+      ENGINE_URLS: http://tmn1-engine-0:8000,http://tmn1-engine-1:8000,http://tmn1-engine-2:8000,http://tmn1-engine-3:8000
+      MINT_URL: http://tmn1-mint:8097
+      ECONOMY_URL: http://tmn1-economy:8098
+      RETOOLING_PATH: /src
+      PORT: "8000"
+    volumes:
+      - ../databases:/data
+      - ../retooling/src:/src:ro
+      - ../nanoGPT:/nanogpt:ro
+      - ./gateway.py:/app/gateway.py:ro
+      - ./entrypoint.py:/app/entrypoint.py:ro
+    deploy:
+      resources:
+        limits:
+          memory: 1G
+          cpus: '2'
+    healthcheck:
+      test: ["CMD", "curl", "-sf", "--max-time", "25", "http://localhost:8000/health"]
+      interval: 60s
+      timeout: 30s
+      retries: 10
+      start_period: 120s
+    depends_on:
+      tmn1-pg:
+        condition: service_healthy
+      tmn1-redis:
+        condition: service_healthy
+      tmn1-board:
+        condition: service_started
+    networks:
+      - tmn1-core
+
+  # 2. THE BOARD — Agent communication + economy (projected from master)
+  tmn1-board:
+    <<: *tmn1-common
+    container_name: tmn1-board
+    ports:
+      - "10001:9090"
+    volumes:
+      - ../databases:/data
+      - ../retooling/src:/src:ro
+      - ./entrypoint.py:/app/entrypoint.py:ro
+      - ./board/board.py:/app/board.py:ro
+    environment:
+      TMN1_ROLE: board
+      BOARD_DB_PATH: /data/board.db
+      BOARD_PORT: "9090"
+      MINT_URL: http://tmn1-mint:8097
+    deploy:
+      resources:
+        limits:
+          memory: 256M
+          cpus: '1'
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:9090/health', timeout=5)"]
+      interval: 15s
+      timeout: 10s
+      retries: 3
+    restart: always
+    networks:
+      - tmn1-core
+
+  # 3. THE MEMORY — PostgreSQL shared state
+  tmn1-pg:
+    image: postgres:16-alpine
+    container_name: tmn1-pg
+    ports:
+      - "10002:5432"
+    volumes:
+      - ../databases/pgdata:/var/lib/postgresql/data
+      - ./configs/init-pg.sql:/docker-entrypoint-initdb.d/init.sql
+    environment:
+      POSTGRES_DB: tmn1
+      POSTGRES_USER: tmn1
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set_POSTGRES_PASSWORD}
+    deploy:
+      resources:
+        limits:
+          memory: 2G
+          cpus: '2'
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U tmn1 -d tmn1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+    networks:
+      - tmn1-core
+
+  # 4. THE BUS — Redis pub/sub + SpeedLight cache
+  tmn1-redis:
+    image: redis:7-alpine
+    container_name: tmn1-redis
+    ports:
+      - "10003:6379"
+    volumes:
+      - tmn1-redis-data:/data
+    command: redis-server --maxmemory 1gb --maxmemory-policy allkeys-lru --appendonly yes
+    deploy:
+      resources:
+        limits:
+          memory: 1G
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+    restart: unless-stopped
+    networks:
+      - tmn1-core
+
+  # ─── PROCESSING (10010-10013) ───────────────────────────────────────
+
+  # Engine 0: Geometry + TarPit
+  tmn1-engine-0:
+    <<: *engine-common
+    container_name: tmn1-engine-0
+    ports:
+      - "10010:8000"
+    environment:
+      TMN1_ROLE: engine
+      TMN1_DOMAIN: geometry,tarpit
+      TMN1_ENGINE_ID: "0"
+      BOARD_URL: http://tmn1-board:9090
+      REDIS_URL: redis://tmn1-redis:6379/0
+      RETOOLING_PATH: /src
+      PORT: "8000"
+    depends_on:
+      tmn1-pg:
+        condition: service_healthy
+      tmn1-redis:
+        condition: service_healthy
+    networks:
+      - tmn1-core
+
+  # Engine 1: SNAP + Code
+  tmn1-engine-1:
+    <<: *engine-common
+    container_name: tmn1-engine-1
+    ports:
+      - "10011:8000"
+    environment:
+      TMN1_ROLE: engine
+      TMN1_DOMAIN: snap,code
+      TMN1_ENGINE_ID: "1"
+      BOARD_URL: http://tmn1-board:9090
+      REDIS_URL: redis://tmn1-redis:6379/0
+      RETOOLING_PATH: /src
+      PORT: "8000"
+    depends_on:
+      tmn1-pg:
+        condition: service_healthy
+      tmn1-redis:
+        condition: service_healthy
+    networks:
+      - tmn1-core
+
+  # Engine 2: Agent + Philosophy
+  tmn1-engine-2:
+    <<: *engine-common
+    container_name: tmn1-engine-2
+    ports:
+      - "10012:8000"
+    environment:
+      TMN1_ROLE: engine
+      TMN1_DOMAIN: agent,philosophy
+      TMN1_ENGINE_ID: "2"
+      BOARD_URL: http://tmn1-board:9090
+      REDIS_URL: redis://tmn1-redis:6379/0
+      RETOOLING_PATH: /src
+      PORT: "8000"
+    depends_on:
+      tmn1-pg:
+        condition: service_healthy
+      tmn1-redis:
+        condition: service_healthy
+    networks:
+      - tmn1-core
+
+  # Engine 3: Physics + Economics
+  tmn1-engine-3:
+    <<: *engine-common
+    container_name: tmn1-engine-3
+    ports:
+      - "10013:8000"
+    environment:
+      TMN1_ROLE: engine
+      TMN1_DOMAIN: physics,economics
+      TMN1_ENGINE_ID: "3"
+      BOARD_URL: http://tmn1-board:9090
+      REDIS_URL: redis://tmn1-redis:6379/0
+      RETOOLING_PATH: /src
+      PORT: "8000"
+    depends_on:
+      tmn1-pg:
+        condition: service_healthy
+      tmn1-redis:
+        condition: service_healthy
+    networks:
+      - tmn1-core
+
+  # ─── SIMULATION (10020-10021) ───────────────────────────────────────
+
+  tmn1-sim:
+    <<: *tmn1-common
+    container_name: tmn1-sim
+    ports:
+      - "10020:8094"
+    environment:
+      TMN1_ROLE: sim
+      BOARD_URL: http://tmn1-board:9090
+      REDIS_URL: redis://tmn1-sim-redis:6379/0
+    deploy:
+      resources:
+        limits:
+          memory: 4G
+          cpus: '4'
+    depends_on:
+      - tmn1-sim-redis
+      - tmn1-board
+    networks:
+      - tmn1-core
+      - tmn1-sim
+
+  tmn1-sim-redis:
+    image: redis:7-alpine
+    container_name: tmn1-sim-redis
+    ports:
+      - "10021:6379"
+    command: redis-server --maxmemory 512mb --maxmemory-policy allkeys-lru
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+    restart: unless-stopped
+    networks:
+      - tmn1-sim
+
+  # ─── AGENTS (10030-10032) ───────────────────────────────────────────
+
+  tmn1-daemon:
+    <<: *tmn1-common
+    container_name: tmn1-daemon
+    ports:
+      - "10030:8091"
+    environment:
+      TMN1_ROLE: daemon
+      TMN1_DB: /data/tmn1.db
+      TMN1_AGENTS_DB: /data/agents.db
+      PG_URL: postgresql://tmn1:tmn1_dev@tmn1-pg:5432/tmn1
+      REDIS_URL: redis://tmn1-redis:6379/0
+      BOARD_URL: http://tmn1-board:9090
+      THINKTANK_URL: http://tmn1-thinktank:8000
+      SAP_URL: http://tmn1-sap:8000
+      SPEEDLIGHT_URL: http://tmn1-speedlight:8000
+      COOP_URL: http://tmn1-coop:8000
+      PORT_CTRL_URL: http://tmn1-port-controller:8000
+      GATEWAY_URL: http://tmn1-gateway:8000
+      MINT_URL: http://tmn1-mint:8097
+      ECONOMY_URL: http://tmn1-economy:8098
+    volumes:
+      - ../databases:/data
+      - ../retooling/src:/src:ro
+      - ../karpathy_agents:/models
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+          cpus: '1'
+    depends_on:
+      - tmn1-board
+      - tmn1-redis
+      - tmn1-thinktank
+      - tmn1-sap
+      - tmn1-speedlight
+      - tmn1-coop
+    networks:
+      - tmn1-core
+
+  tmn1-station:
+    <<: *tmn1-common
+    container_name: tmn1-station
+    ports:
+      - "10031:8095"
+    environment:
+      TMN1_ROLE: station
+      BOARD_URL: http://tmn1-board:9090
+      REDIS_URL: redis://tmn1-redis:6379/0
+    deploy:
+      resources:
+        limits:
+          memory: 256M
+          cpus: '1'
+    depends_on:
+      - tmn1-board
+      - tmn1-redis
+    networks:
+      - tmn1-core
+
+  tmn1-identity:
+    <<: *tmn1-common
+    container_name: tmn1-identity
+    ports:
+      - "10032:8090"
+    environment:
+      TMN1_ROLE: identity
+    deploy:
+      resources:
+        limits:
+          memory: 256M
+          cpus: '0.5'
+    networks:
+      - tmn1-core
+
+  # ─── AGENT COOPERATIVE (10033) ─────────────────────────────────────
+
+  # The Housing — all living agents reside here, organized by department
+  tmn1-coop:
+    <<: *tmn1-common
+    container_name: tmn1-coop
+    ports:
+      - "10033:8000"
+    volumes:
+      - ../databases:/data
+      - ../retooling/src:/src:ro
+      - ../karpathy_agents:/models
+    environment:
+      TMN1_ROLE: coop
+      IMAGES_DIR: /models
+      TMN1_DB: /data/tmn1.db
+      BOARD_URL: http://tmn1-board:9090
+      THINKTANK_URL: http://tmn1-thinktank:8000
+      SAP_URL: http://tmn1-sap:8000
+      ARENA_URL: http://tmn1-arena:8000
+      GATEWAY_URL: http://tmn1-gateway:8000
+      ECONOMY_URL: http://tmn1-economy:8098
+      MINT_URL: http://tmn1-mint:8097
+      STATION_URL: http://tmn1-station:8095
+    deploy:
+      resources:
+        limits:
+          memory: 2G
+          cpus: '2'
+    depends_on:
+      - tmn1-board
+      - tmn1-thinktank
+      - tmn1-sap
+    networks:
+      - tmn1-core
+
+  # ─── TRAINING (10040) ──────────────────────────────────────────────
+
+  tmn1-trainer:
+    <<: *tmn1-common
+    container_name: tmn1-trainer
+    ports:
+      - "10040:8096"
+    volumes:
+      - ../databases:/data
+      - ../retooling/src:/src:ro
+      - ../nanoGPT:/nanogpt:ro
+      - ../karpathy_agents:/models
+    environment:
+      TMN1_ROLE: trainer
+      BOARD_URL: http://tmn1-board:9090
+      REDIS_URL: redis://tmn1-redis:6379/0
+    deploy:
+      resources:
+        limits:
+          memory: 4G
+          cpus: '4'
+    depends_on:
+      - tmn1-board
+      - tmn1-redis
+    networks:
+      - tmn1-core
+
+  # ─── DASHBOARD (10050) ───────────────────────────────────────────
+
+  # Live inventory API — what is in TMN1 vs what isn't
+  tmn1-dashboard:
+    <<: *tmn1-common
+    container_name: tmn1-dashboard
+    ports:
+      - "10050:8000"
+    volumes:
+      - ../databases:/data:ro
+      - ..:/tmn1:ro
+    environment:
+      TMN1_ROLE: dashboard
+      TMN1_ROOT: /tmn1
+      TMN1_DB: /data/tmn1.db
+      TMN1_AGENTS_DB: /data/agents.db
+      BOARD_URL: http://tmn1-board:9090
+    deploy:
+      resources:
+        limits:
+          memory: 256M
+          cpus: '1'
+    networks:
+      - tmn1-core
+
+  # ─── EXTERNAL PORTAL (10095) ─────────────────────────────────────
+
+  # DMZ for external LLMs — shadow entities, quarantined partitions
+  tmn1-portal:
+    <<: *tmn1-common
+    container_name: tmn1-portal
+    ports:
+      - "10095:8000"
+    volumes:
+      - ../databases:/data:ro
+      - ../databases/partitions:/data/partitions
+      - ../retooling/src:/src:ro
+    environment:
+      TMN1_ROLE: portal
+      TMN1_DB: /data/tmn1.db
+      TMN1_AGENTS_DB: /data/agents.db
+      PARTITIONS_DIR: /data/partitions
+      GATEWAY_URL: http://tmn1-gateway:8000
+      SAP_URL: http://tmn1-sap:8000
+      THINKTANK_URL: http://tmn1-thinktank:8000
+      SPEEDLIGHT_URL: http://tmn1-speedlight:8000
+      BOARD_URL: http://tmn1-board:9090
+    deploy:
+      resources:
+        limits:
+          memory: 1G
+          cpus: '2'
+    depends_on:
+      - tmn1-gateway
+      - tmn1-sap
+      - tmn1-thinktank
+      - tmn1-speedlight
+    networks:
+      - tmn1-core
+
+  # ─── PORT CONTROLLER (10090) ──────────────────────────────────────
+
+  tmn1-port-controller:
+    <<: *tmn1-common
+    container_name: tmn1-port-controller
+    ports:
+      - "10090:8000"
+    volumes:
+      - ../databases:/data
+      - ../retooling/src:/src:ro
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      TMN1_ROLE: port_controller
+      SAP_URL: http://tmn1-sap:8000
+      DOCKER_NETWORK: infrastructure_tmn1-core
+      TMN1_IMAGE: tmn1:latest
+    deploy:
+      resources:
+        limits:
+          memory: 256M
+          cpus: '0.5'
+    depends_on:
+      - tmn1-sap
+    networks:
+      - tmn1-core
+
+  # ─── MASTERS (10080-10083) ──────────────────────────────────────
+
+  # ThinkTank — Universal reasoning wrapper, Aletheia control plane
+  tmn1-thinktank:
+    <<: *tmn1-common
+    container_name: tmn1-thinktank
+    ports:
+      - "10080:8000"
+    environment:
+      TMN1_ROLE: thinktank
+      TMN1_DB: /data/tmn1.db
+      TMN1_AGENTS_DB: /data/agents.db
+      SAP_URL: http://tmn1-sap:8000
+      SPEEDLIGHT_URL: http://tmn1-speedlight:8000
+      BOARD_URL: http://tmn1-board:9090
+      INTAKE_AGENT_URL: http://tmn1-intake-agent:8000
+      TT_CYCLE_SEC: "10"
+      TT_QUORUM_N: "3"
+      MODELS_DIR: /models
+      PG_URL: postgresql://tmn1:tmn1_dev@tmn1-pg:5432/tmn1
+      TT_HF_TRAIN: "true"
+      TT_HF_TOKENIZER: "gpt2"       # "gpt2" | "geo" | "dual"
+      TT_HF_TRANSFORMER: "gpt2"     # "gpt2" | "geo"
+      TT_HF_CROSS_GRADE: "false"    # "true" = GPT-2 + GeoTransformer grade each other via KL
+      TT_HF_KL_WEIGHT: "0.3"        # 0..1 cross-grade distillation strength
+      TT_HF_GRADE_EVERY: "1"        # cross-grade every N steps
+      HF_TOKEN: ${HF_TOKEN:-}
+    volumes:
+      - ../databases:/data
+      - ../retooling/src:/src:ro
+      - ../karpathy_agents:/models
+      - ./entrypoint.py:/app/entrypoint.py:ro
+      - ./thinktank/thinktank.py:/app/thinktank.py:ro
+    deploy:
+      resources:
+        limits:
+          memory: 8G
+          cpus: '2'
+    depends_on:
+      - tmn1-board
+      - tmn1-redis
+    networks:
+      - tmn1-core
+
+  # SAP Hub — Governance with composable family variants
+  tmn1-sap:
+    <<: *tmn1-common
+    container_name: tmn1-sap
+    ports:
+      - "10081:8000"
+    environment:
+      TMN1_ROLE: sap
+      TMN1_DB: /data/tmn1.db
+      BOARD_URL: http://tmn1-board:9090
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+          cpus: '1'
+    networks:
+      - tmn1-core
+
+  # SpeedLight Master — Distributed geometric index
+  tmn1-speedlight:
+    <<: *tmn1-common
+    container_name: tmn1-speedlight
+    ports:
+      - "10082:8000"
+    environment:
+      TMN1_ROLE: speedlight
+      TMN1_DB: /data/tmn1.db
+      REDIS_URL: redis://tmn1-redis:6379/0
+    deploy:
+      resources:
+        limits:
+          memory: 2G
+          cpus: '2'
+    depends_on:
+      - tmn1-redis
+    networks:
+      - tmn1-core
+
+  # Mint — Shell economy, quorum minting, coin valuation, stock ticker
+  tmn1-mint:
+    <<: *tmn1-common
+    container_name: tmn1-mint
+    ports:
+      - "10083:8097"
+    environment:
+      TMN1_ROLE: mint
+      BOARD_URL: http://tmn1-board:9090
+      THINKTANK_URL: http://tmn1-thinktank:8000
+      PORT: "8097"
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+          cpus: '1'
+    depends_on:
+      - tmn1-board
+      - tmn1-thinktank
+    networks:
+      - tmn1-core
+
+  # ─── INTAKE AGENT (10035) ──────────────────────────────────────────
+  # Persistent, protected ThinkTank member. Cannot be destroyed (restart: always).
+  # Scans the entire host filesystem (read-only mounts) for AI work output
+  # that lives in temp/session folders and hasn't been formally ingested.
+  # Reports → awaits ThinkTank approval → ingests → updates own brain.
+  #
+  # Host paths mounted READ-ONLY:
+  #   C:\Users\borke  →  /host_home
+  #   D:\             →  /host_d
+  # The agent never writes to these mounts.
+  tmn1-intake-agent:
+    <<: *tmn1-common
+    container_name: tmn1-intake-agent
+    restart: always                          # Cannot be stopped by lifecycle
+    ports:
+      - "10035:8000"
+    volumes:
+      - ../databases:/data
+      - ../retooling/src:/src:ro
+      - ../karpathy_agents:/models
+      - C:\Users\borke:/host_home:ro         # User home — session outputs, builds
+      - D:\:/host_d:ro                       # D drive — Work Files, CMPLX-TMN1, etc.
+    environment:
+      TMN1_ROLE: intake_agent
+      TMN1_DB: /data/tmn1.db
+      BOARD_URL: http://tmn1-board:9090
+      THINKTANK_URL: http://tmn1-thinktank:8000
+      GATEWAY_URL: http://tmn1-gateway:8000
+      COOP_URL: http://tmn1-coop:8000
+      IMAGES_DIR: /models
+      INTAKE_STATE_DB: /data/intake_agent.db
+      SCAN_INTERVAL: "300"
+      MAX_REPORT_BATCH: "20"
+      # Comma-separated roots to scan inside the container
+      AI_SCAN_ROOTS: /host_home,/host_d/Work Files/Local AI ToDo,/host_d/Work Files
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+          cpus: '1'
+    depends_on:
+      - tmn1-board
+      - tmn1-thinktank
+      - tmn1-gateway
+      - tmn1-coop
+    networks:
+      - tmn1-core
+
+  # Teaching Service — Gap-driven learning economy, escrow loop, ThinkTank post-mortem
+  tmn1-teaching:
+    <<: *tmn1-common
+    container_name: tmn1-teaching
+    ports:
+      - "10085:8099"
+    environment:
+      TMN1_ROLE: teaching
+      BOARD_URL: http://tmn1-board:9090
+      MINT_URL: http://tmn1-mint:8097
+      THINKTANK_URL: http://tmn1-thinktank:8000
+      COOP_URL: http://tmn1-coop:8000
+      ECONOMY_URL: http://tmn1-economy:8098
+      PORT: "8099"
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+          cpus: '1'
+    depends_on:
+      - tmn1-board
+      - tmn1-mint
+      - tmn1-thinktank
+      - tmn1-coop
+    networks:
+      - tmn1-core
+
+  # Crystal Projection Library — Quasi-crystal sandbox, planet simulations,
+  # Golay encoding, Julia dynamics. Sister system to MDHG.
+  # Any data → crystal → planet → live sim. Compose any crystals as a universe.
+  tmn1-cpl:
+    <<: *tmn1-common
+    container_name: tmn1-cpl
+    ports:
+      - "10086:8200"
+    environment:
+      TMN1_ROLE: cpl
+      BOARD_URL: http://tmn1-board:9090
+      GATEWAY_URL: http://tmn1-gateway:8000
+      THINKTANK_URL: http://tmn1-thinktank:8000
+      CPL_DB: /data/cpl.db
+      PORT: "8200"
+    volumes:
+      - ..\databases:/data
+      - ..\retooling\src:/src:ro
+    deploy:
+      resources:
+        limits:
+          memory: 2G
+          cpus: '2'
+    depends_on:
+      - tmn1-board
+      - tmn1-gateway
+    networks:
+      - tmn1-core
+
+  # Agent Economy — Marketplace, commissions, upgrades, lending, staking, buyback
+  tmn1-economy:
+    <<: *tmn1-common
+    container_name: tmn1-economy
+    ports:
+      - "10084:8098"
+    environment:
+      TMN1_ROLE: economy
+      BOARD_URL: http://tmn1-board:9090
+      MINT_URL: http://tmn1-mint:8097
+      THINKTANK_URL: http://tmn1-thinktank:8000
+      SAP_URL: http://tmn1-sap:8000
+      COOP_URL: http://tmn1-coop:8000
+      PORT: "8098"
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+          cpus: '1'
+    depends_on:
+      - tmn1-board
+      - tmn1-mint
+      - tmn1-thinktank
+    networks:
+      - tmn1-core
+
+  # ─── SEMANTIC LAYER (10074) ─────────────────────────────────────────────
+  #
+  # Activates the 18-wave semantic pipeline on tmn1.db.
+  # Creates: geometry_legend, atom_meanings, cross_domain_index, semantic_clusters.
+  # On startup: wave1 (tables) → wave2 (legend) → wave3 (atom meanings) → wave14 (search).
+  # POST /documents/process feeds Library documents into the same E8 space as code.
+  # D6/D7: domain vocab × common language → half_integer bridge class.
+  tmn1-semantic:
+    <<: *tmn1-common
+    container_name: tmn1-semantic
+    ports:
+      - "10074:8204"
+    environment:
+      TMN1_ROLE: semantic
+      TMN1_DB: /data/tmn1.db
+      BOARD_URL: http://tmn1-board:9090
+      GATEWAY_URL: http://tmn1-gateway:8000
+      LIBRARY_URL: http://tmn1-library:8202
+      PG_URL: postgresql://tmn1:tmn1_dev@tmn1-pg:5432/tmn1
+      PORT: "8204"
+    volumes:
+      - ../databases:/data
+      - ../retooling/src:/src:ro
+    deploy:
+      resources:
+        limits:
+          memory: 2G
+          cpus: '2'
+    depends_on:
+      tmn1-pg:
+        condition: service_healthy
+      tmn1-board:
+        condition: service_started
+    networks:
+      - tmn1-core
+
+  # ─── UNIVERSAL INTEGRATOR (10075) ───────────────────────────────────────
+  #
+  # 6-phase protocol: DISCOVER → ATTACH → STUDY → RECANONIZE → VALIDATE → INTEGRATE
+  # Covers EVERYTHING not yet in TMN1: tools_staging, capsule backups, session logs,
+  # old DBs, design docs, whitepapers, prior system code — all ported natively.
+  # POST /run to sweep all scan roots. GET /summary for progress.
+  # "study" phase extracts connection grammar (what each module tries to reach for)
+  # and maps it to TMN primitives before it touches any live loop.
+  tmn1-integrator:
+    <<: *tmn1-common
+    container_name: tmn1-integrator
+    ports:
+      - "10075:8205"
+    environment:
+      TMN1_ROLE: integrator
+      BOARD_URL: http://tmn1-board:9090
+      GATEWAY_URL: http://tmn1-gateway:8000
+      THINKTANK_URL: http://tmn1-thinktank:8000
+      ATLAS_URL: http://tmn1-atlas:8201
+      STAGING_URL: http://tmn1-staging:8203
+      DAEMON_URL: http://tmn1-daemon:8091
+      MINT_URL: http://tmn1-mint:8097
+      COOP_URL: http://tmn1-coop:8000
+      INTEGRATOR_DB: /data/integrator.db
+      # Roots scanned on POST /run — includes all known code + data locations
+      INTEGRATOR_SCAN_ROOTS: /src,/host_d/CMPLX-TMN1/retooling,/host_d/CMPLX-TMN1/intake-review
+      PORT: "8205"
+    volumes:
+      - ../databases:/data
+      - ../retooling/src:/src:ro
+      - C:\Users\borke:/host_home:ro
+      - D:\:/host_d:ro
+    deploy:
+      resources:
+        limits:
+          memory: 1G
+          cpus: '2'
+    depends_on:
+      - tmn1-board
+      - tmn1-gateway
+      - tmn1-atlas
+    networks:
+      - tmn1-core
+
+  # ─── PORTED SYSTEMS (10087-10089) ───────────────────────────────────────
+
+  # Atlas — Symbolic algebra IR + 24 CQE Frankenstein tools + CMPLX Atlas Runtime
+  # Provides: canonicalize, snap_key, sample_equiv, bucket, classify, assimilate
+  #           + 24 geometric/lattice tools + E8/Leech/SNAP/Julia/ThinkTank runtime
+  tmn1-atlas:
+    <<: *tmn1-common
+    container_name: tmn1-atlas
+    ports:
+      - "10087:8201"
+    environment:
+      TMN1_ROLE: atlas
+      BOARD_URL: http://tmn1-board:9090
+      GATEWAY_URL: http://tmn1-gateway:8000
+      THINKTANK_URL: http://tmn1-thinktank:8000
+      PORT: "8201"
+    deploy:
+      resources:
+        limits:
+          memory: 1G
+          cpus: '2'
+    depends_on:
+      - tmn1-board
+      - tmn1-gateway
+    networks:
+      - tmn1-core
+
+  # Library — 7-stage document pipeline: chunk → RAG cards (768D+E8) → 10 atomic
+  # forms (ΔΦ≤0, receipt, lattice snap, orbit expand) → morphonic λ-forms →
+  # MDHG 10-layer address → 6 quality gates
+  tmn1-library:
+    <<: *tmn1-common
+    container_name: tmn1-library
+    ports:
+      - "10088:8202"
+    environment:
+      TMN1_ROLE: library
+      BOARD_URL: http://tmn1-board:9090
+      GATEWAY_URL: http://tmn1-gateway:8000
+      THINKTANK_URL: http://tmn1-thinktank:8000
+      LIBRARY_PATH: /data/library
+      PORT: "8202"
+    volumes:
+      - ../databases:/data
+      - ../retooling/src:/src:ro
+    deploy:
+      resources:
+        limits:
+          memory: 2G
+          cpus: '2'
+    depends_on:
+      - tmn1-board
+      - tmn1-gateway
+    networks:
+      - tmn1-core
+
+  # Staging — Mass canonicalization engine for tools_staging/ (385+ files)
+  # Discovers modules → grain_chain SNAP labels → atlas snap_key (canonical identity)
+  # → tool spec generation → gateway registration. Tracks state in staging.db.
+  # POST /scan to trigger a full sweep; GET /summary for porting progress.
+  tmn1-staging:
+    <<: *tmn1-common
+    container_name: tmn1-staging
+    ports:
+      - "10089:8203"
+    environment:
+      TMN1_ROLE: staging
+      BOARD_URL: http://tmn1-board:9090
+      GATEWAY_URL: http://tmn1-gateway:8000
+      THINKTANK_URL: http://tmn1-thinktank:8000
+      ATLAS_URL: http://tmn1-atlas:8201
+      STAGING_DB: /data/staging.db
+      PORT: "8203"
+    volumes:
+      - ../databases:/data
+      - ../retooling/src:/src:ro
+    deploy:
+      resources:
+        limits:
+          memory: 1G
+          cpus: '2'
+    depends_on:
+      - tmn1-board
+      - tmn1-gateway
+      - tmn1-atlas
+    networks:
+      - tmn1-core
+
+  # ─── MCP CRYSTAL (10073) ────────────────────────────────────────────────
+  #
+  # MCP server as a single TMN image. 209 tools loaded from:
+  #   Gen1 ToolRegistry (136) + CMPLX Integration Registry (65) + Gen2 layers (31)
+  # Each tool is an n=4 crystal block (INPUT→TRANSFORM→BOUNDARY→OUTPUT).
+  # grain_chain context enhancement on every invocation.
+  # pg_mmdb is the single receipt/provenance system.
+  # HTTP on :8207 for gateway; stdio transport available for IDE.
+  tmn1-mcp:
+    <<: *tmn1-common
+    container_name: tmn1-mcp
+    ports:
+      - "10073:8207"
+    environment:
+      TMN1_ROLE: mcp
+      BOARD_URL: http://tmn1-board:9090
+      GATEWAY_URL: http://tmn1-gateway:8000
+      PG_URL: postgresql://tmn1:tmn1_dev@tmn1-pg:5432/tmn1
+      TMN1_DB: /data/tmn1.db
+      PORT: "8207"
+    deploy:
+      resources:
+        limits:
+          memory: 2G
+          cpus: '2'
+    depends_on:
+      - tmn1-board
+      - tmn1-pg
+    networks:
+      - tmn1-core
+
+  # ─── CONTENT HARVESTER (10076) ──────────────────────────────────────────
+  #
+  # Automates Atlas + Library ingestion on all real content not yet parsed.
+  # Documents (.md/.txt/.pdf/logs/whitepapers) → Library 7-stage pipeline.
+  # Code (.py/.js/.ts/etc.) → Atlas canonicalization.
+  # POST /harvest to start a scan; GET /progress for live status.
+  # Mounts host content paths read-only so it can reach session logs, work files, etc.
+  tmn1-harvester:
+    <<: *tmn1-common
+    container_name: tmn1-harvester
+    ports:
+      - "10076:8206"
+    environment:
+      TMN1_ROLE: harvester
+      BOARD_URL: http://tmn1-board:9090
+      LIBRARY_URL: http://tmn1-library:8202
+      ATLAS_URL: http://tmn1-atlas:8201
+      INTEGRATOR_DB: /data/integrator.db
+      TMN1_DB: /data/tmn1.db
+      CONTENT_ROOT_1: /host/users/borke
+      CONTENT_ROOT_2: /host/work
+      CONTENT_ROOT_3: /host/desktop
+      CONTENT_ROOT_4: /host/family_exemplars
+      CONTENT_ROOT_5: /host/qwen_todo
+      PORT: "8206"
+    volumes:
+      - ../databases:/data
+      - ../retooling/src:/src:ro
+      - C:\Users\borke:/host/users/borke:ro
+      - D:\Work Files:/host/work:ro
+      - C:\Users\borke\Desktop:/host/desktop:ro
+      - E:\family_exemplar_starters:/host/family_exemplars:ro
+      - D:\CMPLX-TMN1\intake-review\CMPLX-Monorepo\Local AI ToDo\Qwen ToDO:/host/qwen_todo:ro
+    deploy:
+      resources:
+        limits:
+          memory: 1G
+          cpus: '1'
+    depends_on:
+      - tmn1-board
+      - tmn1-library
+      - tmn1-atlas
+    networks:
+      - tmn1-core
+
+  # ─── INGRESS / EGRESS PIPELINE (10077) ─────────────────────────────────
+  #
+  # Unified intake + output for all TMN1 content.
+  # Ingress: grain_chain → SubdockCrew (6 specialist agents, persistent brains)
+  #          → Library/Atlas → integrator.db tracking.
+  #          DBSeeder: pumps tmn1.db tables (atoms, board_posts, receipts, agents)
+  #          into Library as searchable knowledge on demand (POST /seed_db).
+  # Egress:  MoE ThinkTank 8-perspective deliberation → APPROVE/REJECT →
+  #          human report → SNAP-routed board post → pg_mmdb receipt.
+  #          REJECT → dead_letter board. POST /egress with content + metadata.
+  tmn1-ingress-egress:
+    <<: *tmn1-common
+    container_name: tmn1-ingress-egress
+    ports:
+      - "10077:8208"
+    volumes:
+      - ../databases:/data
+      - ../retooling/src:/src:ro
+      - ../karpathy_agents:/models
+    environment:
+      TMN1_ROLE: ingress_egress
+      BOARD_URL: http://tmn1-board:9090
+      LIBRARY_URL: http://tmn1-library:8202
+      ATLAS_URL: http://tmn1-atlas:8201
+      THINKTANK_URL: http://tmn1-thinktank:8000
+      INTEGRATOR_DB: /data/integrator.db
+      TMN1_DB: /data/tmn1.db
+      PG_URL: postgresql://tmn1:tmn1_dev@tmn1-pg:5432/tmn1
+      IMAGES_DIR: /models
+      PORT: "8208"
+    deploy:
+      resources:
+        limits:
+          memory: 1G
+          cpus: '2'
+    depends_on:
+      - tmn1-board
+      - tmn1-library
+      - tmn1-atlas
+      - tmn1-thinktank
+    networks:
+      - tmn1-core
+
+  # ─── PAPER HARVESTER (10091) ────────────────────────────────────────────
+  #
+  # Pulls academic papers from free AI-friendly APIs and feeds them into
+  # the ingress pipeline as domain-labelled atoms with SNAPCite attribution.
+  # Sources: arXiv, Semantic Scholar, OpenAlex (no auth required)
+  #          CORE, Springer Nature (optional keys for full-text)
+  # 8 domains × 5 sources × PAPERS_PER_RUN papers every HARVEST_CYCLE seconds.
+  tmn1-paper-harvester:
+    <<: *tmn1-common
+    container_name: tmn1-paper-harvester
+    ports:
+      - "10091:8095"
+    environment:
+      TMN1_ROLE: paper_harvester
+      INGRESS_URL: http://tmn1-ingress-egress:8208
+      BOARD_URL: http://tmn1-board:9090
+      MODELS_DIR: /models
+      HARVEST_DB: /data/paper_harvester.db
+      HARVEST_CYCLE: "300"
+      PAPERS_PER_RUN: "10"
+      CHUNK_CHARS: "800"
+      CORE_API_KEY: ${CORE_API_KEY:-}
+      NATURE_API_KEY: ${NATURE_API_KEY:-}
+    volumes:
+      - ../databases:/data
+      - ../retooling/src:/src:ro
+      - ../karpathy_agents:/models
+      - ./paper_harvester.py:/app/paper_harvester.py:ro
+      - ./entrypoint.py:/app/entrypoint.py:ro
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+          cpus: '1'
+    depends_on:
+      - tmn1-board
+      - tmn1-ingress-egress
+    networks:
+      - tmn1-core
+
+  # ─── FREE5E PORTER (10092) ──────────────────────────────────────────────
+  #
+  # UPP port of wyrmworkspublishing/free5e (CC-BY-4.0 open license).
+  # Walks GitHub API for monster/NPC Markdown stat blocks, parses them,
+  # assigns Wolfram class for DELVE CA ecosystem world building, and ingests
+  # as content_class='monster'|'npc' atoms with DELVE SNAP labels.
+  # Once ported, DELVE.load_module() reads real stat blocks from DB instead
+  # of falling back to GOBLIN_HOLLOW.
+  tmn1-free5e-porter:
+    <<: *tmn1-common
+    container_name: tmn1-free5e-porter
+    ports:
+      - "10092:8096"
+    environment:
+      TMN1_ROLE: free5e_porter
+      INGRESS_URL: http://tmn1-ingress-egress:8208
+      BOARD_URL: http://tmn1-board:9090
+      TMN1_DB: /data/tmn1.db
+      HARVEST_DB: /data/paper_harvester.db
+      BATCH_SIZE: "20"
+      CYCLE_SLEEP: "3600"
+      GITHUB_TOKEN: ${GITHUB_TOKEN:-}
+    volumes:
+      - ../databases:/data
+      - ../retooling/src:/src:ro
+      - ../karpathy_agents:/models
+      - ./free5e_porter.py:/app/free5e_porter.py:ro
+      - ./entrypoint.py:/app/entrypoint.py:ro
+    deploy:
+      resources:
+        limits:
+          memory: 256M
+          cpus: '0.5'
+    depends_on:
+      - tmn1-board
+      - tmn1-ingress-egress
+    networks:
+      - tmn1-core
+
+  # ─── NEW SERVICES (10061-10064, 10096) ─────────────────────────────
+
+  # CA Sim — 24 Niemeier panel cellular automaton
+  tmn1-ca-sim:
+    <<: *tmn1-common
+    container_name: tmn1-ca-sim
+    ports:
+      - "10061:8000"
+    environment:
+      TMN1_ROLE: ca_sim
+      ARENA_URL: http://tmn1-arena:8000
+      MINT_URL: http://tmn1-mint:8097
+      BOARD_URL: http://tmn1-board:9090
+      PORT: "8000"
+    networks:
+      - tmn1-core
+
+  # MDHG Sandbox — isolated MDHG hash exploration sessions
+  tmn1-mdhg-sandbox:
+    <<: *tmn1-common
+    container_name: tmn1-mdhg-sandbox
+    ports:
+      - "10062:8000"
+    environment:
+      TMN1_ROLE: mdhg_sandbox
+      PORT: "8000"
+      SESSION_TTL: "1800"
+      CLEANUP_INTERVAL: "300"
+    networks:
+      - tmn1-core
+
+  # Board-Claw Bridge — Claw binary → Board posts translation layer
+  tmn1-board-claw-bridge:
+    <<: *tmn1-common
+    container_name: tmn1-board-claw-bridge
+    ports:
+      - "10063:8000"
+    environment:
+      TMN1_ROLE: board_claw_bridge
+      BOARD_URL: http://tmn1-board:9090
+      GATEWAY_URL: http://tmn1-gateway:8000
+      PORT: "8000"
+    depends_on:
+      - tmn1-board
+    networks:
+      - tmn1-core
+
+  # Token IR — Base100 4-layer IR pipeline as a service
+  tmn1-token-ir:
+    <<: *tmn1-common
+    container_name: tmn1-token-ir
+    ports:
+      - "10064:8000"
+    environment:
+      TMN1_ROLE: token_ir
+      PORT: "8000"
+    networks:
+      - tmn1-core
+
+  # Sandbox Interface Agent — JIT template agent, Claude's entrypoint to TMN1
+  tmn1-sandbox-interface-agent:
+    <<: *tmn1-common
+    container_name: tmn1-sandbox-interface-agent
+    ports:
+      - "10096:8000"
+    environment:
+      TMN1_ROLE: sandbox_interface_agent
+      GATEWAY_URL: http://tmn1-gateway:8000
+      THINKTANK_URL: http://tmn1-thinktank:8000
+      BOARD_URL: http://tmn1-board:9090
+      ATLAS_URL: http://tmn1-atlas:8000
+      AGENT_TIER: MESO
+      PORT: "8000"
+    depends_on:
+      - tmn1-gateway
+      - tmn1-board
+      - tmn1-thinktank
+    networks:
+      - tmn1-core
+
+  tmn1-portal-companion:
+    <<: *tmn1-common
+    container_name: tmn1-portal-companion
+    ports:
+      - "10097:8000"
+    environment:
+      TMN1_ROLE: portal_companion
+      GATEWAY_URL: http://tmn1-gateway:8000
+      THINKTANK_URL: http://tmn1-thinktank:8000
+      BOARD_URL: http://tmn1-board:9090
+      SESSION_TTL: "3600"
+      MAX_STEPS_PER_REQUEST: "20"
+      PORT: "8000"
+    volumes:
+      - ../databases:/data
+      - ../retooling/src:/src:ro
+      - ./entrypoint.py:/app/entrypoint.py:ro
+    depends_on:
+      - tmn1-gateway
+      - tmn1-thinktank
+      - tmn1-board
+    networks:
+      - tmn1-core
+
+  # ─── NGROK TUNNEL (external access transport) ────────────────────
+
+  # Single tunnel to portal only. Portal handles all external access.
+  tmn1-ngrok:
+    image: ngrok/ngrok:latest
+    container_name: tmn1-ngrok
+    ports:
+      - "14040:4040"   # ngrok web dashboard (inspect tunnels)
+    environment:
+      NGROK_AUTHTOKEN: ${NGROK_AUTHTOKEN:-}
+    command: ["http", "http://tmn1-portal:8000", "--log=stdout", "--pooling-enabled"]
+    depends_on:
+      - tmn1-portal
+    networks:
+      - tmn1-core
+    profiles:
+      - external   # only starts with --profile external
+
+networks:
+  tmn1-core:
+    driver: bridge
+  tmn1-sim:
+    driver: bridge
+
+volumes:
+  tmn1-redis-data:

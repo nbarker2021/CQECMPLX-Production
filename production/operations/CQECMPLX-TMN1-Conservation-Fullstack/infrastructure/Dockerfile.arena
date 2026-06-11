@@ -1,0 +1,37 @@
+# Training Arena — Independent capsule with 10 training systems
+# All Python deps from wheelhouse. No pip downloads.
+FROM tmn1-wheelhouse:latest AS wheels
+FROM python:3.11-slim AS base
+
+WORKDIR /app
+
+# System deps (runtime only)
+RUN apt-get update && apt-get install -y --no-install-recommends \
+        curl sqlite3 git \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install deps from wheelhouse (no network)
+COPY --from=wheels /wheels /tmp/wheels
+RUN pip install --no-cache-dir --no-index --find-links=/tmp/wheels \
+    fastapi==0.115.0 \
+    "uvicorn[standard]==0.30.0" \
+    pydantic==2.9.0 \
+    jinja2==3.1.4 \
+    aiofiles==24.1.0 \
+    httpx==0.27.0 \
+    numpy==2.1.0 \
+    scipy==1.14.0 \
+    requests==2.32.0 \
+    rich==13.9.0 \
+    torch \
+    && rm -rf /tmp/wheels
+
+# Copy arena server
+COPY infrastructure/arena_server.py /app/arena_server.py
+
+ENV PYTHONPATH="/src:/app" \
+    PYTHONUNBUFFERED=1
+
+EXPOSE 8000
+
+CMD ["python", "/app/arena_server.py"]
