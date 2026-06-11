@@ -1,0 +1,281 @@
+{
+  "id": "CQECMPLX-Payload-Ledger",
+  "status": "metadata_only",
+  "created": "2026-06-11",
+  "source_csv": "D:\\CQE_CMPLX\\Claude-Codex-Memory\\Codex work\\CX-Repo-Literal-Accounting\\CX_nested_archive_and_database_entries.csv",
+  "policy": [
+    "record exact archive and entry paths first",
+    "do not dedupe during literal accounting",
+    "do not commit payload bodies before introspection and artifact policy"
+  ],
+  "entries": [
+    {
+      "archive": "CMPLX-1T-master.zip",
+      "entry": "CMPLX-1T-master/Wolfram study/CMPLX-Alpha-Housing.tar.gz",
+      "bytes": 30363871,
+      "compressed_bytes": 30363871,
+      "ext": ".gz",
+      "family": "CMPLX-1T nested archive",
+      "action": "defer_expand"
+    },
+    {
+      "archive": "CMPLX-1T-master.zip",
+      "entry": "CMPLX-1T-master/data/cmplx_training.db",
+      "bytes": 28377088,
+      "compressed_bytes": 5928681,
+      "ext": ".db",
+      "family": "CMPLX-1T database",
+      "action": "defer_schema_introspection"
+    },
+    {
+      "archive": "CMPLX-1T-master.zip",
+      "entry": "CMPLX-1T-master/data/document_corpus.db",
+      "bytes": 163840,
+      "compressed_bytes": 22506,
+      "ext": ".db",
+      "family": "CMPLX-1T database",
+      "action": "defer_schema_introspection"
+    },
+    {
+      "archive": "CMPLX-1T-master.zip",
+      "entry": "CMPLX-1T-master/data/simulation_results.db",
+      "bytes": 20480,
+      "compressed_bytes": 944,
+      "ext": ".db",
+      "family": "CMPLX-1T database",
+      "action": "defer_schema_introspection"
+    },
+    {
+      "archive": "CMPLX-1T-master.zip",
+      "entry": "CMPLX-1T-master/docs/1_intake/01-To-D-Active-Projects/scout-demo-service/.git.disabled-20260301-182415/objects/pack/pack-376e07fe151dbec80b81065d472171330a04e283.pack",
+      "bytes": 80744,
+      "compressed_bytes": 79663,
+      "ext": ".pack",
+      "family": "CMPLX-1T git pack",
+      "action": "metadata_only"
+    },
+    {
+      "archive": "CMPLX-1T-master.zip",
+      "entry": "CMPLX-1T-master/docs/3_staged/family_exemplar_starters/Family Builds-legacy/CQE_organized/cqe_organized-20251122T204620Z-1-001/cqe_organized/NESTED_ARCHIVES/117c9663e349__fixtures_embeddings__fake_embeddings.5d.txt.gz",
+      "bytes": 332,
+      "compressed_bytes": 332,
+      "ext": ".gz",
+      "family": "CMPLX-1T nested archive",
+      "action": "defer_expand"
+    },
+    {
+      "archive": "CMPLX-1T-master.zip",
+      "entry": "CMPLX-1T-master/docs/3_staged/family_exemplar_starters/Family Builds-legacy/CQE_organized/cqe_organized-20251122T204620Z-1-001/cqe_organized/NESTED_ARCHIVES/11f43e5fbd0a__tests_data__generator_pcg64_np121.pkl.gz",
+      "bytes": 203,
+      "compressed_bytes": 203,
+      "ext": ".gz",
+      "family": "CMPLX-1T nested archive",
+      "action": "defer_expand"
+    },
+    {
+      "archive": "CMPLX-1T-master.zip",
+      "entry": "CMPLX-1T-master/docs/3_staged/family_exemplar_starters/Family Builds-legacy/CQE_organized/cqe_organized-20251122T204620Z-1-001/cqe_organized/NESTED_ARCHIVES/156a9262a32d__fixtures_embeddings__glove.6B.100d.sample.txt.gz",
+      "bytes": 34314,
+      "compressed_bytes": 34314,
+      "ext": ".gz",
+      "family": "CMPLX-1T nested archive",
+      "action": "defer_expand"
+    },
+    {
+      "archive": "CMPLX-1T-master.zip",
+      "entry": "CMPLX-1T-master/docs/3_staged/family_exemplar_starters/Family Builds-legacy/CQE_organized/cqe_organized-20251122T204620Z-1-001/cqe_organized/NESTED_ARCHIVES/3156b5ca5172__tests_data__sfc64_np126.pkl.gz",
+      "bytes": 290,
+      "compressed_bytes": 290,
+      "ext": ".gz",
+      "family": "CMPLX-1T nested archive",
+      "action": "defer_expand"
+    },
+    {
+      "archive": "CMPLX-1T-master.zip",
+      "entry": "CMPLX-1T-master/docs/3_staged/family_exemplar_starters/Family Builds-legacy/CQE_organized/cqe_organized-20251122T204620Z-1-001/cqe_organized/NESTED_ARCHIVES/64de631f2f64__wikitables_dpd_output__nt-0.gz",
+      "bytes": 225,
+      "compressed_bytes": 225,
+      "ext": ".gz",
+      "family": "CMPLX-1T nested archive",
+      "action": "defer_expand"
+    },
+    {
+      "archive": "CMPLX-1T-master.zip",
+      "entry": "CMPLX-1T-master/docs/3_staged/family_exemplar_starters/Family Builds-legacy/CQE_organized/cqe_organized-20251122T204620Z-1-001/cqe_organized/NESTED_ARCHIVES/6d9503fda0bb__fixtures_data__triviaqa-sample.tgz",
+      "bytes": 207828,
+      "compressed_bytes": 207828,
+      "ext": ".tgz",
+      "family": "CMPLX-1T nested archive",
+      "action": "defer_expand"
+    },
+    {
+      "archive": "CMPLX-1T-master.zip",
+      "entry": "CMPLX-1T-master/docs/3_staged/family_exemplar_starters/Family Builds-legacy/CQE_organized/cqe_organized-20251122T204620Z-1-001/cqe_organized/NESTED_ARCHIVES/7cdf1d78d571__tests_data__generator_pcg64_np126.pkl.gz",
+      "bytes": 208,
+      "compressed_bytes": 208,
+      "ext": ".gz",
+      "family": "CMPLX-1T nested archive",
+      "action": "defer_expand"
+    },
+    {
+      "archive": "CMPLX-1T-master.zip",
+      "entry": "CMPLX-1T-master/docs/3_staged/family_exemplar_starters/Family Builds-legacy/CQE_organized/cqe_organized-20251122T204620Z-1-001/cqe_organized/NESTED_ARCHIVES/9f27b4a34967__fixtures_utf-8_sample__utf-8_sample.txt.gz",
+      "bytes": 6063,
+      "compressed_bytes": 6063,
+      "ext": ".gz",
+      "family": "CMPLX-1T nested archive",
+      "action": "defer_expand"
+    },
+    {
+      "archive": "CMPLX-1T-master.zip",
+      "entry": "CMPLX-1T-master/docs/3_staged/family_exemplar_starters/Family Builds-legacy/CQE_organized/cqe_organized-20251122T204620Z-1-001/cqe_organized/NESTED_ARCHIVES/a16e137c2e61__wikitables_dpd_output__nt-64.gz",
+      "bytes": 161,
+      "compressed_bytes": 161,
+      "ext": ".gz",
+      "family": "CMPLX-1T nested archive",
+      "action": "defer_expand"
+    },
+    {
+      "archive": "CMPLX-1T-master.zip",
+      "entry": "CMPLX-1T-master/docs/3_staged/family_exemplar_starters/Family Builds-legacy/CQE_organized/cqe_organized-20251122T204620Z-1-001/cqe_organized/NESTED_ARCHIVES/cd0000835c87__wikitables_dpd_output__nt-1.gz",
+      "bytes": 216,
+      "compressed_bytes": 216,
+      "ext": ".gz",
+      "family": "CMPLX-1T nested archive",
+      "action": "defer_expand"
+    },
+    {
+      "archive": "CMPLX-1T-master.zip",
+      "entry": "CMPLX-1T-master/docs/3_staged/family_exemplar_starters/Family Builds-legacy/CQE_organized/cqe_organized-20251122T204620Z-1-001/cqe_organized/NESTED_ARCHIVES/d1ecc9dc1e12__fixtures_embeddings__glove.6B.300d.sample.txt.gz",
+      "bytes": 98669,
+      "compressed_bytes": 98669,
+      "ext": ".gz",
+      "family": "CMPLX-1T nested archive",
+      "action": "defer_expand"
+    },
+    {
+      "archive": "CMPLX-main.zip",
+      "entry": "CMPLX-main/cmplx_submodules/CMPLX/core/mmdb/mmdb.sqlite3",
+      "bytes": 897024,
+      "compressed_bytes": 156504,
+      "ext": ".sqlite3",
+      "family": "MMDB",
+      "action": "defer_schema_introspection"
+    },
+    {
+      "archive": "CMPLX-main.zip",
+      "entry": "CMPLX-main/cmplx_submodules/CMPLX/core/src/cmplx/core/mmdb/databases/e8.db",
+      "bytes": 86016,
+      "compressed_bytes": 2102,
+      "ext": ".db",
+      "family": "E8 database",
+      "action": "defer_schema_introspection"
+    },
+    {
+      "archive": "CMPLX-main.zip",
+      "entry": "CMPLX-main/cmplx_submodules/CMPLX/core/src/mmdb/vector_store.db",
+      "bytes": 1843200,
+      "compressed_bytes": 114575,
+      "ext": ".db",
+      "family": "Vector store",
+      "action": "defer_schema_introspection"
+    },
+    {
+      "archive": "CMPLX-main.zip",
+      "entry": "CMPLX-main/cmplx_submodules/CMPLXUNI/mmdb/mmdb.sqlite3",
+      "bytes": 897024,
+      "compressed_bytes": 156504,
+      "ext": ".sqlite3",
+      "family": "MMDB",
+      "action": "defer_schema_introspection"
+    },
+    {
+      "archive": "CMPLX-main.zip",
+      "entry": "CMPLX-main/cmplx_submodules/CMPLXUNI/src/cmplx/core/mmdb/databases/e8.db",
+      "bytes": 86016,
+      "compressed_bytes": 2102,
+      "ext": ".db",
+      "family": "E8 database",
+      "action": "defer_schema_introspection"
+    },
+    {
+      "archive": "CMPLX-main.zip",
+      "entry": "CMPLX-main/cmplx_submodules/CMPLXUNI/src/mmdb/vector_store.db",
+      "bytes": 49152,
+      "compressed_bytes": 792,
+      "ext": ".db",
+      "family": "Vector store",
+      "action": "defer_schema_introspection"
+    },
+    {
+      "archive": "CMPLX-main.zip",
+      "entry": "CMPLX-main/core/mmdb/mmdb.sqlite3",
+      "bytes": 897024,
+      "compressed_bytes": 156504,
+      "ext": ".sqlite3",
+      "family": "MMDB",
+      "action": "defer_schema_introspection"
+    },
+    {
+      "archive": "CMPLX-main.zip",
+      "entry": "CMPLX-main/core/src/cmplx/core/mmdb/databases/e8.db",
+      "bytes": 86016,
+      "compressed_bytes": 2102,
+      "ext": ".db",
+      "family": "E8 database",
+      "action": "defer_schema_introspection"
+    },
+    {
+      "archive": "CMPLX-main.zip",
+      "entry": "CMPLX-main/core/src/mmdb/vector_store.db",
+      "bytes": 1843200,
+      "compressed_bytes": 114575,
+      "ext": ".db",
+      "family": "Vector store",
+      "action": "defer_schema_introspection"
+    },
+    {
+      "archive": "CMPLX-Manny-main.zip",
+      "entry": "CMPLX-Manny-main/Working Prototyping/db/ai_instructions/instruction_files.db",
+      "bytes": 86016,
+      "compressed_bytes": 1738,
+      "ext": ".db",
+      "family": "Manny instruction database",
+      "action": "defer_schema_introspection"
+    },
+    {
+      "archive": "CMPLX-Manny-main.zip",
+      "entry": "CMPLX-Manny-main/Working Prototyping/db/ai_memory/memory.db",
+      "bytes": 6270976,
+      "compressed_bytes": 1338978,
+      "ext": ".db",
+      "family": "Manny memory database",
+      "action": "defer_schema_introspection"
+    },
+    {
+      "archive": "CMPLX-PartsFactory-main (1).zip",
+      "entry": "CMPLX-PartsFactory-main/packages/lattice-forge/src/lattice_forge/ledger/data/cmplx_morphism_ledger_seed_v0_6.db",
+      "bytes": 5398528,
+      "compressed_bytes": 1138321,
+      "ext": ".db",
+      "family": "LatticeForge morphism ledger",
+      "action": "defer_schema_introspection"
+    },
+    {
+      "archive": "CMPLXUNI-main.zip",
+      "entry": "CMPLXUNI-main/mmdb/mmdb.sqlite3",
+      "bytes": 897024,
+      "compressed_bytes": 156504,
+      "ext": ".sqlite3",
+      "family": "MMDB",
+      "action": "defer_schema_introspection"
+    }
+  ],
+  "summary": {
+    "entry_count": 29,
+    "database_entries": 16,
+    "nested_archive_entries": 12,
+    "pack_entries": 1,
+    "total_declared_bytes": 78691748
+  }
+}

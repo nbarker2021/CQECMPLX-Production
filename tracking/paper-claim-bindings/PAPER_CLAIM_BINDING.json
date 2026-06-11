@@ -1,0 +1,95 @@
+{
+  "status": "initial_binding_scaffold",
+  "created": "2026-06-11",
+  "roots": [
+    {
+      "path": "D:\\CQE_CMPLX\\CQECMPLX-Production",
+      "role": "main local paper/proof body"
+    },
+    {
+      "path": "D:\\CQE_CMPLX\\CMPLX-Kernel\\kernel\\lib-forge",
+      "role": "kernel copy of lib-forge paper and summary material"
+    },
+    {
+      "path": "D:\\CQE_CMPLX\\CQECMPLX-AirLock",
+      "role": "lineage source for CQE engine, cqe-production, and ForgeFactory"
+    }
+  ],
+  "families": [
+    {
+      "id": "CQE-paper-00-through-32",
+      "production_evidence": [
+        "D:\\CQE_CMPLX\\CQECMPLX-Production\\papers\\CQE-paper-*",
+        "D:\\CQE_CMPLX\\CQECMPLX-Production\\PDF_MASTER"
+      ],
+      "kernel_evidence": [
+        "D:\\CQE_CMPLX\\CMPLX-Kernel\\kernel\\lib-forge\\papers_output\\CQE-paper-*.md"
+      ],
+      "airlock_evidence": [
+        "D:\\CQE_CMPLX\\CQECMPLX-AirLock\\cqe-production-v0.1\\papers"
+      ],
+      "next_action": "bind text-first and defer PDFs"
+    },
+    {
+      "id": "Paper-00-axioms-lemmas",
+      "production_evidence": [
+        "D:\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\cqe-paper-00__*"
+      ],
+      "kernel_evidence": [
+        "D:\\CQE_CMPLX\\CMPLX-Kernel\\kernel\\lib-forge\\cqe-paper-00__*"
+      ],
+      "airlock_evidence": [
+        "D:\\CQE_CMPLX\\CQECMPLX-AirLock\\cqe-production-v0.1\\papers\\01-CQE-formal\\FORMAL.md"
+      ],
+      "next_action": "compare variants"
+    },
+    {
+      "id": "Folded-Strand-Master-Paper",
+      "production_evidence": [
+        "D:\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\MASTER_PAPER_Folded_Strand.md"
+      ],
+      "kernel_evidence": [
+        "D:\\CQE_CMPLX\\CMPLX-Kernel\\kernel\\lib-forge\\MASTER_PAPER_Folded_Strand.md"
+      ],
+      "airlock_evidence": [],
+      "next_action": "compare hashes later"
+    },
+    {
+      "id": "Final-Formal-Paper",
+      "production_evidence": [
+        "D:\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\FINAL_FORMAL_PAPER.md"
+      ],
+      "kernel_evidence": [
+        "D:\\CQE_CMPLX\\CMPLX-Kernel\\kernel\\lib-forge\\FINAL_FORMAL_PAPER.md"
+      ],
+      "airlock_evidence": [],
+      "next_action": "compare hashes later"
+    },
+    {
+      "id": "MetaMaterial-Designer-Paper",
+      "production_evidence": [
+        "D:\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\meta_material_system\\META_MATERIAL_DESIGNER_PAPER.md"
+      ],
+      "kernel_evidence": [
+        "D:\\CQE_CMPLX\\CMPLX-Kernel\\kernel\\lib-forge\\meta_material_system\\META_MATERIAL_DESIGNER_PAPER.md"
+      ],
+      "airlock_evidence": [],
+      "next_action": "route through MetaMaterial package"
+    },
+    {
+      "id": "ForgeFactory-Paper-Tooling",
+      "production_evidence": [],
+      "kernel_evidence": [],
+      "airlock_evidence": [
+        "D:\\CQE_CMPLX\\CQECMPLX-AirLock\\forgefactory-v0.3-lineage-read\\ForgeFactory_v0_3\\docs\\PAPER_TOOLING_PLAN_v0_3.md"
+      ],
+      "next_action": "bind to AirLock lineage"
+    }
+  ],
+  "rules": [
+    "binding does not certify claims",
+    "text and receipt material before PDFs",
+    "superseded PDFs are lineage-only until explicitly cited",
+    "AirLock material is lineage/review evidence"
+  ]
+}

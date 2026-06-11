@@ -71,3 +71,8 @@ Coverage dashboard lives at `tracking/TRACKING_COVERAGE.md`.
 
 Lib-forge package split lives at
 `tracking/lib-forge-package-splits/LIB_FORGE_PACKAGE_SPLIT.md`.
+
+Payload ledger lives at `tracking/payload-ledger/PAYLOAD_LEDGER.md`.
+
+Paper claim binding lives at
+`tracking/paper-claim-bindings/PAPER_CLAIM_BINDING.md`.

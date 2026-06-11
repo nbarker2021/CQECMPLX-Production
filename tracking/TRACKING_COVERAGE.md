@@ -38,3 +38,7 @@ pieces needed before source movement:
 
 - `tracking/lib-forge-package-splits/LIB_FORGE_PACKAGE_SPLIT.md`
 - `tracking/lib-forge-package-splits/LIB_FORGE_PACKAGE_SPLIT.json`
+- `tracking/payload-ledger/PAYLOAD_LEDGER.md`
+- `tracking/payload-ledger/PAYLOAD_LEDGER.json`
+- `tracking/paper-claim-bindings/PAPER_CLAIM_BINDING.md`
+- `tracking/paper-claim-bindings/PAPER_CLAIM_BINDING.json`

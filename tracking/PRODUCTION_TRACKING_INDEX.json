@@ -159,5 +159,7 @@
   "source_bindings_dir": "tracking/source-bindings",
   "promotion_manifests_dir": "tracking/promotion-manifests",
   "coverage_dashboard": "tracking/TRACKING_COVERAGE.md",
-  "lib_forge_package_split": "tracking/lib-forge-package-splits/LIB_FORGE_PACKAGE_SPLIT.json"
+  "lib_forge_package_split": "tracking/lib-forge-package-splits/LIB_FORGE_PACKAGE_SPLIT.json",
+  "payload_ledger": "tracking/payload-ledger/PAYLOAD_LEDGER.json",
+  "paper_claim_binding": "tracking/paper-claim-bindings/PAPER_CLAIM_BINDING.json"
 }
