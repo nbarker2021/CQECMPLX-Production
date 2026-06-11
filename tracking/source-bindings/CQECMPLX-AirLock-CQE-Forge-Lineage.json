@@ -1,0 +1,20 @@
+{
+  "id": "CQECMPLX-AirLock-CQE-Forge-Lineage",
+  "route": ["production/airlock-reviewed", "production/lib-forge", "production/tool-families"],
+  "trackable_status": "trackable-airlock-lineage",
+  "source_roots": [
+    "D:\\CQE_CMPLX\\CQECMPLX-AirLock",
+    "D:\\CQE_CMPLX\\CQECMPLX-AirLock\\CQE-engine-mirror",
+    "D:\\CQE_CMPLX\\CQECMPLX-AirLock\\CQE-engine-v0.1",
+    "D:\\CQE_CMPLX\\CQECMPLX-AirLock\\cqe-production-v0.1",
+    "D:\\CQE_CMPLX\\CQECMPLX-AirLock\\forgefactory-v0.3-lineage-read"
+  ],
+  "evidence": [
+    "AirLock includes CQE engine mirror and CQE-engine-v0.1 source trees.",
+    "AirLock includes cqe-production-v0.1 with package metadata, lib-forge, papers, and tests.",
+    "AirLock includes ForgeFactory lineage material with docs, tests, examples, and LatticeForge integration notes.",
+    "AirLock also contains virtual environment and cache material that must not be promoted."
+  ],
+  "promotion_rule": "Promote lineage docs and reviewed source slices only. Exclude virtual environments, caches, bytecode, generated egg-info unless explicitly needed for package metadata comparison.",
+  "known_exclusions": [".venv", "__pycache__", ".pytest_cache", "*.pyc", "*.exe", "local lock/runtime artifacts"]
+}

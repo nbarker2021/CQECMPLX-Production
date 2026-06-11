@@ -1,0 +1,50 @@
+{
+  "id": "CQECMPLX-AirLock-CQE-Forge-Lineage",
+  "status": "manifest-ready-lineage-first",
+  "source_binding": "tracking/source-bindings/CQECMPLX-AirLock-CQE-Forge-Lineage.json",
+  "destination_routes": [
+    "production/airlock-reviewed",
+    "production/lib-forge",
+    "production/tool-families"
+  ],
+  "allowed_source_patterns": [
+    "D:\\CQE_CMPLX\\CQECMPLX-AirLock\\*.md",
+    "D:\\CQE_CMPLX\\CQECMPLX-AirLock\\*.txt",
+    "D:\\CQE_CMPLX\\CQECMPLX-AirLock\\CQE-engine-mirror\\*.py",
+    "D:\\CQE_CMPLX\\CQECMPLX-AirLock\\CQE-engine-v0.1\\*.py",
+    "D:\\CQE_CMPLX\\CQECMPLX-AirLock\\CQE-engine-v0.1\\cqe_engine\\*.py",
+    "D:\\CQE_CMPLX\\CQECMPLX-AirLock\\cqe-production-v0.1\\*.md",
+    "D:\\CQE_CMPLX\\CQECMPLX-AirLock\\cqe-production-v0.1\\*.toml",
+    "D:\\CQE_CMPLX\\CQECMPLX-AirLock\\cqe-production-v0.1\\*.txt",
+    "D:\\CQE_CMPLX\\CQECMPLX-AirLock\\cqe-production-v0.1\\Makefile",
+    "D:\\CQE_CMPLX\\CQECMPLX-AirLock\\cqe-production-v0.1\\compose\\*.md",
+    "D:\\CQE_CMPLX\\CQECMPLX-AirLock\\cqe-production-v0.1\\lib-forge\\**\\*.py",
+    "D:\\CQE_CMPLX\\CQECMPLX-AirLock\\cqe-production-v0.1\\papers\\**\\*.md",
+    "D:\\CQE_CMPLX\\CQECMPLX-AirLock\\cqe-production-v0.1\\tests\\*.py",
+    "D:\\CQE_CMPLX\\CQECMPLX-AirLock\\forgefactory-v0.3-lineage-read\\ForgeFactory_v0_3\\*.md",
+    "D:\\CQE_CMPLX\\CQECMPLX-AirLock\\forgefactory-v0.3-lineage-read\\ForgeFactory_v0_3\\*.toml",
+    "D:\\CQE_CMPLX\\CQECMPLX-AirLock\\forgefactory-v0.3-lineage-read\\ForgeFactory_v0_3\\docs\\*.md",
+    "D:\\CQE_CMPLX\\CQECMPLX-AirLock\\forgefactory-v0.3-lineage-read\\ForgeFactory_v0_3\\examples\\*.py",
+    "D:\\CQE_CMPLX\\CQECMPLX-AirLock\\forgefactory-v0.3-lineage-read\\ForgeFactory_v0_3\\tests\\*.py"
+  ],
+  "deferred_source_patterns": [
+    "D:\\CQE_CMPLX\\CQECMPLX-AirLock\\cqe-production-v0.1\\uv.lock",
+    "D:\\CQE_CMPLX\\CQECMPLX-AirLock\\cqe-production-v0.1\\requirements.lock",
+    "D:\\CQE_CMPLX\\CQECMPLX-AirLock\\forgefactory-v0.3-lineage-read\\ForgeFactory_v0_3\\data\\*.json"
+  ],
+  "excluded_patterns": [
+    "**\\.venv\\**",
+    "**\\__pycache__\\**",
+    "**\\.pytest_cache\\**",
+    "**\\*.pyc",
+    "**\\*.exe",
+    "**\\*.egg-info\\**"
+  ],
+  "promotion_gates": [
+    "lineage docs reviewed before source movement",
+    "CQE engine mirror compared to production cqe_engine",
+    "ForgeFactory lineage mapped to LatticeForge/ReForge family",
+    "virtual environment and cache exclusion verified"
+  ],
+  "notes": "AirLock is a lineage and review source, not a raw import source."
+}

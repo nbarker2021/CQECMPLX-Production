@@ -1,0 +1,40 @@
+{
+  "id": "CQECMPLX-MORSR-Pulse-Family",
+  "status": "manifest-staged-public-scaffold",
+  "source_binding": "tracking/source-bindings/CQECMPLX-MORSR-Pulse-Family.json",
+  "destination_routes": [
+    "production/diagnostics",
+    "production/lib-forge"
+  ],
+  "allowed_source_patterns": [
+    "D:\\CQE_CMPLX\\CMPLX-MORSR\\README.md",
+    "D:\\CQE_CMPLX\\CMPLX-MORSR\\00_state_and_manifest\\*.md",
+    "D:\\CQE_CMPLX\\CMPLX-MORSR\\00_state_and_manifest\\*.json",
+    "D:\\CQE_CMPLX\\CMPLX-MORSR\\01_umbrella_contract\\*.md",
+    "D:\\CQE_CMPLX\\CMPLX-MORSR\\02_engine_blueprint\\*.md",
+    "D:\\CQE_CMPLX\\CMPLX-MORSR\\03_honesty_ablation\\*.md",
+    "D:\\CQE_CMPLX\\CMPLX-MORSR\\04_integration\\*.md",
+    "D:\\CQE_CMPLX\\CMPLX-MORSR\\06_staging\\*.md",
+    "D:\\CQE_CMPLX\\CMPLX-MORSR\\06_staging\\*.jsonl",
+    "D:\\CQE_CMPLX\\CMPLX-MORSR\\07_cqe_layer\\*.md",
+    "D:\\CQE_CMPLX\\CMPLX-MORSR\\08_universal_adapters\\*.md",
+    "D:\\CQE_CMPLX\\CQE_MORSR\\README.md",
+    "D:\\CQE_CMPLX\\CQE_MORSR\\00_state_and_manifest\\*.md",
+    "D:\\CQE_CMPLX\\CQE_MORSR\\00_state_and_manifest\\*.json",
+    "D:\\CQE_CMPLX\\CQE_MORSR\\01_umbrella_contract\\*.md",
+    "D:\\CQE_CMPLX\\CQE_MORSR\\02_engine_blueprint\\*.md",
+    "D:\\CQE_CMPLX\\CQE_MORSR\\03_honesty_ablation\\*.json",
+    "D:\\CQE_CMPLX\\CQE_MORSR\\04_integration\\*.md",
+    "D:\\CQE_CMPLX\\CQE_MORSR\\06_staging\\*.md",
+    "D:\\CQE_CMPLX\\CQE_MORSR\\06_staging\\*.jsonl",
+    "D:\\CQE_CMPLX\\CQE_MORSR\\07_cqe_layer\\*.md",
+    "D:\\CQE_CMPLX\\CQE_MORSR\\08_universal_adapters\\*.md"
+  ],
+  "promotion_gates": [
+    "preserve as public scaffold until private MORSR source is supplied",
+    "Hidden Guess Result requirement present",
+    "CQE bridge and adapter handshakes present",
+    "do not finalize diagnostic semantics before later source arrives"
+  ],
+  "notes": "This records the visible scaffold without pretending it is the final MORSR implementation."
+}

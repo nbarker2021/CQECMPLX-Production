@@ -80,6 +80,12 @@
       "route": "production/tool-families",
       "source_binding": "tracking/source-bindings/CQECMPLX-TMN-Role-Family.json",
       "gate": "taxonomy_first_per_role_review_later"
+    },
+    {
+      "id": "CQECMPLX-AirLock-CQE-Forge-Lineage",
+      "route": "production/airlock-reviewed + production/lib-forge + production/tool-families",
+      "source_binding": "tracking/source-bindings/CQECMPLX-AirLock-CQE-Forge-Lineage.json",
+      "gate": "lineage_first_reviewed_source_only"
     }
   ],
   "near_candidates": [
@@ -97,6 +103,10 @@
     "CQECMPLX-MetaMaterial-Designer",
     "CQECMPLX-Payload-Ledger",
     "CQECMPLX-CMPLXNEXT-Orchestration",
-    "CQECMPLX-TMN-Role-Family"
+    "CQECMPLX-TMN-Role-Family",
+    "CQECMPLX-AirLock-CQE-Forge-Lineage",
+    "CQECMPLX-MORSR-Pulse-Family",
+    "CQECMPLX-Odysseus-MCP-Memory",
+    "CQECMPLX-Analog-Forge-Workbench"
   ]
 }

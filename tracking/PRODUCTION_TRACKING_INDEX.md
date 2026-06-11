@@ -32,6 +32,7 @@ The index tracks composites. It does not choose a winner among duplicates.
 | `CQECMPLX-Payload-Ledger` | `trackable-ledger` | payload metadata covers MMDB, E8 DBs, vector stores, Manny memory, morphism ledger, and nested archives | `production/payload-ledger` |
 | `CQECMPLX-CMPLXNEXT-Orchestration` | `trackable-profile-bound` | Monorepo profile exposes CMPLXNEXT storage, MCP agent net, IDE, and frontend bridge identities | `production/orchestration` |
 | `CQECMPLX-TMN-Role-Family` | `trackable-profile-bound` | TMN/TMN1 profiles expose named tool roles and family identities | `production/tool-families` |
+| `CQECMPLX-AirLock-CQE-Forge-Lineage` | `trackable-airlock-lineage` | AirLock contains CQE engine mirrors, cqe-production, ForgeFactory lineage, tests, and review docs | `production/airlock-reviewed` + `production/lib-forge` + `production/tool-families` |
 
 ## First Publishable Tracking Rule
 
@@ -65,3 +66,5 @@ Machine-readable records are in `tracking/POPULATION_QUEUE.json`.
 Source bindings live under `tracking/source-bindings/`.
 
 Promotion manifests live under `tracking/promotion-manifests/`.
+
+Coverage dashboard lives at `tracking/TRACKING_COVERAGE.md`.

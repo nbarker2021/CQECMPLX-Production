@@ -140,6 +140,12 @@
       "status": "trackable-profile-bound",
       "route": "production/tool-families",
       "source_binding": "tracking/source-bindings/CQECMPLX-TMN-Role-Family.json"
+    },
+    {
+      "id": "CQECMPLX-AirLock-CQE-Forge-Lineage",
+      "status": "trackable-airlock-lineage",
+      "route": "production/airlock-reviewed + production/lib-forge + production/tool-families",
+      "source_binding": "tracking/source-bindings/CQECMPLX-AirLock-CQE-Forge-Lineage.json"
     }
   ],
   "still_needed": [
@@ -151,5 +157,6 @@
   ],
   "population_queue": "tracking/POPULATION_QUEUE.json",
   "source_bindings_dir": "tracking/source-bindings",
-  "promotion_manifests_dir": "tracking/promotion-manifests"
+  "promotion_manifests_dir": "tracking/promotion-manifests",
+  "coverage_dashboard": "tracking/TRACKING_COVERAGE.md"
 }

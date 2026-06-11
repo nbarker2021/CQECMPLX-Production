@@ -1,0 +1,37 @@
+{
+  "id": "CQECMPLX-Analog-Forge-Workbench",
+  "status": "manifest-ready-package-first",
+  "source_binding": "tracking/source-bindings/CQECMPLX-Analog-Forge-Workbench.json",
+  "destination_routes": [
+    "production/tool-families",
+    "production/proof-receipts"
+  ],
+  "allowed_source_patterns": [
+    "D:\\CQE_CMPLX\\_analog_workbench\\ForgeFactory_AnalogWorkbench_Suite_v0_1\\README.md",
+    "D:\\CQE_CMPLX\\_analog_workbench\\ForgeFactory_AnalogWorkbench_Suite_v0_1\\pyproject.toml",
+    "D:\\CQE_CMPLX\\_analog_workbench\\ForgeFactory_AnalogWorkbench_Suite_v0_1\\docs\\*.md",
+    "D:\\CQE_CMPLX\\_analog_workbench\\ForgeFactory_AnalogWorkbench_Suite_v0_1\\examples\\*.py",
+    "D:\\CQE_CMPLX\\_analog_workbench\\ForgeFactory_AnalogWorkbench_Suite_v0_1\\sheets\\*.md",
+    "D:\\CQE_CMPLX\\_analog_workbench\\ForgeFactory_AnalogWorkbench_Suite_v0_1\\src\\forgefactory_analog_workbench\\*.py",
+    "D:\\CQE_CMPLX\\_analog_workbench\\ForgeFactory_AnalogWorkbench_Suite_v0_1\\tests\\*.py",
+    "D:\\CQE_CMPLX\\_analog_workbench\\ForgeFactory_AnalogWorkbench_Suite_v0_1\\data\\MANIFEST.json",
+    "D:\\CQE_CMPLX\\_analog_workbench\\ForgeFactory_AnalogWorkbench_Suite_v0_1\\data\\MANIFEST.csv"
+  ],
+  "deferred_source_patterns": [
+    "D:\\CQE_CMPLX\\_analog_workbench\\ForgeFactory_AnalogWorkbench_Suite_v0_1\\exports\\**",
+    "D:\\CQE_CMPLX\\_analog_workbench\\ForgeFactory_AnalogWorkbench_Suite_v0_1\\pdf\\*.pdf",
+    "D:\\CQE_CMPLX\\_analog_workbench\\ForgeFactory_AnalogWorkbench_Suite_v0_1\\notebooks\\*.ipynb"
+  ],
+  "excluded_patterns": [
+    "**\\__pycache__\\**",
+    "**\\.pytest_cache\\**",
+    "**\\*.pyc"
+  ],
+  "promotion_gates": [
+    "package metadata review",
+    "tests reviewed or run",
+    "generated exports separated from source",
+    "PDF promotion requires publication manifest"
+  ],
+  "notes": "This is a ForgeFactory tool package with receipts and workbook forms."
+}

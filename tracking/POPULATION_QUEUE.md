@@ -35,6 +35,7 @@ lineage visible.
 | `CQECMPLX-Payload-Ledger` | `production/payload-ledger` | metadata ledger for databases, nested archives, vector stores, and memory payloads | `tracking/source-bindings/CQECMPLX-Payload-Ledger.json` | commit metadata before any binary payload movement |
 | `CQECMPLX-CMPLXNEXT-Orchestration` | `production/orchestration` | monorepo profile shows CMPLXNEXT storage, MCP agent net, IDE, and frontend bridge identities | `tracking/source-bindings/CQECMPLX-CMPLXNEXT-Orchestration.json` | promote orchestration map before code |
 | `CQECMPLX-TMN-Role-Family` | `production/tool-families` | TMN/TMN1 expose role names and tool-family identities | `tracking/source-bindings/CQECMPLX-TMN-Role-Family.json` | promote role taxonomy before per-role code |
+| `CQECMPLX-AirLock-CQE-Forge-Lineage` | `production/airlock-reviewed` + `production/lib-forge` + `production/tool-families` | AirLock CQE engine, cqe-production, and ForgeFactory lineage source | `tracking/source-bindings/CQECMPLX-AirLock-CQE-Forge-Lineage.json` | promote lineage docs and reviewed source slices only |
 
 ## Near Candidates
 
@@ -69,6 +70,10 @@ First manifest-ready slices:
 - `CQECMPLX-Payload-Ledger`
 - `CQECMPLX-CMPLXNEXT-Orchestration`
 - `CQECMPLX-TMN-Role-Family`
+- `CQECMPLX-AirLock-CQE-Forge-Lineage`
+- `CQECMPLX-MORSR-Pulse-Family`
+- `CQECMPLX-Odysseus-MCP-Memory`
+- `CQECMPLX-Analog-Forge-Workbench`
 
 These manifests are allowed-path records. They do not copy source files by
 themselves.

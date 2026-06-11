@@ -1,0 +1,47 @@
+{
+  "id": "CQECMPLX-Odysseus-MCP-Memory",
+  "status": "manifest-staged-portability-review-required",
+  "source_binding": "tracking/source-bindings/CQECMPLX-Odysseus-MCP-Memory.json",
+  "destination_routes": [
+    "production/adapters",
+    "production/memory"
+  ],
+  "allowed_source_patterns": [
+    "D:\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\odysseus\\*.md",
+    "D:\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\odysseus\\*.toml",
+    "D:\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\odysseus\\*.txt",
+    "D:\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\odysseus\\*.json",
+    "D:\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\odysseus\\Dockerfile",
+    "D:\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\odysseus\\docker-compose*.yml",
+    "D:\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\odysseus\\core\\*.py",
+    "D:\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\odysseus\\mcp_servers\\*.py",
+    "D:\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\odysseus\\routes\\mcp_routes.py",
+    "D:\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\odysseus\\routes\\memory_routes.py",
+    "D:\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\odysseus\\src\\*.py",
+    "D:\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\odysseus\\tests\\test_mcp*.py",
+    "D:\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\odysseus\\tests\\test_memory*.py"
+  ],
+  "deferred_source_patterns": [
+    "D:\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\odysseus\\docs\\*.gif",
+    "D:\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\odysseus\\docs\\*.webm",
+    "D:\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\odysseus\\data\\*.json"
+  ],
+  "excluded_patterns": [
+    "**\\.env",
+    "**\\.env.*",
+    "**\\data\\*.db",
+    "**\\data\\logs\\**",
+    "**\\__pycache__\\**",
+    "**\\.pytest_cache\\**",
+    "**\\node_modules\\**",
+    "**\\*.pyc"
+  ],
+  "promotion_gates": [
+    "secret and .env review",
+    "data persistence review",
+    "MCP adapter boundary review",
+    "memory isolation and tenant-scope review",
+    "Docker compose boundary review"
+  ],
+  "notes": "This is a large app surface. It should be promoted as adapter and memory modules, not wholesale."
+}
