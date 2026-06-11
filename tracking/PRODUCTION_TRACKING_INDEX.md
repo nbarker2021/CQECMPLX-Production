@@ -68,3 +68,6 @@ Source bindings live under `tracking/source-bindings/`.
 Promotion manifests live under `tracking/promotion-manifests/`.
 
 Coverage dashboard lives at `tracking/TRACKING_COVERAGE.md`.
+
+Lib-forge package split lives at
+`tracking/lib-forge-package-splits/LIB_FORGE_PACKAGE_SPLIT.md`.

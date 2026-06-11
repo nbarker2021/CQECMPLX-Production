@@ -158,5 +158,6 @@
   "population_queue": "tracking/POPULATION_QUEUE.json",
   "source_bindings_dir": "tracking/source-bindings",
   "promotion_manifests_dir": "tracking/promotion-manifests",
-  "coverage_dashboard": "tracking/TRACKING_COVERAGE.md"
+  "coverage_dashboard": "tracking/TRACKING_COVERAGE.md",
+  "lib_forge_package_split": "tracking/lib-forge-package-splits/LIB_FORGE_PACKAGE_SPLIT.json"
 }

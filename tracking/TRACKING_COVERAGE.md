@@ -17,7 +17,7 @@ pieces needed before source movement:
 | `CQECMPLX-Analog-Forge-Workbench` | yes | yes | yes |
 | `CQECMPLX-CMPLXNEXT-Orchestration` | yes | yes | yes |
 | `CQECMPLX-Docker-Compose-Boundary` | yes | yes | yes |
-| `CQECMPLX-LibForge-Lattice-ReForge-Ring` | yes | yes | partial |
+| `CQECMPLX-LibForge-Lattice-ReForge-Ring` | yes | yes | split started |
 | `CQECMPLX-MetaMaterial-Designer` | yes | yes | yes |
 | `CQECMPLX-MORSR-Pulse-Family` | yes | yes | yes |
 | `CQECMPLX-NVEST-EG8-Gate` | yes | yes | yes |
@@ -30,7 +30,11 @@ pieces needed before source movement:
 
 ## Still Needed
 
-1. Package-family split under `CQECMPLX-LibForge-Lattice-ReForge-Ring`.
-2. Exact payload ledger body generated from accounting CSV/JSON.
-3. Paper-claim binding from Production, AirLock, and Kernel roots.
-4. First actual source promotion slice after the above management records are complete.
+1. Exact payload ledger body generated from accounting CSV/JSON.
+2. Paper-claim binding from Production, AirLock, and Kernel roots.
+3. First actual source promotion slice after the above management records are complete.
+
+## Split Ledgers
+
+- `tracking/lib-forge-package-splits/LIB_FORGE_PACKAGE_SPLIT.md`
+- `tracking/lib-forge-package-splits/LIB_FORGE_PACKAGE_SPLIT.json`

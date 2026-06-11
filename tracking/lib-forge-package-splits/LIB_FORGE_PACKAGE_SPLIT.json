@@ -1,0 +1,143 @@
+{
+  "id": "CQECMPLX-LibForge-Lattice-ReForge-Ring",
+  "status": "package_family_split_started",
+  "source_binding": "tracking/source-bindings/CQECMPLX-LibForge-Lattice-ReForge-Ring.json",
+  "promotion_manifest": "tracking/promotion-manifests/CQECMPLX-LibForge-Lattice-ReForge-Ring.manifest.json",
+  "families": [
+    {
+      "id": "LatticeForge-Core",
+      "status": "primary_package_candidate",
+      "source_roots": [
+        "D:\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\lattice_forge_src",
+        "D:\\CQE_CMPLX\\CMPLX-PartsFactory-main\\packages\\lattice-forge"
+      ],
+      "signals": [
+        "forge.py",
+        "honesty_harness.py",
+        "tools/morsr.py",
+        "tools/receipt.py",
+        "cqe/sidecar.py",
+        "ledger",
+        "witness",
+        "backwalk",
+        "Rule30 and decomposition modules"
+      ],
+      "deferred_payloads": [
+        "ledger/data/cmplx_morphism_ledger_seed_v0_6.db"
+      ],
+      "next_gate": "split source code from ledger payload and generated data"
+    },
+    {
+      "id": "Kernel-Ring",
+      "status": "primary_handshake_candidate",
+      "source_roots": [
+        "D:\\CQE_CMPLX\\CMPLX-Kernel\\kernel_ring"
+      ],
+      "signals": [
+        "KERNEL_RING_MANIFEST.json",
+        "lattice_kernel/HANDSHAKE.md",
+        "lib_kernel/HANDSHAKE.md",
+        "reforge_kernel/HANDSHAKE.md",
+        "FORM_INDEX.json files"
+      ],
+      "next_gate": "bind ring handshakes to kernel runtime and adapter contracts"
+    },
+    {
+      "id": "ChromaForge",
+      "status": "package_candidate",
+      "source_roots": [
+        "D:\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\ChromaForge"
+      ],
+      "signals": [
+        "mmdb.py",
+        "receipt.py",
+        "mdhg.py",
+        "speedlight.py",
+        "tarpit.py",
+        "snap.py",
+        "conservation.py"
+      ],
+      "next_gate": "review MMDB and receipt boundaries"
+    },
+    {
+      "id": "GraphStax",
+      "status": "package_candidate",
+      "source_roots": [
+        "D:\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\GraphStax"
+      ],
+      "signals": [
+        "permforge.py",
+        "rule30.py",
+        "stax.py",
+        "agrm.py"
+      ],
+      "next_gate": "bind graph/permutation role to CQE tool-family route"
+    },
+    {
+      "id": "PixelForge",
+      "status": "package_candidate",
+      "source_roots": [
+        "D:\\CQE_CMPLX\\CMPLX-Kernel\\lib-forge\\PixelForge",
+        "D:\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\PixelForge"
+      ],
+      "signals": [
+        "frame.py",
+        "ink.py",
+        "projection.py",
+        "surface.py"
+      ],
+      "next_gate": "resolve duplicate source roots and bind visual/projection outputs"
+    },
+    {
+      "id": "CQE-Engine-And-Shared-Memory",
+      "status": "core_library_candidate",
+      "source_roots": [
+        "D:\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\cqe_engine",
+        "D:\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\cqe_shared_memory",
+        "D:\\CQE_CMPLX\\CQECMPLX-AirLock\\cqe-production-v0.1\\lib-forge\\cqe_engine",
+        "D:\\CQE_CMPLX\\CQECMPLX-AirLock\\cqe-production-v0.1\\lib-forge\\cqe_shared_memory"
+      ],
+      "signals": [
+        "paper.py",
+        "registry.py",
+        "transport.py",
+        "ribbon.py",
+        "memory.py",
+        "jacobian.py"
+      ],
+      "next_gate": "compare production and AirLock variants into one composite form"
+    },
+    {
+      "id": "MetaMaterial-Designer",
+      "status": "tracked_elsewhere",
+      "tracking": "tracking/source-bindings/CQECMPLX-MetaMaterial-Designer.json"
+    },
+    {
+      "id": "Odysseus-MCP-Memory",
+      "status": "tracked_elsewhere",
+      "tracking": "tracking/source-bindings/CQECMPLX-Odysseus-MCP-Memory.json"
+    },
+    {
+      "id": "Analog-Forge-Workbench",
+      "status": "tracked_elsewhere",
+      "tracking": "tracking/source-bindings/CQECMPLX-Analog-Forge-Workbench.json"
+    },
+    {
+      "id": "Papers-And-Summaries",
+      "status": "generated_or_publication_material",
+      "source_roots": [
+        "D:\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\papers_output",
+        "D:\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\summary_papers",
+        "D:\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\MASTER_PDF"
+      ],
+      "next_gate": "route through Paper-Proof-Bundle or separate publication manifest"
+    }
+  ],
+  "global_exclusions": [
+    "__pycache__",
+    ".pytest_cache",
+    "*.pyc",
+    "generated binary outputs unless manifest-bound",
+    "database payloads until payload ledger expansion"
+  ]
+}
