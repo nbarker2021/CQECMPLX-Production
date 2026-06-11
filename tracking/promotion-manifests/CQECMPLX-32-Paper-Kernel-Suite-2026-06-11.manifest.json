@@ -1,0 +1,42 @@
+{
+  "artifact": "CQECMPLX 32-Paper Kernel Suite",
+  "date": "2026-06-11",
+  "status": "production-tracked structural kernel pass",
+  "active_window_model": {
+    "paper_00": "outside active windows; inherited past-burden minimum information contract",
+    "active_papers": "CQE-paper-01 through CQE-paper-32",
+    "blocks": [
+      "block-00-papers-01-08",
+      "block-01-papers-09-16",
+      "block-02-papers-17-24",
+      "block-03-papers-25-32"
+    ],
+    "global_wrap": "CQE-paper-32 -> CQE-paper-01"
+  },
+  "required_components_per_paper": [
+    "claims",
+    "math",
+    "formal_algebra_calculus",
+    "hand_work",
+    "code_rebuild",
+    "lib_bindings",
+    "tests_and_receipts",
+    "deployment_kernel"
+  ],
+  "entrypoints": [
+    "production/paper-kernels/PAPER_KERNEL_REGISTRY.json",
+    "production/paper-kernels/tools/build_paper_kernel_registry.py",
+    "production/paper-kernels/tools/run_paper_kernel_suite.py",
+    "production/paper-kernels/receipts/suite_receipt.json"
+  ],
+  "validation": {
+    "json_parse": "pass",
+    "suite_training_mode_receipt": "32 pass / 0 needs-work",
+    "block_training_mode_receipts": "4 blocks pass / 0 needs-work"
+  },
+  "notes": [
+    "This pass corrects the suite from a 00-31 window model to a 01-32 active window model.",
+    "Paper 00 remains source-bound and referenced as the contract, but is not one of the four active 8-paper windows.",
+    "Many papers after Paper 05 lack optional run.py files; the structural kernel records that as optional executable expansion work rather than blocking the paper-kernel pass."
+  ]
+}

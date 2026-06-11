@@ -264,8 +264,9 @@ def block_markdown(registry: dict, block: dict) -> str:
         f"Range: `{block['start']}` through `{block['end']}`\n\n"
         f"Block neighbors: `{block['previous_block']}` -> `{block['id']}` -> `{block['next_block']}`\n\n"
         "This block is one of the four required 8-paper sets. Its local wrap test moves "
-        f"from `{block['end']}` back to `{block['start']}` while the master suite keeps "
-        "the global Paper 31 -> Paper 00 wrap.\n\n"
+        f"from `{block['end']}` back to `{block['start']}` while the active master suite "
+        "keeps the global Paper 32 -> Paper 01 wrap. Paper 00 remains outside that "
+        "active wrap as the inherited minimum information contract.\n\n"
         "## Paper Set\n\n"
         + "\n".join(paper_lines)
         + "\n\n## Required Completion Pass\n\n"
@@ -295,7 +296,17 @@ def write_outputs(repo_root: Path, registry: dict) -> None:
         "Paper 00 is outside the active windows. It is the past burden: the minimum "
         "information contract and method requirement inherited by every active paper.\n\n"
         "Primary registry: `PAPER_KERNEL_REGISTRY.json`.\n\n"
-        "Block manifests live under `blocks/`; per-paper kernels live under `papers/`.\n",
+        "Block manifests live under `blocks/`; per-paper kernels live under `papers/`.\n\n"
+        "## Run Selectors\n\n"
+        "Use `tools/run_paper_kernel_suite.py` to validate a single paper, one 8-paper block, "
+        "or the full active suite:\n\n"
+        "```bash\n"
+        "python production/paper-kernels/tools/run_paper_kernel_suite.py --selector CQE-paper-01 --training-mode --write-receipt\n"
+        "python production/paper-kernels/tools/run_paper_kernel_suite.py --selector block-00-papers-01-08 --training-mode --write-receipt\n"
+        "python production/paper-kernels/tools/run_paper_kernel_suite.py --selector suite --training-mode --write-receipt\n"
+        "```\n\n"
+        "The runner treats Paper 00 as the inherited contract and does not include it in "
+        "the active paper windows.\n",
         encoding="utf-8",
     )
     (out / "PAPER_KERNEL_COMPONENT_SCHEMA.md").write_text(

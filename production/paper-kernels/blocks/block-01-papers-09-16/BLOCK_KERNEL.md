@@ -4,7 +4,7 @@ Range: `CQE-paper-09` through `CQE-paper-16`
 
 Block neighbors: `block-00-papers-01-08` -> `block-01-papers-09-16` -> `block-02-papers-17-24`
 
-This block is one of the four required 8-paper sets. Its local wrap test moves from `CQE-paper-16` back to `CQE-paper-09` while the master suite keeps the global Paper 31 -> Paper 00 wrap.
+This block is one of the four required 8-paper sets. Its local wrap test moves from `CQE-paper-16` back to `CQE-paper-09` while the active master suite keeps the global Paper 32 -> Paper 01 wrap. Paper 00 remains outside that active wrap as the inherited minimum information contract.
 
 ## Paper Set
 

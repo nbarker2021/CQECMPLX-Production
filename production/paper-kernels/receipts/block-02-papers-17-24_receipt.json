@@ -1,0 +1,173 @@
+{
+  "suite": "CQECMPLX 32-Paper Kernel Suite",
+  "selector": "block-02-papers-17-24",
+  "generated_at_utc": "2026-06-11T20:44:56.637814+00:00",
+  "paper_00_contract": "CQE-paper-00",
+  "paper_00_role": "past_burden_minimum_information_contract",
+  "training_mode": true,
+  "selected_count": 8,
+  "pass_count": 8,
+  "needs_work_count": 0,
+  "results": [
+    {
+      "paper": "CQE-paper-17",
+      "title": "E6-E8 Error-Correction Tower",
+      "block": "block-02-papers-17-24",
+      "component_count": 8,
+      "component_ok": true,
+      "required_sources_missing": [],
+      "optional_sources_missing": [
+        "tool_runner"
+      ],
+      "kernel_file_present": true,
+      "manifest_file_present": true,
+      "suite_previous": "CQE-paper-16",
+      "suite_next": "CQE-paper-18",
+      "block_previous": "CQE-paper-24",
+      "block_next": "CQE-paper-18",
+      "hidden_guess_ready": true,
+      "training_mode": true,
+      "status": "pass"
+    },
+    {
+      "paper": "CQE-paper-18",
+      "title": "VOA/Moonshine Representation Routes",
+      "block": "block-02-papers-17-24",
+      "component_count": 8,
+      "component_ok": true,
+      "required_sources_missing": [],
+      "optional_sources_missing": [
+        "tool_runner"
+      ],
+      "kernel_file_present": true,
+      "manifest_file_present": true,
+      "suite_previous": "CQE-paper-17",
+      "suite_next": "CQE-paper-19",
+      "block_previous": "CQE-paper-17",
+      "block_next": "CQE-paper-19",
+      "hidden_guess_ready": true,
+      "training_mode": true,
+      "status": "pass"
+    },
+    {
+      "paper": "CQE-paper-19",
+      "title": "Observer Face-Selection",
+      "block": "block-02-papers-17-24",
+      "component_count": 8,
+      "component_ok": true,
+      "required_sources_missing": [],
+      "optional_sources_missing": [
+        "tool_runner"
+      ],
+      "kernel_file_present": true,
+      "manifest_file_present": true,
+      "suite_previous": "CQE-paper-18",
+      "suite_next": "CQE-paper-20",
+      "block_previous": "CQE-paper-18",
+      "block_next": "CQE-paper-20",
+      "hidden_guess_ready": true,
+      "training_mode": true,
+      "status": "pass"
+    },
+    {
+      "paper": "CQE-paper-20",
+      "title": "Layer-2 Synthesis Ledger",
+      "block": "block-02-papers-17-24",
+      "component_count": 8,
+      "component_ok": true,
+      "required_sources_missing": [],
+      "optional_sources_missing": [
+        "tool_runner"
+      ],
+      "kernel_file_present": true,
+      "manifest_file_present": true,
+      "suite_previous": "CQE-paper-19",
+      "suite_next": "CQE-paper-21",
+      "block_previous": "CQE-paper-19",
+      "block_next": "CQE-paper-21",
+      "hidden_guess_ready": true,
+      "training_mode": true,
+      "status": "pass"
+    },
+    {
+      "paper": "CQE-paper-21",
+      "title": "MorphForge / PolyForge / MorphoniX",
+      "block": "block-02-papers-17-24",
+      "component_count": 8,
+      "component_ok": true,
+      "required_sources_missing": [],
+      "optional_sources_missing": [
+        "tool_runner"
+      ],
+      "kernel_file_present": true,
+      "manifest_file_present": true,
+      "suite_previous": "CQE-paper-20",
+      "suite_next": "CQE-paper-22",
+      "block_previous": "CQE-paper-20",
+      "block_next": "CQE-paper-22",
+      "hidden_guess_ready": true,
+      "training_mode": true,
+      "status": "pass"
+    },
+    {
+      "paper": "CQE-paper-22",
+      "title": "MetaForge Applied Materials",
+      "block": "block-02-papers-17-24",
+      "component_count": 8,
+      "component_ok": true,
+      "required_sources_missing": [],
+      "optional_sources_missing": [
+        "tool_runner"
+      ],
+      "kernel_file_present": true,
+      "manifest_file_present": true,
+      "suite_previous": "CQE-paper-21",
+      "suite_next": "CQE-paper-23",
+      "block_previous": "CQE-paper-21",
+      "block_next": "CQE-paper-23",
+      "hidden_guess_ready": true,
+      "training_mode": true,
+      "status": "pass"
+    },
+    {
+      "paper": "CQE-paper-23",
+      "title": "FoldForge Protein Folding",
+      "block": "block-02-papers-17-24",
+      "component_count": 8,
+      "component_ok": true,
+      "required_sources_missing": [],
+      "optional_sources_missing": [
+        "tool_runner"
+      ],
+      "kernel_file_present": true,
+      "manifest_file_present": true,
+      "suite_previous": "CQE-paper-22",
+      "suite_next": "CQE-paper-24",
+      "block_previous": "CQE-paper-22",
+      "block_next": "CQE-paper-24",
+      "hidden_guess_ready": true,
+      "training_mode": true,
+      "status": "pass"
+    },
+    {
+      "paper": "CQE-paper-24",
+      "title": "KnightForge / N-Dimensional Chess Automata",
+      "block": "block-02-papers-17-24",
+      "component_count": 8,
+      "component_ok": true,
+      "required_sources_missing": [],
+      "optional_sources_missing": [
+        "tool_runner"
+      ],
+      "kernel_file_present": true,
+      "manifest_file_present": true,
+      "suite_previous": "CQE-paper-23",
+      "suite_next": "CQE-paper-25",
+      "block_previous": "CQE-paper-23",
+      "block_next": "CQE-paper-17",
+      "hidden_guess_ready": true,
+      "training_mode": true,
+      "status": "pass"
+    }
+  ]
+}

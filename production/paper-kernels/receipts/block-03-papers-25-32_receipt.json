@@ -1,0 +1,173 @@
+{
+  "suite": "CQECMPLX 32-Paper Kernel Suite",
+  "selector": "block-03-papers-25-32",
+  "generated_at_utc": "2026-06-11T20:44:56.764722+00:00",
+  "paper_00_contract": "CQE-paper-00",
+  "paper_00_role": "past_burden_minimum_information_contract",
+  "training_mode": true,
+  "selected_count": 8,
+  "pass_count": 8,
+  "needs_work_count": 0,
+  "results": [
+    {
+      "paper": "CQE-paper-25",
+      "title": "Energetic Traversal Maps",
+      "block": "block-03-papers-25-32",
+      "component_count": 8,
+      "component_ok": true,
+      "required_sources_missing": [],
+      "optional_sources_missing": [
+        "tool_runner"
+      ],
+      "kernel_file_present": true,
+      "manifest_file_present": true,
+      "suite_previous": "CQE-paper-24",
+      "suite_next": "CQE-paper-26",
+      "block_previous": "CQE-paper-32",
+      "block_next": "CQE-paper-26",
+      "hidden_guess_ready": true,
+      "training_mode": true,
+      "status": "pass"
+    },
+    {
+      "paper": "CQE-paper-26",
+      "title": "Z-Pinch and Shear Horizon",
+      "block": "block-03-papers-25-32",
+      "component_count": 8,
+      "component_ok": true,
+      "required_sources_missing": [],
+      "optional_sources_missing": [
+        "tool_runner"
+      ],
+      "kernel_file_present": true,
+      "manifest_file_present": true,
+      "suite_previous": "CQE-paper-25",
+      "suite_next": "CQE-paper-27",
+      "block_previous": "CQE-paper-25",
+      "block_next": "CQE-paper-27",
+      "hidden_guess_ready": true,
+      "training_mode": true,
+      "status": "pass"
+    },
+    {
+      "paper": "CQE-paper-27",
+      "title": "Observer Delay and Shared Reality",
+      "block": "block-03-papers-25-32",
+      "component_count": 8,
+      "component_ok": true,
+      "required_sources_missing": [],
+      "optional_sources_missing": [
+        "tool_runner"
+      ],
+      "kernel_file_present": true,
+      "manifest_file_present": true,
+      "suite_previous": "CQE-paper-26",
+      "suite_next": "CQE-paper-28",
+      "block_previous": "CQE-paper-26",
+      "block_next": "CQE-paper-28",
+      "hidden_guess_ready": true,
+      "training_mode": true,
+      "status": "pass"
+    },
+    {
+      "paper": "CQE-paper-28",
+      "title": "N-Dimensional Game Lattices",
+      "block": "block-03-papers-25-32",
+      "component_count": 8,
+      "component_ok": true,
+      "required_sources_missing": [],
+      "optional_sources_missing": [
+        "tool_runner"
+      ],
+      "kernel_file_present": true,
+      "manifest_file_present": true,
+      "suite_previous": "CQE-paper-27",
+      "suite_next": "CQE-paper-29",
+      "block_previous": "CQE-paper-27",
+      "block_next": "CQE-paper-29",
+      "hidden_guess_ready": true,
+      "training_mode": true,
+      "status": "pass"
+    },
+    {
+      "paper": "CQE-paper-29",
+      "title": "Monster/Universal Energy-Bound Hypotheses",
+      "block": "block-03-papers-25-32",
+      "component_count": 8,
+      "component_ok": true,
+      "required_sources_missing": [],
+      "optional_sources_missing": [
+        "tool_runner"
+      ],
+      "kernel_file_present": true,
+      "manifest_file_present": true,
+      "suite_previous": "CQE-paper-28",
+      "suite_next": "CQE-paper-30",
+      "block_previous": "CQE-paper-28",
+      "block_next": "CQE-paper-30",
+      "hidden_guess_ready": true,
+      "training_mode": true,
+      "status": "pass"
+    },
+    {
+      "paper": "CQE-paper-30",
+      "title": "Grand Ribbon Meta-Framer",
+      "block": "block-03-papers-25-32",
+      "component_count": 8,
+      "component_ok": true,
+      "required_sources_missing": [],
+      "optional_sources_missing": [
+        "tool_runner"
+      ],
+      "kernel_file_present": true,
+      "manifest_file_present": true,
+      "suite_previous": "CQE-paper-29",
+      "suite_next": "CQE-paper-31",
+      "block_previous": "CQE-paper-29",
+      "block_next": "CQE-paper-31",
+      "hidden_guess_ready": true,
+      "training_mode": true,
+      "status": "pass"
+    },
+    {
+      "paper": "CQE-paper-31",
+      "title": "It Was Still Just LCR",
+      "block": "block-03-papers-25-32",
+      "component_count": 8,
+      "component_ok": true,
+      "required_sources_missing": [],
+      "optional_sources_missing": [
+        "tool_runner"
+      ],
+      "kernel_file_present": true,
+      "manifest_file_present": true,
+      "suite_previous": "CQE-paper-30",
+      "suite_next": "CQE-paper-32",
+      "block_previous": "CQE-paper-30",
+      "block_next": "CQE-paper-32",
+      "hidden_guess_ready": true,
+      "training_mode": true,
+      "status": "pass"
+    },
+    {
+      "paper": "CQE-paper-32",
+      "title": "The Supervisor Cursor",
+      "block": "block-03-papers-25-32",
+      "component_count": 8,
+      "component_ok": true,
+      "required_sources_missing": [],
+      "optional_sources_missing": [
+        "tool_runner"
+      ],
+      "kernel_file_present": true,
+      "manifest_file_present": true,
+      "suite_previous": "CQE-paper-31",
+      "suite_next": "CQE-paper-01",
+      "block_previous": "CQE-paper-31",
+      "block_next": "CQE-paper-25",
+      "hidden_guess_ready": true,
+      "training_mode": true,
+      "status": "pass"
+    }
+  ]
+}

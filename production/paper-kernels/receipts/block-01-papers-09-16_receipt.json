@@ -1,0 +1,173 @@
+{
+  "suite": "CQECMPLX 32-Paper Kernel Suite",
+  "selector": "block-01-papers-09-16",
+  "generated_at_utc": "2026-06-11T20:44:56.517210+00:00",
+  "paper_00_contract": "CQE-paper-00",
+  "paper_00_role": "past_burden_minimum_information_contract",
+  "training_mode": true,
+  "selected_count": 8,
+  "pass_count": 8,
+  "needs_work_count": 0,
+  "results": [
+    {
+      "paper": "CQE-paper-09",
+      "title": "Hamiltonian Temporal Emergence",
+      "block": "block-01-papers-09-16",
+      "component_count": 8,
+      "component_ok": true,
+      "required_sources_missing": [],
+      "optional_sources_missing": [
+        "tool_runner"
+      ],
+      "kernel_file_present": true,
+      "manifest_file_present": true,
+      "suite_previous": "CQE-paper-08",
+      "suite_next": "CQE-paper-10",
+      "block_previous": "CQE-paper-16",
+      "block_next": "CQE-paper-10",
+      "hidden_guess_ready": true,
+      "training_mode": true,
+      "status": "pass"
+    },
+    {
+      "paper": "CQE-paper-10",
+      "title": "T10 Master Receipt",
+      "block": "block-01-papers-09-16",
+      "component_count": 8,
+      "component_ok": true,
+      "required_sources_missing": [],
+      "optional_sources_missing": [
+        "tool_runner"
+      ],
+      "kernel_file_present": true,
+      "manifest_file_present": true,
+      "suite_previous": "CQE-paper-09",
+      "suite_next": "CQE-paper-11",
+      "block_previous": "CQE-paper-09",
+      "block_next": "CQE-paper-11",
+      "hidden_guess_ready": true,
+      "training_mode": true,
+      "status": "pass"
+    },
+    {
+      "paper": "CQE-paper-11",
+      "title": "Theory Admission Gate",
+      "block": "block-01-papers-09-16",
+      "component_count": 8,
+      "component_ok": true,
+      "required_sources_missing": [],
+      "optional_sources_missing": [
+        "tool_runner"
+      ],
+      "kernel_file_present": true,
+      "manifest_file_present": true,
+      "suite_previous": "CQE-paper-10",
+      "suite_next": "CQE-paper-12",
+      "block_previous": "CQE-paper-10",
+      "block_next": "CQE-paper-12",
+      "hidden_guess_ready": true,
+      "training_mode": true,
+      "status": "pass"
+    },
+    {
+      "paper": "CQE-paper-12",
+      "title": "CA Prediction Surface",
+      "block": "block-01-papers-09-16",
+      "component_count": 8,
+      "component_ok": true,
+      "required_sources_missing": [],
+      "optional_sources_missing": [
+        "tool_runner"
+      ],
+      "kernel_file_present": true,
+      "manifest_file_present": true,
+      "suite_previous": "CQE-paper-11",
+      "suite_next": "CQE-paper-13",
+      "block_previous": "CQE-paper-11",
+      "block_next": "CQE-paper-13",
+      "hidden_guess_ready": true,
+      "training_mode": true,
+      "status": "pass"
+    },
+    {
+      "paper": "CQE-paper-13",
+      "title": "Standard-Model Quark-Face Transport",
+      "block": "block-01-papers-09-16",
+      "component_count": 8,
+      "component_ok": true,
+      "required_sources_missing": [],
+      "optional_sources_missing": [
+        "tool_runner"
+      ],
+      "kernel_file_present": true,
+      "manifest_file_present": true,
+      "suite_previous": "CQE-paper-12",
+      "suite_next": "CQE-paper-14",
+      "block_previous": "CQE-paper-12",
+      "block_next": "CQE-paper-14",
+      "hidden_guess_ready": true,
+      "training_mode": true,
+      "status": "pass"
+    },
+    {
+      "paper": "CQE-paper-14",
+      "title": "GR Boundary-Repair Curvature",
+      "block": "block-01-papers-09-16",
+      "component_count": 8,
+      "component_ok": true,
+      "required_sources_missing": [],
+      "optional_sources_missing": [
+        "tool_runner"
+      ],
+      "kernel_file_present": true,
+      "manifest_file_present": true,
+      "suite_previous": "CQE-paper-13",
+      "suite_next": "CQE-paper-15",
+      "block_previous": "CQE-paper-13",
+      "block_next": "CQE-paper-15",
+      "hidden_guess_ready": true,
+      "training_mode": true,
+      "status": "pass"
+    },
+    {
+      "paper": "CQE-paper-15",
+      "title": "QFT/Higgs Mass-Residue Carrier",
+      "block": "block-01-papers-09-16",
+      "component_count": 8,
+      "component_ok": true,
+      "required_sources_missing": [],
+      "optional_sources_missing": [
+        "tool_runner"
+      ],
+      "kernel_file_present": true,
+      "manifest_file_present": true,
+      "suite_previous": "CQE-paper-14",
+      "suite_next": "CQE-paper-16",
+      "block_previous": "CQE-paper-14",
+      "block_next": "CQE-paper-16",
+      "hidden_guess_ready": true,
+      "training_mode": true,
+      "status": "pass"
+    },
+    {
+      "paper": "CQE-paper-16",
+      "title": "Continuum Edge Residuals",
+      "block": "block-01-papers-09-16",
+      "component_count": 8,
+      "component_ok": true,
+      "required_sources_missing": [],
+      "optional_sources_missing": [
+        "tool_runner"
+      ],
+      "kernel_file_present": true,
+      "manifest_file_present": true,
+      "suite_previous": "CQE-paper-15",
+      "suite_next": "CQE-paper-17",
+      "block_previous": "CQE-paper-15",
+      "block_next": "CQE-paper-09",
+      "hidden_guess_ready": true,
+      "training_mode": true,
+      "status": "pass"
+    }
+  ]
+}

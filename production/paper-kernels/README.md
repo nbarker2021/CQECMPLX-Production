@@ -10,8 +10,7 @@ Block manifests live under `blocks/`; per-paper kernels live under `papers/`.
 
 ## Run Selectors
 
-Use `tools/run_paper_kernel_suite.py` to validate a single paper, one 8-paper block,
-or the full active suite:
+Use `tools/run_paper_kernel_suite.py` to validate a single paper, one 8-paper block, or the full active suite:
 
 ```bash
 python production/paper-kernels/tools/run_paper_kernel_suite.py --selector CQE-paper-01 --training-mode --write-receipt
@@ -19,5 +18,4 @@ python production/paper-kernels/tools/run_paper_kernel_suite.py --selector block
 python production/paper-kernels/tools/run_paper_kernel_suite.py --selector suite --training-mode --write-receipt
 ```
 
-The runner treats Paper 00 as the inherited contract and does not include it in
-the active paper windows.
+The runner treats Paper 00 as the inherited contract and does not include it in the active paper windows.
