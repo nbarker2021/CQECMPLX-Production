@@ -1,0 +1,20 @@
+{
+  "umbrella": "CMPLX-MORSR",
+  "summary": "CMPLX-side MORSR umbrella for E8 centroid pulse diagnostics and hidden-result honesty training.",
+  "implementation_dependency": "final MORSR tool to be supplied later",
+  "ready": true,
+  "required_cqe_layer": "engine_to_math_to_product_to_library",
+  "required_universal_adapters": [
+    "binary_boundary_adapter",
+    "universal_adapter_programs"
+  ],
+  "non_negotiables": [
+    "240-direction E8 pulse from C centroid",
+    "all instant active nodes are candidates",
+    "confirmed reading sets a pode/node",
+    "three recenter repetitions",
+    "hidden guess result ablation before reveal",
+    "library-bound by default unless CQE proves new datum",
+    "handshakes and networking use BBA plus Universal Adapter Programs"
+  ]
+}

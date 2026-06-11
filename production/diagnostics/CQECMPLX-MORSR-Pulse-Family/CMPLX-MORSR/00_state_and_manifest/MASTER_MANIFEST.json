@@ -1,0 +1,50 @@
+{
+  "umbrella_id": "CMPLX-MORSR",
+  "name": "CMPLX-MORSR",
+  "expanded_name": "CMPLX Middle-Out Resonance and Shape Reader",
+  "family": "Forge-family umbrella",
+  "status": "contract_scaffold_ready",
+  "inherits_from": [
+    "LatticeForge",
+    "ForgeFactory/ReForge umbrella pattern",
+    "CMPLX diagnostic port",
+    "CQE bridge layer",
+    "Binary Boundary Adapter",
+    "Universal Adapter Programs"
+  ],
+  "purpose": "Provide the CMPLX-side MORSR umbrella for centroid-origin 240-direction E8 pulse diagnostics with hidden-result honesty ablation.",
+  "canonical_loop": {
+    "seed": "any C centroid",
+    "pulse": "240-direction E8 root pulse",
+    "activation": "trigger all instant active nodes touched by the pulse",
+    "confirmation": "one confirmed reading sets a pode/node",
+    "recenter_count": 3,
+    "result": "quadratically confirmed extension of the first centroid"
+  },
+  "required_honesty_layer": {
+    "name": "Hidden Guess Result",
+    "applies_to": [
+      "diagnostics",
+      "validations",
+      "reviews",
+      "recommendations",
+      "non_math_action_selection"
+    ],
+    "rule": "The system must predict or choose before expected result, oracle label, or diagnostic answer is revealed."
+  },
+  "ports": {
+    "provided": ["diagnostic"],
+    "consumed": ["engine", "conservation", "receipt", "memory", "cache", "geometry"]
+  },
+  "required_cqe_layer": {
+    "rule": "Every CMPLX-MORSR event maps engine behavior to math/formal structure to product surface to library binding before creating a new datum.",
+    "default": "library_bound_unless_new_datum_proven"
+  },
+  "required_universal_adapters": {
+    "binary_boundary_adapter": "CMPLX-R30-main/PROOF/src/lattice_forge/binary_boundary_adapter.py",
+    "universal_adapter_programs": "CMPLX-PartsFactory-main/src/mcp_tools/universal_tools.py",
+    "rule": "All handshakes and networking bind through BBA plus Universal Adapter Programs before custom protocol work."
+  },
+  "created_for": "MORSR umbrella preparation",
+  "version": "0.1.0"
+}

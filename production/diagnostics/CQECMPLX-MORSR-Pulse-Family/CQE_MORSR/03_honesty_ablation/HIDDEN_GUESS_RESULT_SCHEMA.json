@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "cqe_morsr_hidden_guess_result_v1",
+  "title": "CQE_MORSR Hidden Guess Result Record",
+  "type": "object",
+  "required": [
+    "protocol",
+    "context_id",
+    "sealed_result_id",
+    "guess",
+    "reveal",
+    "score",
+    "map_update"
+  ],
+  "properties": {
+    "protocol": {
+      "const": "hidden_guess_result_v1"
+    },
+    "context_id": {
+      "type": "string"
+    },
+    "sealed_result_id": {
+      "type": "string"
+    },
+    "guess": {
+      "type": "object",
+      "required": ["choice", "confidence", "reasoning_snapshot"],
+      "properties": {
+        "choice": {"type": "string"},
+        "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+        "reasoning_snapshot": {"type": "string"}
+      }
+    },
+    "reveal": {
+      "type": "object",
+      "required": ["result", "source"],
+      "properties": {
+        "result": {"type": "string"},
+        "source": {"type": "string"}
+      }
+    },
+    "score": {
+      "type": "object",
+      "required": ["outcome", "failure_mode"],
+      "properties": {
+        "outcome": {
+          "enum": ["hit", "near_miss", "false_positive", "false_negative", "leakage", "invalid_context", "unscored"]
+        },
+        "failure_mode": {"type": "string"},
+        "delta": {"type": "string"}
+      }
+    },
+    "map_update": {
+      "type": "object",
+      "required": ["pattern", "next_probe"],
+      "properties": {
+        "pattern": {"type": "string"},
+        "next_probe": {"type": "string"}
+      }
+    }
+  }
+}

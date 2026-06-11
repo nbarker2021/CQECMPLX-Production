@@ -1,0 +1,14 @@
+{
+  "insert_id": "example-need-v0",
+  "target_compose": "docker-compose.yml",
+  "reason": "Describe the new external need without mutating the base compose layer.",
+  "receipts": [],
+  "compose_overlay": {
+    "services": {
+      "example-service": {
+        "image": "hello-world",
+        "profiles": ["example-boundary-insert"]
+      }
+    }
+  }
+}

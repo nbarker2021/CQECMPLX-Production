@@ -1,0 +1,15 @@
+{
+  "umbrella": "CQE_MORSR",
+  "summary": "CQE-side MORSR umbrella for hidden-result validation and quadratically confirmed centroid diagnostics.",
+  "implementation_dependency": "final MORSR tool to be supplied later",
+  "ready": true,
+  "required_cqe_layer": "engine_to_math_to_product_to_library",
+  "required_universal_adapters": [
+    "binary_boundary_adapter",
+    "universal_adapter_programs"
+  ],
+  "required_method": "guess before reveal for every non-math diagnostic",
+  "recenter_count": 3,
+  "datum_rule": "library-bound by default unless CQE proves new datum",
+  "handshake_rule": "handshakes and networking use BBA plus Universal Adapter Programs"
+}

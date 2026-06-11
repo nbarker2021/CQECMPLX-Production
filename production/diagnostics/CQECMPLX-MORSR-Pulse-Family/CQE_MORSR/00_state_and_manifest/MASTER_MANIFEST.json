@@ -1,0 +1,43 @@
+{
+  "umbrella_id": "CQE_MORSR",
+  "name": "CQE_MORSR",
+  "expanded_name": "CQE Middle-Out Resonance and Shape Reader",
+  "family": "Forge-family umbrella",
+  "status": "contract_scaffold_ready",
+  "inherits_from": [
+    "LatticeForge",
+    "ForgeFactory/ReForge umbrella pattern",
+    "CQE validation pipeline",
+    "CQE bridge layer",
+    "Binary Boundary Adapter",
+    "Universal Adapter Programs"
+  ],
+  "purpose": "Provide the CQE-side MORSR umbrella for hidden-result validation, diagnostic scoring, and quadratically confirmed centroid extension.",
+  "canonical_loop": {
+    "seed": "C centroid derived from CQE context",
+    "pulse": "240-direction E8 root pulse",
+    "active_nodes": "all instant active validation candidates",
+    "guess_first": true,
+    "result_reveal_after_guess": true,
+    "recenter_count": 3,
+    "result": "quadratically confirmed diagnostic extension"
+  },
+  "required_records": [
+    "prediction_record",
+    "sealed_result_reference",
+    "reveal_record",
+    "score_record",
+    "delta_map",
+    "receipt"
+  ],
+  "required_cqe_layer": {
+    "rule": "CQE_MORSR maps diagnostic engine behavior to formal structure to validation product to library binding before creating a new datum.",
+    "default": "library_bound_unless_new_datum_proven"
+  },
+  "required_universal_adapters": {
+    "binary_boundary_adapter": "CMPLX-R30-main/PROOF/src/lattice_forge/binary_boundary_adapter.py",
+    "universal_adapter_programs": "CMPLX-PartsFactory-main/src/mcp_tools/universal_tools.py",
+    "rule": "All handshakes and networking bind through BBA plus Universal Adapter Programs before custom protocol work."
+  },
+  "version": "0.1.0"
+}
