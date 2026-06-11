@@ -1,0 +1,122 @@
+# Converge — 3-Node Demo Cluster
+#
+# This Docker Compose configuration sets up a 3-node Converge cluster
+# demonstrating the 3-round consensus protocol and annealing scheduler.
+#
+# Nodes:
+#   - converge-1: Leader node (ports 8080, 50051)
+#   - converge-2: Follower node (ports 8081, 50052)
+#   - converge-3: Follower node (ports 8082, 50053)
+#
+# Usage:
+#   cd /mnt/agents/output/product_converge
+#   docker-compose -f docker/docker-compose.yml up
+#
+# Endpoints (per node):
+#   REST: http://localhost:8080
+#   gRPC: localhost:50051
+#   Health: http://localhost:8080/health
+#   Schedule: POST http://localhost:8080/schedule
+#   Consensus: POST http://localhost:8080/consensus
+#   Rebalance: POST http://localhost:8080/rebalance
+
+version: "3.8"
+
+services:
+  converge-1:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: converge-1
+    hostname: converge-1
+    environment:
+      - CONVERGE_NODE_ID=converge-1
+      - CONVERGE_ROLE=leader
+      - CONVERGE_PEERS=converge-2,converge-3
+      - CONVERGE_PORT=8080
+      - CONVERGE_GRPC_PORT=50051
+    ports:
+      - "8080:8080"
+      - "50051:50051"
+    networks:
+      - converge-net
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+  converge-2:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: converge-2
+    hostname: converge-2
+    environment:
+      - CONVERGE_NODE_ID=converge-2
+      - CONVERGE_ROLE=follower
+      - CONVERGE_PEERS=converge-1,converge-3
+      - CONVERGE_PORT=8080
+      - CONVERGE_GRPC_PORT=50051
+    ports:
+      - "8081:8080"
+      - "50052:50051"
+    networks:
+      - converge-net
+    depends_on:
+      - converge-1
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+  converge-3:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: converge-3
+    hostname: converge-3
+    environment:
+      - CONVERGE_NODE_ID=converge-3
+      - CONVERGE_ROLE=follower
+      - CONVERGE_PEERS=converge-1,converge-2
+      - CONVERGE_PORT=8080
+      - CONVERGE_GRPC_PORT=50051
+    ports:
+      - "8082:8080"
+      - "50053:50051"
+    networks:
+      - converge-net
+    depends_on:
+      - converge-1
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+  # NGINX load balancer for round-robin across nodes
+  converge-lb:
+    image: nginx:alpine
+    container_name: converge-lb
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    ports:
+      - "80:80"
+    networks:
+      - converge-net
+    depends_on:
+      - converge-1
+      - converge-2
+      - converge-3
+
+networks:
+  converge-net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16

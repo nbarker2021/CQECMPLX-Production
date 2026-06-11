@@ -27,9 +27,9 @@ pieces needed before source movement:
 | `CQECMPLX-Paper-Proof-Bundle` | yes | yes | yes |
 | `CQECMPLX-Payload-Ledger` | yes | yes | yes |
 | `CQECMPLX-ProofValidated-Kernel` | yes | yes | yes |
-| `CQECMPLX-Product-Fourpack` | yes | needed | yes |
+| `CQECMPLX-Product-Fourpack` | yes | draft | yes |
 | `CQECMPLX-Repo-Forms-Accounting` | yes | yes | yes |
-| `CQECMPLX-TMN1-Conservation-Fullstack` | yes | needed | yes |
+| `CQECMPLX-TMN1-Conservation-Fullstack` | yes | draft | yes |
 | `CQECMPLX-TMN-Role-Family` | yes | yes | yes |
 
 ## Still Needed
@@ -58,3 +58,4 @@ pieces needed before source movement:
 | `production/adapters/CQECMPLX-Docker-Compose-Boundary/PROMOTION_SLICE_2026-06-11_DOCKER_COMPOSE_BOUNDARY.md` | promoted | `tracking/promotion-manifests/CQECMPLX-Docker-Compose-Boundary.manifest.json` |
 | `production/adapters/CQECMPLX-DevKit-MCPOS-MORSR-Runtime/PROMOTION_SLICE_2026-06-11_DEVKIT_MCPOS_DOCS_INVENTORY.md` | promoted docs/inventory | `tracking/promotion-manifests/CQECMPLX-DevKit-MCPOS-MORSR-Runtime.manifest.json` |
 | `production/orchestration/CQECMPLX-CMPLXUNI-Swarm-Frontend/PROMOTION_SLICE_2026-06-11_CMPLXUNI_DOCS_CONFIGS.md` | promoted docs/configs | `tracking/promotion-manifests/CQECMPLX-CMPLXUNI-Swarm-Frontend.manifest.json` |
+| `production/products/CQECMPLX-Product-Fourpack/PROMOTION_SLICE_2026-06-11_PRODUCT_FOURPACK_DOCS_DEPLOY.md` | promoted docs/deploy metadata | `tracking/promotion-manifests/CQECMPLX-Product-Fourpack.manifest.json` |

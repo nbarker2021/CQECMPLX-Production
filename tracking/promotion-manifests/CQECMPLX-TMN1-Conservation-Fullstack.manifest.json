@@ -1,0 +1,57 @@
+{
+  "id": "CQECMPLX-TMN1-Conservation-Fullstack",
+  "status": "manifest-draft",
+  "created": "2026-06-11",
+  "source_binding": "tracking/source-bindings/CQECMPLX-TMN1-Conservation-Fullstack.json",
+  "allowed_initial_slice": {
+    "description": "Operational docs, showcase docs, Docker metadata, and formalization ledger stubs only.",
+    "extensions": [
+      ".md",
+      ".json",
+      ".yml",
+      ".yaml"
+    ],
+    "priority_files": [
+      "README.md",
+      "TMN1-ARCHITECTURE.md",
+      "TMN1-CHANNELS.md",
+      "TMN1-DOCKER.md",
+      "TMN1-ECONOMY.md",
+      "TMN1-ECOSYSTEM.md",
+      "TMN1-FULLSTACK.md",
+      "TMN1-OPERATIONS.md",
+      "TMN1-PLAYBOOKS.md",
+      "TMN1-SUBSYSTEMS.md",
+      "PORTAL-API.md",
+      "CONNECT.md",
+      "showcase/SYSTEM.md",
+      "showcase/TOOLS.md",
+      "infrastructure/docker-compose.yml"
+    ]
+  },
+  "forbidden": [
+    ".env",
+    ".venv",
+    "venv",
+    "__pycache__",
+    ".pytest_cache",
+    "node_modules",
+    "*.db",
+    "*.sqlite",
+    "*.sqlite3",
+    "*.pyc",
+    "*.log",
+    "*.zip",
+    "*.gz",
+    "*.tgz",
+    "*.pdf"
+  ],
+  "payload_rules": [
+    "Large formalization JSON must be represented in the payload ledger before body promotion.",
+    "Docker runtime state and generated service data are excluded."
+  ],
+  "diagnostic_requirements": {
+    "hidden_guess_result": "required for non-math operations when training mode is enabled",
+    "conservation_receipts": "MORSR and conservation claims need receipt binding"
+  }
+}

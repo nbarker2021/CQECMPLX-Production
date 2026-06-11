@@ -1,0 +1,135 @@
+{
+  "dashboard": {
+    "id": null,
+    "title": "Sentinel — Zero-Trust Security Monitor",
+    "tags": ["sentinel", "security", "anomaly-detection"],
+    "timezone": "browser",
+    "panels": [
+      {
+        "id": 1,
+        "title": "VOA Invariant Ratio",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "sentinel_voa_invariant_ratio",
+            "legendFormat": "Observed Ratio"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "min": 0,
+            "max": 1,
+            "thresholds": {
+              "steps": [
+                {"color": "red", "value": 0},
+                {"color": "yellow", "value": 0.15},
+                {"color": "green", "value": 0.22},
+                {"color": "yellow", "value": 0.30},
+                {"color": "red", "value": 0.40}
+              ]
+            },
+            "unit": "percentunit"
+          }
+        },
+        "gridPos": {"h": 8, "w": 12, "x": 0, "y": 0}
+      },
+      {
+        "id": 2,
+        "title": "Alert Severity Distribution",
+        "type": "piechart",
+        "targets": [
+          {
+            "expr": "sum by (severity) (sentinel_alerts_total)",
+            "legendFormat": "{{severity}}"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 12, "x": 12, "y": 0}
+      },
+      {
+        "id": 3,
+        "title": "Syndrome Distribution (8 Syndromes)",
+        "type": "bargauge",
+        "targets": [
+          {
+            "expr": "sentinel_syndrome_count",
+            "legendFormat": "Syndrome {{syndrome_index}}"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 24, "x": 0, "y": 8}
+      },
+      {
+        "id": 4,
+        "title": "Standard Deviation from Expected (sigma)",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "sentinel_voa_standard_deviations",
+            "legendFormat": "Sigma"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "thresholds": {
+              "steps": [
+                {"color": "green", "value": 0},
+                {"color": "yellow", "value": 2},
+                {"color": "red", "value": 3}
+              ]
+            }
+          }
+        },
+        "gridPos": {"h": 8, "w": 12, "x": 0, "y": 16}
+      },
+      {
+        "id": 5,
+        "title": "Confidence % (Anomaly Certainty)",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "sentinel_voa_confidence_percent",
+            "legendFormat": "Confidence %"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 12, "x": 12, "y": 16}
+      },
+      {
+        "id": 6,
+        "title": "Sources Monitored",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "sentinel_sources_monitored",
+            "legendFormat": "Sources"
+          }
+        ],
+        "gridPos": {"h": 4, "w": 8, "x": 0, "y": 24}
+      },
+      {
+        "id": 7,
+        "title": "Checkpoints Recorded",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "sentinel_checkpoint_total",
+            "legendFormat": "Checkpoints"
+          }
+        ],
+        "gridPos": {"h": 4, "w": 8, "x": 8, "y": 24}
+      },
+      {
+        "id": 8,
+        "title": "Chain Integrity",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "sentinel_chain_integrity",
+            "legendFormat": "Valid"
+          }
+        ],
+        "gridPos": {"h": 4, "w": 8, "x": 16, "y": 24}
+      }
+    ],
+    "time": {"from": "now-1h", "to": "now"},
+    "refresh": "10s"
+  }
+}

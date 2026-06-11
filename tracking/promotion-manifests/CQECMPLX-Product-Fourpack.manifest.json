@@ -1,0 +1,58 @@
+{
+  "id": "CQECMPLX-Product-Fourpack",
+  "status": "manifest-draft",
+  "created": "2026-06-11",
+  "source_binding": "tracking/source-bindings/CQECMPLX-Product-Fourpack.json",
+  "allowed_initial_slice": {
+    "description": "Product README/PITCH files, package metadata, Docker deployment metadata, SDK package metadata, and monitoring config only.",
+    "extensions": [
+      ".md",
+      ".json",
+      ".toml",
+      ".yml",
+      ".yaml"
+    ],
+    "priority_files": [
+      "README.md",
+      "PITCH.md",
+      "pyproject.toml",
+      "docker/Dockerfile",
+      "docker/docker-compose.yml",
+      "docker/prometheus.yml",
+      "docker/grafana-dashboard.json",
+      "docker/grafana-datasource.yml",
+      "src/sdk/typescript/package.json",
+      "src/sdk/typescript/tsconfig.json"
+    ]
+  },
+  "forbidden": [
+    ".env",
+    ".venv",
+    "venv",
+    "__pycache__",
+    ".pytest_cache",
+    "node_modules",
+    "dist",
+    "build",
+    "*.db",
+    "*.sqlite",
+    "*.sqlite3",
+    "*.pyc",
+    "*.log",
+    "*.zip",
+    "*.gz",
+    "*.tgz",
+    "*.pdf"
+  ],
+  "claim_requirements": [
+    "Product claims are trackable but not public-proofed until bound to paper/proof receipts.",
+    "Pitch language must be reviewed before public release copy.",
+    "Security, cryptography, or monitoring guarantees require explicit validation receipts."
+  ],
+  "adapter_requirements": [
+    "Binary Boundary Adapter",
+    "Universal Adapter Programs",
+    "Docker Compose boundary review",
+    "API handshake mapping"
+  ]
+}
