@@ -68,13 +68,63 @@
       "id": "CQECMPLX-Repo-Accounting",
       "status": "trackable-slice",
       "route": "production/workspace-corpus-index"
+    },
+    {
+      "id": "CQECMPLX-Paper-Proof-Bundle",
+      "status": "trackable-publish-candidate",
+      "route": "production/papers + production/proof-receipts",
+      "source_binding": "tracking/source-bindings/CQECMPLX-Paper-Proof-Bundle.json"
+    },
+    {
+      "id": "CQECMPLX-ProofValidated-Kernel",
+      "status": "trackable-composite",
+      "route": "production/kernel-runtime + production/proof-receipts",
+      "source_binding": "tracking/source-bindings/CQECMPLX-ProofValidated-Kernel.json"
+    },
+    {
+      "id": "CQECMPLX-NVEST-EG8-Gate",
+      "status": "trackable-composite",
+      "route": "production/diagnostics + production/adapters",
+      "source_binding": "tracking/source-bindings/CQECMPLX-NVEST-EG8-Gate.json"
+    },
+    {
+      "id": "CQECMPLX-MORSR-Pulse-Family",
+      "status": "trackable-staged",
+      "route": "production/diagnostics + production/lib-forge",
+      "source_binding": "tracking/source-bindings/CQECMPLX-MORSR-Pulse-Family.json"
+    },
+    {
+      "id": "CQECMPLX-LibForge-Lattice-ReForge-Ring",
+      "status": "trackable-composite",
+      "route": "production/lib-forge",
+      "source_binding": "tracking/source-bindings/CQECMPLX-LibForge-Lattice-ReForge-Ring.json"
+    },
+    {
+      "id": "CQECMPLX-Docker-Compose-Boundary",
+      "status": "trackable-composite",
+      "route": "production/adapters + production/kernel-runtime",
+      "source_binding": "tracking/source-bindings/CQECMPLX-Docker-Compose-Boundary.json"
+    },
+    {
+      "id": "CQECMPLX-Odysseus-MCP-Memory",
+      "status": "needs-portability-review",
+      "route": "production/adapters + production/memory",
+      "source_binding": "tracking/source-bindings/CQECMPLX-Odysseus-MCP-Memory.json"
+    },
+    {
+      "id": "CQECMPLX-Analog-Forge-Workbench",
+      "status": "needs-package-review",
+      "route": "production/tool-families + production/proof-receipts",
+      "source_binding": "tracking/source-bindings/CQECMPLX-Analog-Forge-Workbench.json"
     }
   ],
   "still_needed": [
+    "promotion manifests for population queue records",
     "one composite spec per candidate",
-    "source path binding per candidate",
     "payload ledger before payload expansion",
     "paper claim binding to Production/AirLock/Kernel roots",
-    "promotion manifests for exact publishable slices"
-  ]
+    "exact publishable slices"
+  ],
+  "population_queue": "tracking/POPULATION_QUEUE.json",
+  "source_bindings_dir": "tracking/source-bindings"
 }

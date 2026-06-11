@@ -1,0 +1,16 @@
+{
+  "id": "CQECMPLX-Odysseus-MCP-Memory",
+  "route": ["production/adapters", "production/memory"],
+  "trackable_status": "needs-portability-review",
+  "source_roots": [
+    "D:\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\odysseus",
+    "D:\\CQE_CMPLX\\CMPLX-Kernel\\kernel\\lib-forge\\odysseus",
+    "D:\\CQE_CMPLX\\CMPLX-Kernel\\lib-forge\\odysseus"
+  ],
+  "evidence": [
+    "Odysseus includes Docker compose files, MCP routes, memory routes, MCP server code, vector memory, and tests.",
+    "This overlaps with the production adapter and memory routes."
+  ],
+  "promotion_rule": "Review secrets, auth, runtime configuration, and memory persistence before promotion as an adapter/memory module.",
+  "known_exclusions": ["local data stores unless fixture-bound", ".pytest_cache", "__pycache__"]
+}

@@ -51,3 +51,14 @@ the `D:\CQE_CMPLX` workspace corpus.
 
 The production head receives tracking records and production-shaped slices.
 The intake branch remains available for review and staging work.
+
+## Population Tracking
+
+Active population management starts in:
+
+```text
+tracking/POPULATION_QUEUE.md
+```
+
+That queue identifies source bodies that can populate this repo, binds them to
+local evidence paths, and keeps aggregation separate from final promotion.

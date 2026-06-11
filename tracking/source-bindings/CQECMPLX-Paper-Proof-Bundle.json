@@ -1,0 +1,22 @@
+{
+  "id": "CQECMPLX-Paper-Proof-Bundle",
+  "route": ["production/papers", "production/proof-receipts"],
+  "trackable_status": "trackable-publish-candidate",
+  "source_roots": [
+    "D:\\CQE_CMPLX\\CQECMPLX-Production\\papers",
+    "D:\\CQE_CMPLX\\CQECMPLX-Production\\proof-receipts",
+    "D:\\CQE_CMPLX\\CQECMPLX-Production\\PDF_MASTER",
+    "D:\\CQE_CMPLX\\CQECMPLX-Production\\_meta\\PAPER-INTENT-INDEX.md",
+    "D:\\CQE_CMPLX\\CQECMPLX-Production\\_meta\\paper_intent_index.json",
+    "D:\\CQE_CMPLX\\CMPLX-Kernel\\kernel\\lib-forge\\papers_output",
+    "D:\\CQE_CMPLX\\CMPLX-Kernel\\kernel\\lib-forge\\summary_papers"
+  ],
+  "evidence": [
+    "CQE-paper-00 through CQE-paper-32 source bodies exist under the local production body.",
+    "Formal folders exist beside paper bodies.",
+    "Proof receipts exist as JSON under proof-receipts.",
+    "PDF masters and workbook PDFs exist, but should be promoted after text manifests."
+  ],
+  "promotion_rule": "Start with markdown paper bodies, formal folders, intent index, and receipt ledger. Add PDFs only by manifest after repository size review.",
+  "known_exclusions": ["__pycache__", "superseded PDFs unless explicitly cited by lineage"]
+}

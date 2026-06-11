@@ -1,0 +1,16 @@
+{
+  "id": "CQECMPLX-NVEST-EG8-Gate",
+  "route": ["production/diagnostics", "production/adapters"],
+  "trackable_status": "trackable-composite",
+  "source_roots": [
+    "D:\\CQE_CMPLX\\CMPLX-NVEST",
+    "D:\\CQE_CMPLX\\CQE-E_G8"
+  ],
+  "evidence": [
+    "CMPLX-NVEST has umbrella contract, engine protocol, Hidden Guess Result schema/protocol, CQE bridge, and universal adapters.",
+    "CQE-E_G8 mirrors the umbrella/adapters/CQE layer structure as the validation gate.",
+    "NVEST manifest states it is a domain-neutral wave/centroid diagnostic, not a trading-only tool."
+  ],
+  "promotion_rule": "Promote as a paired diagnostic gate. Hidden Guess Result is mandatory for non-math diagnostics when training mode is enabled.",
+  "required_adapters": ["Binary Boundary Adapter", "Universal Adapter Programs"]
+}

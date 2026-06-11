@@ -1,0 +1,17 @@
+{
+  "id": "CQECMPLX-Repo-Forms-Accounting",
+  "route": ["production/workspace-corpus-index"],
+  "trackable_status": "trackable-index",
+  "source_roots": [
+    "D:\\CQE_CMPLX\\CMPLX-Kernel\\kernel\\repo_forms",
+    "D:\\CQE_CMPLX\\Claude-Codex-Memory\\Codex work\\CX-Repo-Literal-Accounting",
+    "D:\\CQE_CMPLX\\Claude-Codex-Memory\\Repo zips"
+  ],
+  "evidence": [
+    "All 12 top-level repo zips were content-profile-complete in Codex accounting.",
+    "SQLite accounting database and per-zip deep dive JSON files exist.",
+    "Kernel repo_forms provides curated forms without embedding raw zip archives."
+  ],
+  "promotion_rule": "Promote indexes, summaries, and curated repo forms. Do not promote raw zips.",
+  "known_exclusions": ["raw zip archives", "expanded caches"]
+}

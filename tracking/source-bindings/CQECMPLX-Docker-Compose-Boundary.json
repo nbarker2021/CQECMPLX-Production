@@ -1,0 +1,21 @@
+{
+  "id": "CQECMPLX-Docker-Compose-Boundary",
+  "route": ["production/adapters", "production/kernel-runtime"],
+  "trackable_status": "trackable-composite",
+  "source_roots": [
+    "D:\\CQE_CMPLX\\CMPLX-Kernel\\kernel\\deploy\\docker",
+    "D:\\CQE_CMPLX\\CMPLX-Kernel\\kernel\\docs\\DOCKER_COMPOSE_BOUNDARY.md",
+    "D:\\CQE_CMPLX\\CMPLX-Kernel\\kernel\\docs\\DOCKER_TOOL_ADAPTER.md",
+    "D:\\CQE_CMPLX\\CQECMPLX-ProofValidatedSuite\\kernel\\docker-compose-kernel-validated.yml",
+    "D:\\CQE_CMPLX\\DockerContainers",
+    "D:\\CQE_CMPLX\\CMPLX-NVEST\\08_universal_adapters",
+    "D:\\CQE_CMPLX\\CQE-E_G8\\08_universal_adapters"
+  ],
+  "evidence": [
+    "Kernel has Dockerfile, socket compose, dind compose, compose insert schema, and compose insert template.",
+    "ProofValidatedSuite has a validated hierarchical Docker compose file.",
+    "NVEST and E/G8 both carry Binary Boundary Adapter and Universal Adapter Program records."
+  ],
+  "promotion_rule": "Separate internal compose layers below kernel level from external insert needs. External needs must enter via the Binary Boundary Adapter template.",
+  "required_adapters": ["Binary Boundary Adapter", "Universal Adapter Programs"]
+}

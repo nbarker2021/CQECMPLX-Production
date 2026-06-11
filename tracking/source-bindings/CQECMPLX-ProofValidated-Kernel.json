@@ -1,0 +1,18 @@
+{
+  "id": "CQECMPLX-ProofValidated-Kernel",
+  "route": ["production/kernel-runtime", "production/proof-receipts"],
+  "trackable_status": "trackable-composite",
+  "source_roots": [
+    "D:\\CQE_CMPLX\\CQECMPLX-ProofValidatedSuite\\kernel",
+    "D:\\CQE_CMPLX\\CMPLX-Kernel\\kernel",
+    "D:\\CQE_CMPLX\\CMPLX-Kernel\\CMPLX-Kernel_Production_20260607T223706"
+  ],
+  "evidence": [
+    "ProofValidatedSuite contains docker-compose-kernel-validated.yml.",
+    "ProofValidatedSuite contains orchestrator.py and paper_validator.py.",
+    "Kernel contains sidecar protocol, module/data contract, operator web console, Docker tool adapter, and compose boundary docs.",
+    "Production kernel package contains portability review and package summary."
+  ],
+  "promotion_rule": "Build a composite runtime slice that reconciles CMPLX-Kernel sidecar files with ProofValidatedSuite hierarchical proof validation files.",
+  "known_exclusions": ["generated archives", "__pycache__", ".pytest_cache", "local logs"]
+}

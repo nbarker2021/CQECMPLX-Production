@@ -1,0 +1,68 @@
+{
+  "status": "active_population_queue",
+  "created": "2026-06-11",
+  "policy": "aggregate first, curate second, promote only named production-shaped slices",
+  "records": [
+    {
+      "id": "CQECMPLX-Paper-Proof-Bundle",
+      "route": "production/papers + production/proof-receipts",
+      "source_binding": "tracking/source-bindings/CQECMPLX-Paper-Proof-Bundle.json",
+      "gate": "track_now_manifest_next"
+    },
+    {
+      "id": "CQECMPLX-ProofValidated-Kernel",
+      "route": "production/kernel-runtime + production/proof-receipts",
+      "source_binding": "tracking/source-bindings/CQECMPLX-ProofValidated-Kernel.json",
+      "gate": "track_now_composite_with_kernel_sidecar_next"
+    },
+    {
+      "id": "CQECMPLX-NVEST-EG8-Gate",
+      "route": "production/diagnostics + production/adapters",
+      "source_binding": "tracking/source-bindings/CQECMPLX-NVEST-EG8-Gate.json",
+      "gate": "track_now_hidden_guess_required"
+    },
+    {
+      "id": "CQECMPLX-MORSR-Pulse-Family",
+      "route": "production/diagnostics + production/lib-forge",
+      "source_binding": "tracking/source-bindings/CQECMPLX-MORSR-Pulse-Family.json",
+      "gate": "stage_until_private_morsr_supplied"
+    },
+    {
+      "id": "CQECMPLX-LibForge-Lattice-ReForge-Ring",
+      "route": "production/lib-forge",
+      "source_binding": "tracking/source-bindings/CQECMPLX-LibForge-Lattice-ReForge-Ring.json",
+      "gate": "track_now_package_family_next"
+    },
+    {
+      "id": "CQECMPLX-Docker-Compose-Boundary",
+      "route": "production/adapters + production/kernel-runtime",
+      "source_binding": "tracking/source-bindings/CQECMPLX-Docker-Compose-Boundary.json",
+      "gate": "track_now_boundary_manifest_next"
+    },
+    {
+      "id": "CQECMPLX-Repo-Forms-Accounting",
+      "route": "production/workspace-corpus-index",
+      "source_binding": "tracking/source-bindings/CQECMPLX-Repo-Forms-Accounting.json",
+      "gate": "track_now_publish_indexes_not_zips"
+    },
+    {
+      "id": "CQECMPLX-Odysseus-MCP-Memory",
+      "route": "production/adapters + production/memory",
+      "source_binding": "tracking/source-bindings/CQECMPLX-Odysseus-MCP-Memory.json",
+      "gate": "portability_review_needed"
+    },
+    {
+      "id": "CQECMPLX-Analog-Forge-Workbench",
+      "route": "production/tool-families + production/proof-receipts",
+      "source_binding": "tracking/source-bindings/CQECMPLX-Analog-Forge-Workbench.json",
+      "gate": "tests_and_package_review_needed"
+    }
+  ],
+  "near_candidates": [
+    "CQECMPLX-MetaMaterial-Designer",
+    "CQECMPLX-Manny-Memory-Instruction-Payloads",
+    "CQECMPLX-MMDB-E8-Vector-Payloads",
+    "CQECMPLX-CMPLXNEXT-Orchestration",
+    "CQECMPLX-TMN-Role-Family"
+  ]
+}

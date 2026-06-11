@@ -1,0 +1,14 @@
+{
+  "id": "CQECMPLX-Analog-Forge-Workbench",
+  "route": ["production/tool-families", "production/proof-receipts"],
+  "trackable_status": "needs-package-review",
+  "source_roots": [
+    "D:\\CQE_CMPLX\\_analog_workbench\\ForgeFactory_AnalogWorkbench_Suite_v0_1"
+  ],
+  "evidence": [
+    "Analog workbench has package metadata, source package, tests, workbook sheets, receipt templates, and PDF reports.",
+    "It is Forge-family named and has simulation/receipt code paths."
+  ],
+  "promotion_rule": "Run package/test review, then promote as a Forge-family tool package if source and generated reports are separated.",
+  "known_exclusions": ["generated PDFs unless publication manifest requests them"]
+}

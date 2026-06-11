@@ -20,6 +20,14 @@ The index tracks composites. It does not choose a winner among duplicates.
 | `CQECMPLX-CMPLXNEXT-Orchestration` | `trackable-composite` | Monorepo exposes CMPLXNEXT storage, MCP agent net, IDE, frontend bridge terms | `production/orchestration` |
 | `CQECMPLX-TMN-Role-Family` | `trackable-composite` | TMN/TMN1 expose role/tool family names plus API/Docker/formal signals | `production/tool-families` |
 | `CQECMPLX-Repo-Accounting` | `trackable-slice` | all 12 top-level repo zips are content-profile-complete; DB and summaries exist | `production/workspace-corpus-index` |
+| `CQECMPLX-Paper-Proof-Bundle` | `trackable-publish-candidate` | local production body has papers 00-32, formal folders, intent index, PDFs, and proof receipts | `production/papers` + `production/proof-receipts` |
+| `CQECMPLX-ProofValidated-Kernel` | `trackable-composite` | validated hierarchical Docker proof kernel has orchestrator, paper validator, compose, and deployment docs | `production/kernel-runtime` + `production/proof-receipts` |
+| `CQECMPLX-NVEST-EG8-Gate` | `trackable-composite` | NVEST and E/G8 share umbrella, CQE, Hidden Guess Result, and adapter layers | `production/diagnostics` + `production/adapters` |
+| `CQECMPLX-MORSR-Pulse-Family` | `trackable-staged` | public CMPLX-MORSR and CQE_MORSR scaffolds expose pulse, validation, CQE, and adapter layers | `production/diagnostics` + `production/lib-forge` |
+| `CQECMPLX-LibForge-Lattice-ReForge-Ring` | `trackable-composite` | lib-forge, lattice_forge_src, kernel ring, PartsFactory, and Forge packages overlap into one Forge-family layer | `production/lib-forge` |
+| `CQECMPLX-Docker-Compose-Boundary` | `trackable-composite` | kernel Docker adapter, compose boundary, ProofValidated compose, and DockerContainers need one boundary route | `production/adapters` + `production/kernel-runtime` |
+| `CQECMPLX-Odysseus-MCP-Memory` | `needs-portability-review` | Odysseus has MCP routes, memory routes, vector memory, Docker GPU compose, and tests | `production/adapters` + `production/memory` |
+| `CQECMPLX-Analog-Forge-Workbench` | `needs-package-review` | analog Forge workbench has package source, tests, workbook sheets, receipt templates, and PDF reports | `production/tool-families` + `production/proof-receipts` |
 
 ## First Publishable Tracking Rule
 
@@ -38,7 +46,16 @@ full generated corpora should enter the repo.
 
 ## Next Tracking Work
 
-1. Create one composite spec per candidate.
-2. Bind each candidate to source paths and proof docs.
+1. Convert the new population queue records into exact promotion manifests.
+2. Complete one composite spec per candidate.
 3. Run payload expansion only after the payload ledger records exact candidates.
 4. Bind paper claims from Production, AirLock, and Kernel roots.
+5. Promote indexes and curated forms before raw code movement.
+
+## Population Queue
+
+The active management queue is `tracking/POPULATION_QUEUE.md`.
+
+Machine-readable records are in `tracking/POPULATION_QUEUE.json`.
+
+Source bindings live under `tracking/source-bindings/`.

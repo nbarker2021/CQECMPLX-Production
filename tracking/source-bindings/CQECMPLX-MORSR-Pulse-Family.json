@@ -1,0 +1,16 @@
+{
+  "id": "CQECMPLX-MORSR-Pulse-Family",
+  "route": ["production/diagnostics", "production/lib-forge"],
+  "trackable_status": "trackable-staged",
+  "source_roots": [
+    "D:\\CQE_CMPLX\\CMPLX-MORSR",
+    "D:\\CQE_CMPLX\\CQE_MORSR"
+  ],
+  "evidence": [
+    "CMPLX-MORSR has umbrella contract, MORSR pulse protocol, Hidden Guess Result protocol, CQE bridge, and universal adapters.",
+    "CQE_MORSR has validation loop, CQE pipeline bindings, Hidden Guess Result schema, and matching adapter records.",
+    "User has stated a later private MORSR source will supersede the visible generalized scaffold."
+  ],
+  "promotion_rule": "Track public scaffolds now, but do not finalize the production MORSR composite until the later private tool is supplied.",
+  "required_adapters": ["Binary Boundary Adapter", "Universal Adapter Programs"]
+}

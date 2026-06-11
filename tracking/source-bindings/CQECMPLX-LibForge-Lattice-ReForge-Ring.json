@@ -1,0 +1,19 @@
+{
+  "id": "CQECMPLX-LibForge-Lattice-ReForge-Ring",
+  "route": ["production/lib-forge"],
+  "trackable_status": "trackable-composite",
+  "source_roots": [
+    "D:\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge",
+    "D:\\CQE_CMPLX\\CMPLX-Kernel\\lib-forge",
+    "D:\\CQE_CMPLX\\CMPLX-Kernel\\kernel\\lib-forge",
+    "D:\\CQE_CMPLX\\CMPLX-Kernel\\kernel_ring",
+    "D:\\CQE_CMPLX\\CMPLX-PartsFactory-main"
+  ],
+  "evidence": [
+    "Local production lib-forge includes lattice_forge_src, ChromaForge, GraphStax, meta_material_system, odysseus, papers, and summaries.",
+    "Kernel ring exposes lattice_kernel, lib_kernel, and reforge_kernel handshakes.",
+    "PartsFactory contains lattice-forge package evidence and morphism ledger payload candidates from zip accounting."
+  ],
+  "promotion_rule": "Aggregate by Forge-family identity first, then promote packages through explicit package manifests.",
+  "known_exclusions": ["__pycache__", ".pytest_cache", "generated visual dumps unless manifest-bound"]
+}
