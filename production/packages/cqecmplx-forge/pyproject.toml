@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cqecmplx-forge"
+version = "0.3.0"
+description = "The CQE/CMPLX Forge ring: merged lattice_forge substrate (PROOF + PartsFactory union), the ForgeFactory/ReForge/Rhenium engine lineage, and the ChromaForge, GraphStax, PixelForge, FridgeForge, LinkForge, MandleForge, ManiForge engines. Every event computed, saved, validated, receipted - then reused for free."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{name = "Nicholas Barker"}]
+license = {text = "MIT"}
+keywords = ["lattice", "rule30", "e8", "receipts", "forge", "cqe", "cmplx"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[project.optional-dependencies]
+predictors = ["numpy>=1.24", "scipy>=1.10"]
+
+[project.urls]
+Repository = "https://github.com/nbarker2021/CQECMPLX-Production"
+
+[tool.setuptools.packages.find]
+where = ["src"]

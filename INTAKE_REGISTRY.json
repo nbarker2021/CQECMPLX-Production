@@ -71,6 +71,12 @@
       "date": "2026-06-11",
       "slice": "production/PROMOTION_SLICE_2026-06-11_WORKTREE_UNIFICATION.md",
       "note": "WSL-mispathed agent worktrees (c/, d/ literal dirs) reconciled into canonical and promoted: engine ring, recovered MASTER_PDF/workbench/summaries, PaneForge product, proof-kernel deploy kit."
+    },
+    {
+      "id": "CQECMPLX-Forge-Package",
+      "date": "2026-06-11",
+      "slice": "production/packages/cqecmplx-forge",
+      "note": "pip-installable cqecmplx-forge v0.3.0: unified cqecmplx namespace + compat ring; lattice_forge union (PROOF 54 + PartsFactory 116, 9 diverged preserved); ForgeFactory/ReForge/Rhenium lineage; engine ring. Fresh-venv verified, stdlib-only."
     }
   ],
   "stray_roots_reconciled": [

@@ -1,6 +1,6 @@
 # Lib-Forge Package Split
 
-Status: `package_family_split_started`
+Status: `packaged` — shipped as `cqecmplx-forge` v0.3.0 (production/packages/cqecmplx-forge): unified `cqecmplx.*` namespace over the 19-package ring; lattice_forge = PROOF+PartsFactory union with diverged modules preserved in variants_partsfactory/ (see MERGE_LEDGER.md); ReForge/Rhenium ring promoted from the ForgeFactory_v0_3 AirLock lineage.
 
 `CQECMPLX-LibForge-Lattice-ReForge-Ring` is now split into named package
 families for later promotion.
