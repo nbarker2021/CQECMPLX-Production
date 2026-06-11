@@ -1,0 +1,21 @@
+# CMPLX MCP OS Requirements
+# =========================
+
+# MCP Protocol
+mcp>=1.0.0
+
+# Server/Client
+uvicorn>=0.24.0
+starlette>=0.32.0
+
+# Data processing (lightweight only)
+numpy>=1.21.0
+
+# Async
+anyio>=4.0.0
+
+# Type hints (dev)
+typing-extensions>=4.8.0
+
+# Optional: Database
+aiosqlite>=0.19.0

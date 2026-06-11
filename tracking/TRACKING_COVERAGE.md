@@ -53,3 +53,4 @@ pieces needed before source movement:
 | `production/diagnostics/CQECMPLX-NVEST-EG8-Gate/PROMOTION_SLICE_2026-06-11_NVEST_EG8_CONTRACTS.md` | promoted | `tracking/promotion-manifests/CQECMPLX-NVEST-EG8-Gate.manifest.json` |
 | `production/diagnostics/CQECMPLX-MORSR-Pulse-Family/PROMOTION_SLICE_2026-06-11_MORSR_PUBLIC_SCAFFOLD.md` | promoted scaffold | `tracking/promotion-manifests/CQECMPLX-MORSR-Pulse-Family.manifest.json` |
 | `production/adapters/CQECMPLX-Docker-Compose-Boundary/PROMOTION_SLICE_2026-06-11_DOCKER_COMPOSE_BOUNDARY.md` | promoted | `tracking/promotion-manifests/CQECMPLX-Docker-Compose-Boundary.manifest.json` |
+| `production/adapters/CQECMPLX-DevKit-MCPOS-MORSR-Runtime/PROMOTION_SLICE_2026-06-11_DEVKIT_MCPOS_DOCS_INVENTORY.md` | promoted docs/inventory | `tracking/promotion-manifests/CQECMPLX-DevKit-MCPOS-MORSR-Runtime.manifest.json` |
