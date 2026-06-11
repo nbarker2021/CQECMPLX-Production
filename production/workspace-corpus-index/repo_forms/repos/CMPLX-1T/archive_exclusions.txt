@@ -1,0 +1,18 @@
+﻿data\cmplx_training.db	28377088
+data\document_corpus.db	163840
+data\simulation_results.db	20480
+docs\1_intake\01-To-D-Active-Projects\scout-demo-service\.git.disabled-20260301-182415\objects\pack\pack-376e07fe151dbec80b81065d472171330a04e283.pack	80744
+docs\3_staged\family_exemplar_starters\Family Builds-legacy\CQE_organized\cqe_organized-20251122T204620Z-1-001\cqe_organized\NESTED_ARCHIVES\117c9663e349__fixtures_embeddings__fake_embeddings.5d.txt.gz	332
+docs\3_staged\family_exemplar_starters\Family Builds-legacy\CQE_organized\cqe_organized-20251122T204620Z-1-001\cqe_organized\NESTED_ARCHIVES\11f43e5fbd0a__tests_data__generator_pcg64_np121.pkl.gz	203
+docs\3_staged\family_exemplar_starters\Family Builds-legacy\CQE_organized\cqe_organized-20251122T204620Z-1-001\cqe_organized\NESTED_ARCHIVES\156a9262a32d__fixtures_embeddings__glove.6B.100d.sample.txt.gz	34314
+docs\3_staged\family_exemplar_starters\Family Builds-legacy\CQE_organized\cqe_organized-20251122T204620Z-1-001\cqe_organized\NESTED_ARCHIVES\3156b5ca5172__tests_data__sfc64_np126.pkl.gz	290
+docs\3_staged\family_exemplar_starters\Family Builds-legacy\CQE_organized\cqe_organized-20251122T204620Z-1-001\cqe_organized\NESTED_ARCHIVES\64de631f2f64__wikitables_dpd_output__nt-0.gz	225
+docs\3_staged\family_exemplar_starters\Family Builds-legacy\CQE_organized\cqe_organized-20251122T204620Z-1-001\cqe_organized\NESTED_ARCHIVES\6d9503fda0bb__fixtures_data__triviaqa-sample.tgz	207828
+docs\3_staged\family_exemplar_starters\Family Builds-legacy\CQE_organized\cqe_organized-20251122T204620Z-1-001\cqe_organized\NESTED_ARCHIVES\7cdf1d78d571__tests_data__generator_pcg64_np126.pkl.gz	208
+docs\3_staged\family_exemplar_starters\Family Builds-legacy\CQE_organized\cqe_organized-20251122T204620Z-1-001\cqe_organized\NESTED_ARCHIVES\9f27b4a34967__fixtures_utf-8_sample__utf-8_sample.txt.gz	6063
+docs\3_staged\family_exemplar_starters\Family Builds-legacy\CQE_organized\cqe_organized-20251122T204620Z-1-001\cqe_organized\NESTED_ARCHIVES\a16e137c2e61__wikitables_dpd_output__nt-64.gz	161
+docs\3_staged\family_exemplar_starters\Family Builds-legacy\CQE_organized\cqe_organized-20251122T204620Z-1-001\cqe_organized\NESTED_ARCHIVES\cd0000835c87__wikitables_dpd_output__nt-1.gz	216
+docs\3_staged\family_exemplar_starters\Family Builds-legacy\CQE_organized\cqe_organized-20251122T204620Z-1-001\cqe_organized\NESTED_ARCHIVES\d1ecc9dc1e12__fixtures_embeddings__glove.6B.300d.sample.txt.gz	98669
+docs\3_staged\family_exemplar_starters\Family Builds-legacy\CQE_organized\cqe_organized-20251122T204620Z-1-001\cqe_organized\OTHER\2d416eb29f00__fixtures_embeddings__fake_embeddings.5d.txt.bz2	295
+docs\3_staged\family_exemplar_starters\Family Builds-legacy\CQE_organized\cqe_organized-20251122T204620Z-1-001\cqe_organized\OTHER\6ce61a080af6__utf-8_sample_archives__utf-8.tar.bz2	5649
+Wolfram study\CMPLX-Alpha-Housing.tar.gz	30363871

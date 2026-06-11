@@ -1,0 +1,117 @@
+﻿{
+    "name":  "CMPLX",
+    "remote":  "https://github.com/nbarker2021/CMPLX.git",
+    "local_path":  "D:\\g\\CMPLX",
+    "review_branch":  "intake/review-for-cqecmplx-production",
+    "head":  "51ff9c2 (HEAD -\u003e intake/review-for-cqecmplx-production, origin/main, origin/HEAD, main) Stop tracking Python cache artifacts",
+    "curated_file_count":  12890,
+    "excluded_archive_count":  9,
+    "curated_bytes":  982670892,
+    "excluded_archive_bytes":  6684672,
+    "key_docs":  [
+                     "README.md",
+                     "AGENTS.md",
+                     "TODO.md",
+                     "pyproject.toml",
+                     ".env.example"
+                 ],
+    "top_directories":  [
+                            {
+                                "name":  "cmplx_submodules",
+                                "files":  6119,
+                                "bytes":  570191125
+                            },
+                            {
+                                "name":  "src",
+                                "files":  3434,
+                                "bytes":  113248778
+                            },
+                            {
+                                "name":  "core",
+                                "files":  2876,
+                                "bytes":  280663304
+                            },
+                            {
+                                "name":  "reference",
+                                "files":  327,
+                                "bytes":  24226055
+                            },
+                            {
+                                "name":  "deployment",
+                                "files":  29,
+                                "bytes":  160873
+                            },
+                            {
+                                "name":  "docker",
+                                "files":  14,
+                                "bytes":  43644
+                            },
+                            {
+                                "name":  "tests",
+                                "files":  14,
+                                "bytes":  79990
+                            },
+                            {
+                                "name":  "tools",
+                                "files":  12,
+                                "bytes":  14808
+                            },
+                            {
+                                "name":  "scripts",
+                                "files":  3,
+                                "bytes":  10741
+                            },
+                            {
+                                "name":  ".reuse",
+                                "files":  1,
+                                "bytes":  838
+                            },
+                            {
+                                "name":  "LICENSES",
+                                "files":  1,
+                                "bytes":  994
+                            }
+                        ],
+    "largest_curated_files":  [
+                                  {
+                                      "path":  "core\\src\\cmplx\\misc\\models.py",
+                                      "bytes":  30800221
+                                  },
+                                  {
+                                      "path":  "cmplx_submodules\\CMPLXUNI\\src\\cmplx\\misc\\models.py",
+                                      "bytes":  30800221
+                                  },
+                                  {
+                                      "path":  "src\\cqe_models\\models.py",
+                                      "bytes":  30800221
+                                  },
+                                  {
+                                      "path":  "cmplx_submodules\\CMPLX\\core\\src\\cmplx\\misc\\models.py",
+                                      "bytes":  30800221
+                                  },
+                                  {
+                                      "path":  "core\\src\\cmplx\\misc\\unified_cqe_part1.py",
+                                      "bytes":  27821356
+                                  },
+                                  {
+                                      "path":  "cmplx_submodules\\CMPLX\\core\\src\\cmplx\\misc\\unified_cqe_part1.py",
+                                      "bytes":  27821356
+                                  },
+                                  {
+                                      "path":  "cmplx_submodules\\CMPLXUNI\\src\\cmplx\\misc\\unified_cqe_part1.py",
+                                      "bytes":  27821356
+                                  },
+                                  {
+                                      "path":  "cmplx_submodules\\CMPLX\\core\\src\\cmplx\\unified_families\\unified_cqe_part1.py",
+                                      "bytes":  27821319
+                                  },
+                                  {
+                                      "path":  "core\\src\\cmplx\\unified_families\\unified_cqe_part1.py",
+                                      "bytes":  27821319
+                                  },
+                                  {
+                                      "path":  "cmplx_submodules\\CMPLXUNI\\src\\cmplx\\unified_families\\unified_cqe_part1.py",
+                                      "bytes":  27821319
+                                  }
+                              ]
+}

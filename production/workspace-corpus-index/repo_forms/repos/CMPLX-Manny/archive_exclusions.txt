@@ -1,0 +1,2 @@
+﻿Working Prototyping\db\ai_instructions\instruction_files.db	86016
+Working Prototyping\db\ai_memory\memory.db	6270976

@@ -1,0 +1,88 @@
+﻿{
+    "name":  "CMPLX-TMN1",
+    "remote":  "https://github.com/nbarker2021/CMPLX-TMN1.git",
+    "local_path":  "D:\\g\\CMPLX-TMN1",
+    "review_branch":  "intake/review-for-cqecmplx-production",
+    "head":  "bd9d52b (HEAD -\u003e intake/review-for-cqecmplx-production, origin/main, origin/HEAD, main) Full 43-service deployment: Phase 0-6 complete, all docs rewritten",
+    "curated_file_count":  81,
+    "excluded_archive_count":  0,
+    "curated_bytes":  6700812,
+    "excluded_archive_bytes":  null,
+    "key_docs":  [
+                     "README.md"
+                 ],
+    "top_directories":  [
+                            {
+                                "name":  "infrastructure",
+                                "files":  45,
+                                "bytes":  477717
+                            },
+                            {
+                                "name":  "formalizations",
+                                "files":  12,
+                                "bytes":  6071757
+                            },
+                            {
+                                "name":  "intake",
+                                "files":  2,
+                                "bytes":  0
+                            },
+                            {
+                                "name":  "databases",
+                                "files":  2,
+                                "bytes":  12878
+                            },
+                            {
+                                "name":  "showcase",
+                                "files":  2,
+                                "bytes":  10152
+                            },
+                            {
+                                "name":  "hooks",
+                                "files":  1,
+                                "bytes":  8097
+                            }
+                        ],
+    "largest_curated_files":  [
+                                  {
+                                      "path":  "formalizations\\Comprehensive Glossary of System Terminology.docx",
+                                      "bytes":  1814479
+                                  },
+                                  {
+                                      "path":  "formalizations\\CMPLX Atlas Build Guide.pdf",
+                                      "bytes":  1028064
+                                  },
+                                  {
+                                      "path":  "formalizations\\CQE_Classified_Formalizations.json",
+                                      "bytes":  949791
+                                  },
+                                  {
+                                      "path":  "formalizations\\CMPLX2 Implementation Extension.pdf",
+                                      "bytes":  811734
+                                  },
+                                  {
+                                      "path":  "formalizations\\Atlas Microkernel Architecture.pdf",
+                                      "bytes":  649731
+                                  },
+                                  {
+                                      "path":  "formalizations\\Coldstart Bootstrap Guide.pdf",
+                                      "bytes":  630554
+                                  },
+                                  {
+                                      "path":  "infrastructure\\gateway.py",
+                                      "bytes":  79943
+                                  },
+                                  {
+                                      "path":  "infrastructure\\thinktank\\thinktank.py",
+                                      "bytes":  77112
+                                  },
+                                  {
+                                      "path":  "formalizations\\The 2026 CMPLX Agent Template Architecture_ Six-Tier Specification.docx",
+                                      "bytes":  68787
+                                  },
+                                  {
+                                      "path":  "infrastructure\\paper_harvester.py",
+                                      "bytes":  39849
+                                  }
+                              ]
+}

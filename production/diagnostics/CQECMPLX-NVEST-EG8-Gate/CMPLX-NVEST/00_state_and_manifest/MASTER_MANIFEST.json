@@ -1,0 +1,39 @@
+{
+  "umbrella_id": "CMPLX-NVEST",
+  "name": "CMPLX-NVEST",
+  "expanded_name": "CMPLX Investigate/NVest Wave Diagnostic Umbrella",
+  "family": "Forge-family umbrella",
+  "status": "contract_scaffold_ready",
+  "inherits_from": [
+    "ForgeFamilyBlueprint",
+    "LatticeForge",
+    "CMPLX-MORSR",
+    "CQE_MORSR",
+    "Binary Boundary Adapter",
+    "Universal Adapter Programs",
+    "CQE bridge layer"
+  ],
+  "purpose": "Provide a domain-neutral investigate/NVest umbrella for wave, centroid, value, risk, error, failure, and success point diagnostics.",
+  "canonical_loop": {
+    "seed": "target identity, signal, or product context",
+    "decompose": "wave/centroid/regime decomposition",
+    "investigate": "locate active value, error, risk, success, and failure points",
+    "gate": "delegate CQE E/G8 hidden-result gate decision",
+    "bind": "map result back to target identity and shared library",
+    "receipt": "emit diagnostic receipt and map update"
+  },
+  "required_honesty_layer": {
+    "name": "Hidden Guess Result",
+    "rule": "Every non-math NVEST diagnostic must guess before result reveal."
+  },
+  "required_cqe_layer": {
+    "rule": "NVEST maps wave engine behavior to math/formal decomposition to product action to library binding before creating a new datum.",
+    "default": "library_bound_unless_new_datum_proven"
+  },
+  "required_universal_adapters": {
+    "binary_boundary_adapter": "CMPLX-R30-main/PROOF/src/lattice_forge/binary_boundary_adapter.py",
+    "universal_adapter_programs": "CMPLX-PartsFactory-main/src/mcp_tools/universal_tools.py"
+  },
+  "paired_umbrella": "CQE-E/G8",
+  "version": "0.1.0"
+}

@@ -1,0 +1,9 @@
+﻿cmplx_submodules\CMPLX\core\mmdb\mmdb.sqlite3	897024
+cmplx_submodules\CMPLX\core\src\cmplx\core\mmdb\databases\e8.db	86016
+cmplx_submodules\CMPLX\core\src\mmdb\vector_store.db	1843200
+cmplx_submodules\CMPLXUNI\mmdb\mmdb.sqlite3	897024
+cmplx_submodules\CMPLXUNI\src\cmplx\core\mmdb\databases\e8.db	86016
+cmplx_submodules\CMPLXUNI\src\mmdb\vector_store.db	49152
+core\mmdb\mmdb.sqlite3	897024
+core\src\cmplx\core\mmdb\databases\e8.db	86016
+core\src\mmdb\vector_store.db	1843200

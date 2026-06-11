@@ -1,0 +1,16 @@
+{
+  "umbrella": "CMPLX-NVEST",
+  "summary": "CMPLX-side investigate/NVest umbrella for domain-neutral wave diagnostics.",
+  "ready": true,
+  "paired_umbrella": "CQE-E/G8",
+  "not_finance_only": true,
+  "required_layers": [
+    "hidden_guess_result",
+    "cqe_bridge",
+    "binary_boundary_adapter",
+    "universal_adapter_programs",
+    "receipt",
+    "nsl"
+  ],
+  "datum_rule": "library-bound by default unless CQE proves new datum"
+}

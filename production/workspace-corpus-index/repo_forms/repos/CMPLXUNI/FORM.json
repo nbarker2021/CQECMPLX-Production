@@ -1,0 +1,97 @@
+﻿{
+    "name":  "CMPLXUNI",
+    "remote":  "https://github.com/nbarker2021/CMPLXUNI.git",
+    "local_path":  "D:\\g\\CMPLXUNI",
+    "review_branch":  "intake/review-for-cqecmplx-production",
+    "head":  "559b13c (HEAD -\u003e intake/review-for-cqecmplx-production, origin/main, origin/HEAD, main) feat: Add unified code from docker/unified - lfai",
+    "curated_file_count":  2907,
+    "excluded_archive_count":  1,
+    "curated_bytes":  277715256,
+    "excluded_archive_bytes":  897024,
+    "key_docs":  [
+                     "README.md",
+                     "AGENTS.md",
+                     "NAVIGATION.md",
+                     "TODO.md",
+                     "pyproject.toml"
+                 ],
+    "top_directories":  [
+                            {
+                                "name":  "src",
+                                "files":  2834,
+                                "bytes":  263887722
+                            },
+                            {
+                                "name":  "lfai",
+                                "files":  19,
+                                "bytes":  28600
+                            },
+                            {
+                                "name":  "cmplx-nextjs",
+                                "files":  16,
+                                "bytes":  49619
+                            },
+                            {
+                                "name":  "mmdb",
+                                "files":  7,
+                                "bytes":  14478701
+                            },
+                            {
+                                "name":  "the-library",
+                                "files":  6,
+                                "bytes":  58992
+                            },
+                            {
+                                "name":  ".reuse",
+                                "files":  1,
+                                "bytes":  838
+                            },
+                            {
+                                "name":  "LICENSES",
+                                "files":  1,
+                                "bytes":  994
+                            }
+                        ],
+    "largest_curated_files":  [
+                                  {
+                                      "path":  "src\\cmplx\\misc\\models.py",
+                                      "bytes":  30800221
+                                  },
+                                  {
+                                      "path":  "src\\cmplx\\misc\\unified_cqe_part1.py",
+                                      "bytes":  27821356
+                                  },
+                                  {
+                                      "path":  "src\\cmplx\\unified_families\\unified_cqe_part1.py",
+                                      "bytes":  27821319
+                                  },
+                                  {
+                                      "path":  "src\\cmplx\\misc\\unified_cqe_part2.py",
+                                      "bytes":  26274157
+                                  },
+                                  {
+                                      "path":  "src\\cmplx\\unified_families\\unified_cqe_part2.py",
+                                      "bytes":  26274154
+                                  },
+                                  {
+                                      "path":  "src\\cmplx\\misc\\1a98f3a0_functions.py",
+                                      "bytes":  21269635
+                                  },
+                                  {
+                                      "path":  "src\\cmplx\\misc\\additions.py",
+                                      "bytes":  14862005
+                                  },
+                                  {
+                                      "path":  "mmdb\\receipts_23k.json",
+                                      "bytes":  7585669
+                                  },
+                                  {
+                                      "path":  "src\\cmplx\\misc\\unified_cmplx.py",
+                                      "bytes":  6996965
+                                  },
+                                  {
+                                      "path":  "src\\cmplx\\unified_families\\unified_cmplx.py",
+                                      "bytes":  6996715
+                                  }
+                              ]
+}

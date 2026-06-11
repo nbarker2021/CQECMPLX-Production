@@ -1,0 +1,16 @@
+{
+  "umbrella": "CQE-E/G8",
+  "folder": "CQE-E_G8",
+  "summary": "CQE-side E8/G8 gate umbrella for NVEST wave investigation candidates.",
+  "ready": true,
+  "paired_umbrella": "CMPLX-NVEST",
+  "required_layers": [
+    "hidden_guess_result",
+    "cqe_bridge",
+    "binary_boundary_adapter",
+    "universal_adapter_programs",
+    "receipt",
+    "nsl"
+  ],
+  "datum_rule": "library-bound by default unless CQE proves new datum"
+}

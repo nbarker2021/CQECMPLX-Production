@@ -1,0 +1,95 @@
+﻿{
+    "name":  "CMPLXDevKit",
+    "remote":  "https://github.com/nbarker2021/CMPLXDevKit.git",
+    "local_path":  "D:\\g\\CMPLXDevKit",
+    "review_branch":  "intake/review-for-cqecmplx-production",
+    "head":  "340835a (HEAD -\u003e intake/review-for-cqecmplx-production, origin/main, origin/HEAD, main) Stop tracking Python cache artifacts",
+    "curated_file_count":  5007,
+    "excluded_archive_count":  0,
+    "curated_bytes":  98804377,
+    "excluded_archive_bytes":  null,
+    "key_docs":  [
+                     "README.md",
+                     "NAVIGATION.md",
+                     "TODO.md"
+                 ],
+    "top_directories":  [
+                            {
+                                "name":  "src",
+                                "files":  4846,
+                                "bytes":  89495284
+                            },
+                            {
+                                "name":  "CMPLXDevKit",
+                                "files":  74,
+                                "bytes":  4637869
+                            },
+                            {
+                                "name":  "CMPLXLOCALMCP",
+                                "files":  65,
+                                "bytes":  627285
+                            },
+                            {
+                                "name":  "Handshake Entry-Build Guide",
+                                "files":  8,
+                                "bytes":  4008986
+                            },
+                            {
+                                "name":  "devkit",
+                                "files":  3,
+                                "bytes":  2856
+                            },
+                            {
+                                "name":  ".reuse",
+                                "files":  1,
+                                "bytes":  838
+                            },
+                            {
+                                "name":  "LICENSES",
+                                "files":  1,
+                                "bytes":  994
+                            }
+                        ],
+    "largest_curated_files":  [
+                                  {
+                                      "path":  "src\\cqe_organized\\283a888f32d3__CQE_UNIFIED_CODE_monoliths__CQE_V4_MONOLITH_utils_1.py",
+                                      "bytes":  3194883
+                                  },
+                                  {
+                                      "path":  "src\\cqe_organized\\21d200f027f2__CQE_UNIFIED_CODE_monoliths__CQE_CORE_MONOLITH_utils_1.py",
+                                      "bytes":  3163337
+                                  },
+                                  {
+                                      "path":  "src\\cqe_organized\\161f51095761__Bestbuild101325_2__Best_build_101325__CQE_V4_MONOLITH.py",
+                                      "bytes":  3155331
+                                  },
+                                  {
+                                      "path":  "src\\cqe_organized\\1f4e5cb5f164__CQE_UNIFIED_CODE_monoliths__CQE_V4_MONOLITH_utils.py",
+                                      "bytes":  3148011
+                                  },
+                                  {
+                                      "path":  "src\\cqe_organized\\6fc4c9497cbd__CQE_UNIFIED_CODE_monoliths__CQE_V4_MONOLITH.py",
+                                      "bytes":  3141485
+                                  },
+                                  {
+                                      "path":  "src\\cqe_organized\\38f973611dc2__Bestbuild101325_2__Best_build_101325__CQE_CORE_MONOLITH.py",
+                                      "bytes":  3123685
+                                  },
+                                  {
+                                      "path":  "src\\cqe_good_example\\CQE_CORE_MONOLITH.py",
+                                      "bytes":  3123685
+                                  },
+                                  {
+                                      "path":  "src\\cqe_organized\\6afc9ed3d3ca__CQE_UNIFIED_CODE_monoliths__CQE_CORE_MONOLITH.py",
+                                      "bytes":  3109782
+                                  },
+                                  {
+                                      "path":  "Handshake Entry-Build Guide\\CMPLX Atlas Build Guide.pdf",
+                                      "bytes":  1028064
+                                  },
+                                  {
+                                      "path":  "CMPLXDevKit\\Handshake Entry-Build Guide\\CMPLX Atlas Build Guide.pdf",
+                                      "bytes":  1028064
+                                  }
+                              ]
+}

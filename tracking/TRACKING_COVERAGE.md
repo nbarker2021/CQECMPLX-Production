@@ -48,3 +48,5 @@ pieces needed before source movement:
 | Slice | Status | Manifest |
 |---|---|---|
 | `production/PROMOTION_SLICE_2026-06-11_PAPER_PROOF_TEXT.md` | promoted | `tracking/promotion-manifests/CQECMPLX-Paper-Proof-Bundle.manifest.json` |
+| `production/workspace-corpus-index/PROMOTION_SLICE_2026-06-11_REPO_FORMS_INDEX.md` | promoted | `tracking/promotion-manifests/CQECMPLX-Repo-Forms-Accounting.manifest.json` |
+| `production/diagnostics/CQECMPLX-NVEST-EG8-Gate/PROMOTION_SLICE_2026-06-11_NVEST_EG8_CONTRACTS.md` | promoted | `tracking/promotion-manifests/CQECMPLX-NVEST-EG8-Gate.manifest.json` |

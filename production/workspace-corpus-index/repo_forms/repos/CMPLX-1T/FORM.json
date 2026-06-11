@@ -1,0 +1,210 @@
+﻿{
+    "name":  "CMPLX-1T",
+    "remote":  "https://github.com/nbarker2021/CMPLX-1T.git",
+    "local_path":  "D:\\g\\CMPLX-1T",
+    "review_branch":  "intake/review-for-cqecmplx-production",
+    "head":  "01faad8a (HEAD -\u003e intake/review-for-cqecmplx-production, origin/master, origin/HEAD, master) docs: Add Phase 2 10-Layer Architecture Definition",
+    "curated_file_count":  38663,
+    "excluded_archive_count":  18,
+    "curated_bytes":  1270813252,
+    "excluded_archive_bytes":  59360476,
+    "key_docs":  [
+                     "README.md",
+                     "AGENTS.md",
+                     "NAVIGATION.md"
+                 ],
+    "top_directories":  [
+                            {
+                                "name":  "docs",
+                                "files":  29199,
+                                "bytes":  969827861
+                            },
+                            {
+                                "name":  "docker",
+                                "files":  8998,
+                                "bytes":  289574549
+                            },
+                            {
+                                "name":  "Wolfram study",
+                                "files":  108,
+                                "bytes":  35041446
+                            },
+                            {
+                                "name":  "SHOWROOM",
+                                "files":  59,
+                                "bytes":  3200125
+                            },
+                            {
+                                "name":  "src",
+                                "files":  59,
+                                "bytes":  729719
+                            },
+                            {
+                                "name":  "scripts",
+                                "files":  52,
+                                "bytes":  367766
+                            },
+                            {
+                                "name":  "TODO",
+                                "files":  39,
+                                "bytes":  161855
+                            },
+                            {
+                                "name":  "repos",
+                                "files":  26,
+                                "bytes":  297126
+                            },
+                            {
+                                "name":  "pipeline",
+                                "files":  25,
+                                "bytes":  245251
+                            },
+                            {
+                                "name":  "images",
+                                "files":  19,
+                                "bytes":  433679
+                            },
+                            {
+                                "name":  "reports",
+                                "files":  11,
+                                "bytes":  90903
+                            },
+                            {
+                                "name":  "plans",
+                                "files":  10,
+                                "bytes":  99473
+                            },
+                            {
+                                "name":  "config",
+                                "files":  9,
+                                "bytes":  630061
+                            },
+                            {
+                                "name":  "document_output",
+                                "files":  6,
+                                "bytes":  233043
+                            },
+                            {
+                                "name":  "configs",
+                                "files":  6,
+                                "bytes":  2170
+                            },
+                            {
+                                "name":  "data",
+                                "files":  5,
+                                "bytes":  28568162
+                            },
+                            {
+                                "name":  "intake-system",
+                                "files":  5,
+                                "bytes":  27979
+                            },
+                            {
+                                "name":  "checkpoints",
+                                "files":  3,
+                                "bytes":  430098
+                            },
+                            {
+                                "name":  "archives",
+                                "files":  3,
+                                "bytes":  6055
+                            },
+                            {
+                                "name":  "security-reports",
+                                "files":  2,
+                                "bytes":  13120
+                            },
+                            {
+                                "name":  "toolkit",
+                                "files":  2,
+                                "bytes":  10946
+                            },
+                            {
+                                "name":  "monitoring",
+                                "files":  2,
+                                "bytes":  2696
+                            },
+                            {
+                                "name":  ".kilocode",
+                                "files":  2,
+                                "bytes":  2801
+                            },
+                            {
+                                "name":  "home",
+                                "files":  2,
+                                "bytes":  785
+                            },
+                            {
+                                "name":  "qwenwrapper",
+                                "files":  2,
+                                "bytes":  10526
+                            },
+                            {
+                                "name":  "nginx",
+                                "files":  2,
+                                "bytes":  6083
+                            },
+                            {
+                                "name":  ".reuse",
+                                "files":  1,
+                                "bytes":  805
+                            },
+                            {
+                                "name":  "LICENSES",
+                                "files":  1,
+                                "bytes":  966
+                            },
+                            {
+                                "name":  "organized",
+                                "files":  1,
+                                "bytes":  949
+                            },
+                            {
+                                "name":  "cmplx-1t-hook",
+                                "files":  1,
+                                "bytes":  15501
+                            }
+                        ],
+    "largest_curated_files":  [
+                                  {
+                                      "path":  "docs\\directory_manifest.csv",
+                                      "bytes":  64263137
+                                  },
+                                  {
+                                      "path":  "docker\\unified\\cqe_unified_family\\unified_cqe1.py",
+                                      "bytes":  53970313
+                                  },
+                                  {
+                                      "path":  "docs\\directory_manifest_UPDATED.csv",
+                                      "bytes":  34883946
+                                  },
+                                  {
+                                      "path":  "docker\\unified\\cqe_models\\models.py",
+                                      "bytes":  30800221
+                                  },
+                                  {
+                                      "path":  "docs\\1_intake\\inventory_raw.txt",
+                                      "bytes":  28898630
+                                  },
+                                  {
+                                      "path":  "docker\\unified\\cqe_functions\\functions.py",
+                                      "bytes":  21269635
+                                  },
+                                  {
+                                      "path":  "docs\\tree_dump.txt",
+                                      "bytes":  19685388
+                                  },
+                                  {
+                                      "path":  "docs\\3_staged\\family_exemplar_starters\\Family Builds-legacy\\CMPLX 2\\cmplx_unified\\runtime\\_workspace_rule_tiling_e8_v2\\rule_tiling_graph.json",
+                                      "bytes":  17176473
+                                  },
+                                  {
+                                      "path":  "docs\\3_staged\\family_exemplar_starters\\Family Builds-legacy\\CMPLX 2\\cmplx_unified\\runtime\\_workspace_rule_tiling_e8\\rule_tiling_graph.json",
+                                      "bytes":  17176473
+                                  },
+                                  {
+                                      "path":  "docs\\3_staged\\family_exemplar_starters\\Family Builds-legacy\\cqe_spine_envelope_v4_pycache_clean\\spine\\_envelope_assets\\runtime_executable\\docs\\swarm_artifacts\\cycle_c_lexicon_and_alias_canonicalization\\canonical_lexicon.json",
+                                      "bytes":  15136321
+                                  }
+                              ]
+}

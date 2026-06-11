@@ -1,0 +1,78 @@
+﻿{
+    "name":  "CMPLX-TMN-main",
+    "remote":  "https://github.com/nbarker2021/CMPLX-TMN-main.git",
+    "local_path":  "D:\\g\\CMPLX-TMN-main",
+    "review_branch":  "intake/review-for-cqecmplx-production",
+    "head":  "d60dfa0 (HEAD -\u003e intake/review-for-cqecmplx-production, origin/main, origin/HEAD, main) Merge pull request #6 from nbarker2021/tmn2",
+    "curated_file_count":  315,
+    "excluded_archive_count":  0,
+    "curated_bytes":  1947317,
+    "excluded_archive_bytes":  null,
+    "key_docs":  [
+                     "README.md"
+                 ],
+    "top_directories":  [
+                            {
+                                "name":  "src",
+                                "files":  261,
+                                "bytes":  1498216
+                            },
+                            {
+                                "name":  "capsules",
+                                "files":  36,
+                                "bytes":  223741
+                            },
+                            {
+                                "name":  "configs",
+                                "files":  8,
+                                "bytes":  128152
+                            },
+                            {
+                                "name":  "scripts",
+                                "files":  3,
+                                "bytes":  19696
+                            }
+                        ],
+    "largest_curated_files":  [
+                                  {
+                                      "path":  "src\\daemon\\daemon.py",
+                                      "bytes":  61242
+                                  },
+                                  {
+                                      "path":  "src\\board\\board.py",
+                                      "bytes":  53257
+                                  },
+                                  {
+                                      "path":  "src\\pipeline\\pipeline.py",
+                                      "bytes":  47310
+                                  },
+                                  {
+                                      "path":  "docker-compose.yml",
+                                      "bytes":  43949
+                                  },
+                                  {
+                                      "path":  "src\\portal\\portal.py",
+                                      "bytes":  41225
+                                  },
+                                  {
+                                      "path":  "src\\bond\\bond.py",
+                                      "bytes":  38318
+                                  },
+                                  {
+                                      "path":  "src\\coop\\coop.py",
+                                      "bytes":  37096
+                                  },
+                                  {
+                                      "path":  "configs\\cmplx_product_suite.yml",
+                                      "bytes":  27993
+                                  },
+                                  {
+                                      "path":  "src\\identity\\identity.py",
+                                      "bytes":  27729
+                                  },
+                                  {
+                                      "path":  "src\\labeler\\labeler.py",
+                                      "bytes":  27141
+                                  }
+                              ]
+}

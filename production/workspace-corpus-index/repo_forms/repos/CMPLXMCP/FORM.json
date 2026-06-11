@@ -1,0 +1,137 @@
+﻿{
+    "name":  "CMPLXMCP",
+    "remote":  "https://github.com/nbarker2021/CMPLXMCP.git",
+    "local_path":  "D:\\g\\CMPLXMCP",
+    "review_branch":  "intake/review-for-cqecmplx-production",
+    "head":  "d0dc5c2 (HEAD -\u003e intake/review-for-cqecmplx-production, origin/main, origin/HEAD, main) Stop tracking Python cache artifacts",
+    "curated_file_count":  158,
+    "excluded_archive_count":  0,
+    "curated_bytes":  54779051,
+    "excluded_archive_bytes":  null,
+    "key_docs":  [
+                     "README.md",
+                     "AGENTS.md",
+                     "NAVIGATION.md",
+                     "TODO.md",
+                     "setup.py"
+                 ],
+    "top_directories":  [
+                            {
+                                "name":  "agrm_snap",
+                                "files":  40,
+                                "bytes":  62557
+                            },
+                            {
+                                "name":  "agrm_mdhg_integration",
+                                "files":  11,
+                                "bytes":  77482
+                            },
+                            {
+                                "name":  "validation",
+                                "files":  11,
+                                "bytes":  99550
+                            },
+                            {
+                                "name":  "universal",
+                                "files":  11,
+                                "bytes":  98070
+                            },
+                            {
+                                "name":  "controllers",
+                                "files":  9,
+                                "bytes":  25413
+                            },
+                            {
+                                "name":  "server",
+                                "files":  9,
+                                "bytes":  62961
+                            },
+                            {
+                                "name":  "adapters",
+                                "files":  9,
+                                "bytes":  11557
+                            },
+                            {
+                                "name":  "polyglot",
+                                "files":  8,
+                                "bytes":  142921
+                            },
+                            {
+                                "name":  "cmplx_integration",
+                                "files":  8,
+                                "bytes":  141581
+                            },
+                            {
+                                "name":  "modules",
+                                "files":  7,
+                                "bytes":  10999
+                            },
+                            {
+                                "name":  "client",
+                                "files":  6,
+                                "bytes":  10801
+                            },
+                            {
+                                "name":  "codec",
+                                "files":  6,
+                                "bytes":  5198
+                            },
+                            {
+                                "name":  ".reuse",
+                                "files":  1,
+                                "bytes":  838
+                            },
+                            {
+                                "name":  "cqe_unified_family",
+                                "files":  1,
+                                "bytes":  53970313
+                            },
+                            {
+                                "name":  "LICENSES",
+                                "files":  1,
+                                "bytes":  994
+                            }
+                        ],
+    "largest_curated_files":  [
+                                  {
+                                      "path":  "cqe_unified_family\\unified_cqe1.py",
+                                      "bytes":  53970313
+                                  },
+                                  {
+                                      "path":  "cmplx_integration\\registry.py",
+                                      "bytes":  92330
+                                  },
+                                  {
+                                      "path":  "polyglot\\polyglot-server\\mcp_tool_definitions.py",
+                                      "bytes":  70306
+                                  },
+                                  {
+                                      "path":  "cmplx_integration\\advanced_tools.py",
+                                      "bytes":  37848
+                                  },
+                                  {
+                                      "path":  "validation\\agrm_mdhg_validator.py",
+                                      "bytes":  27244
+                                  },
+                                  {
+                                      "path":  "server\\tools.py",
+                                      "bytes":  24028
+                                  },
+                                  {
+                                      "path":  "server\\server.py",
+                                      "bytes":  23401
+                                  },
+                                  {
+                                      "path":  "polyglot\\polyglot-server\\main.py",
+                                      "bytes":  21813
+                                  },
+                                  {
+                                      "path":  "agrm_mdhg_integration\\mdhg_ca.py",
+                                      "bytes":  20851
+                                  },
+                                  {
+                                      "path":  "validation\\universal_system_validator.py",
+                                      "bytes":  19399
+                                  }
+                              ]
+}

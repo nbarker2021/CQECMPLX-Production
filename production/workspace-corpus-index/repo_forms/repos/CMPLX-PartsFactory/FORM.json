@@ -1,0 +1,156 @@
+﻿{
+    "name":  "CMPLX-PartsFactory",
+    "remote":  "https://github.com/nbarker2021/CMPLX-PartsFactory.git",
+    "local_path":  "D:\\g\\CMPLX-PartsFactory",
+    "review_branch":  "intake/review-for-cqecmplx-production",
+    "head":  "dac0830 (HEAD -\u003e intake/review-for-cqecmplx-production, origin/main, origin/HEAD, main) docs: add CMPLX full package view",
+    "curated_file_count":  1459,
+    "excluded_archive_count":  1,
+    "curated_bytes":  12569863,
+    "excluded_archive_bytes":  5398528,
+    "key_docs":  [
+                     "README.md",
+                     "AGENTS.md",
+                     "pyproject.toml",
+                     ".gitmodules"
+                 ],
+    "top_directories":  [
+                            {
+                                "name":  "src",
+                                "files":  598,
+                                "bytes":  5454112
+                            },
+                            {
+                                "name":  "packages",
+                                "files":  354,
+                                "bytes":  8760768
+                            },
+                            {
+                                "name":  "tests",
+                                "files":  144,
+                                "bytes":  549811
+                            },
+                            {
+                                "name":  "docs",
+                                "files":  114,
+                                "bytes":  755316
+                            },
+                            {
+                                "name":  "scripts",
+                                "files":  59,
+                                "bytes":  476550
+                            },
+                            {
+                                "name":  "data",
+                                "files":  47,
+                                "bytes":  263828
+                            },
+                            {
+                                "name":  "services",
+                                "files":  36,
+                                "bytes":  711673
+                            },
+                            {
+                                "name":  "proof-lab",
+                                "files":  15,
+                                "bytes":  322023
+                            },
+                            {
+                                "name":  ".opencode",
+                                "files":  14,
+                                "bytes":  49712
+                            },
+                            {
+                                "name":  "research_notes",
+                                "files":  8,
+                                "bytes":  443546
+                            },
+                            {
+                                "name":  ".claude",
+                                "files":  7,
+                                "bytes":  4219
+                            },
+                            {
+                                "name":  "repo_kernel",
+                                "files":  4,
+                                "bytes":  12846
+                            },
+                            {
+                                "name":  ".vscode",
+                                "files":  4,
+                                "bytes":  4422
+                            },
+                            {
+                                "name":  "examples",
+                                "files":  3,
+                                "bytes":  8167
+                            },
+                            {
+                                "name":  "projections",
+                                "files":  3,
+                                "bytes":  628
+                            },
+                            {
+                                "name":  ".github",
+                                "files":  2,
+                                "bytes":  9880
+                            },
+                            {
+                                "name":  "deploy",
+                                "files":  2,
+                                "bytes":  12763
+                            },
+                            {
+                                "name":  "infra",
+                                "files":  2,
+                                "bytes":  1859
+                            },
+                            {
+                                "name":  ".agents",
+                                "files":  1,
+                                "bytes":  1056
+                            }
+                        ],
+    "largest_curated_files":  [
+                                  {
+                                      "path":  "services\\repo-kernel\\server.py",
+                                      "bytes":  596887
+                                  },
+                                  {
+                                      "path":  "src\\cmplx\\addressing\\mdhg\\_history_reference\\composed_mdhg_v3.py",
+                                      "bytes":  378205
+                                  },
+                                  {
+                                      "path":  "src\\cmplx\\morphon\\_history_reference\\composed_morphon_v3.py",
+                                      "bytes":  340229
+                                  },
+                                  {
+                                      "path":  "proof-lab\\artifacts\\empirical_matrix_report.json",
+                                      "bytes":  294983
+                                  },
+                                  {
+                                      "path":  "packages\\lattice-forge\\src\\lattice_forge\\rule30.py",
+                                      "bytes":  284465
+                                  },
+                                  {
+                                      "path":  "src\\cmplx\\geometry\\e8\\unified_e8.py",
+                                      "bytes":  158518
+                                  },
+                                  {
+                                      "path":  "research_notes\\The_2026_CMPLX_Agent_Template_Architecture_Six-Tier_Specification.txt",
+                                      "bytes":  117267
+                                  },
+                                  {
+                                      "path":  "packages\\lattice-forge\\docs\\cqe\\extracted_formalizations\\texts\\080-lcr-rule30-rule30-agent-final-paper.md",
+                                      "bytes":  115922
+                                  },
+                                  {
+                                      "path":  "packages\\lattice-forge\\docs\\cqe\\extracted_formalizations\\texts\\065-prototype-formalizations-cqe-formalizations-definitions.md",
+                                      "bytes":  105533
+                                  },
+                                  {
+                                      "path":  "research_notes\\Comprehensive_Glossary_of_System_Terminology.txt",
+                                      "bytes":  103439
+                                  }
+                              ]
+}

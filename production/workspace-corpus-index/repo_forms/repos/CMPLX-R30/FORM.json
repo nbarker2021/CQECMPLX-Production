@@ -1,0 +1,144 @@
+﻿{
+    "name":  "CMPLX-R30",
+    "remote":  "https://github.com/nbarker2021/CMPLX-R30.git",
+    "local_path":  "D:\\g\\CMPLX-R30",
+    "review_branch":  "intake/review-for-cqecmplx-production",
+    "head":  "1cff364 (HEAD -\u003e intake/review-for-cqecmplx-production, origin/main, origin/HEAD, main) add adversarial semantic bridge lab",
+    "curated_file_count":  311,
+    "excluded_archive_count":  0,
+    "curated_bytes":  183072554,
+    "excluded_archive_bytes":  null,
+    "key_docs":  [
+                     "README.md",
+                     "pyproject.toml"
+                 ],
+    "top_directories":  [
+                            {
+                                "name":  "PROOF",
+                                "files":  129,
+                                "bytes":  1716814
+                            },
+                            {
+                                "name":  "CATALOG",
+                                "files":  31,
+                                "bytes":  171053449
+                            },
+                            {
+                                "name":  "DATA",
+                                "files":  26,
+                                "bytes":  7268149
+                            },
+                            {
+                                "name":  "src",
+                                "files":  15,
+                                "bytes":  134927
+                            },
+                            {
+                                "name":  "scripts",
+                                "files":  15,
+                                "bytes":  144069
+                            },
+                            {
+                                "name":  "tests",
+                                "files":  15,
+                                "bytes":  65374
+                            },
+                            {
+                                "name":  "VERIFICATION",
+                                "files":  15,
+                                "bytes":  123121
+                            },
+                            {
+                                "name":  "LAB",
+                                "files":  14,
+                                "bytes":  236185
+                            },
+                            {
+                                "name":  "FORMALIZATION",
+                                "files":  12,
+                                "bytes":  66867
+                            },
+                            {
+                                "name":  "docs",
+                                "files":  6,
+                                "bytes":  54265
+                            },
+                            {
+                                "name":  "CORPUS",
+                                "files":  6,
+                                "bytes":  2015270
+                            },
+                            {
+                                "name":  "RECEIPT_CHAIN",
+                                "files":  4,
+                                "bytes":  58574
+                            },
+                            {
+                                "name":  "DEVICE",
+                                "files":  3,
+                                "bytes":  31914
+                            },
+                            {
+                                "name":  "CITATIONS",
+                                "files":  3,
+                                "bytes":  23334
+                            },
+                            {
+                                "name":  "APP",
+                                "files":  2,
+                                "bytes":  19781
+                            },
+                            {
+                                "name":  "DISCLOSURES",
+                                "files":  2,
+                                "bytes":  15533
+                            },
+                            {
+                                "name":  "extended_memory",
+                                "files":  2,
+                                "bytes":  2324
+                            }
+                        ],
+    "largest_curated_files":  [
+                                  {
+                                      "path":  "CATALOG\\evidence_catalog.json",
+                                      "bytes":  50083511
+                                  },
+                                  {
+                                      "path":  "CATALOG\\evidence_catalog.csv",
+                                      "bytes":  34438184
+                                  },
+                                  {
+                                      "path":  "CATALOG\\formula_catalog.json",
+                                      "bytes":  27036230
+                                  },
+                                  {
+                                      "path":  "CATALOG\\formula_catalog.csv",
+                                      "bytes":  18511149
+                                  },
+                                  {
+                                      "path":  "CATALOG\\term_catalog.json",
+                                      "bytes":  15319016
+                                  },
+                                  {
+                                      "path":  "CATALOG\\term_catalog.csv",
+                                      "bytes":  10435366
+                                  },
+                                  {
+                                      "path":  "CATALOG\\claim_catalog.json",
+                                      "bytes":  4073205
+                                  },
+                                  {
+                                      "path":  "CATALOG\\porting_context_catalog.json",
+                                      "bytes":  3655069
+                                  },
+                                  {
+                                      "path":  "DATA\\wolfram-rule30-center\\wolfram_rule30_center_1m.wl",
+                                      "bytes":  3000000
+                                  },
+                                  {
+                                      "path":  "CATALOG\\claim_catalog.csv",
+                                      "bytes":  2923938
+                                  }
+                              ]
+}

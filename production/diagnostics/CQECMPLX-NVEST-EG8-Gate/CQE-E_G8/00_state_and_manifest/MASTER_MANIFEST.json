@@ -1,0 +1,38 @@
+{
+  "umbrella_id": "CQE-E_G8",
+  "name": "CQE-E/G8",
+  "expanded_name": "CQE E8 Gate Umbrella",
+  "family": "Forge-family umbrella",
+  "status": "contract_scaffold_ready",
+  "inherits_from": [
+    "ForgeFamilyBlueprint",
+    "CQE_MORSR",
+    "CMPLX-NVEST",
+    "Binary Boundary Adapter",
+    "Universal Adapter Programs",
+    "CQE bridge layer"
+  ],
+  "purpose": "Provide the CQE E/G8 gate layer for NVEST wave investigation candidates.",
+  "canonical_loop": {
+    "input": "NVEST candidate point and context",
+    "seal": "hide expected result or validation label",
+    "gate": "E8/G8 gate decision before reveal",
+    "reveal": "held-out result revealed after gate commitment",
+    "score": "score hit/miss/partial/leakage",
+    "bind": "bind accepted result to library or mark candidate new datum"
+  },
+  "required_honesty_layer": {
+    "name": "Hidden Guess Result",
+    "rule": "Every gate decision commits before result reveal."
+  },
+  "required_cqe_layer": {
+    "rule": "E/G8 maps gate behavior to E8 formal structure to product decision to library binding.",
+    "default": "library_bound_unless_new_datum_proven"
+  },
+  "required_universal_adapters": {
+    "binary_boundary_adapter": "CMPLX-R30-main/PROOF/src/lattice_forge/binary_boundary_adapter.py",
+    "universal_adapter_programs": "CMPLX-PartsFactory-main/src/mcp_tools/universal_tools.py"
+  },
+  "paired_umbrella": "CMPLX-NVEST",
+  "version": "0.1.0"
+}

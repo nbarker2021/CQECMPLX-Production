@@ -1,0 +1,63 @@
+﻿{
+    "name":  "CMPLX-Manny",
+    "remote":  "https://github.com/nbarker2021/CMPLX-Manny.git",
+    "local_path":  "D:\\g\\CMPLX-Manny",
+    "review_branch":  "intake/review-for-cqecmplx-production",
+    "head":  "9ab37f5 (HEAD -\u003e intake/review-for-cqecmplx-production, origin/main, origin/HEAD, main) Ignore working prototype staging noise",
+    "curated_file_count":  106,
+    "excluded_archive_count":  2,
+    "curated_bytes":  179312,
+    "excluded_archive_bytes":  6356992,
+    "key_docs":  [
+                     "AGENTS.md"
+                 ],
+    "top_directories":  [
+                            {
+                                "name":  "Working Prototyping",
+                                "files":  100,
+                                "bytes":  6527651
+                            }
+                        ],
+    "largest_curated_files":  [
+                                  {
+                                      "path":  "Working Prototyping\\db\\ai_instructions\\populate.py",
+                                      "bytes":  12285
+                                  },
+                                  {
+                                      "path":  "Working Prototyping\\docs\\OPENCODE_SETUP_GUIDE.md",
+                                      "bytes":  10878
+                                  },
+                                  {
+                                      "path":  "Working Prototyping\\.opencode\\ECOSYSTEM.md",
+                                      "bytes":  10493
+                                  },
+                                  {
+                                      "path":  "Working Prototyping\\.opencode\\ACTIVATION_GUIDE.md",
+                                      "bytes":  8546
+                                  },
+                                  {
+                                      "path":  "Working Prototyping\\.opencode\\COMPLETE_STRUCTURE_GUIDE.md",
+                                      "bytes":  8077
+                                  },
+                                  {
+                                      "path":  "Working Prototyping\\docs\\FOLDER_STRUCTURE.md",
+                                      "bytes":  7939
+                                  },
+                                  {
+                                      "path":  "Working Prototyping\\.opencode\\MCP_SERVICE_CATALOG.md",
+                                      "bytes":  7247
+                                  },
+                                  {
+                                      "path":  "Working Prototyping\\db\\ai_memory\\cataloguer.py",
+                                      "bytes":  7030
+                                  },
+                                  {
+                                      "path":  "Working Prototyping\\opencode.json",
+                                      "bytes":  4592
+                                  },
+                                  {
+                                      "path":  "Working Prototyping\\db\\ai_memory\\schema.sql",
+                                      "bytes":  4379
+                                  }
+                              ]
+}

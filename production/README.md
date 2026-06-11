@@ -6,6 +6,8 @@ promotion manifest.
 Current slice:
 
 - `PROMOTION_SLICE_2026-06-11_PAPER_PROOF_TEXT.md`
+- `workspace-corpus-index/PROMOTION_SLICE_2026-06-11_REPO_FORMS_INDEX.md`
+- `diagnostics/CQECMPLX-NVEST-EG8-Gate/PROMOTION_SLICE_2026-06-11_NVEST_EG8_CONTRACTS.md`
 
 ## Rule
 

@@ -1,0 +1,85 @@
+﻿{
+    "name":  "CMPLX-Formalization",
+    "remote":  "https://github.com/nbarker2021/CMPLX-Formalization.git",
+    "local_path":  "D:\\g\\CMPLX-Formalization",
+    "review_branch":  "intake/review-for-cqecmplx-production",
+    "head":  "1693b15 (HEAD -\u003e intake/review-for-cqecmplx-production, origin/main, origin/HEAD, main) Batch formalization intake 027-030",
+    "curated_file_count":  108,
+    "excluded_archive_count":  0,
+    "curated_bytes":  532340,
+    "excluded_archive_bytes":  null,
+    "key_docs":  [
+                     "README.md",
+                     "AGENTS.md",
+                     "TODO.md"
+                 ],
+    "top_directories":  [
+                            {
+                                "name":  "legacy",
+                                "files":  35,
+                                "bytes":  43569
+                            },
+                            {
+                                "name":  "intake",
+                                "files":  35,
+                                "bytes":  83614
+                            },
+                            {
+                                "name":  "appendices",
+                                "files":  14,
+                                "bytes":  267529
+                            },
+                            {
+                                "name":  "rule30",
+                                "files":  13,
+                                "bytes":  96931
+                            },
+                            {
+                                "name":  "cqe",
+                                "files":  5,
+                                "bytes":  28428
+                            }
+                        ],
+    "largest_curated_files":  [
+                                  {
+                                      "path":  "appendices\\extracted-formalizations\\095-lattice-forge-core-umbrella-formalization.md",
+                                      "bytes":  49849
+                                  },
+                                  {
+                                      "path":  "appendices\\UMBRELLA_FORMALIZATION.md",
+                                      "bytes":  49670
+                                  },
+                                  {
+                                      "path":  "appendices\\extracted-formalizations\\manifest.json",
+                                      "bytes":  26117
+                                  },
+                                  {
+                                      "path":  "appendices\\THEOREM_REGISTRY.md",
+                                      "bytes":  25371
+                                  },
+                                  {
+                                      "path":  "rule30\\CQE_CMPLX_PEER_REVIEW_PROGRAM_DRAFT_2026-05-27.md",
+                                      "bytes":  21676
+                                  },
+                                  {
+                                      "path":  "appendices\\extracted-formalizations\\045-claude-real-math-d12-action-verifier.md",
+                                      "bytes":  19004
+                                  },
+                                  {
+                                      "path":  "appendices\\extracted-formalizations\\092-lattice-forge-core-open-obligations.md",
+                                      "bytes":  16480
+                                  },
+                                  {
+                                      "path":  "appendices\\OPEN_OBLIGATIONS.md",
+                                      "bytes":  16295
+                                  },
+                                  {
+                                      "path":  "appendices\\extracted-formalizations\\044-claude-real-math-d4-j30-idempotent-bridge-tests.md",
+                                      "bytes":  13183
+                                  },
+                                  {
+                                      "path":  "appendices\\extracted-formalizations\\043-claude-real-math-d12-idempotent-chain-tests.md",
+                                      "bytes":  12945
+                                  }
+                              ]
+}

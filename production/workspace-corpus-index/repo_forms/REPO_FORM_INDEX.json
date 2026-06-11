@@ -1,0 +1,1465 @@
+﻿[
+    {
+        "name":  "CMPLX",
+        "remote":  "https://github.com/nbarker2021/CMPLX.git",
+        "local_path":  "D:\\g\\CMPLX",
+        "review_branch":  "intake/review-for-cqecmplx-production",
+        "head":  "51ff9c2 (HEAD -\u003e intake/review-for-cqecmplx-production, origin/main, origin/HEAD, main) Stop tracking Python cache artifacts",
+        "curated_file_count":  12890,
+        "excluded_archive_count":  9,
+        "curated_bytes":  982670892,
+        "excluded_archive_bytes":  6684672,
+        "key_docs":  [
+                         "README.md",
+                         "AGENTS.md",
+                         "TODO.md",
+                         "pyproject.toml",
+                         ".env.example"
+                     ],
+        "top_directories":  [
+                                {
+                                    "name":  "cmplx_submodules",
+                                    "files":  6119,
+                                    "bytes":  570191125
+                                },
+                                {
+                                    "name":  "src",
+                                    "files":  3434,
+                                    "bytes":  113248778
+                                },
+                                {
+                                    "name":  "core",
+                                    "files":  2876,
+                                    "bytes":  280663304
+                                },
+                                {
+                                    "name":  "reference",
+                                    "files":  327,
+                                    "bytes":  24226055
+                                },
+                                {
+                                    "name":  "deployment",
+                                    "files":  29,
+                                    "bytes":  160873
+                                },
+                                {
+                                    "name":  "docker",
+                                    "files":  14,
+                                    "bytes":  43644
+                                },
+                                {
+                                    "name":  "tests",
+                                    "files":  14,
+                                    "bytes":  79990
+                                },
+                                {
+                                    "name":  "tools",
+                                    "files":  12,
+                                    "bytes":  14808
+                                },
+                                {
+                                    "name":  "scripts",
+                                    "files":  3,
+                                    "bytes":  10741
+                                },
+                                {
+                                    "name":  ".reuse",
+                                    "files":  1,
+                                    "bytes":  838
+                                },
+                                {
+                                    "name":  "LICENSES",
+                                    "files":  1,
+                                    "bytes":  994
+                                }
+                            ],
+        "largest_curated_files":  [
+                                      {
+                                          "path":  "core\\src\\cmplx\\misc\\models.py",
+                                          "bytes":  30800221
+                                      },
+                                      {
+                                          "path":  "cmplx_submodules\\CMPLXUNI\\src\\cmplx\\misc\\models.py",
+                                          "bytes":  30800221
+                                      },
+                                      {
+                                          "path":  "src\\cqe_models\\models.py",
+                                          "bytes":  30800221
+                                      },
+                                      {
+                                          "path":  "cmplx_submodules\\CMPLX\\core\\src\\cmplx\\misc\\models.py",
+                                          "bytes":  30800221
+                                      },
+                                      {
+                                          "path":  "core\\src\\cmplx\\misc\\unified_cqe_part1.py",
+                                          "bytes":  27821356
+                                      },
+                                      {
+                                          "path":  "cmplx_submodules\\CMPLX\\core\\src\\cmplx\\misc\\unified_cqe_part1.py",
+                                          "bytes":  27821356
+                                      },
+                                      {
+                                          "path":  "cmplx_submodules\\CMPLXUNI\\src\\cmplx\\misc\\unified_cqe_part1.py",
+                                          "bytes":  27821356
+                                      },
+                                      {
+                                          "path":  "cmplx_submodules\\CMPLX\\core\\src\\cmplx\\unified_families\\unified_cqe_part1.py",
+                                          "bytes":  27821319
+                                      },
+                                      {
+                                          "path":  "core\\src\\cmplx\\unified_families\\unified_cqe_part1.py",
+                                          "bytes":  27821319
+                                      },
+                                      {
+                                          "path":  "cmplx_submodules\\CMPLXUNI\\src\\cmplx\\unified_families\\unified_cqe_part1.py",
+                                          "bytes":  27821319
+                                      }
+                                  ]
+    },
+    {
+        "name":  "CMPLX-1T",
+        "remote":  "https://github.com/nbarker2021/CMPLX-1T.git",
+        "local_path":  "D:\\g\\CMPLX-1T",
+        "review_branch":  "intake/review-for-cqecmplx-production",
+        "head":  "01faad8a (HEAD -\u003e intake/review-for-cqecmplx-production, origin/master, origin/HEAD, master) docs: Add Phase 2 10-Layer Architecture Definition",
+        "curated_file_count":  38663,
+        "excluded_archive_count":  18,
+        "curated_bytes":  1270813252,
+        "excluded_archive_bytes":  59360476,
+        "key_docs":  [
+                         "README.md",
+                         "AGENTS.md",
+                         "NAVIGATION.md"
+                     ],
+        "top_directories":  [
+                                {
+                                    "name":  "docs",
+                                    "files":  29199,
+                                    "bytes":  969827861
+                                },
+                                {
+                                    "name":  "docker",
+                                    "files":  8998,
+                                    "bytes":  289574549
+                                },
+                                {
+                                    "name":  "Wolfram study",
+                                    "files":  108,
+                                    "bytes":  35041446
+                                },
+                                {
+                                    "name":  "SHOWROOM",
+                                    "files":  59,
+                                    "bytes":  3200125
+                                },
+                                {
+                                    "name":  "src",
+                                    "files":  59,
+                                    "bytes":  729719
+                                },
+                                {
+                                    "name":  "scripts",
+                                    "files":  52,
+                                    "bytes":  367766
+                                },
+                                {
+                                    "name":  "TODO",
+                                    "files":  39,
+                                    "bytes":  161855
+                                },
+                                {
+                                    "name":  "repos",
+                                    "files":  26,
+                                    "bytes":  297126
+                                },
+                                {
+                                    "name":  "pipeline",
+                                    "files":  25,
+                                    "bytes":  245251
+                                },
+                                {
+                                    "name":  "images",
+                                    "files":  19,
+                                    "bytes":  433679
+                                },
+                                {
+                                    "name":  "reports",
+                                    "files":  11,
+                                    "bytes":  90903
+                                },
+                                {
+                                    "name":  "plans",
+                                    "files":  10,
+                                    "bytes":  99473
+                                },
+                                {
+                                    "name":  "config",
+                                    "files":  9,
+                                    "bytes":  630061
+                                },
+                                {
+                                    "name":  "document_output",
+                                    "files":  6,
+                                    "bytes":  233043
+                                },
+                                {
+                                    "name":  "configs",
+                                    "files":  6,
+                                    "bytes":  2170
+                                },
+                                {
+                                    "name":  "data",
+                                    "files":  5,
+                                    "bytes":  28568162
+                                },
+                                {
+                                    "name":  "intake-system",
+                                    "files":  5,
+                                    "bytes":  27979
+                                },
+                                {
+                                    "name":  "checkpoints",
+                                    "files":  3,
+                                    "bytes":  430098
+                                },
+                                {
+                                    "name":  "archives",
+                                    "files":  3,
+                                    "bytes":  6055
+                                },
+                                {
+                                    "name":  "security-reports",
+                                    "files":  2,
+                                    "bytes":  13120
+                                },
+                                {
+                                    "name":  "toolkit",
+                                    "files":  2,
+                                    "bytes":  10946
+                                },
+                                {
+                                    "name":  "monitoring",
+                                    "files":  2,
+                                    "bytes":  2696
+                                },
+                                {
+                                    "name":  ".kilocode",
+                                    "files":  2,
+                                    "bytes":  2801
+                                },
+                                {
+                                    "name":  "home",
+                                    "files":  2,
+                                    "bytes":  785
+                                },
+                                {
+                                    "name":  "qwenwrapper",
+                                    "files":  2,
+                                    "bytes":  10526
+                                },
+                                {
+                                    "name":  "nginx",
+                                    "files":  2,
+                                    "bytes":  6083
+                                },
+                                {
+                                    "name":  ".reuse",
+                                    "files":  1,
+                                    "bytes":  805
+                                },
+                                {
+                                    "name":  "LICENSES",
+                                    "files":  1,
+                                    "bytes":  966
+                                },
+                                {
+                                    "name":  "organized",
+                                    "files":  1,
+                                    "bytes":  949
+                                },
+                                {
+                                    "name":  "cmplx-1t-hook",
+                                    "files":  1,
+                                    "bytes":  15501
+                                }
+                            ],
+        "largest_curated_files":  [
+                                      {
+                                          "path":  "docs\\directory_manifest.csv",
+                                          "bytes":  64263137
+                                      },
+                                      {
+                                          "path":  "docker\\unified\\cqe_unified_family\\unified_cqe1.py",
+                                          "bytes":  53970313
+                                      },
+                                      {
+                                          "path":  "docs\\directory_manifest_UPDATED.csv",
+                                          "bytes":  34883946
+                                      },
+                                      {
+                                          "path":  "docker\\unified\\cqe_models\\models.py",
+                                          "bytes":  30800221
+                                      },
+                                      {
+                                          "path":  "docs\\1_intake\\inventory_raw.txt",
+                                          "bytes":  28898630
+                                      },
+                                      {
+                                          "path":  "docker\\unified\\cqe_functions\\functions.py",
+                                          "bytes":  21269635
+                                      },
+                                      {
+                                          "path":  "docs\\tree_dump.txt",
+                                          "bytes":  19685388
+                                      },
+                                      {
+                                          "path":  "docs\\3_staged\\family_exemplar_starters\\Family Builds-legacy\\CMPLX 2\\cmplx_unified\\runtime\\_workspace_rule_tiling_e8_v2\\rule_tiling_graph.json",
+                                          "bytes":  17176473
+                                      },
+                                      {
+                                          "path":  "docs\\3_staged\\family_exemplar_starters\\Family Builds-legacy\\CMPLX 2\\cmplx_unified\\runtime\\_workspace_rule_tiling_e8\\rule_tiling_graph.json",
+                                          "bytes":  17176473
+                                      },
+                                      {
+                                          "path":  "docs\\3_staged\\family_exemplar_starters\\Family Builds-legacy\\cqe_spine_envelope_v4_pycache_clean\\spine\\_envelope_assets\\runtime_executable\\docs\\swarm_artifacts\\cycle_c_lexicon_and_alias_canonicalization\\canonical_lexicon.json",
+                                          "bytes":  15136321
+                                      }
+                                  ]
+    },
+    {
+        "name":  "CMPLXDevKit",
+        "remote":  "https://github.com/nbarker2021/CMPLXDevKit.git",
+        "local_path":  "D:\\g\\CMPLXDevKit",
+        "review_branch":  "intake/review-for-cqecmplx-production",
+        "head":  "340835a (HEAD -\u003e intake/review-for-cqecmplx-production, origin/main, origin/HEAD, main) Stop tracking Python cache artifacts",
+        "curated_file_count":  5007,
+        "excluded_archive_count":  0,
+        "curated_bytes":  98804377,
+        "excluded_archive_bytes":  null,
+        "key_docs":  [
+                         "README.md",
+                         "NAVIGATION.md",
+                         "TODO.md"
+                     ],
+        "top_directories":  [
+                                {
+                                    "name":  "src",
+                                    "files":  4846,
+                                    "bytes":  89495284
+                                },
+                                {
+                                    "name":  "CMPLXDevKit",
+                                    "files":  74,
+                                    "bytes":  4637869
+                                },
+                                {
+                                    "name":  "CMPLXLOCALMCP",
+                                    "files":  65,
+                                    "bytes":  627285
+                                },
+                                {
+                                    "name":  "Handshake Entry-Build Guide",
+                                    "files":  8,
+                                    "bytes":  4008986
+                                },
+                                {
+                                    "name":  "devkit",
+                                    "files":  3,
+                                    "bytes":  2856
+                                },
+                                {
+                                    "name":  ".reuse",
+                                    "files":  1,
+                                    "bytes":  838
+                                },
+                                {
+                                    "name":  "LICENSES",
+                                    "files":  1,
+                                    "bytes":  994
+                                }
+                            ],
+        "largest_curated_files":  [
+                                      {
+                                          "path":  "src\\cqe_organized\\283a888f32d3__CQE_UNIFIED_CODE_monoliths__CQE_V4_MONOLITH_utils_1.py",
+                                          "bytes":  3194883
+                                      },
+                                      {
+                                          "path":  "src\\cqe_organized\\21d200f027f2__CQE_UNIFIED_CODE_monoliths__CQE_CORE_MONOLITH_utils_1.py",
+                                          "bytes":  3163337
+                                      },
+                                      {
+                                          "path":  "src\\cqe_organized\\161f51095761__Bestbuild101325_2__Best_build_101325__CQE_V4_MONOLITH.py",
+                                          "bytes":  3155331
+                                      },
+                                      {
+                                          "path":  "src\\cqe_organized\\1f4e5cb5f164__CQE_UNIFIED_CODE_monoliths__CQE_V4_MONOLITH_utils.py",
+                                          "bytes":  3148011
+                                      },
+                                      {
+                                          "path":  "src\\cqe_organized\\6fc4c9497cbd__CQE_UNIFIED_CODE_monoliths__CQE_V4_MONOLITH.py",
+                                          "bytes":  3141485
+                                      },
+                                      {
+                                          "path":  "src\\cqe_organized\\38f973611dc2__Bestbuild101325_2__Best_build_101325__CQE_CORE_MONOLITH.py",
+                                          "bytes":  3123685
+                                      },
+                                      {
+                                          "path":  "src\\cqe_good_example\\CQE_CORE_MONOLITH.py",
+                                          "bytes":  3123685
+                                      },
+                                      {
+                                          "path":  "src\\cqe_organized\\6afc9ed3d3ca__CQE_UNIFIED_CODE_monoliths__CQE_CORE_MONOLITH.py",
+                                          "bytes":  3109782
+                                      },
+                                      {
+                                          "path":  "Handshake Entry-Build Guide\\CMPLX Atlas Build Guide.pdf",
+                                          "bytes":  1028064
+                                      },
+                                      {
+                                          "path":  "CMPLXDevKit\\Handshake Entry-Build Guide\\CMPLX Atlas Build Guide.pdf",
+                                          "bytes":  1028064
+                                      }
+                                  ]
+    },
+    {
+        "name":  "CMPLX-Formalization",
+        "remote":  "https://github.com/nbarker2021/CMPLX-Formalization.git",
+        "local_path":  "D:\\g\\CMPLX-Formalization",
+        "review_branch":  "intake/review-for-cqecmplx-production",
+        "head":  "1693b15 (HEAD -\u003e intake/review-for-cqecmplx-production, origin/main, origin/HEAD, main) Batch formalization intake 027-030",
+        "curated_file_count":  108,
+        "excluded_archive_count":  0,
+        "curated_bytes":  532340,
+        "excluded_archive_bytes":  null,
+        "key_docs":  [
+                         "README.md",
+                         "AGENTS.md",
+                         "TODO.md"
+                     ],
+        "top_directories":  [
+                                {
+                                    "name":  "legacy",
+                                    "files":  35,
+                                    "bytes":  43569
+                                },
+                                {
+                                    "name":  "intake",
+                                    "files":  35,
+                                    "bytes":  83614
+                                },
+                                {
+                                    "name":  "appendices",
+                                    "files":  14,
+                                    "bytes":  267529
+                                },
+                                {
+                                    "name":  "rule30",
+                                    "files":  13,
+                                    "bytes":  96931
+                                },
+                                {
+                                    "name":  "cqe",
+                                    "files":  5,
+                                    "bytes":  28428
+                                }
+                            ],
+        "largest_curated_files":  [
+                                      {
+                                          "path":  "appendices\\extracted-formalizations\\095-lattice-forge-core-umbrella-formalization.md",
+                                          "bytes":  49849
+                                      },
+                                      {
+                                          "path":  "appendices\\UMBRELLA_FORMALIZATION.md",
+                                          "bytes":  49670
+                                      },
+                                      {
+                                          "path":  "appendices\\extracted-formalizations\\manifest.json",
+                                          "bytes":  26117
+                                      },
+                                      {
+                                          "path":  "appendices\\THEOREM_REGISTRY.md",
+                                          "bytes":  25371
+                                      },
+                                      {
+                                          "path":  "rule30\\CQE_CMPLX_PEER_REVIEW_PROGRAM_DRAFT_2026-05-27.md",
+                                          "bytes":  21676
+                                      },
+                                      {
+                                          "path":  "appendices\\extracted-formalizations\\045-claude-real-math-d12-action-verifier.md",
+                                          "bytes":  19004
+                                      },
+                                      {
+                                          "path":  "appendices\\extracted-formalizations\\092-lattice-forge-core-open-obligations.md",
+                                          "bytes":  16480
+                                      },
+                                      {
+                                          "path":  "appendices\\OPEN_OBLIGATIONS.md",
+                                          "bytes":  16295
+                                      },
+                                      {
+                                          "path":  "appendices\\extracted-formalizations\\044-claude-real-math-d4-j30-idempotent-bridge-tests.md",
+                                          "bytes":  13183
+                                      },
+                                      {
+                                          "path":  "appendices\\extracted-formalizations\\043-claude-real-math-d12-idempotent-chain-tests.md",
+                                          "bytes":  12945
+                                      }
+                                  ]
+    },
+    {
+        "name":  "CMPLX-Manny",
+        "remote":  "https://github.com/nbarker2021/CMPLX-Manny.git",
+        "local_path":  "D:\\g\\CMPLX-Manny",
+        "review_branch":  "intake/review-for-cqecmplx-production",
+        "head":  "9ab37f5 (HEAD -\u003e intake/review-for-cqecmplx-production, origin/main, origin/HEAD, main) Ignore working prototype staging noise",
+        "curated_file_count":  106,
+        "excluded_archive_count":  2,
+        "curated_bytes":  179312,
+        "excluded_archive_bytes":  6356992,
+        "key_docs":  [
+                         "AGENTS.md"
+                     ],
+        "top_directories":  [
+                                {
+                                    "name":  "Working Prototyping",
+                                    "files":  100,
+                                    "bytes":  6527651
+                                }
+                            ],
+        "largest_curated_files":  [
+                                      {
+                                          "path":  "Working Prototyping\\db\\ai_instructions\\populate.py",
+                                          "bytes":  12285
+                                      },
+                                      {
+                                          "path":  "Working Prototyping\\docs\\OPENCODE_SETUP_GUIDE.md",
+                                          "bytes":  10878
+                                      },
+                                      {
+                                          "path":  "Working Prototyping\\.opencode\\ECOSYSTEM.md",
+                                          "bytes":  10493
+                                      },
+                                      {
+                                          "path":  "Working Prototyping\\.opencode\\ACTIVATION_GUIDE.md",
+                                          "bytes":  8546
+                                      },
+                                      {
+                                          "path":  "Working Prototyping\\.opencode\\COMPLETE_STRUCTURE_GUIDE.md",
+                                          "bytes":  8077
+                                      },
+                                      {
+                                          "path":  "Working Prototyping\\docs\\FOLDER_STRUCTURE.md",
+                                          "bytes":  7939
+                                      },
+                                      {
+                                          "path":  "Working Prototyping\\.opencode\\MCP_SERVICE_CATALOG.md",
+                                          "bytes":  7247
+                                      },
+                                      {
+                                          "path":  "Working Prototyping\\db\\ai_memory\\cataloguer.py",
+                                          "bytes":  7030
+                                      },
+                                      {
+                                          "path":  "Working Prototyping\\opencode.json",
+                                          "bytes":  4592
+                                      },
+                                      {
+                                          "path":  "Working Prototyping\\db\\ai_memory\\schema.sql",
+                                          "bytes":  4379
+                                      }
+                                  ]
+    },
+    {
+        "name":  "CMPLXMCP",
+        "remote":  "https://github.com/nbarker2021/CMPLXMCP.git",
+        "local_path":  "D:\\g\\CMPLXMCP",
+        "review_branch":  "intake/review-for-cqecmplx-production",
+        "head":  "d0dc5c2 (HEAD -\u003e intake/review-for-cqecmplx-production, origin/main, origin/HEAD, main) Stop tracking Python cache artifacts",
+        "curated_file_count":  158,
+        "excluded_archive_count":  0,
+        "curated_bytes":  54779051,
+        "excluded_archive_bytes":  null,
+        "key_docs":  [
+                         "README.md",
+                         "AGENTS.md",
+                         "NAVIGATION.md",
+                         "TODO.md",
+                         "setup.py"
+                     ],
+        "top_directories":  [
+                                {
+                                    "name":  "agrm_snap",
+                                    "files":  40,
+                                    "bytes":  62557
+                                },
+                                {
+                                    "name":  "agrm_mdhg_integration",
+                                    "files":  11,
+                                    "bytes":  77482
+                                },
+                                {
+                                    "name":  "validation",
+                                    "files":  11,
+                                    "bytes":  99550
+                                },
+                                {
+                                    "name":  "universal",
+                                    "files":  11,
+                                    "bytes":  98070
+                                },
+                                {
+                                    "name":  "controllers",
+                                    "files":  9,
+                                    "bytes":  25413
+                                },
+                                {
+                                    "name":  "server",
+                                    "files":  9,
+                                    "bytes":  62961
+                                },
+                                {
+                                    "name":  "adapters",
+                                    "files":  9,
+                                    "bytes":  11557
+                                },
+                                {
+                                    "name":  "polyglot",
+                                    "files":  8,
+                                    "bytes":  142921
+                                },
+                                {
+                                    "name":  "cmplx_integration",
+                                    "files":  8,
+                                    "bytes":  141581
+                                },
+                                {
+                                    "name":  "modules",
+                                    "files":  7,
+                                    "bytes":  10999
+                                },
+                                {
+                                    "name":  "client",
+                                    "files":  6,
+                                    "bytes":  10801
+                                },
+                                {
+                                    "name":  "codec",
+                                    "files":  6,
+                                    "bytes":  5198
+                                },
+                                {
+                                    "name":  ".reuse",
+                                    "files":  1,
+                                    "bytes":  838
+                                },
+                                {
+                                    "name":  "cqe_unified_family",
+                                    "files":  1,
+                                    "bytes":  53970313
+                                },
+                                {
+                                    "name":  "LICENSES",
+                                    "files":  1,
+                                    "bytes":  994
+                                }
+                            ],
+        "largest_curated_files":  [
+                                      {
+                                          "path":  "cqe_unified_family\\unified_cqe1.py",
+                                          "bytes":  53970313
+                                      },
+                                      {
+                                          "path":  "cmplx_integration\\registry.py",
+                                          "bytes":  92330
+                                      },
+                                      {
+                                          "path":  "polyglot\\polyglot-server\\mcp_tool_definitions.py",
+                                          "bytes":  70306
+                                      },
+                                      {
+                                          "path":  "cmplx_integration\\advanced_tools.py",
+                                          "bytes":  37848
+                                      },
+                                      {
+                                          "path":  "validation\\agrm_mdhg_validator.py",
+                                          "bytes":  27244
+                                      },
+                                      {
+                                          "path":  "server\\tools.py",
+                                          "bytes":  24028
+                                      },
+                                      {
+                                          "path":  "server\\server.py",
+                                          "bytes":  23401
+                                      },
+                                      {
+                                          "path":  "polyglot\\polyglot-server\\main.py",
+                                          "bytes":  21813
+                                      },
+                                      {
+                                          "path":  "agrm_mdhg_integration\\mdhg_ca.py",
+                                          "bytes":  20851
+                                      },
+                                      {
+                                          "path":  "validation\\universal_system_validator.py",
+                                          "bytes":  19399
+                                      }
+                                  ]
+    },
+    {
+        "name":  "CMPLX-Monorepo",
+        "remote":  "https://github.com/nbarker2021/CMPLX-Monorepo.git",
+        "local_path":  "D:\\g\\CMPLX-Monorepo",
+        "review_branch":  "intake/review-for-cqecmplx-production",
+        "head":  "c56c785 (HEAD -\u003e intake/review-for-cqecmplx-production, origin/main, origin/HEAD, main) feat: Add unified code from docker/unified - cqe_website",
+        "curated_file_count":  655,
+        "excluded_archive_count":  0,
+        "curated_bytes":  75260020,
+        "excluded_archive_bytes":  null,
+        "key_docs":  [
+                         "README.md",
+                         "AGENTS.md",
+                         "NAVIGATION.md",
+                         "TODO.md",
+                         ".gitmodules",
+                         ".env.example"
+                     ],
+        "top_directories":  [
+                                {
+                                    "name":  "cqe_website",
+                                    "files":  385,
+                                    "bytes":  25037485
+                                },
+                                {
+                                    "name":  "projects",
+                                    "files":  150,
+                                    "bytes":  193227
+                                },
+                                {
+                                    "name":  "docs",
+                                    "files":  67,
+                                    "bytes":  36100035
+                                },
+                                {
+                                    "name":  "backlog_adapters",
+                                    "files":  9,
+                                    "bytes":  50234
+                                },
+                                {
+                                    "name":  "services",
+                                    "files":  8,
+                                    "bytes":  18345
+                                },
+                                {
+                                    "name":  "product",
+                                    "files":  7,
+                                    "bytes":  201764
+                                },
+                                {
+                                    "name":  "mmdb",
+                                    "files":  6,
+                                    "bytes":  13591357
+                                },
+                                {
+                                    "name":  "devkit",
+                                    "files":  3,
+                                    "bytes":  2856
+                                },
+                                {
+                                    "name":  "tests",
+                                    "files":  2,
+                                    "bytes":  2997
+                                },
+                                {
+                                    "name":  "support",
+                                    "files":  1,
+                                    "bytes":  2941
+                                },
+                                {
+                                    "name":  ".reuse",
+                                    "files":  1,
+                                    "bytes":  838
+                                },
+                                {
+                                    "name":  "LICENSES",
+                                    "files":  1,
+                                    "bytes":  994
+                                },
+                                {
+                                    "name":  "plans",
+                                    "files":  1,
+                                    "bytes":  11061
+                                },
+                                {
+                                    "name":  "scripts",
+                                    "files":  1,
+                                    "bytes":  3809
+                                }
+                            ],
+        "largest_curated_files":  [
+                                      {
+                                          "path":  "docs\\inventory_raw.txt",
+                                          "bytes":  28898630
+                                      },
+                                      {
+                                          "path":  "mmdb\\receipts_23k.json",
+                                          "bytes":  7588831
+                                      },
+                                      {
+                                          "path":  "mmdb\\atoms_23k.json",
+                                          "bytes":  5608531
+                                      },
+                                      {
+                                          "path":  "docs\\phase0\\artifacts\\catchall_code_index.jsonl",
+                                          "bytes":  5500317
+                                      },
+                                      {
+                                          "path":  "cqe_website\\cqe_core_system (3).py",
+                                          "bytes":  3138817
+                                      },
+                                      {
+                                          "path":  "cqe_website\\cqe_core_system (1).py",
+                                          "bytes":  3138817
+                                      },
+                                      {
+                                          "path":  "cqe_website\\cqe_core_system.py",
+                                          "bytes":  3138817
+                                      },
+                                      {
+                                          "path":  "cqe_website\\cqe_core_system (4).py",
+                                          "bytes":  3138817
+                                      },
+                                      {
+                                          "path":  "cqe_website\\cqe_core_system (2).py",
+                                          "bytes":  3138817
+                                      },
+                                      {
+                                          "path":  "cqe_website\\CQE_CORE_MONOLITH_fixed.py",
+                                          "bytes":  3121182
+                                      }
+                                  ]
+    },
+    {
+        "name":  "CMPLX-PartsFactory",
+        "remote":  "https://github.com/nbarker2021/CMPLX-PartsFactory.git",
+        "local_path":  "D:\\g\\CMPLX-PartsFactory",
+        "review_branch":  "intake/review-for-cqecmplx-production",
+        "head":  "dac0830 (HEAD -\u003e intake/review-for-cqecmplx-production, origin/main, origin/HEAD, main) docs: add CMPLX full package view",
+        "curated_file_count":  1459,
+        "excluded_archive_count":  1,
+        "curated_bytes":  12569863,
+        "excluded_archive_bytes":  5398528,
+        "key_docs":  [
+                         "README.md",
+                         "AGENTS.md",
+                         "pyproject.toml",
+                         ".gitmodules"
+                     ],
+        "top_directories":  [
+                                {
+                                    "name":  "src",
+                                    "files":  598,
+                                    "bytes":  5454112
+                                },
+                                {
+                                    "name":  "packages",
+                                    "files":  354,
+                                    "bytes":  8760768
+                                },
+                                {
+                                    "name":  "tests",
+                                    "files":  144,
+                                    "bytes":  549811
+                                },
+                                {
+                                    "name":  "docs",
+                                    "files":  114,
+                                    "bytes":  755316
+                                },
+                                {
+                                    "name":  "scripts",
+                                    "files":  59,
+                                    "bytes":  476550
+                                },
+                                {
+                                    "name":  "data",
+                                    "files":  47,
+                                    "bytes":  263828
+                                },
+                                {
+                                    "name":  "services",
+                                    "files":  36,
+                                    "bytes":  711673
+                                },
+                                {
+                                    "name":  "proof-lab",
+                                    "files":  15,
+                                    "bytes":  322023
+                                },
+                                {
+                                    "name":  ".opencode",
+                                    "files":  14,
+                                    "bytes":  49712
+                                },
+                                {
+                                    "name":  "research_notes",
+                                    "files":  8,
+                                    "bytes":  443546
+                                },
+                                {
+                                    "name":  ".claude",
+                                    "files":  7,
+                                    "bytes":  4219
+                                },
+                                {
+                                    "name":  "repo_kernel",
+                                    "files":  4,
+                                    "bytes":  12846
+                                },
+                                {
+                                    "name":  ".vscode",
+                                    "files":  4,
+                                    "bytes":  4422
+                                },
+                                {
+                                    "name":  "examples",
+                                    "files":  3,
+                                    "bytes":  8167
+                                },
+                                {
+                                    "name":  "projections",
+                                    "files":  3,
+                                    "bytes":  628
+                                },
+                                {
+                                    "name":  ".github",
+                                    "files":  2,
+                                    "bytes":  9880
+                                },
+                                {
+                                    "name":  "deploy",
+                                    "files":  2,
+                                    "bytes":  12763
+                                },
+                                {
+                                    "name":  "infra",
+                                    "files":  2,
+                                    "bytes":  1859
+                                },
+                                {
+                                    "name":  ".agents",
+                                    "files":  1,
+                                    "bytes":  1056
+                                }
+                            ],
+        "largest_curated_files":  [
+                                      {
+                                          "path":  "services\\repo-kernel\\server.py",
+                                          "bytes":  596887
+                                      },
+                                      {
+                                          "path":  "src\\cmplx\\addressing\\mdhg\\_history_reference\\composed_mdhg_v3.py",
+                                          "bytes":  378205
+                                      },
+                                      {
+                                          "path":  "src\\cmplx\\morphon\\_history_reference\\composed_morphon_v3.py",
+                                          "bytes":  340229
+                                      },
+                                      {
+                                          "path":  "proof-lab\\artifacts\\empirical_matrix_report.json",
+                                          "bytes":  294983
+                                      },
+                                      {
+                                          "path":  "packages\\lattice-forge\\src\\lattice_forge\\rule30.py",
+                                          "bytes":  284465
+                                      },
+                                      {
+                                          "path":  "src\\cmplx\\geometry\\e8\\unified_e8.py",
+                                          "bytes":  158518
+                                      },
+                                      {
+                                          "path":  "research_notes\\The_2026_CMPLX_Agent_Template_Architecture_Six-Tier_Specification.txt",
+                                          "bytes":  117267
+                                      },
+                                      {
+                                          "path":  "packages\\lattice-forge\\docs\\cqe\\extracted_formalizations\\texts\\080-lcr-rule30-rule30-agent-final-paper.md",
+                                          "bytes":  115922
+                                      },
+                                      {
+                                          "path":  "packages\\lattice-forge\\docs\\cqe\\extracted_formalizations\\texts\\065-prototype-formalizations-cqe-formalizations-definitions.md",
+                                          "bytes":  105533
+                                      },
+                                      {
+                                          "path":  "research_notes\\Comprehensive_Glossary_of_System_Terminology.txt",
+                                          "bytes":  103439
+                                      }
+                                  ]
+    },
+    {
+        "name":  "CMPLX-R30",
+        "remote":  "https://github.com/nbarker2021/CMPLX-R30.git",
+        "local_path":  "D:\\g\\CMPLX-R30",
+        "review_branch":  "intake/review-for-cqecmplx-production",
+        "head":  "1cff364 (HEAD -\u003e intake/review-for-cqecmplx-production, origin/main, origin/HEAD, main) add adversarial semantic bridge lab",
+        "curated_file_count":  311,
+        "excluded_archive_count":  0,
+        "curated_bytes":  183072554,
+        "excluded_archive_bytes":  null,
+        "key_docs":  [
+                         "README.md",
+                         "pyproject.toml"
+                     ],
+        "top_directories":  [
+                                {
+                                    "name":  "PROOF",
+                                    "files":  129,
+                                    "bytes":  1716814
+                                },
+                                {
+                                    "name":  "CATALOG",
+                                    "files":  31,
+                                    "bytes":  171053449
+                                },
+                                {
+                                    "name":  "DATA",
+                                    "files":  26,
+                                    "bytes":  7268149
+                                },
+                                {
+                                    "name":  "src",
+                                    "files":  15,
+                                    "bytes":  134927
+                                },
+                                {
+                                    "name":  "scripts",
+                                    "files":  15,
+                                    "bytes":  144069
+                                },
+                                {
+                                    "name":  "tests",
+                                    "files":  15,
+                                    "bytes":  65374
+                                },
+                                {
+                                    "name":  "VERIFICATION",
+                                    "files":  15,
+                                    "bytes":  123121
+                                },
+                                {
+                                    "name":  "LAB",
+                                    "files":  14,
+                                    "bytes":  236185
+                                },
+                                {
+                                    "name":  "FORMALIZATION",
+                                    "files":  12,
+                                    "bytes":  66867
+                                },
+                                {
+                                    "name":  "docs",
+                                    "files":  6,
+                                    "bytes":  54265
+                                },
+                                {
+                                    "name":  "CORPUS",
+                                    "files":  6,
+                                    "bytes":  2015270
+                                },
+                                {
+                                    "name":  "RECEIPT_CHAIN",
+                                    "files":  4,
+                                    "bytes":  58574
+                                },
+                                {
+                                    "name":  "DEVICE",
+                                    "files":  3,
+                                    "bytes":  31914
+                                },
+                                {
+                                    "name":  "CITATIONS",
+                                    "files":  3,
+                                    "bytes":  23334
+                                },
+                                {
+                                    "name":  "APP",
+                                    "files":  2,
+                                    "bytes":  19781
+                                },
+                                {
+                                    "name":  "DISCLOSURES",
+                                    "files":  2,
+                                    "bytes":  15533
+                                },
+                                {
+                                    "name":  "extended_memory",
+                                    "files":  2,
+                                    "bytes":  2324
+                                }
+                            ],
+        "largest_curated_files":  [
+                                      {
+                                          "path":  "CATALOG\\evidence_catalog.json",
+                                          "bytes":  50083511
+                                      },
+                                      {
+                                          "path":  "CATALOG\\evidence_catalog.csv",
+                                          "bytes":  34438184
+                                      },
+                                      {
+                                          "path":  "CATALOG\\formula_catalog.json",
+                                          "bytes":  27036230
+                                      },
+                                      {
+                                          "path":  "CATALOG\\formula_catalog.csv",
+                                          "bytes":  18511149
+                                      },
+                                      {
+                                          "path":  "CATALOG\\term_catalog.json",
+                                          "bytes":  15319016
+                                      },
+                                      {
+                                          "path":  "CATALOG\\term_catalog.csv",
+                                          "bytes":  10435366
+                                      },
+                                      {
+                                          "path":  "CATALOG\\claim_catalog.json",
+                                          "bytes":  4073205
+                                      },
+                                      {
+                                          "path":  "CATALOG\\porting_context_catalog.json",
+                                          "bytes":  3655069
+                                      },
+                                      {
+                                          "path":  "DATA\\wolfram-rule30-center\\wolfram_rule30_center_1m.wl",
+                                          "bytes":  3000000
+                                      },
+                                      {
+                                          "path":  "CATALOG\\claim_catalog.csv",
+                                          "bytes":  2923938
+                                      }
+                                  ]
+    },
+    {
+        "name":  "CMPLX-TMN1",
+        "remote":  "https://github.com/nbarker2021/CMPLX-TMN1.git",
+        "local_path":  "D:\\g\\CMPLX-TMN1",
+        "review_branch":  "intake/review-for-cqecmplx-production",
+        "head":  "bd9d52b (HEAD -\u003e intake/review-for-cqecmplx-production, origin/main, origin/HEAD, main) Full 43-service deployment: Phase 0-6 complete, all docs rewritten",
+        "curated_file_count":  81,
+        "excluded_archive_count":  0,
+        "curated_bytes":  6700812,
+        "excluded_archive_bytes":  null,
+        "key_docs":  [
+                         "README.md"
+                     ],
+        "top_directories":  [
+                                {
+                                    "name":  "infrastructure",
+                                    "files":  45,
+                                    "bytes":  477717
+                                },
+                                {
+                                    "name":  "formalizations",
+                                    "files":  12,
+                                    "bytes":  6071757
+                                },
+                                {
+                                    "name":  "intake",
+                                    "files":  2,
+                                    "bytes":  0
+                                },
+                                {
+                                    "name":  "databases",
+                                    "files":  2,
+                                    "bytes":  12878
+                                },
+                                {
+                                    "name":  "showcase",
+                                    "files":  2,
+                                    "bytes":  10152
+                                },
+                                {
+                                    "name":  "hooks",
+                                    "files":  1,
+                                    "bytes":  8097
+                                }
+                            ],
+        "largest_curated_files":  [
+                                      {
+                                          "path":  "formalizations\\Comprehensive Glossary of System Terminology.docx",
+                                          "bytes":  1814479
+                                      },
+                                      {
+                                          "path":  "formalizations\\CMPLX Atlas Build Guide.pdf",
+                                          "bytes":  1028064
+                                      },
+                                      {
+                                          "path":  "formalizations\\CQE_Classified_Formalizations.json",
+                                          "bytes":  949791
+                                      },
+                                      {
+                                          "path":  "formalizations\\CMPLX2 Implementation Extension.pdf",
+                                          "bytes":  811734
+                                      },
+                                      {
+                                          "path":  "formalizations\\Atlas Microkernel Architecture.pdf",
+                                          "bytes":  649731
+                                      },
+                                      {
+                                          "path":  "formalizations\\Coldstart Bootstrap Guide.pdf",
+                                          "bytes":  630554
+                                      },
+                                      {
+                                          "path":  "infrastructure\\gateway.py",
+                                          "bytes":  79943
+                                      },
+                                      {
+                                          "path":  "infrastructure\\thinktank\\thinktank.py",
+                                          "bytes":  77112
+                                      },
+                                      {
+                                          "path":  "formalizations\\The 2026 CMPLX Agent Template Architecture_ Six-Tier Specification.docx",
+                                          "bytes":  68787
+                                      },
+                                      {
+                                          "path":  "infrastructure\\paper_harvester.py",
+                                          "bytes":  39849
+                                      }
+                                  ]
+    },
+    {
+        "name":  "CMPLX-TMN-main",
+        "remote":  "https://github.com/nbarker2021/CMPLX-TMN-main.git",
+        "local_path":  "D:\\g\\CMPLX-TMN-main",
+        "review_branch":  "intake/review-for-cqecmplx-production",
+        "head":  "d60dfa0 (HEAD -\u003e intake/review-for-cqecmplx-production, origin/main, origin/HEAD, main) Merge pull request #6 from nbarker2021/tmn2",
+        "curated_file_count":  315,
+        "excluded_archive_count":  0,
+        "curated_bytes":  1947317,
+        "excluded_archive_bytes":  null,
+        "key_docs":  [
+                         "README.md"
+                     ],
+        "top_directories":  [
+                                {
+                                    "name":  "src",
+                                    "files":  261,
+                                    "bytes":  1498216
+                                },
+                                {
+                                    "name":  "capsules",
+                                    "files":  36,
+                                    "bytes":  223741
+                                },
+                                {
+                                    "name":  "configs",
+                                    "files":  8,
+                                    "bytes":  128152
+                                },
+                                {
+                                    "name":  "scripts",
+                                    "files":  3,
+                                    "bytes":  19696
+                                }
+                            ],
+        "largest_curated_files":  [
+                                      {
+                                          "path":  "src\\daemon\\daemon.py",
+                                          "bytes":  61242
+                                      },
+                                      {
+                                          "path":  "src\\board\\board.py",
+                                          "bytes":  53257
+                                      },
+                                      {
+                                          "path":  "src\\pipeline\\pipeline.py",
+                                          "bytes":  47310
+                                      },
+                                      {
+                                          "path":  "docker-compose.yml",
+                                          "bytes":  43949
+                                      },
+                                      {
+                                          "path":  "src\\portal\\portal.py",
+                                          "bytes":  41225
+                                      },
+                                      {
+                                          "path":  "src\\bond\\bond.py",
+                                          "bytes":  38318
+                                      },
+                                      {
+                                          "path":  "src\\coop\\coop.py",
+                                          "bytes":  37096
+                                      },
+                                      {
+                                          "path":  "configs\\cmplx_product_suite.yml",
+                                          "bytes":  27993
+                                      },
+                                      {
+                                          "path":  "src\\identity\\identity.py",
+                                          "bytes":  27729
+                                      },
+                                      {
+                                          "path":  "src\\labeler\\labeler.py",
+                                          "bytes":  27141
+                                      }
+                                  ]
+    },
+    {
+        "name":  "CMPLXUNI",
+        "remote":  "https://github.com/nbarker2021/CMPLXUNI.git",
+        "local_path":  "D:\\g\\CMPLXUNI",
+        "review_branch":  "intake/review-for-cqecmplx-production",
+        "head":  "559b13c (HEAD -\u003e intake/review-for-cqecmplx-production, origin/main, origin/HEAD, main) feat: Add unified code from docker/unified - lfai",
+        "curated_file_count":  2907,
+        "excluded_archive_count":  1,
+        "curated_bytes":  277715256,
+        "excluded_archive_bytes":  897024,
+        "key_docs":  [
+                         "README.md",
+                         "AGENTS.md",
+                         "NAVIGATION.md",
+                         "TODO.md",
+                         "pyproject.toml"
+                     ],
+        "top_directories":  [
+                                {
+                                    "name":  "src",
+                                    "files":  2834,
+                                    "bytes":  263887722
+                                },
+                                {
+                                    "name":  "lfai",
+                                    "files":  19,
+                                    "bytes":  28600
+                                },
+                                {
+                                    "name":  "cmplx-nextjs",
+                                    "files":  16,
+                                    "bytes":  49619
+                                },
+                                {
+                                    "name":  "mmdb",
+                                    "files":  7,
+                                    "bytes":  14478701
+                                },
+                                {
+                                    "name":  "the-library",
+                                    "files":  6,
+                                    "bytes":  58992
+                                },
+                                {
+                                    "name":  ".reuse",
+                                    "files":  1,
+                                    "bytes":  838
+                                },
+                                {
+                                    "name":  "LICENSES",
+                                    "files":  1,
+                                    "bytes":  994
+                                }
+                            ],
+        "largest_curated_files":  [
+                                      {
+                                          "path":  "src\\cmplx\\misc\\models.py",
+                                          "bytes":  30800221
+                                      },
+                                      {
+                                          "path":  "src\\cmplx\\misc\\unified_cqe_part1.py",
+                                          "bytes":  27821356
+                                      },
+                                      {
+                                          "path":  "src\\cmplx\\unified_families\\unified_cqe_part1.py",
+                                          "bytes":  27821319
+                                      },
+                                      {
+                                          "path":  "src\\cmplx\\misc\\unified_cqe_part2.py",
+                                          "bytes":  26274157
+                                      },
+                                      {
+                                          "path":  "src\\cmplx\\unified_families\\unified_cqe_part2.py",
+                                          "bytes":  26274154
+                                      },
+                                      {
+                                          "path":  "src\\cmplx\\misc\\1a98f3a0_functions.py",
+                                          "bytes":  21269635
+                                      },
+                                      {
+                                          "path":  "src\\cmplx\\misc\\additions.py",
+                                          "bytes":  14862005
+                                      },
+                                      {
+                                          "path":  "mmdb\\receipts_23k.json",
+                                          "bytes":  7585669
+                                      },
+                                      {
+                                          "path":  "src\\cmplx\\misc\\unified_cmplx.py",
+                                          "bytes":  6996965
+                                      },
+                                      {
+                                          "path":  "src\\cmplx\\unified_families\\unified_cmplx.py",
+                                          "bytes":  6996715
+                                      }
+                                  ]
+    },
+    {
+        "name":  "scout-demo-service",
+        "remote":  "https://github.com/nbarker2021/scout-demo-service.git",
+        "local_path":  "D:\\g\\scout-demo-service",
+        "review_branch":  "intake/review-for-cqecmplx-production",
+        "head":  "0de180b (HEAD -\u003e intake/review-for-cqecmplx-production, origin/main, origin/HEAD, main) Update README.md",
+        "curated_file_count":  9,
+        "excluded_archive_count":  0,
+        "curated_bytes":  6315,
+        "excluded_archive_bytes":  null,
+        "key_docs":  [
+                         "README.md",
+                         "package.json"
+                     ],
+        "top_directories":  [
+                                {
+                                    "name":  ".github",
+                                    "files":  1,
+                                    "bytes":  2980
+                                }
+                            ],
+        "largest_curated_files":  [
+                                      {
+                                          "path":  ".github\\workflows\\docker-build.yaml.disabled",
+                                          "bytes":  2980
+                                      },
+                                      {
+                                          "path":  "package.json",
+                                          "bytes":  833
+                                      },
+                                      {
+                                          "path":  ".gitignore",
+                                          "bytes":  610
+                                      },
+                                      {
+                                          "path":  ".eslintrc",
+                                          "bytes":  580
+                                      },
+                                      {
+                                          "path":  "README.md",
+                                          "bytes":  551
+                                      },
+                                      {
+                                          "path":  "Dockerfile",
+                                          "bytes":  464
+                                      },
+                                      {
+                                          "path":  "app.js",
+                                          "bytes":  239
+                                      },
+                                      {
+                                          "path":  ".gitattributes",
+                                          "bytes":  46
+                                      },
+                                      {
+                                          "path":  ".dockerignore",
+                                          "bytes":  12
+                                      }
+                                  ]
+    }
+]

@@ -1,0 +1,133 @@
+﻿{
+    "name":  "CMPLX-Monorepo",
+    "remote":  "https://github.com/nbarker2021/CMPLX-Monorepo.git",
+    "local_path":  "D:\\g\\CMPLX-Monorepo",
+    "review_branch":  "intake/review-for-cqecmplx-production",
+    "head":  "c56c785 (HEAD -\u003e intake/review-for-cqecmplx-production, origin/main, origin/HEAD, main) feat: Add unified code from docker/unified - cqe_website",
+    "curated_file_count":  655,
+    "excluded_archive_count":  0,
+    "curated_bytes":  75260020,
+    "excluded_archive_bytes":  null,
+    "key_docs":  [
+                     "README.md",
+                     "AGENTS.md",
+                     "NAVIGATION.md",
+                     "TODO.md",
+                     ".gitmodules",
+                     ".env.example"
+                 ],
+    "top_directories":  [
+                            {
+                                "name":  "cqe_website",
+                                "files":  385,
+                                "bytes":  25037485
+                            },
+                            {
+                                "name":  "projects",
+                                "files":  150,
+                                "bytes":  193227
+                            },
+                            {
+                                "name":  "docs",
+                                "files":  67,
+                                "bytes":  36100035
+                            },
+                            {
+                                "name":  "backlog_adapters",
+                                "files":  9,
+                                "bytes":  50234
+                            },
+                            {
+                                "name":  "services",
+                                "files":  8,
+                                "bytes":  18345
+                            },
+                            {
+                                "name":  "product",
+                                "files":  7,
+                                "bytes":  201764
+                            },
+                            {
+                                "name":  "mmdb",
+                                "files":  6,
+                                "bytes":  13591357
+                            },
+                            {
+                                "name":  "devkit",
+                                "files":  3,
+                                "bytes":  2856
+                            },
+                            {
+                                "name":  "tests",
+                                "files":  2,
+                                "bytes":  2997
+                            },
+                            {
+                                "name":  "support",
+                                "files":  1,
+                                "bytes":  2941
+                            },
+                            {
+                                "name":  ".reuse",
+                                "files":  1,
+                                "bytes":  838
+                            },
+                            {
+                                "name":  "LICENSES",
+                                "files":  1,
+                                "bytes":  994
+                            },
+                            {
+                                "name":  "plans",
+                                "files":  1,
+                                "bytes":  11061
+                            },
+                            {
+                                "name":  "scripts",
+                                "files":  1,
+                                "bytes":  3809
+                            }
+                        ],
+    "largest_curated_files":  [
+                                  {
+                                      "path":  "docs\\inventory_raw.txt",
+                                      "bytes":  28898630
+                                  },
+                                  {
+                                      "path":  "mmdb\\receipts_23k.json",
+                                      "bytes":  7588831
+                                  },
+                                  {
+                                      "path":  "mmdb\\atoms_23k.json",
+                                      "bytes":  5608531
+                                  },
+                                  {
+                                      "path":  "docs\\phase0\\artifacts\\catchall_code_index.jsonl",
+                                      "bytes":  5500317
+                                  },
+                                  {
+                                      "path":  "cqe_website\\cqe_core_system (3).py",
+                                      "bytes":  3138817
+                                  },
+                                  {
+                                      "path":  "cqe_website\\cqe_core_system (1).py",
+                                      "bytes":  3138817
+                                  },
+                                  {
+                                      "path":  "cqe_website\\cqe_core_system.py",
+                                      "bytes":  3138817
+                                  },
+                                  {
+                                      "path":  "cqe_website\\cqe_core_system (4).py",
+                                      "bytes":  3138817
+                                  },
+                                  {
+                                      "path":  "cqe_website\\cqe_core_system (2).py",
+                                      "bytes":  3138817
+                                  },
+                                  {
+                                      "path":  "cqe_website\\CQE_CORE_MONOLITH_fixed.py",
+                                      "bytes":  3121182
+                                  }
+                              ]
+}

@@ -1,0 +1,60 @@
+﻿{
+    "name":  "scout-demo-service",
+    "remote":  "https://github.com/nbarker2021/scout-demo-service.git",
+    "local_path":  "D:\\g\\scout-demo-service",
+    "review_branch":  "intake/review-for-cqecmplx-production",
+    "head":  "0de180b (HEAD -\u003e intake/review-for-cqecmplx-production, origin/main, origin/HEAD, main) Update README.md",
+    "curated_file_count":  9,
+    "excluded_archive_count":  0,
+    "curated_bytes":  6315,
+    "excluded_archive_bytes":  null,
+    "key_docs":  [
+                     "README.md",
+                     "package.json"
+                 ],
+    "top_directories":  [
+                            {
+                                "name":  ".github",
+                                "files":  1,
+                                "bytes":  2980
+                            }
+                        ],
+    "largest_curated_files":  [
+                                  {
+                                      "path":  ".github\\workflows\\docker-build.yaml.disabled",
+                                      "bytes":  2980
+                                  },
+                                  {
+                                      "path":  "package.json",
+                                      "bytes":  833
+                                  },
+                                  {
+                                      "path":  ".gitignore",
+                                      "bytes":  610
+                                  },
+                                  {
+                                      "path":  ".eslintrc",
+                                      "bytes":  580
+                                  },
+                                  {
+                                      "path":  "README.md",
+                                      "bytes":  551
+                                  },
+                                  {
+                                      "path":  "Dockerfile",
+                                      "bytes":  464
+                                  },
+                                  {
+                                      "path":  "app.js",
+                                      "bytes":  239
+                                  },
+                                  {
+                                      "path":  ".gitattributes",
+                                      "bytes":  46
+                                  },
+                                  {
+                                      "path":  ".dockerignore",
+                                      "bytes":  12
+                                  }
+                              ]
+}
