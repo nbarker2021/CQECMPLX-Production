@@ -1,0 +1,36 @@
+{
+  "id": "CQECMPLX-Repo-Forms-Accounting",
+  "status": "manifest-ready-index-first",
+  "source_binding": "tracking/source-bindings/CQECMPLX-Repo-Forms-Accounting.json",
+  "destination_routes": [
+    "production/workspace-corpus-index"
+  ],
+  "allowed_source_patterns": [
+    "D:\\CQE_CMPLX\\CMPLX-Kernel\\kernel\\repo_forms\\README.md",
+    "D:\\CQE_CMPLX\\CMPLX-Kernel\\kernel\\repo_forms\\REPO_FORM_INDEX.json",
+    "D:\\CQE_CMPLX\\CMPLX-Kernel\\kernel\\repo_forms\\repos\\*\\FORM.md",
+    "D:\\CQE_CMPLX\\CMPLX-Kernel\\kernel\\repo_forms\\repos\\*\\FORM.json",
+    "D:\\CQE_CMPLX\\CMPLX-Kernel\\kernel\\repo_forms\\repos\\*\\archive_exclusions.txt",
+    "D:\\CQE_CMPLX\\Claude-Codex-Memory\\Codex work\\CX-Repo-Literal-Accounting\\CX_all_repo_zips_content_profile_completion_summary.json",
+    "D:\\CQE_CMPLX\\Claude-Codex-Memory\\Codex work\\CX-Repo-Literal-Accounting\\CX_repo_inventory_completion_audit.json",
+    "D:\\CQE_CMPLX\\Claude-Codex-Memory\\Codex work\\CX-Repo-Literal-Accounting\\CX_repo_literal_accounting_archive_summary.csv",
+    "D:\\CQE_CMPLX\\Claude-Codex-Memory\\Codex work\\CX-Repo-Literal-Accounting\\CX_repo_literal_accounting_sanity_counts.json",
+    "D:\\CQE_CMPLX\\Claude-Codex-Memory\\Codex work\\CX-Repo-Literal-Accounting\\CX_repo_zip_inventory.csv",
+    "D:\\CQE_CMPLX\\Claude-Codex-Memory\\Codex work\\CX-Repo-Literal-Accounting\\CX_repo_zip_inventory.json"
+  ],
+  "deferred_source_patterns": [
+    "D:\\CQE_CMPLX\\CMPLX-Kernel\\kernel\\repo_forms\\repos\\*\\file_index.curated.txt",
+    "D:\\CQE_CMPLX\\Claude-Codex-Memory\\Codex work\\CX-Repo-Literal-Accounting\\CX_repo_literal_accounting.sqlite3"
+  ],
+  "excluded_patterns": [
+    "D:\\CQE_CMPLX\\Claude-Codex-Memory\\Repo zips\\*.zip",
+    "**\\*.zip"
+  ],
+  "promotion_gates": [
+    "publish forms and summaries before large file indexes",
+    "do not include raw repo zips",
+    "large SQLite database requires size review or external artifact route",
+    "no dedupe during literal accounting phase"
+  ],
+  "notes": "This is the accounting/index route for all repo roots. It exists to prevent blind importing raw archives."
+}

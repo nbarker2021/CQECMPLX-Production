@@ -1,0 +1,37 @@
+{
+  "id": "CQECMPLX-Docker-Compose-Boundary",
+  "status": "manifest-ready-boundary-first",
+  "source_binding": "tracking/source-bindings/CQECMPLX-Docker-Compose-Boundary.json",
+  "destination_routes": [
+    "production/adapters",
+    "production/kernel-runtime"
+  ],
+  "allowed_source_patterns": [
+    "D:\\CQE_CMPLX\\CMPLX-Kernel\\kernel\\deploy\\docker\\Dockerfile.kernel",
+    "D:\\CQE_CMPLX\\CMPLX-Kernel\\kernel\\deploy\\docker\\docker-compose.kernel-dind.yml",
+    "D:\\CQE_CMPLX\\CMPLX-Kernel\\kernel\\deploy\\docker\\docker-compose.kernel-socket.yml",
+    "D:\\CQE_CMPLX\\CMPLX-Kernel\\kernel\\deploy\\docker\\README.md",
+    "D:\\CQE_CMPLX\\CMPLX-Kernel\\kernel\\deploy\\docker\\boundary-inserts\\compose-insert.schema.json",
+    "D:\\CQE_CMPLX\\CMPLX-Kernel\\kernel\\deploy\\docker\\boundary-inserts\\compose-insert.template.json",
+    "D:\\CQE_CMPLX\\CMPLX-Kernel\\kernel\\docs\\DOCKER_COMPOSE_BOUNDARY.md",
+    "D:\\CQE_CMPLX\\CMPLX-Kernel\\kernel\\docs\\DOCKER_TOOL_ADAPTER.md",
+    "D:\\CQE_CMPLX\\CQECMPLX-ProofValidatedSuite\\kernel\\docker-compose-kernel-validated.yml"
+  ],
+  "referenced_not_copied_yet": [
+    "D:\\CQE_CMPLX\\DockerContainers"
+  ],
+  "excluded_patterns": [
+    "**\\.env",
+    "**\\.env.*",
+    "**\\volumes\\**",
+    "**\\data\\**",
+    "**\\logs\\**"
+  ],
+  "promotion_gates": [
+    "internal compose layers must remain below kernel level",
+    "external needs must be represented as boundary insert records",
+    "no host-specific absolute paths inside promoted compose files unless explicitly templated",
+    "Docker CLI/daemon dependency must be documented as optional host capability"
+  ],
+  "notes": "This is the Docker-in-Docker and socket-compose boundary layer, not a blanket import of DockerContainers."
+}

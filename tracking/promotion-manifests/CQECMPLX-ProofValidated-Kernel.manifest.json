@@ -1,0 +1,42 @@
+{
+  "id": "CQECMPLX-ProofValidated-Kernel",
+  "status": "manifest-ready-composite-needed",
+  "source_binding": "tracking/source-bindings/CQECMPLX-ProofValidated-Kernel.json",
+  "destination_routes": [
+    "production/kernel-runtime",
+    "production/proof-receipts"
+  ],
+  "allowed_source_patterns": [
+    "D:\\CQE_CMPLX\\CQECMPLX-ProofValidatedSuite\\kernel\\*.md",
+    "D:\\CQE_CMPLX\\CQECMPLX-ProofValidatedSuite\\kernel\\*.json",
+    "D:\\CQE_CMPLX\\CQECMPLX-ProofValidatedSuite\\kernel\\*.yml",
+    "D:\\CQE_CMPLX\\CQECMPLX-ProofValidatedSuite\\kernel\\boot.py",
+    "D:\\CQE_CMPLX\\CQECMPLX-ProofValidatedSuite\\kernel\\cmplx_proof_kernel\\*.py",
+    "D:\\CQE_CMPLX\\CQECMPLX-ProofValidatedSuite\\kernel\\deploy\\docker\\*.md",
+    "D:\\CQE_CMPLX\\CQECMPLX-ProofValidatedSuite\\kernel\\deploy\\docker\\*.yml",
+    "D:\\CQE_CMPLX\\CQECMPLX-ProofValidatedSuite\\kernel\\deploy\\docker\\Dockerfile.kernel",
+    "D:\\CQE_CMPLX\\CQECMPLX-ProofValidatedSuite\\kernel\\docs\\*.md",
+    "D:\\CQE_CMPLX\\CQECMPLX-ProofValidatedSuite\\kernel\\schemas\\*.json",
+    "D:\\CQE_CMPLX\\CQECMPLX-ProofValidatedSuite\\kernel\\web\\*.*"
+  ],
+  "merge_with": [
+    "CQECMPLX-Kernel-Sidecar",
+    "CQECMPLX-Docker-Compose-Boundary",
+    "CQECMPLX-LibForge-Lattice-ReForge-Ring"
+  ],
+  "excluded_patterns": [
+    "**\\__pycache__\\**",
+    "**\\*.pyc",
+    "**\\.pytest_cache\\**",
+    "**\\*.log",
+    "**\\*.sqlite",
+    "**\\*.sqlite3"
+  ],
+  "promotion_gates": [
+    "reconcile overlapping kernel docs with CMPLX-Kernel sidecar",
+    "verify Docker compose references only production-relative paths or boundary inserts",
+    "run syntax check for Python files before promotion",
+    "ensure training mode Hidden Guess Result toggle is represented where diagnostics run"
+  ],
+  "notes": "This is infrastructure-ready, but it must enter as a composite runtime slice rather than replacing the existing sidecar kernel."
+}

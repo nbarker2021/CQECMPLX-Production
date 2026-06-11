@@ -59,3 +59,5 @@ The active management queue is `tracking/POPULATION_QUEUE.md`.
 Machine-readable records are in `tracking/POPULATION_QUEUE.json`.
 
 Source bindings live under `tracking/source-bindings/`.
+
+Promotion manifests live under `tracking/promotion-manifests/`.

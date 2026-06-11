@@ -126,5 +126,6 @@
     "exact publishable slices"
   ],
   "population_queue": "tracking/POPULATION_QUEUE.json",
-  "source_bindings_dir": "tracking/source-bindings"
+  "source_bindings_dir": "tracking/source-bindings",
+  "promotion_manifests_dir": "tracking/promotion-manifests"
 }

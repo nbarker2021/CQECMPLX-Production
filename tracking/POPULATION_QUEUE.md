@@ -51,3 +51,19 @@ The population space is large enough that the production repo should not become 
 mirror of the workspace. It should become the management plane: records, source
 bindings, composite specs, promotion manifests, and then curated production code
 only after each slice has an explicit boundary.
+
+## Manifest Layer
+
+Promotion manifests now live in `tracking/promotion-manifests/`.
+
+First manifest-ready slices:
+
+- `CQECMPLX-Paper-Proof-Bundle`
+- `CQECMPLX-ProofValidated-Kernel`
+- `CQECMPLX-NVEST-EG8-Gate`
+- `CQECMPLX-Docker-Compose-Boundary`
+- `CQECMPLX-Repo-Forms-Accounting`
+- `CQECMPLX-LibForge-Lattice-ReForge-Ring`
+
+These manifests are allowed-path records. They do not copy source files by
+themselves.

@@ -1,0 +1,31 @@
+{
+  "id": "CQECMPLX-LibForge-Lattice-ReForge-Ring",
+  "status": "manifest-staged-package-family-needed",
+  "source_binding": "tracking/source-bindings/CQECMPLX-LibForge-Lattice-ReForge-Ring.json",
+  "destination_routes": [
+    "production/lib-forge"
+  ],
+  "allowed_source_roots_for_next_scan": [
+    "D:\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge",
+    "D:\\CQE_CMPLX\\CMPLX-Kernel\\kernel_ring",
+    "D:\\CQE_CMPLX\\CMPLX-Kernel\\kernel\\lib-forge",
+    "D:\\CQE_CMPLX\\CMPLX-PartsFactory-main"
+  ],
+  "package_families_to_split": [
+    "lattice_forge_src",
+    "kernel_ring/lattice_kernel",
+    "kernel_ring/lib_kernel",
+    "kernel_ring/reforge_kernel",
+    "ChromaForge",
+    "GraphStax",
+    "PixelForge",
+    "meta_material_system"
+  ],
+  "promotion_gates": [
+    "create package-family manifests before copying code",
+    "separate source code from generated papers and generated visualizations",
+    "bind each Forge package to CQE layer, adapter boundary, and receipt behavior",
+    "exclude bytecode and local cache directories"
+  ],
+  "notes": "This is a ring-level manifest. It intentionally stops short of copying lib-forge wholesale."
+}

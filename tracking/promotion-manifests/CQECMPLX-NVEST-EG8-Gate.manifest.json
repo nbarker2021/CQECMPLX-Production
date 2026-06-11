@@ -1,0 +1,44 @@
+{
+  "id": "CQECMPLX-NVEST-EG8-Gate",
+  "status": "manifest-ready-contract-first",
+  "source_binding": "tracking/source-bindings/CQECMPLX-NVEST-EG8-Gate.json",
+  "destination_routes": [
+    "production/diagnostics",
+    "production/adapters"
+  ],
+  "allowed_source_patterns": [
+    "D:\\CQE_CMPLX\\CMPLX-NVEST\\README.md",
+    "D:\\CQE_CMPLX\\CMPLX-NVEST\\00_state_and_manifest\\*.json",
+    "D:\\CQE_CMPLX\\CMPLX-NVEST\\00_state_and_manifest\\*.md",
+    "D:\\CQE_CMPLX\\CMPLX-NVEST\\01_umbrella_contract\\*.md",
+    "D:\\CQE_CMPLX\\CMPLX-NVEST\\02_engine_blueprint\\*.md",
+    "D:\\CQE_CMPLX\\CMPLX-NVEST\\03_honesty_ablation\\*.md",
+    "D:\\CQE_CMPLX\\CMPLX-NVEST\\03_honesty_ablation\\*.json",
+    "D:\\CQE_CMPLX\\CMPLX-NVEST\\04_integration\\*.md",
+    "D:\\CQE_CMPLX\\CMPLX-NVEST\\07_cqe_layer\\*.md",
+    "D:\\CQE_CMPLX\\CMPLX-NVEST\\08_universal_adapters\\*.md",
+    "D:\\CQE_CMPLX\\CQE-E_G8\\README.md",
+    "D:\\CQE_CMPLX\\CQE-E_G8\\00_state_and_manifest\\*.json",
+    "D:\\CQE_CMPLX\\CQE-E_G8\\00_state_and_manifest\\*.md",
+    "D:\\CQE_CMPLX\\CQE-E_G8\\01_umbrella_contract\\*.md",
+    "D:\\CQE_CMPLX\\CQE-E_G8\\02_engine_blueprint\\*.md",
+    "D:\\CQE_CMPLX\\CQE-E_G8\\03_honesty_ablation\\*.md",
+    "D:\\CQE_CMPLX\\CQE-E_G8\\03_honesty_ablation\\*.json",
+    "D:\\CQE_CMPLX\\CQE-E_G8\\04_integration\\*.md",
+    "D:\\CQE_CMPLX\\CQE-E_G8\\07_cqe_layer\\*.md",
+    "D:\\CQE_CMPLX\\CQE-E_G8\\08_universal_adapters\\*.md"
+  ],
+  "excluded_patterns": [
+    "**\\__pycache__\\**",
+    "**\\*.pyc",
+    "**\\.pytest_cache\\**"
+  ],
+  "promotion_gates": [
+    "Hidden Guess Result schema validation",
+    "training_mode toggle requirement documented in kernel API options",
+    "Binary Boundary Adapter handoff recorded",
+    "Universal Adapter Programs handoff recorded",
+    "CQE engine-math-product map present"
+  ],
+  "notes": "Promote contracts and schemas before runtime code. This family is the diagnostic honesty layer for non-math validation."
+}

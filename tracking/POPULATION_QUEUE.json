@@ -64,5 +64,14 @@
     "CQECMPLX-MMDB-E8-Vector-Payloads",
     "CQECMPLX-CMPLXNEXT-Orchestration",
     "CQECMPLX-TMN-Role-Family"
+  ],
+  "promotion_manifests_dir": "tracking/promotion-manifests",
+  "manifest_ready": [
+    "CQECMPLX-Paper-Proof-Bundle",
+    "CQECMPLX-ProofValidated-Kernel",
+    "CQECMPLX-NVEST-EG8-Gate",
+    "CQECMPLX-Docker-Compose-Boundary",
+    "CQECMPLX-Repo-Forms-Accounting",
+    "CQECMPLX-LibForge-Lattice-ReForge-Ring"
   ]
 }

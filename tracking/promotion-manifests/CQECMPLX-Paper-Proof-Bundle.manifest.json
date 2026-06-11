@@ -1,0 +1,38 @@
+{
+  "id": "CQECMPLX-Paper-Proof-Bundle",
+  "status": "manifest-ready-text-first",
+  "source_binding": "tracking/source-bindings/CQECMPLX-Paper-Proof-Bundle.json",
+  "destination_routes": [
+    "production/papers",
+    "production/proof-receipts"
+  ],
+  "allowed_source_patterns": [
+    "D:\\CQE_CMPLX\\CQECMPLX-Production\\papers\\CQE-paper-*\\PAPER-BODY.md",
+    "D:\\CQE_CMPLX\\CQECMPLX-Production\\papers\\CQE-paper-*\\SOURCE.md",
+    "D:\\CQE_CMPLX\\CQECMPLX-Production\\papers\\CQE-paper-*\\01-CQE-formal\\FORMAL.md",
+    "D:\\CQE_CMPLX\\CQECMPLX-Production\\papers\\CQE-paper-*\\02-CQE-tool\\TOOL.md",
+    "D:\\CQE_CMPLX\\CQECMPLX-Production\\papers\\CQE-paper-*\\02-CQE-tool\\run.py",
+    "D:\\CQE_CMPLX\\CQECMPLX-Production\\papers\\CQE-paper-*\\03-CQE-workbook\\WORKBOOK.md",
+    "D:\\CQE_CMPLX\\CQECMPLX-Production\\_meta\\PAPER-INTENT-INDEX.md",
+    "D:\\CQE_CMPLX\\CQECMPLX-Production\\_meta\\paper_intent_index.json",
+    "D:\\CQE_CMPLX\\CQECMPLX-Production\\proof-receipts\\CQE-paper-*\\*\\receipt-*.json"
+  ],
+  "deferred_source_patterns": [
+    "D:\\CQE_CMPLX\\CQECMPLX-Production\\PDF_MASTER\\*.pdf",
+    "D:\\CQE_CMPLX\\CQECMPLX-Production\\PDF_MASTER\\PAPER_KITS\\*.pdf",
+    "D:\\CQE_CMPLX\\CQECMPLX-Production\\PDF_MASTER\\WORKBOOKS\\*.pdf"
+  ],
+  "excluded_patterns": [
+    "**\\__pycache__\\**",
+    "**\\*.pyc",
+    "**\\.pytest_cache\\**",
+    "D:\\CQE_CMPLX\\CQECMPLX-Production\\PDF_MASTER\\_superseded_cform_pdfs\\**"
+  ],
+  "promotion_gates": [
+    "text file count check for CQE-paper-00 through CQE-paper-32",
+    "receipt JSON validation",
+    "paper intent index validation",
+    "PDF size and lineage review before binary promotion"
+  ],
+  "notes": "This slice is the strongest first production publish candidate because the paper body is already structured as body, source, formal, tool, and workbook."
+}
