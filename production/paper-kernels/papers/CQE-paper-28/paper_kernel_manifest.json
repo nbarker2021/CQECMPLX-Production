@@ -1,0 +1,87 @@
+{
+  "id": "CQE-paper-28",
+  "n": "28",
+  "title": "N-Dimensional Game Lattices",
+  "slug": "n-dimensional-game-lattices",
+  "status": "Horizon/speculative layer with explicit obligations",
+  "role": "paper_body_work",
+  "block": "block-03-papers-25-32",
+  "block_title": "Energy Horizons, Observer Delay, Grand Ribbon, Meta Walkthrough, and Supervisor Cursor",
+  "suite_previous": "CQE-paper-27",
+  "suite_next": "CQE-paper-29",
+  "block_previous": "CQE-paper-27",
+  "block_next": "CQE-paper-29",
+  "central_thesis": "Extend chess/board logic into arbitrary dimensional local-rule games and tool operators.",
+  "components": {
+    "claims": {
+      "status": "seeded",
+      "primary_content": "Extend chess/board logic into arbitrary dimensional local-rule games and tool operators.",
+      "required_action": "Separate method claims from domain claims before peer-review promotion."
+    },
+    "math": {
+      "status": "source-bound",
+      "primary_content": "Use the paper body axioms, lemmas, and formalism as the math intake.",
+      "required_action": "Promote every symbolic statement into a normalized claim row with assumptions and receipts."
+    },
+    "formal_algebra_calculus": {
+      "status": "source-bound",
+      "primary_content": "Use 01-CQE-formal/FORMAL.md and recovered algebra/PDF evidence.",
+      "required_action": "Split normal form, closed form, algebraic operators, calculus/window operators, and open obligations."
+    },
+    "hand_work": {
+      "status": "source-bound",
+      "primary_content": "Use 03-CQE-workbook/WORKBOOK.md plus the analog toolkit guides.",
+      "required_action": "Write the physical reconstruction steps and boundary-collision handling for the paper."
+    },
+    "code_rebuild": {
+      "status": "source-bound",
+      "primary_content": "Use 02-CQE-tool/TOOL.md and run.py when present.",
+      "required_action": "Bind a replayable command or mark the missing executable as an obligation."
+    },
+    "lib_bindings": {
+      "status": "seeded",
+      "primary_content": "forgefactory.paper28_nd_game_lattices",
+      "required_action": "Resolve this binding into production/lib-forge or mark it as an adapter route."
+    },
+    "tests_and_receipts": {
+      "status": "seeded",
+      "primary_content": "Every validation and diagnostic must support hidden-guess ablation when training mode is enabled.",
+      "required_action": "Add positive, negative, boundary, and wrap tests with receipts."
+    },
+    "deployment_kernel": {
+      "status": "seeded",
+      "primary_content": "Deployable individually as CQE-paper-28 and selectable through the master suite.",
+      "required_action": "Expose paper, block, and suite selectors with no duplicate routing logic."
+    }
+  },
+  "sources": {
+    "body": {
+      "path": "production\\papers\\CQE-paper-28\\PAPER-BODY.md",
+      "present": true
+    },
+    "source": {
+      "path": "production\\papers\\CQE-paper-28\\SOURCE.md",
+      "present": true
+    },
+    "formal": {
+      "path": "production\\papers\\CQE-paper-28\\01-CQE-formal\\FORMAL.md",
+      "present": true
+    },
+    "tool": {
+      "path": "production\\papers\\CQE-paper-28\\02-CQE-tool\\TOOL.md",
+      "present": true
+    },
+    "tool_runner": {
+      "path": "production\\papers\\CQE-paper-28\\02-CQE-tool\\run.py",
+      "present": false
+    },
+    "workbook": {
+      "path": "production\\papers\\CQE-paper-28\\03-CQE-workbook\\WORKBOOK.md",
+      "present": true
+    },
+    "recovered_output": {
+      "path": "production\\lib-forge\\recovered\\papers_output\\CQE-paper-28.md",
+      "present": true
+    }
+  }
+}

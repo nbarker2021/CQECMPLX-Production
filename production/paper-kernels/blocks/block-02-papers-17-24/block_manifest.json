@@ -1,0 +1,18 @@
+{
+  "id": "block-02-papers-17-24",
+  "title": "Correction Towers, Representation Routes, Applied Forge, and Game Automata",
+  "start": "CQE-paper-17",
+  "end": "CQE-paper-24",
+  "papers": [
+    "CQE-paper-17",
+    "CQE-paper-18",
+    "CQE-paper-19",
+    "CQE-paper-20",
+    "CQE-paper-21",
+    "CQE-paper-22",
+    "CQE-paper-23",
+    "CQE-paper-24"
+  ],
+  "previous_block": "block-01-papers-09-16",
+  "next_block": "block-03-papers-25-32"
+}

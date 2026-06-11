@@ -29,11 +29,10 @@ SU(2) triplet close as an element of the S3 group ring?
 If yes, the sequence has the full J3(O) Weyl coherence.
 """
 from __future__ import annotations
-import sys
+
 from fractions import Fraction
 
-sys.path.insert(0, "/home/ubuntu/review-build/src")
-from lattice_forge.f4_action import decompose_3x3_in_s3_group_ring_exact
+from .f4_action import decompose_3x3_in_s3_group_ring_exact
 
 
 # ─────────────────────────────────────────────────────────────────────────────

@@ -77,6 +77,12 @@
       "date": "2026-06-11",
       "slice": "production/packages/cqecmplx-forge",
       "note": "pip-installable cqecmplx-forge v0.3.0: unified cqecmplx namespace + compat ring; lattice_forge union (PROOF 54 + PartsFactory 116, 9 diverged preserved); ForgeFactory/ReForge/Rhenium lineage; engine ring. Fresh-venv verified, stdlib-only."
+    },
+    {
+      "id": "CQECMPLX-Forge-Package-v0.4.0",
+      "date": "2026-06-11",
+      "slice": "production/packages/cqecmplx-forge",
+      "note": "Curated best forms of all 9 diverged lattice_forge modules (adjudications in MERGE_LEDGER); predictor fork split into rule30_predictor + rule30_spectral_predictor; merged init exposes both lines; cqecmplx-verify console script (6/6); fixed ChromaForge cache-poisoning bug found by the verifier."
     }
   ],
   "stray_roots_reconciled": [

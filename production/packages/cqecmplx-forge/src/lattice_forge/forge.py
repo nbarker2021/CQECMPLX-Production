@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import os
 from pathlib import Path
 from typing import Any
 
@@ -62,6 +63,7 @@ from .rule30 import (
     verify_rule30_winding_number_proof,
 )
 from .seed import SeedStore
+from .witness_state_store import WitnessStateStore
 
 
 def extract_answer(kind: str, result: Any) -> str | None:
@@ -276,13 +278,30 @@ def evidence_level(kind: str, result: Any) -> str:
 class Forge:
     """High-level facade for seed queries plus overlay receipts."""
 
-    def __init__(self, seed: SeedStore, overlay: OverlayStore):
+    def __init__(
+        self,
+        seed: SeedStore,
+        overlay: OverlayStore,
+        witness_db: Path | str | None = None,
+    ):
         self.seed = seed
         self.overlay = overlay
+        self._witness_store = WitnessStateStore(witness_db)
 
     @classmethod
     def open(cls, root: str | Path | None = None) -> "Forge":
-        return cls(seed=SeedStore.packaged(), overlay=OverlayStore.open(root))
+        overlay_root = Path(root) if root is not None else None
+        witness_db: Path | None = None
+        env_db = os.environ.get("FORGE_WITNESS_DB")
+        if env_db:
+            witness_db = Path(env_db)
+        elif overlay_root is not None:
+            witness_db = overlay_root / "witness" / "state.sqlite"
+        return cls(
+            seed=SeedStore.packaged(),
+            overlay=OverlayStore.open(root),
+            witness_db=witness_db,
+        )
 
     def _record(self, kind: str, query: dict[str, Any], result: Any) -> dict[str, Any]:
         level = evidence_level(kind, result)
@@ -1213,6 +1232,50 @@ class Forge:
             result,
         )
 
+    def record_witnessed_encode(
+        self,
+        state_keys: list[str],
+        *,
+        encoded: dict[str, Any],
+        from_regime: str,
+        to_regime: str,
+        max_depth: int,
+    ) -> None:
+        """Store regime-encode payload under canonical keys (primary + stub suffix)."""
+        base = {
+            "from_regime": from_regime,
+            "to_regime": to_regime,
+            "max_depth": max_depth,
+            "encoded": encoded,
+        }
+        for key in state_keys:
+            if key.endswith("/witness_stub"):
+                continue
+            self._witness_store.put(key, {**base, "state_key": key})
+
+    def witnessed_lookup(self, state_key: str) -> dict[str, Any]:
+        """Return witnessed encode payload when present; else honest NOT_WITNESSED."""
+        from lattice_forge.witness.state_keys import parse_state_key
+
+        parsed = parse_state_key(state_key)
+        stored = self._witness_store.get(state_key)
+        if stored is not None and parsed.get("valid"):
+            result = {
+                "state_key": state_key,
+                "answer": "WITNESSED",
+                "witnessed": True,
+                "grammar": parsed,
+                "payload": stored,
+            }
+        else:
+            result = {
+                "state_key": state_key,
+                "answer": "NOT_WITNESSED",
+                "witnessed": False,
+                "grammar": parsed,
+            }
+        return self._record("witnessed_lookup", {"state_key": state_key}, result)
+
     def obstructions(
         self,
         source_id: str | None = None,
@@ -1247,3 +1310,43 @@ class Forge:
             "status": self.status(),
             "overlay": self.overlay.snapshot(limit=limit),
         }
+
+    def record_solver_event(
+        self,
+        *,
+        operation: str = "record_solver_event",
+        landauer_cost: float,
+        shannon_residue: float = 0.0,
+        noether_residue: float = 0.0,
+        obligation_delta: float = 0.0,
+        v_before: float = 0.0,
+        v_after: float = 0.0,
+        **metadata: Any,
+    ) -> dict[str, Any]:
+        """Record solver build/query cost via NSL boundary term + optional CMPLX port."""
+        from .ledger.nsl import NSLTerm
+        from .tools.nsl import NSLTool
+
+        term = NSLTerm(
+            noether_residue=noether_residue if noether_residue else obligation_delta,
+            shannon_residue=shannon_residue,
+            landauer_cost=landauer_cost,
+        )
+        nsl_result = NSLTool().invoke(
+            term=term,
+            v_before=(v_before, v_before, v_before),
+            v_after=(v_after, v_after, v_after),
+            operation=operation,
+        )
+        result = {
+            "operation": operation,
+            "nsl_term": term.as_dict(),
+            "nsl_port": nsl_result,
+            "nsl_available": NSLTool.available(),
+            **metadata,
+        }
+        return self._record(
+            "solver_event",
+            {"operation": operation, **metadata},
+            result,
+        )

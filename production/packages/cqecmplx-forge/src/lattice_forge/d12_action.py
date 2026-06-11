@@ -454,3 +454,15 @@ def verify_d12_idempotent_chain() -> dict[str, Any]:
             "Weyl (1,3) transposition) is the same operation at every level."
         ),
     }
+
+
+# --- ported from the PartsFactory v0.3 branch (curation v0.4.0) ---
+def d12_acts_on_d4_state(g: tuple[int, int], state: tuple[int, int]) -> tuple[int, int]:
+    """Act on a D4 chart state encoded as (axis in 0..3, sheet in 0..1)."""
+
+    axis, sheet = state
+    if axis not in (0, 1, 2, 3) or sheet not in (0, 1):
+        raise ValueError("state must be (axis in 0..3, sheet in 0..1)")
+    if axis == 0:
+        return (0, sheet)
+    return (d12_acts_on_color(g, axis - 1) + 1, sheet)

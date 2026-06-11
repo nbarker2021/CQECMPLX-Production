@@ -1,0 +1,87 @@
+{
+  "id": "CQE-paper-06",
+  "n": "06",
+  "title": "Causal Code",
+  "slug": "causal-code",
+  "status": "Formal refinement draft for peer-review-facing development",
+  "role": "paper_body_work",
+  "block": "block-00-papers-01-08",
+  "block_title": "First Carrier Chain Through Closure",
+  "suite_previous": "CQE-paper-05",
+  "suite_next": "CQE-paper-07",
+  "block_previous": "CQE-paper-05",
+  "block_next": "CQE-paper-07",
+  "central_thesis": "Cast every dependency between objects, proofs, tools, and papers as a typed causal edge.",
+  "components": {
+    "claims": {
+      "status": "seeded",
+      "primary_content": "Cast every dependency between objects, proofs, tools, and papers as a typed causal edge.",
+      "required_action": "Separate method claims from domain claims before peer-review promotion."
+    },
+    "math": {
+      "status": "source-bound",
+      "primary_content": "Use the paper body axioms, lemmas, and formalism as the math intake.",
+      "required_action": "Promote every symbolic statement into a normalized claim row with assumptions and receipts."
+    },
+    "formal_algebra_calculus": {
+      "status": "source-bound",
+      "primary_content": "Use 01-CQE-formal/FORMAL.md and recovered algebra/PDF evidence.",
+      "required_action": "Split normal form, closed form, algebraic operators, calculus/window operators, and open obligations."
+    },
+    "hand_work": {
+      "status": "source-bound",
+      "primary_content": "Use 03-CQE-workbook/WORKBOOK.md plus the analog toolkit guides.",
+      "required_action": "Write the physical reconstruction steps and boundary-collision handling for the paper."
+    },
+    "code_rebuild": {
+      "status": "source-bound",
+      "primary_content": "Use 02-CQE-tool/TOOL.md and run.py when present.",
+      "required_action": "Bind a replayable command or mark the missing executable as an obligation."
+    },
+    "lib_bindings": {
+      "status": "seeded",
+      "primary_content": "forgefactory.paper06_causal_code",
+      "required_action": "Resolve this binding into production/lib-forge or mark it as an adapter route."
+    },
+    "tests_and_receipts": {
+      "status": "seeded",
+      "primary_content": "Every validation and diagnostic must support hidden-guess ablation when training mode is enabled.",
+      "required_action": "Add positive, negative, boundary, and wrap tests with receipts."
+    },
+    "deployment_kernel": {
+      "status": "seeded",
+      "primary_content": "Deployable individually as CQE-paper-06 and selectable through the master suite.",
+      "required_action": "Expose paper, block, and suite selectors with no duplicate routing logic."
+    }
+  },
+  "sources": {
+    "body": {
+      "path": "production\\papers\\CQE-paper-06\\PAPER-BODY.md",
+      "present": true
+    },
+    "source": {
+      "path": "production\\papers\\CQE-paper-06\\SOURCE.md",
+      "present": true
+    },
+    "formal": {
+      "path": "production\\papers\\CQE-paper-06\\01-CQE-formal\\FORMAL.md",
+      "present": true
+    },
+    "tool": {
+      "path": "production\\papers\\CQE-paper-06\\02-CQE-tool\\TOOL.md",
+      "present": true
+    },
+    "tool_runner": {
+      "path": "production\\papers\\CQE-paper-06\\02-CQE-tool\\run.py",
+      "present": false
+    },
+    "workbook": {
+      "path": "production\\papers\\CQE-paper-06\\03-CQE-workbook\\WORKBOOK.md",
+      "present": true
+    },
+    "recovered_output": {
+      "path": "production\\lib-forge\\recovered\\papers_output\\CQE-paper-06.md",
+      "present": true
+    }
+  }
+}

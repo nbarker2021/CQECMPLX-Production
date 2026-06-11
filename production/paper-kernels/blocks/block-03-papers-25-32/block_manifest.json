@@ -1,0 +1,18 @@
+{
+  "id": "block-03-papers-25-32",
+  "title": "Energy Horizons, Observer Delay, Grand Ribbon, Meta Walkthrough, and Supervisor Cursor",
+  "start": "CQE-paper-25",
+  "end": "CQE-paper-32",
+  "papers": [
+    "CQE-paper-25",
+    "CQE-paper-26",
+    "CQE-paper-27",
+    "CQE-paper-28",
+    "CQE-paper-29",
+    "CQE-paper-30",
+    "CQE-paper-31",
+    "CQE-paper-32"
+  ],
+  "previous_block": "block-02-papers-17-24",
+  "next_block": "block-00-papers-01-08"
+}

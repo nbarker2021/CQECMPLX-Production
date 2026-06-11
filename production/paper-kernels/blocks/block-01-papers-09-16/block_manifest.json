@@ -1,0 +1,18 @@
+{
+  "id": "block-01-papers-09-16",
+  "title": "Time, Receipts, Admission, Physics Interfaces, and Continuum Edges",
+  "start": "CQE-paper-09",
+  "end": "CQE-paper-16",
+  "papers": [
+    "CQE-paper-09",
+    "CQE-paper-10",
+    "CQE-paper-11",
+    "CQE-paper-12",
+    "CQE-paper-13",
+    "CQE-paper-14",
+    "CQE-paper-15",
+    "CQE-paper-16"
+  ],
+  "previous_block": "block-00-papers-01-08",
+  "next_block": "block-02-papers-17-24"
+}

@@ -1,0 +1,87 @@
+{
+  "id": "CQE-paper-13",
+  "n": "13",
+  "title": "Standard-Model Quark-Face Transport",
+  "slug": "standard-model-quark-face-transport",
+  "status": "Formal refinement draft for peer-review-facing development",
+  "role": "paper_body_work",
+  "block": "block-01-papers-09-16",
+  "block_title": "Time, Receipts, Admission, Physics Interfaces, and Continuum Edges",
+  "suite_previous": "CQE-paper-12",
+  "suite_next": "CQE-paper-14",
+  "block_previous": "CQE-paper-12",
+  "block_next": "CQE-paper-14",
+  "central_thesis": "Map color-state and interaction analogs into a disciplined quark-face transport read, without overclaiming physical proof.",
+  "components": {
+    "claims": {
+      "status": "seeded",
+      "primary_content": "Map color-state and interaction analogs into a disciplined quark-face transport read, without overclaiming physical proof.",
+      "required_action": "Separate method claims from domain claims before peer-review promotion."
+    },
+    "math": {
+      "status": "source-bound",
+      "primary_content": "Use the paper body axioms, lemmas, and formalism as the math intake.",
+      "required_action": "Promote every symbolic statement into a normalized claim row with assumptions and receipts."
+    },
+    "formal_algebra_calculus": {
+      "status": "source-bound",
+      "primary_content": "Use 01-CQE-formal/FORMAL.md and recovered algebra/PDF evidence.",
+      "required_action": "Split normal form, closed form, algebraic operators, calculus/window operators, and open obligations."
+    },
+    "hand_work": {
+      "status": "source-bound",
+      "primary_content": "Use 03-CQE-workbook/WORKBOOK.md plus the analog toolkit guides.",
+      "required_action": "Write the physical reconstruction steps and boundary-collision handling for the paper."
+    },
+    "code_rebuild": {
+      "status": "source-bound",
+      "primary_content": "Use 02-CQE-tool/TOOL.md and run.py when present.",
+      "required_action": "Bind a replayable command or mark the missing executable as an obligation."
+    },
+    "lib_bindings": {
+      "status": "seeded",
+      "primary_content": "forgefactory.paper13_quark_face_transport",
+      "required_action": "Resolve this binding into production/lib-forge or mark it as an adapter route."
+    },
+    "tests_and_receipts": {
+      "status": "seeded",
+      "primary_content": "Every validation and diagnostic must support hidden-guess ablation when training mode is enabled.",
+      "required_action": "Add positive, negative, boundary, and wrap tests with receipts."
+    },
+    "deployment_kernel": {
+      "status": "seeded",
+      "primary_content": "Deployable individually as CQE-paper-13 and selectable through the master suite.",
+      "required_action": "Expose paper, block, and suite selectors with no duplicate routing logic."
+    }
+  },
+  "sources": {
+    "body": {
+      "path": "production\\papers\\CQE-paper-13\\PAPER-BODY.md",
+      "present": true
+    },
+    "source": {
+      "path": "production\\papers\\CQE-paper-13\\SOURCE.md",
+      "present": true
+    },
+    "formal": {
+      "path": "production\\papers\\CQE-paper-13\\01-CQE-formal\\FORMAL.md",
+      "present": true
+    },
+    "tool": {
+      "path": "production\\papers\\CQE-paper-13\\02-CQE-tool\\TOOL.md",
+      "present": true
+    },
+    "tool_runner": {
+      "path": "production\\papers\\CQE-paper-13\\02-CQE-tool\\run.py",
+      "present": false
+    },
+    "workbook": {
+      "path": "production\\papers\\CQE-paper-13\\03-CQE-workbook\\WORKBOOK.md",
+      "present": true
+    },
+    "recovered_output": {
+      "path": "production\\lib-forge\\recovered\\papers_output\\CQE-paper-13.md",
+      "present": true
+    }
+  }
+}

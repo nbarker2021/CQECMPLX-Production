@@ -128,11 +128,13 @@ class ChromaForgeEngine:
         """Execute through TarPit. Auto-issues receipt + conservation report.
         SpeedLight cache checked first if use_cache=True.
         """
-        # Cache check (idempotent projection)
+        # Cache check (idempotent projection). NOTE: must use get(), not
+        # compute(result=None) — compute stores its placeholder on a miss,
+        # which would poison the cache before the real result lands.
         if use_cache:
-            cached = self.speedlight.compute(content, result=None, fn_name="tarpit.execute")
-            if cached["hit"]:
-                return cached["result"] or {}
+            cached = self.speedlight.get(content)
+            if cached["hit"] and cached.get("result") is not None:
+                return cached["result"]
 
         # TarPit execution
         result = self.tarpit.execute(content)
@@ -174,11 +176,11 @@ class ChromaForgeEngine:
             "cumulative": self.conservation.cumulative,
         }
 
-        # Cache the result
+        # Cache the result (put() overwrites; compute() would no-op on a hit)
         if use_cache:
-            self.speedlight.compute(content, result=result,
-                                    fn_name="tarpit.execute",
-                                    cost_seconds=result.get("elapsed_ms", 0.0) / 1000)
+            self.speedlight.put(content, result,
+                                fn_name="tarpit.execute",
+                                cost_seconds=result.get("elapsed_ms", 0.0) / 1000)
 
         return result
 

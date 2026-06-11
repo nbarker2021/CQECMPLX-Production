@@ -1,0 +1,18 @@
+{
+  "id": "block-00-papers-01-08",
+  "title": "First Carrier Chain Through Closure",
+  "start": "CQE-paper-01",
+  "end": "CQE-paper-08",
+  "papers": [
+    "CQE-paper-01",
+    "CQE-paper-02",
+    "CQE-paper-03",
+    "CQE-paper-04",
+    "CQE-paper-05",
+    "CQE-paper-06",
+    "CQE-paper-07",
+    "CQE-paper-08"
+  ],
+  "previous_block": "block-03-papers-25-32",
+  "next_block": "block-01-papers-09-16"
+}

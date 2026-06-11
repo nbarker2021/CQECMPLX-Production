@@ -7,13 +7,34 @@ overlay database.
 
 from .forge import Forge
 from .ledger import Ledger, build_seed_database
-from .cayley_dickson_oloid import (
-    CAYLEY_DICKSON_SHEET_PATTERN,
-    CayleyDicksonOloidNormalForm,
-    cayley_dickson_oloid_normal_form,
-    verify_cayley_dickson_oloid_normal_form,
+from .cmplx import CMPLXRuntime, RuntimeBudget, RuntimeReceipt
+from .cqe import (
+    CQEHypervisor,
+    CQECurrentFrame,
+    CQELightConeHypervisor,
+    CQESidecarMonitor,
+    D4Token,
+    DiagonalBundleResult,
+    HistoricalSheet,
+    HypervisorLaunchHandle,
+    LCRBoundary,
+    LightConeFrame,
+    ManagedRibbon,
+    PaperBundleMatch,
+    PaperDatum,
+    PaperSheet,
+    ReceiptPortal,
+    RibbonReceipt,
+    SidecarResult,
+    SheetSelection,
+    SoftmaxHomologyFrame,
+    TermBundleResult,
+    launch_hypervisor,
+    manage_ribbon,
+    match_paper_bundle,
+    paper_sheet_from_text,
+    rehydrate_negative_lane,
 )
-from .cmplx_lookup_cache import CmplxLookupCache, LookupReceipt, build_default_cache as build_cmplx_lookup_cache
 from .morphonics import morphonics_model_v0_2, verify_morphonics_model
 from .overlay import OverlayStore
 from .rule30 import (
@@ -76,17 +97,38 @@ from .terminal_tree import build_terminal_composition_tree
 
 __all__ = [
     "Forge",
-    "CmplxLookupCache",
-    "CAYLEY_DICKSON_SHEET_PATTERN",
-    "CayleyDicksonOloidNormalForm",
-    "cayley_dickson_oloid_normal_form",
-    "verify_cayley_dickson_oloid_normal_form",
-    "LookupReceipt",
     "Ledger",
     "OverlayStore",
     "SeedStore",
+    "CQEHypervisor",
+    "CQECurrentFrame",
+    "CQELightConeHypervisor",
+    "CQESidecarMonitor",
+    "D4Token",
+    "DiagonalBundleResult",
+    "HistoricalSheet",
+    "HypervisorLaunchHandle",
+    "LCRBoundary",
+    "LightConeFrame",
+    "ManagedRibbon",
+    "PaperBundleMatch",
+    "PaperDatum",
+    "PaperSheet",
+    "ReceiptPortal",
+    "RibbonReceipt",
+    "SidecarResult",
+    "SheetSelection",
+    "SoftmaxHomologyFrame",
+    "TermBundleResult",
+    "launch_hypervisor",
+    "manage_ribbon",
+    "match_paper_bundle",
+    "paper_sheet_from_text",
+    "rehydrate_negative_lane",
+    "CMPLXRuntime",
+    "RuntimeBudget",
+    "RuntimeReceipt",
     "build_seed_database",
-    "build_cmplx_lookup_cache",
     "build_terminal_composition_tree",
     "morphonics_model_v0_2",
     "verify_morphonics_model",
@@ -144,4 +186,31 @@ __all__ = [
     "rule30_proof_obligation_ledger",
     "verify_rule30_proof_obligation_ledger",
 ]
-__version__ = "0.1.0"
+try:
+    from importlib.metadata import PackageNotFoundError, version
+
+    try:
+        __version__ = version("lattice-forge")
+    except PackageNotFoundError:
+        __version__ = "0.3.0"
+except ImportError:
+    __version__ = "0.3.0"
+
+# --- PROOF-line surface (merged by curation, v0.4.0) ---
+from .cayley_dickson_oloid import (
+    CAYLEY_DICKSON_SHEET_PATTERN,
+    CayleyDicksonOloidNormalForm,
+    cayley_dickson_oloid_normal_form,
+    verify_cayley_dickson_oloid_normal_form,
+)
+from .cmplx_lookup_cache import CmplxLookupCache, LookupReceipt, build_default_cache as build_cmplx_lookup_cache
+
+__all__ = list(__all__) + [
+    "CmplxLookupCache",
+    "CAYLEY_DICKSON_SHEET_PATTERN",
+    "CayleyDicksonOloidNormalForm",
+    "cayley_dickson_oloid_normal_form",
+    "verify_cayley_dickson_oloid_normal_form",
+    "LookupReceipt",
+    "build_cmplx_lookup_cache",
+]
