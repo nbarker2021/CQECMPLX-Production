@@ -25,11 +25,29 @@ A slice is ready for this repo when it has:
 - Hidden Guess Result support when `training_mode` is enabled;
 - no virtual environments, caches, bytecode, or local-only metadata.
 
-## Current Intake Branch
+## Git Head
 
-`intake/production-kernel-map`
+Canonical remote:
+
+```text
+https://github.com/nbarker2021/CQECMPLX-Production
+```
+
+Canonical production head:
+
+```text
+main
+```
+
+Current intake/review branch:
+
+```text
+intake/production-kernel-map
+```
 
 Purpose: seed the production repo map and prepare the first fork lane for
 later promotion of the sidecar kernel, production folder, airlock material, and
 the `D:\CQE_CMPLX` workspace corpus.
 
+The production head receives tracking records and production-shaped slices.
+The intake branch remains available for review and staging work.

@@ -1,6 +1,9 @@
 {
   "canonical_repo": "https://github.com/nbarker2021/CQECMPLX-Production",
-  "current_branch": "intake/production-kernel-map",
+  "current_branch": "main",
+  "canonical_head": "main",
+  "intake_branch": "intake/production-kernel-map",
+  "local_git_root": "D:\\CQE_CMPLX\\git-hosted-roots\\CQECMPLX-Production",
   "policy": "promote explicit production-shaped slices; do not blind-copy raw workspaces",
   "local_roots": [
     {

@@ -9,6 +9,19 @@ https://github.com/nbarker2021/CQECMPLX-Production
 This repo is the main production identity. Other git and local roots are
 members of this production family, but they enter this repo only once shaped.
 
+## Git Branches
+
+| Branch | Role |
+|---|---|
+| `main` | canonical production head and GitHub default branch |
+| `intake/production-kernel-map` | intake/review branch for production mapping work |
+
+Local canonical clone:
+
+```text
+D:\CQE_CMPLX\git-hosted-roots\CQECMPLX-Production
+```
+
 ## Local Intake Roots
 
 | Root | Role | Promotion Status |
@@ -37,4 +50,3 @@ members of this production family, but they enter this repo only once shaped.
 - `production/papers` - paper/source context.
 - `production/airlock-reviewed` - material that cleared airlock review.
 - `production/workspace-corpus-index` - indexed references to large corpus material.
-
