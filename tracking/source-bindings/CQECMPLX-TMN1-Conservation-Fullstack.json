@@ -1,0 +1,34 @@
+{
+  "id": "CQECMPLX-TMN1-Conservation-Fullstack",
+  "status": "trackable-fullstack-operations-candidate",
+  "created": "2026-06-11",
+  "source_roots": [
+    "D:\\CQE_CMPLX\\g\\CMPLX-TMN1",
+    "D:\\CQE_CMPLX\\g\\CMPLX-TMN1\\infrastructure",
+    "D:\\CQE_CMPLX\\g\\CMPLX-TMN1\\showcase",
+    "D:\\CQE_CMPLX\\g\\CMPLX-TMN1\\formalizations"
+  ],
+  "production_routes": [
+    "production/operations/CQECMPLX-TMN1-Conservation-Fullstack",
+    "production/tool-families/CQECMPLX-TMN1-Conservation-Fullstack",
+    "production/adapters/CQECMPLX-TMN1-Conservation-Fullstack"
+  ],
+  "tracked_concepts": [
+    "MORSR pulses",
+    "E8 transforms",
+    "conservation law",
+    "Docker fullstack",
+    "channels",
+    "agent identity",
+    "economy",
+    "station operations",
+    "CQE formalizations"
+  ],
+  "promotion_gates": [
+    "docs-first",
+    "payload-ledger-for-large-formalization-json",
+    "docker-boundary-review",
+    "hidden-guess-result-training-mode-binding",
+    "binary-boundary-adapter-binding"
+  ]
+}

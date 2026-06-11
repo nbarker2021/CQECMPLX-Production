@@ -16,6 +16,7 @@ pieces needed before source movement:
 | `CQECMPLX-AirLock-CQE-Forge-Lineage` | yes | yes | yes |
 | `CQECMPLX-Analog-Forge-Workbench` | yes | yes | yes |
 | `CQECMPLX-CMPLXNEXT-Orchestration` | yes | yes | yes |
+| `CQECMPLX-CMPLXUNI-Swarm-Frontend` | yes | draft | yes |
 | `CQECMPLX-Docker-Compose-Boundary` | yes | yes | yes |
 | `CQECMPLX-DevKit-MCPOS-MORSR-Runtime` | yes | draft | yes |
 | `CQECMPLX-LibForge-Lattice-ReForge-Ring` | yes | yes | split started |
@@ -26,7 +27,9 @@ pieces needed before source movement:
 | `CQECMPLX-Paper-Proof-Bundle` | yes | yes | yes |
 | `CQECMPLX-Payload-Ledger` | yes | yes | yes |
 | `CQECMPLX-ProofValidated-Kernel` | yes | yes | yes |
+| `CQECMPLX-Product-Fourpack` | yes | needed | yes |
 | `CQECMPLX-Repo-Forms-Accounting` | yes | yes | yes |
+| `CQECMPLX-TMN1-Conservation-Fullstack` | yes | needed | yes |
 | `CQECMPLX-TMN-Role-Family` | yes | yes | yes |
 
 ## Still Needed

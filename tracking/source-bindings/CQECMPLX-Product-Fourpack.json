@@ -1,0 +1,34 @@
+{
+  "id": "CQECMPLX-Product-Fourpack",
+  "status": "trackable-product-candidate",
+  "created": "2026-06-11",
+  "source_roots": [
+    "D:\\CQE_CMPLX\\historical_pastworks\\product_authentica",
+    "D:\\CQE_CMPLX\\historical_pastworks\\product_converge",
+    "D:\\CQE_CMPLX\\historical_pastworks\\product_entropy",
+    "D:\\CQE_CMPLX\\historical_pastworks\\product_sentinel"
+  ],
+  "production_routes": [
+    "production/products/CQECMPLX-Product-Fourpack",
+    "production/adapters/CQECMPLX-Product-Fourpack",
+    "production/proof-receipts/CQECMPLX-Product-Fourpack"
+  ],
+  "tracked_concepts": [
+    "product_authentica",
+    "product_converge",
+    "product_entropy",
+    "product_sentinel",
+    "Docker deployment",
+    "API products",
+    "SDK metadata",
+    "monitoring configs",
+    "proof-bound product claims"
+  ],
+  "promotion_gates": [
+    "docs-and-deploy-metadata-first",
+    "claim-proof-binding-before-public-language",
+    "no-runtime-logs-or-databases",
+    "binary-boundary-adapter-binding",
+    "universal-adapter-program-binding"
+  ]
+}

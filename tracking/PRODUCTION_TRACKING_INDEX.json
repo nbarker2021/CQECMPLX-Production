@@ -143,10 +143,31 @@
       "source_binding": "tracking/source-bindings/CQECMPLX-CMPLXNEXT-Orchestration.json"
     },
     {
+      "id": "CQECMPLX-CMPLXUNI-Swarm-Frontend",
+      "status": "trackable-frontend-orchestration-candidate",
+      "route": "production/orchestration + production/adapters + production/ui",
+      "source_binding": "tracking/source-bindings/CQECMPLX-CMPLXUNI-Swarm-Frontend.json",
+      "spec": "tracking/composites/CQECMPLX-CMPLXUNI-Swarm-Frontend.md"
+    },
+    {
       "id": "CQECMPLX-TMN-Role-Family",
       "status": "trackable-profile-bound",
       "route": "production/tool-families",
       "source_binding": "tracking/source-bindings/CQECMPLX-TMN-Role-Family.json"
+    },
+    {
+      "id": "CQECMPLX-TMN1-Conservation-Fullstack",
+      "status": "trackable-fullstack-operations-candidate",
+      "route": "production/operations + production/tool-families + production/adapters",
+      "source_binding": "tracking/source-bindings/CQECMPLX-TMN1-Conservation-Fullstack.json",
+      "spec": "tracking/composites/CQECMPLX-TMN1-Conservation-Fullstack.md"
+    },
+    {
+      "id": "CQECMPLX-Product-Fourpack",
+      "status": "trackable-product-candidate",
+      "route": "production/products + production/adapters + production/proof-receipts",
+      "source_binding": "tracking/source-bindings/CQECMPLX-Product-Fourpack.json",
+      "spec": "tracking/composites/CQECMPLX-Product-Fourpack.md"
     },
     {
       "id": "CQECMPLX-AirLock-CQE-Forge-Lineage",

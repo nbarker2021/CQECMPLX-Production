@@ -1,0 +1,62 @@
+{
+  "id": "CQECMPLX-CMPLXUNI-Swarm-Frontend",
+  "status": "manifest-draft",
+  "created": "2026-06-11",
+  "source_binding": "tracking/source-bindings/CQECMPLX-CMPLXUNI-Swarm-Frontend.json",
+  "allowed_initial_slice": {
+    "description": "Documentation, package metadata, schemas, and MCP config templates only.",
+    "extensions": [
+      ".md",
+      ".json",
+      ".toml",
+      ".txt"
+    ],
+    "priority_files": [
+      "README.md",
+      "AGENTS.md",
+      "NAVIGATION.md",
+      "CMPLX_NEXTJS_ARCHITECTURE.md",
+      "EXPANDED_SWARM_DOCUMENTATION.md",
+      "SWARM_CHAT_INTERFACE.md",
+      "MCP_CONFIGURATION_GUIDE.md",
+      "MCP_SETUP_COMPLETE.md",
+      "THE_LIBRARY_DESIGN.md",
+      "pyproject.toml",
+      "cmplx-nextjs/package.json",
+      "cmplx-nextjs/README.md",
+      "the-library/README.md",
+      "the-library/docker-compose.yml",
+      "the-library/Dockerfile"
+    ]
+  },
+  "forbidden": [
+    ".env",
+    ".venv",
+    "venv",
+    "__pycache__",
+    ".pytest_cache",
+    "node_modules",
+    "dist",
+    "build",
+    ".next",
+    "*.db",
+    "*.sqlite",
+    "*.sqlite3",
+    "*.pyc",
+    "*.log",
+    "*.zip",
+    "*.gz",
+    "*.tgz",
+    "*.pdf"
+  ],
+  "diagnostic_requirements": {
+    "hidden_guess_result": "UI diagnostics must hide honesty/answer layer until after the agent or user choice is recorded when training mode is enabled",
+    "math_only_exception": "math-only proof views may disclose proof state directly when no non-math choice is being validated"
+  },
+  "adapter_requirements": [
+    "Binary Boundary Adapter",
+    "Universal Adapter Programs",
+    "MCP config templating",
+    "kernel sidecar API binding"
+  ]
+}

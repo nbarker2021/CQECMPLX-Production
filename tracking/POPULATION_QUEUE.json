@@ -82,10 +82,28 @@
       "gate": "profile_first_code_review_later"
     },
     {
+      "id": "CQECMPLX-CMPLXUNI-Swarm-Frontend",
+      "route": "production/orchestration + production/adapters + production/ui",
+      "source_binding": "tracking/source-bindings/CQECMPLX-CMPLXUNI-Swarm-Frontend.json",
+      "gate": "docs_config_templates_first_then_ui_build_review"
+    },
+    {
       "id": "CQECMPLX-TMN-Role-Family",
       "route": "production/tool-families",
       "source_binding": "tracking/source-bindings/CQECMPLX-TMN-Role-Family.json",
       "gate": "taxonomy_first_per_role_review_later"
+    },
+    {
+      "id": "CQECMPLX-TMN1-Conservation-Fullstack",
+      "route": "production/operations + production/tool-families + production/adapters",
+      "source_binding": "tracking/source-bindings/CQECMPLX-TMN1-Conservation-Fullstack.json",
+      "gate": "operational_docs_first_large_formalizations_to_payload_ledger"
+    },
+    {
+      "id": "CQECMPLX-Product-Fourpack",
+      "route": "production/products + production/adapters + production/proof-receipts",
+      "source_binding": "tracking/source-bindings/CQECMPLX-Product-Fourpack.json",
+      "gate": "docs_deploy_metadata_first_claim_binding_required"
     },
     {
       "id": "CQECMPLX-AirLock-CQE-Forge-Lineage",
@@ -110,7 +128,10 @@
     "CQECMPLX-MetaMaterial-Designer",
     "CQECMPLX-Payload-Ledger",
     "CQECMPLX-CMPLXNEXT-Orchestration",
+    "CQECMPLX-CMPLXUNI-Swarm-Frontend",
     "CQECMPLX-TMN-Role-Family",
+    "CQECMPLX-TMN1-Conservation-Fullstack",
+    "CQECMPLX-Product-Fourpack",
     "CQECMPLX-AirLock-CQE-Forge-Lineage",
     "CQECMPLX-MORSR-Pulse-Family",
     "CQECMPLX-Odysseus-MCP-Memory",

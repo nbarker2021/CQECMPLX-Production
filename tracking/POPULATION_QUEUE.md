@@ -35,7 +35,10 @@ lineage visible.
 | `CQECMPLX-MetaMaterial-Designer` | `production/lib-forge` + `production/tool-families` | package-shaped Forge module with paper, Docker, app, tests, and generated reports | `tracking/source-bindings/CQECMPLX-MetaMaterial-Designer.json` | promote source/package files first; defer generated reports |
 | `CQECMPLX-Payload-Ledger` | `production/payload-ledger` | metadata ledger for databases, nested archives, vector stores, and memory payloads | `tracking/source-bindings/CQECMPLX-Payload-Ledger.json` | commit metadata before any binary payload movement |
 | `CQECMPLX-CMPLXNEXT-Orchestration` | `production/orchestration` | monorepo profile shows CMPLXNEXT storage, MCP agent net, IDE, and frontend bridge identities | `tracking/source-bindings/CQECMPLX-CMPLXNEXT-Orchestration.json` | promote orchestration map before code |
+| `CQECMPLX-CMPLXUNI-Swarm-Frontend` | `production/orchestration` + `production/adapters` + `production/ui` | CMPLXUNI exposes E8/Leech, MMDB, ThinkTank, MCP, swarm chat, agent runtime, CLI, and Next.js UI | `tracking/source-bindings/CQECMPLX-CMPLXUNI-Swarm-Frontend.json` | promote docs/config templates first, then review UI build path |
 | `CQECMPLX-TMN-Role-Family` | `production/tool-families` | TMN/TMN1 expose role names and tool-family identities | `tracking/source-bindings/CQECMPLX-TMN-Role-Family.json` | promote role taxonomy before per-role code |
+| `CQECMPLX-TMN1-Conservation-Fullstack` | `production/operations` + `production/tool-families` + `production/adapters` | TMN1 exposes MORSR pulses, E8 transforms, conservation enforcement, Docker fullstack, channels, and economy | `tracking/source-bindings/CQECMPLX-TMN1-Conservation-Fullstack.json` | promote operational docs first; ledger large formalization JSON |
+| `CQECMPLX-Product-Fourpack` | `production/products` + `production/adapters` + `production/proof-receipts` | product_authentica/converge/entropy/sentinel expose product docs, Docker, SDK/package, and monitoring metadata | `tracking/source-bindings/CQECMPLX-Product-Fourpack.json` | promote docs/deploy metadata first; bind product claims before public wording |
 | `CQECMPLX-AirLock-CQE-Forge-Lineage` | `production/airlock-reviewed` + `production/lib-forge` + `production/tool-families` | AirLock CQE engine, cqe-production, and ForgeFactory lineage source | `tracking/source-bindings/CQECMPLX-AirLock-CQE-Forge-Lineage.json` | promote lineage docs and reviewed source slices only |
 
 ## Near Candidates
@@ -71,7 +74,10 @@ First manifest-ready slices:
 - `CQECMPLX-MetaMaterial-Designer`
 - `CQECMPLX-Payload-Ledger`
 - `CQECMPLX-CMPLXNEXT-Orchestration`
+- `CQECMPLX-CMPLXUNI-Swarm-Frontend`
 - `CQECMPLX-TMN-Role-Family`
+- `CQECMPLX-TMN1-Conservation-Fullstack`
+- `CQECMPLX-Product-Fourpack`
 - `CQECMPLX-AirLock-CQE-Forge-Lineage`
 - `CQECMPLX-MORSR-Pulse-Family`
 - `CQECMPLX-Odysseus-MCP-Memory`
