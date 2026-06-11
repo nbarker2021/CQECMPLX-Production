@@ -1,0 +1,18 @@
+{
+  "id": "CQECMPLX-TMN-Role-Family",
+  "route": ["production/tool-families"],
+  "trackable_status": "trackable-profile-bound",
+  "source_roots": [
+    "D:\\CQE_CMPLX\\Claude-Codex-Memory\\Codex work\\CX-Repo-Literal-Accounting\\CX_deep_dive_CMPLX-TMN-main-main_sanity.json",
+    "D:\\CQE_CMPLX\\Claude-Codex-Memory\\Codex work\\CX-Repo-Literal-Accounting\\CX_deep_dive_CMPLX-TMN1-main_sanity.json",
+    "D:\\CQE_CMPLX\\CMPLX-Kernel\\kernel\\repo_forms\\repos\\CMPLX-TMN-main",
+    "D:\\CQE_CMPLX\\CMPLX-Kernel\\kernel\\repo_forms\\repos\\CMPLX-TMN1"
+  ],
+  "evidence": [
+    "TMN profile exposes role/tool family names including CMPLX-Mirror, CMPLX-TMN2, CMPLX-Forge, CMPLX-Intake, CMPLX-Weaver, CMPLX-Librarian, CMPLX-Alchemist, CMPLX-Archivist, CMPLX-Cartographer, CMPLX-Compass, CMPLX-Crucible, CMPLX-Herald, CMPLX-Navigator, and CMPLX-Sentinel.",
+    "TMN/TMN1 profile carries API, Docker, receipt, lattice, compose, formal, forge, and MCP signals.",
+    "Kernel repo_forms has curated forms for both TMN roots."
+  ],
+  "promotion_rule": "Promote the role taxonomy as a tool-family index first. Runtime code promotion waits for per-role source review.",
+  "known_exclusions": ["raw repo dump", "local runtime artifacts"]
+}

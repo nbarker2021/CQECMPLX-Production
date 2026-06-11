@@ -31,6 +31,10 @@ lineage visible.
 | `CQECMPLX-Repo-Forms-Accounting` | `production/workspace-corpus-index` | curated repo forms plus literal zip accounting database and summaries | `tracking/source-bindings/CQECMPLX-Repo-Forms-Accounting.json` | publish indexes and forms, not raw zips |
 | `CQECMPLX-Odysseus-MCP-Memory` | `production/adapters` + `production/memory` | Odysseus MCP, memory routes, vector memory, Docker GPU compose | `tracking/source-bindings/CQECMPLX-Odysseus-MCP-Memory.json` | treat as adapter/memory module candidate under lib-forge after portability review |
 | `CQECMPLX-Analog-Forge-Workbench` | `production/tool-families` + `production/proof-receipts` | ForgeFactory analog workbook/simulation/receipt package | `tracking/source-bindings/CQECMPLX-Analog-Forge-Workbench.json` | inspect tests and package metadata before promotion |
+| `CQECMPLX-MetaMaterial-Designer` | `production/lib-forge` + `production/tool-families` | package-shaped Forge module with paper, Docker, app, tests, and generated reports | `tracking/source-bindings/CQECMPLX-MetaMaterial-Designer.json` | promote source/package files first; defer generated reports |
+| `CQECMPLX-Payload-Ledger` | `production/payload-ledger` | metadata ledger for databases, nested archives, vector stores, and memory payloads | `tracking/source-bindings/CQECMPLX-Payload-Ledger.json` | commit metadata before any binary payload movement |
+| `CQECMPLX-CMPLXNEXT-Orchestration` | `production/orchestration` | monorepo profile shows CMPLXNEXT storage, MCP agent net, IDE, and frontend bridge identities | `tracking/source-bindings/CQECMPLX-CMPLXNEXT-Orchestration.json` | promote orchestration map before code |
+| `CQECMPLX-TMN-Role-Family` | `production/tool-families` | TMN/TMN1 expose role names and tool-family identities | `tracking/source-bindings/CQECMPLX-TMN-Role-Family.json` | promote role taxonomy before per-role code |
 
 ## Near Candidates
 
@@ -39,11 +43,8 @@ become first-class population records:
 
 | Candidate | Reason To Watch | Needed Next |
 |---|---|---|
-| `CQECMPLX-MetaMaterial-Designer` | has paper, Dockerfile, compose, visualizations, and `metaforge_cli.py` under lib-forge | package boundary and tests |
 | `CQECMPLX-Manny-Memory-Instruction-Payloads` | SQLite memory/instruction payloads are already identified in repo accounting | payload ledger expansion |
 | `CQECMPLX-MMDB-E8-Vector-Payloads` | MMDB, E8, and vector stores recur in zips and code roots | payload ledger expansion |
-| `CQECMPLX-CMPLXNEXT-Orchestration` | monorepo/orchestration signals exist in repo accounting | source binding from clone or extracted zip |
-| `CQECMPLX-TMN-Role-Family` | role/tool family signals exist in zip profile | source binding from clone or extracted zip |
 
 ## Current Finding
 
@@ -64,6 +65,10 @@ First manifest-ready slices:
 - `CQECMPLX-Docker-Compose-Boundary`
 - `CQECMPLX-Repo-Forms-Accounting`
 - `CQECMPLX-LibForge-Lattice-ReForge-Ring`
+- `CQECMPLX-MetaMaterial-Designer`
+- `CQECMPLX-Payload-Ledger`
+- `CQECMPLX-CMPLXNEXT-Orchestration`
+- `CQECMPLX-TMN-Role-Family`
 
 These manifests are allowed-path records. They do not copy source files by
 themselves.

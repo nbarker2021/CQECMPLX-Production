@@ -1,0 +1,17 @@
+{
+  "id": "CQECMPLX-CMPLXNEXT-Orchestration",
+  "route": ["production/orchestration"],
+  "trackable_status": "trackable-profile-bound",
+  "source_roots": [
+    "D:\\CQE_CMPLX\\Claude-Codex-Memory\\Codex work\\CX-Repo-Literal-Accounting\\CX_deep_dive_CMPLX-Monorepo-main_sanity.json",
+    "D:\\CQE_CMPLX\\CMPLX-Kernel\\kernel\\repo_forms\\repos\\CMPLX-Monorepo",
+    "D:\\g\\CMPLX-Monorepo"
+  ],
+  "evidence": [
+    "CMPLX-Monorepo profile shows CMPLXNEXT, CMPLXNEXT-Storage, CMPLXNEXT-MCPAgentNet, CMPLXNEXT-IDE, and CMPLXNEXT-FrontendBridge.",
+    "The profile is content-profile complete with strong lattice, API, receipt, compose, MCP, proof, Docker, and formal signals.",
+    "Kernel repo_forms has a curated CMPLX-Monorepo form."
+  ],
+  "promotion_rule": "Promote the repo form and orchestration map first. Runtime code promotion waits for source clone review and path binding.",
+  "known_exclusions": ["raw monorepo dump", "node_modules", "build outputs", "local env files"]
+}

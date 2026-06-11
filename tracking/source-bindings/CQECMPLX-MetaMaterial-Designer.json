@@ -1,0 +1,17 @@
+{
+  "id": "CQECMPLX-MetaMaterial-Designer",
+  "route": ["production/lib-forge", "production/tool-families"],
+  "trackable_status": "trackable-package-candidate",
+  "source_roots": [
+    "D:\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\meta_material_system",
+    "D:\\CQE_CMPLX\\CMPLX-Kernel\\kernel\\lib-forge\\meta_material_system",
+    "D:\\CQE_CMPLX\\CMPLX-Kernel\\kernel\\modules\\meta_material_system"
+  ],
+  "evidence": [
+    "Package includes pyproject.toml, README.md, requirements.txt, Dockerfile, docker-compose.yml, API, CLI, Streamlit app, tests, and paper.",
+    "The module includes generated visualization outputs and test reports that need separation from source.",
+    "It belongs under the Forge-family package layer because it is a named applied Forge module with proof/paper material."
+  ],
+  "promotion_rule": "Promote source, package metadata, paper, and tests first. Treat visualization outputs and JSON reports as generated artifacts unless a publication manifest asks for them.",
+  "known_exclusions": ["__pycache__", ".pytest_cache", "viz_cache", "generated visualization directories unless manifest-bound"]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "CQECMPLX-TMN-Role-Family",
+  "status": "manifest-staged-taxonomy-first",
+  "source_binding": "tracking/source-bindings/CQECMPLX-TMN-Role-Family.json",
+  "destination_routes": [
+    "production/tool-families"
+  ],
+  "allowed_source_patterns": [
+    "D:\\CQE_CMPLX\\CMPLX-Kernel\\kernel\\repo_forms\\repos\\CMPLX-TMN-main\\FORM.md",
+    "D:\\CQE_CMPLX\\CMPLX-Kernel\\kernel\\repo_forms\\repos\\CMPLX-TMN-main\\FORM.json",
+    "D:\\CQE_CMPLX\\CMPLX-Kernel\\kernel\\repo_forms\\repos\\CMPLX-TMN1\\FORM.md",
+    "D:\\CQE_CMPLX\\CMPLX-Kernel\\kernel\\repo_forms\\repos\\CMPLX-TMN1\\FORM.json",
+    "D:\\CQE_CMPLX\\Claude-Codex-Memory\\Codex work\\CX-Repo-Literal-Accounting\\CX_deep_dive_CMPLX-TMN-main-main_sanity.json",
+    "D:\\CQE_CMPLX\\Claude-Codex-Memory\\Codex work\\CX-Repo-Literal-Accounting\\CX_deep_dive_CMPLX-TMN1-main_sanity.json"
+  ],
+  "promotion_gates": [
+    "extract role taxonomy",
+    "map each role to tool-family route",
+    "separate named identity from implementation",
+    "runtime code waits for per-role review"
+  ],
+  "notes": "This is the named role family source for later tool identity aggregation."
+}

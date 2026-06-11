@@ -116,6 +116,30 @@
       "status": "needs-package-review",
       "route": "production/tool-families + production/proof-receipts",
       "source_binding": "tracking/source-bindings/CQECMPLX-Analog-Forge-Workbench.json"
+    },
+    {
+      "id": "CQECMPLX-MetaMaterial-Designer",
+      "status": "trackable-package-candidate",
+      "route": "production/lib-forge + production/tool-families",
+      "source_binding": "tracking/source-bindings/CQECMPLX-MetaMaterial-Designer.json"
+    },
+    {
+      "id": "CQECMPLX-Payload-Ledger",
+      "status": "trackable-ledger",
+      "route": "production/payload-ledger",
+      "source_binding": "tracking/source-bindings/CQECMPLX-Payload-Ledger.json"
+    },
+    {
+      "id": "CQECMPLX-CMPLXNEXT-Orchestration",
+      "status": "trackable-profile-bound",
+      "route": "production/orchestration",
+      "source_binding": "tracking/source-bindings/CQECMPLX-CMPLXNEXT-Orchestration.json"
+    },
+    {
+      "id": "CQECMPLX-TMN-Role-Family",
+      "status": "trackable-profile-bound",
+      "route": "production/tool-families",
+      "source_binding": "tracking/source-bindings/CQECMPLX-TMN-Role-Family.json"
     }
   ],
   "still_needed": [

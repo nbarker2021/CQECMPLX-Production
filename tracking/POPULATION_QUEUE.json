@@ -56,14 +56,35 @@
       "route": "production/tool-families + production/proof-receipts",
       "source_binding": "tracking/source-bindings/CQECMPLX-Analog-Forge-Workbench.json",
       "gate": "tests_and_package_review_needed"
+    },
+    {
+      "id": "CQECMPLX-MetaMaterial-Designer",
+      "route": "production/lib-forge + production/tool-families",
+      "source_binding": "tracking/source-bindings/CQECMPLX-MetaMaterial-Designer.json",
+      "gate": "source_first_generated_artifacts_deferred"
+    },
+    {
+      "id": "CQECMPLX-Payload-Ledger",
+      "route": "production/payload-ledger",
+      "source_binding": "tracking/source-bindings/CQECMPLX-Payload-Ledger.json",
+      "gate": "metadata_only_before_binary_payloads"
+    },
+    {
+      "id": "CQECMPLX-CMPLXNEXT-Orchestration",
+      "route": "production/orchestration",
+      "source_binding": "tracking/source-bindings/CQECMPLX-CMPLXNEXT-Orchestration.json",
+      "gate": "profile_first_code_review_later"
+    },
+    {
+      "id": "CQECMPLX-TMN-Role-Family",
+      "route": "production/tool-families",
+      "source_binding": "tracking/source-bindings/CQECMPLX-TMN-Role-Family.json",
+      "gate": "taxonomy_first_per_role_review_later"
     }
   ],
   "near_candidates": [
-    "CQECMPLX-MetaMaterial-Designer",
     "CQECMPLX-Manny-Memory-Instruction-Payloads",
-    "CQECMPLX-MMDB-E8-Vector-Payloads",
-    "CQECMPLX-CMPLXNEXT-Orchestration",
-    "CQECMPLX-TMN-Role-Family"
+    "CQECMPLX-MMDB-E8-Vector-Payloads"
   ],
   "promotion_manifests_dir": "tracking/promotion-manifests",
   "manifest_ready": [
@@ -72,6 +93,10 @@
     "CQECMPLX-NVEST-EG8-Gate",
     "CQECMPLX-Docker-Compose-Boundary",
     "CQECMPLX-Repo-Forms-Accounting",
-    "CQECMPLX-LibForge-Lattice-ReForge-Ring"
+    "CQECMPLX-LibForge-Lattice-ReForge-Ring",
+    "CQECMPLX-MetaMaterial-Designer",
+    "CQECMPLX-Payload-Ledger",
+    "CQECMPLX-CMPLXNEXT-Orchestration",
+    "CQECMPLX-TMN-Role-Family"
   ]
 }

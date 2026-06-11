@@ -28,6 +28,10 @@ The index tracks composites. It does not choose a winner among duplicates.
 | `CQECMPLX-Docker-Compose-Boundary` | `trackable-composite` | kernel Docker adapter, compose boundary, ProofValidated compose, and DockerContainers need one boundary route | `production/adapters` + `production/kernel-runtime` |
 | `CQECMPLX-Odysseus-MCP-Memory` | `needs-portability-review` | Odysseus has MCP routes, memory routes, vector memory, Docker GPU compose, and tests | `production/adapters` + `production/memory` |
 | `CQECMPLX-Analog-Forge-Workbench` | `needs-package-review` | analog Forge workbench has package source, tests, workbook sheets, receipt templates, and PDF reports | `production/tool-families` + `production/proof-receipts` |
+| `CQECMPLX-MetaMaterial-Designer` | `trackable-package-candidate` | package-shaped Forge module has paper, Docker, compose, app, tests, and generated reports | `production/lib-forge` + `production/tool-families` |
+| `CQECMPLX-Payload-Ledger` | `trackable-ledger` | payload metadata covers MMDB, E8 DBs, vector stores, Manny memory, morphism ledger, and nested archives | `production/payload-ledger` |
+| `CQECMPLX-CMPLXNEXT-Orchestration` | `trackable-profile-bound` | Monorepo profile exposes CMPLXNEXT storage, MCP agent net, IDE, and frontend bridge identities | `production/orchestration` |
+| `CQECMPLX-TMN-Role-Family` | `trackable-profile-bound` | TMN/TMN1 profiles expose named tool roles and family identities | `production/tool-families` |
 
 ## First Publishable Tracking Rule
 

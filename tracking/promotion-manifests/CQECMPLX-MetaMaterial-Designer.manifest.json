@@ -1,0 +1,39 @@
+{
+  "id": "CQECMPLX-MetaMaterial-Designer",
+  "status": "manifest-ready-source-first",
+  "source_binding": "tracking/source-bindings/CQECMPLX-MetaMaterial-Designer.json",
+  "destination_routes": [
+    "production/lib-forge",
+    "production/tool-families"
+  ],
+  "allowed_source_patterns": [
+    "D:\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\meta_material_system\\*.py",
+    "D:\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\meta_material_system\\*.md",
+    "D:\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\meta_material_system\\*.toml",
+    "D:\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\meta_material_system\\*.txt",
+    "D:\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\meta_material_system\\*.yaml",
+    "D:\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\meta_material_system\\Dockerfile",
+    "D:\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\meta_material_system\\docker-compose.yml",
+    "D:\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\meta_material_system\\tests\\*.py"
+  ],
+  "deferred_source_patterns": [
+    "D:\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\meta_material_system\\*.json",
+    "D:\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\meta_material_system\\final_viz\\*.html",
+    "D:\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\meta_material_system\\test_viz\\*.html",
+    "D:\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\meta_material_system\\test_viz2\\*.html"
+  ],
+  "excluded_patterns": [
+    "**\\__pycache__\\**",
+    "**\\.pytest_cache\\**",
+    "**\\viz_cache\\**",
+    "**\\*.pyc",
+    "**\\*.pkl"
+  ],
+  "promotion_gates": [
+    "run or review package tests",
+    "separate generated JSON/HTML reports from source",
+    "compose file must pass Docker boundary review",
+    "paper should link to package source and proof route"
+  ],
+  "notes": "This near-candidate is ready to become a first-class package candidate."
+}

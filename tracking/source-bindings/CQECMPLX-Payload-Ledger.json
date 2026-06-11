@@ -1,0 +1,20 @@
+{
+  "id": "CQECMPLX-Payload-Ledger",
+  "route": ["production/payload-ledger"],
+  "trackable_status": "trackable-ledger",
+  "source_roots": [
+    "D:\\CQE_CMPLX\\Claude-Codex-Memory\\Codex work\\CX-Repo-Literal-Accounting\\CX_nested_archive_and_database_entries.csv",
+    "D:\\CQE_CMPLX\\Claude-Codex-Memory\\Codex work\\CX-Repo-Literal-Accounting\\CX_deep_dive_CMPLX-main_sanity.json",
+    "D:\\CQE_CMPLX\\Claude-Codex-Memory\\Codex work\\CX-Repo-Literal-Accounting\\CX_deep_dive_CMPLX-1T-master_sanity.json",
+    "D:\\CQE_CMPLX\\Claude-Codex-Memory\\Codex work\\CX-Repo-Literal-Accounting\\CX_deep_dive_CMPLX-Manny-main_sanity.json",
+    "D:\\CQE_CMPLX\\Claude-Codex-Memory\\Codex work\\CX-Repo-Literal-Accounting\\CX_deep_dive_CMPLX-PartsFactory-main_1_sanity.json",
+    "D:\\CQE_CMPLX\\Claude-Codex-Memory\\Codex work\\CX-Repo-Literal-Accounting\\CX_deep_dive_CMPLXUNI-main_sanity.json"
+  ],
+  "evidence": [
+    "Payload candidates include MMDB, E8 databases, vector stores, Manny memory/instruction databases, PartsFactory morphism ledger, CMPLX-1T training/document/simulation databases, and nested archives.",
+    "Payload expansion is intentionally not yet performed.",
+    "The ledger is needed before any binary database or nested archive enters production."
+  ],
+  "promotion_rule": "Promote payload metadata and exact source references first. Do not promote binary databases, nested archives, or raw zips until payload introspection and artifact policy are complete.",
+  "known_exclusions": ["*.db", "*.sqlite", "*.sqlite3", "*.zip", "*.tar.gz", "*.tgz", "*.pack"]
+}

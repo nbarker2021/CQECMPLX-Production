@@ -1,0 +1,23 @@
+{
+  "id": "CQECMPLX-CMPLXNEXT-Orchestration",
+  "status": "manifest-staged-profile-first",
+  "source_binding": "tracking/source-bindings/CQECMPLX-CMPLXNEXT-Orchestration.json",
+  "destination_routes": [
+    "production/orchestration"
+  ],
+  "allowed_source_patterns": [
+    "D:\\CQE_CMPLX\\CMPLX-Kernel\\kernel\\repo_forms\\repos\\CMPLX-Monorepo\\FORM.md",
+    "D:\\CQE_CMPLX\\CMPLX-Kernel\\kernel\\repo_forms\\repos\\CMPLX-Monorepo\\FORM.json",
+    "D:\\CQE_CMPLX\\Claude-Codex-Memory\\Codex work\\CX-Repo-Literal-Accounting\\CX_deep_dive_CMPLX-Monorepo-main_sanity.json"
+  ],
+  "deferred_source_roots": [
+    "D:\\g\\CMPLX-Monorepo"
+  ],
+  "promotion_gates": [
+    "source clone review refreshed",
+    "CMPLXNEXT named modules mapped to production routes",
+    "frontend/backend/storage/MCP boundaries separated",
+    "no raw monorepo promotion"
+  ],
+  "notes": "This starts as an orchestration map because the monorepo profile is strong but code needs source-path review."
+}

@@ -1,0 +1,38 @@
+{
+  "id": "CQECMPLX-Payload-Ledger",
+  "status": "manifest-ready-metadata-only",
+  "source_binding": "tracking/source-bindings/CQECMPLX-Payload-Ledger.json",
+  "destination_routes": [
+    "production/payload-ledger"
+  ],
+  "allowed_source_patterns": [
+    "D:\\CQE_CMPLX\\Claude-Codex-Memory\\Codex work\\CX-Repo-Literal-Accounting\\CX_nested_archive_and_database_entries.csv",
+    "D:\\CQE_CMPLX\\Claude-Codex-Memory\\Codex work\\CX-Repo-Literal-Accounting\\CX_deep_dive_*_sanity.json",
+    "D:\\CQE_CMPLX\\Claude-Codex-Memory\\Codex work\\CX-Repo-Literal-Accounting\\CX_all_repo_zips_content_profile_completion_summary.json"
+  ],
+  "forbidden_source_patterns_until_later": [
+    "**\\*.db",
+    "**\\*.sqlite",
+    "**\\*.sqlite3",
+    "**\\*.zip",
+    "**\\*.tar.gz",
+    "**\\*.tgz",
+    "**\\*.pack"
+  ],
+  "known_payload_families": [
+    "CMPLX-1T training/document/simulation databases",
+    "CMPLX and CMPLXUNI MMDB databases",
+    "E8 database payloads",
+    "vector_store database payloads",
+    "Manny memory and instruction databases",
+    "PartsFactory lattice-forge morphism ledger",
+    "nested archive candidates"
+  ],
+  "promotion_gates": [
+    "payload ledger metadata committed before payload movement",
+    "database introspection pass complete",
+    "nested archive expansion pass complete",
+    "artifact storage policy chosen for binary payloads"
+  ],
+  "notes": "This prevents binary payloads from leaking into production before they are accounted."
+}
