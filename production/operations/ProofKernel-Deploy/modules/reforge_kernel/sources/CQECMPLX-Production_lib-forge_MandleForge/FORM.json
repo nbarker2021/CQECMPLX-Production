@@ -1,0 +1,18 @@
+﻿{
+    "id":  "CQECMPLX-Production_lib-forge_MandleForge",
+    "kernel":  "reforge_kernel",
+    "role":  "production MandleForge surface",
+    "source_path":  "D:\\CQECMPLX-Production\\lib-forge\\MandleForge",
+    "exists":  true,
+    "form_only":  true,
+    "payloads_copied":  0,
+    "curated_file_count":  1,
+    "curated_bytes":  6867,
+    "payload_exclusion_count":  0,
+    "top_directories":  [
+
+                        ],
+    "key_documents":  [
+
+                      ]
+}

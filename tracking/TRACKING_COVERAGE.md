@@ -60,3 +60,4 @@ pieces needed before source movement:
 | `production/orchestration/CQECMPLX-CMPLXUNI-Swarm-Frontend/PROMOTION_SLICE_2026-06-11_CMPLXUNI_DOCS_CONFIGS.md` | promoted docs/configs | `tracking/promotion-manifests/CQECMPLX-CMPLXUNI-Swarm-Frontend.manifest.json` |
 | `production/products/CQECMPLX-Product-Fourpack/PROMOTION_SLICE_2026-06-11_PRODUCT_FOURPACK_DOCS_DEPLOY.md` | promoted docs/deploy metadata | `tracking/promotion-manifests/CQECMPLX-Product-Fourpack.manifest.json` |
 | `production/operations/CQECMPLX-TMN1-Conservation-Fullstack/PROMOTION_SLICE_2026-06-11_TMN1_OPERATIONS_DOCKER_DOCS.md` | promoted docs/docker metadata | `tracking/promotion-manifests/CQECMPLX-TMN1-Conservation-Fullstack.manifest.json` |
+| `production/lib-forge/CQECMPLX-MetaMaterial-Designer/PROMOTION_SLICE_2026-06-11_METAMATERIAL_SOURCE_PACKAGE.md` | promoted source/package | `tracking/promotion-manifests/CQECMPLX-MetaMaterial-Designer.manifest.json` |

@@ -1,0 +1,11 @@
+{
+  "token_string": "The host AI is drafting a validation plan and needs a sidecar receipt before choosing the next diagnostic action.",
+  "task": "validation_plan_extension",
+  "host": "repo-clone-ai",
+  "metadata": {
+    "source": "example"
+  },
+  "kernel_options": {
+    "training_mode": true
+  }
+}

@@ -1,0 +1,22 @@
+﻿{
+    "id":  "CQE_CMPLX_CMPLX-PartsFactory-main_data_rule_libs",
+    "kernel":  "lib_kernel",
+    "role":  "rule library corpus",
+    "source_path":  "D:\\CQE_CMPLX\\CMPLX-PartsFactory-main\\data\\rule_libs",
+    "exists":  true,
+    "form_only":  true,
+    "payloads_copied":  0,
+    "curated_file_count":  8,
+    "curated_bytes":  2373,
+    "payload_exclusion_count":  0,
+    "top_directories":  [
+                            "language",
+                            "native",
+                            "notation",
+                            "shell",
+                            "token"
+                        ],
+    "key_documents":  [
+
+                      ]
+}

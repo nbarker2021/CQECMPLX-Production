@@ -1,0 +1,29 @@
+﻿{
+    "name":  "CMPLX Kernel Ring",
+    "generated_at":  "2026-06-08T10:36:43.8807007-07:00",
+    "root":  "D:\\CMPLX-Kernel\\kernel_ring",
+    "relation_to_main_kernel":  "Companion kernels above/around D:\\CMPLX-Kernel\\kernel. Forms only; no archive/database payload copies.",
+    "kernels":  [
+                    {
+                        "kernel":  "lib_kernel",
+                        "title":  "Lib Kernel",
+                        "source_count":  8,
+                        "curated_file_count":  101,
+                        "payload_exclusion_count":  0
+                    },
+                    {
+                        "kernel":  "lattice_kernel",
+                        "title":  "Lattice Kernel",
+                        "source_count":  11,
+                        "curated_file_count":  862,
+                        "payload_exclusion_count":  2
+                    },
+                    {
+                        "kernel":  "reforge_kernel",
+                        "title":  "ReForge Kernel",
+                        "source_count":  6,
+                        "curated_file_count":  28,
+                        "payload_exclusion_count":  57
+                    }
+                ]
+}

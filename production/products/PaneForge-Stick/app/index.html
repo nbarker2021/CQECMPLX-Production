@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<link rel="manifest" href="manifest.webmanifest">
+<title>PaneForge Calendar</title>
+<style>
+  :root{
+    --bg:#000; --fg:#fff; --muted:#9aa0a6; --today:#e53935;
+    --chip:#c9a227; --rail:26vw;
+    --dot-b:#4aa3ff; --dot-g:#36c275; --dot-o:#ff8a3d;
+    --dot-t:#26c6da; --dot-p:#b388ff; --dot-k:#ff5c8a;
+  }
+  *{box-sizing:border-box; margin:0; padding:0; -webkit-tap-highlight-color:transparent;}
+  html,body{height:100%;}
+  body{ background:var(--bg); color:var(--fg);
+    font-family:"Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+    overflow:hidden; display:flex; height:100vh;}
+  /* ---------- LEFT RAIL ---------- */
+  .rail{ width:var(--rail); min-width:220px; display:flex; flex-direction:column;
+    background:#0a0a0a; border-right:1px solid #161616;}
+  .rail .top{ padding:3vh 1.4vw 0;}
+  .clock{ font-weight:300; line-height:.9; letter-spacing:-1px;}
+  .clock .hm{ font-size:6.2vw;}
+  .clock .sec{ font-size:2vw; vertical-align:super; opacity:.85; margin-left:.2vw;}
+  .longdate{ margin-top:1.2vh; font-size:1.2vw; color:#e8eaed;}
+  .photo{ flex:1 1 auto; min-height:90px; margin-top:1.4vh; position:relative; overflow:hidden;
+    background:
+      radial-gradient(120% 80% at 50% 18%, #f7c66b 0%, #f0a35a 18%, #d98452 32%, #8a6b8e 55%, #4a5c79 74%, #2b3a55 100%);}
+  .photo::after{ content:""; position:absolute; left:0; right:0; bottom:0; height:42%;
+    background:linear-gradient(180deg, rgba(58,74,99,.2), #243349 60%, #1a2638 100%);}
+  .wx{ padding:1.6vh 1.4vw 2vh; background:#0a0a0a;}
+  .wx .now{ display:flex; gap:.6vw; align-items:flex-start;}
+  .wx .temp{ font-size:3vw; font-weight:300; line-height:1;}
+  .wx .ico{ font-size:1.7vw; margin-top:.4vw;}
+  .wx .feels{ color:var(--muted); font-size:1vw; margin-top:.4vh;}
+  .fc{ display:flex; justify-content:space-between; margin-top:1.4vh; gap:.4vw;}
+  .fc .d{ flex:1; text-align:center;}
+  .fc .dn{ color:var(--muted); font-size:.85vw;}
+  .fc .di{ font-size:1.4vw; margin:.5vh 0;}
+  .fc .pp{ color:#7fb5ff; font-size:.75vw;}
+  .fc .hl{ font-size:.9vw; margin-top:.3vh;}
+  .fc .hl .lo{ color:var(--muted);}
+  /* ---------- CALENDAR ---------- */
+  .cal{ flex:1; display:flex; flex-direction:column; padding:2.2vh 1.5vw 1vh; position:relative;}
+  .dow{ display:grid; grid-template-columns:repeat(7,1fr); margin-bottom:.3vh;}
+  .dow span{ font-size:1.4vw; font-weight:300; padding-left:.3vw;}
+  .grid{ flex:1; display:grid; grid-template-columns:repeat(7,1fr); gap:0;}
+  .cell{ padding:.4vh .5vw 1vh; border-left:1px solid #0e0e0e; overflow:hidden;
+    position:relative; background-size:cover; background-position:center;}
+  .cell:nth-child(7n+1){ border-left:none;}
+  body.edit .cell{ outline:1px dashed #2a3a4a; cursor:pointer;}
+  body.edit .cell:hover{ outline-color:#4aa3ff;}
+  .daynum{ font-size:2.3vw; font-weight:300; display:flex; align-items:center; gap:.35vw;}
+  .daynum .mon{ font-size:2.3vw; margin-right:.15vw;}
+  .daynum.today .n{ background:var(--today); border-radius:50%;
+    width:2.9vw; height:2.9vw; display:inline-flex; align-items:center;
+    justify-content:center; font-size:2vw;}
+  .ev{ margin-top:.6vh; font-size:.9vw; line-height:1.18; color:#e8eaed;
+    display:flex; gap:.4vw; align-items:flex-start;}
+  .ev .dot{ width:.5vw; height:.5vw; border-radius:50%; margin-top:.42vh; flex:0 0 auto;}
+  .ev.b .dot{background:var(--dot-b);} .ev.g .dot{background:var(--dot-g);}
+  .ev.o .dot{background:var(--dot-o);} .ev.t .dot{background:var(--dot-t);}
+  .ev.p .dot{background:var(--dot-p);} .ev.k .dot{background:var(--dot-k);}
+  /* ---------- CONTROL ---------- */
+  .gear{ position:fixed; right:1vw; bottom:1.4vh; z-index:30; width:3.2vw; height:3.2vw;
+    min-width:40px; min-height:40px; border-radius:50%; border:1px solid #333;
+    background:#101418cc; color:#dfe3e8; font-size:1.4vw; cursor:pointer;}
+  .panel{ position:fixed; right:0; top:0; bottom:0; width:min(380px, 92vw); z-index:40;
+    background:#0d1116; border-left:1px solid #1d242c; padding:18px 16px;
+    transform:translateX(105%); transition:transform .22s ease; overflow-y:auto;}
+  .panel.open{ transform:none;}
+  .panel h2{ font-size:16px; font-weight:600; margin-bottom:10px;}
+  .panel h3{ font-size:12px; color:#8aa0b4; text-transform:uppercase;
+    letter-spacing:1px; margin:18px 0 8px;}
+  .row{ display:flex; align-items:center; gap:10px; margin:8px 0; font-size:14px;}
+  .row label{ flex:1;}
+  .row input[type=range]{ flex:2;}
+  .row input[type=text], .row input[type=date], .row input[type=time], .row select{
+    flex:2; background:#131a22; color:#e8eaed; border:1px solid #263241;
+    border-radius:6px; padding:7px 9px; font-size:14px;}
+  .seg{ display:flex; gap:6px;}
+  .seg button{ flex:1; padding:8px 0; background:#131a22; color:#cfd8e3;
+    border:1px solid #263241; border-radius:6px; cursor:pointer; font-size:13px;}
+  .seg button.on{ background:#1c4e7a; border-color:#2d6da6; color:#fff;}
+  .btn{ width:100%; margin-top:10px; padding:10px; border-radius:8px; border:none;
+    background:#1c4e7a; color:#fff; font-size:14px; cursor:pointer;}
+  .law{ margin-top:14px; font-size:11.5px; color:#7d8b99; line-height:1.5;
+    border-top:1px solid #1d242c; padding-top:10px;}
+  .law b{ color:#a9bdcf;}
+  .toast{ position:fixed; left:50%; bottom:2.4vh; transform:translateX(-50%);
+    background:#101820ee; border:1px solid #2a3a4a; color:#dfe9f2; font-size:13px;
+    padding:9px 14px; border-radius:8px; z-index:50; opacity:0; transition:opacity .25s;}
+  .toast.show{ opacity:1;}
+  @media (max-aspect-ratio:1/1){
+    body{flex-direction:column;}
+    .rail{width:100% !important; flex-direction:row; min-height:30vh;}
+    .rail .top{flex:1;} .photo{display:none;} .wx{flex:1;}
+    .clock .hm{font-size:13vw;} .clock .sec{font-size:4.5vw;}
+    .longdate{font-size:3.2vw;}
+    .dow span{font-size:3.2vw;} .daynum{font-size:4.6vw;}
+    .daynum.today .n{width:6vw;height:6vw;font-size:4vw;}
+    .ev{font-size:2.1vw;} .gear{font-size:5vw;}
+  }
+</style>
+</head>
+<body>
+  <aside class="rail" id="w_rail">
+    <div class="top">
+      <div class="clock" id="w_clock"><span class="hm" id="hm">--:--</span><span class="sec" id="sec"></span></div>
+      <div class="longdate" id="longdate"></div>
+    </div>
+    <div class="photo" id="w_photo"></div>
+    <div class="wx" id="w_weather">
+      <div class="now"><span class="temp">50&deg;</span><span class="ico">&#9925;</span></div>
+      <div class="feels">Feels like 49&deg;</div>
+      <div class="fc" id="fc"></div>
+    </div>
+  </aside>
+
+  <main class="cal">
+    <div class="dow" id="dow"></div>
+    <div class="grid" id="grid"></div>
+  </main>
+
+  <!-- Ink overlay: stylus / touch / mouse. Logical-coordinate canvas. -->
+  <canvas id="inkCanvas"
+    style="position:fixed; inset:0; z-index:20; pointer-events:none; touch-action:none;"></canvas>
+
+  <button type="button" class="gear" id="gear" title="Loadout">&#9881;</button>
+
+  <div class="panel" id="panel">
+    <h2>PaneForge Loadout</h2>
+    <div class="seg"><a href="./fridge.html" style="flex:1;display:block;text-align:center;
+      padding:8px 0;background:#131a22;color:#cfd8e3;border:1px solid #263241;
+      border-radius:6px;text-decoration:none;font-size:13px;">Open FridgeForge &rarr;</a></div>
+
+    <h3>Connectivity Mode</h3>
+    <div class="seg" id="modeSeg">
+      <button type="button" data-m="LOCAL">Local</button>
+      <button type="button" data-m="HYBRID">Hybrid</button>
+      <button type="button" data-m="CLOUD">Cloud</button>
+    </div>
+
+    <h3>Layout</h3>
+    <div class="row"><label>Rail width</label>
+      <input type="range" id="railW" title="Rail width" min="18" max="40" step="1"></div>
+    <div class="row"><label>Weeks shown</label>
+      <select id="weeks" title="Weeks shown"><option value="1">1</option><option value="2">2</option><option value="3">3</option></select></div>
+
+    <h3>Widgets</h3>
+    <div id="widgetToggles"></div>
+
+    <h3>Add Event</h3>
+    <div class="row"><input type="date" id="evDate" title="Event date"></div>
+    <div class="row"><input type="time" id="evTime" title="Event time"></div>
+    <div class="row"><input type="text" id="evText" placeholder="Event text"></div>
+    <div class="row"><label>Color</label>
+      <select id="evColor" title="Event color">
+        <option value="b">Blue</option><option value="g">Green</option>
+        <option value="o">Orange</option><option value="t">Teal</option>
+        <option value="p">Purple</option><option value="k">Pink</option>
+      </select></div>
+    <button type="button" class="btn" id="evAdd">Add (computes + receipts)</button>
+
+    <h3>Cell Backgrounds</h3>
+    <div class="row" style="font-size:12.5px;color:#8aa0b4;">
+      Toggle edit mode, then tap any day cell to set its background color or image.</div>
+    <div class="seg"><button type="button" id="editToggle">Edit mode: off</button></div>
+
+    <h3>Ink (stylus / touch / mouse)</h3>
+    <div class="row" style="font-size:12.5px;color:#8aa0b4;">
+      Ink mode draws on the calendar. Stylus pressure and tilt are captured
+      when the hardware provides them; every stroke is receipted.</div>
+    <div class="seg">
+      <button type="button" id="inkToggle">Ink mode: off</button>
+      <button type="button" id="inkClear">Clear ink</button>
+    </div>
+    <div class="row"><label>Ink color</label>
+      <select id="inkColor" title="Ink color">
+        <option value="#e8eaed">White</option><option value="#4aa3ff">Blue</option>
+        <option value="#36c275">Green</option><option value="#ff8a3d">Orange</option>
+        <option value="#ff5c8a">Pink</option>
+      </select></div>
+    <div class="row" id="surfInfo" style="font-size:11.5px;color:#7d8b99;"></div>
+
+    <div class="law" id="lawBox">
+      <b>Event Law:</b> every change is computed through the Binary Boundary
+      Adapter, saved as a lib item, validated, and receipted with 2 links —
+      then reused for nearly free.<br><span id="lawStats">kernel: connecting…</span>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+<script>
+/* ================= PaneForge display + control PWA =================
+   Talks to the kernel (/api). Every mutation is an EVENT:
+   POST /api/event {kind, payload} -> Event Law (BBA compute -> crystal
+   save -> validate -> receipt w/ 2 links -> SpeedLight reuse).
+   Offline: falls back to localStorage and queues events for replay. */
+const API = location.origin.replace(/\/$/, "");
+let KERNEL = false;
+let STATE = null;
+const QUEUE_KEY = "pf_queue", LOCAL_KEY = "pf_state";
+
+const FORECAST = [
+  {dn:"Today", di:"⛅", pp:"2%",  hi:69, lo:60},
+  {dn:"Thu",   di:"🌧", pp:"98%", hi:63, lo:46},
+  {dn:"Fri",   di:"🌧", pp:"84%", hi:59, lo:44},
+  {dn:"Sat",   di:"🌦", pp:"39%", hi:66, lo:46},
+];
+
+const DEFAULT_STATE = {
+  mode:"LOCAL",
+  loadout:{rail_width_pct:26, weeks:2,
+    widgets:{clock:true,date:true,photo:true,weather:true,forecast:true,grid:true}},
+  cells:{}, events:[]
+};
+
+/* ---------- helpers ---------- */
+const $ = id => document.getElementById(id);
+const iso = d => d.toISOString().slice(0,10);
+function toast(msg){ const t=$("toast"); t.textContent=msg; t.classList.add("show");
+  clearTimeout(t._h); t._h=setTimeout(()=>t.classList.remove("show"),2600); }
+
+async function api(path, opts){
+  const r = await fetch(API+path, opts); if(!r.ok) throw new Error(r.status);
+  return r.json();
+}
+async function loadState(){
+  try{
+    const d = await api("/api/state");
+    STATE = d.state; KERNEL = true;
+    $("lawStats").textContent =
+      `kernel: live | receipts ${d.kernel.receipts} | crystals ${d.kernel.crystals} | head ${d.kernel.receipt_head.slice(0,10)}…`;
+    localStorage.setItem(LOCAL_KEY, JSON.stringify(STATE));
+    replayQueue();
+  }catch(e){
+    KERNEL = false;
+    STATE = JSON.parse(localStorage.getItem(LOCAL_KEY) || "null") ||
+            JSON.parse(JSON.stringify(DEFAULT_STATE));
+    $("lawStats").textContent = "kernel: offline — queueing events locally";
+  }
+}
+async function sendEvent(kind, payload){
+  if(KERNEL){
+    try{
+      const d = await api("/api/event", {method:"POST",
+        headers:{"Content-Type":"application/json"},
+        body:JSON.stringify({kind, payload})});
+      if(d.ok){ STATE = d.state;
+        localStorage.setItem(LOCAL_KEY, JSON.stringify(STATE));
+        const law = d.law||{};
+        toast(law.reused ? `reused (free): ${kind}` :
+          `receipted: ${kind} — ${ (law.receipt_hash||"").slice(0,10) }… (${law.adapted?law.adapted.arc_type:""})`);
+        render(); return d;
+      }
+      toast("event rejected by validation"); return d;
+    }catch(e){ KERNEL=false; }
+  }
+  // offline: apply locally + queue for the kernel (the Law still runs when reachable)
+  applyLocal(kind, payload);
+  const q = JSON.parse(localStorage.getItem(QUEUE_KEY)||"[]");
+  q.push({kind, payload}); localStorage.setItem(QUEUE_KEY, JSON.stringify(q));
+  localStorage.setItem(LOCAL_KEY, JSON.stringify(STATE));
+  toast(`queued for kernel: ${kind}`); render();
+}
+function applyLocal(kind, p){
+  if(kind==="event.add") STATE.events.push({id:"tmp"+Date.now(), ...p});
+  else if(kind==="event.remove") STATE.events=STATE.events.filter(e=>e.id!==p.id);
+  else if(kind==="cell.bg"){ const c=STATE.cells[p.date]||(STATE.cells[p.date]={});
+    if("bg" in p)c.bg=p.bg; if("img" in p)c.img=p.img; }
+  else if(kind==="loadout.set"){ Object.assign(STATE.loadout,
+    {rail_width_pct:p.rail_width_pct??STATE.loadout.rail_width_pct,
+     weeks:p.weeks??STATE.loadout.weeks});
+    if(p.widgets) Object.assign(STATE.loadout.widgets, p.widgets); }
+  else if(kind==="mode.set") STATE.mode=p.mode;
+}
+async function replayQueue(){
+  const q = JSON.parse(localStorage.getItem(QUEUE_KEY)||"[]");
+  if(!q.length) return;
+  localStorage.setItem(QUEUE_KEY,"[]");
+  for(const e of q) await sendEvent(e.kind, e.payload);
+  if(q.length) toast(`replayed ${q.length} queued event(s) through the kernel`);
+}
+
+/* ---------- rendering ---------- */
+function mondayOf(d){ const x=new Date(d); const wd=(x.getDay()+6)%7;
+  x.setDate(x.getDate()-wd); x.setHours(0,0,0,0); return x; }
+
+function render(){
+  renderForecast();                       // linked weather refreshes with state
+  const lo = STATE.loadout, w = lo.widgets;
+  document.documentElement.style.setProperty("--rail", lo.rail_width_pct+"vw");
+  $("w_rail").style.display    = (w.clock||w.date||w.photo||w.weather) ? "" : "none";
+  $("w_clock").style.display   = w.clock ? "" : "none";
+  $("longdate").style.display  = w.date ? "" : "none";
+  $("w_photo").style.display   = w.photo ? "" : "none";
+  $("w_weather").style.display = w.weather ? "" : "none";
+  $("fc").style.display        = w.forecast ? "" : "none";
+
+  $("dow").innerHTML = ["M","T","W","T","F","S","S"].map(d=>`<span>${d}</span>`).join("");
+  const grid = $("grid");
+  grid.style.gridTemplateRows = `repeat(${lo.weeks},1fr)`;
+  if(!w.grid){ grid.innerHTML=""; return; }
+
+  const start = mondayOf(new Date());
+  const today = iso(new Date());
+  const evByDate = {};
+  for(const e of STATE.events)(evByDate[e.date] || (evByDate[e.date]=[])).push(e);
+  // linked calendar feeds (ICS databases linked into the lib) render read-only
+  const calLink = STATE.links && STATE.links.calendar;
+  if(calLink && calLink.ok && Array.isArray(calLink.data))
+    for(const e of calLink.data)
+      (evByDate[e.date] || (evByDate[e.date]=[])).push({...e, color:"p"});
+
+  let html = "";
+  for(let i=0;i<lo.weeks*7;i++){
+    const d = new Date(start); d.setDate(start.getDate()+i);
+    const k = iso(d);
+    const cell = STATE.cells[k]||{};
+    const style = (cell.bg?`background-color:${cell.bg};`:"")+
+                  (cell.img?`background-image:url('${cell.img}');`:"");
+    const isToday = k===today;
+    const showMon = i===0 || d.getDate()===1;
+    const mon = showMon ? `<span class="mon">${d.toLocaleDateString(undefined,{month:"short"})}</span>` : "";
+    const num = `<span class="daynum${isToday?" today":""}">${mon}<span class="n">${d.getDate()}</span></span>`;
+    const evs = (evByDate[k]||[]).map(e=>
+      `<div class="ev ${e.color||"b"}"><span class="dot"></span><span>${e.time?e.time+" ":""}${e.text}</span></div>`).join("");
+    html += `<div class="cell" data-date="${k}" style="${style}">${num}${evs}</div>`;
+  }
+  grid.innerHTML = html;
+
+  // edit-mode cell taps
+  grid.querySelectorAll(".cell").forEach(c=>{
+    c.onclick = ()=>{
+      if(!document.body.classList.contains("edit")) return;
+      const date = c.dataset.date;
+      const bg = prompt(`Background color for ${date} (e.g. #16324a, or blank to keep):`,
+        (STATE.cells[date]||{}).bg||"");
+      if(bg===null) return;
+      const img = prompt("Background image URL (blank for none):",
+        (STATE.cells[date]||{}).img||"");
+      if(img===null) return;
+      sendEvent("cell.bg", {date, bg, img});
+    };
+  });
+
+  // panel reflects state
+  $("railW").value = lo.rail_width_pct;
+  $("weeks").value = lo.weeks;
+  document.querySelectorAll("#modeSeg button").forEach(b=>
+    b.classList.toggle("on", b.dataset.m===STATE.mode));
+  $("widgetToggles").innerHTML = Object.entries(w).map(([k,v])=>
+    `<div class="row"><label>${k}</label>
+     <input type="checkbox" data-w="${k}" ${v?"checked":""}></div>`).join("");
+  $("widgetToggles").querySelectorAll("input").forEach(cb=>{
+    cb.onchange = ()=> sendEvent("loadout.set", {widgets:{[cb.dataset.w]: cb.checked}});
+  });
+}
+
+const WMO_ICON = c => c<=1?"☀️":c<=3?"⛅":c<=48?"🌫":c<=67?"🌧":c<=77?"🌨":c<=82?"🌦":"⛈";
+function renderForecast(){
+  // linked weather database (e.g. Open-Meteo) overrides the demo strip
+  const wl = STATE && STATE.links && STATE.links.weather;
+  let rows = FORECAST;
+  if(wl && wl.ok && wl.data && wl.data.daily){
+    const d = wl.data.daily;
+    rows = (d.time||[]).slice(0,4).map((t,i)=>({
+      dn: i===0?"Today":new Date(t+"T12:00").toLocaleDateString(undefined,{weekday:"short"}),
+      di: WMO_ICON((d.weather_code||d.weathercode||[])[i]??2),
+      pp: ((d.precipitation_probability_max||[])[i]??"–")+"%",
+      hi: Math.round((d.temperature_2m_max||[])[i]??0),
+      lo: Math.round((d.temperature_2m_min||[])[i]??0),
+    }));
+    const cur = wl.data.current;
+    if(cur && cur.temperature_2m !== undefined){
+      document.querySelector(".wx .temp").innerHTML = Math.round(cur.temperature_2m)+"&deg;";
+      document.querySelector(".wx .feels").textContent =
+        "Feels like " + Math.round(cur.apparent_temperature ?? cur.temperature_2m) + "°";
+    }
+  }
+  $("fc").innerHTML = rows.map(d=>`
+    <div class="d"><div class="dn">${d.dn}</div><div class="di">${d.di}</div>
+    <div class="pp">💧 ${d.pp}</div>
+    <div class="hl">${d.hi} <span class="lo">${d.lo}</span></div></div>`).join("");
+}
+function tick(){
+  const now = new Date();
+  let h = now.getHours()%12||12;
+  $("hm").textContent = `${h}:${String(now.getMinutes()).padStart(2,"0")}`;
+  $("sec").textContent = String(now.getSeconds()).padStart(2,"0");
+  $("longdate").textContent =
+    now.toLocaleDateString(undefined,{weekday:"long",month:"long",day:"numeric"});
+}
+
+/* ---------- panel wiring ---------- */
+$("gear").onclick = ()=> $("panel").classList.toggle("open");
+$("railW").onchange = e=> sendEvent("loadout.set",{rail_width_pct:+e.target.value});
+$("weeks").onchange = e=> sendEvent("loadout.set",{weeks:+e.target.value});
+document.querySelectorAll("#modeSeg button").forEach(b=>
+  b.onclick = ()=> sendEvent("mode.set",{mode:b.dataset.m}));
+$("editToggle").onclick = ()=>{
+  document.body.classList.toggle("edit");
+  $("editToggle").textContent =
+    "Edit mode: " + (document.body.classList.contains("edit")?"on":"off");
+};
+$("evAdd").onclick = ()=>{
+  const date=$("evDate").value, time=$("evTime").value, text=$("evText").value.trim();
+  if(!date||!text){ toast("date and text required"); return; }
+  let t12 = "";
+  if(time){ const [H,M]=time.split(":").map(Number);
+    t12 = `${H%12||12}${M?":"+String(M).padStart(2,"0"):""}${H>=12?"p":"a"}`; }
+  sendEvent("event.add",{date, time:t12, text, color:$("evColor").value});
+  $("evText").value="";
+};
+
+/* ---------- PixelForge surface + ink layer ----------
+   Surface: this screen registers itself (resolution, dpr, input caps) as a
+   receipted event; resizes/rotations are receipted too. All ink lives in
+   LOGICAL [0,1]^2 coordinates so strokes replay identically at any size.
+   Pointer Events carry stylus pressure + tilt natively when hardware has it. */
+let SURFACE_ID = localStorage.getItem("pf_surface") ||
+  ("srf-" + Math.random().toString(36).slice(2,12));
+localStorage.setItem("pf_surface", SURFACE_ID);
+
+function surfacePayload(){
+  return {
+    surface_id: SURFACE_ID,
+    width: window.innerWidth, height: window.innerHeight,
+    dpr: window.devicePixelRatio || 1,
+    kind: "screen",
+    input_caps: {
+      mouse: matchMedia("(pointer:fine)").matches,
+      touch: navigator.maxTouchPoints > 0,
+      stylus: false,   // flips true the first time a pen pointer is seen
+      pressure: false,
+    },
+  };
+}
+async function registerSurface(){
+  await sendEvent("surface.register", surfacePayload());
+  updateSurfInfo();
+}
+let _rszT = null;
+window.addEventListener("resize", ()=>{
+  clearTimeout(_rszT);
+  _rszT = setTimeout(async ()=>{
+    sizeInkCanvas();
+    await sendEvent("surface.resize", {surface_id: SURFACE_ID,
+      width: window.innerWidth, height: window.innerHeight,
+      dpr: window.devicePixelRatio || 1});
+    drawAllInk(); updateSurfInfo();
+  }, 400);
+});
+function updateSurfInfo(){
+  const d = (STATE.surfaces||{})[SURFACE_ID];
+  $("surfInfo").textContent = d ?
+    `surface ${d.surface_id.slice(0,10)} | ${d.width}x${d.height}@${d.dpr}x | ` +
+    `${d.device_class} | sheet: ${d.mdhg_name}` : "surface: registering…";
+}
+
+/* ---------- ink ---------- */
+const inkCanvas = $("inkCanvas");
+const ictx = inkCanvas.getContext("2d");
+let INK_ON = false, stroke = null, sawPen = false;
+
+function sizeInkCanvas(){
+  const dpr = window.devicePixelRatio || 1;
+  inkCanvas.width = window.innerWidth * dpr;
+  inkCanvas.height = window.innerHeight * dpr;
+  ictx.setTransform(dpr, 0, 0, dpr, 0, 0);
+}
+function drawStrokePath(points, color, baseW){
+  /* points: [[lx,ly,pressure], ...] logical -> this screen's pixels */
+  if(points.length < 2) return;
+  const W = window.innerWidth, H = window.innerHeight;
+  ictx.strokeStyle = color; ictx.lineCap = "round"; ictx.lineJoin = "round";
+  for(let i=1;i<points.length;i++){
+    const [x0,y0,p0] = points[i-1], [x1,y1,p1] = points[i];
+    ictx.lineWidth = Math.max(1, baseW * H * ((p0+p1)/2 + 0.3));
+    ictx.beginPath();
+    ictx.moveTo(x0*W, y0*H); ictx.lineTo(x1*W, y1*H);
+    ictx.stroke();
+  }
+}
+function drawAllInk(){
+  ictx.clearRect(0,0,inkCanvas.width,inkCanvas.height);
+  for(const s of (STATE.ink||[]))
+    drawStrokePath(s.samples.map(p=>[p[0],p[1],p[2]]), s.color, s.width_logical||0.0023);
+  if(stroke) drawStrokePath(stroke.pts.map(p=>[p.x/window.innerWidth,
+    p.y/window.innerHeight, p.p]), stroke.color, 0.0023);
+}
+function cellDateAt(x, y){
+  const el = document.elementFromPoint(x, y);
+  const cell = el && el.closest ? el.closest(".cell") : null;
+  return cell ? cell.dataset.date : null;
+}
+inkCanvas.addEventListener("pointerdown", e=>{
+  if(!INK_ON) return;
+  if(e.pointerType === "pen") sawPen = true;
+  inkCanvas.setPointerCapture(e.pointerId);
+  stroke = { t0: performance.now(), color: $("inkColor").value,
+    pointer: e.pointerType === "pen" ? "pen" :
+             e.pointerType === "touch" ? "touch" : "mouse",
+    target: cellDateAt(e.clientX, e.clientY),
+    pts: [] };
+  addPt(e);
+});
+inkCanvas.addEventListener("pointermove", e=>{
+  if(!stroke) return;
+  // coalesced events give full stylus sample rate, not just frame rate
+  const evs = e.getCoalescedEvents ? e.getCoalescedEvents() : [e];
+  for(const ce of evs) addPt(ce);
+  drawAllInk();
+});
+function addPt(e){
+  stroke.pts.push({ x: e.clientX, y: e.clientY,
+    p: e.pressure || 0.5, tx: e.tiltX || 0, ty: e.tiltY || 0,
+    t: performance.now() - stroke.t0 });
+}
+async function endStroke(){
+  if(!stroke) return;
+  const s = stroke; stroke = null;
+  if(s.pts.length < 2){ drawAllInk(); return; }
+  await sendEvent("ink.stroke", { surface_id: SURFACE_ID,
+    pointer: s.pointer, color: s.color, target: s.target,
+    points: s.pts });
+  drawAllInk();
+}
+inkCanvas.addEventListener("pointerup", endStroke);
+inkCanvas.addEventListener("pointercancel", endStroke);
+
+$("inkToggle").onclick = ()=>{
+  INK_ON = !INK_ON;
+  inkCanvas.style.pointerEvents = INK_ON ? "auto" : "none";
+  $("inkToggle").textContent = "Ink mode: " + (INK_ON ? "on" : "off");
+};
+$("inkClear").onclick = ()=> sendEvent("ink.clear", {});
+
+/* ---------- boot ---------- */
+(async function(){
+  await loadState();
+  renderForecast(); render(); tick(); setInterval(tick,1000);
+  sizeInkCanvas(); drawAllInk();
+  await registerSurface();
+  setInterval(async ()=>{ await loadState(); drawAllInk(); updateSurfInfo(); }, 30000);
+})();
+if("serviceWorker" in navigator){ navigator.serviceWorker.register("sw.js").catch(()=>{}); }
+</script>
+</body>
+</html>

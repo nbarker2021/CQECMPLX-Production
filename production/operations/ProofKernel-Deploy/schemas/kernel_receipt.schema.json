@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CMPLX Kernel Receipt",
+  "type": "object",
+  "required": ["kernel", "kernel_version", "created_at", "host", "task", "token_sha256", "features", "diagnostics", "adapter", "kernel_options"],
+  "properties": {
+    "kernel": {"const": "CMPLX-Kernel"},
+    "kernel_version": {"type": "string"},
+    "created_at": {"type": "string"},
+    "host": {"type": "string"},
+    "task": {"type": "string"},
+    "token_sha256": {"type": "string"},
+    "features": {"type": "object"},
+    "diagnostics": {"type": "array"},
+    "adapter": {"type": "object"},
+    "kernel_options": {"type": "object"}
+  }
+}

@@ -1,0 +1,18 @@
+﻿{
+    "id":  "CQECMPLX-Production_lib-forge_ManiForge",
+    "kernel":  "reforge_kernel",
+    "role":  "production ManiForge surface",
+    "source_path":  "D:\\CQECMPLX-Production\\lib-forge\\ManiForge",
+    "exists":  true,
+    "form_only":  true,
+    "payloads_copied":  0,
+    "curated_file_count":  1,
+    "curated_bytes":  6313,
+    "payload_exclusion_count":  0,
+    "top_directories":  [
+
+                        ],
+    "key_documents":  [
+
+                      ]
+}

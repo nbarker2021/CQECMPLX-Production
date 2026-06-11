@@ -1,0 +1,18 @@
+﻿{
+    "id":  "CQECMPLX-Production_REAL-PAPERS_paper3-lattice",
+    "kernel":  "lattice_kernel",
+    "role":  "production lattice paper/proof layer",
+    "source_path":  "D:\\CQECMPLX-Production\\REAL-PAPERS\\paper3-lattice",
+    "exists":  true,
+    "form_only":  true,
+    "payloads_copied":  0,
+    "curated_file_count":  0,
+    "curated_bytes":  null,
+    "payload_exclusion_count":  0,
+    "top_directories":  [
+
+                        ],
+    "key_documents":  [
+
+                      ]
+}

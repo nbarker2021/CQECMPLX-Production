@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CMPLX Docker Compose Boundary Insert",
+  "type": "object",
+  "required": ["insert_id", "target_compose", "reason", "compose_overlay"],
+  "properties": {
+    "insert_id": {"type": "string"},
+    "target_compose": {
+      "type": "string",
+      "description": "Relative compose file under the below-kernel Docker tool root."
+    },
+    "reason": {"type": "string"},
+    "receipts": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "compose_overlay": {
+      "type": "object",
+      "description": "Compose override fragment applied with docker compose -f base -f insert."
+    }
+  }
+}

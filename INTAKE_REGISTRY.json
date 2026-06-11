@@ -64,5 +64,21 @@
     "adapter_boundary_if_external",
     "training_mode_hidden_guess_result_when_applicable",
     "no_local_runtime_artifacts"
+  ],
+  "promoted_slices": [
+    {
+      "id": "CQECMPLX-Worktree-Unification",
+      "date": "2026-06-11",
+      "slice": "production/PROMOTION_SLICE_2026-06-11_WORKTREE_UNIFICATION.md",
+      "note": "WSL-mispathed agent worktrees (c/, d/ literal dirs) reconciled into canonical and promoted: engine ring, recovered MASTER_PDF/workbench/summaries, PaneForge product, proof-kernel deploy kit."
+    }
+  ],
+  "stray_roots_reconciled": [
+    "D:\\d\\CQE_CMPLX\\CQECMPLX-Production",
+    "C:\\d\\CQE_CMPLX\\CQECMPLX-Production",
+    "C:\\d\\CQECMPLX-Production",
+    "C:\\d\\CQECMPLX-ProofValidatedSuite",
+    "D:\\CQECMPLX-ProofValidatedSuite",
+    "D:\\CQE_CMPLX\\d\\CQECMPLX-ProofValidatedSuite"
   ]
 }

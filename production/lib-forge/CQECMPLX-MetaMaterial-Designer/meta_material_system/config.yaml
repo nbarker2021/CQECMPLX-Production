@@ -1,0 +1,155 @@
+# MetaForge-AI Configuration
+# All runtime configuration lives here - no hardcoded values
+
+# ─── Application ───
+app:
+  name: "MetaForge-AI"
+  version: "0.1.0"
+  debug: false
+  log_level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  log_format: "%(asctime)s | %(levelname)-8s | %(name)s | %(message)s"
+
+# ─── Database ───
+database:
+  path: "./data/materials.db"
+  backup_interval_hours: 24
+  max_backups: 7
+
+# ─── Cache ───
+cache:
+  dir: "./viz_cache"
+  max_size_mb: 500
+  ttl_hours: 168  # 1 week
+  compression: true
+
+# ─── Visualization ───
+visualization:
+  output_dir: "./viz_output"
+  dpi: 300
+  format: "html"  # html, png, pdf
+  theme: "plotly_white"
+  auto_open: false
+
+# ─── Pipeline ───
+pipeline:
+  default_depth: 1024
+  default_area_cm2: 1.0
+  max_folds: 10
+  pareto_top_n: 5
+  validate_materials: true
+  auto_generate_viz: true
+  generate_flux_summary: true
+
+# ─── Materials ───
+materials:
+  # Default materials are in material_db.py
+  # Custom materials can be added via JSON files
+  custom_dir: "./data/custom_materials"
+  validate_on_load: true
+  allowed_production_keys:
+    - "graphene"
+    - "hbn"
+    - "mos2"
+    - "ws2"
+    - "mose2"
+    - "wse2"
+    - "bp"
+    - "mxene"
+    - "sto"
+    - "btio3"
+    - "pbtio3"
+    - "knbo3"
+    - "al2o3"
+    - "mgo"
+    - "sio2_q"
+    - "inclse"
+    - "gas"
+    - "gase"
+    - "stanene"
+    - "germanene"
+    - "silicene"
+    - "tbg"
+    - "mowse2"
+
+# ─── Physics Engines ───
+engines:
+  rule30:
+    max_width: 4096
+    default_width: 2048
+    verify_gamma: true
+
+  sk_action:
+    max_folds: 10
+    depth_per_fold: 100
+    entropy_mode: "shannon"
+
+  oloid:
+    steps: 1000
+    verify_closure: true
+
+  mandelbrot:
+    depth: 1024
+    light_settings: 4
+    verify_exact: true
+
+  e8:
+    coxeter_number: 30
+    reduction_layers: 2
+    golden_ratio_factor: 0.618
+
+  voa:
+    max_depth: 64
+    honesty: "CONJ"
+    best_hypothesis: "k=firing_count"
+
+# ─── Flux/Transition ───
+flux:
+  enabled: true
+  pathways_file: "waste_explorer.py"
+  cost_model:
+    energy_cost_per_mj: 50.0  # USD per MJ
+    waste_disposal_cost_per_kg: 200.0  # USD per kg
+    carbon_tax_per_kg_co2: 50.0  # USD per kg CO2
+
+# ─── Streamlit ───
+streamlit:
+  host: "0.0.0.0"
+  port: 8501
+  headless: true
+  theme:
+    base: "light"
+    primaryColor: "#1e3a5f"
+    backgroundColor: "#ffffff"
+    secondaryBackgroundColor: "#f0f2f6"
+    textColor: "#262730"
+  server:
+    maxUploadSize: 50  # MB
+    enableCORS: false
+    enableXsrfProtection: true
+
+# ─── Logging ───
+logging:
+  dir: "./logs"
+  max_files: 10
+  max_size_mb: 100
+  rotation: "daily"
+  format: "json"  # json, text
+  level: "INFO"
+
+# ─── Testing ───
+testing:
+  fixture_dir: "./tests/fixtures"
+  tolerance:
+    energy_eV: 0.01
+    tensile_MPa: 1.0
+    energy_percentage: 0.05
+
+# ─── Docker ───
+docker:
+  base_image: "python:3.11-slim"
+  venv_path: "/opt/venv"
+  expose_port: 8501
+  health_check_interval: 30
+  resource_limits:
+    cpus: 2
+    memory: "4G"

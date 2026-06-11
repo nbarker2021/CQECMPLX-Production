@@ -1,0 +1,145 @@
+﻿{
+    "kernel":  "reforge_kernel",
+    "title":  "ReForge Kernel",
+    "purpose":  "Forge-family package umbrella: ReForge, LatticeForge descendants, Rhenium/engine package ideas, and Forge identity blueprints.",
+    "generated_at":  "2026-06-08T10:36:43.8807007-07:00",
+    "form_only":  true,
+    "sources":  [
+                    {
+                        "id":  "CQE_CMPLX_ForgeFactory_ReForge_Session_Master_v0_2",
+                        "kernel":  "reforge_kernel",
+                        "role":  "ReForge session/package master",
+                        "source_path":  "D:\\CQE_CMPLX\\ForgeFactory_ReForge_Session_Master_v0_2",
+                        "exists":  true,
+                        "form_only":  true,
+                        "payloads_copied":  0,
+                        "curated_file_count":  6,
+                        "curated_bytes":  382976,
+                        "payload_exclusion_count":  57,
+                        "top_directories":  [
+                                                "ForgeFactory_ReForge_Session_Master_v0_2"
+                                            ],
+                        "key_documents":  [
+                                              "ForgeFactory_ReForge_Session_Master_v0_2\\00_state_and_manifest\\CURRENT_STATE_v0_2.md",
+                                              "ForgeFactory_ReForge_Session_Master_v0_2\\00_state_and_manifest\\MASTER_MANIFEST.json",
+                                              "ForgeFactory_ReForge_Session_Master_v0_2\\00_state_and_manifest\\SUMMARY.json",
+                                              "ForgeFactory_ReForge_Session_Master_v0_2\\01_papers\\PAPERS_00_30_COMBINED_BEST_FORM_v0_1.md"
+                                          ]
+                    },
+                    {
+                        "id":  "CQE_CMPLX_ForgeFamilyBlueprint",
+                        "kernel":  "reforge_kernel",
+                        "role":  "Forge family blueprint",
+                        "source_path":  "D:\\CQE_CMPLX\\ForgeFamilyBlueprint",
+                        "exists":  true,
+                        "form_only":  true,
+                        "payloads_copied":  0,
+                        "curated_file_count":  18,
+                        "curated_bytes":  24708,
+                        "payload_exclusion_count":  0,
+                        "top_directories":  [
+                                                "00_template_structure",
+                                                "01_contracts",
+                                                "02_schemas",
+                                                "03_adapter_contracts",
+                                                "04_staging",
+                                                "05_examples",
+                                                "07_cqe_layer",
+                                                "08_universal_adapters",
+                                                "09_named_math_engines",
+                                                "lib"
+                                            ],
+                        "key_documents":  [
+                                              "README.md",
+                                              "00_template_structure\\README.md",
+                                              "01_contracts\\FORGE_FAMILY_CONTRACT.md",
+                                              "02_schemas\\diagnostic_receipt.schema.json",
+                                              "02_schemas\\hidden_guess_result.schema.json",
+                                              "02_schemas\\umbrella_manifest.schema.json",
+                                              "03_adapter_contracts\\ADAPTER_CONTRACT.md",
+                                              "04_staging\\STAGING_CHECKLIST.md",
+                                              "05_examples\\example_diagnostic_receipt.json",
+                                              "05_examples\\example_hidden_guess_result.json",
+                                              "07_cqe_layer\\CQE_BRIDGE.md",
+                                              "07_cqe_layer\\DATUM_DECISION_RULES.md",
+                                              "07_cqe_layer\\ENGINE_MATH_PRODUCT_MAP.md",
+                                              "08_universal_adapters\\BINARY_BOUNDARY_ADAPTER.md",
+                                              "08_universal_adapters\\HANDSHAKE_NETWORKING_RULES.md",
+                                              "08_universal_adapters\\UNIVERSAL_ADAPTER_PROGRAMS.md",
+                                              "09_named_math_engines\\NAMED_MATH_ENGINE_RULES.md"
+                                          ]
+                    },
+                    {
+                        "id":  "CQE_CMPLX_lattice_forge_analysis.md",
+                        "kernel":  "reforge_kernel",
+                        "role":  "lattice forge analysis note",
+                        "source_path":  "D:\\CQE_CMPLX\\lattice_forge_analysis.md",
+                        "exists":  true,
+                        "form_only":  true,
+                        "payloads_copied":  0,
+                        "curated_file_count":  1,
+                        "curated_bytes":  39119,
+                        "payload_exclusion_count":  0,
+                        "top_directories":  [
+
+                                            ],
+                        "key_documents":  [
+                                              "lattice_forge_analysis.md"
+                                          ]
+                    },
+                    {
+                        "id":  "CQE_CMPLX_lattice_forge_code_review.md",
+                        "kernel":  "reforge_kernel",
+                        "role":  "lattice forge review note",
+                        "source_path":  "D:\\CQE_CMPLX\\lattice_forge_code_review.md",
+                        "exists":  true,
+                        "form_only":  true,
+                        "payloads_copied":  0,
+                        "curated_file_count":  1,
+                        "curated_bytes":  36621,
+                        "payload_exclusion_count":  0,
+                        "top_directories":  [
+
+                                            ],
+                        "key_documents":  [
+                                              "lattice_forge_code_review.md"
+                                          ]
+                    },
+                    {
+                        "id":  "CQECMPLX-Production_lib-forge_MandleForge",
+                        "kernel":  "reforge_kernel",
+                        "role":  "production MandleForge surface",
+                        "source_path":  "D:\\CQECMPLX-Production\\lib-forge\\MandleForge",
+                        "exists":  true,
+                        "form_only":  true,
+                        "payloads_copied":  0,
+                        "curated_file_count":  1,
+                        "curated_bytes":  6867,
+                        "payload_exclusion_count":  0,
+                        "top_directories":  [
+
+                                            ],
+                        "key_documents":  [
+
+                                          ]
+                    },
+                    {
+                        "id":  "CQECMPLX-Production_lib-forge_ManiForge",
+                        "kernel":  "reforge_kernel",
+                        "role":  "production ManiForge surface",
+                        "source_path":  "D:\\CQECMPLX-Production\\lib-forge\\ManiForge",
+                        "exists":  true,
+                        "form_only":  true,
+                        "payloads_copied":  0,
+                        "curated_file_count":  1,
+                        "curated_bytes":  6313,
+                        "payload_exclusion_count":  0,
+                        "top_directories":  [
+
+                                            ],
+                        "key_documents":  [
+
+                                          ]
+                    }
+                ]
+}

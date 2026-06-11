@@ -1,0 +1,19 @@
+﻿{
+    "id":  "g_CMPLX_core_the-library",
+    "kernel":  "lib_kernel",
+    "role":  "core library surface",
+    "source_path":  "D:\\g\\CMPLX\\core\\the-library",
+    "exists":  true,
+    "form_only":  true,
+    "payloads_copied":  0,
+    "curated_file_count":  6,
+    "curated_bytes":  59002,
+    "payload_exclusion_count":  0,
+    "top_directories":  [
+                            "src"
+                        ],
+    "key_documents":  [
+                          "README.md",
+                          "SWARM_AGENT_ASSIGNMENTS.md"
+                      ]
+}

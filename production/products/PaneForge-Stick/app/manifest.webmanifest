@@ -1,0 +1,14 @@
+{
+  "name": "PaneForge Calendar",
+  "short_name": "PaneForge",
+  "description": "Turn any screen into a smart wall calendar. One engine, any device, from a thumb drive.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "fullscreen",
+  "orientation": "any",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

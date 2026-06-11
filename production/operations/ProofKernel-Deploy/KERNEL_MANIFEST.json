@@ -1,0 +1,102 @@
+{
+  "kernel": "CQECMPLX-ProofValidatedSuite",
+  "version": "1.0.0",
+  "entrypoint": "boot.py",
+  "load_first": "AI_LOAD_FIRST.md",
+  "production_repo": "https://github.com/nbarker2021/CQECMPLX-ProofValidatedSuite",
+  "production_family": [
+    "D:\\CQECMPLX-ProofValidatedSuite",
+    "D:\\CQECMPLX-Production",
+    "D:\\CQECMPLX-AirLock",
+    "D:\\CQE_CMPLX",
+    "D:\\CMPLX-Kernel"
+  ],
+  "protocol": "token_string_in_receipt_out",
+  "portable": true,
+  "runtime": {
+    "language": "python",
+    "minimum_version": "3.10",
+    "dependencies": []
+  },
+  "interfaces": [
+    "stdin",
+    "file",
+    "request-json",
+    "local-http"
+  ],
+  "operator_web": {
+    "entrypoint": "python boot.py --serve",
+    "default_url": "http://127.0.0.1:8765",
+    "web_root": "web",
+    "api": [
+      "GET /api/health",
+      "GET /api/modules",
+      "GET /api/papers",
+      "GET /api/papers/{paper_id}/validate",
+      "GET /api/falsifier/test",
+      "POST /api/falsifier/test",
+      "POST /api/workbook/validate",
+      "GET /api/receipts",
+      "GET /api/receipts/{receipt_id}"
+    ],
+    "security": {
+      "auth": "CQECMPLX_OPERATOR_TOKEN enables bearer-token auth",
+      "cors": "CQECMPLX_OPERATOR_CORS_ORIGIN enables a specific CORS origin",
+      "max_body": "CQECMPLX_OPERATOR_MAX_BODY_BYTES defaults to 1048576",
+      "rate_limit": "CQECMPLX_OPERATOR_RATE_LIMIT_PER_MINUTE defaults to 120"
+    }
+  },
+  "external_tool_roots": [],
+  "container_deployments": [],
+  "module_registry": {
+    "path": "modules/MODULE_REGISTRY.json",
+    "docs": "docs/MODULE_AND_DATA_CONTRACT.md"
+  },
+  "state_store": {
+    "default_path": "data/kernel_state.sqlite3",
+    "engine": "sqlite",
+    "stdlib_only": true,
+    "payload_policy": "runtime database files are generated state and are excluded from portable source unless promoted by Binary Boundary Adapter receipt"
+  },
+  "kernel_options": {
+    "training_mode": {
+      "default": false,
+      "effect": "enables Hidden Guess Result receipts"
+    },
+    "require_guess_mode": {
+      "default": false,
+      "effect": "local/full-program mode requires training diagnostics"
+    }
+  },
+  "adapters": [
+    "BinaryBoundaryAdapter",
+    "UniversalAdapter",
+    "ProofReceiptAdapter"
+  ],
+  "diagnostics": {
+    "default": "quiet",
+    "training_mode": "HiddenGuessResultLayer"
+  },
+  "outputs": [
+    "enriched_text",
+    "receipt",
+    "proof_receipt",
+    "falsifier_result",
+    "workbook_result"
+  ],
+  "curated_repo_forms": {
+    "path": "repo_forms",
+    "index": "repo_forms/REPO_FORM_INDEX.json",
+    "payload_policy": "repo forms include indexes and metadata only; zip, tar, database, pack, and compressed payload files are excluded"
+  },
+  "companion_kernel_ring": {
+    "path": "../kernel_ring",
+    "index": "../kernel_ring/KERNEL_RING_MANIFEST.json",
+    "kernels": [
+      "lib_kernel",
+      "lattice_kernel",
+      "reforge_kernel"
+    ],
+    "payload_policy": "kernel ring includes forms and exclusions only; archive, database, package, build, and virtualenv bodies stay outside until a Binary Boundary Adapter event"
+  }
+}

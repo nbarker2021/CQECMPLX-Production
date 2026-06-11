@@ -1,0 +1,6 @@
+﻿docker-compose.yml	719
+Dockerfile	721
+README.md	13594
+requirements.txt	134
+src\library_server.py	36099
+SWARM_AGENT_ASSIGNMENTS.md	7735

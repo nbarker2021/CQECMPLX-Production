@@ -1,0 +1,19 @@
+﻿{
+    "id":  "g_CMPLX-R30_PROOF_src_lattice_forge",
+    "kernel":  "lattice_kernel",
+    "role":  "git R30 proof lattice forge source",
+    "source_path":  "D:\\g\\CMPLX-R30\\PROOF\\src\\lattice_forge",
+    "exists":  true,
+    "form_only":  true,
+    "payloads_copied":  0,
+    "curated_file_count":  54,
+    "curated_bytes":  1109794,
+    "payload_exclusion_count":  0,
+    "top_directories":  [
+                            "data",
+                            "ledger"
+                        ],
+    "key_documents":  [
+                          "data\\unipotent_orbits.json"
+                      ]
+}

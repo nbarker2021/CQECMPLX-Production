@@ -1,0 +1,4 @@
+Build the sidecar kernel as a deployable file-fed tool. It should accept the
+current token string from any AI, produce richer continuation context, and keep
+a receipt showing which CQE and CMPLX methods were used.
+

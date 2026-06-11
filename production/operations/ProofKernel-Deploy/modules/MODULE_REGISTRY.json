@@ -1,0 +1,93 @@
+{
+  "modules": [
+    {
+      "capabilities": [
+        "stdin",
+        "file",
+        "request-json",
+        "training-mode"
+      ],
+      "entrypoint": "boot.py",
+      "kind": "runtime",
+      "module_id": "sidecar-runtime",
+      "status": "preinstalled",
+      "title": "Sidecar Runtime"
+    },
+    {
+      "capabilities": [
+        "local-http",
+        "process-token",
+        "inspect-modules",
+        "inspect-events"
+      ],
+      "entrypoint": "python boot.py --serve",
+      "kind": "frontend",
+      "module_id": "operator-web",
+      "status": "preinstalled",
+      "title": "Operator Web Console"
+    },
+    {
+      "capabilities": [
+        "sqlite",
+        "event-log",
+        "module-state"
+      ],
+      "entrypoint": "cmplx_kernel.state_store.KernelStateStore",
+      "kind": "database",
+      "module_id": "kernel-state-store",
+      "status": "preinstalled",
+      "title": "Kernel State Store"
+    },
+    {
+      "capabilities": [
+        "lib-kernel",
+        "lattice-kernel",
+        "reforge-kernel"
+      ],
+      "entrypoint": "../kernel_ring/KERNEL_RING_MANIFEST.json",
+      "kind": "companion-kernel",
+      "module_id": "kernel-ring-loader",
+      "status": "preinstalled",
+      "title": "Kernel Ring Loader"
+    },
+    {
+      "capabilities": [
+        "docker-status",
+        "compose-inventory",
+        "compose-ps",
+        "gated-compose-up",
+        "gated-compose-down"
+      ],
+      "entrypoint": "cmplx_kernel.docker_adapter.DockerToolAdapter",
+      "kind": "external-tool-adapter",
+      "module_id": "docker-tool-root",
+      "status": "preinstalled-readonly",
+      "title": "Docker Tool Root"
+    },
+    {
+      "capabilities": [
+        "proof-index",
+        "repo-form-index",
+        "package-manifest"
+      ],
+      "entrypoint": "cmplx_kernel.kernel_explorer.KernelExplorer",
+      "kind": "read-only-browser",
+      "module_id": "kernel-explorer",
+      "status": "preinstalled",
+      "title": "Kernel Explorer"
+    },
+    {
+      "capabilities": [
+        "bearer-token-auth",
+        "cors-policy",
+        "request-size-limit",
+        "rate-limit"
+      ],
+      "entrypoint": "cmplx_kernel.operator_security.OperatorSecurity",
+      "kind": "operator-guardrail",
+      "module_id": "operator-security",
+      "status": "preinstalled",
+      "title": "Operator Security"
+    }
+  ]
+}

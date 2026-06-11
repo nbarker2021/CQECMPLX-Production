@@ -1,0 +1,18 @@
+﻿{
+    "id":  "g_CMPLX_core_src_cmplx_mcp_the-library",
+    "kernel":  "lib_kernel",
+    "role":  "mcp library interface",
+    "source_path":  "D:\\g\\CMPLX\\core\\src\\cmplx\\mcp\\the-library",
+    "exists":  true,
+    "form_only":  true,
+    "payloads_copied":  0,
+    "curated_file_count":  1,
+    "curated_bytes":  36099,
+    "payload_exclusion_count":  0,
+    "top_directories":  [
+
+                        ],
+    "key_documents":  [
+
+                      ]
+}

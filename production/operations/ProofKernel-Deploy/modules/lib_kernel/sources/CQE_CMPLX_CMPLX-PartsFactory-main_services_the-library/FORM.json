@@ -1,0 +1,18 @@
+﻿{
+    "id":  "CQE_CMPLX_CMPLX-PartsFactory-main_services_the-library",
+    "kernel":  "lib_kernel",
+    "role":  "parts factory library service",
+    "source_path":  "D:\\CQE_CMPLX\\CMPLX-PartsFactory-main\\services\\the-library",
+    "exists":  true,
+    "form_only":  true,
+    "payloads_copied":  0,
+    "curated_file_count":  3,
+    "curated_bytes":  32432,
+    "payload_exclusion_count":  0,
+    "top_directories":  [
+
+                        ],
+    "key_documents":  [
+
+                      ]
+}

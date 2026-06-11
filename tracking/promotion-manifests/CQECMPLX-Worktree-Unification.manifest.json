@@ -1,0 +1,27 @@
+{
+  "id": "CQECMPLX-Worktree-Unification",
+  "status": "promoted",
+  "source_binding": "tracking/source-bindings/CQECMPLX-Worktree-Unification.json",
+  "destination_routes": [
+    "production/lib-forge/engines",
+    "production/lib-forge/recovered",
+    "production/products/PaneForge-Stick",
+    "production/operations/ProofKernel-Deploy",
+    "tracking/worktree-unification"
+  ],
+  "allowed_source_patterns": [
+    "D:\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\{ChromaForge,GraphStax,PixelForge,FridgeForge,LinkForge}\\**",
+    "D:\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\{summary_papers,papers_output,MASTER_PDF,forgefactory_analog_workbench}\\**",
+    "D:\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\{build_*,part*,run_bilateral*,generate_papers,dna_construction_kit}.py",
+    "D:\\PaneForge\\dist\\PaneForge-Stick\\**",
+    "D:\\CQE_CMPLX\\CQECMPLX-ProofValidatedSuite\\kernel\\**"
+  ],
+  "gates": {
+    "identity": "pass \u2014 every file traced to its stray origin + canonical destination",
+    "manifest_or_index": "pass \u2014 this manifest + reconcile_report.json",
+    "portability_review": "pass \u2014 engines/product are stdlib-only; PDFs are artifacts",
+    "cqe_receipt_or_proof_anchor": "pass \u2014 engine ring enforces the Event Law (receipt chain); 83/83 tests",
+    "adapter_boundary_if_external": "pass \u2014 LinkForge is the external boundary; BBA is the adapter",
+    "no_local_runtime_artifacts": "pass \u2014 data/, __pycache__, .pytest_cache excluded"
+  }
+}

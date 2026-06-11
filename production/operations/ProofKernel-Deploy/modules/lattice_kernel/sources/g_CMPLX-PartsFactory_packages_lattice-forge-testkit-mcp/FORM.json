@@ -1,0 +1,19 @@
+﻿{
+    "id":  "g_CMPLX-PartsFactory_packages_lattice-forge-testkit-mcp",
+    "kernel":  "lattice_kernel",
+    "role":  "git lattice testkit mcp",
+    "source_path":  "D:\\g\\CMPLX-PartsFactory\\packages\\lattice-forge-testkit-mcp",
+    "exists":  true,
+    "form_only":  true,
+    "payloads_copied":  0,
+    "curated_file_count":  5,
+    "curated_bytes":  7284,
+    "payload_exclusion_count":  0,
+    "top_directories":  [
+                            "src"
+                        ],
+    "key_documents":  [
+                          "pyproject.toml",
+                          "README.md"
+                      ]
+}

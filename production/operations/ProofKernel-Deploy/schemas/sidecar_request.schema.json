@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CMPLX Sidecar Request",
+  "type": "object",
+  "required": ["token_string"],
+  "properties": {
+    "token_string": {"type": "string"},
+    "task": {"type": "string"},
+    "host": {"type": "string"},
+    "metadata": {"type": "object"},
+    "kernel_options": {
+      "type": "object",
+      "properties": {
+        "training_mode": {"type": "boolean"},
+        "require_guess_mode": {"type": "boolean"}
+      }
+    }
+  }
+}

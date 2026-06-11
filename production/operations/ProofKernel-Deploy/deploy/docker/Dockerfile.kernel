@@ -1,0 +1,17 @@
+FROM docker:29-cli
+
+RUN apk add --no-cache python3 py3-pip
+
+WORKDIR /opt/cmplx-kernel
+
+COPY . /opt/cmplx-kernel
+
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
+ENV CMPLX_OPERATOR_MAX_BODY_BYTES=1048576
+ENV CMPLX_OPERATOR_RATE_LIMIT_PER_MINUTE=120
+ENV CMPLX_DOCKER_ROOT=/workspace/docker-tools
+
+EXPOSE 8765
+
+CMD ["python3", "-B", "boot.py", "--serve", "--serve-host", "0.0.0.0", "--serve-port", "8765"]

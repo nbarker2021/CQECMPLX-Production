@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#000000">
+<title>FridgeForge</title>
+<style>
+  :root{--bg:#000;--fg:#e8eaed;--mut:#8aa0b4;--card:#0d1116;--line:#1d242c;
+    --acc:#1c4e7a;--acc2:#2d6da6;--ok:#36c275;--warn:#ff8a3d;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{background:var(--bg);color:var(--fg);font-family:"Segoe UI",system-ui,Arial,sans-serif;
+    padding:16px; max-width:880px; margin:0 auto;}
+  h1{font-size:20px;font-weight:600;display:flex;align-items:center;gap:10px;}
+  h1 a{color:var(--mut);font-size:13px;text-decoration:none;}
+  h2{font-size:12px;color:var(--mut);text-transform:uppercase;letter-spacing:1px;margin:18px 0 8px;}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px;margin:10px 0;}
+  .row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:6px 0;}
+  input[type=text]{flex:1;min-width:160px;background:#131a22;color:var(--fg);
+    border:1px solid #263241;border-radius:6px;padding:8px 10px;font-size:14px;}
+  button{padding:8px 14px;background:#131a22;color:#cfd8e3;border:1px solid #263241;
+    border-radius:6px;cursor:pointer;font-size:13px;}
+  button.on,button.primary{background:var(--acc);border-color:var(--acc2);color:#fff;}
+  .chips{display:flex;flex-wrap:wrap;gap:6px;}
+  .chip{background:#13202c;border:1px solid #24384a;border-radius:14px;
+    padding:4px 10px;font-size:12.5px;cursor:pointer;user-select:none;}
+  .chip.inv{background:#15301f;border-color:#27593a;}
+  .chip.dis{background:#3a1620;border-color:#5c2433;}
+  .chip.like{background:#162a3a;border-color:#2d5573;}
+  .chip .x{color:var(--mut);margin-left:5px;}
+  .idea{border-top:1px solid var(--line);padding:8px 2px;}
+  .idea .nm{font-size:14.5px;}
+  .idea .nm .now{color:var(--ok);font-size:11px;margin-left:8px;}
+  .idea .meta{font-size:11.5px;color:var(--mut);margin-top:2px;}
+  .idea .meta .miss{color:var(--warn);}
+  .law{font-size:11px;color:#7d8b99;margin-top:14px;border-top:1px solid var(--line);padding-top:8px;}
+  .toast{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);
+    background:#101820ee;border:1px solid #2a3a4a;color:#dfe9f2;font-size:13px;
+    padding:9px 14px;border-radius:8px;opacity:0;transition:opacity .25s;z-index:9;}
+  .toast.show{opacity:1;}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+  @media(max-width:640px){.grid2{grid-template-columns:1fr;}}
+  ul.sl{list-style:none;} ul.sl li{padding:3px 0;font-size:13.5px;}
+  ul.sl .cat{color:var(--mut);text-transform:uppercase;font-size:11px;margin-top:8px;}
+  .note{font-size:11.5px;color:var(--mut);}
+</style>
+</head>
+<body>
+  <h1>FridgeForge <a href="./index.html">&larr; calendar</a></h1>
+
+  <div class="card">
+    <h2>1 &mdash; Scan fridge / cabinet</h2>
+    <div class="row">
+      <input type="file" id="photo" accept="image/*" title="Fridge photo">
+      <input type="text" id="caption" placeholder="...or type what you see: milk, eggs, tortillas">
+      <button type="button" class="primary" id="scanBtn">Scan</button>
+    </div>
+    <div class="note" id="scanNote">Photo is hashed + receipted; matching uses the
+      caption/filename lexicon on-stick (vision adapter slot ships empty and says so).</div>
+    <div class="row"><div class="chips" id="quickPick"></div></div>
+  </div>
+
+  <div class="card">
+    <h2>2 &mdash; Inventory <span class="note" id="invCount"></span></h2>
+    <div class="row">
+      <input type="text" id="addItem" placeholder="add item (e.g. greek yogurt)">
+      <button type="button" id="addBtn">Add</button>
+    </div>
+    <div class="chips" id="invChips"></div>
+  </div>
+
+  <div class="grid2">
+    <div class="card">
+      <h2>3 &mdash; Meal ideas</h2>
+      <div class="row" id="laneSeg">
+        <button type="button" data-lane="adult" class="on">Adult</button>
+        <button type="button" data-lane="kid">Kid</button>
+      </div>
+      <div id="kidBox" style="display:none">
+        <div class="row"><input type="text" id="kidLikes" placeholder="kid LIKES (comma list)"></div>
+        <div class="row"><input type="text" id="kidDislikes" placeholder="kid DISLIKES — hard excludes"></div>
+        <div class="row"><button type="button" id="saveKid">Save kid profile</button></div>
+        <div class="chips" id="kidChips"></div>
+      </div>
+      <div class="row" id="mealSeg">
+        <button type="button" data-meal="breakfast">Breakfast</button>
+        <button type="button" data-meal="lunch">Lunch</button>
+        <button type="button" data-meal="dinner" class="on">Dinner</button>
+        <button type="button" data-meal="snack">Snack</button>
+      </div>
+      <div class="row"><div class="chips" id="tagChips"></div></div>
+      <div class="row"><button type="button" class="primary" id="ideasBtn">Suggest</button></div>
+      <div id="ideas"></div>
+    </div>
+
+    <div class="card">
+      <h2>4 &mdash; Shopping list</h2>
+      <div class="note">Template = staples you're missing + ingredients for picked meals.</div>
+      <div class="row"><button type="button" class="primary" id="listBtn">Build list</button></div>
+      <ul class="sl" id="shopList"></ul>
+    </div>
+  </div>
+
+  <div class="law" id="lawBox">Every scan, item, profile change, suggestion and list is
+    computed through the kernel's Event Law and receipted. <span id="lawStats"></span></div>
+  <div class="toast" id="toast"></div>
+
+<script>
+const API = location.origin;
+const $ = id => document.getElementById(id);
+let LANE = "adult", MEAL = "dinner", TAGS = new Set(), PICKED = new Set();
+let STATE = null;
+
+function toast(m){const t=$("toast");t.textContent=m;t.classList.add("show");
+  clearTimeout(t._h);t._h=setTimeout(()=>t.classList.remove("show"),2400);}
+
+async function ev(kind, payload){
+  const r = await fetch(API+"/api/event",{method:"POST",
+    headers:{"Content-Type":"application/json"},
+    body:JSON.stringify({kind,payload})});
+  const d = await r.json();
+  if(d.ok){ STATE=d.state;
+    const law=d.law||{};
+    toast(law.reused?`reused: ${kind}`:`receipted: ${kind} ${(law.receipt_hash||"").slice(0,8)}`);
+    render(); }
+  else toast("rejected: "+(d.error||kind));
+  return d;
+}
+async function load(){
+  const d = await (await fetch(API+"/api/state")).json();
+  STATE = d.state;
+  $("lawStats").textContent = `kernel receipts: ${d.kernel.receipts} | crystals: ${d.kernel.crystals}`;
+  render();
+}
+
+const QUICK = ["milk","eggs","cheese","butter","bread","apples","bananas","lettuce",
+  "tomatoes","carrots","chicken","ground_beef","deli_meat","pasta","rice","tortillas",
+  "cereal","yogurt","peanut_butter","jelly","pasta_sauce","juice","chips","nuggets",
+  "frozen_pizza","frozen_veg","beans","oats","crackers","ranch"];
+const TAGLIST = ["quick","no-cook","healthy","fun","hot","hearty","veggie","family","classic"];
+
+function render(){
+  const inv = (STATE.fridge && STATE.fridge.inventory) || {};
+  const keys = Object.keys(inv).sort();
+  $("invCount").textContent = `(${keys.length})`;
+  $("invChips").innerHTML = keys.map(k=>
+    `<span class="chip inv" data-k="${k}">${k.replace(/_/g," ")}<span class="x">&times;</span></span>`).join("")
+    || '<span class="note">empty — scan or add items</span>';
+  $("invChips").querySelectorAll(".chip").forEach(c=>
+    c.onclick=()=>ev("fridge.item.remove",{key:c.dataset.k}));
+
+  $("quickPick").innerHTML = QUICK.map(k=>
+    `<span class="chip${inv[k]?" inv":""}" data-k="${k}">${k.replace(/_/g," ")}</span>`).join("");
+  $("quickPick").querySelectorAll(".chip").forEach(c=>
+    c.onclick=()=>ev("fridge.item.add",{name:c.dataset.k}));
+
+  $("tagChips").innerHTML = TAGLIST.map(t=>
+    `<span class="chip${TAGS.has(t)?" like":""}" data-t="${t}">${t}</span>`).join("");
+  $("tagChips").querySelectorAll(".chip").forEach(c=>
+    c.onclick=()=>{TAGS.has(c.dataset.t)?TAGS.delete(c.dataset.t):TAGS.add(c.dataset.t);render();});
+
+  const prof = (STATE.fridge && STATE.fridge.profiles && STATE.fridge.profiles.kid) || {};
+  $("kidChips").innerHTML =
+    (prof.likes||[]).map(k=>`<span class="chip like">+ ${k.replace(/_/g," ")}</span>`).join("")+
+    (prof.dislikes||[]).map(k=>`<span class="chip dis">&minus; ${k.replace(/_/g," ")}</span>`).join("");
+
+  const ideas = STATE.fridge && STATE.fridge.last_ideas;
+  if(ideas && ideas.ideas){
+    $("ideas").innerHTML = ideas.ideas.map(i=>`
+      <div class="idea">
+        <div class="nm"><label><input type="checkbox" data-n="${i.name}" ${PICKED.has(i.name)?"checked":""}>
+          ${i.name}</label>${i.makeable_now?'<span class="now">MAKEABLE NOW</span>':""}</div>
+        <div class="meta">have: ${i.have.join(", ")||"—"}
+          ${i.missing.length?` | <span class="miss">need: ${i.missing.join(", ")}</span>`:""}
+          | ${i.tags.join(" · ")}</div>
+      </div>`).join("") ||
+      `<div class="note">no ${ideas.lane} ideas for ${ideas.meal} — `+
+      `${ideas.hard_excludes.length?"hard excludes: "+ideas.hard_excludes.join(", "):"add inventory"}</div>`;
+    $("ideas").querySelectorAll("input").forEach(cb=>
+      cb.onchange=()=>{cb.checked?PICKED.add(cb.dataset.n):PICKED.delete(cb.dataset.n);});
+  }
+
+  const sl = STATE.fridge && STATE.fridge.shopping_list;
+  if(sl && sl.groups){
+    let h="";
+    for(const [cat,items] of Object.entries(sl.groups)){
+      h += `<li class="cat">${cat}</li>`;
+      h += items.map(i=>`<li>&#9744; ${i.label} <span class="note">(${i.reason})</span></li>`).join("");
+    }
+    $("shopList").innerHTML = h || "<li class='note'>nothing needed</li>";
+  }
+  const scan = STATE.fridge && STATE.fridge.last_scan;
+  if(scan) $("scanNote").textContent =
+    `${scan.note} | last scan ${scan.image_hash||"(no image)"}: matched ` +
+    (scan.matched.map(m=>`${m.key}(${m.via})`).join(", ")||"nothing — use quick-pick below");
+}
+
+$("scanBtn").onclick = async ()=>{
+  const f = $("photo").files[0];
+  let image_b64 = "", filename = "";
+  if(f){ filename = f.name;
+    image_b64 = await new Promise(res=>{const r=new FileReader();
+      r.onload=()=>res(r.result.split(",")[1]); r.readAsDataURL(f);}); }
+  await ev("fridge.scan",{image_b64, filename, caption:$("caption").value});
+};
+$("addBtn").onclick = ()=>{ const v=$("addItem").value.trim();
+  if(v){ ev("fridge.item.add",{name:v}); $("addItem").value=""; } };
+$("laneSeg").querySelectorAll("button").forEach(b=> b.onclick=()=>{
+  LANE=b.dataset.lane;
+  $("laneSeg").querySelectorAll("button").forEach(x=>x.classList.toggle("on",x===b));
+  $("kidBox").style.display = LANE==="kid"?"":"none";
+});
+$("mealSeg").querySelectorAll("button").forEach(b=> b.onclick=()=>{
+  MEAL=b.dataset.meal;
+  $("mealSeg").querySelectorAll("button").forEach(x=>x.classList.toggle("on",x===b));
+});
+$("saveKid").onclick = ()=> ev("fridge.profile.set",{lane:"kid",
+  likes:$("kidLikes").value.split(",").map(s=>s.trim()).filter(Boolean),
+  dislikes:$("kidDislikes").value.split(",").map(s=>s.trim()).filter(Boolean),
+  tags:[...TAGS]});
+$("ideasBtn").onclick = ()=> ev("fridge.suggest",{meal:MEAL,lane:LANE,tags:[...TAGS]});
+$("listBtn").onclick = ()=> ev("fridge.list",{recipes:[...PICKED]});
+
+load();
+</script>
+</body>
+</html>

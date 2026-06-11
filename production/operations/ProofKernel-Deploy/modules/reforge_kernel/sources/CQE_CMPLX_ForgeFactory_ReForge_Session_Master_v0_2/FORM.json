@@ -1,0 +1,21 @@
+﻿{
+    "id":  "CQE_CMPLX_ForgeFactory_ReForge_Session_Master_v0_2",
+    "kernel":  "reforge_kernel",
+    "role":  "ReForge session/package master",
+    "source_path":  "D:\\CQE_CMPLX\\ForgeFactory_ReForge_Session_Master_v0_2",
+    "exists":  true,
+    "form_only":  true,
+    "payloads_copied":  0,
+    "curated_file_count":  6,
+    "curated_bytes":  382976,
+    "payload_exclusion_count":  57,
+    "top_directories":  [
+                            "ForgeFactory_ReForge_Session_Master_v0_2"
+                        ],
+    "key_documents":  [
+                          "ForgeFactory_ReForge_Session_Master_v0_2\\00_state_and_manifest\\CURRENT_STATE_v0_2.md",
+                          "ForgeFactory_ReForge_Session_Master_v0_2\\00_state_and_manifest\\MASTER_MANIFEST.json",
+                          "ForgeFactory_ReForge_Session_Master_v0_2\\00_state_and_manifest\\SUMMARY.json",
+                          "ForgeFactory_ReForge_Session_Master_v0_2\\01_papers\\PAPERS_00_30_COMBINED_BEST_FORM_v0_1.md"
+                      ]
+}

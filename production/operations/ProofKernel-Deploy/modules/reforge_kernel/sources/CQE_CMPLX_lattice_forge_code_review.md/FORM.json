@@ -1,0 +1,18 @@
+﻿{
+    "id":  "CQE_CMPLX_lattice_forge_code_review.md",
+    "kernel":  "reforge_kernel",
+    "role":  "lattice forge review note",
+    "source_path":  "D:\\CQE_CMPLX\\lattice_forge_code_review.md",
+    "exists":  true,
+    "form_only":  true,
+    "payloads_copied":  0,
+    "curated_file_count":  1,
+    "curated_bytes":  36621,
+    "payload_exclusion_count":  0,
+    "top_directories":  [
+
+                        ],
+    "key_documents":  [
+                          "lattice_forge_code_review.md"
+                      ]
+}

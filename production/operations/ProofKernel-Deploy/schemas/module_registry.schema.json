@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CMPLX Module Registry",
+  "type": "object",
+  "required": ["modules"],
+  "properties": {
+    "modules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["module_id", "title", "kind", "status", "entrypoint", "capabilities"],
+        "properties": {
+          "module_id": {"type": "string"},
+          "title": {"type": "string"},
+          "kind": {"type": "string"},
+          "status": {"type": "string"},
+          "entrypoint": {"type": "string"},
+          "capabilities": {
+            "type": "array",
+            "items": {"type": "string"}
+          }
+        }
+      }
+    }
+  }
+}

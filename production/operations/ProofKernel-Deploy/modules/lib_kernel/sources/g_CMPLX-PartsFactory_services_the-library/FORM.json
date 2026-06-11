@@ -1,0 +1,18 @@
+﻿{
+    "id":  "g_CMPLX-PartsFactory_services_the-library",
+    "kernel":  "lib_kernel",
+    "role":  "git hosted library service",
+    "source_path":  "D:\\g\\CMPLX-PartsFactory\\services\\the-library",
+    "exists":  true,
+    "form_only":  true,
+    "payloads_copied":  0,
+    "curated_file_count":  3,
+    "curated_bytes":  33226,
+    "payload_exclusion_count":  0,
+    "top_directories":  [
+
+                        ],
+    "key_documents":  [
+
+                      ]
+}

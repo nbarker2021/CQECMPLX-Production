@@ -1,0 +1,43 @@
+﻿{
+    "id":  "CQE_CMPLX_ForgeFamilyBlueprint",
+    "kernel":  "reforge_kernel",
+    "role":  "Forge family blueprint",
+    "source_path":  "D:\\CQE_CMPLX\\ForgeFamilyBlueprint",
+    "exists":  true,
+    "form_only":  true,
+    "payloads_copied":  0,
+    "curated_file_count":  18,
+    "curated_bytes":  24708,
+    "payload_exclusion_count":  0,
+    "top_directories":  [
+                            "00_template_structure",
+                            "01_contracts",
+                            "02_schemas",
+                            "03_adapter_contracts",
+                            "04_staging",
+                            "05_examples",
+                            "07_cqe_layer",
+                            "08_universal_adapters",
+                            "09_named_math_engines",
+                            "lib"
+                        ],
+    "key_documents":  [
+                          "README.md",
+                          "00_template_structure\\README.md",
+                          "01_contracts\\FORGE_FAMILY_CONTRACT.md",
+                          "02_schemas\\diagnostic_receipt.schema.json",
+                          "02_schemas\\hidden_guess_result.schema.json",
+                          "02_schemas\\umbrella_manifest.schema.json",
+                          "03_adapter_contracts\\ADAPTER_CONTRACT.md",
+                          "04_staging\\STAGING_CHECKLIST.md",
+                          "05_examples\\example_diagnostic_receipt.json",
+                          "05_examples\\example_hidden_guess_result.json",
+                          "07_cqe_layer\\CQE_BRIDGE.md",
+                          "07_cqe_layer\\DATUM_DECISION_RULES.md",
+                          "07_cqe_layer\\ENGINE_MATH_PRODUCT_MAP.md",
+                          "08_universal_adapters\\BINARY_BOUNDARY_ADAPTER.md",
+                          "08_universal_adapters\\HANDSHAKE_NETWORKING_RULES.md",
+                          "08_universal_adapters\\UNIVERSAL_ADAPTER_PROGRAMS.md",
+                          "09_named_math_engines\\NAMED_MATH_ENGINE_RULES.md"
+                      ]
+}

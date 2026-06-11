@@ -1,0 +1,85 @@
+version: '3.8'
+
+services:
+  metaforge-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: metaforge-api
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./data:/app/data
+      - ./viz_output:/app/viz_output
+      - ./viz_cache:/app/viz_cache
+      - ./logs:/app/logs
+    environment:
+      - PYTHONUNBUFFERED=1
+      - METAFORGE_CONFIG=/app/config.yaml
+      - PYTHONPATH=/app
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8501/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 4G
+        reservations:
+          cpus: '1'
+          memory: 2G
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  metaforge-cli:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: metaforge-cli
+    entrypoint: ["/opt/venv/bin/python", "meta_material_designer.py"]
+    volumes:
+      - ./data:/app/data
+      - ./viz_output:/app/viz_output
+      - ./viz_cache:/app/viz_cache
+      - ./logs:/app/logs
+    environment:
+      - PYTHONUNBUFFERED=1
+      - METAFORGE_CONFIG=/app/config.yaml
+    profiles: ["cli"]
+    working_dir: /app
+
+  # Optional: Jupyter for interactive development
+  jupyter:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: metaforge-jupyter
+    command: ["/opt/venv/bin/jupyter", "lab", "--ip=0.0.0.0", "--port=8888", "--no-browser", "--allow-root", "--NotebookApp.token=''"]
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./:/app
+      - ./data:/app/data
+      - ./viz_output:/app/viz_output
+    environment:
+      - PYTHONUNBUFFERED=1
+      - JUPYTER_ENABLE_LAB=yes
+    profiles: ["dev"]
+
+networks:
+  default:
+    name: metaforge-network
+    driver: bridge
+
+volumes:
+  metaforge_data:
+    driver: local
+  metaforge_cache:
+    driver: local

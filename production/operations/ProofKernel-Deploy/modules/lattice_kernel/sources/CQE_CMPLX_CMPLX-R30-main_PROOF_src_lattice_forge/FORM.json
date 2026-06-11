@@ -1,0 +1,19 @@
+﻿{
+    "id":  "CQE_CMPLX_CMPLX-R30-main_PROOF_src_lattice_forge",
+    "kernel":  "lattice_kernel",
+    "role":  "R30 proof lattice forge source",
+    "source_path":  "D:\\CQE_CMPLX\\CMPLX-R30-main\\PROOF\\src\\lattice_forge",
+    "exists":  true,
+    "form_only":  true,
+    "payloads_copied":  0,
+    "curated_file_count":  54,
+    "curated_bytes":  1082464,
+    "payload_exclusion_count":  0,
+    "top_directories":  [
+                            "data",
+                            "ledger"
+                        ],
+    "key_documents":  [
+                          "data\\unipotent_orbits.json"
+                      ]
+}

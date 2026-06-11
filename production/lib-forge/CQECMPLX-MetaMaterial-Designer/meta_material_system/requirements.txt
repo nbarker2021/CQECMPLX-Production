@@ -1,0 +1,32 @@
+# Pinned dependencies for MetaForge-AI Metamaterial Design System
+# Generated with: pip freeze > requirements.txt
+# Python 3.11+
+
+# Core scientific stack
+numpy==1.26.4
+pandas==2.2.1
+scipy==1.13.0
+plotly==5.21.0
+
+# Web framework
+streamlit==1.37.1
+
+# Utilities
+pyyaml==6.0.1
+pydantic==2.7.1
+python-dotenv==1.0.1
+tqdm==4.66.4
+colorlog==6.8.2
+
+# Testing
+pytest==8.2.1
+pytest-cov==5.0.0
+pytest-mock==3.14.0
+
+# Type checking
+mypy==1.10.0
+types-PyYAML==6.0.12.12
+
+# Packaging
+wheel==0.43.0
+setuptools==69.5.1

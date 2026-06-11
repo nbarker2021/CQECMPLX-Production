@@ -1,0 +1,202 @@
+﻿{
+    "kernel":  "lib_kernel",
+    "title":  "Lib Kernel",
+    "purpose":  "Above-kernel library memory: rules, reusable methods, proofs, and forge-library surfaces that should be pulled by identity instead of routed internally.",
+    "generated_at":  "2026-06-08T10:36:43.1969871-07:00",
+    "form_only":  true,
+    "sources":  [
+                    {
+                        "id":  "CQECMPLX-Production_lib-forge",
+                        "kernel":  "lib_kernel",
+                        "role":  "production lib-forge surface",
+                        "source_path":  "D:\\CQECMPLX-Production\\lib-forge",
+                        "exists":  true,
+                        "form_only":  true,
+                        "payloads_copied":  0,
+                        "curated_file_count":  66,
+                        "curated_bytes":  141806,
+                        "payload_exclusion_count":  0,
+                        "top_directories":  [
+                                                "cqe-paper-00__axiom_00_1",
+                                                "cqe-paper-00__axiom_00_2",
+                                                "cqe-paper-00__axiom_00_3",
+                                                "cqe-paper-00__axiom_00_4",
+                                                "cqe-paper-00__lemma_00_1",
+                                                "cqe-paper-00__lemma_00_2",
+                                                "cqe-paper-00__lemma_00_3",
+                                                "cqe_engine",
+                                                "cqe_shared_memory",
+                                                "CQE_spawner",
+                                                "CQE_spawner_patent",
+                                                "MandleForge",
+                                                "ManiForge"
+                                            ],
+                        "key_documents":  [
+                                              "cqe-paper-00__axiom_00_1\\claim.json",
+                                              "cqe-paper-00__axiom_00_1\\FORMAL.md",
+                                              "cqe-paper-00__axiom_00_1\\INTENT.md",
+                                              "cqe-paper-00__axiom_00_1\\WORKBOOK.md",
+                                              "cqe-paper-00__axiom_00_2\\claim.json",
+                                              "cqe-paper-00__axiom_00_2\\FORMAL.md",
+                                              "cqe-paper-00__axiom_00_2\\INTENT.md",
+                                              "cqe-paper-00__axiom_00_2\\WORKBOOK.md",
+                                              "cqe-paper-00__axiom_00_3\\claim.json",
+                                              "cqe-paper-00__axiom_00_3\\FORMAL.md",
+                                              "cqe-paper-00__axiom_00_3\\INTENT.md",
+                                              "cqe-paper-00__axiom_00_3\\WORKBOOK.md",
+                                              "cqe-paper-00__axiom_00_4\\claim.json",
+                                              "cqe-paper-00__axiom_00_4\\FORMAL.md",
+                                              "cqe-paper-00__axiom_00_4\\INTENT.md",
+                                              "cqe-paper-00__axiom_00_4\\WORKBOOK.md",
+                                              "cqe-paper-00__lemma_00_1\\claim.json",
+                                              "cqe-paper-00__lemma_00_1\\FORMAL.md",
+                                              "cqe-paper-00__lemma_00_1\\INTENT.md",
+                                              "cqe-paper-00__lemma_00_1\\WORKBOOK.md",
+                                              "cqe-paper-00__lemma_00_2\\claim.json",
+                                              "cqe-paper-00__lemma_00_2\\FORMAL.md",
+                                              "cqe-paper-00__lemma_00_2\\INTENT.md",
+                                              "cqe-paper-00__lemma_00_2\\WORKBOOK.md",
+                                              "cqe-paper-00__lemma_00_3\\claim.json",
+                                              "cqe-paper-00__lemma_00_3\\FORMAL.md",
+                                              "cqe-paper-00__lemma_00_3\\INTENT.md",
+                                              "cqe-paper-00__lemma_00_3\\WORKBOOK.md"
+                                          ]
+                    },
+                    {
+                        "id":  "CQE_CMPLX_CMPLX-PartsFactory-main_services_the-library",
+                        "kernel":  "lib_kernel",
+                        "role":  "parts factory library service",
+                        "source_path":  "D:\\CQE_CMPLX\\CMPLX-PartsFactory-main\\services\\the-library",
+                        "exists":  true,
+                        "form_only":  true,
+                        "payloads_copied":  0,
+                        "curated_file_count":  3,
+                        "curated_bytes":  32432,
+                        "payload_exclusion_count":  0,
+                        "top_directories":  [
+
+                                            ],
+                        "key_documents":  [
+
+                                          ]
+                    },
+                    {
+                        "id":  "CQE_CMPLX_CMPLX-PartsFactory-main_data_rule_libs",
+                        "kernel":  "lib_kernel",
+                        "role":  "rule library corpus",
+                        "source_path":  "D:\\CQE_CMPLX\\CMPLX-PartsFactory-main\\data\\rule_libs",
+                        "exists":  true,
+                        "form_only":  true,
+                        "payloads_copied":  0,
+                        "curated_file_count":  8,
+                        "curated_bytes":  2373,
+                        "payload_exclusion_count":  0,
+                        "top_directories":  [
+                                                "language",
+                                                "native",
+                                                "notation",
+                                                "shell",
+                                                "token"
+                                            ],
+                        "key_documents":  [
+
+                                          ]
+                    },
+                    {
+                        "id":  "g_CMPLX-PartsFactory_services_the-library",
+                        "kernel":  "lib_kernel",
+                        "role":  "git hosted library service",
+                        "source_path":  "D:\\g\\CMPLX-PartsFactory\\services\\the-library",
+                        "exists":  true,
+                        "form_only":  true,
+                        "payloads_copied":  0,
+                        "curated_file_count":  3,
+                        "curated_bytes":  33226,
+                        "payload_exclusion_count":  0,
+                        "top_directories":  [
+
+                                            ],
+                        "key_documents":  [
+
+                                          ]
+                    },
+                    {
+                        "id":  "g_CMPLX-PartsFactory_data_rule_libs",
+                        "kernel":  "lib_kernel",
+                        "role":  "git hosted rule libs",
+                        "source_path":  "D:\\g\\CMPLX-PartsFactory\\data\\rule_libs",
+                        "exists":  true,
+                        "form_only":  true,
+                        "payloads_copied":  0,
+                        "curated_file_count":  8,
+                        "curated_bytes":  2576,
+                        "payload_exclusion_count":  0,
+                        "top_directories":  [
+                                                "language",
+                                                "native",
+                                                "notation",
+                                                "shell",
+                                                "token"
+                                            ],
+                        "key_documents":  [
+
+                                          ]
+                    },
+                    {
+                        "id":  "g_CMPLXUNI_the-library",
+                        "kernel":  "lib_kernel",
+                        "role":  "university library surface",
+                        "source_path":  "D:\\g\\CMPLXUNI\\the-library",
+                        "exists":  true,
+                        "form_only":  true,
+                        "payloads_copied":  0,
+                        "curated_file_count":  6,
+                        "curated_bytes":  58992,
+                        "payload_exclusion_count":  0,
+                        "top_directories":  [
+                                                "src"
+                                            ],
+                        "key_documents":  [
+                                              "README.md",
+                                              "SWARM_AGENT_ASSIGNMENTS.md"
+                                          ]
+                    },
+                    {
+                        "id":  "g_CMPLX_core_the-library",
+                        "kernel":  "lib_kernel",
+                        "role":  "core library surface",
+                        "source_path":  "D:\\g\\CMPLX\\core\\the-library",
+                        "exists":  true,
+                        "form_only":  true,
+                        "payloads_copied":  0,
+                        "curated_file_count":  6,
+                        "curated_bytes":  59002,
+                        "payload_exclusion_count":  0,
+                        "top_directories":  [
+                                                "src"
+                                            ],
+                        "key_documents":  [
+                                              "README.md",
+                                              "SWARM_AGENT_ASSIGNMENTS.md"
+                                          ]
+                    },
+                    {
+                        "id":  "g_CMPLX_core_src_cmplx_mcp_the-library",
+                        "kernel":  "lib_kernel",
+                        "role":  "mcp library interface",
+                        "source_path":  "D:\\g\\CMPLX\\core\\src\\cmplx\\mcp\\the-library",
+                        "exists":  true,
+                        "form_only":  true,
+                        "payloads_copied":  0,
+                        "curated_file_count":  1,
+                        "curated_bytes":  36099,
+                        "payload_exclusion_count":  0,
+                        "top_directories":  [
+
+                                            ],
+                        "key_documents":  [
+
+                                          ]
+                    }
+                ]
+}

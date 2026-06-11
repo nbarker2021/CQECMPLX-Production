@@ -1,0 +1,21 @@
+﻿# g_CMPLX-R30_PROOF_src_lattice_forge
+
+Kernel: lattice_kernel
+Role: git R30 proof lattice forge source
+Source: D:\g\CMPLX-R30\PROOF\src\lattice_forge
+Exists: True
+
+This is a kernel-ring form. It records identity, routing, file shape, and excluded payloads without copying archive or database bodies into the kernel.
+
+## Counts
+
+- Curated files indexed: 54
+- Curated bytes represented: 1109794
+- Payload exclusions: 0
+
+## Kernel Contract
+
+- Identity flows through CQE into the main sidecar kernel.
+- Binary Boundary Adapter owns any package/archive body crossing.
+- Universal Adapter owns repo, API, and model handshakes.
+- Hidden Guess Result remains gated by kernel training mode unless explicitly requested by a local/full program run.

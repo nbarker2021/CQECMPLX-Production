@@ -1,0 +1,36 @@
+{
+  "id": "CQECMPLX-Worktree-Unification",
+  "route": [
+    "production/lib-forge",
+    "production/products/PaneForge-Stick",
+    "production/operations/ProofKernel-Deploy",
+    "tracking/worktree-unification"
+  ],
+  "trackable_status": "trackable-recovered-and-promoted",
+  "source_roots": [
+    "D:\\d\\CQE_CMPLX\\CQECMPLX-Production (WSL-mispathed agent worktree)",
+    "C:\\d\\CQE_CMPLX\\CQECMPLX-Production (WSL-mispathed agent worktree)",
+    "C:\\d\\CQECMPLX-Production (WSL-mispathed agent worktree)",
+    "C:\\d\\CQECMPLX-ProofValidatedSuite (WSL-mispathed agent worktree)",
+    "D:\\CQECMPLX-ProofValidatedSuite (root-level stray)",
+    "D:\\CQE_CMPLX\\d\\CQECMPLX-ProofValidatedSuite (WSL-mispathed agent worktree)",
+    "D:\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge (canonical, post-reconciliation)",
+    "D:\\PaneForge\\dist\\PaneForge-Stick (product build)",
+    "D:\\CQE_CMPLX\\CQECMPLX-ProofValidatedSuite\\kernel (canonical suite kernel)"
+  ],
+  "evidence": [
+    "Agent (hermes) scripts wrote output to WSL-converted relative paths, creating literal c/, d/ directory trees on both Windows drives.",
+    "Reconciliation pass: 32 files recovered into canonical roots, 60 confirmed already merged, 14 stray variants superseded by canonical (kept as evidence in tracking/worktree-unification/reconcile_report.json).",
+    "Recovered artifacts include: MASTER_PDF builds (4 master PDFs), forgefactory_analog_workbench (bilateral validator), summary papers I-X, papers_output regeneration set, dna_construction_kit, bilateral proof scripts, proof-kernel deployment kit.",
+    "lib-forge engines (ChromaForge, GraphStax, PixelForge, FridgeForge, LinkForge) are the ChromaBlend Studio engine ring, 83/83 tests passing in the PaneForge harness.",
+    "PaneForge-Stick is the self-contained product payload (stdlib-only kernel + PWA + slim lattice_forge BBA chain)."
+  ],
+  "promotion_rule": "Recovered strays reconcile into canonical roots FIRST (no-clobber, collisions logged), then promote from canonical. Stray trees may be deleted only after this slice lands on origin.",
+  "known_exclusions": [
+    "__pycache__",
+    "*.pyc",
+    "runtime data/ dirs",
+    ".pytest_cache",
+    "D:\\CQECMPLX-Production (empty husk, nothing to recover)"
+  ]
+}

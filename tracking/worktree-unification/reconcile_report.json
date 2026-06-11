@@ -1,0 +1,139 @@
+{
+ "recovered": [
+  "CQECMPLX-Production\\lib-forge\\part2.py",
+  "CQECMPLX-Production\\lib-forge\\part3.py",
+  "CQECMPLX-Production\\lib-forge\\part4.py",
+  "CQECMPLX-Production\\lib-forge\\run_bilateral.py",
+  "CQECMPLX-Production\\lib-forge\\run_bilateral_final.py",
+  "CQECMPLX-Production\\lib-forge\\MASTER_PDF\\MASTER_PDF_CQE_CMPLX_EXPANDED.pdf",
+  "CQECMPLX-Production\\lib-forge\\build_final_papers.py",
+  "CQECMPLX-Production\\lib-forge\\dna_construction_kit.py",
+  "CQECMPLX-Production\\lib-forge\\generate_papers.py",
+  "CQECMPLX-Production\\papers\\CQE-paper-06\\02-CQE-tool\\run.py",
+  "CQECMPLX-ProofValidatedSuite\\PAPER_ASSEMBLY_PLAN.md",
+  "CQECMPLX-ProofValidatedSuite\\kernel\\AUTOMATED-DEPLOYMENT-GUIDE.md",
+  "CQECMPLX-ProofValidatedSuite\\kernel\\CONTAINERS-LIVE-NOW.md",
+  "CQECMPLX-ProofValidatedSuite\\kernel\\deploy-kernel.ps1",
+  "CQECMPLX-ProofValidatedSuite\\kernel\\deploy-kernel.sh",
+  "CQECMPLX-ProofValidatedSuite\\kernel\\DEPLOYMENT-COMPLETE.md",
+  "CQECMPLX-ProofValidatedSuite\\kernel\\docker-compose-kernel-with-opencode.yml",
+  "CQECMPLX-ProofValidatedSuite\\kernel\\install-native.sh",
+  "CQECMPLX-ProofValidatedSuite\\kernel\\OPENCODE-CLI-GUIDE.md",
+  "CQECMPLX-ProofValidatedSuite\\kernel\\OPENCODE-DELIVERY-COMPLETE.md",
+  "CQECMPLX-ProofValidatedSuite\\kernel\\OPENCODE-QUICK-START.md",
+  "CQECMPLX-ProofValidatedSuite\\kernel\\setup-wsl2.sh",
+  "CQECMPLX-ProofValidatedSuite\\kernel\\start.bat",
+  "CQECMPLX-ProofValidatedSuite\\kernel\\start.sh",
+  "CQECMPLX-ProofValidatedSuite\\kernel\\UBUNTU-WSL-DELIVERY-COMPLETE.md",
+  "CQECMPLX-ProofValidatedSuite\\kernel\\UBUNTU-WSL-INSTALLATION-GUIDE.md",
+  "CQECMPLX-ProofValidatedSuite\\kernel\\UBUNTU-WSL-QUICK-START.md",
+  "CQECMPLX-ProofValidatedSuite\\kernel\\ZERO-CONFIG-COMPLETE.md",
+  "CQECMPLX-ProofValidatedSuite\\kernel\\ZERO-CONFIG-START.md",
+  "CQECMPLX-ProofValidatedSuite\\kernel\\scripts\\opencode-auto-start.sh",
+  "CQECMPLX-ProofValidatedSuite\\kernel\\scripts\\opencode-start.sh",
+  "CQECMPLX-ProofValidatedSuite\\kernel\\cmplx_proof_kernel\\paper00.py"
+ ],
+ "identical": 60,
+ "collisions": [
+  {
+   "stray": "D:\\d\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\build_final.py",
+   "kept": "D:\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\build_final.py"
+  },
+  {
+   "stray": "D:\\d\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\__init__.py",
+   "kept": "D:\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\__init__.py"
+  },
+  {
+   "stray": "D:\\d\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\forgefactory_analog_workbench\\bilateral_validator.py",
+   "kept": "D:\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\forgefactory_analog_workbench\\bilateral_validator.py"
+  },
+  {
+   "stray": "D:\\d\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\forgefactory_analog_workbench\\working_subset.py",
+   "kept": "D:\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\forgefactory_analog_workbench\\working_subset.py"
+  },
+  {
+   "stray": "D:\\d\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\forgefactory_analog_workbench\\__init__.py",
+   "kept": "D:\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\forgefactory_analog_workbench\\__init__.py"
+  },
+  {
+   "stray": "D:\\d\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\MASTER_PDF\\MASTER_PDF_CQE_CMPLX_POLISHED.pdf",
+   "kept": "D:\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\MASTER_PDF\\MASTER_PDF_CQE_CMPLX_POLISHED.pdf"
+  },
+  {
+   "stray": "C:\\d\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\build_final.py",
+   "kept": "D:\\CQE_CMPLX\\CQECMPLX-Production\\lib-forge\\build_final.py"
+  },
+  {
+   "stray": "C:\\d\\CQECMPLX-Production\\papers\\CQE-paper-06\\01-CQE-formal\\FORMAL.md",
+   "kept": "D:\\CQE_CMPLX\\CQECMPLX-Production\\papers\\CQE-paper-06\\01-CQE-formal\\FORMAL.md"
+  },
+  {
+   "stray": "C:\\d\\CQECMPLX-Production\\papers\\CQE-paper-06\\02-CQE-tool\\TOOL.md",
+   "kept": "D:\\CQE_CMPLX\\CQECMPLX-Production\\papers\\CQE-paper-06\\02-CQE-tool\\TOOL.md"
+  },
+  {
+   "stray": "C:\\d\\CQECMPLX-Production\\papers\\CQE-paper-06\\03-CQE-workbook\\WORKBOOK.md",
+   "kept": "D:\\CQE_CMPLX\\CQECMPLX-Production\\papers\\CQE-paper-06\\03-CQE-workbook\\WORKBOOK.md"
+  },
+  {
+   "stray": "D:\\CQE_CMPLX\\d\\CQECMPLX-ProofValidatedSuite\\kernel\\cmplx_proof_kernel\\harness.py",
+   "kept": "D:\\CQE_CMPLX\\CQECMPLX-ProofValidatedSuite\\kernel\\cmplx_proof_kernel\\harness.py"
+  },
+  {
+   "stray": "D:\\CQE_CMPLX\\d\\CQECMPLX-ProofValidatedSuite\\kernel\\cmplx_proof_kernel\\kernel_core.py",
+   "kept": "D:\\CQE_CMPLX\\CQECMPLX-ProofValidatedSuite\\kernel\\cmplx_proof_kernel\\kernel_core.py"
+  },
+  {
+   "stray": "D:\\CQE_CMPLX\\d\\CQECMPLX-ProofValidatedSuite\\kernel\\cmplx_proof_kernel\\platforms.py",
+   "kept": "D:\\CQE_CMPLX\\CQECMPLX-ProofValidatedSuite\\kernel\\cmplx_proof_kernel\\platforms.py"
+  },
+  {
+   "stray": "D:\\CQE_CMPLX\\d\\CQECMPLX-ProofValidatedSuite\\kernel\\cmplx_proof_kernel\\__init__.py",
+   "kept": "D:\\CQE_CMPLX\\CQECMPLX-ProofValidatedSuite\\kernel\\cmplx_proof_kernel\\__init__.py"
+  }
+ ],
+ "pairs": [
+  {
+   "src": "D:\\d\\CQE_CMPLX\\CQECMPLX-Production",
+   "dst": "D:\\CQE_CMPLX\\CQECMPLX-Production",
+   "recovered": 6,
+   "identical": 58,
+   "collisions": 6
+  },
+  {
+   "src": "C:\\d\\CQE_CMPLX\\CQECMPLX-Production",
+   "dst": "D:\\CQE_CMPLX\\CQECMPLX-Production",
+   "recovered": 3,
+   "identical": 1,
+   "collisions": 1
+  },
+  {
+   "src": "C:\\d\\CQECMPLX-Production",
+   "dst": "D:\\CQE_CMPLX\\CQECMPLX-Production",
+   "recovered": 1,
+   "identical": 0,
+   "collisions": 3
+  },
+  {
+   "src": "C:\\d\\CQECMPLX-ProofValidatedSuite",
+   "dst": "D:\\CQE_CMPLX\\CQECMPLX-ProofValidatedSuite",
+   "recovered": 1,
+   "identical": 0,
+   "collisions": 0
+  },
+  {
+   "src": "D:\\CQECMPLX-ProofValidatedSuite",
+   "dst": "D:\\CQE_CMPLX\\CQECMPLX-ProofValidatedSuite",
+   "recovered": 20,
+   "identical": 1,
+   "collisions": 0
+  },
+  {
+   "src": "D:\\CQE_CMPLX\\d\\CQECMPLX-ProofValidatedSuite",
+   "dst": "D:\\CQE_CMPLX\\CQECMPLX-ProofValidatedSuite",
+   "recovered": 1,
+   "identical": 0,
+   "collisions": 4
+  }
+ ]
+}

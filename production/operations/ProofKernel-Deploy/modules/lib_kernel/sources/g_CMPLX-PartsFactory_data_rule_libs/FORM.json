@@ -1,0 +1,22 @@
+﻿{
+    "id":  "g_CMPLX-PartsFactory_data_rule_libs",
+    "kernel":  "lib_kernel",
+    "role":  "git hosted rule libs",
+    "source_path":  "D:\\g\\CMPLX-PartsFactory\\data\\rule_libs",
+    "exists":  true,
+    "form_only":  true,
+    "payloads_copied":  0,
+    "curated_file_count":  8,
+    "curated_bytes":  2576,
+    "payload_exclusion_count":  0,
+    "top_directories":  [
+                            "language",
+                            "native",
+                            "notation",
+                            "shell",
+                            "token"
+                        ],
+    "key_documents":  [
+
+                      ]
+}

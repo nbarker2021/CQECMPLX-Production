@@ -1,0 +1,18 @@
+﻿{
+    "id":  "g_CMPLXUNI_src_cmplx_lattice",
+    "kernel":  "lattice_kernel",
+    "role":  "CMPLXUNI lattice module",
+    "source_path":  "D:\\g\\CMPLXUNI\\src\\cmplx\\lattice",
+    "exists":  true,
+    "form_only":  true,
+    "payloads_copied":  0,
+    "curated_file_count":  5,
+    "curated_bytes":  40987,
+    "payload_exclusion_count":  0,
+    "top_directories":  [
+
+                        ],
+    "key_documents":  [
+
+                      ]
+}

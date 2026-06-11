@@ -1,0 +1,133 @@
+version: '3.9'
+
+services:
+  proof-kernel:
+    image: python-dev:with-databases
+    container_name: cqecmplx-proof-kernel
+    hostname: proof-kernel
+    mem_limit: 4g
+    memswap_limit: 4g
+    cpus: 4.0
+    cpu_shares: 1024
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:rw
+      - docker_kernel_cache:/var/lib/docker_cache
+      - kernel_state:/opt/kernel/state
+    ulimits:
+      nproc: 4096
+      nofile: 65536
+      locks: 1024
+    environment:
+      KERNEL_LEVEL: "0"
+      KERNEL_ROLE: "orchestrator"
+      KERNEL_MAX_MEMORY_MB: 4096
+      KERNEL_MAX_CPU: 4
+      CHILD_LEVEL: "1"
+      CHILD_MEMORY_MB: 2048
+      CHILD_CPU: 2.0
+      CQECMPLX_DOCKER_NETWORK: "cqecmplx-kernel-net"
+      CQECMPLX_KERNEL_MODE: "production"
+      DNA_VALIDATION_MODE: "full"
+    networks:
+      - cqecmplx-kernel-net
+    ports:
+      - "8765:8765"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8765/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    entrypoint: ["python", "-m", "cmplx_proof_kernel.orchestrator"]
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "100m"
+        max-file: "10"
+    restart: unless-stopped
+    depends_on:
+      - docker-provider
+
+  opencode-terminal:
+    image: python-dev:with-databases
+    container_name: cqecmplx-opencode-cli
+    hostname: opencode-terminal
+    mem_limit: 2g
+    memswap_limit: 2g
+    cpus: 2.0
+    cpu_shares: 512
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - kernel_state:/opt/kernel/state:ro
+      - opencode_workspace:/opt/opencode
+      - opencode_cache:/home/developer/.opencode
+    ulimits:
+      nproc: 2048
+      nofile: 32768
+      locks: 512
+    environment:
+      KERNEL_ENDPOINT: "http://proof-kernel:8765"
+      KERNEL_LEVEL: "1"
+      KERNEL_ROLE: "cli_terminal"
+      OPENCODE_AUTO_INIT: "true"
+      OPENCODE_WORKSPACE: "/opt/opencode"
+      OPENCODE_DATA_PATH: "/home/developer/.opencode"
+    networks:
+      - cqecmplx-kernel-net
+    ports:
+      - "8766:8765"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8765/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    entrypoint: ["bash"]
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
+        max-file: "5"
+    restart: on-failure
+    depends_on:
+      - docker-provider
+    stdin_open: true
+    tty: true
+
+  docker-provider:
+    image: docker:dind
+    container_name: cqecmplx-docker-provider
+    hostname: docker-provider
+    privileged: true
+    volumes:
+      - docker_provider_storage:/var/lib/docker
+      - /var/run/docker.sock:/var/run/docker.sock:rw
+    environment:
+      DOCKER_HOST: unix:///var/run/docker.sock
+      DOCKER_DRIVER: overlay2
+    networks:
+      - cqecmplx-kernel-net
+    restart: unless-stopped
+
+networks:
+  cqecmplx-kernel-net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
+
+volumes:
+  docker_kernel_cache:
+    driver: local
+    driver_opts:
+      type: tmpfs
+      device: tmpfs
+      o: "size=2g,uid=1000"
+  kernel_state:
+    driver: local
+  docker_provider_storage:
+    driver: local
+  opencode_workspace:
+    driver: local
+  opencode_cache:
+    driver: local

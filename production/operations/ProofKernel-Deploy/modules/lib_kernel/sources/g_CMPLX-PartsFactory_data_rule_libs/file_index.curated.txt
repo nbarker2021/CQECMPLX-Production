@@ -1,0 +1,8 @@
+﻿language\english_bigrams.yaml	425
+language\identity_review_terms.yaml	348
+native\starter.yaml	188
+notation\blocks.yaml	936
+notation\default.yaml	208
+notation\starter.yaml	208
+shell\morphon_shell.yaml	113
+token\default_bonds.yaml	150

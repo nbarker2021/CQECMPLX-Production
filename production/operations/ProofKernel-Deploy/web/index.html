@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CMPLX Operator</title>
+  <link rel="stylesheet" href="/static/operator.css">
+</head>
+<body>
+  <main class="shell">
+    <section class="workspace">
+      <header class="topbar">
+        <div>
+          <h1>CMPLX Operator</h1>
+          <p id="health">checking kernel</p>
+        </div>
+        <div class="toggles">
+          <label><input id="training" type="checkbox"> Training</label>
+          <label><input id="localFull" type="checkbox"> Local full</label>
+        </div>
+      </header>
+
+      <div class="grid">
+        <section class="panel editor">
+          <div class="panel-title">
+            <h2>Token Stream</h2>
+            <button id="run">Run</button>
+          </div>
+          <textarea id="tokenInput" spellcheck="false">Name the current work, route it through CQE, and return a receipt.</textarea>
+        </section>
+
+        <section class="panel">
+          <div class="panel-title">
+            <h2>Receipt</h2>
+            <button id="copy">Copy</button>
+          </div>
+          <pre id="receipt">{}</pre>
+        </section>
+
+        <section class="panel">
+          <div class="panel-title">
+            <h2>Modules</h2>
+            <button id="refreshModules">Refresh</button>
+          </div>
+          <div id="modules" class="list"></div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-title">
+            <h2>Events</h2>
+            <button id="refreshEvents">Refresh</button>
+          </div>
+          <div id="events" class="list"></div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-title">
+            <h2>Docker</h2>
+            <button id="refreshDocker">Refresh</button>
+          </div>
+          <div id="docker" class="list"></div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-title">
+            <h2>Proofs</h2>
+            <button id="refreshProofs">Refresh</button>
+          </div>
+          <div id="proofs" class="list"></div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-title">
+            <h2>Repo Forms</h2>
+            <button id="refreshRepoForms">Refresh</button>
+          </div>
+          <div id="repoForms" class="list"></div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-title">
+            <h2>Package</h2>
+            <button id="refreshPackage">Refresh</button>
+          </div>
+          <div id="packageManifest" class="list"></div>
+        </section>
+      </div>
+    </section>
+  </main>
+  <script src="/static/operator.js"></script>
+</body>
+</html>

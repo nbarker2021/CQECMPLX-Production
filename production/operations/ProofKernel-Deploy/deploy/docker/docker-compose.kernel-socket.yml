@@ -1,0 +1,31 @@
+services:
+  cmplx-kernel:
+    build:
+      context: ../..
+      dockerfile: deploy/docker/Dockerfile.kernel
+    image: cmplx-kernel:operator-socket
+    container_name: cmplx-kernel-operator
+    environment:
+      CMPLX_DOCKER_ROOT: /workspace/docker-tools
+      CMPLX_KERNEL_RING_MANIFEST: /opt/kernel_ring/KERNEL_RING_MANIFEST.json
+      CMPLX_DOCKER_ENABLE_CONTROL: "${CMPLX_DOCKER_ENABLE_CONTROL:-0}"
+      CMPLX_OPERATOR_TOKEN: "${CMPLX_OPERATOR_TOKEN:-}"
+      CMPLX_OPERATOR_CORS_ORIGIN: "${CMPLX_OPERATOR_CORS_ORIGIN:-}"
+      CMPLX_OPERATOR_MAX_BODY_BYTES: "${CMPLX_OPERATOR_MAX_BODY_BYTES:-1048576}"
+      CMPLX_OPERATOR_RATE_LIMIT_PER_MINUTE: "${CMPLX_OPERATOR_RATE_LIMIT_PER_MINUTE:-120}"
+    ports:
+      - "8765:8765"
+    volumes:
+      - cmplx-kernel-state:/opt/cmplx-kernel/data
+      - /var/run/docker.sock:/var/run/docker.sock
+      - type: bind
+        source: D:/DockerContainers
+        target: /workspace/docker-tools
+        read_only: true
+      - type: bind
+        source: D:/CMPLX-Kernel/kernel_ring
+        target: /opt/kernel_ring
+        read_only: true
+
+volumes:
+  cmplx-kernel-state:

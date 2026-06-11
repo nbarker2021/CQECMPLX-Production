@@ -1,0 +1,18 @@
+﻿{
+    "id":  "CQE_CMPLX_lattice_forge_analysis.md",
+    "kernel":  "reforge_kernel",
+    "role":  "lattice forge analysis note",
+    "source_path":  "D:\\CQE_CMPLX\\lattice_forge_analysis.md",
+    "exists":  true,
+    "form_only":  true,
+    "payloads_copied":  0,
+    "curated_file_count":  1,
+    "curated_bytes":  39119,
+    "payload_exclusion_count":  0,
+    "top_directories":  [
+
+                        ],
+    "key_documents":  [
+                          "lattice_forge_analysis.md"
+                      ]
+}
