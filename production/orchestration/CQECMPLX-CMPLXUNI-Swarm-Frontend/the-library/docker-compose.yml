@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  the-library:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: cmplx-the-library
+    ports:
+      - "8902:8902"
+    volumes:
+      - ./library:/app/library
+      - ./src:/app/src:ro
+    environment:
+      - PYTHONPATH=/app
+      - LIBRARY_PATH=/app/library
+      - PORT=8902
+      - CMPLX_ROOT=/app
+    networks:
+      - cmplx-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import requests; requests.get('http://localhost:8902/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+networks:
+  cmplx-network:
+    external: true
+    name: cmplx-network

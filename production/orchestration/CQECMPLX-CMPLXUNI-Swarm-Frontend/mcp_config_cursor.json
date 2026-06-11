@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "cmplx": {
+      "command": "python3",
+      "args": [
+        "${CMPLXUNI_ROOT}/src/cmplx/mcp/mcp-server-entry.py"
+      ],
+      "env": {
+        "CMPLX_ROOT": "${CMPLXUNI_ROOT}"
+      }
+    }
+  }
+}
