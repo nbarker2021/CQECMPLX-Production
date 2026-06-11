@@ -1,0 +1,40 @@
+{
+  "id": "CQECMPLX-Analog-Forge-Workbench-Publication",
+  "status": "publication-manifest",
+  "created": "2026-06-11",
+  "parent_manifest": "tracking/promotion-manifests/CQECMPLX-Analog-Forge-Workbench.manifest.json",
+  "source_binding": "tracking/source-bindings/CQECMPLX-Analog-Forge-Workbench.json",
+  "destination_routes": [
+    "production/tool-families/CQECMPLX-Analog-Forge-Workbench",
+    "production/proof-receipts/CQECMPLX-Analog-Forge-Workbench"
+  ],
+  "allowed_publication_artifacts": [
+    "publication-source/analog-kit-basic.txt",
+    "publication-source/analog-kit-pro.txt",
+    "guides/AnalogForge_Hand_Work_Guide.md",
+    "guides/AnalogForge_Replacements_And_Variables.md",
+    "pdf/AnalogForge_Toolkit_Basic.pdf",
+    "pdf/AnalogForge_Toolkit_Pro.pdf",
+    "pdf/AnalogForge_Hand_Work_Guide.pdf",
+    "pdf/AnalogForge_Replacements_And_Variables.pdf"
+  ],
+  "allowed_package_artifacts": [
+    "suite/README.md",
+    "suite/pyproject.toml",
+    "suite/docs/*.md",
+    "suite/examples/*.py",
+    "suite/sheets/*.md",
+    "suite/src/forgefactory_analog_workbench/*.py",
+    "suite/tests/*.py",
+    "suite/data/MANIFEST.json",
+    "suite/data/MANIFEST.csv"
+  ],
+  "publication_gates": [
+    "PDFs are admitted only for Basic, Pro, hand-work guide, and replacements guide.",
+    "Generated demo PDFs remain deferred unless separately admitted.",
+    "No notebooks, caches, bytecode, or raw exports are admitted.",
+    "Boundary-collision instructions must preserve proof/obligation receipts.",
+    "Replacement guidance must preserve function over brand or exact material."
+  ],
+  "notes": "Created after user supplied Basic and Pro analog toolkit descriptions on OneDrive Desktop and requested PDF versions plus hand-work guides."
+}

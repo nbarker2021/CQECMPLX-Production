@@ -1,0 +1,1283 @@
+Below is the **ideal university-wing version**: not the “buy it at an office store” version, but a purpose-built analog-assisted computing facility with tablet integration, scientific inventory control, standardized workstations, modular experiment kits, and formal receipt/proof logging.
+
+# The Analog Assisted Computing Wing
+
+## University-Scale Analog Forge / ForgeFactory Laboratory System
+
+## 1. Core concept
+
+The Analog Assisted Computing Wing is a purpose-built university facility for teaching, researching, and operating analog-assisted computation: a hybrid method where students and researchers solve, model, simulate, and audit complex systems using both physical analog tools and digital tablet-based workbenches.
+
+The wing is built around one central premise:
+
+> Every abstract computation can be made physically inspectable if the state, carrier, boundary, action, proof, and obligation are explicitly represented.
+
+The facility therefore combines:
+
+* handheld tablets,
+* live digital ForgeFactory/Rhenium software,
+* standardized physical analog toolkits,
+* modular experiment benches,
+* large-scale magnetic/grid walls,
+* inventory-controlled materials,
+* printable receipt/workbook systems,
+* and formal research-lab procedures.
+
+This is not a maker-space version of the kit. It is the scientific-institution version: every object has a catalog ID, every run has a receipt, every result has a reproducible physical and digital trace, and every unresolved path is preserved as an obligation rather than discarded.
+
+---
+
+## 2. Foundational operating rule
+
+Every experiment, lesson, proof attempt, design study, or computational exploration follows the same core loop:
+
+```text
+observe / enter problem
+→ define local center C
+→ assign state colors
+→ select analog carriers
+→ run physical manipulation
+→ mirror on tablet
+→ classify proof / obligation
+→ generate receipt
+→ bind result or open new branch
+```
+
+The physical and digital systems are reciprocal:
+
+```text
+physical action → digital receipt
+digital state → physical reproduction
+```
+
+No result is accepted unless it can be:
+
+1. physically reconstructed,
+2. digitally replayed,
+3. receipt-verified,
+4. placed in the proof/obligation ledger,
+5. and assigned a location in the paper, tool, or experiment hierarchy.
+
+---
+
+## 3. The wing layout
+
+The ideal wing is divided into specialized zones.
+
+### 3.1 Entry and orientation zone
+
+This is where students check in, receive tablets, scan into their project workspace, and collect assigned analog kits.
+
+Components:
+
+* tablet charging wall,
+* student project lockers,
+* tool checkout desk,
+* RFID or QR-coded material checkout,
+* safety and protocol display,
+* project-status wall,
+* daily run board,
+* receipt submission kiosk.
+
+Purpose:
+
+```text
+student identity
+→ project workspace
+→ assigned kit
+→ active run
+→ traceable session
+```
+
+No one enters the active lab space without a session ID.
+
+---
+
+### 3.2 Core analog classroom
+
+This is the central teaching room.
+
+It contains:
+
+* modular tables,
+* overhead document cameras,
+* large grid boards,
+* tablet docking stations,
+* color-calibrated lighting,
+* rolling tool carts,
+* wall-scale L/C/R boards,
+* projection screens,
+* instructor live-state board.
+
+Each table is an analog computation station.
+
+A standard table supports:
+
+```text
+4-8 students
+one shared physical state
+individual tablet mirrors
+one group receipt stream
+one instructor-visible state feed
+```
+
+The class does not only watch lectures. It physically executes computational state changes.
+
+---
+
+### 3.3 Individual workbench lab
+
+This room is for single-student and small-group work.
+
+Each bench includes:
+
+* tablet dock,
+* overhead camera,
+* gridded working mat,
+* modular color trays,
+* token tray,
+* string tension board,
+* card/dice tray,
+* receipt scanner,
+* physical notebook rack,
+* local mini-whiteboard,
+* lockable project drawer.
+
+Each bench is a full analog Forge station.
+
+A student can run:
+
+```text
+paper proof decomposition
+cellular automaton experiment
+graph routing problem
+material-cell exploration
+protein-folding analogy
+language/glyph route study
+image/pixel state mapping
+optimization workflow
+```
+
+without changing rooms.
+
+---
+
+### 3.4 Large-format lattice hall
+
+This is the room for wall-scale and floor-scale analog computation.
+
+It includes:
+
+* floor grid,
+* wall grid,
+* magnetic coordinate panels,
+* movable lattice frames,
+* hanging string/braid rig,
+* ceiling-mounted tracking cameras,
+* large transparent overlay sheets,
+* rolling balsa/carbon-fiber lattice frames,
+* laser-cut modular tiles,
+* large state tokens.
+
+Purpose:
+
+```text
+small tabletop system
+→ scaled lattice
+→ body-scale graph
+→ multi-person state traversal
+```
+
+This room is for experiments too large for a desk:
+
+* N-dimensional chess lattice projections,
+* knight automata,
+* cellular automata strip growth,
+* graph pathfinding,
+* Hamiltonian window demonstrations,
+* material lattice design,
+* physical proof-tree mapping,
+* large paper-corpus dependency maps.
+
+---
+
+### 3.5 Wet/dry boundary fabrication studio
+
+This is not a wet chemistry lab by default. It is a dry prototyping and fabrication support room.
+
+It includes:
+
+* laser cutter,
+* vinyl cutter,
+* 3D printers,
+* CNC paper/card cutter,
+* label printer,
+* thermal binder,
+* laminated sheet station,
+* precision cutting mats,
+* grid stencil station,
+* custom token mold station,
+* acrylic overlay fabrication.
+
+Purpose:
+
+```text
+make experiment-specific analog parts quickly
+```
+
+If a class needs a specialized lattice, card deck, token family, board, stencil, or overlay, it can be made in-house within hours.
+
+---
+
+### 3.6 Inventory and restock room
+
+This is a controlled supply room, not a closet.
+
+It contains:
+
+* color-coded material bins,
+* batch-numbered consumables,
+* RFID or barcode tracking,
+* reorder threshold system,
+* sealed clean storage for precision pieces,
+* bulk paper stock,
+* string stock,
+* token stock,
+* binder/notebook stock,
+* card/dice replacement stock,
+* overlay stock,
+* printed workbook forms,
+* blank receipt forms.
+
+Every object has:
+
+```text
+item ID
+color family
+tool class
+batch/lot
+quantity
+restock threshold
+assigned experiment types
+allowed rooms
+cleanliness status
+```
+
+The facility never runs out of essential materials during a class or experiment.
+
+---
+
+### 3.7 Digital control and simulation room
+
+This room hosts the digital backend.
+
+It includes:
+
+* local server rack,
+* ForgeFactory / Rhenium workbench server,
+* versioned database storage,
+* experiment replay archive,
+* paper corpus archive,
+* tablet sync system,
+* local AI assistant station if permitted,
+* backup system,
+* receipt archive,
+* audit log dashboard.
+
+Purpose:
+
+```text
+physical lab
+→ digital receipt
+→ replayable experiment
+→ searchable corpus
+→ paper/tool integration
+```
+
+The analog wing is not just physical. Its entire state history is digitally recoverable.
+
+---
+
+### 3.8 Review, defense, and peer-audit room
+
+This room is for presenting and challenging results.
+
+It contains:
+
+* large display wall,
+* physical evidence table,
+* document camera,
+* proof/obligation board,
+* paper-source board,
+* analog reconstruction table,
+* peer review seating.
+
+A student or team must be able to defend:
+
+```text
+what they did
+what tools they used
+what proved
+what failed
+what remains obligated
+how the physical and digital receipts match
+```
+
+This turns the lab into a scientific argumentation environment, not only a classroom.
+
+---
+
+## 4. Institution-grade analog kit hierarchy
+
+The wing contains several classes of analog kits.
+
+### 4.1 Personal student kit
+
+Issued to each student.
+
+Includes:
+
+* compact color token set,
+* compact string set,
+* notebook set,
+* receipt pad,
+* proof/obligation cards,
+* dry-erase overlay,
+* small deck of operator cards,
+* small dice set,
+* tablet stylus,
+* QR-tagged project folder.
+
+Purpose:
+
+```text
+individual practice
+homework
+small proof decomposition
+basic state tracking
+```
+
+---
+
+### 4.2 Bench kit
+
+Stored at each workbench.
+
+Includes larger and more precise tools:
+
+* full red/green/blue/white/black/grey/clear/neon token trays,
+* eightfold string sets,
+* grid mats,
+* transparent overlay plates,
+* magnetic C markers,
+* L/R markers,
+* proof/obligation tags,
+* route markers,
+* boundary blocks,
+* calibrated dice,
+* standardized card decks,
+* receipt stamp tools,
+* reusable workbook boards.
+
+Purpose:
+
+```text
+standard laboratory operation
+```
+
+---
+
+### 4.3 Specialist experiment kits
+
+Stored in the inventory room and checked out by need.
+
+Examples:
+
+#### MorphoniX / Glyph kit
+
+For language, symbols, tokens, scripts, alphabets, and glyph-routing experiments.
+
+Includes:
+
+* alphabet route tiles,
+* stroke-segment pieces,
+* dot/circle/hook/cross markers,
+* token-window cards,
+* dyad/tetrad cards,
+* 1x1 through 9x9 grid boards,
+* transparent glyph overlays.
+
+Purpose:
+
+```text
+language/token/glyph route studies
+```
+
+#### KnightForge / N-dimensional chess kit
+
+For chess automata and movement-operator studies.
+
+Includes:
+
+* square spiral boards,
+* N-dimensional projection boards,
+* knight-move L tiles,
+* red/black placement tokens,
+* multi-player color token families,
+* attack-field overlays,
+* spiral index cards,
+* move receipt sheets.
+
+Purpose:
+
+```text
+L-conjugate movement
+greedy placement systems
+cellular automata on boards
+```
+
+#### MetaForge material kit
+
+For metamaterial and lattice-cell reasoning.
+
+Includes:
+
+* modular cell tiles,
+* hinge models,
+* auxetic unit cells,
+* honeycomb cells,
+* truss sticks,
+* compressive/tensile direction markers,
+* failure-mode tags,
+* material constraint cards,
+* prototype obligation sheets.
+
+Purpose:
+
+```text
+metamaterial design reasoning
+mechanical constraint modeling
+waste-reduction design studies
+```
+
+#### FoldForge protein kit
+
+For folding, constraint routing, and sequence-to-structure analogs.
+
+Includes:
+
+* amino-acid class tokens,
+* hydrophobic/hydrophilic markers,
+* chain strings,
+* contact-map boards,
+* folding-path cards,
+* local constraint tiles,
+* branch/obligation sheets.
+
+Purpose:
+
+```text
+sequence-to-fold reasoning
+contact-map exploration
+constraint satisfaction
+```
+
+#### PixleForge / PixL8Forge kit
+
+For image, pixel, and frame-state experiments.
+
+Includes:
+
+* pixel-grid boards,
+* color patch cards,
+* 2x2 carrier tiles,
+* 4x4 and 8x8 state boards,
+* transparent frame overlays,
+* Rote8 orientation cards,
+* Devi8 transition cards,
+* Concat8 sequence logs.
+
+Purpose:
+
+```text
+image state mapping
+frame transition studies
+video/path reasoning
+```
+
+---
+
+## 5. Standard tool families and their ideal forms
+
+### 5.1 Color-state tokens
+
+Institution-grade tokens are not random counters.
+
+They are precision-made, color-calibrated, scannable pieces.
+
+Each token has:
+
+```text
+color family
+shape class
+state ID
+QR/RFID code
+magnetic backing
+writeable face
+cleanable surface
+```
+
+Functions:
+
+* mark C,
+* mark L/R states,
+* mark branches,
+* mark cells,
+* mark proof states,
+* mark obligations,
+* mark carrier states.
+
+Token families:
+
+```text
+C tokens
+L tokens
+R tokens
+branch tokens
+boundary tokens
+proof tokens
+obligation tokens
+unknown tokens
+joker/exception tokens
+```
+
+---
+
+### 5.2 Strings and braids
+
+The ideal strings are standardized by:
+
+```text
+color
+length
+elasticity
+tension class
+connector type
+cleanliness class
+```
+
+Types:
+
+* straight carrier strings,
+* elastic uncertainty strings,
+* braided dependency strings,
+* black obligation cords,
+* white proof cords,
+* neon collision cords,
+* clear overlay threads,
+* magnetic endpoint strings.
+
+Functions:
+
+```text
+edge
+dependency
+braid
+knot
+route
+carrier
+transport path
+proof-chain linkage
+obligation linkage
+```
+
+A string may be measured, photographed, scanned, and logged.
+
+---
+
+### 5.3 Boards and grids
+
+Boards are modular, durable, and scannable.
+
+Types:
+
+```text
+2x2 boards
+3x3 boards
+4x4 boards
+8x8 boards
+9x9 boards
+square spiral boards
+hex grids
+triangular grids
+graph boards
+coordinate lattices
+N-dimensional projection boards
+paper-corpus dependency boards
+```
+
+Functions:
+
+* local state enumeration,
+* CA simulation,
+* movement-rule testing,
+* lattice construction,
+* proof-tree mapping,
+* analog graph computation.
+
+Every board has coordinate indexing and a digital twin on the tablet.
+
+---
+
+### 5.4 Transparent overlays
+
+Overlays are essential because they preserve reversibility.
+
+Types:
+
+```text
+attack overlays
+gradient overlays
+proof overlays
+obligation overlays
+boundary overlays
+route overlays
+cellular automata overlays
+frame-transition overlays
+error/correction overlays
+```
+
+Functions:
+
+* test without destroying base state,
+* compare routes,
+* show multiple layers,
+* mark temporary hypotheses,
+* separate observation from correction.
+
+Each overlay has registration marks so it can align with both the physical board and the tablet model.
+
+---
+
+### 5.5 Cards
+
+The university version uses both standard playing cards and custom operator decks.
+
+#### Standard deck
+
+Used for:
+
+```text
+red/black polarity
+4-suit state partition
+ranked order
+permutation
+witness cards
+joker exception states
+```
+
+#### Custom operator decks
+
+Decks include:
+
+* proof/obligation deck,
+* movement-operator deck,
+* color-conjugate deck,
+* boundary-condition deck,
+* material-constraint deck,
+* protein-folding constraint deck,
+* glyph-route deck,
+* CA-rule deck,
+* experiment-failure deck.
+
+Cards are scannable. When a student draws or assigns a card, the tablet records it.
+
+---
+
+### 5.6 Dice and stochastic tools
+
+The ideal version includes calibrated stochastic tools.
+
+Types:
+
+```text
+standard d6
+d8
+d10
+d12
+d20
+custom color dice
+binary dice
+weighted demonstration dice
+probability wheels
+randomization tiles
+```
+
+Rules:
+
+* dice are used only at legal uncertainty boundaries,
+* every roll is logged,
+* every roll has a reason,
+* every result has a receipt,
+* random and possible are distinguished.
+
+Dice functions:
+
+```text
+branch sampling
+uncertainty boundary
+probability demonstration
+randomness-vs-possibility test
+```
+
+---
+
+### 5.7 Notecards and decision probes
+
+The ideal version uses standardized, preprinted, scannable notecards.
+
+Types:
+
+```text
+definition card
+axiom card
+lemma card
+proof card
+obligation card
+example card
+counterexample card
+source card
+experiment card
+binding-test card
+new-page card
+closure card
+failure card
+```
+
+Functions:
+
+* prevent premature closure,
+* preserve open branches,
+* record local decisions,
+* make reasoning inspectable,
+* create handoff between physical and digital state.
+
+Each notecard has structured fields and a digital twin.
+
+---
+
+### 5.8 Binders, notebooks, and archives
+
+The university version uses archival-grade notebooks and binders.
+
+Types:
+
+```text
+student notebook
+group notebook
+paper binder
+experiment binder
+proof binder
+obligation binder
+source binder
+tool binder
+failed-route binder
+review binder
+```
+
+Each binder has:
+
+```text
+catalog ID
+owner/team
+experiment class
+color family
+version
+date range
+digital mirror
+chain-of-custody log
+```
+
+Purpose:
+
+```text
+turn physical work into durable research record
+```
+
+---
+
+### 5.9 Lattice construction parts
+
+These replace the low-cost balsa-only version.
+
+Materials:
+
+* balsa for beginner work,
+* acrylic rods,
+* carbon-fiber rods,
+* magnetic rods,
+* hinged links,
+* angle connectors,
+* flexible joints,
+* printed node hubs,
+* transparent plates,
+* unit-cell modules.
+
+Functions:
+
+```text
+build physical graphs
+build lattice models
+build metamaterial cells
+build folding chains
+build N-dimensional projections
+build proof dependency structures
+```
+
+---
+
+## 6. Tablet integration
+
+Every student has a tablet running the live Analog Forge workbench.
+
+The tablet mirrors the bench.
+
+Tablet functions:
+
+```text
+scan object IDs
+create run ID
+display digital twin
+record C
+record colors
+record tools used
+record cards/dice
+capture photos
+generate receipts
+sync with instructor dashboard
+export PDF
+export JSON
+export graph
+```
+
+Each physical object can be scanned.
+
+The tablet asks:
+
+```text
+What is the current C?
+What colors are active?
+What tool was moved?
+Is this proof or obligation?
+Does this bind here?
+Does this create a new page?
+What receipt should be generated?
+```
+
+The tablet never replaces the analog operation. It records, audits, and replays it.
+
+---
+
+## 7. Scientific standards
+
+The ideal wing runs like a research lab.
+
+### 7.1 Standard operating procedures
+
+Every experiment type has an SOP:
+
+```text
+setup
+materials
+allowed tools
+required receipts
+safety notes
+cleaning procedure
+data capture
+review protocol
+failure logging
+```
+
+### 7.2 Chain of custody
+
+Every result has:
+
+```text
+operator
+date
+station
+kit ID
+tool IDs
+run ID
+source material
+digital receipt
+physical receipt
+review status
+```
+
+### 7.3 Version control
+
+Every paper, workbook, tool, and module has versions.
+
+```text
+paper version
+kit version
+board version
+operator deck version
+software version
+receipt schema version
+```
+
+### 7.4 Calibration
+
+The facility calibrates:
+
+* color matching,
+* coordinate grids,
+* camera alignment,
+* overlay registration,
+* stochastic tools,
+* measurement tools,
+* tablet scan accuracy.
+
+### 7.5 Quality control
+
+Every class or lab period includes:
+
+```text
+pre-run station check
+tool inventory check
+active-run audit
+receipt completeness check
+post-run cleanup
+data sync check
+material restock update
+```
+
+The point is to make analog work reproducible, not merely expressive.
+
+---
+
+## 8. The class model
+
+The wing supports an entire curriculum.
+
+### 8.1 Intro course: Analog Assisted Computing I
+
+Students learn:
+
+* C selection,
+* color-state assignment,
+* proof/obligation split,
+* receipts,
+* basic grid operations,
+* strings/tokens/cards/dice,
+* tablet mirroring.
+
+### 8.2 Intermediate course: Analog Computational Structures
+
+Students work with:
+
+* graph routing,
+* cellular automata,
+* lattice models,
+* paper decomposition,
+* proof trees,
+* analog/digital replay.
+
+### 8.3 Advanced course: Forge Systems Lab
+
+Students build:
+
+* custom analog tools,
+* digital modules,
+* paper-specific workbenches,
+* applied simulation kits,
+* peer-reviewed experiment packages.
+
+### 8.4 Research studio
+
+Students and faculty use the wing for:
+
+* mathematics,
+* computer science,
+* materials science,
+* biology,
+* design,
+* architecture,
+* language systems,
+* cognition,
+* education research,
+* AI interpretability.
+
+---
+
+## 9. Daily use workflow
+
+A class session proceeds as follows:
+
+```text
+1. Students check in and receive station assignments.
+2. Tablets load the day’s project.
+3. Toolkits are scanned out.
+4. Instructor defines the target problem.
+5. Students place C physically and digitally.
+6. Teams build color-state layouts.
+7. Teams execute analog operations.
+8. Tablets log each physical event.
+9. White paths become proof continuations.
+10. Black paths become obligations.
+11. Teams generate receipts.
+12. Results are reconstructed or challenged.
+13. Final PDF/JSON/graph exports are submitted.
+14. Materials are checked back in and restocked.
+```
+
+A result is not “done” just because the team says it is done. It is done when the physical state, digital state, receipt, and review ledger agree.
+
+---
+
+## 10. The physical-to-digital data model
+
+Each run produces:
+
+```text
+run_id
+student/team
+station_id
+problem statement
+C history
+tool movements
+color states
+grid states
+cards/dice events
+proof paths
+obligation paths
+photos
+receipts
+PDF report
+JSON state file
+graph export
+review status
+```
+
+The analog lab therefore produces computable research data.
+
+---
+
+## 11. Example experiment stations
+
+### 11.1 Rule 30 / Rule 90 station
+
+Purpose:
+
+```text
+cellular automata state evolution
+linear vs correction behavior
+```
+
+Tools:
+
+* CA boards,
+* binary tiles,
+* correction overlays,
+* row receipt sheets,
+* tablet simulator.
+
+### 11.2 Knight automata station
+
+Purpose:
+
+```text
+red/black greedy knight placement
+L-conjugate movement
+N-dimensional chess automata
+```
+
+Tools:
+
+* spiral boards,
+* knight move overlays,
+* red/black tokens,
+* attack-field overlays,
+* region classification sheets.
+
+### 11.3 Metamaterial station
+
+Purpose:
+
+```text
+analog-assisted design of unit cells
+constraint tracking
+failure-mode logging
+```
+
+Tools:
+
+* modular cell tiles,
+* hinge models,
+* truss rods,
+* force-direction markers,
+* material obligation cards.
+
+### 11.4 Protein folding station
+
+Purpose:
+
+```text
+sequence-to-constraint mapping
+fold route testing
+contact-map construction
+```
+
+Tools:
+
+* chain tokens,
+* contact boards,
+* hydrophobic/hydrophilic markers,
+* folding strings,
+* constraint cards.
+
+### 11.5 Paper proof station
+
+Purpose:
+
+```text
+formal paper decomposition
+source integration
+proof/obligation split
+```
+
+Tools:
+
+* paper binders,
+* definition cards,
+* axiom cards,
+* lemma cards,
+* proof tree boards,
+* source ledger sheets.
+
+---
+
+## 12. Staffing model
+
+The wing requires more than one instructor.
+
+Roles:
+
+```text
+lead instructor
+analog lab manager
+digital systems manager
+inventory manager
+safety/EHS liaison
+fabrication technician
+graduate teaching assistants
+peer-review moderators
+data archivist
+```
+
+The analog lab manager ensures tools are standardized.
+
+The digital systems manager ensures the tablets and server preserve receipts.
+
+The data archivist ensures the physical archive and digital archive agree.
+
+---
+
+## 13. Restock and fabrication model
+
+A blank-check university version never relies on improvised materials during critical work.
+
+The facility maintains:
+
+```text
+minimum stock thresholds
+automatic reorder system
+in-house fabrication
+batch labeling
+clean replacement bins
+emergency class kits
+special-project build queue
+```
+
+If a student needs a custom piece, the workflow is:
+
+```text
+request custom part
+→ instructor approves
+→ fabrication spec generated
+→ part produced
+→ part receives ID
+→ part enters inventory
+→ part becomes usable in receipts
+```
+
+No untracked part enters formal experiments.
+
+---
+
+## 14. What “scientific standards” means here
+
+For this analog wing, scientific standards mean:
+
+```text
+reproducibility
+traceability
+controlled materials
+clear definitions
+stable protocols
+auditable records
+versioned tools
+reviewable outputs
+preserved failures
+explicit uncertainty
+```
+
+The system does not hide failed paths.
+
+Failed paths are black obligations.
+
+Uncertain paths are bounded and recorded.
+
+Speculative paths are labeled.
+
+Accepted paths are white proof continuations.
+
+---
+
+## 15. Ideal facility output
+
+Every completed project can export:
+
+```text
+PDF lab report
+printable workbook sheets
+JSON receipt log
+graph file
+inventory usage log
+photographic reconstruction pack
+proof/obligation ledger
+presentation board
+paper appendix
+ForgeFactory module stub if relevant
+```
+
+So a student project can become:
+
+```text
+class submission
+research note
+paper appendix
+software module
+analog kit extension
+peer-review object
+```
+
+---
+
+## 16. Final ideal definition
+
+The ideal Analog Assisted Computing Wing is a university-scale physical/digital computation facility where abstract reasoning is made materially inspectable. It uses standardized color-state objects, gridded boards, tokens, strings, overlays, cards, dice, custom experiment kits, tablets, receipts, and digital twins to let students and researchers physically perform computation, proof decomposition, model building, and experimental reasoning. Every action is recorded, every tool is tracked, every result is reproducible, every uncertainty is bounded, and every unresolved path is preserved as an obligation. The wing turns analog reasoning into a scientifically controlled computing environment.
+
+This is the “blank check” version: not a portable kit, but an **institutional analog-computing laboratory** where every piece is custom, abundant, traceable, restockable, and tied to a digital twin.

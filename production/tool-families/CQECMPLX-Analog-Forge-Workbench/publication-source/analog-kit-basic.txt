@@ -1,0 +1,1328 @@
+# Analog Forge Toolkit — complete explanation
+
+The analog toolkit is the **physical, by-hand implementation** of the ForgeFactory / ReForge logic. It is not just a teaching aid or symbolic metaphor. It is a manual reasoning workbench where a person can physically enact:
+
+```text
+state observation
+→ enumeration
+→ local center selection
+→ color-state assignment
+→ proof / obligation split
+→ route binding
+→ receipt
+→ archive or continuation
+```
+
+The digital tools simulate and preserve it. The analog kit is the hand-operated version.
+
+---
+
+# 1. Core purpose
+
+The kit exists so the system can be run without software.
+
+A person using the kit should be able to take any problem, observation, paper claim, design question, route, proof attempt, or unresolved idea and physically break it into:
+
+```text
+what is known
+what is unknown
+what is the current center
+what color-state is active
+what continues
+what branches
+what proves
+what remains obligated
+what binds
+what must start a new page
+```
+
+The kit is therefore a **manual state machine**.
+
+It uses ordinary objects:
+
+```text
+paper
+notebooks
+binders
+colors
+strings
+tokens
+cards
+dice
+stickers
+overlays
+notecards
+balsa
+tabs
+sheets
+```
+
+but each object has a defined role in the reasoning system.
+
+---
+
+# 2. The absolute base operation
+
+Every use of the kit reduces to one primitive action:
+
+```text
+continue here
+or
+start a new page
+```
+
+That same decision appears under several names:
+
+| Operational pair    | Meaning                                     |
+| ------------------- | ------------------------------------------- |
+| Continue / new page | Stay in current state or create a new state |
+| Proof / obligation  | Accepted route or unresolved route          |
+| White / black       | Visible continuation or shadow remainder    |
+| Same / different    | Idempotent return or bifurcation            |
+| Bound / loose       | Archived receipt or active live state       |
+| Known / unknown     | Placed prior or unplaced item               |
+| Current / adjacent  | Current center or neighboring state         |
+
+So the kit is not trying to do many unrelated things. It repeatedly asks:
+
+```text
+Does this action close here, or does it generate a new state?
+```
+
+---
+
+# 3. The central object: C
+
+Every live action has a **center**, called `C`.
+
+In the physical kit, `C` can be represented by:
+
+```text
+a token
+a sticker
+a marked cell
+a card
+a circled point
+a string intersection
+a page title
+a notebook position
+```
+
+`C` is the current local state being read.
+
+The first physical step is usually:
+
+```text
+place C
+```
+
+Then everything else is interpreted relative to it:
+
+```text
+left of C
+right of C
+above C
+below C
+inside C
+outside C
+same page as C
+new page from C
+bound to C
+obligated by C
+```
+
+This makes every action local first, then expandable.
+
+---
+
+# 4. Color is the only dynamic field
+
+The most important rule:
+
+```text
+color is the active thing
+```
+
+Objects are carriers. Color is what moves.
+
+| Object   | Role                            |
+| -------- | ------------------------------- |
+| Paper    | substrate                       |
+| Notebook | color-domain container          |
+| Binder   | archived domain                 |
+| String   | edge / bond / carrier           |
+| Token    | local body / state marker       |
+| Sticker  | fixed state tag                 |
+| Card     | ordering / permutation operator |
+| Dice     | probability boundary operator   |
+| Sleeve   | reversible overlay              |
+| Balsa    | rigid lattice edge              |
+| Color    | active state field              |
+
+So a red string is not merely “a string that is red.” It is a **red carrier relation**.
+
+A black sticker is not merely a black sticker. It is an **obligation marker**.
+
+A white page is not merely white paper. It is a **visible continuation surface**.
+
+The physical system works because color carries state.
+
+---
+
+# 5. Color families
+
+The kit has several required color/state families.
+
+## Red, green, blue
+
+These are the primary active color families.
+
+They function as the main state colors:
+
+```text
+red
+green
+blue
+```
+
+In the user’s framing, these are not arbitrary colors. They are treated as **quark-color style state carriers**. When a red object moves, the red state is moving. When red and green are placed together, the relation between those states must be recorded.
+
+## White
+
+White is the proof / continuation / exposed path.
+
+White means:
+
+```text
+this route remains visible
+this route continues
+this route is accepted for the current step
+this route has proof-bearing status
+```
+
+White does not mean morally good. It means **visible continuation**.
+
+## Black
+
+Black is the obligation / shadow / unresolved branch.
+
+Black means:
+
+```text
+this route did not close yet
+this route is deferred
+this route remains an obligation
+this route must be carried forward
+```
+
+Black does not mean bad. It means **unresolved remainder**.
+
+## Grey
+
+Grey is the unresolved substrate.
+
+Loose work starts grey because it has not yet been assigned a stable color-state.
+
+Grey means:
+
+```text
+pre-read
+unresolved
+unassigned
+not yet bound
+not yet colored into a state
+```
+
+## Clear
+
+Clear is overlay and reversible testing.
+
+Clear means:
+
+```text
+temporary read
+non-destructive annotation
+comparison layer
+test route
+possible state
+```
+
+Clear lets the user test without destroying the base page.
+
+## Neon
+
+Neon marks active boundary, collision, emphasis, or high-energy state.
+
+Neon is used when something is:
+
+```text
+highly active
+collision-relevant
+boundary-sensitive
+needs attention
+in a live transition
+```
+
+---
+
+# 6. The eightfold production rule
+
+The kit is produced with:
+
+```text
+8 copies of every tool per color
+```
+
+This was a key point.
+
+Not:
+
+```text
+8 tool types
+```
+
+but:
+
+```text
+8 copies of each tool
+```
+
+For each color family, there should be eight of each relevant part:
+
+```text
+8 notebooks or notebook sections
+8 loose page sets
+8 string sets
+8 token sets
+8 sticker sets
+8 notecard sets
+8 sleeve / overlay sets
+8 tab sets
+8 workbook sheet sets
+8 carrier tools where possible
+```
+
+## Why eight?
+
+Because the system needs to physically represent the eightfold local readout:
+
+```text
+8 directions
+8 faces
+8 branches
+8 local positions
+8 visible state slots
+8 possible closures
+8 proof / obligation placements
+8 surrounding relations to C
+```
+
+The eightfold duplication prevents the operator from collapsing multiple distinct state positions into one physical object.
+
+---
+
+# 7. Bound copy and loose copy
+
+Each object can appear in two modes.
+
+## Loose mode
+
+Loose mode is active, live, unresolved.
+
+Examples:
+
+```text
+loose sheet
+loose token
+loose card
+loose string
+loose notecard
+loose sticker
+```
+
+Loose mode means:
+
+```text
+this is currently being worked
+this has not fully closed
+this may still move
+this may bind later
+```
+
+## Bound mode
+
+Bound mode is archived, stable, receipted.
+
+Examples:
+
+```text
+notebook page
+binder section
+receipt sheet
+fixed sticker
+archived card order
+tied string route
+```
+
+Bound mode means:
+
+```text
+this state has been recorded
+this route has a receipt
+this object is part of the archive
+this can be returned to later
+```
+
+The basic movement is:
+
+```text
+loose state → tested state → bound receipt
+```
+
+or:
+
+```text
+loose state → failed closure → black obligation
+```
+
+---
+
+# 8. Grey sheet starting rule
+
+A new live problem begins on grey substrate.
+
+The grey sheet means:
+
+```text
+this state is not yet assigned
+```
+
+Then the user adds color.
+
+A valid live sheet should receive at least three colors:
+
+```text
+grey page
++ color 1
++ color 2
++ color 3
+= active gradient state
+```
+
+The three colors are not decoration. They create the first relational read.
+
+They can represent:
+
+```text
+L / C / R
+```
+
+or:
+
+```text
+active state / carrier state / boundary state
+```
+
+or:
+
+```text
+known / center / unknown
+```
+
+The point is that a single color usually over-collapses the state. A gradient forces the operator to read the relation.
+
+---
+
+# 9. Binding rules
+
+The toolkit has strict binding rules.
+
+## Same-color binding
+
+Same-color pages can bind self-similarly.
+
+Example:
+
+```text
+red page → red notebook
+blue page → blue notebook
+black obligation → black binder
+```
+
+This means the state belongs to that color family.
+
+## Cross-color binding
+
+Different colors may bind only if the relation is legal.
+
+A legal relation must be one of:
+
+```text
+adjacent
+conjugate
+carrier-linked
+gradient-linked
+explicitly receipted
+pre-authorized by the boundary
+```
+
+Random binding is not allowed.
+
+If a red page and a blue page bind, the reason must be recorded:
+
+```text
+why red touches blue
+what relation is active
+what state moved
+what obligation was created
+what proof was accepted
+```
+
+---
+
+# 10. The physical parts
+
+## 10.1 Notebooks
+
+A notebook is a **color-state domain**.
+
+It is where stable work for that color or state family is kept.
+
+A notebook holds:
+
+```text
+stable pages
+accepted routes
+open obligations
+proof chains
+definitions
+examples
+receipts
+state transitions
+```
+
+Types:
+
+| Notebook       | Function                           |
+| -------------- | ---------------------------------- |
+| Red notebook   | Red state domain                   |
+| Green notebook | Green state domain                 |
+| Blue notebook  | Blue state domain                  |
+| White notebook | Proof / continuation domain        |
+| Black notebook | Obligation / unresolved domain     |
+| Grey notebook  | Pre-state / unresolved substrate   |
+| Clear notebook | Overlay / comparison domain        |
+| Neon notebook  | Active boundary / collision domain |
+
+The notebook is the physical equivalent of a local database table or state partition.
+
+---
+
+## 10.2 Binders
+
+A binder is a larger archival domain.
+
+Where notebooks hold active color work, binders hold organized bodies of completed or semi-completed work.
+
+Binders are for:
+
+```text
+paper families
+proof families
+tool families
+receipts
+Hamiltonian windows
+workbook sheets
+appendices
+source ledgers
+```
+
+A binder can be created when a domain becomes large enough to need its own archive.
+
+Examples:
+
+```text
+Paper 00-10 binder
+Analog workbook binder
+MetaForge binder
+KnightForge binder
+Obligation binder
+Source receipt binder
+```
+
+---
+
+## 10.3 Loose pages
+
+Loose pages are live work surfaces.
+
+They can be:
+
+```text
+grey pages
+colored pages
+gradient pages
+graph pages
+line pages
+grid pages
+blank pages
+cartographic pages
+receipt pages
+proof-tree pages
+obligation pages
+```
+
+A loose page is used when the state is still moving.
+
+Once stable, it can be bound into a notebook or binder.
+
+---
+
+## 10.4 Gradient pages
+
+Gradient pages represent relational states.
+
+They are used when one color is interacting with another color.
+
+Example:
+
+```text
+red → black
+red → white
+red → blue
+green → clear
+grey → red → blue
+```
+
+A gradient page says:
+
+```text
+this state is not isolated
+this color is being read through another color
+```
+
+Gradient pages are important for avoiding false simplification.
+
+---
+
+## 10.5 Pens and markers
+
+Pens and markers are trace tools.
+
+They record:
+
+```text
+routes
+boundaries
+entry points
+exit points
+proof marks
+obligation marks
+color movement
+corrections
+closures
+```
+
+A pen mark is not just writing. It is a **state trace**.
+
+Different colors of ink have different state meaning.
+
+---
+
+## 10.6 Strings
+
+Strings are carrier edges.
+
+They represent:
+
+```text
+connection
+edge
+bond
+braid
+knot
+dependency
+constraint
+transport path
+page-to-page bridge
+state relation
+```
+
+Strings are used when a relation must stay physically visible.
+
+Examples:
+
+```text
+connect a claim to a lemma
+connect a page to an obligation
+connect a token to a notebook
+connect two colored states
+show a braid between routes
+tie a failed branch to a black card
+```
+
+A knot can mean unresolved dependency.
+A braid can mean interacting routes.
+A straight string can mean direct carrier.
+A curved or looped string can mean non-linear transport.
+
+String color matters.
+
+---
+
+## 10.7 Tokens
+
+Tokens are movable state bodies.
+
+They represent:
+
+```text
+current C
+local object
+active node
+particle-like state
+branch
+piece
+cell
+candidate route
+```
+
+Tokens can be moved, grouped, separated, paired, or bound.
+
+A token is useful when the state should move without rewriting the page.
+
+The most important token is the `C` token:
+
+```text
+this is the current center being read
+```
+
+---
+
+## 10.8 Stickers
+
+Stickers are fixed local marks.
+
+They are used for:
+
+```text
+state labels
+proof marks
+obligation marks
+closure tags
+receipt anchors
+boundary markers
+route IDs
+paper IDs
+tool IDs
+```
+
+A sticker is more permanent than a token.
+
+If a token says:
+
+```text
+this state is currently here
+```
+
+a sticker says:
+
+```text
+this page now contains this marked state
+```
+
+---
+
+## 10.9 Notecards / index cards
+
+Notecards are decision probes.
+
+They are used to record possible next actions.
+
+A notecard can ask:
+
+```text
+Does this continue here?
+Does this need a new page?
+Is this proof?
+Is this obligation?
+Which color does this bind to?
+Which notebook receives this?
+What route failed?
+What route remains possible?
+```
+
+Notecards are especially important because they prevent the operator from forcing a decision too early.
+
+They preserve possible continuations.
+
+A notecard can become:
+
+```text
+a proof note
+an obligation note
+a routing note
+a source note
+a question note
+a binding test
+a page-birth record
+```
+
+---
+
+## 10.10 Clear sleeves and overlays
+
+Clear sleeves let the user test a route without modifying the original page.
+
+They support:
+
+```text
+temporary annotation
+dry-erase testing
+overlay comparison
+route simulation
+alternate path marking
+correction layers
+```
+
+The base page remains stable.
+The overlay carries temporary state.
+
+This is the manual version of a reversible computational layer.
+
+---
+
+## 10.11 Dice
+
+Dice are probability-boundary operators.
+
+They are not used as casual randomness.
+
+Dice are used only when the system has reached a legal uncertainty boundary.
+
+A die roll answers:
+
+```text
+which legal branch is sampled?
+is this randomness or bounded possibility?
+which probability boundary is being tested?
+```
+
+The result must be receipted.
+
+A die roll without a receipt does not count as a valid system operation.
+
+Dice represent:
+
+```text
+bounded uncertainty
+branch sampling
+probability scale
+randomness test
+possible-vs-random distinction
+```
+
+---
+
+## 10.12 Playing cards
+
+A standard deck of cards is a compact permutation computer.
+
+It naturally contains:
+
+```text
+red / black polarity
+4 suits
+10 numbered ranks
+ace as 1 or 11
+3 face cards
+2 jokers
+sequence
+ordering
+shuffle
+draw
+permutation
+```
+
+Cards can represent:
+
+| Card feature   | Toolkit meaning                                 |
+| -------------- | ----------------------------------------------- |
+| Red / black    | proof / obligation polarity or binary split     |
+| Suits          | four state families                             |
+| Number ranks   | ordered states 1-10                             |
+| Ace            | 1 or 11 boundary                                |
+| Face cards     | witness / operator states                       |
+| Jokers         | outside-vocabulary / exception / unplaced state |
+| Shuffle        | permutation                                     |
+| Draw           | branch selection                                |
+| Ordered spread | sequence / route                                |
+
+Cards are used when the state requires ordering, sequencing, permutation, or binary split.
+
+---
+
+## 10.13 Balsa wood
+
+Balsa wood is the rigid lattice-building material.
+
+It represents:
+
+```text
+edge
+axis
+frame
+rigid relation
+lattice support
+spatial boundary
+```
+
+With balsa, the notebook system can become a physical 3D lattice.
+
+The transition is:
+
+```text
+page grid
+→ string relation
+→ notecard state
+→ balsa edge
+→ lattice model
+```
+
+Balsa is useful when the paper-state representation is too flat and the user needs a constructed object.
+
+---
+
+## 10.14 Tabs and dividers
+
+Tabs and dividers are navigation tools.
+
+They mark:
+
+```text
+paper number
+tool family
+color family
+proof status
+obligation status
+source type
+appendix
+receipt section
+workbook section
+```
+
+They make the physical archive navigable.
+
+Without tabs, the archive becomes a pile.
+With tabs, it becomes a graph.
+
+---
+
+## 10.15 Workbook sheets
+
+Workbook sheets are standardized physical forms.
+
+Each sheet captures one operation.
+
+A workbook sheet can include:
+
+```text
+action ID
+paper / tool name
+current C
+input state
+colors used
+gradient
+L / C / R positions
+proof / obligation result
+strings used
+tokens moved
+cards drawn
+dice rolled
+binding decision
+receipt
+open obligations
+next action
+```
+
+Each paper should eventually have its own workbook sheet.
+
+Each ForgeFactory tool should also be able to produce one.
+
+---
+
+# 11. Receipts
+
+A receipt is the closure record.
+
+It records what happened and why the state is allowed to persist.
+
+A receipt should include:
+
+```text
+what was observed
+where it started
+what page it used
+what color-state was assigned
+what tools were used
+what decision was made
+what proof path continued
+what obligation remains
+what notebook or binder received it
+what next action is required
+```
+
+A valid receipt makes the action recoverable.
+
+Without a receipt, the work may be meaningful, but it is not yet system-stable.
+
+---
+
+# 12. The proof / obligation split
+
+Every meaningful action must split into:
+
+```text
+white path
+black path
+```
+
+## White path
+
+White path means:
+
+```text
+visible
+accepted for now
+continues
+proof-bearing
+bindable
+```
+
+## Black path
+
+Black path means:
+
+```text
+unresolved
+deferred
+shadowed
+not yet proven
+must be carried
+```
+
+This avoids false closure.
+
+The system does not discard failed or unresolved material. It stores it as black obligation.
+
+---
+
+# 13. How a by-hand run works
+
+A typical run:
+
+```text
+1. Choose a problem, claim, action, or object.
+2. Place it on a loose grey page.
+3. Mark the current center C.
+4. Add at least three colors as a gradient.
+5. Use tokens to mark local states.
+6. Use strings to show dependencies.
+7. Use notecards to ask continuation questions.
+8. Use cards if ordering/permutation is needed.
+9. Use dice only if bounded uncertainty is reached.
+10. Decide white continuation or black obligation.
+11. Test whether the result binds to an existing notebook.
+12. If it binds, archive it with a receipt.
+13. If it does not bind, start a new page or carry an obligation.
+14. Update the receipt ledger.
+```
+
+This is the manual equivalent of running a simulation step.
+
+---
+
+# 14. How the kit handles a paper
+
+For a paper, the kit is used like this:
+
+```text
+1. Put the paper claim on a grey page.
+2. Mark the active C.
+3. Identify definitions, axioms, lemmas, examples, obligations.
+4. Assign colors to each role.
+5. Use strings to connect dependencies.
+6. Put unresolved pieces on black obligation cards/pages.
+7. Put accepted continuations on white proof pages.
+8. Bind stable sections into the paper notebook.
+9. Produce a workbook sheet.
+10. Generate the receipt.
+```
+
+So a paper is not only read. It is physically decomposed.
+
+---
+
+# 15. How the kit handles software tools
+
+A ForgeFactory tool should have an analog equivalent.
+
+Example:
+
+```text
+digital: graph node
+analog: token
+
+digital: graph edge
+analog: string
+
+digital: receipt JSON
+analog: receipt sheet
+
+digital: proof obligation
+analog: black card/page
+
+digital: accepted proof path
+analog: white card/page
+
+digital: state color
+analog: physical color
+```
+
+This gives the rule:
+
+```text
+anything digital must be physically reproducible
+anything physical must be digitally recordable
+```
+
+---
+
+# 16. How the kit handles images, video, and geometry
+
+## Image
+
+An image can be treated as:
+
+```text
+grid
+color field
+patch set
+gradient state
+pixel route
+```
+
+Analog tools:
+
+```text
+colored pages
+tokens
+stickers
+transparent overlays
+grid paper
+```
+
+## Video / motion
+
+Motion can be treated as:
+
+```text
+frame A
+transition
+frame B
+```
+
+Analog tools:
+
+```text
+overlays
+tokens
+strings
+ordered cards
+tabs
+frame sheets
+```
+
+## Geometry
+
+Geometry can be treated as:
+
+```text
+points
+edges
+faces
+boundaries
+lattice
+```
+
+Analog tools:
+
+```text
+balsa
+strings
+tokens
+grid pages
+notecards
+```
+
+---
+
+# 17. Product-level kit types
+
+The toolkit can exist in several product forms.
+
+## Starter kit
+
+Basic user kit:
+
+```text
+grey pages
+red / green / blue / white / black markers
+small token set
+small string set
+notecards
+receipt sheets
+basic guide
+```
+
+## Full kit
+
+Complete eightfold color kit:
+
+```text
+all color families
+8 copies of every tool per color
+notebooks
+binders
+strings
+tokens
+stickers
+sleeves
+cards
+dice
+balsa
+tabs
+workbook sheets
+manual
+```
+
+## Paper kit
+
+A kit for working through Papers 00-30:
+
+```text
+paper-specific workbook sheets
+proof ledgers
+obligation cards
+paper binders
+source-integration sheets
+```
+
+## Forge module kit
+
+A kit for a specific engine:
+
+```text
+MetaForge kit
+FoldForge kit
+KnightForge kit
+MorphoniX kit
+PixleForge kit
+GlyphForge kit
+```
+
+## Education kit
+
+A simplified kit for students:
+
+```text
+state tracking
+proof vs obligation
+graph thinking
+cards and dice
+tokens and strings
+colored pages
+simple workbook sheets
+```
+
+---
+
+# 18. What each part is “for” in one table
+
+| Part             | Function                                         |
+| ---------------- | ------------------------------------------------ |
+| Grey paper       | unresolved starting substrate                    |
+| Colored paper    | state-domain page                                |
+| Gradient paper   | relation between states                          |
+| Notebook         | active color-domain archive                      |
+| Binder           | larger proof/tool/paper archive                  |
+| Pen/marker       | state trace                                      |
+| String           | edge, bond, braid, dependency                    |
+| Token            | movable local state body                         |
+| C token          | current center                                   |
+| Sticker          | fixed state marker                               |
+| Notecard         | decision probe / possible route                  |
+| Clear sleeve     | reversible overlay                               |
+| Dice             | bounded uncertainty / probability test           |
+| Playing cards    | binary, ordering, permutation, witness operators |
+| Balsa            | rigid lattice / spatial edge                     |
+| Tab/divider      | graph navigation                                 |
+| Workbook sheet   | standardized operation form                      |
+| Receipt sheet    | closure record                                   |
+| Black page/card  | obligation                                       |
+| White page/card  | proof continuation                               |
+| Neon marker/tool | active boundary or collision state               |
+
+---
+
+# 19. What makes it different from normal note-taking
+
+Normal note-taking records thoughts.
+
+This toolkit records **state transitions**.
+
+The difference:
+
+```text
+ordinary notebook:
+  write an idea down
+
+analog forge notebook:
+  place a state
+  assign color
+  identify C
+  test binding
+  split proof/obligation
+  receipt the action
+  archive or branch
+```
+
+It is structured enough that the same action can later be converted into:
+
+```text
+JSON receipt
+graph node
+graph edge
+paper appendix
+ForgeFactory tool output
+simulation run
+workbook sheet
+```
+
+---
+
+# 20. Final definition
+
+```text
+The analog toolkit is an eightfold, color-dynamic, by-hand reasoning workbench.
+It turns ordinary physical materials into a structured state machine. Paper is
+substrate, notebooks are state domains, binders are archives, strings are
+edges, tokens are local bodies, cards are permutation operators, dice are
+probability-boundary operators, sleeves are reversible overlays, and color is
+the only dynamic field. Every action begins loose, usually on grey substrate,
+receives a color-gradient read, identifies a current center C, splits into
+proof or obligation, and then either binds into a notebook/binder with a receipt
+or remains carried as an unresolved black obligation. The kit is the physical
+counterpart of ForgeFactory: any manual operation should be digitally
+recordable, and any digital tool operation should be physically reproducible.
+```

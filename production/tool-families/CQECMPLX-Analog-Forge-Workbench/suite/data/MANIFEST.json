@@ -1,0 +1,222 @@
+[
+  {
+    "path": ".pytest_cache/.gitignore",
+    "bytes": 37,
+    "sha256": "3ed731b65d06150c138e2dadb0be0697550888a6b47eb8c45ecc9adba8b8e9bd"
+  },
+  {
+    "path": ".pytest_cache/CACHEDIR.TAG",
+    "bytes": 191,
+    "sha256": "37dc88ef9a0abeddbe81053a6dd8fdfb13afb613045ea1eb4a5c815a74a3bde4"
+  },
+  {
+    "path": ".pytest_cache/README.md",
+    "bytes": 302,
+    "sha256": "73fd6fccdd802c419a6b2d983d6c3173b7da97558ac4b589edec2dfe443db9ad"
+  },
+  {
+    "path": ".pytest_cache/v/cache/nodeids",
+    "bytes": 171,
+    "sha256": "6a442173995a0900ed4667496738e756a38565bfbb99e9af1c5a79246345895b"
+  },
+  {
+    "path": "README.md",
+    "bytes": 872,
+    "sha256": "a1f5706ed80cd297d6017cb616f9dd5a4d08d672b4ebc56f06be18281f1f44b0"
+  },
+  {
+    "path": "data/demo_summary.json",
+    "bytes": 2251,
+    "sha256": "d99643b78daab8c6e6f56844f78dbd781cfd6b7694500091b046e4514b0af605"
+  },
+  {
+    "path": "data/kit_manifest.json",
+    "bytes": 288010,
+    "sha256": "1e6a9b0e17c0f47f5395d9746201cfccd1d8a13c164052b35aef3fbad72242f0"
+  },
+  {
+    "path": "data/pytest.txt",
+    "bytes": 709,
+    "sha256": "693269a7b250643acdd8d6a597e894c3f0d548b2840b51eb1c1ba4b59bad2589"
+  },
+  {
+    "path": "docs/ANALOG_FORGE_WORKBOOK_KIT_DEFINITION.md",
+    "bytes": 692,
+    "sha256": "0530530cd705d8dac55aee96fa986096bb47004d169603ad8280d4701d1c663c"
+  },
+  {
+    "path": "docs/WORKBENCH_SUITE_ARCHITECTURE.md",
+    "bytes": 559,
+    "sha256": "ff60d7ba590ce77251ebc2783f78fafc13ec1979b5908660dd91b1ec566e0314"
+  },
+  {
+    "path": "examples/demo_workflow.py",
+    "bytes": 348,
+    "sha256": "504c478b224edfa491618382687592b804c667a09afe175091475e0a2168778b"
+  },
+  {
+    "path": "exports/demo_run/kit_manifest.json",
+    "bytes": 288010,
+    "sha256": "1e6a9b0e17c0f47f5395d9746201cfccd1d8a13c164052b35aef3fbad72242f0"
+  },
+  {
+    "path": "exports/demo_run/receipts.json",
+    "bytes": 774,
+    "sha256": "b89d6218baf4e7a8fa588657d571968cc16e9735f83db3cb944c23cf47ab5ab9"
+  },
+  {
+    "path": "exports/demo_run/workbook_sheets.json",
+    "bytes": 822,
+    "sha256": "ab53c03a36578eb7a10571ded138ff26243bb6a55c50e8ca9b30eeac7cbc1f05"
+  },
+  {
+    "path": "notebooks/analog_forge_workbench_demo.ipynb",
+    "bytes": 957,
+    "sha256": "4cdb844f29d768c90bba6aa765e925343603cfe84687401598f9061909b5e325"
+  },
+  {
+    "path": "pdf/AnalogForge_Demo_Simulation_Report.pdf",
+    "bytes": 2687,
+    "sha256": "da2baa7e848d83d5cf2296151400f9ef905289e6888f50c32bc75fee25341ae3"
+  },
+  {
+    "path": "pdf/AnalogForge_Kit_Manual.pdf",
+    "bytes": 5574,
+    "sha256": "e0492decbb30c24c01f194e156b2dbe1b43106635ee66540c9be28dd1048621b"
+  },
+  {
+    "path": "pdf/AnalogForge_Printable_Workbook_Sheets.pdf",
+    "bytes": 6858,
+    "sha256": "07731b61742c37760719617de1f003e46e10852d1c9fc9c115ae5ad9b77baf23"
+  },
+  {
+    "path": "pdf/AnalogForge_Python_Simulation_Guide.pdf",
+    "bytes": 2779,
+    "sha256": "d47a8f076fda79b4a545af6fcf05dd89d7492404bcfdb743efd0c09a66dffccf"
+  },
+  {
+    "path": "pyproject.toml",
+    "bytes": 449,
+    "sha256": "1a3415cedc03a42f591e48185651e7d35750bb8a1ffc3e593d40d7c560084a36"
+  },
+  {
+    "path": "sheets/ACTION_SHEET_TEMPLATE.md",
+    "bytes": 185,
+    "sha256": "6d706ec62caf97b00231e3631c6b5e06c59c3daddccca6d478c2ea57de79ee68"
+  },
+  {
+    "path": "sheets/BALSA_LATTICE_LOG_TEMPLATE.md",
+    "bytes": 152,
+    "sha256": "f8d46dda35300640ddf5aebe78901e4bf4ca6f9e68860099a1f5445e725e473d"
+  },
+  {
+    "path": "sheets/CARD_PERMUTATION_LOG_TEMPLATE.md",
+    "bytes": 150,
+    "sha256": "e92250d8b07307f596aceaab7637f7bd71cea5297d80f7d3a30a5dd8e64d1ea9"
+  },
+  {
+    "path": "sheets/DICE_BOUNDARY_LOG_TEMPLATE.md",
+    "bytes": 141,
+    "sha256": "86a9efbf143fd8e4e6a980ccd6f809d18075c35da556f9117328ac7ca191196a"
+  },
+  {
+    "path": "sheets/GRADIENT_SHEET_TEMPLATE.md",
+    "bytes": 164,
+    "sha256": "260bb0783b59e9dd654026bc5ad420b701fda22b5110bd034a361d2f3718da17"
+  },
+  {
+    "path": "sheets/RECEIPT_SHEET_TEMPLATE.md",
+    "bytes": 190,
+    "sha256": "3829654254f159fd0a9c77196a922b0e3d6cb2c542df17b19137581634464d91"
+  },
+  {
+    "path": "sheets/STRING_BRAID_LOG_TEMPLATE.md",
+    "bytes": 150,
+    "sha256": "39fa252486fe807df741bd58e3442c223f279173ea294fa6219b749446360bd9"
+  },
+  {
+    "path": "src/forgefactory_analog_workbench/__init__.py",
+    "bytes": 206,
+    "sha256": "4fbc82fd32f5159e18959437457cbb34393e69bb9d9409511457604f4f64d51b"
+  },
+  {
+    "path": "src/forgefactory_analog_workbench/__pycache__/__init__.cpython-313.pyc",
+    "bytes": 471,
+    "sha256": "bc13bb6d5de9151c5de72145cf3ce3591a3973a08ff417583bda22851feba34a"
+  },
+  {
+    "path": "src/forgefactory_analog_workbench/__pycache__/kit.cpython-313.pyc",
+    "bytes": 5500,
+    "sha256": "c488d0c50ad88e7158cca2231a7f8c74721f8333abb0904c6805e95f262b250a"
+  },
+  {
+    "path": "src/forgefactory_analog_workbench/__pycache__/operators.cpython-313.pyc",
+    "bytes": 3652,
+    "sha256": "a272b5c76be7ad57b7b6c599058be02d4d5fe58e0b763a863830cbd8b8b7e05c"
+  },
+  {
+    "path": "src/forgefactory_analog_workbench/__pycache__/pdf_reports.cpython-313.pyc",
+    "bytes": 13003,
+    "sha256": "43d9f28f2e0efb82ebedae6210acd6c849ebfead74b807e701a0c48accbca19b"
+  },
+  {
+    "path": "src/forgefactory_analog_workbench/__pycache__/receipts.cpython-313.pyc",
+    "bytes": 4055,
+    "sha256": "a3383faece4cf50b3a763cd8fab78f017eac8f0b78666774cd501af65fca94e5"
+  },
+  {
+    "path": "src/forgefactory_analog_workbench/__pycache__/simulation.cpython-313.pyc",
+    "bytes": 5483,
+    "sha256": "3a5567c27442f0581e21f7239e40596fcb47f7021fff1c2ff99a3764d90bc327"
+  },
+  {
+    "path": "src/forgefactory_analog_workbench/__pycache__/workbook.cpython-313.pyc",
+    "bytes": 1929,
+    "sha256": "86a6a856b85f78d859373dc3cf9c9087eab622310074315c5eab730ef2157a4d"
+  },
+  {
+    "path": "src/forgefactory_analog_workbench/cli.py",
+    "bytes": 1670,
+    "sha256": "410c2801d988cb1723a4398f5f7657e3f3ef667b47ac23baa90dfe0766d5dde8"
+  },
+  {
+    "path": "src/forgefactory_analog_workbench/kit.py",
+    "bytes": 4664,
+    "sha256": "ff23e0873613d339b00257ac00b95123be8aede8566dfe07ff51a46ce5bffd50"
+  },
+  {
+    "path": "src/forgefactory_analog_workbench/operators.py",
+    "bytes": 2404,
+    "sha256": "5202e7832b185128b210ac3c8602ad0a5a9d546ff5b7da57e72a1e570762108c"
+  },
+  {
+    "path": "src/forgefactory_analog_workbench/pdf_reports.py",
+    "bytes": 8682,
+    "sha256": "48d8a2123eceb69f6204e7ab6cb505cbb92ee3d23d2dd96491b1faf361e16941"
+  },
+  {
+    "path": "src/forgefactory_analog_workbench/receipts.py",
+    "bytes": 2741,
+    "sha256": "e735f0a486d33591016ff3f74a9972d8b89c7c85012153ad1e516fc3f1715884"
+  },
+  {
+    "path": "src/forgefactory_analog_workbench/simulation.py",
+    "bytes": 3802,
+    "sha256": "5eb6dc1477a56b5bff55831dbd4547989dfecb0c9fae44aee6b63f6be98a7ce6"
+  },
+  {
+    "path": "src/forgefactory_analog_workbench/workbook.py",
+    "bytes": 1242,
+    "sha256": "8294803baf9e05815c9c41758efd3b00478916b0daddd8f46ea38b907b103880"
+  },
+  {
+    "path": "tests/__pycache__/test_workbench.cpython-313-pytest-9.0.2.pyc",
+    "bytes": 5190,
+    "sha256": "0d85339d8d79dd8e609d4f9a5237ad61929021d85c8e1b8306afa61df1f75859"
+  },
+  {
+    "path": "tests/test_workbench.py",
+    "bytes": 693,
+    "sha256": "0c8816f072d2096691a09233076954c312c86c8c13b965421c21c99abcec9ee2"
+  }
+]

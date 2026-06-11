@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "forgefactory-analog-workbench"
+version = "0.1.0"
+description = "Analog Forge Workbook Kit simulator, receipt engine, and PDF workbench generator."
+requires-python = ">=3.10"
+dependencies = ["reportlab>=4.0"]
+
+[project.scripts]
+analog-workbench = "forgefactory_analog_workbench.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
