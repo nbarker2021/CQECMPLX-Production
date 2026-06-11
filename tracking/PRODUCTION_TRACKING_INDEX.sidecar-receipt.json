@@ -1,0 +1,81 @@
+﻿{
+  "boundary_frame": {
+    "byte_count": 3253,
+    "encoding": "utf-8",
+    "payload_b64": "IyBQcm9kdWN0aW9uIFRyYWNraW5nIEluZGV4CgpUaGlzIGlzIHRoZSBmaXJzdCBpbmRleCBvZiBtYXRlcmlhbCB0aGF0IGlzIGRvbmUgZW5vdWdoIHRvIHRyYWNrIGZvciBldmVudHVhbApwdWJsaWNhdGlvbiBpbiBgbmJhcmtlcjIwMjEvQ1FFQ01QTFgtUHJvZHVjdGlvbmAuCgpUaGUgaW5kZXggdHJhY2tzIGNvbXBvc2l0ZXMuIEl0IGRvZXMgbm90IGNob29zZSBhIHdpbm5lciBhbW9uZyBkdXBsaWNhdGVzLgoKIyMgQ29tcG9zaXRlIENhbmRpZGF0ZXMKCnwgQ29tcG9zaXRlIHwgU3RhdHVzIHwgV2h5IEl0IElzIFRyYWNrYWJsZSB8IEZpcnN0IFByb2R1Y3Rpb24gUm91dGUgfAp8LS0tfC0tLXwtLS18LS0tfAp8IGBDUUVDTVBMWC1LZXJuZWwtU2lkZWNhcmAgfCBgdHJhY2thYmxlLXNsaWNlYCB8IHNpZGVjYXIgcnVudGltZSwgb3BlcmF0b3Igd2ViLCBEb2NrZXIgZGVwbG95LCBtb2R1bGUvZGF0YSBjb250cmFjdHMsIGRlcGxveW1lbnQgcHJvb2ZzIHwgYHByb2R1Y3Rpb24va2VybmVsLXJ1bnRpbWVgIHwKfCBgQ1FFQ01QTFgtRG9ja2VyLU9wZXJhdG9yYCB8IGB0cmFja2FibGUtY29tcG9zaXRlYCB8IGtlcm5lbCBEb2NrZXIgcHJvb2YsIERvY2tlciB0b29sIGFkYXB0ZXIsIENvbXBvc2UgYm91bmRhcnksIEQ6XERvY2tlckNvbnRhaW5lcnMgcGxhdGZvcm0gZXZpZGVuY2UgfCBgcHJvZHVjdGlvbi9rZXJuZWwtcnVudGltZWAgKyBgcHJvZHVjdGlvbi9hZGFwdGVyc2AgfAp8IGBDUUVDTVBMWC1MYXR0aWNlRm9yZ2UtUmVGb3JnZWAgfCBgdHJhY2thYmxlLWNvbXBvc2l0ZWAgfCBQYXJ0c0ZhY3RvcnkgbGF0dGljZS1mb3JnZSwgUmVGb3JnZS9Gb3JnZSBrZXJuZWwgcmluZywgbW9ycGhpc20gbGVkZ2VyIHBheWxvYWQsIGxhdHRpY2UvZm9yZ2UgY2xhaW0gZGVuc2l0eSB8IGBwcm9kdWN0aW9uL2xpYi1mb3JnZWAgfAp8IGBDUUVDTVBMWC1FOC1NT1JTUi1EaWFnbm9zdGljc2AgfCBgdHJhY2thYmxlLWNvbXBvc2l0ZWAgfCBFOC9NT1JTUi9DUUUgbmFtZXMgcmVjdXIgYWNyb3NzIHJlcG8gcHJvZmlsZXMsIGtlcm5lbCByaW5nLCBSMzAvRm9ybWFsaXphdGlvbiBwcm9vZiBicmlkZ2UgfCBgcHJvZHVjdGlvbi9wcm9vZi1yZWNlaXB0c2AgKyBgcHJvZHVjdGlvbi9saWItZm9yZ2VgIHwKfCBgQ1FFQ01QTFgtTUNQLUFQSS1Ub29saW5nYCB8IGB0cmFja2FibGUtY29tcG9zaXRlYCB8IENNUExYTUNQIGNvbnRlbnQtcHJvZmlsZSBjb21wbGV0ZSwgTUNQL0FQSSBzdXJmYWNlcyBpbiBEZXZLaXQsIE1vbm9yZXBvLCBEb2NrZXJDb250YWluZXJzIE1DUCB0b29sa2l0IHwgYHByb2R1Y3Rpb24vYWRhcHRlcnNgIHwKfCBgQ1FFQ01QTFgtRm9ybWFsaXphdGlvbi1SMzAtUHJvb2ZgIHwgYHRyYWNrYWJsZS1wcm9vZmAgfCBGb3JtYWxpemF0aW9uIGFuZCBSMzAgYXJlIHByb29mL2xhdHRpY2UvdGhlb3JlbS9wYXBlciBkZW5zZSBhbmQgY3Jvc3MtcmVmZXJlbmNlIFBhcnRzRmFjdG9yeSB8IGBwcm9kdWN0aW9uL3BhcGVyc2AgKyBgcHJvZHVjdGlvbi9wcm9vZi1yZWNlaXB0c2AgfAp8IGBDUUVDTVBMWC1NTURCLUU4LVZlY3Rvci1QYXlsb2Fkc2AgfCBgdHJhY2thYmxlLXBheWxvYWRgIHwgQ01QTFgvQ01QTFhVTkkgREIgcGF5bG9hZCBjYW5kaWRhdGVzIGluY2x1ZGUgTU1EQiwgdmVjdG9yIHN0b3JlcywgRTggREJzIHwgYHByb2R1Y3Rpb24vcGF5bG9hZC1sZWRnZXJgIHwKfCBgQ1FFQ01QTFgtTWFubnktTWVtb3J5LUluc3RydWN0aW9uLVBheWxvYWRzYCB8IGB0cmFja2FibGUtcGF5bG9hZGAgfCBNYW5ueSBjb250YWlucyBtZW1vcnkgYW5kIGluc3RydWN0aW9uIFNRTGl0ZSBwYXlsb2FkcyB3aXRoIERvY2tlci9Db21wb3NlL01DUCBldmlkZW5jZSB8IGBwcm9kdWN0aW9uL3BheWxvYWQtbGVkZ2VyYCB8CnwgYENRRUNNUExYLUNNUExYTkVYVC1PcmNoZXN0cmF0aW9uYCB8IGB0cmFja2FibGUtY29tcG9zaXRlYCB8IE1vbm9yZXBvIGV4cG9zZXMgQ01QTFhORVhUIHN0b3JhZ2UsIE1DUCBhZ2VudCBuZXQsIElERSwgZnJvbnRlbmQgYnJpZGdlIHRlcm1zIHwgYHByb2R1Y3Rpb24vb3JjaGVzdHJhdGlvbmAgfAp8IGBDUUVDTVBMWC1UTU4tUm9sZS1GYW1pbHlgIHwgYHRyYWNrYWJsZS1jb21wb3NpdGVgIHwgVE1OL1RNTjEgZXhwb3NlIHJvbGUvdG9vbCBmYW1pbHkgbmFtZXMgcGx1cyBBUEkvRG9ja2VyL2Zvcm1hbCBzaWduYWxzIHwgYHByb2R1Y3Rpb24vdG9vbC1mYW1pbGllc2AgfAp8IGBDUUVDTVBMWC1SZXBvLUFjY291bnRpbmdgIHwgYHRyYWNrYWJsZS1zbGljZWAgfCBhbGwgMTIgdG9wLWxldmVsIHJlcG8gemlwcyBhcmUgY29udGVudC1wcm9maWxlLWNvbXBsZXRlOyBEQiBhbmQgc3VtbWFyaWVzIGV4aXN0IHwgYHByb2R1Y3Rpb24vd29ya3NwYWNlLWNvcnB1cy1pbmRleGAgfAoKIyMgRmlyc3QgUHVibGlzaGFibGUgVHJhY2tpbmcgUnVsZQoKRm9yIG5vdywgcHVibGlzaGFibGUgbWVhbnMgdGhlIHRyYWNraW5nIHJlY29yZCwgcHJvb2Ygcm91dGUsIGFuZCBjb21wb3NpdGUKZGVmaW5pdGlvbiBjYW4gYmUgY29tbWl0dGVkLiBJdCBkb2VzIG5vdCBtZWFuIHJhdyBwYXlsb2FkcywgcmF3IGFyY2hpdmVzLCBvcgpmdWxsIGdlbmVyYXRlZCBjb3Jwb3JhIHNob3VsZCBlbnRlciB0aGUgcmVwby4KCiMjIElucHV0cyBVc2VkCgotIEV4aXN0aW5nIGRlcGxveW1lbnQgcHJvb2YgZG9jcyBpbiBgcHJvb2ZpbmcvYC4KLSBSZXBvIHppcCBhY2NvdW50aW5nIGRhdGFiYXNlIGFuZCBzdW1tYXJpZXMgdW5kZXIKICBgRDpcQ1FFX0NNUExYXENsYXVkZS1Db2RleC1NZW1vcnlcQ29kZXggd29ya1xDWC1SZXBvLUxpdGVyYWwtQWNjb3VudGluZ2AuCi0gS2VybmVsIHJ1bnRpbWUgYW5kIHJpbmcgdW5kZXIgYEQ6XENRRV9DTVBMWFxDTVBMWC1LZXJuZWxgLgotIExvY2FsIHByb2R1Y3Rpb24gYm9keSB1bmRlciBgRDpcQ1FFX0NNUExYXENRRUNNUExYLVByb2R1Y3Rpb25gLgotIERvY2tlciBwbGF0Zm9ybSB1bmRlciBgRDpcQ1FFX0NNUExYXERvY2tlckNvbnRhaW5lcnNgLgoKIyMgTmV4dCBUcmFja2luZyBXb3JrCgoxLiBDcmVhdGUgb25lIGNvbXBvc2l0ZSBzcGVjIHBlciBjYW5kaWRhdGUuCjIuIEJpbmQgZWFjaCBjYW5kaWRhdGUgdG8gc291cmNlIHBhdGhzIGFuZCBwcm9vZiBkb2NzLgozLiBSdW4gcGF5bG9hZCBleHBhbnNpb24gb25seSBhZnRlciB0aGUgcGF5bG9hZCBsZWRnZXIgcmVjb3JkcyBleGFjdCBjYW5kaWRhdGVzLgo0LiBCaW5kIHBhcGVyIGNsYWltcyBmcm9tIFByb2R1Y3Rpb24sIEFpckxvY2ssIGFuZCBLZXJuZWwgcm9vdHMuCg==",
+    "sha256": "61dfabdf94a041a5399d21b24873bf544d319f5678aec01b2d75fa84c5a5047c"
+  },
+  "enriched_text": "# Production Tracking Index\n\nThis is the first index of material that is done enough to track for eventual\npublication in `nbarker2021/CQECMPLX-Production`.\n\nThe index tracks composites. It does not choose a winner among duplicates.\n\n## Composite Candidates\n\n| Composite | Status | Why It Is Trackable | First Production Route |\n|---|---|---|---|\n| `CQECMPLX-Kernel-Sidecar` | `trackable-slice` | sidecar runtime, operator web, Docker deploy, module/data contracts, deployment proofs | `production/kernel-runtime` |\n| `CQECMPLX-Docker-Operator` | `trackable-composite` | kernel Docker proof, Docker tool adapter, Compose boundary, D:\\DockerContainers platform evidence | `production/kernel-runtime` + `production/adapters` |\n| `CQECMPLX-LatticeForge-ReForge` | `trackable-composite` | PartsFactory lattice-forge, ReForge/Forge kernel ring, morphism ledger payload, lattice/forge claim density | `production/lib-forge` |\n| `CQECMPLX-E8-MORSR-Diagnostics` | `trackable-composite` | E8/MORSR/CQE names recur across repo profiles, kernel ring, R30/Formalization proof bridge | `production/proof-receipts` + `production/lib-forge` |\n| `CQECMPLX-MCP-API-Tooling` | `trackable-composite` | CMPLXMCP content-profile complete, MCP/API surfaces in DevKit, Monorepo, DockerContainers MCP toolkit | `production/adapters` |\n| `CQECMPLX-Formalization-R30-Proof` | `trackable-proof` | Formalization and R30 are proof/lattice/theorem/paper dense and cross-reference PartsFactory | `production/papers` + `production/proof-receipts` |\n| `CQECMPLX-MMDB-E8-Vector-Payloads` | `trackable-payload` | CMPLX/CMPLXUNI DB payload candidates include MMDB, vector stores, E8 DBs | `production/payload-ledger` |\n| `CQECMPLX-Manny-Memory-Instruction-Payloads` | `trackable-payload` | Manny contains memory and instruction SQLite payloads with Docker/Compose/MCP evidence | `production/payload-ledger` |\n| `CQECMPLX-CMPLXNEXT-Orchestration` | `trackable-composite` | Monorepo exposes CMPLXNEXT storage, MCP agent net, IDE, frontend bridge terms | `production/orchestration` |\n| `CQECMPLX-TMN-Role-Family` | `trackable-composite` | TMN/TMN1 expose role/tool family names plus API/Docker/formal signals | `production/tool-families` |\n| `CQECMPLX-Repo-Accounting` | `trackable-slice` | all 12 top-level repo zips are content-profile-complete; DB and summaries exist | `production/workspace-corpus-index` |\n\n## First Publishable Tracking Rule\n\nFor now, publishable means the tracking record, proof route, and composite\ndefinition can be committed. It does not mean raw payloads, raw archives, or\nfull generated corpora should enter the repo.\n\n## Inputs Used\n\n- Existing deployment proof docs in `proofing/`.\n- Repo zip accounting database and summaries under\n  `D:\\CQE_CMPLX\\Claude-Codex-Memory\\Codex work\\CX-Repo-Literal-Accounting`.\n- Kernel runtime and ring under `D:\\CQE_CMPLX\\CMPLX-Kernel`.\n- Local production body under `D:\\CQE_CMPLX\\CQECMPLX-Production`.\n- Docker platform under `D:\\CQE_CMPLX\\DockerContainers`.\n\n## Next Tracking Work\n\n1. Create one composite spec per candidate.\n2. Bind each candidate to source paths and proof docs.\n3. Run payload expansion only after the payload ledger records exact candidates.\n4. Bind paper claims from Production, AirLock, and Kernel roots.\n\nCMPLX sidecar extension:\n- token_count=376 unique_ratio=0.609 entropy_band=high\n- centroid={'index': 188, 'token': '`CQECMPLX-Manny-Memory-Instruction-Payloads`', 'sha8': 'cb61479b'} wave={'period_hint': 2, 'amplitude': 43}\n- route through CQE: engine -> math/proof anchor -> product surface -> receipt\n- use Hidden Guess Result when training_mode is enabled for non-math validation or diagnostic choices\n- preserve reusable behavior for lib promotion; keep identity, lineage, and receipts staged\n- diagnostic_status=pass: token stream is ready for sidecar-assisted continuation",
+  "metadata": {
+    "entrypoint": "boot.py"
+  },
+  "receipt": {
+    "adapter": {
+      "adapter": "CMPLX Universal Adapter",
+      "capabilities": [
+        "file",
+        "stdin",
+        "json"
+      ],
+      "host": "generic-ai",
+      "optional_fields": [
+        "task",
+        "metadata",
+        "host"
+      ],
+      "protocol": "token_string_in_receipt_out",
+      "required_fields": [
+        "token_string"
+      ]
+    },
+    "created_at": "2026-06-11T15:17:42+00:00",
+    "diagnostics": [
+      {
+        "action": "token_stream_readiness",
+        "diagnostic_id": "bb03b154927f997d",
+        "guess": {
+          "action": "token_stream_readiness",
+          "likely_high_density": true,
+          "likely_needs_structure": true,
+          "likely_repetitive": false
+        },
+        "hidden_target_hash": "670442bf906fc014e02faef388567845eb4999e12eb3e6ae4360b6d72617df53",
+        "revealed": {
+          "likely_high_density": true,
+          "likely_needs_structure": true,
+          "likely_repetitive": false
+        },
+        "score": 1.0,
+        "status": "pass"
+      }
+    ],
+    "features": {
+      "centroid": {
+        "index": 188,
+        "sha8": "cb61479b",
+        "token": "`CQECMPLX-Manny-Memory-Instruction-Payloads`"
+      },
+      "char_count": 3253,
+      "entropy": 5.0001,
+      "entropy_band": "high",
+      "line_count": 45,
+      "token_count": 376,
+      "unique_ratio": 0.609,
+      "unique_token_count": 229,
+      "wave": {
+        "amplitude": 43,
+        "period_hint": 2
+      }
+    },
+    "host": "generic-ai",
+    "kernel": "CMPLX-Kernel",
+    "kernel_options": {
+      "guess_mode": "hidden_guess_result",
+      "require_guess_mode": false,
+      "training_mode": true
+    },
+    "kernel_version": "2.1.0-sidecar",
+    "task": "extend_token_work",
+    "token_sha256": "61dfabdf94a041a5399d21b24873bf544d319f5678aec01b2d75fa84c5a5047c"
+  }
+}

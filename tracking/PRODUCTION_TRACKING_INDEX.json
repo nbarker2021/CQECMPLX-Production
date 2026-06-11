@@ -1,0 +1,80 @@
+{
+  "status": "initial_done_enough_to_track_inventory",
+  "policy": "combine duplicate or overlapping identities into composite candidates; do not choose a single best source",
+  "source_accounting": {
+    "repo_zip_status": "content_profile_complete_all_top_level_zips",
+    "archive_count": 12,
+    "archive_entries": 66582,
+    "profiled_files": 62691,
+    "payload_candidates": 29,
+    "database_path": "D:\\CQE_CMPLX\\Claude-Codex-Memory\\Codex work\\CX-Repo-Literal-Accounting\\CX_repo_literal_accounting.sqlite3",
+    "summary_path": "D:\\CQE_CMPLX\\Claude-Codex-Memory\\Codex work\\CX-Repo-Literal-Accounting\\CX_all_repo_zips_content_profile_completion_summary.json"
+  },
+  "candidates": [
+    {
+      "id": "CQECMPLX-Kernel-Sidecar",
+      "status": "trackable-slice",
+      "route": "production/kernel-runtime",
+      "spec": "tracking/composites/CQECMPLX-Kernel-Sidecar.md"
+    },
+    {
+      "id": "CQECMPLX-Docker-Operator",
+      "status": "trackable-composite",
+      "route": "production/kernel-runtime + production/adapters"
+    },
+    {
+      "id": "CQECMPLX-LatticeForge-ReForge",
+      "status": "trackable-composite",
+      "route": "production/lib-forge",
+      "spec": "tracking/composites/CQECMPLX-LatticeForge-ReForge.md"
+    },
+    {
+      "id": "CQECMPLX-E8-MORSR-Diagnostics",
+      "status": "trackable-composite",
+      "route": "production/proof-receipts + production/lib-forge"
+    },
+    {
+      "id": "CQECMPLX-MCP-API-Tooling",
+      "status": "trackable-composite",
+      "route": "production/adapters"
+    },
+    {
+      "id": "CQECMPLX-Formalization-R30-Proof",
+      "status": "trackable-proof",
+      "route": "production/papers + production/proof-receipts",
+      "spec": "tracking/composites/CQECMPLX-Formalization-R30-Proof.md"
+    },
+    {
+      "id": "CQECMPLX-MMDB-E8-Vector-Payloads",
+      "status": "trackable-payload",
+      "route": "production/payload-ledger"
+    },
+    {
+      "id": "CQECMPLX-Manny-Memory-Instruction-Payloads",
+      "status": "trackable-payload",
+      "route": "production/payload-ledger"
+    },
+    {
+      "id": "CQECMPLX-CMPLXNEXT-Orchestration",
+      "status": "trackable-composite",
+      "route": "production/orchestration"
+    },
+    {
+      "id": "CQECMPLX-TMN-Role-Family",
+      "status": "trackable-composite",
+      "route": "production/tool-families"
+    },
+    {
+      "id": "CQECMPLX-Repo-Accounting",
+      "status": "trackable-slice",
+      "route": "production/workspace-corpus-index"
+    }
+  ],
+  "still_needed": [
+    "one composite spec per candidate",
+    "source path binding per candidate",
+    "payload ledger before payload expansion",
+    "paper claim binding to Production/AirLock/Kernel roots",
+    "promotion manifests for exact publishable slices"
+  ]
+}
