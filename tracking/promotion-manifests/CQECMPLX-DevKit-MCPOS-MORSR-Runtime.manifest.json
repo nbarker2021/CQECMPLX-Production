@@ -1,0 +1,62 @@
+{
+  "id": "CQECMPLX-DevKit-MCPOS-MORSR-Runtime",
+  "status": "manifest-draft",
+  "created": "2026-06-11",
+  "source_binding": "tracking/source-bindings/CQECMPLX-DevKit-MCPOS-MORSR-Runtime.json",
+  "allowed_initial_slice": {
+    "description": "Docs, inventories, schemas, validation contracts, package metadata, and selected source files after import review.",
+    "extensions": [
+      ".md",
+      ".json",
+      ".jsonl",
+      ".toml",
+      ".txt",
+      ".py"
+    ],
+    "priority_files": [
+      "README.md",
+      "MCP_OS_INVENTORY.md",
+      "COMPREHENSIVE_SYNTHESIS.md",
+      "SYNTHESIS_EXECUTIVE_SUMMARY.md",
+      "validation/README.md",
+      "__init__.py",
+      "__main__.py",
+      "setup.py",
+      "requirements.txt"
+    ]
+  },
+  "forbidden": [
+    ".env",
+    ".venv",
+    "venv",
+    "__pycache__",
+    ".pytest_cache",
+    "node_modules",
+    "*.db",
+    "*.sqlite",
+    "*.sqlite3",
+    "*.pyc",
+    "*.log",
+    "*.zip",
+    "*.gz",
+    "*.tgz",
+    "*.pdf"
+  ],
+  "diagnostic_requirements": {
+    "hidden_guess_result": "required when kernel training mode is enabled; optional otherwise",
+    "math_only_exception": "math proof checks may skip guess mode when no non-math action is being validated",
+    "post_choice_reveal": "honesty result must remain hidden until after the agent/tool choice is recorded"
+  },
+  "adapter_requirements": [
+    "Binary Boundary Adapter",
+    "Universal Adapter Programs",
+    "handle-based payload separation",
+    "kernel sidecar compatibility"
+  ],
+  "next_review": [
+    "dedupe duplicate MCP OS roots",
+    "map tool registry to kernel API surface",
+    "identify local-state assumptions",
+    "stage validation contracts before runtime source promotion"
+  ]
+}

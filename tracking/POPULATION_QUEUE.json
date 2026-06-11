@@ -40,6 +40,12 @@
       "gate": "track_now_boundary_manifest_next"
     },
     {
+      "id": "CQECMPLX-DevKit-MCPOS-MORSR-Runtime",
+      "route": "production/adapters + production/kernel-runtime + production/diagnostics",
+      "source_binding": "tracking/source-bindings/CQECMPLX-DevKit-MCPOS-MORSR-Runtime.json",
+      "gate": "docs_inventory_first_then_runtime_import_review"
+    },
+    {
       "id": "CQECMPLX-Repo-Forms-Accounting",
       "route": "production/workspace-corpus-index",
       "source_binding": "tracking/source-bindings/CQECMPLX-Repo-Forms-Accounting.json",
@@ -98,6 +104,7 @@
     "CQECMPLX-ProofValidated-Kernel",
     "CQECMPLX-NVEST-EG8-Gate",
     "CQECMPLX-Docker-Compose-Boundary",
+    "CQECMPLX-DevKit-MCPOS-MORSR-Runtime",
     "CQECMPLX-Repo-Forms-Accounting",
     "CQECMPLX-LibForge-Lattice-ReForge-Ring",
     "CQECMPLX-MetaMaterial-Designer",

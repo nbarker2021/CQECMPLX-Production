@@ -1,0 +1,36 @@
+{
+  "id": "CQECMPLX-DevKit-MCPOS-MORSR-Runtime",
+  "status": "trackable-runtime-candidate",
+  "created": "2026-06-11",
+  "source_roots": [
+    "D:\\CQE_CMPLX\\g\\CMPLXDevKit\\CMPLXDevKit\\CMPLXLOCALMCP\\mcp_os",
+    "D:\\CQE_CMPLX\\g\\CMPLXDevKit\\CMPLXLOCALMCP\\mcp_os",
+    "D:\\CQE_CMPLX\\g\\CMPLXDevKit\\src\\cqe_good_example",
+    "D:\\CQE_CMPLX\\g\\CMPLXDevKit\\src\\cqe_organized",
+    "D:\\CQE_CMPLX\\g\\CMPLXDevKit\\src\\cqe_modular_atomic"
+  ],
+  "production_routes": [
+    "production/adapters/CQECMPLX-DevKit-MCPOS-MORSR-Runtime",
+    "production/kernel-runtime/CQECMPLX-DevKit-MCPOS-MORSR-Runtime",
+    "production/diagnostics/CQECMPLX-DevKit-MCPOS-MORSR-Runtime"
+  ],
+  "tracked_concepts": [
+    "MCP server/client",
+    "CQE five-layer tools",
+    "MORSR optimization",
+    "E8 and Leech handle-based geometry",
+    "Universal system adapters",
+    "AGRM/MDHG validation",
+    "sidecar runtime",
+    "diagnostic validation"
+  ],
+  "promotion_gates": [
+    "docs-and-inventory-first",
+    "hidden-guess-result-training-mode-binding",
+    "binary-boundary-adapter-binding",
+    "universal-adapter-program-binding",
+    "payload-ledger-required-for-databases-and-caches",
+    "duplicate-root-composite-review"
+  ],
+  "notes": "Elevated during deep review pass after broad scan found MCP OS implementation, tool inventory, MORSR optimization, validation, and handle-based heavy-data design."
+}

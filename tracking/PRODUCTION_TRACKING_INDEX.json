@@ -23,6 +23,13 @@
       "route": "production/kernel-runtime + production/adapters"
     },
     {
+      "id": "CQECMPLX-DevKit-MCPOS-MORSR-Runtime",
+      "status": "trackable-runtime-candidate",
+      "route": "production/adapters + production/kernel-runtime + production/diagnostics",
+      "source_binding": "tracking/source-bindings/CQECMPLX-DevKit-MCPOS-MORSR-Runtime.json",
+      "spec": "tracking/composites/CQECMPLX-DevKit-MCPOS-MORSR-Runtime.md"
+    },
+    {
       "id": "CQECMPLX-LatticeForge-ReForge",
       "status": "trackable-composite",
       "route": "production/lib-forge",
@@ -159,6 +166,7 @@
   "source_bindings_dir": "tracking/source-bindings",
   "promotion_manifests_dir": "tracking/promotion-manifests",
   "coverage_dashboard": "tracking/TRACKING_COVERAGE.md",
+  "deep_review_dir": "tracking/deep-review",
   "lib_forge_package_split": "tracking/lib-forge-package-splits/LIB_FORGE_PACKAGE_SPLIT.json",
   "payload_ledger": "tracking/payload-ledger/PAYLOAD_LEDGER.json",
   "paper_claim_binding": "tracking/paper-claim-bindings/PAPER_CLAIM_BINDING.json"

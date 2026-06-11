@@ -11,6 +11,7 @@ The index tracks composites. It does not choose a winner among duplicates.
 |---|---|---|---|
 | `CQECMPLX-Kernel-Sidecar` | `trackable-slice` | sidecar runtime, operator web, Docker deploy, module/data contracts, deployment proofs | `production/kernel-runtime` |
 | `CQECMPLX-Docker-Operator` | `trackable-composite` | kernel Docker proof, Docker tool adapter, Compose boundary, D:\DockerContainers platform evidence | `production/kernel-runtime` + `production/adapters` |
+| `CQECMPLX-DevKit-MCPOS-MORSR-Runtime` | `trackable-runtime-candidate` | DevKit MCP OS exposes server/client, CQE layer tools, MORSR optimization, handle-based heavy data, validation framework, and AGRM/MDHG integration | `production/adapters` + `production/kernel-runtime` + `production/diagnostics` |
 | `CQECMPLX-LatticeForge-ReForge` | `trackable-composite` | PartsFactory lattice-forge, ReForge/Forge kernel ring, morphism ledger payload, lattice/forge claim density | `production/lib-forge` |
 | `CQECMPLX-E8-MORSR-Diagnostics` | `trackable-composite` | E8/MORSR/CQE names recur across repo profiles, kernel ring, R30/Formalization proof bridge | `production/proof-receipts` + `production/lib-forge` |
 | `CQECMPLX-MCP-API-Tooling` | `trackable-composite` | CMPLXMCP content-profile complete, MCP/API surfaces in DevKit, Monorepo, DockerContainers MCP toolkit | `production/adapters` |
@@ -73,6 +74,8 @@ Lib-forge package split lives at
 `tracking/lib-forge-package-splits/LIB_FORGE_PACKAGE_SPLIT.md`.
 
 Payload ledger lives at `tracking/payload-ledger/PAYLOAD_LEDGER.md`.
+
+Deep review passes live under `tracking/deep-review/`.
 
 Paper claim binding lives at
 `tracking/paper-claim-bindings/PAPER_CLAIM_BINDING.md`.

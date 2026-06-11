@@ -17,6 +17,7 @@ pieces needed before source movement:
 | `CQECMPLX-Analog-Forge-Workbench` | yes | yes | yes |
 | `CQECMPLX-CMPLXNEXT-Orchestration` | yes | yes | yes |
 | `CQECMPLX-Docker-Compose-Boundary` | yes | yes | yes |
+| `CQECMPLX-DevKit-MCPOS-MORSR-Runtime` | yes | draft | yes |
 | `CQECMPLX-LibForge-Lattice-ReForge-Ring` | yes | yes | split started |
 | `CQECMPLX-MetaMaterial-Designer` | yes | yes | yes |
 | `CQECMPLX-MORSR-Pulse-Family` | yes | yes | yes |
