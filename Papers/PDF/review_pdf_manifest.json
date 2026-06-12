@@ -1,72 +1,222 @@
 {
   "built_on": "2026-06-12",
-  "paper_count": 11,
+  "paper_count": 36,
   "outputs": [
+    {
+      "paper": "CQE-paper-00",
+      "title": "Paper 0 - Foreword and Burden Statement",
+      "pdf": "Papers\\PDF\\CQE-paper-00_paper-0-foreword-and-burden-statement.pdf",
+      "bytes": 6999
+    },
+    {
+      "paper": "CQE-paper-00.25",
+      "title": "Paper 0.25 - Toolkit for the First Section",
+      "pdf": "Papers\\PDF\\CQE-paper-00.25_paper-0-25-toolkit-for-the-first-section.pdf",
+      "bytes": 4477
+    },
+    {
+      "paper": "CQE-paper-00.50",
+      "title": "Paper 0.50 - Claim Validation Contract",
+      "pdf": "Papers\\PDF\\CQE-paper-00.50_paper-0-50-claim-validation-contract.pdf",
+      "bytes": 4295
+    },
+    {
+      "paper": "CQE-paper-00.75",
+      "title": "Paper 0.75 - Applying Tools as Next-State Preconditions",
+      "pdf": "Papers\\PDF\\CQE-paper-00.75_paper-0-75-applying-tools-as-next-state-preconditions.pdf",
+      "bytes": 4210
+    },
     {
       "paper": "CQE-paper-01",
       "title": "Paper 01 - LCR Chain Carrier",
       "pdf": "Papers\\PDF\\CQE-paper-01_paper-01-lcr-chain-carrier.pdf",
-      "bytes": 10824
+      "bytes": 10829
     },
     {
       "paper": "CQE-paper-02",
       "title": "Paper 02 - Correction Surface",
       "pdf": "Papers\\PDF\\CQE-paper-02_paper-02-correction-surface.pdf",
-      "bytes": 7754
+      "bytes": 7759
     },
     {
       "paper": "CQE-paper-03",
       "title": "Paper 03 - D4/J3 Triality Surface",
       "pdf": "Papers\\PDF\\CQE-paper-03_paper-03-d4-j3-triality-surface.pdf",
-      "bytes": 8979
+      "bytes": 8981
     },
     {
       "paper": "CQE-paper-04",
       "title": "Paper 04 - Boundary Repair",
       "pdf": "Papers\\PDF\\CQE-paper-04_paper-04-boundary-repair.pdf",
-      "bytes": 7364
+      "bytes": 7369
     },
     {
       "paper": "CQE-paper-05",
       "title": "Paper 05 - Oloid Path Carrier",
       "pdf": "Papers\\PDF\\CQE-paper-05_paper-05-oloid-path-carrier.pdf",
-      "bytes": 7526
+      "bytes": 7530
     },
     {
       "paper": "CQE-paper-06",
       "title": "Paper 06 - Causal Code",
       "pdf": "Papers\\PDF\\CQE-paper-06_paper-06-causal-code.pdf",
-      "bytes": 7241
+      "bytes": 7246
     },
     {
       "paper": "CQE-paper-07",
       "title": "Paper 07 - Discrete-Continuous Bridge",
       "pdf": "Papers\\PDF\\CQE-paper-07_paper-07-discrete-continuous-bridge.pdf",
-      "bytes": 5909
+      "bytes": 5914
     },
     {
       "paper": "CQE-paper-08",
       "title": "Paper 08 - Lattice Closure Template",
       "pdf": "Papers\\PDF\\CQE-paper-08_paper-08-lattice-closure-template.pdf",
-      "bytes": 8255
+      "bytes": 8259
     },
     {
       "paper": "CQE-paper-09",
       "title": "Paper 09 - Hamiltonian Window Emergence",
       "pdf": "Papers\\PDF\\CQE-paper-09_paper-09-hamiltonian-window-emergence.pdf",
-      "bytes": 7141
+      "bytes": 7147
     },
     {
       "paper": "CQE-paper-10",
       "title": "Paper 10 - T10 Master Receipt",
       "pdf": "Papers\\PDF\\CQE-paper-10_paper-10-t10-master-receipt.pdf",
-      "bytes": 10200
+      "bytes": 10204
     },
     {
       "paper": "CQE-paper-11",
       "title": "Paper 11 - Theory Admission Gate",
       "pdf": "Papers\\PDF\\CQE-paper-11_paper-11-theory-admission-gate.pdf",
-      "bytes": 11890
+      "bytes": 11895
+    },
+    {
+      "paper": "CQE-paper-12",
+      "title": "Paper 12 - CA Prediction Surface",
+      "pdf": "Papers\\PDF\\CQE-paper-12_paper-12-ca-prediction-surface.pdf",
+      "bytes": 7619
+    },
+    {
+      "paper": "CQE-paper-13",
+      "title": "Paper 13 - Standard-Model Quark-Face Transport",
+      "pdf": "Papers\\PDF\\CQE-paper-13_paper-13-standard-model-quark-face-transport.pdf",
+      "bytes": 7570
+    },
+    {
+      "paper": "CQE-paper-14",
+      "title": "Paper 14 - GR Boundary-Repair Curvature",
+      "pdf": "Papers\\PDF\\CQE-paper-14_paper-14-gr-boundary-repair-curvature.pdf",
+      "bytes": 7418
+    },
+    {
+      "paper": "CQE-paper-15",
+      "title": "Paper 15 - QFT/Higgs Mass-Residue Carrier",
+      "pdf": "Papers\\PDF\\CQE-paper-15_paper-15-qft-higgs-mass-residue-carrier.pdf",
+      "bytes": 7512
+    },
+    {
+      "paper": "CQE-paper-16",
+      "title": "Paper 16 - Continuum Edge Residuals",
+      "pdf": "Papers\\PDF\\CQE-paper-16_paper-16-continuum-edge-residuals.pdf",
+      "bytes": 7453
+    },
+    {
+      "paper": "CQE-paper-17",
+      "title": "Paper 17 - E6-E8 Error-Correction Tower",
+      "pdf": "Papers\\PDF\\CQE-paper-17_paper-17-e6-e8-error-correction-tower.pdf",
+      "bytes": 7460
+    },
+    {
+      "paper": "CQE-paper-18",
+      "title": "Paper 18 - VOA/Moonshine Representation Routes",
+      "pdf": "Papers\\PDF\\CQE-paper-18_paper-18-voa-moonshine-representation-routes.pdf",
+      "bytes": 7481
+    },
+    {
+      "paper": "CQE-paper-19",
+      "title": "Paper 19 - Observer Face-Selection",
+      "pdf": "Papers\\PDF\\CQE-paper-19_paper-19-observer-face-selection.pdf",
+      "bytes": 7479
+    },
+    {
+      "paper": "CQE-paper-20",
+      "title": "Paper 20 - Layer-2 Synthesis Ledger",
+      "pdf": "Papers\\PDF\\CQE-paper-20_paper-20-layer-2-synthesis-ledger.pdf",
+      "bytes": 7512
+    },
+    {
+      "paper": "CQE-paper-21",
+      "title": "Paper 21 - MorphForge / PolyForge / MorphoniX",
+      "pdf": "Papers\\PDF\\CQE-paper-21_paper-21-morphforge-polyforge-morphonix.pdf",
+      "bytes": 7665
+    },
+    {
+      "paper": "CQE-paper-22",
+      "title": "Paper 22 - MetaForge Applied Materials",
+      "pdf": "Papers\\PDF\\CQE-paper-22_paper-22-metaforge-applied-materials.pdf",
+      "bytes": 7555
+    },
+    {
+      "paper": "CQE-paper-23",
+      "title": "Paper 23 - FoldForge Protein Folding",
+      "pdf": "Papers\\PDF\\CQE-paper-23_paper-23-foldforge-protein-folding.pdf",
+      "bytes": 7596
+    },
+    {
+      "paper": "CQE-paper-24",
+      "title": "Paper 24 - KnightForge / N-Dimensional Chess Automata",
+      "pdf": "Papers\\PDF\\CQE-paper-24_paper-24-knightforge-n-dimensional-chess-automata.pdf",
+      "bytes": 7821
+    },
+    {
+      "paper": "CQE-paper-25",
+      "title": "Paper 25 - Energetic Traversal Maps",
+      "pdf": "Papers\\PDF\\CQE-paper-25_paper-25-energetic-traversal-maps.pdf",
+      "bytes": 7489
+    },
+    {
+      "paper": "CQE-paper-26",
+      "title": "Paper 26 - Z-Pinch and Shear Horizon",
+      "pdf": "Papers\\PDF\\CQE-paper-26_paper-26-z-pinch-and-shear-horizon.pdf",
+      "bytes": 7506
+    },
+    {
+      "paper": "CQE-paper-27",
+      "title": "Paper 27 - Observer Delay and Shared Reality",
+      "pdf": "Papers\\PDF\\CQE-paper-27_paper-27-observer-delay-and-shared-reality.pdf",
+      "bytes": 7542
+    },
+    {
+      "paper": "CQE-paper-28",
+      "title": "Paper 28 - N-Dimensional Game Lattices",
+      "pdf": "Papers\\PDF\\CQE-paper-28_paper-28-n-dimensional-game-lattices.pdf",
+      "bytes": 7632
+    },
+    {
+      "paper": "CQE-paper-29",
+      "title": "Paper 29 - Monster/Universal Energy-Bound Hypotheses",
+      "pdf": "Papers\\PDF\\CQE-paper-29_paper-29-monster-universal-energy-bound-hypotheses.pdf",
+      "bytes": 7630
+    },
+    {
+      "paper": "CQE-paper-30",
+      "title": "Paper 30 - Grand Ribbon Meta-Framer",
+      "pdf": "Papers\\PDF\\CQE-paper-30_paper-30-grand-ribbon-meta-framer.pdf",
+      "bytes": 7576
+    },
+    {
+      "paper": "CQE-paper-31",
+      "title": "Paper 31 - It Was Still Just LCR",
+      "pdf": "Papers\\PDF\\CQE-paper-31_paper-31-it-was-still-just-lcr.pdf",
+      "bytes": 7723
+    },
+    {
+      "paper": "CQE-paper-32",
+      "title": "CQE Paper 32 \u2014 The Supervisor Cursor: Superpermutations as the Compressed Dimensional Action Graph",
+      "pdf": "Papers\\PDF\\CQE-paper-32_cqe-paper-32-the-supervisor-cursor-superpermutations-as-the-compressed-dimensional-action-graph.pdf",
+      "bytes": 9883
     }
   ]
 }

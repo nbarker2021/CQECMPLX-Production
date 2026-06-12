@@ -1,0 +1,70 @@
+# CQECMPLX Paper Rewrite Status
+
+## Meaning
+
+Every paper belongs in the top-level review package. The current PDF build
+covers the full visible suite, but not every paper has been rewritten into the
+new final review form yet.
+
+Status meanings:
+
+- `review-source`: top-level source exists in `Papers/Source/`.
+- `promoted-formal`: current PDF comes from `production/formal-papers`.
+- `fallback-body`: current PDF comes from `production/papers/*/PAPER-BODY.md`
+  and still needs a strict rewrite.
+- `companion-needed`: `.25`, `.50`, and `.75` support papers still need to be
+  written for that interval.
+
+## Current Status
+
+| Paper | Build Source | Rewrite Need |
+|---|---|---|
+| 0 | review-source | Foreword draft present; polish as corpus front matter. |
+| 0.25 | review-source | Toolkit draft present; expand as first-section support. |
+| 0.50 | review-source | Claim contract draft present; expand Merkle/link review rules. |
+| 0.75 | review-source | Application/precondition draft present; expand examples. |
+| 1 | promoted-formal | Rewrite to remove support-layer narration from the integer paper. |
+| 2 | promoted-formal | Rewrite to strict scientific paper form. |
+| 3 | promoted-formal | Rewrite to strict scientific paper form. |
+| 4 | promoted-formal | Rewrite to strict scientific paper form. |
+| 5 | promoted-formal | Rewrite to strict scientific paper form. |
+| 6 | promoted-formal | Rewrite to strict scientific paper form. |
+| 7 | promoted-formal | Rewrite to strict scientific paper form. |
+| 8 | promoted-formal | Rewrite to strict scientific paper form. |
+| 9 | promoted-formal | Rewrite to strict scientific paper form. |
+| 10 | promoted-formal | Rewrite to strict scientific paper form. |
+| 11 | promoted-formal | Rewrite to strict scientific paper form. |
+| 12 | fallback-body | Promote from production body into strict scientific paper. |
+| 13 | fallback-body | Promote from production body into strict scientific paper. |
+| 14 | fallback-body | Promote from production body into strict scientific paper. |
+| 15 | fallback-body | Promote from production body into strict scientific paper. |
+| 16 | fallback-body | Promote from production body into strict scientific paper. |
+| 17 | fallback-body | Promote from production body into strict scientific paper. |
+| 18 | fallback-body | Promote from production body into strict scientific paper. |
+| 19 | fallback-body | Promote from production body into strict scientific paper. |
+| 20 | fallback-body | Promote from production body into strict scientific paper. |
+| 21 | fallback-body | Promote from production body into strict scientific paper. |
+| 22 | fallback-body | Promote from production body into strict scientific paper. |
+| 23 | fallback-body | Promote from production body into strict scientific paper. |
+| 24 | fallback-body | Promote from production body into strict scientific paper. |
+| 25 | fallback-body | Promote from production body into strict scientific paper. |
+| 26 | fallback-body | Promote from production body into strict scientific paper. |
+| 27 | fallback-body | Promote from production body into strict scientific paper. |
+| 28 | fallback-body | Promote from production body into strict scientific paper. |
+| 29 | fallback-body | Promote from production body into strict scientific paper. |
+| 30 | fallback-body | Promote from production body into strict scientific paper. |
+| 31 | fallback-body | Promote from production body into strict scientific paper. |
+| 32 | fallback-body | Promote from production body into strict scientific paper. |
+
+## Companion Paper Requirement
+
+Every interval needs companion support:
+
+```text
+N.25 toolkit
+N.50 claim contract / linked review
+N.75 application as next-state precondition
+```
+
+The first interval has initial drafts for `0.25`, `0.50`, and `0.75`. Future
+interval companions remain `companion-needed` until drafted and built.

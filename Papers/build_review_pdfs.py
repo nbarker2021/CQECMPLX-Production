@@ -19,6 +19,7 @@ from fpdf import FPDF
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 
 ROOT = Path(__file__).resolve().parents[1]
+SOURCE_ROOT = ROOT / "Papers" / "Source"
 FORMAL_ROOT = ROOT / "production" / "formal-papers"
 KERNEL_ROOT = ROOT / "production" / "paper-kernels" / "papers"
 OUT_DIR = ROOT / "Papers" / "PDF"
@@ -64,11 +65,19 @@ def slug(text: str) -> str:
     return text or "paper"
 
 
+def paper_sort_key(paper_id: str) -> tuple[float, str]:
+    match = re.search(r"(\d+(?:\.\d+)?)", paper_id)
+    if not match:
+        return (9999.0, paper_id)
+    return (float(match.group(1)), paper_id)
+
+
 @dataclass
 class PaperInput:
     paper_id: str
     title: str
     formal_path: Path
+    source_label: str
     manifest_path: Path | None
     verifier_paths: list[Path]
     receipt_paths: list[Path]
@@ -147,10 +156,17 @@ class ReviewPDF(FPDF):
 
     def bullet(self, text: str) -> None:
         self.set_font("Times", "", 10)
-        wrapped = textwrap.wrap(clean_text(text), width=92) or [""]
+        wrapped = textwrap.wrap(
+            clean_text(text),
+            width=92,
+            break_long_words=True,
+            break_on_hyphens=True,
+        ) or [""]
+        self.set_x(self.l_margin)
         self.cell(0.18, 0.2, "-")
         self.multi_cell(0, 0.2, wrapped[0])
         for rest in wrapped[1:]:
+            self.set_x(self.l_margin)
             self.cell(0.18, 0.2, "")
             self.multi_cell(0, 0.2, rest)
         self.ln(0.02)
@@ -183,6 +199,8 @@ class ReviewPDF(FPDF):
 
 
 def read_manifest(paper_id: str) -> dict | None:
+    if "." in paper_id:
+        return None
     path = KERNEL_ROOT / paper_id / "paper_kernel_manifest.json"
     if not path.exists():
         return None
@@ -190,7 +208,7 @@ def read_manifest(paper_id: str) -> dict | None:
 
 
 def evidence_lines(paper: PaperInput, manifest: dict | None) -> list[str]:
-    lines = [f"formal paper: {paper.formal_path.relative_to(ROOT)}"]
+    lines = [f"{paper.source_label}: {paper.formal_path.relative_to(ROOT)}"]
     if paper.manifest_path:
         lines.append(f"paper kernel manifest: {paper.manifest_path.relative_to(ROOT)}")
     for path in paper.verifier_paths:
@@ -218,26 +236,72 @@ def receipt_status(path: Path) -> str:
 
 
 def discover_papers(selected: list[str] | None = None) -> list[PaperInput]:
-    papers = []
+    papers_by_id: dict[str, PaperInput] = {}
+
+    for source_path in sorted(SOURCE_ROOT.glob("CQE-paper-*.md")):
+        paper_id = source_path.stem
+        if selected and paper_id not in selected:
+            continue
+        raw = source_path.read_text(encoding="utf-8")
+        title_match = re.search(r"^#\s+(.+)$", raw, flags=re.MULTILINE)
+        title = title_match.group(1).strip() if title_match else paper_id
+        manifest_path = KERNEL_ROOT / paper_id / "paper_kernel_manifest.json"
+        papers_by_id[paper_id] = PaperInput(
+            paper_id=paper_id,
+            title=title,
+            formal_path=source_path,
+            source_label="top-level review source",
+            manifest_path=manifest_path if manifest_path.exists() else None,
+            verifier_paths=[],
+            receipt_paths=[],
+        )
+
     for formal_path in sorted(FORMAL_ROOT.glob("CQE-paper-*/FORMAL_PAPER.md")):
         paper_id = formal_path.parent.name
+        if paper_id in papers_by_id:
+            continue
         if selected and paper_id not in selected:
             continue
         raw = formal_path.read_text(encoding="utf-8")
         title_match = re.search(r"^#\s+(.+)$", raw, flags=re.MULTILINE)
         title = title_match.group(1).strip() if title_match else paper_id
         manifest_path = KERNEL_ROOT / paper_id / "paper_kernel_manifest.json"
-        papers.append(
+        papers_by_id[paper_id] = (
             PaperInput(
                 paper_id=paper_id,
                 title=title,
                 formal_path=formal_path,
+                source_label="promoted formal paper",
                 manifest_path=manifest_path if manifest_path.exists() else None,
                 verifier_paths=sorted(formal_path.parent.glob("verify_*.py")),
                 receipt_paths=sorted(formal_path.parent.glob("*.json")),
             )
         )
-    return papers
+
+    for body_path in sorted((ROOT / "production" / "papers").glob("CQE-paper-*/PAPER-BODY.md")):
+        paper_id = body_path.parent.name
+        if paper_id in papers_by_id:
+            continue
+        if selected and paper_id not in selected:
+            continue
+        raw = body_path.read_text(encoding="utf-8")
+        title_match = re.search(r"^#\s+(.+)$", raw, flags=re.MULTILINE)
+        title = title_match.group(1).strip() if title_match else paper_id
+        manifest_path = KERNEL_ROOT / paper_id / "paper_kernel_manifest.json"
+        papers_by_id[paper_id] = PaperInput(
+            paper_id=paper_id,
+            title=title,
+            formal_path=body_path,
+            source_label="production paper body pending rewrite",
+            manifest_path=manifest_path if manifest_path.exists() else None,
+            verifier_paths=[],
+            receipt_paths=sorted((ROOT / "production" / "proof-receipts" / paper_id).glob("**/*.json")),
+        )
+
+    return [
+        papers_by_id[paper_id]
+        for paper_id in sorted(papers_by_id, key=paper_sort_key)
+    ]
 
 
 def render_markdown(pdf: ReviewPDF, markdown: str) -> None:
