@@ -1,6 +1,6 @@
 {
   "built_on": "2026-06-12",
-  "paper_count": 72,
+  "paper_count": 75,
   "outputs": [
     {
       "paper": "CQE-paper-00",
@@ -318,7 +318,25 @@
       "paper": "CQE-paper-13",
       "title": "Paper 13 - Standard-Model Quark-Face Transport",
       "pdf": "Papers\\PDF\\CQE-paper-13_paper-13-standard-model-quark-face-transport.pdf",
-      "bytes": 7570
+      "bytes": 7890
+    },
+    {
+      "paper": "CQE-paper-13.25",
+      "title": "Paper 13.25 - Toolkit for Quark-Face Transport",
+      "pdf": "Papers\\PDF\\CQE-paper-13.25_paper-13-25-toolkit-for-quark-face-transport.pdf",
+      "bytes": 4595
+    },
+    {
+      "paper": "CQE-paper-13.50",
+      "title": "Paper 13.50 - Quark-Face Transport Claim Contract",
+      "pdf": "Papers\\PDF\\CQE-paper-13.50_paper-13-50-quark-face-transport-claim-contract.pdf",
+      "bytes": 4715
+    },
+    {
+      "paper": "CQE-paper-13.75",
+      "title": "Paper 13.75 - Quark-Face Transport as Next-State Precondition",
+      "pdf": "Papers\\PDF\\CQE-paper-13.75_paper-13-75-quark-face-transport-as-next-state-precondition.pdf",
+      "bytes": 4309
     },
     {
       "paper": "CQE-paper-14",

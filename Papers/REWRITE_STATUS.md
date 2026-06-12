@@ -71,7 +71,10 @@ Status meanings:
 | 12.25 | review-source | CA prediction toolkit supplement present. |
 | 12.50 | review-source | CA prediction claim contract supplement present. |
 | 12.75 | review-source | CA prediction next-state precondition supplement present. |
-| 13 | fallback-body | Promote from production body into strict scientific paper. |
+| 13 | review-source | Strict scientific rewrite present; companion supports drafted; local verifier promoted. |
+| 13.25 | review-source | Quark-face toolkit supplement present. |
+| 13.50 | review-source | Quark-face claim contract supplement present. |
+| 13.75 | review-source | Quark-face next-state precondition supplement present. |
 | 14 | fallback-body | Promote from production body into strict scientific paper. |
 | 15 | fallback-body | Promote from production body into strict scientific paper. |
 | 16 | fallback-body | Promote from production body into strict scientific paper. |
