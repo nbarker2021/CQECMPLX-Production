@@ -1,6 +1,6 @@
 {
   "built_on": "2026-06-12",
-  "paper_count": 84,
+  "paper_count": 87,
   "outputs": [
     {
       "paper": "CQE-paper-00",
@@ -414,7 +414,25 @@
       "paper": "CQE-paper-17",
       "title": "Paper 17 - E6-E8 Error-Correction Tower",
       "pdf": "Papers\\PDF\\CQE-paper-17_paper-17-e6-e8-error-correction-tower.pdf",
-      "bytes": 7460
+      "bytes": 7339
+    },
+    {
+      "paper": "CQE-paper-17.25",
+      "title": "Paper 17.25 - Error-Correction Tower Toolkit",
+      "pdf": "Papers\\PDF\\CQE-paper-17.25_paper-17-25-error-correction-tower-toolkit.pdf",
+      "bytes": 4170
+    },
+    {
+      "paper": "CQE-paper-17.50",
+      "title": "Paper 17.50 - Error-Correction Tower Claim Contract",
+      "pdf": "Papers\\PDF\\CQE-paper-17.50_paper-17-50-error-correction-tower-claim-contract.pdf",
+      "bytes": 4193
+    },
+    {
+      "paper": "CQE-paper-17.75",
+      "title": "Paper 17.75 - Error-Correction Tower Next-State Bridge",
+      "pdf": "Papers\\PDF\\CQE-paper-17.75_paper-17-75-error-correction-tower-next-state-bridge.pdf",
+      "bytes": 4452
     },
     {
       "paper": "CQE-paper-18",

@@ -87,7 +87,10 @@ Status meanings:
 | 16.25 | review-source | Continuum edge-residual toolkit supplement present. |
 | 16.50 | review-source | Continuum edge-residual claim contract supplement present. |
 | 16.75 | review-source | Continuum edge-residual next-state precondition supplement present. |
-| 17 | fallback-body | Promote from production body into strict scientific paper. |
+| 17 | review-source | Strict scientific rewrite present; companion supports drafted; local verifier promoted. |
+| 17.25 | review-source | Error-correction tower toolkit supplement present. |
+| 17.50 | review-source | Error-correction tower claim contract supplement present. |
+| 17.75 | review-source | Error-correction tower next-state precondition supplement present. |
 | 18 | fallback-body | Promote from production body into strict scientific paper. |
 | 19 | fallback-body | Promote from production body into strict scientific paper. |
 | 20 | fallback-body | Promote from production body into strict scientific paper. |

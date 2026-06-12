@@ -1,0 +1,257 @@
+{
+  "paper": "CQE Paper 17",
+  "title": "E6-E8 Error-Correction Tower",
+  "status": "pass",
+  "checks": {
+    "full_lattice_code_chain_passes": true,
+    "parameter_chain_passes": true,
+    "hamming_7_fano_passes": true,
+    "extended_hamming_8_passes": true,
+    "golay_24_ingredients_pass": true,
+    "powered_nebe_bound_passes": true,
+    "niemeier_e8_cubed_root_shell_landing_passes": true,
+    "niemeier_root_shell_profiles_pass": true,
+    "leech_glue_action_remains_open": true,
+    "w_e8_lookup_extractor_remains_open": true
+  },
+  "closed_layers": [
+    "parameter chain 1,3,7,8,24 passes",
+    "Hamming (7,4,3) Fano-plane rung passes",
+    "extended Hamming (8,4,4) self-dual doubly-even E8 seed passes",
+    "Golay (24,12,8) ingredient layer and 3x8 carrier geometry pass",
+    "powered chain 1,9,49,72 and Nebe 72 K-bound pass",
+    "Niemeier E8^3 determinant-one direct-sum root-shell landing passes",
+    "rank-24 root-shell profile registry passes at bounded profile level"
+  ],
+  "open_layers": [
+    "rootless Leech overlattice glue action",
+    "semantic map from an arbitrary N to a Niemeier terminal",
+    "W(E8) lookup table or sub-O(N) extractor",
+    "physical error-correction theorem beyond the verified code tower"
+  ],
+  "falsifiers": [
+    "any rung reports status other than pass",
+    "Hamming weight distribution differs from 0:1,3:7,4:7,7:1",
+    "extended Hamming is not self-dual or has minimum weight other than 4",
+    "Golay ingredient verification silently promotes Leech construction",
+    "Niemeier direct-sum landing claims semantic N-to-terminal proof"
+  ],
+  "source_receipts": {
+    "chain": {
+      "status": "pass",
+      "parameter_chain": "pass",
+      "hamming_7_fano": "pass",
+      "extended_hamming_8": "pass",
+      "golay_24": "pass",
+      "powered_chain": "pass",
+      "chain_summary": {
+        "1": "Z/2 bit \u2014 D1 raw parity",
+        "3": "S3 neighborhood / 3-bit Hamming \u2014 D2 vignette",
+        "7": "Fano plane = octonion imaginaries \u2014 J_3(O) off-diagonal",
+        "8": "Extended Hamming = E8 root lattice \u2014 D4 chart (8 states)",
+        "24": "Golay code = Leech lattice \u2014 3 \u00d7 D4 = Monster VOA seed",
+        "72": "Nebe lattice \u2014 D4 \u00d7 3\u00b2 = sheet K bound (K=1..9)"
+      },
+      "tower_correspondence": {
+        "D1": 1,
+        "D2_S3": 3,
+        "D3_Fano_octonion": 7,
+        "D4_chart_E8": 8,
+        "Monster_Leech": 24,
+        "Nebe_sheet_bound": 72
+      },
+      "powered_shortcut": {
+        "1_sq": 1,
+        "3_sq": 9,
+        "7_sq": 49,
+        "8_x_9": 72
+      },
+      "sheet_K_bound": 9,
+      "claim": "The lattice code parameters (1,3,7,8,24) are the unique forced backbone of the D1\u2192D2\u2192D3\u2192D4\u2192Monster discretization tower. The powered shortcut (1\u00b2=1, 3\u00b2=9, 7\u00b2=49, 8\u00d79=72) gives tensor capacities at each scale, with 72 = the Nebe lattice dimension setting the sheet K bound: K=1..9=3\u00b2 orbiting sheets from the first enumerated event. Beyond K=9, a new anchor is required."
+    },
+    "parameters": {
+      "status": "pass",
+      "errors": [],
+      "chain": [
+        1,
+        3,
+        7,
+        8,
+        24
+      ],
+      "fano_lines": [
+        "frozenset({0, 1, 2})",
+        "frozenset({0, 3, 4})",
+        "frozenset({0, 5, 6})",
+        "frozenset({1, 3, 5})",
+        "frozenset({1, 4, 6})",
+        "frozenset({2, 3, 6})",
+        "frozenset({2, 4, 5})"
+      ],
+      "d4_state_count": 8,
+      "claim": "The parameters 1,3,7,8,24 are forced: 1=Z/2 bit; 3=S3 transpositions/neighborhood; 7=Fano plane=octonion imaginaries; 8=7+1=D4 chart states=octonion dimension; 24=3\u00d78=Leech=3 copies of D4. Each step is uniquely determined by the previous."
+    },
+    "hamming_7_fano": {
+      "status": "pass",
+      "errors": [],
+      "codeword_count": 16,
+      "min_weight": 3,
+      "weight_distribution": {
+        "0": 1,
+        "4": 7,
+        "3": 7,
+        "7": 1
+      },
+      "weight3_supports": [
+        [
+          2,
+          4,
+          5
+        ],
+        [
+          2,
+          3,
+          6
+        ],
+        [
+          1,
+          4,
+          6
+        ],
+        [
+          1,
+          3,
+          5
+        ],
+        [
+          0,
+          5,
+          6
+        ],
+        [
+          0,
+          3,
+          4
+        ],
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "claim": "The (7,4,3) Hamming code has exactly 7 weight-3 codewords whose supports are the 7 lines of the Fano plane PG(2,2). The 7 lines of PG(2,2) are the 7 quaternionic triples in the octonion multiplication table. The code, the Fano plane, and the octonion structure are the same object at n=7."
+    },
+    "extended_hamming_8": {
+      "status": "pass",
+      "errors": [],
+      "codeword_count": 16,
+      "min_weight": 4,
+      "weight_distribution": {
+        "0": 1,
+        "4": 14,
+        "8": 1
+      },
+      "is_self_dual": true,
+      "claim": "The (8,4,4) extended Hamming code is doubly-even and self-dual. Its 16 codewords over F_2^8 \u2014 with ambient dimension 8 = |D4 chart| \u2014 give the E8 root lattice via Construction A. The minimum weight 4 and self-duality are the two properties that uniquely characterize E8 among even unimodular lattices in dimension 8."
+    },
+    "golay_24": {
+      "status": "pass",
+      "errors": [],
+      "generator_count": 12,
+      "generator_weights": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        12
+      ],
+      "orthogonality_errors": 0,
+      "triplet_structure": [
+        [
+          "D4-copy-1",
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        ],
+        [
+          "D4-copy-2",
+          [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        ],
+        [
+          "D4-copy-3",
+          [
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ]
+        ]
+      ],
+      "leech_construction_proved": false,
+      "scope": "binary Golay ingredients and 3x8 carrier geometry",
+      "claim": "The (24,12,8) Golay code has length 24 = 3\u00d78 = 3 copies of the D4 chart. Its generators are self-orthogonal and doubly-even. This verifies Leech-construction ingredients and 3\u00d78 carrier geometry. The rootless Leech landing remains a separate glue-action obligation."
+    },
+    "powered_chain": {
+      "status": "pass",
+      "errors": [],
+      "powered_chain": {
+        "1^2": 1,
+        "3^2": 9,
+        "7^2": 49,
+        "8x9": 72
+      },
+      "sheet_K_bound": 9,
+      "nebe_dim": 72,
+      "nebe_extremal_min_norm": 8,
+      "next_candidate_dim": 96,
+      "antisymm_7_squared": 21,
+      "claim": "The powered chain 1,9,49,72 gives the tensor capacity at each scale. 3\u00b2=9 is the 9-move binary map (all quark-color pair assignments). 7\u00b2=49 decomposes as 7 diagonal + 21 antisymmetric + 21 symmetric; the 21 antisymmetric entries are the octonion structure constants, the off-diagonal dimension of J_3(O). 8\u00d79=72 is the Nebe lattice dimension: D4 chart (8 states) \u00d7 neighborhood tensor capacity (9=3\u00b2). This sets the sheet K bound: orbiting states at K=1..9 from the first enumerated event are expressible within the current sheet. K>9 requires a new first-enumerated event. The Nebe lattice in dim 72 is the confirmed terminal of this chain."
+    },
+    "niemeier_direct_sum_index_one": {
+      "status": "pass",
+      "terminal_ids": [
+        "Niemeier:E8^3"
+      ],
+      "exact_at_root_shell_level": true,
+      "semantic_landing_from_n_proved": false,
+      "scope": "determinant-one direct-sum root-shell landing only; does not derive a terminal from N"
+    },
+    "niemeier_root_shell_profiles": {
+      "status": "pass",
+      "rootful_terminal_count": 23,
+      "rootless_terminal_count": 1,
+      "all_rootful_ranks_are_24": true,
+      "all_declared_coxeter_numbers_match": true,
+      "all_required_indices_are_integral": true,
+      "exact_glue_cosets_proved": false,
+      "scope": "bounded ADE root-shell and discriminant profiles only"
+    }
+  }
+}
