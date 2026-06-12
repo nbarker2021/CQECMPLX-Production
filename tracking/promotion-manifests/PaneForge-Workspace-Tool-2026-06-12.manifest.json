@@ -1,0 +1,47 @@
+{
+  "item_id": "PaneForge-Workspace-Tool",
+  "promotion_date": "2026-06-12",
+  "status": "workspace_tool_promoted",
+  "identity": {
+    "product": "PaneForge-Stick",
+    "package": "paneforge-tool 0.1.0",
+    "console_script": "paneforge",
+    "role": "the built PaneForge product layer packaged as an installable local workspace tool"
+  },
+  "validated_claims": [
+    "The tool installs editable via pip and registers the paneforge console command.",
+    "The tool resolves the product root in order: PANEFORGE_PRODUCT env, vendored _product, repo-relative production/products/PaneForge-Stick, known workspace roots.",
+    "The kernel runs unmodified under the tool and answers /api/health, /api/kernel, /api/receipts.",
+    "Event Law holds live: each new event mints a receipt carrying exactly two links (crystal id, previous receipt hash) with valid:True and delta_phi = -ln(phi)/16.",
+    "SpeedLight reuse holds: an identical repeat event does not mint a second receipt.",
+    "The full product test suite passes through the tool: 83 passed, 0 failed.",
+    "Receipts and crystals are written to PANEFORGE_DATA (default ~/.paneforge), never into the package or repo."
+  ],
+  "artifacts": [
+    "production/tool-families/PaneForge-Workspace-Tool/pyproject.toml",
+    "production/tool-families/PaneForge-Workspace-Tool/README.md",
+    "production/tool-families/PaneForge-Workspace-Tool/src/paneforge_tool/__init__.py",
+    "production/tool-families/PaneForge-Workspace-Tool/src/paneforge_tool/cli.py",
+    "production/tool-families/PaneForge-Workspace-Tool/PROMOTION_SLICE_2026-06-12_PANEFORGE_WORKSPACE_TOOL.md"
+  ],
+  "source_product": "production/products/PaneForge-Stick",
+  "local_workspace_install": "D:/CQE_CMPLX/workspace-tools/paneforge (vendored product copy for position independence)",
+  "verification": {
+    "commands": [
+      "pip install -e .",
+      "paneforge where",
+      "paneforge serve --port 8771",
+      "paneforge info --port 8771",
+      "paneforge test"
+    ],
+    "result": "83/83 product tests passed; Event Law receipt chain verified live (2-link receipts, SpeedLight reuse)",
+    "receipt_head_observed": "d0338417282498cc2aa90a9a618c1586382d70fed5b453993c989acc1531de06"
+  },
+  "open_obligations": [
+    "Publish paneforge-tool to the internal package index per DISTRIBUTION_PLAN.md.",
+    "Add paneforge pack (USB-stick image build).",
+    "Bind paneforge info output to the production/proof-receipts schema.",
+    "Repeat the product->workspace-tool pattern for Product Fourpack entropy and sentinel."
+  ],
+  "notes": "First instance of the product->workspace-tool promotion pattern. The kernel is the Event Law reference implementation and is wrapped, not forked: the tool adds resolution, data boundary, and lifecycle only."
+}

@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "paneforge-tool"
+version = "0.1.0"
+description = "PaneForge workspace tool - the PaneForge-Stick product (Event Law calendar kernel + PWA) as an installable local CLI"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Proprietary" }
+authors = [{ name = "nbarker2021" }]
+keywords = ["cqe", "cmplx", "paneforge", "event-law", "lattice-forge"]
+
+[project.scripts]
+paneforge = "paneforge_tool.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+paneforge_tool = ["_product/**/*"]
