@@ -1,0 +1,46 @@
+{
+  "item_id": "CADForge-WireBlock",
+  "promotion_date": "2026-06-11",
+  "status": "prototype_package_promoted",
+  "identity": {
+    "forge": "CADForge",
+    "engine": "WireBlock Engine",
+    "role": "constrained CAD builder over legal WireForge attachables"
+  },
+  "validated_claims": [
+    "CADForge can initialize a legal design from a declared family.",
+    "WireBlock exposes only family-declared attachables and bounded variables.",
+    "WireBlock rejects an illegal attachable before it enters the design graph.",
+    "CADForge emits a graph receipt for the current legal design state."
+  ],
+  "implemented_families": [
+    "panel_bracket",
+    "enclosure_shell",
+    "metamaterial_tile"
+  ],
+  "artifacts": [
+    "production/packages/cqecmplx-forge/src/CADForge/__init__.py",
+    "production/packages/cqecmplx-forge/src/WireBlockEngine/__init__.py",
+    "production/packages/cqecmplx-forge/src/cqecmplx/__init__.py",
+    "production/packages/cqecmplx-forge/src/cqecmplx/_verify.py",
+    "production/packages/cqecmplx-forge/src/rhenium_engine/registry.py",
+    "production/packages/cqecmplx-forge/README.md",
+    "production/tool-families/CADForge-WireBlock/PROMOTION_SLICE_2026-06-11_CADFORGE_WIREBLOCK.md"
+  ],
+  "verification": {
+    "command": "PYTHONPATH=production/packages/cqecmplx-forge/src python -m cqecmplx._verify",
+    "result": "9/9 passed",
+    "cad_checks": [
+      "CADForge legal initialized design",
+      "WireBlock rejects illegal attachable"
+    ]
+  },
+  "open_obligations": [
+    "Add STEP/STL/DXF/SVG exporters.",
+    "Add a visual web UI for family selection, anchor picking, attachable selection, and variable sliders.",
+    "Resolve final CAD graph nodes through GraphStax.",
+    "Bridge metamaterial_tile to MetaForge candidate evaluation.",
+    "Add local persistence and USB appliance packaging."
+  ],
+  "notes": "CADForge is the product-facing constrained CAD tool. WireBlock is the legality engine that keeps design inside initialized families, legal attachables, and declared variable ranges."
+}

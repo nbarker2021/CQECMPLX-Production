@@ -32,6 +32,27 @@ def main() -> int:
         lambda e: e.execute("verify") and e.execute("verify").get("receipt") is not None
     )(chroma.ChromaForgeEngine()))
 
+    def _cadforge_check():
+        from cqecmplx.engines.cad import CADForgeBuilder, families
+        b = CADForgeBuilder("panel_bracket", name="verify_panel")
+        b.tweak("width_mm", 96).attach("rib", anchor_node="base:n0")
+        receipt = b.receipt()
+        return (
+            "panel_bracket" in families()
+            and receipt["status"] == "pass"
+            and receipt["payload"]["summary"]["attachable_count"] == 1
+        )
+    run("CADForge legal initialized design", _cadforge_check)
+
+    def _wireblock_reject_check():
+        from cqecmplx.engines.cad import CADForgeBuilder
+        try:
+            CADForgeBuilder("panel_bracket").attach("illegal_part")
+        except ValueError:
+            return True
+        return False
+    run("WireBlock rejects illegal attachable", _wireblock_reject_check)
+
     def _lifecycle_check():
         import tempfile, os
         e = chroma.ChromaForgeEngine()
