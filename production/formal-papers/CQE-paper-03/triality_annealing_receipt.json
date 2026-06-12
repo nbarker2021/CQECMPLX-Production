@@ -1,0 +1,29 @@
+{
+  "paper": "CQE-paper-03",
+  "theorem": "Triality annealing: S3 transpositions drive every 3-bit state into the Lie-conjugate basin in at most 3 swaps; bound tight at (0,1,1) and (1,0,0)",
+  "forge": "ConvergeForge",
+  "source_product": "historical_pastworks/product_converge (core distilled)",
+  "adjudicated_divergence": [
+    "source docstring claimed (1,1,0) requires exactly 3 swaps; it requires 2 \u2014 the tight states are (0,1,1) and (1,0,0); the max-3 bound itself is correct and verified exhaustively",
+    "gRPC/REST/consensus/cluster layers stay product-side; only the proven annealing core enters the forge ring"
+  ],
+  "status": "pass",
+  "checks": {
+    "lie_conjugates_are_the_4_lr_equal_states": true,
+    "swaps_are_involutions": true,
+    "transpositions_generate_s3_order_6": true,
+    "all_8_states_converge_within_3": true,
+    "tight_bound_is_3_at_011_and_100": true,
+    "conjugates_anneal_in_zero_steps": true,
+    "annealing_idempotent": true,
+    "trajectory_replay_deterministic": true,
+    "circle_partition_of_conjugates": true,
+    "scheduler_balances_within_3_reassignments": true
+  },
+  "passed": 10,
+  "total": 10,
+  "open_obligations": [
+    "Multi-node scheduling safety/liveness under real capacity constraints is product-layer work, not a paper claim.",
+    "The D4 8-chart cluster atlas (chart8.py) needs its own bijectivity receipt before promotion."
+  ]
+}

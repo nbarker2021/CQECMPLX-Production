@@ -1,5 +1,5 @@
 {
-  "version": "0.12.0",
+  "version": "0.13.0",
   "generated": "2026-06-12",
   "kernel": "cqekernel",
   "forge_ring": "cqecmplx-forge",
@@ -300,6 +300,24 @@
       "source_product": "historical_pastworks/product_sentinel (core distilled)",
       "adjudicated_divergence": "product approximated p-values (normal, n>100); forge uses exact math.comb binomial for all n; async/API/agent layers stay product-side",
       "receipt": "production/formal-papers/CQE-paper-02/correction_surface_monitor_receipt.json",
+      "verify_status": "10/10"
+    },
+    "ConvergeForge": {
+      "type": "engine",
+      "role": "Triality annealing: S3 transpositions drive any 3-bit state into the Lie-conjugate basin in <=3 swaps (tight); load-triple scheduler",
+      "algebra_deps": [
+        "S3",
+        "WeylA2",
+        "Triality",
+        "LieConjugates",
+        "CayleyDiameter"
+      ],
+      "cli_entry": "ConvergeForge.verify",
+      "paper_ref": "CQE-paper-03",
+      "source": "production/packages/cqecmplx-forge/src/ConvergeForge/",
+      "source_product": "historical_pastworks/product_converge (core distilled)",
+      "adjudicated_divergence": "source docstring named (1,1,0) as the 3-swap witness; exhaustive verification shows the tight states are (0,1,1) and (1,0,0); gRPC/REST/consensus layers stay product-side",
+      "receipt": "production/formal-papers/CQE-paper-03/triality_annealing_receipt.json",
       "verify_status": "10/10"
     }
   },

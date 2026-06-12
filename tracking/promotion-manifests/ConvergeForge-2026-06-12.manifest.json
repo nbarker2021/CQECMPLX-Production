@@ -1,0 +1,57 @@
+{
+  "item_id": "ConvergeForge",
+  "promotion_date": "2026-06-12",
+  "status": "forge_promoted",
+  "identity": {
+    "forge": "ConvergeForge",
+    "type": "engine",
+    "role": "S3 triality annealing with a tight 3-swap convergence bound",
+    "paper_ref": "CQE-paper-03",
+    "registry_version": "0.13.0"
+  },
+  "pattern": "complete-unformalized work -> formalization in paper-bound space -> Forge",
+  "source_work": {
+    "product": "historical_pastworks/product_converge",
+    "state_before": "complete <=3-round scheduler (annealing engine, D4 chart8 atlas, scheduler, consensus protocol, gRPC/REST); never formalized, no forge, repo fourpack copy was docs/metadata only",
+    "core_modules_distilled": [
+      "src/core/annealing.py",
+      "src/scheduler/annealing_scheduler.py (mapping skeleton)"
+    ]
+  },
+  "adjudicated_divergence": [
+    "source docstring claimed (1,1,0) requires exactly 3 swaps as the tightness witness; exhaustive verification shows (1,1,0) converges in 2 and the tight states are (0,1,1) and (1,0,0); the max-3 bound itself is correct",
+    "gRPC/REST/consensus/cluster layers stay product-side; only the proven annealing core enters the forge ring"
+  ],
+  "validated_claims": [
+    "The Lie-conjugate basin is exactly the four L=R states {000, 010, 101, 111}.",
+    "Each of the three transpositions is an involution on all 8 states.",
+    "The three transpositions generate all of S3 (order 6).",
+    "Every state in {0,1}^3 converges to a Lie conjugate within 3 swaps under the fixed sequence (LR, LC, CR) — exhaustive.",
+    "The bound is tight: exactly (0,1,1) and (1,0,0) require 3 swaps.",
+    "Conjugate states anneal in zero steps, unchanged.",
+    "Annealing is idempotent: f(f(x)) = f(x).",
+    "Recorded trajectories replay deterministically, one transposition per step.",
+    "Circle classes F = {010, 111} and P = {000, 101} partition the basin disjointly.",
+    "The load-triple scheduler balances unbalanced triples in <= 3 reassignments and leaves balanced triples untouched."
+  ],
+  "honesty_boundary": "Multi-node scheduling safety/liveness under real capacity constraints is NOT claimed; the D4 chart8 cluster atlas needs its own bijectivity receipt before promotion.",
+  "artifacts": [
+    "production/packages/cqecmplx-forge/src/ConvergeForge/__init__.py",
+    "production/formal-papers/CQE-paper-03/verify_triality_annealing.py",
+    "production/formal-papers/CQE-paper-03/triality_annealing_receipt.json",
+    "FORGE_REGISTRY.json (v0.13.0, 23 forges)",
+    "production/packages/cqecmplx-forge/FORGE_REGISTRY.json",
+    "production/packages/cqekernel/FORGE_REGISTRY.json"
+  ],
+  "verification": {
+    "command": "python production/formal-papers/CQE-paper-03/verify_triality_annealing.py",
+    "result": "pass 10/10",
+    "receipt": "production/formal-papers/CQE-paper-03/triality_annealing_receipt.json"
+  },
+  "open_obligations": [
+    "Bijectivity receipt for the D4 chart8 cluster atlas, then promote it (likely into the same forge).",
+    "Promote scheduler/consensus as adapters depending on the forge core.",
+    "Remaining fourpack candidate through the same pattern: product_authentica (src exists: core/lattice.py, core/security.py, voa/encoder.py, tests)."
+  ],
+  "notes": "Fourth instance of the promotion pattern (PaneForge-Workspace-Tool, EntropyForge, SentinelForge, ConvergeForge). Paper 03 binding: S3 is the triality group permuting the (L,C,R) lanes; the conjugate basin is the triality-mirror fixed-point set."
+}
