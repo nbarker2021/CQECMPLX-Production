@@ -43,7 +43,10 @@ Status meanings:
 | 5.25 | review-source | Oloid path-carrier toolkit supplement present. |
 | 5.50 | review-source | Oloid path-carrier claim contract supplement present. |
 | 5.75 | review-source | Oloid path-carrier next-state precondition supplement present. |
-| 6 | promoted-formal | Rewrite to strict scientific paper form. |
+| 6 | review-source | Strict scientific rewrite present; companion supports drafted. |
+| 6.25 | review-source | Causal-code toolkit supplement present. |
+| 6.50 | review-source | Causal-code claim contract supplement present. |
+| 6.75 | review-source | Causal-code next-state precondition supplement present. |
 | 7 | promoted-formal | Rewrite to strict scientific paper form. |
 | 8 | promoted-formal | Rewrite to strict scientific paper form. |
 | 9 | promoted-formal | Rewrite to strict scientific paper form. |

@@ -1,6 +1,6 @@
 {
   "built_on": "2026-06-12",
-  "paper_count": 51,
+  "paper_count": 54,
   "outputs": [
     {
       "paper": "CQE-paper-00",
@@ -148,9 +148,27 @@
     },
     {
       "paper": "CQE-paper-06",
-      "title": "Paper 06 - Causal Code",
-      "pdf": "Papers\\PDF\\CQE-paper-06_paper-06-causal-code.pdf",
-      "bytes": 7246
+      "title": "Paper 6 - Causal Code",
+      "pdf": "Papers\\PDF\\CQE-paper-06_paper-6-causal-code.pdf",
+      "bytes": 7219
+    },
+    {
+      "paper": "CQE-paper-06.25",
+      "title": "Paper 6.25 - Toolkit for Causal Code",
+      "pdf": "Papers\\PDF\\CQE-paper-06.25_paper-6-25-toolkit-for-causal-code.pdf",
+      "bytes": 4520
+    },
+    {
+      "paper": "CQE-paper-06.50",
+      "title": "Paper 6.50 - Causal Code Claim Contract",
+      "pdf": "Papers\\PDF\\CQE-paper-06.50_paper-6-50-causal-code-claim-contract.pdf",
+      "bytes": 4524
+    },
+    {
+      "paper": "CQE-paper-06.75",
+      "title": "Paper 6.75 - Causal Code as Next-State Precondition",
+      "pdf": "Papers\\PDF\\CQE-paper-06.75_paper-6-75-causal-code-as-next-state-precondition.pdf",
+      "bytes": 4045
     },
     {
       "paper": "CQE-paper-07",
