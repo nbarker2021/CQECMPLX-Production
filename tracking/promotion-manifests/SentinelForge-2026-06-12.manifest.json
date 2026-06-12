@@ -1,0 +1,58 @@
+{
+  "item_id": "SentinelForge",
+  "promotion_date": "2026-06-12",
+  "status": "forge_promoted",
+  "identity": {
+    "forge": "SentinelForge",
+    "type": "engine",
+    "role": "Correction-surface monitor with exact binomial deviation proofs",
+    "paper_ref": "CQE-paper-02",
+    "registry_version": "0.12.0"
+  },
+  "pattern": "complete-unformalized work -> formalization in paper-bound space -> Forge",
+  "source_work": {
+    "product": "historical_pastworks/product_sentinel",
+    "state_before": "complete zero-trust monitor (syndrome engine, VOA checker, detector, agents, API); never formalized, no forge, repo fourpack copy was docs/metadata only",
+    "core_modules_distilled": [
+      "src/sentinel/core/syndrome.py",
+      "src/sentinel/voa/checker.py"
+    ]
+  },
+  "adjudicated_divergence": [
+    "product_sentinel switched to a normal approximation for binomial p-values at n > 100; SentinelForge computes the exact two-tailed binomial tail with math.comb for every n",
+    "async detector, FastAPI server, and platform agents stay product-side; only the proven monitoring core enters the forge ring"
+  ],
+  "validated_claims": [
+    "The 8 LCR triads partition 2/2/4: deep invariants {000,111}, level-1 invariants {010,101}, variable {001,011,100,110}.",
+    "Lie conjugates (L=R) are exactly the union of deep and level-1 invariants.",
+    "rule30 = rule90 XOR correction holds on all 8 states.",
+    "The correction bit C AND (NOT R) fires on exactly 2 of 8 states: (0,1,0) and (1,1,0).",
+    "Geometry levels 0/1/2 partition the states as 2/2/4.",
+    "Bonded frames are the two cyclic rotations plus the LR mirror; the antipodal frame is an involution.",
+    "An exactly balanced stream yields invariant ratio 0.25, sigma 0, severity nominal.",
+    "A frozen all-vacuum stream is classified emergency with p-value < 1e-9.",
+    "The exact binomial machinery is sound: pmf mass sums to 1, p = 1 at the mean.",
+    "The severity ladder (nominal/elevated/warning/critical/emergency) is monotone in sigma."
+  ],
+  "honesty_boundary": "Detection-quality claims (false-positive rates on real infrastructure telemetry) are NOT claimed; they remain product-layer empirical obligations. Metric-to-triad quantization needs its own receipt before metric fingerprints are claim-bound.",
+  "artifacts": [
+    "production/packages/cqecmplx-forge/src/SentinelForge/__init__.py",
+    "production/formal-papers/CQE-paper-02/verify_correction_surface_monitor.py",
+    "production/formal-papers/CQE-paper-02/correction_surface_monitor_receipt.json",
+    "FORGE_REGISTRY.json (v0.12.0, 22 forges)",
+    "production/packages/cqecmplx-forge/FORGE_REGISTRY.json",
+    "production/packages/cqekernel/FORGE_REGISTRY.json"
+  ],
+  "verification": {
+    "command": "python production/formal-papers/CQE-paper-02/verify_correction_surface_monitor.py",
+    "result": "pass 10/10",
+    "receipt": "production/formal-papers/CQE-paper-02/correction_surface_monitor_receipt.json"
+  },
+  "open_obligations": [
+    "Quantization receipt for continuous-metric fingerprints.",
+    "Promote the product detector/API/agents as adapters depending on the forge core.",
+    "Empirical false-positive-rate study as a product diagnostic with Hidden Guess Result when training_mode is enabled.",
+    "Next fourpack candidates through the same pattern: product_authentica, product_converge (docs-only so far; need source recovery or rebuild)."
+  ],
+  "notes": "Third instance of the promotion pattern (PaneForge-Workspace-Tool, EntropyForge, SentinelForge). Paper 02 binding: a sentinel alert is a correction-surface receipt — deviation as data, never dismissal (Axiom 00.3 Boundary Positivity)."
+}

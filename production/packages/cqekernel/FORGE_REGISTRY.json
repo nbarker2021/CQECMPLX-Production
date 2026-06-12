@@ -1,5 +1,5 @@
 {
-  "version": "0.11.0",
+  "version": "0.12.0",
   "generated": "2026-06-12",
   "kernel": "cqekernel",
   "forge_ring": "cqecmplx-forge",
@@ -281,6 +281,25 @@
       "source_product": "historical_pastworks/product_entropy (core distilled)",
       "adjudicated_divergence": "product seeded only the syndrome chain; forge seeds the CA initial window; canonical mode preserved as the paper-bound object",
       "receipt": "production/formal-papers/CQE-paper-12/center_column_entropy_receipt.json",
+      "verify_status": "10/10"
+    },
+    "SentinelForge": {
+      "type": "engine",
+      "role": "Correction-surface monitor: 2/2/4 triad partition law, syndrome fingerprints, exact binomial deviation proofs, severity ladder",
+      "algebra_deps": [
+        "Rule30",
+        "Rule90",
+        "CorrectionBit",
+        "VOA",
+        "LieConjugates",
+        "BinomialExact"
+      ],
+      "cli_entry": "SentinelForge.verify",
+      "paper_ref": "CQE-paper-02",
+      "source": "production/packages/cqecmplx-forge/src/SentinelForge/",
+      "source_product": "historical_pastworks/product_sentinel (core distilled)",
+      "adjudicated_divergence": "product approximated p-values (normal, n>100); forge uses exact math.comb binomial for all n; async/API/agent layers stay product-side",
+      "receipt": "production/formal-papers/CQE-paper-02/correction_surface_monitor_receipt.json",
       "verify_status": "10/10"
     }
   },

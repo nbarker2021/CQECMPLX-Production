@@ -1,0 +1,29 @@
+{
+  "paper": "CQE-paper-02",
+  "theorem": "Correction-surface monitor: 2/2/4 triad partition law, rule30 = rule90 XOR correction, exact binomial deviation proofs",
+  "forge": "SentinelForge",
+  "source_product": "historical_pastworks/product_sentinel (core distilled)",
+  "adjudicated_divergence": [
+    "product used a normal approximation for n > 100; forge computes the exact two-tailed binomial tail with math.comb for every n",
+    "async/API/agent layers stay product-side; only the proven monitoring core enters the forge ring"
+  ],
+  "status": "pass",
+  "checks": {
+    "partition_sizes_2_2_4": true,
+    "lie_conjugates_are_deep_union_level1": true,
+    "rule30_equals_rule90_xor_correction": true,
+    "correction_fires_on_exactly_2_states": true,
+    "geometry_levels_partition_2_2_4": true,
+    "bonded_frames_cyclic_and_antipodal_involution": true,
+    "balanced_stream_is_nominal_sigma_zero": true,
+    "frozen_stream_is_emergency": true,
+    "binomial_exact_mass_and_mean_p": true,
+    "severity_ladder_monotone": true
+  },
+  "passed": 10,
+  "total": 10,
+  "open_obligations": [
+    "Detection-quality claims (false-positive rates on real telemetry) are product-layer empirical work, not paper claims.",
+    "Quantization of continuous metrics into triads needs its own receipt before metric fingerprints can be claim-bound."
+  ]
+}
