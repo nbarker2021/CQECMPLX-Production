@@ -13,7 +13,18 @@ Smoke test producing at least one proof-like row and one obligation-like row.
 ## Verifier Specification
 ```python
 def verify_triality() -> dict:
-    """Verify D4/J3 triality: axis/sheet, rotation/reflection, Jordan carrier."""
+    """Verify the local D4/J3 triality surface.
+
+    Checks:
+    1. Axis/sheet encoding is bijective over the eight LCR states.
+    2. Axis pairs are antipodal complements.
+    3. Paper 02 correction states land at (2,0) and (3,1).
+    4. Diagonal J3 carrier preserves shell as trace.
+    5. Shell-2 diagonal carriers are idempotent.
+
+    Scope boundary: this verifier does not prove full D4 triality or a full
+    F4/J3(O) action.
+    """
     pass
 ```
 

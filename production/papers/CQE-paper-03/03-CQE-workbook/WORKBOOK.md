@@ -38,3 +38,9 @@ triality-receipt =
   T_TRIALITY: S3 rotation/reflection ↔ triality ✓
   human_verifiable: true
 ```
+
+## Scope Note
+
+This workbook verifies the finite local surface: LCR state, axis/sheet code,
+and diagonal J3 carrier. It does not by itself prove full D4 triality or a full
+F4/J3(O) action. Those stronger claims remain separate proof obligations.

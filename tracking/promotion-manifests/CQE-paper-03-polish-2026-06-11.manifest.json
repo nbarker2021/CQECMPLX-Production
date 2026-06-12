@@ -1,0 +1,41 @@
+{
+  "artifact": "CQE-paper-03 formal polish pass",
+  "date": "2026-06-11",
+  "paper": "CQE-paper-03",
+  "title": "D4/J3 Triality",
+  "status": "formal local-surface manuscript and finite verifier promoted",
+  "core_claim": {
+    "surface": "LCR state <-> D4-style axis/sheet code <-> diagonal J3 carrier",
+    "verified": [
+      "axis/sheet bijection over eight LCR states",
+      "axis pairs are antipodal complements",
+      "Paper 02 correction coordinates land at (2,0) and (3,1)",
+      "diagonal trace equals shell",
+      "shell-2 diagonal carriers are idempotent"
+    ],
+    "explicit_non_claims": [
+      "full D4 triality automorphism theorem",
+      "full F4/J3(O) action",
+      "S3 group-ring closure"
+    ]
+  },
+  "new_artifacts": [
+    "production/formal-papers/CQE-paper-03/FORMAL_PAPER.md",
+    "production/formal-papers/CQE-paper-03/verify_triality_surface.py",
+    "production/formal-papers/CQE-paper-03/triality_surface_receipt.json"
+  ],
+  "updated_artifacts": [
+    "production/papers/CQE-paper-03/02-CQE-tool/TOOL.md",
+    "production/papers/CQE-paper-03/03-CQE-workbook/WORKBOOK.md",
+    "production/paper-kernels/papers/CQE-paper-03/PAPER_KERNEL.md"
+  ],
+  "validation": {
+    "formal_verifier": "pass",
+    "paper_kernel_selector_training_mode": "1 pass / 0 needs-work"
+  },
+  "next_obligations": [
+    "Wire verify_triality_surface into cqe_engine.formal.",
+    "Promote the stronger S3 group-ring/J3 trace-2 proof as a separate theorem.",
+    "Carry Paper 02 correction coordinates into Paper 04 boundary repair."
+  ]
+}

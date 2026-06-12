@@ -18,7 +18,9 @@ Status: `seeded`
 
 Represent axis/sheet labeling, rotation/reflection equivalence, and Jordan carrier behavior as the first explicit triality surface.
 
-Required next action: Separate method claims from domain claims before peer-review promotion.
+Polished claim: Paper 03 proves the local triality surface `LCR state <-> D4-style axis/sheet code <-> diagonal J3 carrier`. It verifies bijective axis/sheet encoding, shell-as-trace preservation, trace-2 diagonal idempotency, and the Paper 02 correction coordinates. Full D4 triality and full F4/J3(O) action remain explicit obligations.
+
+Required next action: Connect this polished local-surface theorem to the installable cqe_engine formal interface, then add the stronger group-action proof as a separate theorem.
 
 ## Math
 
@@ -32,7 +34,7 @@ Required next action: Promote every symbolic statement into a normalized claim r
 
 Status: `source-bound`
 
-Use 01-CQE-formal/FORMAL.md and recovered algebra/PDF evidence.
+Use `production/formal-papers/CQE-paper-03/FORMAL_PAPER.md`, `01-CQE-formal/FORMAL.md`, and recovered algebra/PDF evidence.
 
 Required next action: Split normal form, closed form, algebraic operators, calculus/window operators, and open obligations.
 
@@ -64,7 +66,7 @@ Required next action: Resolve this binding into production/lib-forge or mark it 
 
 Status: `seeded`
 
-Every validation and diagnostic must support hidden-guess ablation when training mode is enabled.
+Every validation and diagnostic must support hidden-guess ablation when training mode is enabled. Paper 03 now includes `production/formal-papers/CQE-paper-03/triality_surface_receipt.json`, which verifies the local surface and records full triality as an obligation rather than a hidden overclaim.
 
 Required next action: Add positive, negative, boundary, and wrap tests with receipts.
 

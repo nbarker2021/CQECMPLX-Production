@@ -1,0 +1,31 @@
+{
+  "suite": "CQECMPLX 32-Paper Kernel Suite",
+  "selector": "CQE-paper-03",
+  "generated_at_utc": "2026-06-12T03:18:11.611703+00:00",
+  "paper_00_contract": "CQE-paper-00",
+  "paper_00_role": "past_burden_minimum_information_contract",
+  "training_mode": true,
+  "selected_count": 1,
+  "pass_count": 1,
+  "needs_work_count": 0,
+  "results": [
+    {
+      "paper": "CQE-paper-03",
+      "title": "D4/J3 Triality",
+      "block": "block-00-papers-01-08",
+      "component_count": 8,
+      "component_ok": true,
+      "required_sources_missing": [],
+      "optional_sources_missing": [],
+      "kernel_file_present": true,
+      "manifest_file_present": true,
+      "suite_previous": "CQE-paper-02",
+      "suite_next": "CQE-paper-04",
+      "block_previous": "CQE-paper-02",
+      "block_next": "CQE-paper-04",
+      "hidden_guess_ready": true,
+      "training_mode": true,
+      "status": "pass"
+    }
+  ]
+}

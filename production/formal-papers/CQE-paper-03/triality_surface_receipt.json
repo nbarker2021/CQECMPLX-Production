@@ -1,0 +1,180 @@
+{
+  "paper": "CQE-paper-03",
+  "theorem": "Local D4/J3 triality surface",
+  "status": "pass",
+  "checks": {
+    "axis_sheet_bijection": true,
+    "axis_pairs_are_antipodal": true,
+    "trace_equals_shell": true,
+    "shell2_states_are_diagonal_idempotents": true,
+    "paper02_correction_coordinates_preserved": true,
+    "strong_triality_left_as_obligation": true
+  },
+  "rows": [
+    {
+      "state": [
+        0,
+        0,
+        0
+      ],
+      "axis": 0,
+      "sheet": 0,
+      "shell": 0,
+      "trace": 0,
+      "diagonal_idempotent": true,
+      "is_shell2": false
+    },
+    {
+      "state": [
+        0,
+        0,
+        1
+      ],
+      "axis": 3,
+      "sheet": 0,
+      "shell": 1,
+      "trace": 1,
+      "diagonal_idempotent": true,
+      "is_shell2": false
+    },
+    {
+      "state": [
+        0,
+        1,
+        0
+      ],
+      "axis": 2,
+      "sheet": 0,
+      "shell": 1,
+      "trace": 1,
+      "diagonal_idempotent": true,
+      "is_shell2": false
+    },
+    {
+      "state": [
+        0,
+        1,
+        1
+      ],
+      "axis": 1,
+      "sheet": 1,
+      "shell": 2,
+      "trace": 2,
+      "diagonal_idempotent": true,
+      "is_shell2": true
+    },
+    {
+      "state": [
+        1,
+        0,
+        0
+      ],
+      "axis": 1,
+      "sheet": 0,
+      "shell": 1,
+      "trace": 1,
+      "diagonal_idempotent": true,
+      "is_shell2": false
+    },
+    {
+      "state": [
+        1,
+        0,
+        1
+      ],
+      "axis": 2,
+      "sheet": 1,
+      "shell": 2,
+      "trace": 2,
+      "diagonal_idempotent": true,
+      "is_shell2": true
+    },
+    {
+      "state": [
+        1,
+        1,
+        0
+      ],
+      "axis": 3,
+      "sheet": 1,
+      "shell": 2,
+      "trace": 2,
+      "diagonal_idempotent": true,
+      "is_shell2": true
+    },
+    {
+      "state": [
+        1,
+        1,
+        1
+      ],
+      "axis": 0,
+      "sheet": 1,
+      "shell": 3,
+      "trace": 3,
+      "diagonal_idempotent": true,
+      "is_shell2": false
+    }
+  ],
+  "axis_pairs": {
+    "0": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "1": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    "2": [
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        1
+      ]
+    ],
+    "3": [
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        0
+      ]
+    ]
+  },
+  "paper02_correction_coordinates": [
+    [
+      2,
+      0
+    ],
+    [
+      3,
+      1
+    ]
+  ],
+  "scope_boundary": "This verifier proves the finite local axis/sheet and diagonal J3 surface; it does not prove full D4 triality or a full F4/J3(O) action."
+}
