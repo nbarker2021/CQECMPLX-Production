@@ -1,6 +1,6 @@
 {
   "built_on": "2026-06-12",
-  "paper_count": 39,
+  "paper_count": 42,
   "outputs": [
     {
       "paper": "CQE-paper-00",
@@ -52,9 +52,27 @@
     },
     {
       "paper": "CQE-paper-02",
-      "title": "Paper 02 - Correction Surface",
-      "pdf": "Papers\\PDF\\CQE-paper-02_paper-02-correction-surface.pdf",
-      "bytes": 7759
+      "title": "Paper 2 - Correction Surface",
+      "pdf": "Papers\\PDF\\CQE-paper-02_paper-2-correction-surface.pdf",
+      "bytes": 6939
+    },
+    {
+      "paper": "CQE-paper-02.25",
+      "title": "Paper 2.25 - Toolkit for the Correction Surface",
+      "pdf": "Papers\\PDF\\CQE-paper-02.25_paper-2-25-toolkit-for-the-correction-surface.pdf",
+      "bytes": 4503
+    },
+    {
+      "paper": "CQE-paper-02.50",
+      "title": "Paper 2.50 - Correction Surface Claim Contract",
+      "pdf": "Papers\\PDF\\CQE-paper-02.50_paper-2-50-correction-surface-claim-contract.pdf",
+      "bytes": 4546
+    },
+    {
+      "paper": "CQE-paper-02.75",
+      "title": "Paper 2.75 - Correction Surface as Next-State Precondition",
+      "pdf": "Papers\\PDF\\CQE-paper-02.75_paper-2-75-correction-surface-as-next-state-precondition.pdf",
+      "bytes": 4314
     },
     {
       "paper": "CQE-paper-03",

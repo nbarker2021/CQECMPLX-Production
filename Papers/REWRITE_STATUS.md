@@ -27,7 +27,10 @@ Status meanings:
 | 1.25 | review-source | LCR toolkit supplement present. |
 | 1.50 | review-source | LCR claim contract supplement present. |
 | 1.75 | review-source | LCR next-state precondition supplement present. |
-| 2 | promoted-formal | Rewrite to strict scientific paper form. |
+| 2 | review-source | Strict scientific rewrite present; companion supports drafted. |
+| 2.25 | review-source | Correction toolkit supplement present. |
+| 2.50 | review-source | Correction claim contract supplement present. |
+| 2.75 | review-source | Correction next-state precondition supplement present. |
 | 3 | promoted-formal | Rewrite to strict scientific paper form. |
 | 4 | promoted-formal | Rewrite to strict scientific paper form. |
 | 5 | promoted-formal | Rewrite to strict scientific paper form. |
