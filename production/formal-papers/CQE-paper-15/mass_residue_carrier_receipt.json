@@ -1,0 +1,207 @@
+{
+  "paper": "CQE-paper-15",
+  "theorem": "mass-residue carrier substrate layer",
+  "status": "pass",
+  "checks": {
+    "rule30_linear_obstruction_split_holds": true,
+    "f2_majorana_passes": true,
+    "rule30_obstruction_arf_is_zero": true,
+    "matching_arf_glues_and_mismatch_rejects": true,
+    "voa_sector_decomposition_passes": true,
+    "voa_weight_distribution_is_2_6": true,
+    "true_vacua_are_weight_zero": true,
+    "correction_firing_states_match_residue_formula": true,
+    "nth_bit_layers_pass_with_open_mckay_thompson": true,
+    "physical_higgs_mass_left_as_obligation": true
+  },
+  "rule30_split": {
+    "rows": [
+      {
+        "state": [
+          0,
+          0,
+          0
+        ],
+        "rule30": 0,
+        "linear_part": 0,
+        "obstruction_C_and_R": 0,
+        "split_holds": true,
+        "correction_residue_C_and_not_R": 0
+      },
+      {
+        "state": [
+          0,
+          0,
+          1
+        ],
+        "rule30": 1,
+        "linear_part": 1,
+        "obstruction_C_and_R": 0,
+        "split_holds": true,
+        "correction_residue_C_and_not_R": 0
+      },
+      {
+        "state": [
+          0,
+          1,
+          0
+        ],
+        "rule30": 1,
+        "linear_part": 1,
+        "obstruction_C_and_R": 0,
+        "split_holds": true,
+        "correction_residue_C_and_not_R": 1
+      },
+      {
+        "state": [
+          0,
+          1,
+          1
+        ],
+        "rule30": 1,
+        "linear_part": 0,
+        "obstruction_C_and_R": 1,
+        "split_holds": true,
+        "correction_residue_C_and_not_R": 0
+      },
+      {
+        "state": [
+          1,
+          0,
+          0
+        ],
+        "rule30": 1,
+        "linear_part": 1,
+        "obstruction_C_and_R": 0,
+        "split_holds": true,
+        "correction_residue_C_and_not_R": 0
+      },
+      {
+        "state": [
+          1,
+          0,
+          1
+        ],
+        "rule30": 0,
+        "linear_part": 0,
+        "obstruction_C_and_R": 0,
+        "split_holds": true,
+        "correction_residue_C_and_not_R": 0
+      },
+      {
+        "state": [
+          1,
+          1,
+          0
+        ],
+        "rule30": 0,
+        "linear_part": 0,
+        "obstruction_C_and_R": 0,
+        "split_holds": true,
+        "correction_residue_C_and_not_R": 1
+      },
+      {
+        "state": [
+          1,
+          1,
+          1
+        ],
+        "rule30": 0,
+        "linear_part": 1,
+        "obstruction_C_and_R": 1,
+        "split_holds": true,
+        "correction_residue_C_and_not_R": 0
+      }
+    ],
+    "split_holds_for_all_states": true,
+    "correction_firing_states": [
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ]
+    ]
+  },
+  "f2_majorana_summary": {
+    "status": "pass",
+    "q_zero_arf": 0,
+    "q_hyperbolic_arf": 0,
+    "q_elliptic_arf": 1,
+    "rule30_correction_arf": 0,
+    "zero_vs_hyperbolic_can_glue": true,
+    "zero_vs_elliptic_can_glue": false
+  },
+  "voa_summary": {
+    "status": "pass",
+    "weight_distribution": {
+      "0": 2,
+      "5": 6
+    },
+    "seed_partition_function": "Z(q) = 2q^0 + 6q^5",
+    "vacua": [
+      "(0, 0, 0)",
+      "(1, 1, 1)"
+    ],
+    "weights": {
+      "(0, 0, 0)": 0,
+      "(0, 0, 1)": 5,
+      "(0, 1, 0)": 5,
+      "(0, 1, 1)": 5,
+      "(1, 0, 0)": 5,
+      "(1, 0, 1)": 5,
+      "(1, 1, 0)": 5,
+      "(1, 1, 1)": 0
+    }
+  },
+  "nth_bit_summary": {
+    "status": "pass",
+    "max_depth": 128,
+    "oracle_accuracy": 1.0,
+    "lucas_correction_accuracy": 1.0,
+    "lucas_only_accuracy": 0.5078125,
+    "correction_firing_fraction": 0.265625,
+    "voa_weight_distribution": {
+      "5": 96,
+      "0": 32
+    },
+    "open_step_O2prime": "Implement mckay_thompson_coefficient_parity(g, k) for g in {2A, 3A}. This gives correction(t,x) in O(log N) without the grid. Combined with Lucas base, gives full O(log N) Rule 30 center bit extractor. Transport: Conway-Norton (1979) McKay-Thompson series + O2' axes/sheets."
+  },
+  "closed_layers": [
+    "Rule 30 splits into linear part xor C*R obstruction over F2",
+    "Rule 30 obstruction has Arf invariant 0",
+    "Arf-matching gluing admits and Arf-mismatch gluing rejects",
+    "VOA sector decomposition is 2q^0 + 6q^5",
+    "correction residue C and not R identifies the local surviving-residue states",
+    "nth-bit local/oracle layer passes while McKay-Thompson parity remains open"
+  ],
+  "open_layers": [
+    "physical Higgs mechanism",
+    "particle mass spectrum or numerical mass prediction",
+    "electroweak symmetry breaking/Yukawa coupling derivation",
+    "closed-form McKay-Thompson correction parity"
+  ],
+  "falsifiers": [
+    {
+      "claim": "Rule 30 split fails on any local state",
+      "accepted": false
+    },
+    {
+      "claim": "Arf mismatch can be glued losslessly",
+      "accepted": false
+    },
+    {
+      "claim": "VOA weight partition is not 2 vacua and 6 excited states",
+      "accepted": false
+    },
+    {
+      "claim": "This receipt proves physical Higgs mass",
+      "accepted": false
+    }
+  ],
+  "scope_boundary": "Paper 15 proves a finite mass-residue carrier proxy: obstruction, Arf gluing, VOA weighting, and correction-residue bookkeeping. Higgs and QFT mass claims remain open."
+}

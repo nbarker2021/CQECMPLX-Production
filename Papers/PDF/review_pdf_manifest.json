@@ -1,6 +1,6 @@
 {
   "built_on": "2026-06-12",
-  "paper_count": 78,
+  "paper_count": 81,
   "outputs": [
     {
       "paper": "CQE-paper-00",
@@ -366,7 +366,25 @@
       "paper": "CQE-paper-15",
       "title": "Paper 15 - QFT/Higgs Mass-Residue Carrier",
       "pdf": "Papers\\PDF\\CQE-paper-15_paper-15-qft-higgs-mass-residue-carrier.pdf",
-      "bytes": 7512
+      "bytes": 7028
+    },
+    {
+      "paper": "CQE-paper-15.25",
+      "title": "Paper 15.25 - Toolkit for Mass-Residue Carrier",
+      "pdf": "Papers\\PDF\\CQE-paper-15.25_paper-15-25-toolkit-for-mass-residue-carrier.pdf",
+      "bytes": 3353
+    },
+    {
+      "paper": "CQE-paper-15.50",
+      "title": "Paper 15.50 - Mass-Residue Carrier Claim Contract",
+      "pdf": "Papers\\PDF\\CQE-paper-15.50_paper-15-50-mass-residue-carrier-claim-contract.pdf",
+      "bytes": 3997
+    },
+    {
+      "paper": "CQE-paper-15.75",
+      "title": "Paper 15.75 - Mass-Residue Carrier as Next-State Precondition",
+      "pdf": "Papers\\PDF\\CQE-paper-15.75_paper-15-75-mass-residue-carrier-as-next-state-precondition.pdf",
+      "bytes": 3260
     },
     {
       "paper": "CQE-paper-16",

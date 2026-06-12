@@ -79,7 +79,10 @@ Status meanings:
 | 14.25 | review-source | Boundary-repair curvature toolkit supplement present. |
 | 14.50 | review-source | Boundary-repair curvature claim contract supplement present. |
 | 14.75 | review-source | Boundary-repair curvature next-state precondition supplement present. |
-| 15 | fallback-body | Promote from production body into strict scientific paper. |
+| 15 | review-source | Strict scientific rewrite present; companion supports drafted; local verifier promoted. |
+| 15.25 | review-source | Mass-residue carrier toolkit supplement present. |
+| 15.50 | review-source | Mass-residue carrier claim contract supplement present. |
+| 15.75 | review-source | Mass-residue carrier next-state precondition supplement present. |
 | 16 | fallback-body | Promote from production body into strict scientific paper. |
 | 17 | fallback-body | Promote from production body into strict scientific paper. |
 | 18 | fallback-body | Promote from production body into strict scientific paper. |
