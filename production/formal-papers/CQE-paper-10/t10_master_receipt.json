@@ -1,0 +1,252 @@
+{
+  "paper": "CQE-paper-10",
+  "theorem": "T10 master receipt integrity",
+  "status": "pass",
+  "checks": {
+    "paper00_contract_bound": true,
+    "observer_center_encoded": true,
+    "papers01_to_09_receipts_present": true,
+    "papers01_to_09_status_pass_like": true,
+    "transport_rows_inspectable": true,
+    "transport_witnesses_replay": true,
+    "transport_open_lifts_are_visible": true,
+    "lookup_cache_materializes": true
+  },
+  "paper00_binding": {
+    "paper": "CQE-paper-00",
+    "role": "past_burden_minimum_information_contract",
+    "observer_center": "C00",
+    "observer_center_semantics": "requested enumeration event encoded as the system center",
+    "encoding_event": "E00_to_1",
+    "encoding_event_semantics": "Paper 00 defines what must be carried; Paper 01 begins carrying it",
+    "source_present": true,
+    "paper01_source_present": true,
+    "receipt_count": 5,
+    "bound": true,
+    "receipt_paths": [
+      "proof-receipts\\CQE-paper-00\\paper00-foundation\\receipt-20260610T011321Z.json",
+      "proof-receipts\\CQE-paper-00\\paper00-foundation\\receipt-20260610T011446Z.json",
+      "proof-receipts\\CQE-paper-00\\paper00-foundation\\receipt-20260610T012358Z.json",
+      "proof-receipts\\CQE-paper-00\\validate-v0.1\\receipt-20260608T030105Z.json",
+      "proof-receipts\\CQE-paper-00\\validate-v0.1-obligations\\receipt-20260608T030105Z.json"
+    ]
+  },
+  "formal_receipt_bindings": [
+    {
+      "paper": "CQE-paper-01",
+      "path": "formal-papers\\CQE-paper-01\\lcr_carrier_receipt.json",
+      "present": true,
+      "status": "pass",
+      "status_pass_like": true
+    },
+    {
+      "paper": "CQE-paper-02",
+      "path": "formal-papers\\CQE-paper-02\\correction_surface_receipt.json",
+      "present": true,
+      "status": "pass",
+      "status_pass_like": true
+    },
+    {
+      "paper": "CQE-paper-03",
+      "path": "formal-papers\\CQE-paper-03\\triality_surface_receipt.json",
+      "present": true,
+      "status": "pass",
+      "status_pass_like": true
+    },
+    {
+      "paper": "CQE-paper-04",
+      "path": "formal-papers\\CQE-paper-04\\boundary_repair_receipt.json",
+      "present": true,
+      "status": "pass",
+      "status_pass_like": true
+    },
+    {
+      "paper": "CQE-paper-05",
+      "path": "formal-papers\\CQE-paper-05\\oloid_path_carrier_receipt.json",
+      "present": true,
+      "status": "pass",
+      "status_pass_like": true
+    },
+    {
+      "paper": "CQE-paper-06",
+      "path": "formal-papers\\CQE-paper-06\\causal_code_receipt.json",
+      "present": true,
+      "status": "pass",
+      "status_pass_like": true
+    },
+    {
+      "paper": "CQE-paper-07",
+      "path": "formal-papers\\CQE-paper-07\\discrete_continuous_bridge_receipt.json",
+      "present": true,
+      "status": "pass",
+      "status_pass_like": true
+    },
+    {
+      "paper": "CQE-paper-08",
+      "path": "formal-papers\\CQE-paper-08\\lattice_closure_template_receipt.json",
+      "present": true,
+      "status": "pass",
+      "status_pass_like": true
+    },
+    {
+      "paper": "CQE-paper-09",
+      "path": "formal-papers\\CQE-paper-09\\hamiltonian_window_emergence_receipt.json",
+      "present": true,
+      "status": "pass",
+      "status_pass_like": true
+    }
+  ],
+  "transport_summary": {
+    "status": "pass_with_open_lifts",
+    "row_count": 4,
+    "demonstrated_count": 2,
+    "open_lift_count": 2,
+    "all_rows_have_required_fields": true,
+    "valid_classifications": true,
+    "local_witnesses_pass": true,
+    "all_lifts_demonstrated": false
+  },
+  "transport_rows": [
+    {
+      "id": "LCR_TO_D4_AXIS_SHEET",
+      "source_object": "{0,1}^3 LCR chart state",
+      "target_object": "D4-style (axis, sheet) token",
+      "map": "ANTIPODAL_LABEL[state], SHEET_SIGN[state]",
+      "preserved_quantity": "lossless recovery of all eight chart states",
+      "failure_condition": "two chart states share one (axis, sheet) token",
+      "witness": "verify_chart_codec_d4",
+      "classification": "demonstrated",
+      "proof_boundary": "finite codec; does not derive a cold-start token from depth N"
+    },
+    {
+      "id": "D4_TO_J3O_DIAGONAL_CARRIER",
+      "source_object": "LCR diagonal chart state and shell strata",
+      "target_object": "J3(O) diagonal and trace-2 idempotent carrier",
+      "map": "(L,C,R) -> diag(L,C,R)",
+      "preserved_quantity": "trace strata, diagonal idempotency, LR/Weyl permutation",
+      "failure_condition": "Jordan idempotency or LR permutation preservation fails",
+      "witness": "verify_j3o_axioms",
+      "classification": "demonstrated",
+      "proof_boundary": "diagonal carrier is finite; broader F4 transport is not implied automatically"
+    },
+    {
+      "id": "J3O_TO_G2_F4_T5A_ROUTE",
+      "source_object": "J3(O) chart carrier",
+      "target_object": "G2 -> F4 -> T5A conjugate route",
+      "map": "conjugate_triple_route(N, enumeration_bit_fn)",
+      "preserved_quantity": "bounded paired route metadata across at most three named stages",
+      "failure_condition": "bounded route exceeds three stages or is mistaken for a depth-only readout",
+      "witness": "verify_conjugate_triple",
+      "classification": "bounded_local",
+      "proof_boundary": "local oracle-backed classifier exists; it does not derive the bit from depth N"
+    },
+    {
+      "id": "EXCEPTIONAL_ROUTE_TO_NIEMEIER_LANDING_FORMS",
+      "source_object": "exceptional-group route metadata",
+      "target_object": "rank-24 Niemeier and Leech landing-form registry",
+      "map": "registered terminal IDs and component product sheets",
+      "preserved_quantity": "named terminal root-system metadata",
+      "failure_condition": "landing form is treated as computation without a proved fingerprint map",
+      "witness": "ledger.build.NIEMEIER_FORMS and lookup cache registry",
+      "classification": "registered_landing_forms",
+      "proof_boundary": "landing forms are registered targets, not automatic proof closure"
+    }
+  ],
+  "lookup_cache": {
+    "data_root": "D:\\CQE_CMPLX\\git-hosted-roots\\CQECMPLX-Production\\production\\packages\\cqecmplx-forge\\src\\lattice_forge\\data",
+    "status": {
+      "cache_exists": true,
+      "rule30_bits": 1000000,
+      "unipotent_orbits": 157,
+      "lattice_forms": 24,
+      "source_registers": {
+        "umrk": true,
+        "lmfdb": true
+      }
+    },
+    "rule30_tip_receipt": {
+      "kind": "rule30.center_bit",
+      "key": "999999",
+      "value": 1,
+      "source_id": "wolfram-rule30-center-million",
+      "evidence_level": "external_dataset",
+      "complexity_claim": "O(1) cache lookup inside materialized dataset window"
+    },
+    "prize3_lookup_receipt": {
+      "kind": "prize3.lookup_substrate",
+      "key": "N=4096;group=F4",
+      "value": {
+        "N": 4096,
+        "center_bit": 1,
+        "dataset_window": "wolfram-rule30-center-million",
+        "normal_form": {
+          "podal_pair": [
+            4096,
+            -4096
+          ],
+          "cayley_dickson_doubling_order": 4097,
+          "network_weights": [
+            1,
+            8,
+            8,
+            1,
+            1,
+            8,
+            8,
+            1
+          ],
+          "total_network_weight": 36,
+          "honesty": "normal_form_only: generates podal/antipodal Cayley-Dickson sheet placement; does not by itself prove nth-bit extraction"
+        },
+        "orbit_group": "F4",
+        "orbit_candidate_count": 11,
+        "orbit_candidates": [
+          "0",
+          "A1s",
+          "A1+A1s",
+          "A2",
+          "A2s",
+          "F4(a3)",
+          "C3",
+          "B3",
+          "F4(a2)",
+          "F4(a1)",
+          "F4"
+        ],
+        "closed_form_claim": false,
+        "remaining_obligation": "prove cold-start N-to-axis/sheet or N-to-Weyl fingerprint"
+      },
+      "source_id": "cmplx-lookup-cache-chain",
+      "evidence_level": "materialized_lookup_substrate",
+      "complexity_claim": "O(1) for materialized bit and indexed local records; no cold-start closed-form N-to-fingerprint claim"
+    },
+    "checks": {
+      "rule30_window_has_one_million_bits": true,
+      "unipotent_orbit_count_is_157": true,
+      "lattice_form_count_is_24": true,
+      "umrk_register_present": true,
+      "lmfdb_register_present": true,
+      "rule30_tip_is_external_dataset_receipt": true,
+      "prize3_lookup_keeps_closed_form_boundary_open": true
+    }
+  },
+  "falsifiers": [
+    {
+      "claim": "T10 proves every registered lift is already demonstrated",
+      "accepted": false
+    },
+    {
+      "claim": "The lookup cache makes a cold-start closed-form N-to-fingerprint claim",
+      "accepted": false
+    },
+    {
+      "claim": "A paper enters the master receipt without a source or receipt binding",
+      "accepted": false
+    },
+    {
+      "claim": "A later paper can ignore the observer enumeration event encoded at 00 -> 1",
+      "accepted": false
+    }
+  ],
+  "scope_boundary": "Paper 10 proves master-receipt inspectability and replayability for Papers 00-09. It preserves open lifts as visible audit boundaries rather than converting them into closed domain theorems."
+}

@@ -10,67 +10,71 @@ Suite edges: `CQE-paper-09` -> `CQE-paper-10` -> `CQE-paper-11`
 
 Block edges: `CQE-paper-09` -> `CQE-paper-10` -> `CQE-paper-11`
 
-Central thesis: Bind Papers 00-09 into a master receipt that proves the stack is inspectable and replayable.
+Central thesis: Bind Paper 00 and Papers 01-09 into a replayable master receipt carried from the observer's step-00 enumeration event into step 1, with typed transport rows, materialized lookup receipts, and visible open-lift boundaries.
 
 ## Claims
 
-Status: `seeded`
+Status: `promoted`
 
-Bind Papers 00-09 into a master receipt that proves the stack is inspectable and replayable.
+The T10 master receipt proves the 00-09 substack is inspectable and replayable: Paper 00 is bound as the inherited contract and observer enumeration event, Papers 01-09 have pass-like formal receipts, transport rows are typed, local witnesses replay, and lookup receipts materialize.
 
-Required next action: Separate method claims from domain claims before peer-review promotion.
+Receipt: `production/formal-papers/CQE-paper-10/t10_master_receipt.json`
 
 ## Math
 
-Status: `source-bound`
+Status: `formalized`
 
-Use the paper body axioms, lemmas, and formalism as the math intake.
+T10 is the tuple `(C00, E00->1, P00, P01..P09, R, L, V, O)` where the observer center, initial encoding event, paper bindings, transport rows, lookup cache, verdict, and open-obligation set are all explicit.
 
-Required next action: Promote every symbolic statement into a normalized claim row with assumptions and receipts.
+Verified result: `status = pass`; transport status is `pass_with_open_lifts`.
 
 ## Formal, Normal, Closed-Form Algebra and Calculus
 
-Status: `source-bound`
+Status: `formalized`
 
-Use 01-CQE-formal/FORMAL.md and recovered algebra/PDF evidence.
+The receipt algebra is a stack binding: the requested enumeration becomes `C00`, `C00` is carried from Paper 00 into Paper 01 as `E00->1`, every accepted component must have a parseable receipt, every transport row must have required fields, and every lookup must return a `LookupReceipt`.
 
-Required next action: Split normal form, closed form, algebraic operators, calculus/window operators, and open obligations.
+Boundary: `closed_form_claim = False` is preserved for the Prize 3 lookup substrate.
 
 ## By-Hand Reconstruction
 
-Status: `source-bound`
+Status: `supplemental`
 
-Use 03-CQE-workbook/WORKBOOK.md plus the analog toolkit guides.
+By-hand reconstruction is an exposure route for checking paper bindings, rows, witnesses, and open-lift marks. It is supplemental validation, not the central proof.
 
-Required next action: Write the physical reconstruction steps and boundary-collision handling for the paper.
+Required next action: Keep workbook markings aligned with the formal receipt fields.
 
 ## Code Rebuild
 
-Status: `source-bound`
+Status: `implemented`
 
-Use 02-CQE-tool/TOOL.md and run.py when present.
+Replay command:
 
-Required next action: Bind a replayable command or mark the missing executable as an obligation.
+```text
+python production/formal-papers/CQE-paper-10/verify_t10_master_receipt.py
+```
 
 ## Installable Lib Bindings
 
-Status: `seeded`
+Status: `implemented`
 
-forgefactory.paper10_master_receipt
+`lattice_forge.transport_obligations.verify_transport_obligations`
+`lattice_forge.cmplx_lookup_cache.build_default_cache`
+`lattice_forge.cmplx_lookup_cache.LookupReceipt`
 
-Required next action: Resolve this binding into production/lib-forge or mark it as an adapter route.
+The packaged lib now includes the Rule 30 million-bit window, UMRK, LMFDB, and Atlas data needed for cache materialization.
 
 ## Tests and Receipts
 
-Status: `seeded`
+Status: `implemented`
 
-Every validation and diagnostic must support hidden-guess ablation when training mode is enabled.
+Verifier emits `t10_master_receipt.json` with falsifiers for overclaiming lift closure, cold-start closure, and unbound paper entry.
 
-Required next action: Add positive, negative, boundary, and wrap tests with receipts.
+Training-mode hidden-guess ablation remains a kernel-level diagnostic policy applied to validation runs.
 
 ## Deployment Kernel
 
-Status: `seeded`
+Status: `ready`
 
 Deployable individually as CQE-paper-10 and selectable through the master suite.
 

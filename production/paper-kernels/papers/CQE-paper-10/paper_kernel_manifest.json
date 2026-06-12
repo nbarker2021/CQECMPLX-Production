@@ -11,45 +11,45 @@
   "suite_next": "CQE-paper-11",
   "block_previous": "CQE-paper-09",
   "block_next": "CQE-paper-11",
-  "central_thesis": "Bind Papers 00-09 into a master receipt that proves the stack is inspectable and replayable.",
+  "central_thesis": "Bind Paper 00 and Papers 01-09 into a replayable master receipt carried from the observer's step-00 enumeration event into step 1, with typed transport rows, materialized lookup receipts, and visible open-lift boundaries.",
   "components": {
     "claims": {
-      "status": "seeded",
-      "primary_content": "Bind Papers 00-09 into a master receipt that proves the stack is inspectable and replayable.",
-      "required_action": "Separate method claims from domain claims before peer-review promotion."
+      "status": "promoted",
+      "primary_content": "The T10 master receipt proves the 00-09 substack is inspectable and replayable: Paper 00 is bound as the inherited contract and observer enumeration event, Papers 01-09 have pass-like formal receipts, transport rows are typed, local witnesses replay, and lookup receipts materialize.",
+      "required_action": "Receipt: production/formal-papers/CQE-paper-10/t10_master_receipt.json"
     },
     "math": {
-      "status": "source-bound",
-      "primary_content": "Use the paper body axioms, lemmas, and formalism as the math intake.",
-      "required_action": "Promote every symbolic statement into a normalized claim row with assumptions and receipts."
+      "status": "formalized",
+      "primary_content": "T10 = (C00, E00->1, P00, P01..P09, R, L, V, O), binding the observer center, initial encoding event, paper receipts, transport rows, lookup cache, verdict, and open-obligation set.",
+      "required_action": "Verified result: status=pass; transport status=pass_with_open_lifts."
     },
     "formal_algebra_calculus": {
-      "status": "source-bound",
-      "primary_content": "Use 01-CQE-formal/FORMAL.md and recovered algebra/PDF evidence.",
-      "required_action": "Split normal form, closed form, algebraic operators, calculus/window operators, and open obligations."
+      "status": "formalized",
+      "primary_content": "Receipt algebra requires the requested enumeration to become C00, C00 to be carried from Paper 00 into Paper 01 as E00->1, parseable paper receipts, required transport-row fields, and LookupReceipt outputs for cache reads.",
+      "required_action": "Preserve closed_form_claim=False for the Prize 3 lookup substrate."
     },
     "hand_work": {
-      "status": "source-bound",
-      "primary_content": "Use 03-CQE-workbook/WORKBOOK.md plus the analog toolkit guides.",
-      "required_action": "Write the physical reconstruction steps and boundary-collision handling for the paper."
+      "status": "supplemental",
+      "primary_content": "By-hand reconstruction exposes paper bindings, rows, witnesses, and open-lift marks as supplemental validation.",
+      "required_action": "Keep workbook markings aligned with formal receipt fields."
     },
     "code_rebuild": {
-      "status": "source-bound",
-      "primary_content": "Use 02-CQE-tool/TOOL.md and run.py when present.",
-      "required_action": "Bind a replayable command or mark the missing executable as an obligation."
+      "status": "implemented",
+      "primary_content": "python production/formal-papers/CQE-paper-10/verify_t10_master_receipt.py",
+      "required_action": "Re-run after changes to Papers 00-09 receipts, transport obligations, or lookup cache data."
     },
     "lib_bindings": {
-      "status": "seeded",
-      "primary_content": "forgefactory.paper10_master_receipt",
-      "required_action": "Resolve this binding into production/lib-forge or mark it as an adapter route."
+      "status": "implemented",
+      "primary_content": "lattice_forge.transport_obligations.verify_transport_obligations; lattice_forge.cmplx_lookup_cache.build_default_cache; lattice_forge.cmplx_lookup_cache.LookupReceipt",
+      "required_action": "Packaged lib includes Rule 30 million-bit, UMRK, LMFDB, and Atlas data for cache materialization."
     },
     "tests_and_receipts": {
-      "status": "seeded",
-      "primary_content": "Every validation and diagnostic must support hidden-guess ablation when training mode is enabled.",
-      "required_action": "Add positive, negative, boundary, and wrap tests with receipts."
+      "status": "implemented",
+      "primary_content": "t10_master_receipt.json records positive checks and falsifiers for lift-overclaim, cold-start-overclaim, and unbound-paper entry.",
+      "required_action": "Training-mode hidden-guess ablation remains a kernel-level diagnostic policy applied to validation runs."
     },
     "deployment_kernel": {
-      "status": "seeded",
+      "status": "ready",
       "primary_content": "Deployable individually as CQE-paper-10 and selectable through the master suite.",
       "required_action": "Expose paper, block, and suite selectors with no duplicate routing logic."
     }
