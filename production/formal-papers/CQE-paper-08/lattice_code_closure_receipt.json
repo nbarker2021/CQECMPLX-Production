@@ -1,0 +1,31 @@
+{
+  "paper": "CQE-paper-08",
+  "theorem": "Lattice code closure: 5-term lattice [1,3,7,21,137], CRT residue 119 mod 153, binding digit realizes closure for all digit combinations",
+  "forge": "AuthenticaForge",
+  "source_product": "historical_pastworks/product_authentica (core distilled)",
+  "adjudicated_divergence": [
+    "global mutable sequence counter removed; sequence is an explicit parameter (Event Law determinism)",
+    "check digit shown to be constant 2 for all valid codes \u2014 the product counted it as a third independent check; it is not",
+    "QR codec rewritten: source assumed 3-digit fields while d5 is unbounded, corrupting round-trips for 4+ digit d5",
+    "FastAPI/SDK layers stay product-side"
+  ],
+  "status": "pass",
+  "checks": {
+    "lattice_constants_close": true,
+    "digital_root_closed_form": true,
+    "crt_unique_residue_119_mod_153": true,
+    "valid_sums_always_dr_2": true,
+    "binding_digit_closes_all_6561": true,
+    "d5_perturbation_detected_up_to_16": true,
+    "check_digit_constant_2_for_valid_codes": true,
+    "deterministic_and_500_batch_unique": true,
+    "qr_payload_roundtrip": true,
+    "end_to_end_verify_and_hmac_gate": true
+  },
+  "passed": 10,
+  "total": 10,
+  "open_obligations": [
+    "Forgery-cost claims are NOT bound: lattice closure is public math; unforgeability rests on the HMAC layer alone.",
+    "Slot lineage decoding (digital-root slot labels) needs its own receipt before claim binding."
+  ]
+}

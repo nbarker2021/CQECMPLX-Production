@@ -1,5 +1,5 @@
 {
-  "version": "0.13.0",
+  "version": "0.14.0",
   "generated": "2026-06-12",
   "kernel": "cqekernel",
   "forge_ring": "cqecmplx-forge",
@@ -318,6 +318,24 @@
       "source_product": "historical_pastworks/product_converge (core distilled)",
       "adjudicated_divergence": "source docstring named (1,1,0) as the 3-swap witness; exhaustive verification shows the tight states are (0,1,1) and (1,0,0); gRPC/REST/consensus layers stay product-side",
       "receipt": "production/formal-papers/CQE-paper-03/triality_annealing_receipt.json",
+      "verify_status": "10/10"
+    },
+    "AuthenticaForge": {
+      "type": "engine",
+      "role": "Lattice code closure: 5-term lattice [1,3,7,21,137], CRT binding digit (sum=119 mod 153), offline mod-17 verification, HMAC gate",
+      "algebra_deps": [
+        "FiveTermLattice",
+        "CRT",
+        "DigitalRoot",
+        "Mod17",
+        "HMAC"
+      ],
+      "cli_entry": "AuthenticaForge.verify",
+      "paper_ref": "CQE-paper-08",
+      "source": "production/packages/cqecmplx-forge/src/AuthenticaForge/",
+      "source_product": "historical_pastworks/product_authentica (core distilled)",
+      "adjudicated_divergence": "global sequence counter removed (explicit param); check digit shown constant-2 (not independent); QR codec rewritten for unbounded d5; API/SDK stay product-side",
+      "receipt": "production/formal-papers/CQE-paper-08/lattice_code_closure_receipt.json",
       "verify_status": "10/10"
     }
   },

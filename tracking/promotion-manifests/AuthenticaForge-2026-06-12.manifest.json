@@ -1,0 +1,58 @@
+{
+  "item_id": "AuthenticaForge",
+  "promotion_date": "2026-06-12",
+  "status": "forge_promoted",
+  "identity": {
+    "forge": "AuthenticaForge",
+    "type": "engine",
+    "role": "5-term lattice authentication codes with CRT closure",
+    "paper_ref": "CQE-paper-08",
+    "registry_version": "0.14.0"
+  },
+  "pattern": "complete-unformalized work -> formalization in paper-bound space -> Forge",
+  "source_work": {
+    "product": "historical_pastworks/product_authentica",
+    "state_before": "complete anti-counterfeit product (lattice engine, security/HMAC, VOA encoder, SDK, API, tests); never formalized, no forge, repo fourpack copy was docs/metadata only",
+    "core_modules_distilled": [
+      "src/core/lattice.py"
+    ]
+  },
+  "adjudicated_divergence": [
+    "global mutable sequence counter (thread lock) removed; the sequence is an explicit parameter — Event Law determinism",
+    "structural finding: the check digit (DR + sum mod 17) mod 10 is constant 2 for every lattice-valid code; the product counted it as a third independent check — it is not, it only detects corruption of itself",
+    "QR codec rewritten: the source packed fixed 3-digit fields while d5 is unbounded (that is what separates batch sequences), so its decoder corrupted any code with a 4+ digit d5 — a latent round-trip bug surfaced by check 9",
+    "FastAPI/SDK layers stay product-side"
+  ],
+  "validated_claims": [
+    "The lattice constants close: 1*3*7*21 = 441, 441 + 137 = 578 = 2*17^2, DR(578) = 2, 578 = 0 mod 17.",
+    "The digital-root closed form 1+(n-1)%9 matches iterated digit sums on 1..10000.",
+    "CRT: {x = 0 mod 17, DR(x) = 2} has the unique solution 119 in [0, 153).",
+    "Every valid sum 119 + 153m has digital root 2.",
+    "The binding digit closes the lattice for all 6561 digit combinations d1..d4 in 1..9.",
+    "Any d5 perturbation by 1..16 breaks the mod-17 identity (detection distance 17 in the d5 coordinate).",
+    "The check digit is constant 2 for every lattice-valid code.",
+    "Generation is deterministic; 500 distinct sequences give 500 distinct codes.",
+    "The QR payload round-trips for every valid code.",
+    "Offline verification accepts generated codes; the HMAC gate rejects forged signatures."
+  ],
+  "honesty_boundary": "Forgery-cost claims are NOT bound: lattice closure is public arithmetic — anyone knowing the scheme can mint closed codes. Unforgeability rests entirely on the HMAC layer. Slot-lineage decoding needs its own receipt.",
+  "artifacts": [
+    "production/packages/cqecmplx-forge/src/AuthenticaForge/__init__.py",
+    "production/formal-papers/CQE-paper-08/verify_lattice_code_closure.py",
+    "production/formal-papers/CQE-paper-08/lattice_code_closure_receipt.json",
+    "FORGE_REGISTRY.json (v0.14.0, 24 forges)",
+    "production/packages/cqecmplx-forge/FORGE_REGISTRY.json",
+    "production/packages/cqekernel/FORGE_REGISTRY.json"
+  ],
+  "verification": {
+    "command": "python production/formal-papers/CQE-paper-08/verify_lattice_code_closure.py",
+    "result": "pass 10/10",
+    "receipt": "production/formal-papers/CQE-paper-08/lattice_code_closure_receipt.json"
+  },
+  "open_obligations": [
+    "Receipt for slot-lineage decoding (digital-root slot labels).",
+    "Promote the product API/SDK as adapters depending on the forge core.",
+    "The VOA encoder module (src/voa/encoder.py) was not distilled; assess against EntropyForge/SentinelForge VOA surfaces before adding a third VOA implementation."
+  ],
+  "notes": "Fifth instance of the promotion pattern. With this, the entire Product Fourpack is forge-bound: entropy -> EntropyForge (paper 12), sentinel -> SentinelForge (paper 02), converge -> ConvergeForge (paper 03), authentica -> AuthenticaForge (paper 08). PaneForge-Stick was promoted as a workspace tool earlier the same day."
+}
