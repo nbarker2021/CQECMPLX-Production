@@ -14,15 +14,20 @@ Central thesis: Describe local inside global temporal emergence as Hamiltonian-w
 
 ## Claims
 
-Status: `seeded`
+Status: `polished`
 
-Describe local inside global temporal emergence as Hamiltonian-window readout over transported states.
+Polished claim: Hamiltonian temporal emergence is a finite local-window
+construction over carried centers. Width-3, width-5, and width-7 reads emit
+exactly four, three, and two surviving composite centers in the production
+sequence, preserving source indices, source centers, forward receipts, and
+backward receipts.
 
-Required next action: Separate method claims from domain claims before peer-review promotion.
+Required next action: Add separate physical-dynamics theorems only when
+Hamiltonian dynamics beyond receipt-level window emergence are claimed.
 
 ## Math
 
-Status: `source-bound`
+Status: `polished`
 
 Use the paper body axioms, lemmas, and formalism as the math intake.
 
@@ -32,7 +37,8 @@ Required next action: Promote every symbolic statement into a normalized claim r
 
 Status: `source-bound`
 
-Use 01-CQE-formal/FORMAL.md and recovered algebra/PDF evidence.
+Use `production/formal-papers/CQE-paper-09/FORMAL_PAPER.md`,
+`01-CQE-formal/FORMAL.md`, and recovered algebra/PDF evidence.
 
 Required next action: Split normal form, closed form, algebraic operators, calculus/window operators, and open obligations.
 
@@ -54,7 +60,7 @@ Required next action: Bind a replayable command or mark the missing executable a
 
 ## Installable Lib Bindings
 
-Status: `seeded`
+Status: `verified`
 
 forgefactory.paper09_hamiltonian_temporal
 
@@ -66,7 +72,13 @@ Status: `seeded`
 
 Every validation and diagnostic must support hidden-guess ablation when training mode is enabled.
 
-Required next action: Add positive, negative, boundary, and wrap tests with receipts.
+Paper 09 now includes
+`production/formal-papers/CQE-paper-09/hamiltonian_window_emergence_receipt.json`,
+which verifies the width-3/5/7 window counts, source-center preservation,
+reverse-receipt well-formedness, and the temporal-Z4 static-template boundary.
+
+Required next action: Add broader tests only when later papers claim physical
+time reversal, static-Z4 temporal periodicity, or higher-order convergence.
 
 ## Deployment Kernel
 

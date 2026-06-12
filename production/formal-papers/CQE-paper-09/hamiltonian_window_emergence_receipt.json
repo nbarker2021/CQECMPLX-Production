@@ -1,0 +1,307 @@
+{
+  "paper": "CQE-paper-09",
+  "theorem": "Hamiltonian window emergence",
+  "status": "pass",
+  "checks": {
+    "order2_width3_count_is_four": true,
+    "order3_width5_count_is_three": true,
+    "order4_width7_count_is_two": true,
+    "all_reads_preserve_source_indices": true,
+    "all_reads_preserve_source_centers": true,
+    "all_backward_receipts_reverse_to_forward": true,
+    "static_z4_does_not_prove_temporal_periodicity": true
+  },
+  "order_counts": {
+    "order_2_width_3": 4,
+    "order_3_width_5": 3,
+    "order_4_width_7": 2
+  },
+  "orders": {
+    "2": [
+      {
+        "order": 2,
+        "width": 3,
+        "start": 0,
+        "source_indices": [
+          0,
+          1,
+          2
+        ],
+        "source_papers": [
+          "CQE-paper-00",
+          "CQE-paper-01",
+          "CQE-paper-02"
+        ],
+        "source_centers": [
+          "Gluon_Gamma",
+          "SideFlip_C1",
+          "Correction_C2"
+        ],
+        "forward": "Gluon_Gamma -> SideFlip_C1 -> Correction_C2",
+        "backward": "Correction_C2 <- SideFlip_C1 <- Gluon_Gamma",
+        "surviving_center": "C[Gluon_Gamma|SideFlip_C1|Correction_C2]",
+        "reverse_receipt_well_formed": true
+      },
+      {
+        "order": 2,
+        "width": 3,
+        "start": 1,
+        "source_indices": [
+          1,
+          2,
+          3
+        ],
+        "source_papers": [
+          "CQE-paper-01",
+          "CQE-paper-02",
+          "CQE-paper-03"
+        ],
+        "source_centers": [
+          "SideFlip_C1",
+          "Correction_C2",
+          "Triality_C3"
+        ],
+        "forward": "SideFlip_C1 -> Correction_C2 -> Triality_C3",
+        "backward": "Triality_C3 <- Correction_C2 <- SideFlip_C1",
+        "surviving_center": "C[SideFlip_C1|Correction_C2|Triality_C3]",
+        "reverse_receipt_well_formed": true
+      },
+      {
+        "order": 2,
+        "width": 3,
+        "start": 2,
+        "source_indices": [
+          2,
+          3,
+          4
+        ],
+        "source_papers": [
+          "CQE-paper-02",
+          "CQE-paper-03",
+          "CQE-paper-04"
+        ],
+        "source_centers": [
+          "Correction_C2",
+          "Triality_C3",
+          "Repair_C4"
+        ],
+        "forward": "Correction_C2 -> Triality_C3 -> Repair_C4",
+        "backward": "Repair_C4 <- Triality_C3 <- Correction_C2",
+        "surviving_center": "C[Correction_C2|Triality_C3|Repair_C4]",
+        "reverse_receipt_well_formed": true
+      },
+      {
+        "order": 2,
+        "width": 3,
+        "start": 3,
+        "source_indices": [
+          3,
+          4,
+          5
+        ],
+        "source_papers": [
+          "CQE-paper-03",
+          "CQE-paper-04",
+          "CQE-paper-05"
+        ],
+        "source_centers": [
+          "Triality_C3",
+          "Repair_C4",
+          "Carrier_C5"
+        ],
+        "forward": "Triality_C3 -> Repair_C4 -> Carrier_C5",
+        "backward": "Carrier_C5 <- Repair_C4 <- Triality_C3",
+        "surviving_center": "C[Triality_C3|Repair_C4|Carrier_C5]",
+        "reverse_receipt_well_formed": true
+      }
+    ],
+    "3": [
+      {
+        "order": 3,
+        "width": 5,
+        "start": 0,
+        "source_indices": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "source_papers": [
+          "CQE-paper-00",
+          "CQE-paper-01",
+          "CQE-paper-02",
+          "CQE-paper-03",
+          "CQE-paper-04"
+        ],
+        "source_centers": [
+          "Gluon_Gamma",
+          "SideFlip_C1",
+          "Correction_C2",
+          "Triality_C3",
+          "Repair_C4"
+        ],
+        "forward": "Gluon_Gamma -> SideFlip_C1 -> Correction_C2 -> Triality_C3 -> Repair_C4",
+        "backward": "Repair_C4 <- Triality_C3 <- Correction_C2 <- SideFlip_C1 <- Gluon_Gamma",
+        "surviving_center": "C[Gluon_Gamma|SideFlip_C1|Correction_C2|Triality_C3|Repair_C4]",
+        "reverse_receipt_well_formed": true
+      },
+      {
+        "order": 3,
+        "width": 5,
+        "start": 1,
+        "source_indices": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "source_papers": [
+          "CQE-paper-01",
+          "CQE-paper-02",
+          "CQE-paper-03",
+          "CQE-paper-04",
+          "CQE-paper-05"
+        ],
+        "source_centers": [
+          "SideFlip_C1",
+          "Correction_C2",
+          "Triality_C3",
+          "Repair_C4",
+          "Carrier_C5"
+        ],
+        "forward": "SideFlip_C1 -> Correction_C2 -> Triality_C3 -> Repair_C4 -> Carrier_C5",
+        "backward": "Carrier_C5 <- Repair_C4 <- Triality_C3 <- Correction_C2 <- SideFlip_C1",
+        "surviving_center": "C[SideFlip_C1|Correction_C2|Triality_C3|Repair_C4|Carrier_C5]",
+        "reverse_receipt_well_formed": true
+      },
+      {
+        "order": 3,
+        "width": 5,
+        "start": 2,
+        "source_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "source_papers": [
+          "CQE-paper-02",
+          "CQE-paper-03",
+          "CQE-paper-04",
+          "CQE-paper-05",
+          "CQE-paper-06"
+        ],
+        "source_centers": [
+          "Correction_C2",
+          "Triality_C3",
+          "Repair_C4",
+          "Carrier_C5",
+          "C[Gluon_Gamma|SideFlip_C1|Correction_C2]||C[SideFlip_C1|Correction_C2|Triality_C3]||C[Correction_C2|Triality_C3|Repair_C4]||C[Triality_C3|Repair_C4|Carrier_C5]"
+        ],
+        "forward": "Correction_C2 -> Triality_C3 -> Repair_C4 -> Carrier_C5 -> C[Gluon_Gamma|SideFlip_C1|Correction_C2]||C[SideFlip_C1|Correction_C2|Triality_C3]||C[Correction_C2|Triality_C3|Repair_C4]||C[Triality_C3|Repair_C4|Carrier_C5]",
+        "backward": "C[Gluon_Gamma|SideFlip_C1|Correction_C2]||C[SideFlip_C1|Correction_C2|Triality_C3]||C[Correction_C2|Triality_C3|Repair_C4]||C[Triality_C3|Repair_C4|Carrier_C5] <- Carrier_C5 <- Repair_C4 <- Triality_C3 <- Correction_C2",
+        "surviving_center": "C[Correction_C2|Triality_C3|Repair_C4|Carrier_C5|C[Gluon_Gamma|SideFlip_C1|Correction_C2]||C[SideFlip_C1|Correction_C2|Triality_C3]||C[Correction_C2|Triality_C3|Repair_C4]||C[Triality_C3|Repair_C4|Carrier_C5]]",
+        "reverse_receipt_well_formed": true
+      }
+    ],
+    "4": [
+      {
+        "order": 4,
+        "width": 7,
+        "start": 0,
+        "source_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "source_papers": [
+          "CQE-paper-00",
+          "CQE-paper-01",
+          "CQE-paper-02",
+          "CQE-paper-03",
+          "CQE-paper-04",
+          "CQE-paper-05",
+          "CQE-paper-06"
+        ],
+        "source_centers": [
+          "Gluon_Gamma",
+          "SideFlip_C1",
+          "Correction_C2",
+          "Triality_C3",
+          "Repair_C4",
+          "Carrier_C5",
+          "C[Gluon_Gamma|SideFlip_C1|Correction_C2]||C[SideFlip_C1|Correction_C2|Triality_C3]||C[Correction_C2|Triality_C3|Repair_C4]||C[Triality_C3|Repair_C4|Carrier_C5]"
+        ],
+        "forward": "Gluon_Gamma -> SideFlip_C1 -> Correction_C2 -> Triality_C3 -> Repair_C4 -> Carrier_C5 -> C[Gluon_Gamma|SideFlip_C1|Correction_C2]||C[SideFlip_C1|Correction_C2|Triality_C3]||C[Correction_C2|Triality_C3|Repair_C4]||C[Triality_C3|Repair_C4|Carrier_C5]",
+        "backward": "C[Gluon_Gamma|SideFlip_C1|Correction_C2]||C[SideFlip_C1|Correction_C2|Triality_C3]||C[Correction_C2|Triality_C3|Repair_C4]||C[Triality_C3|Repair_C4|Carrier_C5] <- Carrier_C5 <- Repair_C4 <- Triality_C3 <- Correction_C2 <- SideFlip_C1 <- Gluon_Gamma",
+        "surviving_center": "C[Gluon_Gamma|SideFlip_C1|Correction_C2|Triality_C3|Repair_C4|Carrier_C5|C[Gluon_Gamma|SideFlip_C1|Correction_C2]||C[SideFlip_C1|Correction_C2|Triality_C3]||C[Correction_C2|Triality_C3|Repair_C4]||C[Triality_C3|Repair_C4|Carrier_C5]]",
+        "reverse_receipt_well_formed": true
+      },
+      {
+        "order": 4,
+        "width": 7,
+        "start": 1,
+        "source_indices": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "source_papers": [
+          "CQE-paper-01",
+          "CQE-paper-02",
+          "CQE-paper-03",
+          "CQE-paper-04",
+          "CQE-paper-05",
+          "CQE-paper-06",
+          "CQE-paper-07"
+        ],
+        "source_centers": [
+          "SideFlip_C1",
+          "Correction_C2",
+          "Triality_C3",
+          "Repair_C4",
+          "Carrier_C5",
+          "C[Gluon_Gamma|SideFlip_C1|Correction_C2]||C[SideFlip_C1|Correction_C2|Triality_C3]||C[Correction_C2|Triality_C3|Repair_C4]||C[Triality_C3|Repair_C4|Carrier_C5]",
+          "C[Gluon_Gamma|SideFlip_C1|Correction_C2|Triality_C3|Repair_C4]||C[SideFlip_C1|Correction_C2|Triality_C3|Repair_C4|Carrier_C5]||C[Correction_C2|Triality_C3|Repair_C4|Carrier_C5|C[Gluon_Gamma|SideFlip_C1|Correction_C2]||C[SideFlip_C1|Correction_C2|Triality_C3]||C[Correction_C2|Triality_C3|Repair_C4]||C[Triality_C3|Repair_C4|Carrier_C5]]"
+        ],
+        "forward": "SideFlip_C1 -> Correction_C2 -> Triality_C3 -> Repair_C4 -> Carrier_C5 -> C[Gluon_Gamma|SideFlip_C1|Correction_C2]||C[SideFlip_C1|Correction_C2|Triality_C3]||C[Correction_C2|Triality_C3|Repair_C4]||C[Triality_C3|Repair_C4|Carrier_C5] -> C[Gluon_Gamma|SideFlip_C1|Correction_C2|Triality_C3|Repair_C4]||C[SideFlip_C1|Correction_C2|Triality_C3|Repair_C4|Carrier_C5]||C[Correction_C2|Triality_C3|Repair_C4|Carrier_C5|C[Gluon_Gamma|SideFlip_C1|Correction_C2]||C[SideFlip_C1|Correction_C2|Triality_C3]||C[Correction_C2|Triality_C3|Repair_C4]||C[Triality_C3|Repair_C4|Carrier_C5]]",
+        "backward": "C[Gluon_Gamma|SideFlip_C1|Correction_C2|Triality_C3|Repair_C4]||C[SideFlip_C1|Correction_C2|Triality_C3|Repair_C4|Carrier_C5]||C[Correction_C2|Triality_C3|Repair_C4|Carrier_C5|C[Gluon_Gamma|SideFlip_C1|Correction_C2]||C[SideFlip_C1|Correction_C2|Triality_C3]||C[Correction_C2|Triality_C3|Repair_C4]||C[Triality_C3|Repair_C4|Carrier_C5]] <- C[Gluon_Gamma|SideFlip_C1|Correction_C2]||C[SideFlip_C1|Correction_C2|Triality_C3]||C[Correction_C2|Triality_C3|Repair_C4]||C[Triality_C3|Repair_C4|Carrier_C5] <- Carrier_C5 <- Repair_C4 <- Triality_C3 <- Correction_C2 <- SideFlip_C1",
+        "surviving_center": "C[SideFlip_C1|Correction_C2|Triality_C3|Repair_C4|Carrier_C5|C[Gluon_Gamma|SideFlip_C1|Correction_C2]||C[SideFlip_C1|Correction_C2|Triality_C3]||C[Correction_C2|Triality_C3|Repair_C4]||C[Triality_C3|Repair_C4|Carrier_C5]|C[Gluon_Gamma|SideFlip_C1|Correction_C2|Triality_C3|Repair_C4]||C[SideFlip_C1|Correction_C2|Triality_C3|Repair_C4|Carrier_C5]||C[Correction_C2|Triality_C3|Repair_C4|Carrier_C5|C[Gluon_Gamma|SideFlip_C1|Correction_C2]||C[SideFlip_C1|Correction_C2|Triality_C3]||C[Correction_C2|Triality_C3|Repair_C4]||C[Triality_C3|Repair_C4|Carrier_C5]]]",
+        "reverse_receipt_well_formed": true
+      }
+    ]
+  },
+  "final_state_count": 9,
+  "temporal_z4_scope": {
+    "status": "static_template_only",
+    "max_depth_tested": 64,
+    "temporal_period_claim_supported": false,
+    "proof_boundary": "The static four-frame label has a Z4 orbit template. The tested Rule 30 label trace and center column do not inherit periods 1, 2, or 4."
+  },
+  "falsifiers": [
+    {
+      "claim": "the static Z4 chart template proves the temporal trace is period 4",
+      "accepted": false
+    },
+    {
+      "claim": "a reverse receipt proves physical time reversal",
+      "accepted": false
+    },
+    {
+      "claim": "a composite center is valid without source-window provenance",
+      "accepted": false
+    }
+  ],
+  "scope_boundary": "The paper proves finite local-window emergence and receipt-level reverse readability; it does not prove physical time reversal, static-Z4 temporal periodicity, or higher-order convergence."
+}

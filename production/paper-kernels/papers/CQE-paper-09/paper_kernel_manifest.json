@@ -14,18 +14,18 @@
   "central_thesis": "Describe local inside global temporal emergence as Hamiltonian-window readout over transported states.",
   "components": {
     "claims": {
-      "status": "seeded",
-      "primary_content": "Describe local inside global temporal emergence as Hamiltonian-window readout over transported states.",
-      "required_action": "Separate method claims from domain claims before peer-review promotion."
+      "status": "polished",
+      "primary_content": "Hamiltonian temporal emergence is a finite local-window construction over carried centers. Width-3, width-5, and width-7 reads emit exactly four, three, and two surviving composite centers while preserving source indices, source centers, forward receipts, and backward receipts.",
+      "required_action": "Add separate physical-dynamics theorems only when Hamiltonian dynamics beyond receipt-level window emergence are claimed."
     },
     "math": {
-      "status": "source-bound",
+      "status": "polished",
       "primary_content": "Use the paper body axioms, lemmas, and formalism as the math intake.",
       "required_action": "Promote every symbolic statement into a normalized claim row with assumptions and receipts."
     },
     "formal_algebra_calculus": {
       "status": "source-bound",
-      "primary_content": "Use 01-CQE-formal/FORMAL.md and recovered algebra/PDF evidence.",
+      "primary_content": "Use production/formal-papers/CQE-paper-09/FORMAL_PAPER.md, 01-CQE-formal/FORMAL.md, and recovered algebra/PDF evidence.",
       "required_action": "Split normal form, closed form, algebraic operators, calculus/window operators, and open obligations."
     },
     "hand_work": {
@@ -39,14 +39,14 @@
       "required_action": "Bind a replayable command or mark the missing executable as an obligation."
     },
     "lib_bindings": {
-      "status": "seeded",
+      "status": "verified",
       "primary_content": "forgefactory.paper09_hamiltonian_temporal",
       "required_action": "Resolve this binding into production/lib-forge or mark it as an adapter route."
     },
     "tests_and_receipts": {
       "status": "seeded",
-      "primary_content": "Every validation and diagnostic must support hidden-guess ablation when training mode is enabled.",
-      "required_action": "Add positive, negative, boundary, and wrap tests with receipts."
+      "primary_content": "Paper 09 includes production/formal-papers/CQE-paper-09/hamiltonian_window_emergence_receipt.json, verifying width-3/5/7 window counts, source-center preservation, reverse-receipt well-formedness, and the temporal-Z4 static-template boundary.",
+      "required_action": "Add broader tests only when later papers claim physical time reversal, static-Z4 temporal periodicity, or higher-order convergence."
     },
     "deployment_kernel": {
       "status": "seeded",
