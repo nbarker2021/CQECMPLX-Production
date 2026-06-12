@@ -1,0 +1,55 @@
+{
+  "item_id": "EntropyForge",
+  "promotion_date": "2026-06-12",
+  "status": "forge_promoted",
+  "identity": {
+    "forge": "EntropyForge",
+    "type": "engine",
+    "role": "Rule 30 center-column entropy with VOA partition syndromes",
+    "paper_ref": "CQE-paper-12",
+    "registry_version": "0.11.0"
+  },
+  "pattern": "complete-unformalized work -> formalization in paper-bound space -> Forge",
+  "source_work": {
+    "product": "historical_pastworks/product_entropy",
+    "state_before": "complete product core (Rule30Engine, VOAPartition, syndrome) with API/SDK layers; never formalized, no forge, repo fourpack copy was docs/metadata only",
+    "core_modules_distilled": [
+      "src/core/rule30_engine.py",
+      "src/core/voa_partition.py"
+    ]
+  },
+  "adjudicated_divergence": "product_entropy seeded only the syndrome chain while always evolving the canonical single-cell CA state (seed never reached the entropy source). EntropyForge seeds the CA initial window from SHA-256 expansion so distinct seeds give distinct streams; canonical=no-seed mode preserves the single-cell column as the paper-bound object.",
+  "validated_claims": [
+    "Rule 30 formula L^(C|R) matches Wolfram code 30 on all 8 chart states.",
+    "VOA weights over the 8 chart states are exactly Z(q) = 2q^0 + 6q^5 (2 vacua, 6 excited).",
+    "Monster scalar 196883 = 47 * 59 * 71.",
+    "D4 antipodal labeling partitions the 8 states into 4 complement pairs.",
+    "Two independent Rule 30 implementations agree on 512 canonical center bits.",
+    "No period p <= 256 exists in the first 2048 canonical center bits (finite non-periodicity window).",
+    "XOR-debiased canonical stream density is within 5% of 1/2.",
+    "VOA syndrome is deterministic and window-sensitive.",
+    "Distinct seeds separate streams; identical seeds repeat them.",
+    "Entropy blocks round-trip through dict form and verify client-side."
+  ],
+  "honesty_boundary": "Infinite-column non-periodicity is NOT claimed; it remains an open conjecture logged as an obligation. Only the finite window check is bound to the paper.",
+  "artifacts": [
+    "production/packages/cqecmplx-forge/src/EntropyForge/__init__.py",
+    "production/formal-papers/CQE-paper-12/verify_center_column_entropy.py",
+    "production/formal-papers/CQE-paper-12/center_column_entropy_receipt.json",
+    "FORGE_REGISTRY.json (v0.11.0, 21 forges)",
+    "production/packages/cqecmplx-forge/FORGE_REGISTRY.json",
+    "production/packages/cqekernel/FORGE_REGISTRY.json"
+  ],
+  "verification": {
+    "command": "python production/formal-papers/CQE-paper-12/verify_center_column_entropy.py",
+    "result": "pass 10/10",
+    "receipt": "production/formal-papers/CQE-paper-12/center_column_entropy_receipt.json"
+  },
+  "open_obligations": [
+    "NIST SP 800-22 style statistical suite for the seeded stream (product layer, not paper claim).",
+    "Promote the product API/SDK layers (fastapi/uvicorn) as an adapter once the forge core is the dependency.",
+    "Extend the finite non-periodicity window as compute allows; record window growth in receipts.",
+    "Next fourpack candidate through the same pattern: product_sentinel."
+  ],
+  "notes": "Second instance of the promotion pattern (first: PaneForge-Workspace-Tool). The pattern is: take complete-but-unformalized work, provide the formalization inside the repo paper-bound space, then make a Forge for it."
+}

@@ -1,0 +1,26 @@
+{
+  "paper": "CQE-paper-12",
+  "theorem": "Center-column entropy extension: canonical Rule 30 column, VOA partition Z(q)=2q^0+6q^5, finite non-periodicity window",
+  "forge": "EntropyForge",
+  "source_product": "historical_pastworks/product_entropy (core distilled)",
+  "adjudicated_divergence": "product seeded only the syndrome chain; forge seeds the CA initial window itself; canonical single-cell mode preserved as the paper-bound object",
+  "status": "pass",
+  "checks": {
+    "rule30_formula_matches_wolfram_code_30": true,
+    "voa_partition_is_2q0_plus_6q5": true,
+    "monster_scalar_is_47_59_71": true,
+    "d4_antipodal_axes_partition": true,
+    "center_column_dual_implementation_agreement": true,
+    "center_column_no_period_up_to_256_in_2048": true,
+    "debiased_density_within_tolerance": true,
+    "voa_syndrome_deterministic_and_window_sensitive": true,
+    "seeded_streams_repeat_and_separate": true,
+    "block_roundtrip_and_client_verify": true
+  },
+  "passed": 10,
+  "total": 10,
+  "open_obligations": [
+    "Infinite-column non-periodicity remains a conjecture; only the finite window (no period <= 256 within 2048 bits) is claimed.",
+    "Statistical suite (NIST SP 800-22 style) for the seeded stream is product-layer work, not a paper claim."
+  ]
+}

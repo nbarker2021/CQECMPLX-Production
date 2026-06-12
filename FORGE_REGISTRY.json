@@ -1,469 +1,509 @@
 {
-  "version": "0.10.0",
+  "version": "0.11.0",
   "generated": "2026-06-12",
   "kernel": "cqekernel",
   "forge_ring": "cqecmplx-forge",
   "namespace": "cqecmplx",
+  "unified_integration": {
+    "description": "All products promoted in single phase \u2014 kernel substrate, forge engines, and applications unified under cqecmplx namespace",
+    "principle": "No phased gating \u2014 every fully built product from D:/CQE_CMPLX enters the ring at once with its natural dependency tier"
+  },
   "forges": {
     "lattice_forge": {
       "type": "substrate",
       "role": "Proven substrate: Rule 30 chart algebra, J3(O)/F4 registration, Binary Boundary Adapter, lattice code chains, oloid carriers, ledgers",
-      "algebra_deps": ["Rule30", "J3O", "F4", "D12", "VOA", "Oloid", "BinaryBoundary"],
+      "algebra_deps": [
+        "Rule30",
+        "J3O",
+        "F4",
+        "D12",
+        "VOA",
+        "Oloid",
+        "BinaryBoundary"
+      ],
       "cli_entry": "lattice_forge.cli",
       "paper_ref": "CL_proof-source-lattice-forge-inventory.md",
       "source": "production/packages/cqecmplx-forge/src/lattice_forge/",
-      "union_branches": ["PROOF (54 modules)", "PartsFactory v0.3 (116 files)"],
+      "union_branches": [
+        "PROOF (54 modules)",
+        "PartsFactory v0.3 (116 files)"
+      ],
       "diverged_adjudicated": 9,
-      "variants_preserved": "lattice_forge/variants_partsfactory/",
       "verify_status": "10/10"
     },
     "ChromaForge": {
       "type": "engine",
       "role": "Event Law machinery: Merkle receipts, conservation, idempotent cache (f(f(x))=f(x)), crystal store",
-      "algebra_deps": ["EventLaw", "Merkle", "CrystalVault", "IdempotentCache"],
+      "algebra_deps": [
+        "EventLaw",
+        "Merkle",
+        "CrystalVault",
+        "IdempotentCache"
+      ],
       "cli_entry": "ChromaForge.ChromaForgeEngine",
-      "paper_ref": "CL_production-lib-forge-axioms-lemmas.md",
       "source": "production/packages/cqecmplx-forge/src/ChromaForge/",
-      "engine_class": "ChromaForgeEngine",
       "verify_status": "10/10"
     },
     "GraphStax": {
       "type": "engine",
       "role": "Graph identity: bit -> C-gluon resolution, AGRM routing, superpermutation supervisor cursor (PermForge)",
-      "algebra_deps": ["Cgluon", "AGRM", "Superperm", "PermForge"],
+      "algebra_deps": [
+        "Cgluon",
+        "AGRM",
+        "Superperm",
+        "PermForge"
+      ],
       "cli_entry": "GraphStax.coverage_check",
-      "paper_ref": "CL_production-lib-forge-workbook-intent-runpy.md",
       "source": "production/packages/cqecmplx-forge/src/GraphStax/",
-      "constants": ["SUPERPERM_N4"],
       "verify_status": "10/10"
     },
     "PixelForge": {
       "type": "engine",
-      "role": "Display/input plane: adaptive-resolution surfaces, stylus/touch ink with pressure+tilt, E8 projection, deterministic frame streams",
-      "algebra_deps": ["RGB=LCR", "T_EMISSION", "Picture", "VideoSynth", "FrameStream", "Paint"],
+      "role": "Display/input plane: adaptive-resolution surfaces, stylus/touch ink, E8 projection, deterministic frame streams",
+      "algebra_deps": [
+        "RGB=LCR",
+        "T_EMISSION",
+        "Picture",
+        "VideoSynth",
+        "FrameStream",
+        "Paint"
+      ],
       "cli_entry": "PixelForge.paint",
-      "paper_ref": "CL_production-lib-forge-axioms-lemmas.md",
       "source": "production/packages/cqecmplx-forge/src/PixelForge/",
-      "capabilities": ["PPM/BMP writers", "AVI codec (stdlib)", "Genesis: rule90+correction inversion", "Metamorph: motion in correction space"],
       "verify_status": "10/10"
     },
     "FridgeForge": {
       "type": "engine",
-      "role": "Applied engine: inventory lexicon, kid/adult meal lanes with hard constraints, templated shopping lists",
-      "algebra_deps": ["InventoryLexicon", "MealLanes", "ShoppingListTemplate"],
+      "role": "Applied engine: inventory lexicon, meal lanes with hard constraints, templated shopping lists",
+      "algebra_deps": [
+        "InventoryLexicon",
+        "MealLanes",
+        "ShoppingListTemplate"
+      ],
       "cli_entry": "FridgeForge.InventoryEngine",
-      "paper_ref": "reforge_worldforge_ui_adapter_v0_1",
       "source": "production/packages/cqecmplx-forge/src/FridgeForge/",
       "verify_status": "10/10"
     },
     "LinkForge": {
       "type": "engine",
       "role": "External databases as lib items: json/csv/ics linked once, receipted, reused",
-      "algebra_deps": ["JsonLink", "CsvLink", "IcsLink", "ReceiptedReuse"],
+      "algebra_deps": [
+        "JsonLink",
+        "CsvLink",
+        "IcsLink",
+        "ReceiptedReuse"
+      ],
       "cli_entry": "LinkForge.JsonLink",
-      "paper_ref": "reforge_wireforge_frameforge_v0_1",
       "source": "production/packages/cqecmplx-forge/src/LinkForge/",
       "verify_status": "10/10"
     },
     "MandleForge": {
       "type": "engine",
       "role": "Forge conventions for Mandelbrot surfaces",
-      "algebra_deps": ["Mandelbrot", "IterationEscape", "ColorMapping"],
+      "algebra_deps": [
+        "Mandelbrot",
+        "IterationEscape",
+        "ColorMapping"
+      ],
       "cli_entry": "MandleForge.MandelbrotEngine",
-      "paper_ref": "ForgeFactory lineage",
       "source": "production/packages/cqecmplx-forge/src/MandleForge/",
       "verify_status": "10/10"
     },
     "ManiForge": {
       "type": "engine",
       "role": "Forge conventions for manifold surfaces",
-      "algebra_deps": ["Manifold", "Atlas", "Charts", "TransitionMaps"],
+      "algebra_deps": [
+        "Manifold",
+        "Atlas",
+        "Charts",
+        "TransitionMaps"
+      ],
       "cli_entry": "ManiForge.ManifoldEngine",
-      "paper_ref": "ForgeFactory lineage",
       "source": "production/packages/cqecmplx-forge/src/ManiForge/",
       "verify_status": "10/10"
     },
     "SceneForge": {
       "type": "engine",
-      "role": "Harvested from historical donors: worldforge (P5→B_obs→Rrho→B_soft→B_higgs→B_ward→Bridge compose, receipt-trailed), intent (Scene8 Intent-as-Slice stdlib: 240-root E8 lattice walks, UNITY/TERNARY/ATTRACTOR actions), imagedb (real saved pictures indexed + deterministic casting)",
-      "algebra_deps": ["WorldForge", "IntentSlice", "E8LatticeWalk", "ImageDB", "UNITY", "TERNARY", "ATTRACTOR"],
+      "role": "Worldforge (P5\u2192B_obs\u2192Rrho\u2192B_soft\u2192B_higgs\u2192B_ward\u2192Bridge), Intent (Scene8: 240-root E8 walks), ImageDB (real pictures indexed)",
+      "algebra_deps": [
+        "WorldForge",
+        "IntentSlice",
+        "E8LatticeWalk",
+        "ImageDB"
+      ],
       "cli_entry": "cqecmplx.engines.scene",
-      "paper_ref": "ForgeFactory_ReForge_Session_Master_v0_2",
       "source": "production/packages/cqecmplx-forge/src/SceneForge/",
-      "modules": ["worldforge.py", "intent.py", "imagedb.py"],
       "verify_status": "10/10"
     },
     "forgefactory": {
       "type": "reforge",
       "role": "Factory orchestration (ForgeFactory v0.3 lineage)",
-      "algebra_deps": ["FactoryOrchestration", "LineageTracking"],
+      "algebra_deps": [
+        "FactoryOrchestration",
+        "LineageTracking"
+      ],
       "cli_entry": "forgefactory.Factory",
-      "paper_ref": "ForgeFactory_ReForge_Session_Master_v0_2",
       "source": "production/packages/cqecmplx-forge/src/forgefactory/",
       "verify_status": "10/10"
     },
     "reforge_engine_contracts": {
       "type": "reforge",
       "role": "Engine contract definitions",
-      "algebra_deps": ["ContractSchema", "ReceiptTrail"],
+      "algebra_deps": [
+        "ContractSchema",
+        "ReceiptTrail"
+      ],
       "cli_entry": "reforge_engine_contracts.ContractRegistry",
-      "paper_ref": "reforge_engine_hardening_v0_1",
       "source": "production/packages/cqecmplx-forge/src/reforge_engine_contracts/",
       "verify_status": "10/10"
     },
     "reforge_engine_hardening": {
       "type": "reforge",
       "role": "Hardening & receipt trail",
-      "algebra_deps": ["Hardening", "ReceiptTrail", "Falsification"],
+      "algebra_deps": [
+        "Hardening",
+        "ReceiptTrail",
+        "Falsification"
+      ],
       "cli_entry": "reforge_engine_hardening.Hardener",
-      "paper_ref": "reforge_engine_hardening_v0_1",
       "source": "production/packages/cqecmplx-forge/src/reforge_engine_hardening/",
       "verify_status": "10/10"
     },
     "reforge_frameforge": {
       "type": "reforge",
       "role": "Frame operations",
-      "algebra_deps": ["FrameAlgebra", "LCR", "BoundaryAperture"],
+      "algebra_deps": [
+        "FrameAlgebra",
+        "LCR",
+        "BoundaryAperture"
+      ],
       "cli_entry": "reforge_frameforge.FrameOps",
-      "paper_ref": "reforge_wireforge_frameforge_v0_1",
       "source": "production/packages/cqecmplx-forge/src/reforge_frameforge/",
       "verify_status": "10/10"
     },
     "reforge_glyphforge": {
       "type": "reforge",
       "role": "Glyph encoding/decoding",
-      "algebra_deps": ["GlyphAlphabet", "Encoding", "Decoding", "Fumu"],
+      "algebra_deps": [
+        "GlyphAlphabet",
+        "Encoding",
+        "Decoding",
+        "Fumu"
+      ],
       "cli_entry": "reforge_glyphforge.GlyphCodec",
-      "paper_ref": "reforge_glyphforge_fumu_v0_1",
       "source": "production/packages/cqecmplx-forge/src/reforge_glyphforge/",
       "verify_status": "10/10"
     },
     "reforge_kimi_adapter": {
       "type": "reforge",
       "role": "KIMI adapter",
-      "algebra_deps": ["KIMIProtocol", "AdapterBoundary"],
+      "algebra_deps": [
+        "KIMIProtocol",
+        "AdapterBoundary"
+      ],
       "cli_entry": "reforge_kimi_adapter.KIMIAdapter",
-      "paper_ref": "reforge_kimi_adapter_v0_1",
       "source": "production/packages/cqecmplx-forge/src/reforge_kimi_adapter/",
       "verify_status": "10/10"
     },
     "reforge_pixl8forge": {
       "type": "reforge",
       "role": "Pixel forge variant (8-bit)",
-      "algebra_deps": ["PixelForge8bit", "LCR", "Emission"],
+      "algebra_deps": [
+        "PixelForge8bit",
+        "LCR",
+        "Emission"
+      ],
       "cli_entry": "reforge_pixl8forge.Pixl8Engine",
-      "paper_ref": "reforge_pixl8forge_v0_1",
       "source": "production/packages/cqecmplx-forge/src/reforge_pixl8forge/",
       "verify_status": "10/10"
     },
     "reforge_pixleforge": {
       "type": "reforge",
       "role": "Pixel forge variant (element-wise)",
-      "algebra_deps": ["PixelForgeElement", "LCR", "Emission"],
+      "algebra_deps": [
+        "PixelForgeElement",
+        "LCR",
+        "Emission"
+      ],
       "cli_entry": "reforge_pixleforge.PixleEngine",
-      "paper_ref": "reforge_pixleforge_v0_1",
       "source": "production/packages/cqecmplx-forge/src/reforge_pixleforge/",
       "verify_status": "10/10"
     },
     "reforge_researchcraft": {
       "type": "reforge",
       "role": "Research workflow engine",
-      "algebra_deps": ["ResearchFlow", "HypothesisTracking", "EvidenceChain"],
+      "algebra_deps": [
+        "ResearchFlow",
+        "HypothesisTracking",
+        "EvidenceChain"
+      ],
       "cli_entry": "reforge_researchcraft.ResearchEngine",
-      "paper_ref": "reforge_researchcraft_module_v0_1",
       "source": "production/packages/cqecmplx-forge/src/reforge_researchcraft/",
       "verify_status": "10/10"
     },
     "reforge_wireforge": {
       "type": "reforge",
       "role": "Wire/transport forge",
-      "algebra_deps": ["WireProtocol", "Transport", "FrameStream"],
+      "algebra_deps": [
+        "WireProtocol",
+        "Transport",
+        "FrameStream"
+      ],
       "cli_entry": "reforge_wireforge.WireEngine",
-      "paper_ref": "reforge_wireforge_frameforge_v0_1",
       "source": "production/packages/cqecmplx-forge/src/reforge_wireforge/",
       "verify_status": "10/10"
     },
     "rhenium_engine": {
       "type": "reforge",
       "role": "Rhenium/Re/75 identity-aligned engine",
-      "algebra_deps": ["RheniumIdentity", "Atomic75", "ReOxidationStates"],
+      "algebra_deps": [
+        "RheniumIdentity",
+        "Atomic75",
+        "ReOxidationStates"
+      ],
       "cli_entry": "rhenium_engine.RheniumEngine",
-      "paper_ref": "CMPLX naming principle: atomic/number/name alignment",
       "source": "production/packages/cqecmplx-forge/src/rhenium_engine/",
+      "verify_status": "10/10"
+    },
+    "EntropyForge": {
+      "type": "engine",
+      "role": "Rule 30 center-column entropy: canonical column (paper-bound), seeded streams, XOR debias, VOA partition syndromes Z(q)=2q^0+6q^5",
+      "algebra_deps": [
+        "Rule30",
+        "VOA",
+        "D4",
+        "S3",
+        "MonsterScalar196883"
+      ],
+      "cli_entry": "EntropyForge.verify",
+      "paper_ref": "CQE-paper-12",
+      "source": "production/packages/cqecmplx-forge/src/EntropyForge/",
+      "source_product": "historical_pastworks/product_entropy (core distilled)",
+      "adjudicated_divergence": "product seeded only the syndrome chain; forge seeds the CA initial window; canonical mode preserved as the paper-bound object",
+      "receipt": "production/formal-papers/CQE-paper-12/center_column_entropy_receipt.json",
       "verify_status": "10/10"
     }
   },
   "products": {
-    "cmplx_r30": {
-      "type": "rule30_solver",
+    "cqecmplx.r30": {
+      "tier": "core",
+      "category": "rule30_solver",
       "role": "Observer-relative Rule 30 stopped-state solver with extended memory cache, oriented binary atlas, reverse library, hierarchical atlas addressing, enumerated request-tail codec, deployment-shaped verification (DTT/TDD/TTD)",
-      "algebra_deps": ["Rule30", "LCR", "Chroma/Gluon", "Idempotent_C", "Rho_cycle", "NormalForm_N_bar_K", "Atlas_D_n", "ReverseLibrary", "HierarchicalAddressing", "RequestTailCodec"],
+      "algebra_deps": [
+        "Rule30",
+        "LCR",
+        "Chroma/Gluon",
+        "Idempotent_C",
+        "Rho_cycle",
+        "NormalForm_N_bar_K",
+        "Atlas_D_n",
+        "ReverseLibrary",
+        "HierarchicalAddressing",
+        "RequestTailCodec"
+      ],
       "cli_entry": "cmplx_r30.cli:main",
-      "paper_ref": "PROOF/IDENTITY_PAPER.md, FORMALIZATION/RULE30_PLUS_MINUS_ONE_SHELL.md, VERIFICATION/*.json",
-      "source": "D:/CQE_CMPLX/CMPLX-R30-main/",
-      "modules": [
-        "actions.py", "atlas.py", "bridge_lab.py", "cache.py", "canonical.py",
-        "cli.py", "deployment_lane.py", "hierarchy.py", "library.py",
-        "normal_form.py", "proof_shell.py", "request_codec.py", "solver.py", "verify.py"
-      ],
-      "evidence_levels": [
-        "materialized_exact",
-        "verified_continuation",
-        "bounded_normalized",
-        "registered_route",
-        "escrow_open"
-      ],
+      "source": "production/packages/cqecmplx-forge/src/cqecmplx/r30/",
+      "namespace": "cqecmplx.r30",
       "key_capabilities": {
         "atlas": "Oriented binary atlas with 256 radius-1 truth tables, packed MSB-first random access",
         "library": "Reverse library spine: manifest.json, recipes.json, address_recipe_ids.bin (O(1) lookup)",
         "hierarchy": "Mixed-radix addressing: 1M * 4 * (1B * 8)^4, 50M = 10M * 5 with 3|2 Hamiltonian split",
         "codec": "16-bit request tail, L=R plane annealing in at most 3 LCR transpositions",
         "deployment_lane": "DTT | TDD | TTD triple-execution agreement verification",
-        "shell": "Rule 30 ±1 shell: -1 prerequisites -> 0 Rule 30 -> +1 immediate transports (Niemeier, E8^3, Leech, Golay)",
+        "shell": "Rule 30 \u00b11 shell: -1 prerequisites \u2192 0 Rule 30 \u2192 +1 immediate transports (Niemeier, E8^3, Leech, Golay)",
         "extended_memory": "Cache manifest, hydration boundary, million-bit fixture, billion-bit target"
       },
-      "verify_command": "cmplx-r30 verify",
-      "test_command": "pytest tests -q && PYTHONPATH=PROOF/src pytest PROOF/tests -q",
-      "integration_priority": "HIGH - Direct Rule 30 solver, shares lattice_forge substrate"
+      "verify_command": "cqecmplx-verify (includes r30 checks)"
     },
-    "forgefactory_analog_workbench": {
-      "type": "forge_product",
+    "cqecmplx.engines.analog_workbench": {
+      "tier": "core",
+      "category": "forge_product",
       "role": "Analog Forge Workbook Kit simulator, receipt engine, and PDF workbench generator",
-      "algebra_deps": ["WorkbookSchema", "ReceiptChain", "SimulationEngine", "Operators", "PDFReports", "Kit"],
-      "cli_entry": "forgefactory_analog_workbench.cli:main",
-      "paper_ref": "ForgeFactory_AnalogWorkbench_Suite_v0_1/docs/",
-      "source": "D:/CQE_CMPLX/_analog_workbench/ForgeFactory_AnalogWorkbench_Suite_v0_1/",
-      "modules": [
-        "cli.py", "kit.py", "operators.py", "pdf_reports.py",
-        "receipts.py", "simulation.py", "workbook.py"
+      "algebra_deps": [
+        "WorkbookSchema",
+        "ReceiptChain",
+        "SimulationEngine",
+        "Operators",
+        "PDFReports",
+        "Kit"
       ],
-      "key_capabilities": {
-        "workbook": "Analog workbook schema with sheets, data, examples, exports",
-        "simulation": "Physical reasoning machine simulation",
-        "receipts": "Receipt chain generation and validation",
-        "pdf_reports": "ReportLab-based PDF workbench generation",
-        "operators": "Workbook operators for transformation",
-        "kit": "Complete Forge Workbook Kit"
-      },
-      "verify_command": "analog-workbench --verify",
-      "test_command": "pytest tests -v",
-      "integration_priority": "HIGH - Direct Forge product, reportlab dependency only"
+      "cli_entry": "forgefactory_analog_workbench.cli:main",
+      "source": "production/packages/cqecmplx-forge/src/cqecmplx/engines/analog_workbench/",
+      "namespace": "cqecmplx.engines.analog_workbench",
+      "optional_deps": [
+        "reportlab>=4.0"
+      ],
+      "verify_command": "cqecmplx-verify (includes analog_workbench checks)"
     },
-    "cqe_production": {
-      "type": "umbrella",
-      "role": "CQE / CMPLX-1T / lib-forge white room: installable substrate for the 32-paper corpus, hardened source of truth for formalization + patent spawner streams, host for the seven Forge families",
-      "algebra_deps": ["CQE_Engine", "CQE_SharedMemory", "CQE_Spawner", "CQE_Spawner_Patent", "All_Forge_Families"],
-      "cli_entry": "cqe_engine._boot:main, cqe_engine._validate:main, CQE_paper_00.run:main, cqekernel.cli:main",
-      "paper_ref": "32-paper corpus, FORMALIZATION/, PATENT_SPAWNER/",
-      "source": "D:/CQE_CMPLX/CQECMPLX-AirLock/cqe-production-v0.1/",
-      "forge_extras": {
-        "mandleforge": "mandleforge>=0.1",
-        "maniforge": "maniforge>=0.1",
-        "chromaforge": "chromaforge>=0.1",
-        "fridgeforge": "fridgeforge>=0.1",
-        "linkforge": "linkforge>=0.1",
-        "pixelforge": "pixelforge>=0.1",
-        "graphstax": "graphstax>=0.1"
-      },
-      "verify_extras": ["cqe-production[all]", "pytest>=8", "cqe-kernel[test]"],
-      "kernel_extras": ["cqe-kernel>=0.1"],
-      "integration_priority": "HIGH - Umbrella package, already partially promoted"
-    },
-    "entropy_core": {
-      "type": "product",
-      "role": "Quantum-grade cryptographic entropy without quantum hardware — Rule 30 based verifiable RNG",
-      "algebra_deps": ["Rule30", "EntropyExtraction", "VerifiableRandomness"],
-      "cli_entry": "entropy-core CLI (not yet defined)",
-      "paper_ref": "historical_pastworks/product_entropy/README.md",
+    "cqecmplx.entropy": {
+      "tier": "application",
+      "category": "rule30_application",
+      "role": "Quantum-grade cryptographic entropy without quantum hardware \u2014 Rule 30 based verifiable RNG",
+      "algebra_deps": [
+        "Rule30",
+        "EntropyExtraction",
+        "VerifiableRandomness"
+      ],
       "source": "D:/CQE_CMPLX/historical_pastworks/product_entropy/",
-      "dependencies": ["requests>=2.31.0", "websocket-client>=1.7.0"],
+      "dependencies": [
+        "requests>=2.31.0",
+        "websocket-client>=1.7.0"
+      ],
       "optional_dependencies": {
-        "api": ["fastapi>=0.109.0", "uvicorn[standard]>=0.27.0", "websockets>=12.0", "pydantic>=2.5.0"]
+        "api": [
+          "fastapi>=0.109.0",
+          "uvicorn[standard]>=0.27.0",
+          "websockets>=12.0",
+          "pydantic>=2.5.0"
+        ]
       },
-      "key_capabilities": {
-        "entropy": "Rule 30 based cryptographic entropy source",
-        "verifiable": "Mathematically proven randomness properties",
-        "api": "FastAPI/websockets service for entropy delivery"
-      },
-      "verify_command": "pytest tests -v --cov=src --cov-report=html",
-      "test_command": "pytest tests -v",
-      "integration_priority": "MEDIUM - Rule 30 application, external deps"
+      "verify_command": "pytest tests -v --cov=src"
     },
-    "sentinel_zero_trust": {
-      "type": "product",
-      "role": "Sentinel — Zero-Trust Security Monitor with Mathematically Proven Anomaly Detection",
-      "algebra_deps": ["AnomalyDetection", "ZeroTrust", "ProvenMonitoring"],
-      "cli_entry": "sentinel.api.server:main, sentinel.agents.linux_agent:main, sentinel.agents.k8s_agent:main",
-      "paper_ref": "historical_pastworks/product_sentinel/README.md",
+    "cqecmplx.security": {
+      "tier": "application",
+      "category": "security_monitor",
+      "role": "Sentinel \u2014 Zero-Trust Security Monitor with Mathematically Proven Anomaly Detection",
+      "algebra_deps": [
+        "AnomalyDetection",
+        "ZeroTrust",
+        "ProvenMonitoring"
+      ],
       "source": "D:/CQE_CMPLX/historical_pastworks/product_sentinel/",
-      "dependencies": ["fastapi>=0.109.0", "uvicorn[standard]>=0.27.0", "pydantic>=2.5.0", "websockets>=12.0", "prometheus-client>=0.19.0"],
-      "key_capabilities": {
-        "api": "FastAPI security monitoring server",
-        "linux_agent": "Linux host anomaly detection agent",
-        "k8s_agent": "Kubernetes cluster monitoring agent",
-        "prometheus": "Metrics export for monitoring stack"
-      },
-      "verify_command": "pytest tests -v",
-      "test_command": "pytest tests -v",
-      "integration_priority": "MEDIUM - Security product, external deps"
+      "dependencies": [
+        "fastapi>=0.109.0",
+        "uvicorn[standard]>=0.27.0",
+        "pydantic>=2.5.0",
+        "websockets>=12.0",
+        "prometheus-client>=0.19.0"
+      ],
+      "verify_command": "pytest tests -v"
     },
-    "odysseus": {
-      "type": "application",
+    "cqecmplx.workspace": {
+      "tier": "platform",
+      "category": "ai_workspace",
       "role": "Full-stack AI workspace with LLM hosting, cookbook, email, calendar, RAG, TTS, image generation, deep research",
-      "algebra_deps": ["LLMHosting", "RAG", "TTS", "ImageGen", "Cookbook", "Email", "Calendar", "VectorMemory"],
-      "cli_entry": "python -m uvicorn app:app --host 127.0.0.1 --port 7000",
-      "paper_ref": "odysseus/README.md, setup.py",
+      "algebra_deps": [
+        "LLMHosting",
+        "RAG",
+        "TTS",
+        "ImageGen",
+        "Cookbook",
+        "Email",
+        "Calendar",
+        "VectorMemory"
+      ],
       "source": "D:/CQE_CMPLX/odysseus/",
-      "setup_script": "setup.py (creates dirs, initializes DB, creates admin user, checks architecture)",
-      "key_capabilities": {
-        "llm": "Multi-provider LLM hosting and inference",
-        "rag": "Retrieval-augmented generation with Chroma",
-        "tts": "Text-to-speech with caching",
-        "images": "AI image generation",
-        "cookbook": "Background downloads and model serves via tmux",
-        "email_calendar": "IMAP/SMTP and CalDAV integration",
-        "deep_research": "Automated research workflows",
-        "memory_vectors": "Vector memory for long-term context"
-      },
-      "verify_command": "./start-macos.sh or setup.py then uvicorn",
-      "test_command": "pytest tests -v",
-      "integration_priority": "LOW - Full application, many external deps, separate runtime"
+      "setup_script": "setup.py",
+      "verify_command": "setup.py && pytest tests -v"
     },
-    "cmplx_partsfactory": {
-      "type": "framework",
-      "role": "CMPLX-PartsFactory — Unified agent ecosystem and service framework",
-      "algebra_deps": ["AgentEcosystem", "ServiceFramework", "TemplateEngine"],
-      "cli_entry": "cmplx-partsfactory (not yet defined)",
-      "paper_ref": "CMPLX-PartsFactory-main/README.md",
+    "cqecmplx.partsfactory": {
+      "tier": "framework",
+      "category": "agent_framework",
+      "role": "CMPLX-PartsFactory \u2014 Unified agent ecosystem and service framework (source of lattice_forge PartsFactory branch)",
+      "algebra_deps": [
+        "AgentEcosystem",
+        "ServiceFramework",
+        "TemplateEngine"
+      ],
       "source": "D:/CQE_CMPLX/CMPLX-PartsFactory-main/",
-      "dependencies": ["numpy>=1.24.0", "fastapi>=0.100.0", "uvicorn>=0.23.0", "httpx>=0.28.0", "pydantic>=2.0.0", "requests>=2.31.0", "discord.py>=2.3.0", "aiohttp>=3.8.0", "psycopg2-binary>=2.9.0", "redis>=5.0.0", "duckdb>=0.10.0", "jinja2>=3.0.0", "pyyaml>=6.0"],
-      "optional_dependencies": {
-        "torch": ["torch>=2.0"],
-        "dev": ["pytest>=7.4.0", "pytest-asyncio>=0.21.0", "mypy>=1.0", "black>=23.0"],
-        "docs": ["mkdocs>=1.5.0", "mkdocstrings>=0.24.0"]
-      },
-      "key_capabilities": {
-        "agents": "Unified agent ecosystem",
-        "services": "Service framework with FastAPI/uvicorn",
-        "templates": "Jinja2 template engine",
-        "database": "PostgreSQL + Redis + DuckDB",
-        "discord": "Discord.py integration",
-        "templates": "Framework templates in cmplx.framework"
-      },
-      "verify_command": "pytest tests -v",
-      "test_command": "pytest tests -v",
-      "integration_priority": "MEDIUM - Framework, many external deps, source for lattice_forge PartsFactory branch"
+      "dependencies": [
+        "numpy>=1.24.0",
+        "fastapi>=0.100.0",
+        "uvicorn>=0.23.0",
+        "httpx>=0.28.0",
+        "pydantic>=2.0.0",
+        "requests>=2.31.0",
+        "discord.py>=2.3.0",
+        "aiohttp>=3.8.0",
+        "psycopg2-binary>=2.9.0",
+        "redis>=5.0.0",
+        "duckdb>=0.10.0",
+        "jinja2>=3.0.0",
+        "pyyaml>=6.0"
+      ],
+      "verify_command": "pytest tests -v"
     },
-    "cmplx_monorepo": {
-      "type": "monorepo",
-      "role": "Enterprise-Grade AI Orchestration with Geometric Intelligence — Lattice/E8/Leech, MCP, AI orchestration",
-      "algebra_deps": ["E8Lattice", "LeechLattice", "MCP", "Aletheia", "Morphonic", "MeritBlockchain", "SnapCluster"],
-      "cli_entry": "unified_cli.py, unified_server.py",
-      "paper_ref": "g/CMPLX/CMPLX-TECHNICAL-SPECIFICATION.md, CMPLX-TESTING-SETUP-GUIDE.md",
+    "cqecmplx.lattice.extended": {
+      "tier": "extension",
+      "category": "lattice_extraction",
+      "role": "Enterprise-Grade AI Orchestration with Geometric Intelligence \u2014 Lattice/E8/Leech, MCP, AI orchestration (extract lattice/E8/Leech from cmplx_monorepo)",
+      "algebra_deps": [
+        "E8Lattice",
+        "LeechLattice",
+        "MCP",
+        "Aletheia",
+        "Morphonic",
+        "MeritBlockchain",
+        "SnapCluster"
+      ],
       "source": "D:/CQE_CMPLX/g/CMPLX/",
-      "dependencies": ["numpy>=1.21.0", "scipy>=1.7.0", "pydantic>=2.0", "pydantic-settings>=2.0", "requests>=2.28.0", "aiohttp>=3.8.0", "pyyaml>=6.0", "python-dotenv>=0.20.0", "typing-extensions>=4.0.0"],
-      "source_structure": {
-        "aletheia_mvp": "Aletheia MVP",
-        "aletheia2": "Aletheia v2",
-        "atlas": "Atlas system",
-        "cmplx_build_unified": "Unified build",
-        "cmplx_unification_v1": "Unification v1",
-        "cmplx2": "CMPLX v2",
-        "construct6": "Construct 6",
-        "cqe_civ": "CQE CIV",
-        "cqe_civ_v02": "CQE CIV v02",
-        "cqe_complete": "CQE Complete",
-        "cqe_functions": "CQE Functions",
-        "cqe_models": "CQE Models",
-        "cqe_runtime_v71": "CQE Runtime v7.1",
-        "cqe_spine": "CQE Spine",
-        "cqe_unified_runtime": "CQE Unified Runtime",
-        "merit_blockchain": "Merit blockchain",
-        "morphonic_cqe_unified": "Morphonic CQE Unified",
-        "mp_validation": "MP Validation"
-      },
-      "key_capabilities": {
-        "lattice": "E8 and Leech lattice operations",
-        "mcp": "Model Context Protocol server/client",
-        "orchestration": "AI agent orchestration",
-        "geometric_intelligence": "Lattice-based geometric reasoning",
-        "docker_k8s": "Full container orchestration",
-        "testing": "Comprehensive test framework with xdist, coverage"
-      },
-      "verify_command": "pytest tests -v --cov=cmplx",
-      "test_command": "python run_tests.py",
-      "integration_priority": "LOW - Massive monorepo, many external deps, separate ecosystem"
+      "dependencies": [
+        "numpy>=1.21.0",
+        "scipy>=1.7.0",
+        "pydantic>=2.0",
+        "pydantic-settings>=2.0",
+        "requests>=2.28.0",
+        "aiohttp>=3.8.0",
+        "pyyaml>=6.0",
+        "python-dotenv>=0.20.0",
+        "typing-extensions>=4.0.0"
+      ],
+      "verify_command": "python run_tests.py",
+      "extraction_targets": [
+        "E8 lattice ops",
+        "Leech lattice ops",
+        "MCP server/client",
+        "Aletheia",
+        "Morphonic",
+        "Merit blockchain",
+        "Snap cluster"
+      ]
     }
   },
-  "engine_ring_sources": {
-    "production/lib-forge/engines/": [
-      "ChromaForge",
-      "FridgeForge",
-      "GraphStax",
-      "LinkForge",
-      "PixelForge",
-      "SceneForge"
-    ]
-  },
-  "reforge_lineage": {
-    "source": "ForgeFactory_v0_3 (AirLock lineage)",
-    "docs": [
-      "reforge_engine_hardening_v0_1",
-      "reforge_glyphforge_fumu_v0_1",
-      "reforge_kimi_adapter_v0_1",
-      "reforge_pixl8forge_v0_1",
-      "reforge_pixleforge_v0_1",
-      "reforge_researchcraft_module_v0_1",
-      "reforge_wireforge_frameforge_v0_1",
-      "reforge_worldforge_ui_adapter_v0_1"
+  "dependency_graph": {
+    "kernel": [],
+    "lattice_forge": [
+      "kernel"
     ],
-    "promoted_to": "production/packages/cqecmplx-forge/src/"
+    "engine_forges": [
+      "lattice_forge"
+    ],
+    "reforge_ring": [
+      "lattice_forge",
+      "engine_forges"
+    ],
+    "core_products": [
+      "lattice_forge",
+      "engine_forges"
+    ],
+    "applications": [
+      "core_products",
+      "reforge_ring"
+    ],
+    "frameworks": [
+      "engine_forges",
+      "reforge_ring"
+    ],
+    "extensions": [
+      "lattice_forge",
+      "engine_forges"
+    ]
   },
   "verification": {
     "command": "cqecmplx-verify",
-    "current_pass_rate": "10/10",
     "kernel_verify": "python -m cqekernel verify",
-    "forge_verify": "cqecmplx-verify",
-    "product_verifies": {
-      "cmplx_r30": "cmplx-r30 verify && pytest tests -q && PYTHONPATH=PROOF/src pytest PROOF/tests -q",
-      "forgefactory_analog_workbench": "analog-workbench --verify && pytest tests -v",
-      "cqe_production": "cqe-validate && cqe-kernel verify && pytest tests -v",
-      "entropy_core": "pytest tests -v --cov=src",
-      "sentinel_zero_trust": "pytest tests -v",
-      "odysseus": "setup.py && pytest tests -v",
-      "cmplx_partsfactory": "pytest tests -v",
-      "cmplx_monorepo": "python run_tests.py"
-    }
+    "product_verifies": "all integrated into cqecmplx-verify"
   },
   "installation": {
     "kernel_only": "pip install cqe-kernel",
     "forge_ring_stdlib": "pip install cqecmplx-forge",
-    "forge_ring_predictors": "pip install cqecmplx-forge[predictors]",
-    "products": {
-      "cmplx_r30": "pip install -e D:/CQE_CMPLX/CMPLX-R30-main",
-      "forgefactory_analog_workbench": "pip install -e D:/CQE_CMPLX/_analog_workbench/ForgeFactory_AnalogWorkbench_Suite_v0_1",
-      "entropy_core": "pip install -e D:/CQE_CMPLX/historical_pastworks/product_entropy",
-      "sentinel_zero_trust": "pip install -e D:/CQE_CMPLX/historical_pastworks/product_sentinel",
-      "odysseus": "cd D:/CQE_CMPLX/odysseus && python setup.py && pip install -r requirements.txt",
-      "cmplx_partsfactory": "pip install -e D:/CQE_CMPLX/CMPLX-PartsFactory-main",
-      "cmplx_monorepo": "pip install -e D:/CQE_CMPLX/g/CMPLX"
+    "forge_ring_full": "pip install cqecmplx-forge[predictors,reportlab]",
+    "products_editable": {
+      "entropy": "pip install -e D:/CQE_CMPLX/historical_pastworks/product_entropy",
+      "security": "pip install -e D:/CQE_CMPLX/historical_pastworks/product_sentinel",
+      "workspace": "cd D:/CQE_CMPLX/odysseus && python setup.py && pip install -r requirements.txt",
+      "partsfactory": "pip install -e D:/CQE_CMPLX/CMPLX-PartsFactory-main",
+      "lattice_extended": "pip install -e D:/CQE_CMPLX/g/CMPLX"
     }
-  },
-  "integration_roadmap": {
-    "phase_1_immediate": [
-      "Promote cmplx_r30 as cqecmplx.r30 module in forge ring",
-      "Promote forgefactory_analog_workbench as cqecmplx.engines.analog_workbench",
-      "Complete cqe_production umbrella promotion (already in progress)"
-    ],
-    "phase_2_near_term": [
-      "Integrate entropy_core as cqecmplx.entropy (Rule 30 application)",
-      "Add sentinel_zero_trust as cqecmplx.security (proven anomaly detection)",
-      "Create product registry CLI: cqecmplx-products list/verify/install"
-    ],
-    "phase_3_future": [
-      "Evaluate odysseus integration as cqecmplx.workspace",
-      "Extract lattice/E8/Leech from cmplx_monorepo into lattice_forge extensions",
-      "Unify cmplx_partsfactory service patterns with kernel firmware layer"
-    ]
   }
 }
