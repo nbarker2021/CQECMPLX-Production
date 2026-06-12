@@ -1,0 +1,287 @@
+{
+  "paper": "CQE-paper-11",
+  "theorem": "Theory admission gate",
+  "status": "pass",
+  "observer_lineage": {
+    "source": "CQE-paper-10",
+    "center": "C00",
+    "encoding_event": "E00_to_1",
+    "paper11_role": "external theories are tested as candidates against the carried observer enumeration center unless a later recentering is proved"
+  },
+  "encoder": {
+    "name": "bit_length_parity",
+    "definition": "for each group order |G|, emit bit_length(|G|) mod 2",
+    "encoder_bound": true
+  },
+  "checks": {
+    "inherits_t10_observer_center": true,
+    "encoder_declared": true,
+    "pariah_count_is_six": true,
+    "happy_family_count_is_twenty": true,
+    "pariah_signature_closed": true,
+    "happy_family_signature_open": true,
+    "three_outlet_gate_exercised": true,
+    "pariahs_route_to_boundary": true,
+    "happy_family_open_is_datum_not_dismissal": true,
+    "proof_sources_present": true
+  },
+  "verdicts": {
+    "pariah": "boundary",
+    "happy_family": "rejected_as_datum",
+    "admitted_control": "admitted"
+  },
+  "pariah_tape": [
+    {
+      "id": "Pariah:J1",
+      "name": "Janko J1",
+      "type": "structural",
+      "order_factorization": "2^3*3*5*7*11*19",
+      "bit_length": 18,
+      "bit_length_parity": 0
+    },
+    {
+      "id": "Pariah:J3",
+      "name": "Janko J3",
+      "type": "structural",
+      "order_factorization": "2^7*3^5*5*17*19",
+      "bit_length": 26,
+      "bit_length_parity": 0
+    },
+    {
+      "id": "Pariah:ON",
+      "name": "O'Nan O'N",
+      "type": "structural",
+      "order_factorization": "2^9*3^4*5*7^3*11*19*31",
+      "bit_length": 39,
+      "bit_length_parity": 1
+    },
+    {
+      "id": "Pariah:Ru",
+      "name": "Rudvalis Ru",
+      "type": "structural",
+      "order_factorization": "2^14*3^3*5^3*7*13*29",
+      "bit_length": 38,
+      "bit_length_parity": 0
+    },
+    {
+      "id": "Pariah:J4",
+      "name": "Janko J4",
+      "type": "hard",
+      "order_factorization": "2^21*3^3*5*7*11^3*23*29*31*37*43",
+      "bit_length": 67,
+      "bit_length_parity": 1
+    },
+    {
+      "id": "Pariah:Ly",
+      "name": "Lyons Ly",
+      "type": "hard",
+      "order_factorization": "2^8*3^7*5^6*7*11*31*37*67",
+      "bit_length": 56,
+      "bit_length_parity": 0
+    }
+  ],
+  "happy_family_tape": [
+    {
+      "id": "Happy:M",
+      "name": "M",
+      "order_factorization": "2^46*3^20*5^9*7^6*11^2*13^3*17*19*23*29*31*41*47*59*71",
+      "bit_length": 180,
+      "bit_length_parity": 0
+    },
+    {
+      "id": "Happy:B",
+      "name": "B",
+      "order_factorization": "2^41*3^13*5^6*7^2*11*13*17*19*23*31*47",
+      "bit_length": 112,
+      "bit_length_parity": 0
+    },
+    {
+      "id": "Happy:Fi24'",
+      "name": "Fi24'",
+      "order_factorization": "2^21*3^16*5^2*7^3*11*13*17*23*29",
+      "bit_length": 81,
+      "bit_length_parity": 1
+    },
+    {
+      "id": "Happy:Fi23",
+      "name": "Fi23",
+      "order_factorization": "2^18*3^13*5^2*7*11*13*17*23",
+      "bit_length": 62,
+      "bit_length_parity": 0
+    },
+    {
+      "id": "Happy:Fi22",
+      "name": "Fi22",
+      "order_factorization": "2^17*3^9*5^2*7*11*13",
+      "bit_length": 46,
+      "bit_length_parity": 0
+    },
+    {
+      "id": "Happy:Th",
+      "name": "Th",
+      "order_factorization": "2^15*3^10*5^3*7^2*13*19*31",
+      "bit_length": 57,
+      "bit_length_parity": 1
+    },
+    {
+      "id": "Happy:HN",
+      "name": "HN",
+      "order_factorization": "2^14*3^6*5^6*7*11*19",
+      "bit_length": 48,
+      "bit_length_parity": 0
+    },
+    {
+      "id": "Happy:Co1",
+      "name": "Co1",
+      "order_factorization": "2^21*3^9*5^4*7^2*11*13*23",
+      "bit_length": 62,
+      "bit_length_parity": 0
+    },
+    {
+      "id": "Happy:Co2",
+      "name": "Co2",
+      "order_factorization": "2^18*3^6*5^3*7*11*23",
+      "bit_length": 46,
+      "bit_length_parity": 0
+    },
+    {
+      "id": "Happy:Co3",
+      "name": "Co3",
+      "order_factorization": "2^10*3^7*5^3*7*11*23",
+      "bit_length": 39,
+      "bit_length_parity": 1
+    },
+    {
+      "id": "Happy:McL",
+      "name": "McL",
+      "order_factorization": "2^7*3^6*5^3*7*11",
+      "bit_length": 30,
+      "bit_length_parity": 0
+    },
+    {
+      "id": "Happy:HS",
+      "name": "HS",
+      "order_factorization": "2^9*3^2*5^3*7*11",
+      "bit_length": 26,
+      "bit_length_parity": 0
+    },
+    {
+      "id": "Happy:Suz",
+      "name": "Suz",
+      "order_factorization": "2^13*3^7*5^2*7*11*13",
+      "bit_length": 39,
+      "bit_length_parity": 1
+    },
+    {
+      "id": "Happy:He",
+      "name": "He",
+      "order_factorization": "2^10*3^3*5^2*7^3*17",
+      "bit_length": 32,
+      "bit_length_parity": 0
+    },
+    {
+      "id": "Happy:M24",
+      "name": "M24",
+      "order_factorization": "2^10*3^3*5*7*11*23",
+      "bit_length": 28,
+      "bit_length_parity": 0
+    },
+    {
+      "id": "Happy:M23",
+      "name": "M23",
+      "order_factorization": "2^7*3^2*5*7*11*23",
+      "bit_length": 24,
+      "bit_length_parity": 0
+    },
+    {
+      "id": "Happy:M22",
+      "name": "M22",
+      "order_factorization": "2^7*3^2*5*7*11",
+      "bit_length": 19,
+      "bit_length_parity": 1
+    },
+    {
+      "id": "Happy:M12",
+      "name": "M12",
+      "order_factorization": "2^6*3^3*5*11",
+      "bit_length": 17,
+      "bit_length_parity": 1
+    },
+    {
+      "id": "Happy:M11",
+      "name": "M11",
+      "order_factorization": "2^4*3^2*5*11",
+      "bit_length": 13,
+      "bit_length_parity": 1
+    },
+    {
+      "id": "Happy:J2",
+      "name": "J2",
+      "order_factorization": "2^7*3^3*5^2*7",
+      "bit_length": 20,
+      "bit_length_parity": 0
+    }
+  ],
+  "closure_signatures": {
+    "pariah": {
+      "group_class": "Pariah",
+      "residual_squared": 0.0,
+      "dominant_chain": [
+        "e",
+        "e",
+        "e"
+      ],
+      "idempotent": true,
+      "surrounding_closes": false,
+      "evidence_source": "CMPLX-R30 PROOF Paper 11 / theorem T_D4_5"
+    },
+    "happy_family": {
+      "group_class": "Happy Family",
+      "residual_squared": 0.4444444444444444,
+      "dominant_chain": [
+        "e",
+        "(1,2,3)",
+        "(1,2)"
+      ],
+      "idempotent": false,
+      "surrounding_closes": false,
+      "evidence_source": "CMPLX-R30 PROOF Paper 11 / theorem T_D4_5"
+    },
+    "admitted_control": {
+      "group_class": "native_control",
+      "residual_squared": 0.0,
+      "dominant_chain": [
+        "e",
+        "e",
+        "e"
+      ],
+      "idempotent": true,
+      "surrounding_closes": true,
+      "evidence_source": "gate logic control"
+    }
+  },
+  "classification_rule": {
+    "admitted": "closes and surrounding structure closes",
+    "boundary": "closes while surrounding structure opens",
+    "rejected_as_datum": "does not close under declared encoder; keep as encoder obligation"
+  },
+  "falsifiers": [
+    {
+      "claim": "Admission is encoder-independent",
+      "accepted": false
+    },
+    {
+      "claim": "A non-closing candidate is dismissed rather than receipted",
+      "accepted": false
+    },
+    {
+      "claim": "The Pariah boundary reading is a new theorem of finite-group classification",
+      "accepted": false
+    },
+    {
+      "claim": "Paper 11 can admit external theories without inheriting C00/E00_to_1",
+      "accepted": false
+    }
+  ],
+  "scope_boundary": "Paper 11 proves the admission gate and the encoder-bound Pariah/Happy-Family classification receipt. It does not prove encoder independence or a new finite-group theorem."
+}

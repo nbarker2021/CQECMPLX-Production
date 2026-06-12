@@ -69,6 +69,17 @@ def main() -> int:
         return bool(exact and 0.0 <= d <= 1.0 and cont)
     run("genesis: rule90+correction regenerates exactly", _genesis_check)
 
+    def _metamorph_check():
+        from cqecmplx.engines.pixel import Picture
+        from PixelForge.metamorph import morph_video
+        a = Picture.rule30_texture(40, 22, (255, 200, 80), (8, 8, 30), seed=3)
+        b = Picture.gradient(40, 22, (30, 60, 200), (220, 40, 90))
+        m = morph_video(a, b, frames=8, fps=30, mode="sweep")
+        return bool(m["first_exact"] and m["last_exact"]
+                    and m["frames"][4].content_hash()
+                    != a.blend(b, 0.5).content_hash())
+    run("metamorph: correction-space morph, endpoints exact", _metamorph_check)
+
     width = max(len(n) for n, _, _ in checks)
     fails = 0
     for name, ok, note in checks:

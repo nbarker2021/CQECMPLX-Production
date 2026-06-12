@@ -23,7 +23,7 @@ ring is stdlib-only; registration is eager so dotted imports
 import importlib
 import sys
 
-__version__ = "0.8.0"
+__version__ = "0.9.0"
 
 _RING = {
     "lattice": "lattice_forge",
