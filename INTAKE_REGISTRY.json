@@ -83,6 +83,12 @@
       "date": "2026-06-11",
       "slice": "production/packages/cqecmplx-forge",
       "note": "Curated best forms of all 9 diverged lattice_forge modules (adjudications in MERGE_LEDGER); predictor fork split into rule30_predictor + rule30_spectral_predictor; merged init exposes both lines; cqecmplx-verify console script (6/6); fixed ChromaForge cache-poisoning bug found by the verifier."
+    },
+    {
+      "id": "CQECMPLX-Forge-Package-v0.5.0",
+      "date": "2026-06-11",
+      "slice": "production/packages/cqecmplx-forge",
+      "note": "Two-tier storage law: dual-lane (fermionic/bosonic) live memory with kappa event-count decay; 10-chained-activation promotion -> BIRTH-receipted lib crystal; finish() compression event walks receipt chain to bare active spine and crystallizes it; CrystalVault append-only backend (crystal-form-only persistence) with self-reorganizing consolidation (meta-crystals, full provenance, MDHG-rung levels). cqecmplx-verify 7/7."
     }
   ],
   "stray_roots_reconciled": [

@@ -32,6 +32,19 @@ def main() -> int:
         lambda e: e.execute("verify") and e.execute("verify").get("receipt") is not None
     )(chroma.ChromaForgeEngine()))
 
+    def _lifecycle_check():
+        import tempfile, os
+        e = chroma.ChromaForgeEngine()
+        vault = chroma.CrystalVault(os.path.join(tempfile.mkdtemp(), "v.jsonl"))
+        run_ = chroma.RunLifecycle(e, vault, run_id="verify")
+        for _ in range(10):
+            out = e.execute("lifecycle verify item")
+            r = run_.activate("k", out["receipt"]["receipt_hash"], content="x")
+        c = run_.finish()
+        return bool(r["promoted"] and c["metadata"]["spine_length"] >= 1
+                    and vault.count == 2 and len(e.speedlight._cache) == 0)
+    run("two-tier law: promote+compress+crystal-only", _lifecycle_check)
+
     width = max(len(n) for n, _, _ in checks)
     fails = 0
     for name, ok, note in checks:

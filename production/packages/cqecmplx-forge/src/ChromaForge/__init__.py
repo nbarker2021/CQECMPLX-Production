@@ -63,6 +63,10 @@ from ChromaForge.snap import (
     ANGLES, _ANGLE_MAP, _DEFAULT_FAMILIES,
 )
 
+# ─── Lifecycle + storage contracts (the two-tier law) ─────────────────────────
+from ChromaForge.contracts import CrystalVault
+from ChromaForge.lifecycle import RunLifecycle, PROMOTE_AT, DECAY_EVERY
+
 # ─── GraphStax — graph identity layer (sibling lib-forge package) ─────────────
 try:
     from GraphStax import GraphStaxEngine, Stax, StaxGraph, StaxRoute
