@@ -1,0 +1,107 @@
+{
+  "paper": "CQE-paper-14",
+  "theorem": "boundary-repair curvature substrate layer",
+  "status": "pass",
+  "checks": {
+    "transport_ledger_passes_with_open_lifts": true,
+    "transport_rows_have_boundaries": true,
+    "demonstrated_rows_have_zero_repair": true,
+    "open_lifts_have_nonzero_repair": true,
+    "flat_su3_reference_has_zero_residual": true,
+    "oloid_normal_form_passes": true,
+    "oloid_honesty_boundary_present": true,
+    "dual_path_oloid_passes": true,
+    "gr_physics_left_as_obligation": true
+  },
+  "transport_summary": {
+    "status": "pass_with_open_lifts",
+    "row_count": 4,
+    "demonstrated_count": 2,
+    "open_lift_count": 2,
+    "all_lifts_demonstrated": false
+  },
+  "repair_rows": [
+    {
+      "id": "LCR_TO_D4_AXIS_SHEET",
+      "classification": "demonstrated",
+      "repair_score": 0,
+      "proof_boundary": "finite codec; does not derive a cold-start token from depth N"
+    },
+    {
+      "id": "D4_TO_J3O_DIAGONAL_CARRIER",
+      "classification": "demonstrated",
+      "repair_score": 0,
+      "proof_boundary": "diagonal carrier is finite; broader F4 transport is not implied automatically"
+    },
+    {
+      "id": "J3O_TO_G2_F4_T5A_ROUTE",
+      "classification": "bounded_local",
+      "repair_score": 1,
+      "proof_boundary": "local oracle-backed classifier exists; it does not derive the bit from depth N"
+    },
+    {
+      "id": "EXCEPTIONAL_ROUTE_TO_NIEMEIER_LANDING_FORMS",
+      "classification": "registered_landing_forms",
+      "repair_score": 3,
+      "proof_boundary": "landing forms are registered targets, not automatic proof closure"
+    }
+  ],
+  "flat_reference": {
+    "source": "Paper 13 n=3 SU3 closure",
+    "residual_squared_exact": "0",
+    "repair_score": 0
+  },
+  "oloid_normal_form": {
+    "status": "pass",
+    "pattern": [
+      1,
+      8,
+      8,
+      1
+    ],
+    "honesty": "normal_form_only: generates podal/antipodal Cayley-Dickson sheet placement; does not by itself prove nth-bit extraction"
+  },
+  "dual_path_summary": {
+    "status": "pass",
+    "checks": {
+      "triple_involution_podal_matches": true,
+      "triple_involution_antipodal_matches": true,
+      "triple_involution_shared_matches": true,
+      "triple_involution_level": 3,
+      "dyad_at_0_level_0": 0,
+      "dyad_at_1_level_0": 1,
+      "dyad_at_2_level_0": 2,
+      "dyad_at_3_level_0": 0,
+      "dyad_at_0_level_1": 1,
+      "dyad_at_0_level_2": 2
+    }
+  },
+  "closed_layers": [
+    "transport obligations are typed and boundary-bearing",
+    "demonstrated rows score zero repair",
+    "open lifts score nonzero repair",
+    "Paper 13 exact SU3 closure supplies zero-repair reference",
+    "Cayley-Dickson/Oloid normal form verifies 1,8,8,1 carrier pattern",
+    "dual-path oloid verifies three-dyad involution coherence"
+  ],
+  "open_layers": [
+    "Riemann/Ricci/Einstein tensor derivation",
+    "calibrated gravitational measurement",
+    "nth-bit extraction from the oloid normal form alone"
+  ],
+  "falsifiers": [
+    {
+      "claim": "A demonstrated transport row has nonzero repair score",
+      "accepted": false
+    },
+    {
+      "claim": "An open lift can be treated as zero curvature",
+      "accepted": false
+    },
+    {
+      "claim": "Einstein field equations are verified by this receipt",
+      "accepted": false
+    }
+  ],
+  "scope_boundary": "Paper 14 proves a substrate repair-magnitude ledger and curved-carrier witness. General Relativity curvature is a candidate interpretation, not a closed physical theorem."
+}

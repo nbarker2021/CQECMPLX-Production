@@ -1,6 +1,6 @@
 {
   "built_on": "2026-06-12",
-  "paper_count": 75,
+  "paper_count": 78,
   "outputs": [
     {
       "paper": "CQE-paper-00",
@@ -342,7 +342,25 @@
       "paper": "CQE-paper-14",
       "title": "Paper 14 - GR Boundary-Repair Curvature",
       "pdf": "Papers\\PDF\\CQE-paper-14_paper-14-gr-boundary-repair-curvature.pdf",
-      "bytes": 7418
+      "bytes": 6854
+    },
+    {
+      "paper": "CQE-paper-14.25",
+      "title": "Paper 14.25 - Toolkit for Boundary-Repair Curvature",
+      "pdf": "Papers\\PDF\\CQE-paper-14.25_paper-14-25-toolkit-for-boundary-repair-curvature.pdf",
+      "bytes": 3539
+    },
+    {
+      "paper": "CQE-paper-14.50",
+      "title": "Paper 14.50 - Boundary-Repair Curvature Claim Contract",
+      "pdf": "Papers\\PDF\\CQE-paper-14.50_paper-14-50-boundary-repair-curvature-claim-contract.pdf",
+      "bytes": 4066
+    },
+    {
+      "paper": "CQE-paper-14.75",
+      "title": "Paper 14.75 - Boundary-Repair Curvature as Next-State Precondition",
+      "pdf": "Papers\\PDF\\CQE-paper-14.75_paper-14-75-boundary-repair-curvature-as-next-state-precondition.pdf",
+      "bytes": 3312
     },
     {
       "paper": "CQE-paper-15",

@@ -75,7 +75,10 @@ Status meanings:
 | 13.25 | review-source | Quark-face toolkit supplement present. |
 | 13.50 | review-source | Quark-face claim contract supplement present. |
 | 13.75 | review-source | Quark-face next-state precondition supplement present. |
-| 14 | fallback-body | Promote from production body into strict scientific paper. |
+| 14 | review-source | Strict scientific rewrite present; companion supports drafted; local verifier promoted. |
+| 14.25 | review-source | Boundary-repair curvature toolkit supplement present. |
+| 14.50 | review-source | Boundary-repair curvature claim contract supplement present. |
+| 14.75 | review-source | Boundary-repair curvature next-state precondition supplement present. |
 | 15 | fallback-body | Promote from production body into strict scientific paper. |
 | 16 | fallback-body | Promote from production body into strict scientific paper. |
 | 17 | fallback-body | Promote from production body into strict scientific paper. |
