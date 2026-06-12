@@ -19,8 +19,9 @@ def verify_lcr_bijective() -> dict:
     """Verify LCR is the minimal chain carrier preserving center with two opposed boundaries."""
     # 1. Local window: all 8 chart states
     # 2. Center preservation: C = C(swap_LR(s)) for all states
-    # 3. Boundary opposition: L and R are distinct directions
-    # 4. Minimality: no smaller carrier exists
+    # 3. Boundary opposition: L and R are distinct addresses, not necessarily unequal values
+    # 4. Correction check: shell=2 includes (1,0,1), so a blanket L != R value claim is false
+    # 5. Minimality: no smaller carrier exists
     # Returns: {"status": "pass", "checked": [...]}
     pass
 ```

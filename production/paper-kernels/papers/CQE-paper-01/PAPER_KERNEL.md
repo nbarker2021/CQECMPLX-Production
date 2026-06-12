@@ -18,7 +18,9 @@ Status: `seeded`
 
 Formalize Left-Center-Right readout as the smallest chain carrier that preserves a center while allowing two opposed boundary directions.
 
-Required next action: Separate method claims from domain claims before peer-review promotion.
+Polished claim: LCR is the minimal ordered carrier preserving one center and two addressable boundary directions. Directional opposition is structural; boundary-value inequality is not guaranteed.
+
+Required next action: Connect this polished theorem to the installable cqe_engine formal interface.
 
 ## Math
 
@@ -32,7 +34,7 @@ Required next action: Promote every symbolic statement into a normalized claim r
 
 Status: `source-bound`
 
-Use 01-CQE-formal/FORMAL.md and recovered algebra/PDF evidence.
+Use `production/formal-papers/CQE-paper-01/FORMAL_PAPER.md`, `01-CQE-formal/FORMAL.md`, and recovered algebra/PDF evidence.
 
 Required next action: Split normal form, closed form, algebraic operators, calculus/window operators, and open obligations.
 
@@ -64,7 +66,7 @@ Required next action: Resolve this binding into production/lib-forge or mark it 
 
 Status: `seeded`
 
-Every validation and diagnostic must support hidden-guess ablation when training mode is enabled.
+Every validation and diagnostic must support hidden-guess ablation when training mode is enabled. Paper 01 now includes `production/formal-papers/CQE-paper-01/lcr_carrier_receipt.json`, which verifies the finite carrier claims and rejects the false shell-2 value-inequality overclaim.
 
 Required next action: Add positive, negative, boundary, and wrap tests with receipts.
 

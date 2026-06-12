@@ -1,0 +1,117 @@
+{
+  "paper": "CQE-paper-01",
+  "theorem": "Minimal LCR carrier",
+  "status": "pass",
+  "checks": {
+    "state_count_is_8": true,
+    "center_preserved_under_reversal": true,
+    "reversal_is_involution": true,
+    "shell_multiplicities_are_1_3_3_1": true,
+    "fixed_orbit_count_is_4": true,
+    "paired_orbit_count_is_2": true,
+    "shell2_value_inequality_claim_rejected": true,
+    "minimal_address_count_is_3": true
+  },
+  "states": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      1,
+      1
+    ],
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      1
+    ],
+    [
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      1
+    ]
+  ],
+  "fixed_states": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      1
+    ],
+    [
+      1,
+      1,
+      1
+    ]
+  ],
+  "reversal_pairs": [
+    [
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        0
+      ]
+    ]
+  ],
+  "shell_counts": {
+    "0": 1,
+    "1": 3,
+    "2": 3,
+    "3": 1
+  },
+  "corrected_claim": "L and R are opposed directions as addresses; they are not required to have unequal values in every state.",
+  "counterexample_to_value_inequality": [
+    1,
+    0,
+    1
+  ]
+}

@@ -9,7 +9,7 @@
 | Label each with shell = trace | `shell = L+C+R` | `int ∈ {0,1,2,3}` |
 | Draw boundary lines L and R | `L_boundary, R_boundary = extract_boundaries(state)` | `tuple[int,int]` |
 | Verify center preservation | `C == C(swap_LR(state))` | `bool` |
-| Verify two opposed directions | `L != R` for shell=2 states | `bool` |
+| Verify two opposed directions | `address(L) != address(R)`; do not require `value(L) != value(R)` | `bool` |
 | Draw red string binding L-C-R | `chain = (L, C, R)` | `tuple` |
 | Cross-mass check 9/8 | `verify_trace_block_ratio()` | `rational` |
 
@@ -45,9 +45,12 @@ def gluon(s): return s[1]  # C
 def swap_LR(s): return (s[2], s[1], s[0])
 center_ok = all(gluon(s) == gluon(swap_LR(s)) for s in states)
 
-# 5. Opposed boundaries on shell=2
+# 5. Opposed boundary addresses, with value inequality checked separately
 shell2 = shell_strata[2]  # the three SU(3) states
-opposed_ok = all(s[0] != s[2] for s in shell2)  # L != R
+opposed_ok = True  # L and R are distinct addresses in every LCR state
+value_inequality_counterexample = (1, 0, 1)
+assert value_inequality_counterexample in shell2
+assert value_inequality_counterexample[0] == value_inequality_counterexample[2]
 
 # 6. Chain binding L→C→R
 chains = [(s[0], s[1], s[2]) for s in shell2]
@@ -68,3 +71,9 @@ lcr-carrier-receipt =
 ---
 
 This is the pattern for ALL papers: **the workbook IS the tool spec**. Every analog operation has its exact digital twin.
+
+## Correction Note
+
+"Opposed boundaries" means distinct L and R addresses relative to C. It does
+not mean `L != R` as values in every shell-2 state. The shell-2 state `(1,0,1)`
+is the required counterexample to that overclaim.
