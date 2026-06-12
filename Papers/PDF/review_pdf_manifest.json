@@ -1,6 +1,6 @@
 {
   "built_on": "2026-06-12",
-  "paper_count": 54,
+  "paper_count": 57,
   "outputs": [
     {
       "paper": "CQE-paper-00",
@@ -172,9 +172,27 @@
     },
     {
       "paper": "CQE-paper-07",
-      "title": "Paper 07 - Discrete-Continuous Bridge",
-      "pdf": "Papers\\PDF\\CQE-paper-07_paper-07-discrete-continuous-bridge.pdf",
-      "bytes": 5914
+      "title": "Paper 7 - Discrete-Continuous Bridge",
+      "pdf": "Papers\\PDF\\CQE-paper-07_paper-7-discrete-continuous-bridge.pdf",
+      "bytes": 6295
+    },
+    {
+      "paper": "CQE-paper-07.25",
+      "title": "Paper 7.25 - Toolkit for the Discrete-Continuous Bridge",
+      "pdf": "Papers\\PDF\\CQE-paper-07.25_paper-7-25-toolkit-for-the-discrete-continuous-bridge.pdf",
+      "bytes": 4629
+    },
+    {
+      "paper": "CQE-paper-07.50",
+      "title": "Paper 7.50 - Discrete-Continuous Bridge Claim Contract",
+      "pdf": "Papers\\PDF\\CQE-paper-07.50_paper-7-50-discrete-continuous-bridge-claim-contract.pdf",
+      "bytes": 4537
+    },
+    {
+      "paper": "CQE-paper-07.75",
+      "title": "Paper 7.75 - Discrete-Continuous Bridge as Next-State Precondition",
+      "pdf": "Papers\\PDF\\CQE-paper-07.75_paper-7-75-discrete-continuous-bridge-as-next-state-precondition.pdf",
+      "bytes": 3458
     },
     {
       "paper": "CQE-paper-08",
