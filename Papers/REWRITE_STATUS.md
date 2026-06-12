@@ -67,7 +67,10 @@ Status meanings:
 | 11.25 | review-source | Theory-admission toolkit supplement present. |
 | 11.50 | review-source | Theory-admission claim contract supplement present. |
 | 11.75 | review-source | Theory-admission next-state precondition supplement present. |
-| 12 | fallback-body | Promote from production body into strict scientific paper. |
+| 12 | review-source | Strict scientific rewrite present; companion supports drafted; local verifier promoted. |
+| 12.25 | review-source | CA prediction toolkit supplement present. |
+| 12.50 | review-source | CA prediction claim contract supplement present. |
+| 12.75 | review-source | CA prediction next-state precondition supplement present. |
 | 13 | fallback-body | Promote from production body into strict scientific paper. |
 | 14 | fallback-body | Promote from production body into strict scientific paper. |
 | 15 | fallback-body | Promote from production body into strict scientific paper. |

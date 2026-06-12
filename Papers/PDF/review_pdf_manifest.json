@@ -1,6 +1,6 @@
 {
   "built_on": "2026-06-12",
-  "paper_count": 69,
+  "paper_count": 72,
   "outputs": [
     {
       "paper": "CQE-paper-00",
@@ -294,7 +294,25 @@
       "paper": "CQE-paper-12",
       "title": "Paper 12 - CA Prediction Surface",
       "pdf": "Papers\\PDF\\CQE-paper-12_paper-12-ca-prediction-surface.pdf",
-      "bytes": 7619
+      "bytes": 6884
+    },
+    {
+      "paper": "CQE-paper-12.25",
+      "title": "Paper 12.25 - Toolkit for the CA Prediction Surface",
+      "pdf": "Papers\\PDF\\CQE-paper-12.25_paper-12-25-toolkit-for-the-ca-prediction-surface.pdf",
+      "bytes": 4554
+    },
+    {
+      "paper": "CQE-paper-12.50",
+      "title": "Paper 12.50 - CA Prediction Surface Claim Contract",
+      "pdf": "Papers\\PDF\\CQE-paper-12.50_paper-12-50-ca-prediction-surface-claim-contract.pdf",
+      "bytes": 4550
+    },
+    {
+      "paper": "CQE-paper-12.75",
+      "title": "Paper 12.75 - CA Prediction Surface as Next-State Precondition",
+      "pdf": "Papers\\PDF\\CQE-paper-12.75_paper-12-75-ca-prediction-surface-as-next-state-precondition.pdf",
+      "bytes": 4057
     },
     {
       "paper": "CQE-paper-13",
