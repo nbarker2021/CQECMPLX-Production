@@ -14,15 +14,21 @@ Central thesis: Use high-dimensional lattice analogs as closure templates for tr
 
 ## Claims
 
-Status: `seeded`
+Status: `polished`
 
-Use high-dimensional lattice analogs as closure templates for transport without claiming global universality before local derivation.
+Polished claim: the local code chain `(1, 3, 7, 8, 24)` with powered
+terminal `72 = 8 x 9` is a verified lattice closure template. The paper proves
+the local Fano/Hamming, extended-Hamming/E8-seed, Golay-ingredient, powered
+sheet-bound, and Gamma72 transport-boundary checks. It does not promote the
+rootless Leech landing, Gamma72 polarization action, or uniqueness of all
+possible closure chains beyond the verifier receipts.
 
-Required next action: Separate method claims from domain claims before peer-review promotion.
+Required next action: Add separate landing theorems only when explicit Leech
+glue, Gamma72 polarization, or cold-start fingerprint verifiers are present.
 
 ## Math
 
-Status: `source-bound`
+Status: `polished`
 
 Use the paper body axioms, lemmas, and formalism as the math intake.
 
@@ -32,7 +38,8 @@ Required next action: Promote every symbolic statement into a normalized claim r
 
 Status: `source-bound`
 
-Use 01-CQE-formal/FORMAL.md and recovered algebra/PDF evidence.
+Use `production/formal-papers/CQE-paper-08/FORMAL_PAPER.md`,
+`01-CQE-formal/FORMAL.md`, and recovered algebra/PDF evidence.
 
 Required next action: Split normal form, closed form, algebraic operators, calculus/window operators, and open obligations.
 
@@ -54,7 +61,7 @@ Required next action: Bind a replayable command or mark the missing executable a
 
 ## Installable Lib Bindings
 
-Status: `seeded`
+Status: `verified`
 
 forgefactory.paper08_lattice_closure
 
@@ -66,7 +73,15 @@ Status: `seeded`
 
 Every validation and diagnostic must support hidden-guess ablation when training mode is enabled.
 
-Required next action: Add positive, negative, boundary, and wrap tests with receipts.
+Paper 08 now includes
+`production/formal-papers/CQE-paper-08/lattice_closure_template_receipt.json`,
+which verifies the lattice code chain, Fano/Hamming identity, extended
+Hamming/E8 seed, Golay ingredient boundary, powered `72 = 8 x 9` sheet bound,
+Gamma72 transport boundary, and rejection of Leech/Gamma72 overclaims.
+
+Required next action: Add broader positive, negative, boundary, and wrap tests
+only when later papers claim a closed Leech landing, Gamma72 polarization
+action, or closure-chain uniqueness theorem.
 
 ## Deployment Kernel
 
