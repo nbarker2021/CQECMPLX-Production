@@ -18,8 +18,10 @@ Smoke test producing at least one proof-like row and one obligation-like row.
 def verify_correction_surface() -> dict:
     """Verify failure/mismatch/residue as positive correction data."""
     # 1. Local window: correction = C ∧ ¬R on chart states
-    # 2. Nonlinear residue captured as structured data
-    # 3. Residue feeds next transport as correction surface
+    # 2. Verify exact firing states: (0,1,0) and (1,1,0)
+    # 3. Verify D4 projection: (axis,sheet) in {(2,0), (3,1)}
+    # 4. Nonlinear residue is structured obligation data, not proof by itself
+    # 5. Residue feeds next transport as correction surface
     # Returns: {"status": "pass", "checked": [...]}
     pass
 ```

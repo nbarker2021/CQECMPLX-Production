@@ -25,7 +25,8 @@ from lattice_forge.rule90_linearization import correction, correction_from_chart
 states = [(L,C,R) for L in (0,1) for C in (0,1) for R in (0,1)]
 corrections = {s: correction(s[0], s[1], s[2]) for s in states}
 # correction fires at D4 axes {(2,0), (3,1)}
-assert sum(corrections.values()) > 0
+assert {s for s, value in corrections.items() if value} == {(0,1,0), (1,1,0)}
+assert all((value == 1) == (correction_from_chart(s) == 1) for s, value in corrections.items())
 ```
 
 ## Receipt (identical for human and tool)
@@ -40,3 +41,9 @@ correction-receipt =
 ---
 
 This is the pattern for ALL papers: **the workbook IS the tool spec**. Every analog operation has its exact digital twin.
+
+## Correction Note
+
+The correction surface is not permission to accept a failed route as proof.
+Nonzero correction is positive data only when it is recorded as typed,
+replayable residue and routed into the next obligation.

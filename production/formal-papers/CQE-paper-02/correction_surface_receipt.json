@@ -1,0 +1,239 @@
+{
+  "paper": "CQE-paper-02",
+  "theorem": "Correction surface decomposition",
+  "status": "pass",
+  "checks": {
+    "state_count_is_8": true,
+    "identity_holds_for_all_states": true,
+    "firing_states_exact": true,
+    "d4_projection_exact": true,
+    "nonzero_residue_is_obligation_not_proof": true
+  },
+  "rows": [
+    {
+      "state": [
+        0,
+        0,
+        0
+      ],
+      "rule30": 0,
+      "rule90": 0,
+      "correction": 0,
+      "identity_holds": true,
+      "axis_sheet": [
+        0,
+        0
+      ]
+    },
+    {
+      "state": [
+        0,
+        0,
+        1
+      ],
+      "rule30": 1,
+      "rule90": 1,
+      "correction": 0,
+      "identity_holds": true,
+      "axis_sheet": [
+        1,
+        1
+      ]
+    },
+    {
+      "state": [
+        0,
+        1,
+        0
+      ],
+      "rule30": 1,
+      "rule90": 0,
+      "correction": 1,
+      "identity_holds": true,
+      "axis_sheet": [
+        2,
+        0
+      ]
+    },
+    {
+      "state": [
+        0,
+        1,
+        1
+      ],
+      "rule30": 1,
+      "rule90": 1,
+      "correction": 0,
+      "identity_holds": true,
+      "axis_sheet": [
+        3,
+        1
+      ]
+    },
+    {
+      "state": [
+        1,
+        0,
+        0
+      ],
+      "rule30": 1,
+      "rule90": 1,
+      "correction": 0,
+      "identity_holds": true,
+      "axis_sheet": [
+        1,
+        0
+      ]
+    },
+    {
+      "state": [
+        1,
+        0,
+        1
+      ],
+      "rule30": 0,
+      "rule90": 0,
+      "correction": 0,
+      "identity_holds": true,
+      "axis_sheet": [
+        2,
+        1
+      ]
+    },
+    {
+      "state": [
+        1,
+        1,
+        0
+      ],
+      "rule30": 0,
+      "rule90": 1,
+      "correction": 1,
+      "identity_holds": true,
+      "axis_sheet": [
+        3,
+        1
+      ]
+    },
+    {
+      "state": [
+        1,
+        1,
+        1
+      ],
+      "rule30": 0,
+      "rule90": 0,
+      "correction": 0,
+      "identity_holds": true,
+      "axis_sheet": [
+        0,
+        1
+      ]
+    }
+  ],
+  "firing_states": [
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      0
+    ]
+  ],
+  "firing_axis_sheets": [
+    [
+      2,
+      0
+    ],
+    [
+      3,
+      1
+    ]
+  ],
+  "ledger_rows": [
+    {
+      "state": [
+        0,
+        0,
+        0
+      ],
+      "residue": 0,
+      "status": "closed",
+      "next_route": null
+    },
+    {
+      "state": [
+        0,
+        0,
+        1
+      ],
+      "residue": 0,
+      "status": "closed",
+      "next_route": null
+    },
+    {
+      "state": [
+        0,
+        1,
+        0
+      ],
+      "residue": 1,
+      "status": "obligation",
+      "next_route": "Paper 03 triality intake"
+    },
+    {
+      "state": [
+        0,
+        1,
+        1
+      ],
+      "residue": 0,
+      "status": "closed",
+      "next_route": null
+    },
+    {
+      "state": [
+        1,
+        0,
+        0
+      ],
+      "residue": 0,
+      "status": "closed",
+      "next_route": null
+    },
+    {
+      "state": [
+        1,
+        0,
+        1
+      ],
+      "residue": 0,
+      "status": "closed",
+      "next_route": null
+    },
+    {
+      "state": [
+        1,
+        1,
+        0
+      ],
+      "residue": 1,
+      "status": "obligation",
+      "next_route": "Paper 03 triality intake"
+    },
+    {
+      "state": [
+        1,
+        1,
+        1
+      ],
+      "residue": 0,
+      "status": "closed",
+      "next_route": null
+    }
+  ],
+  "corrected_claim": "A correction is positive data only when recorded as typed, replayable residue."
+}

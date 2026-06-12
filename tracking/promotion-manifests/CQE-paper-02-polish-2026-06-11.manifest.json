@@ -1,0 +1,33 @@
+{
+  "artifact": "CQE-paper-02 formal polish pass",
+  "date": "2026-06-11",
+  "paper": "CQE-paper-02",
+  "title": "Correction Surface",
+  "status": "formal manuscript and finite verifier promoted",
+  "core_claim": {
+    "identity": "Rule30(L,C,R) = Rule90(L,R) xor corr(L,C,R)",
+    "correction": "corr(L,C,R) = C and not R",
+    "firing_states": [[0, 1, 0], [1, 1, 0]],
+    "d4_projection": [[2, 0], [3, 1]],
+    "epistemic_rule": "Nonzero correction is typed residue and obligation, not proof by itself."
+  },
+  "new_artifacts": [
+    "production/formal-papers/CQE-paper-02/FORMAL_PAPER.md",
+    "production/formal-papers/CQE-paper-02/verify_correction_surface.py",
+    "production/formal-papers/CQE-paper-02/correction_surface_receipt.json"
+  ],
+  "updated_artifacts": [
+    "production/papers/CQE-paper-02/02-CQE-tool/TOOL.md",
+    "production/papers/CQE-paper-02/03-CQE-workbook/WORKBOOK.md",
+    "production/paper-kernels/papers/CQE-paper-02/PAPER_KERNEL.md"
+  ],
+  "validation": {
+    "formal_verifier": "pass",
+    "paper_kernel_selector_training_mode": "1 pass / 0 needs-work"
+  },
+  "next_obligations": [
+    "Wire verify_correction_surface into the installable cqe_engine.formal interface.",
+    "Let Paper 03 consume the D4 axis/sheet correction rows.",
+    "Extend correction receipts into a shared cross-paper obligation ledger."
+  ]
+}
