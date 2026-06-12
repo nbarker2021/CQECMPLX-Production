@@ -1,6 +1,6 @@
 {
   "built_on": "2026-06-12",
-  "paper_count": 66,
+  "paper_count": 69,
   "outputs": [
     {
       "paper": "CQE-paper-00",
@@ -270,7 +270,25 @@
       "paper": "CQE-paper-11",
       "title": "Paper 11 - Theory Admission Gate",
       "pdf": "Papers\\PDF\\CQE-paper-11_paper-11-theory-admission-gate.pdf",
-      "bytes": 11895
+      "bytes": 8938
+    },
+    {
+      "paper": "CQE-paper-11.25",
+      "title": "Paper 11.25 - Toolkit for the Theory Admission Gate",
+      "pdf": "Papers\\PDF\\CQE-paper-11.25_paper-11-25-toolkit-for-the-theory-admission-gate.pdf",
+      "bytes": 4503
+    },
+    {
+      "paper": "CQE-paper-11.50",
+      "title": "Paper 11.50 - Theory Admission Claim Contract",
+      "pdf": "Papers\\PDF\\CQE-paper-11.50_paper-11-50-theory-admission-claim-contract.pdf",
+      "bytes": 4550
+    },
+    {
+      "paper": "CQE-paper-11.75",
+      "title": "Paper 11.75 - Theory Admission as Next-State Precondition",
+      "pdf": "Papers\\PDF\\CQE-paper-11.75_paper-11-75-theory-admission-as-next-state-precondition.pdf",
+      "bytes": 4119
     },
     {
       "paper": "CQE-paper-12",

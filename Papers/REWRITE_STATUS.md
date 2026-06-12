@@ -63,7 +63,10 @@ Status meanings:
 | 10.25 | review-source | T10 master-receipt toolkit supplement present. |
 | 10.50 | review-source | T10 master-receipt claim contract supplement present. |
 | 10.75 | review-source | T10 master-receipt next-state precondition supplement present. |
-| 11 | promoted-formal | Rewrite to strict scientific paper form. |
+| 11 | review-source | Strict scientific rewrite present; companion supports drafted. |
+| 11.25 | review-source | Theory-admission toolkit supplement present. |
+| 11.50 | review-source | Theory-admission claim contract supplement present. |
+| 11.75 | review-source | Theory-admission next-state precondition supplement present. |
 | 12 | fallback-body | Promote from production body into strict scientific paper. |
 | 13 | fallback-body | Promote from production body into strict scientific paper. |
 | 14 | fallback-body | Promote from production body into strict scientific paper. |
