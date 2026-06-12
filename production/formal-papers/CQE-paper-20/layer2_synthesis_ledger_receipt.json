@@ -1,0 +1,323 @@
+{
+  "paper": "CQE Paper 20",
+  "title": "Layer-2 Synthesis Ledger",
+  "status": "pass",
+  "checks": {
+    "seed_ledger_verifies": true,
+    "ledger_has_required_tables": true,
+    "terminal_count_is_24": true,
+    "reachability_yes_with_template_glue": true,
+    "reachability_forbidden_is_no": true,
+    "reachability_unknown_is_open": true,
+    "transport_obligations_pass_with_open_lifts": true,
+    "registry_accepts_only_validated_rows": true
+  },
+  "closed_layers": [
+    "seed ledger verifies",
+    "ledger summary tables are populated",
+    "24 terminal forms are registered",
+    "can_close distinguishes yes_with_template_glue, no, and unknown",
+    "transport obligations pass with two demonstrated and two open-lift rows",
+    "contributions registry accepts validated rows and records rejected rows"
+  ],
+  "open_layers": [
+    "source-paper claims are not re-proved by aggregation",
+    "unknown reachability rows remain obligations",
+    "forbidden rows remain recorded obstructions",
+    "open transport lifts remain open until their source verifiers close them"
+  ],
+  "falsifiers": [
+    "Ledger.verify fails",
+    "unknown reachability is treated as solved",
+    "forbidden reachability is discarded",
+    "pass_with_open_lifts is promoted to pass",
+    "a contribution enters without validator acceptance"
+  ],
+  "source_receipts": {
+    "ledger_verify": {
+      "status": "pass",
+      "errors": [],
+      "summary": {
+        "object_registry": 61,
+        "exact_vectors": 12578,
+        "gram_forms": 52,
+        "morphism_registry": 66,
+        "involution_registry": 33,
+        "convolution_registry": 4,
+        "admissibility_edges": 66,
+        "terminal_24d_forms": 24,
+        "glue_requirements": 29,
+        "residue_registry": 4,
+        "rag_cards": 34,
+        "object_invariants": 118,
+        "component_decompositions": 32,
+        "external_resource_registry": 4,
+        "verification_runs": 0,
+        "path_registry": 53,
+        "discriminant_registry": 24,
+        "reflection_action_registry": 326,
+        "terminal_admissibility_profiles": 53,
+        "construction_status_registry": 113,
+        "prime_factor_registry": 7,
+        "path_metrics": 53,
+        "root_neighborhood_profiles": 5,
+        "root_adjacency_registry": 970,
+        "morphism_witness_registry": 3,
+        "nsl_boundary_registry": 53,
+        "build_manifest_registry": 1,
+        "dynkin_registry": 29,
+        "terminal_component_embeddings": 107,
+        "morphism_verification_registry": 35,
+        "closure_obstruction_registry": 53
+      }
+    },
+    "summary": {
+      "object_registry": 61,
+      "exact_vectors": 12578,
+      "gram_forms": 52,
+      "morphism_registry": 66,
+      "involution_registry": 33,
+      "convolution_registry": 4,
+      "admissibility_edges": 66,
+      "terminal_24d_forms": 24,
+      "glue_requirements": 29,
+      "residue_registry": 4,
+      "rag_cards": 34,
+      "object_invariants": 118,
+      "component_decompositions": 32,
+      "external_resource_registry": 4,
+      "verification_runs": 0,
+      "path_registry": 53,
+      "discriminant_registry": 24,
+      "reflection_action_registry": 326,
+      "terminal_admissibility_profiles": 53,
+      "construction_status_registry": 113,
+      "prime_factor_registry": 7,
+      "path_metrics": 53,
+      "root_neighborhood_profiles": 5,
+      "root_adjacency_registry": 970,
+      "morphism_witness_registry": 3,
+      "nsl_boundary_registry": 53,
+      "build_manifest_registry": 1,
+      "dynkin_registry": 29,
+      "terminal_component_embeddings": 107,
+      "morphism_verification_registry": 35,
+      "closure_obstruction_registry": 53
+    },
+    "reachability": {
+      "yes_with_template_glue": {
+        "answer": "yes_with_template_glue",
+        "path": [
+          "A1",
+          "Niemeier:A1^24"
+        ],
+        "path_edges": [
+          {
+            "edge_id": "edge:A1->Niemeier:A1^24:component_terminal_embedding_template",
+            "source_id": "A1",
+            "target_id": "Niemeier:A1^24",
+            "via_morphism_id": "mor:A1->Niemeier:A1^24:component_terminal_embedding_template",
+            "status": "legal",
+            "condition_json": "{\"component_multiplicity_in_terminal\": 24, \"root_system\": \"A1^24\"}",
+            "obstruction_json": "{}",
+            "hash": "95633ba94f12c97af0508e437da30d279e612fdb5a980ac816fe45ddd5ea1c3c"
+          }
+        ],
+        "target": "Niemeier:A1^24",
+        "requested_target": "Niemeier:A1^24",
+        "glue_templates": [
+          {
+            "glue_id": "glue_profile:Niemeier:A1^24",
+            "path_hash": "2e38689f3e91cb646c569ef3fc33efce66a227538600f490219e1fb5ef81d11a",
+            "target_id": "Niemeier:A1^24",
+            "source_id": "Niemeier:A1^24",
+            "required_cosets_json": "[{\"component_discriminants\": [{\"component\": \"A1\", \"determinant_each\": 2, \"discriminant_each\": \"Z/2Z\", \"multiplicity\": 24}], \"kind\": \"required_overlattice_index\", \"root_lattice_determinant\": 16777216, \"value\": 4096}]",
+            "required_codewords_json": "[]",
+            "validity_checks_json": "{\"checks\": [\"rank must be 24\", \"evenness must hold after coset adjoining\", \"determinant must reduce to 1\", \"glue index squared must equal root lattice determinant\"], \"status\": \"computed_exact_index_cosets_pending\"}",
+            "status": "computed_exact_index_cosets_pending"
+          }
+        ],
+        "discriminant_profile": {
+          "discriminant_id": "disc:Niemeier:A1^24",
+          "object_id": "Niemeier:A1^24",
+          "root_lattice_determinant": "16777216",
+          "discriminant_group_order": "16777216",
+          "required_overlattice_index": "4096",
+          "glue_status": "computed_profile_glue_template",
+          "payload_json": "{\"component_discriminants\": [{\"component\": \"A1\", \"determinant_each\": 2, \"discriminant_each\": \"Z/2Z\", \"multiplicity\": 24}], \"discriminant_group_order\": 16777216, \"required_overlattice_index\": 4096, \"root_lattice_determinant\": 16777216, \"status\": \"computed from ADE determinant formulas; exact glue cosets remain separate\"}",
+          "hash": "e1138a0b3865485dd43bb28604fbd2527229b05aff24a1238fbe189da50865a3"
+        }
+      },
+      "forbidden_no": {
+        "answer": "no",
+        "target": "Niemeier:Leech",
+        "requested_target": "Niemeier:Leech",
+        "obstruction": "{\"reason\": \"direct rootful terminal path into rootless Leech not seeded; requires quotient/lift/code route\"}"
+      },
+      "unknown_open": {
+        "answer": "unknown",
+        "target": "Niemeier:E8^3",
+        "requested_target": "Niemeier:E8^3",
+        "notes": "no seeded admissibility path found"
+      }
+    },
+    "transport_obligations": {
+      "status": "pass_with_open_lifts",
+      "row_count": 4,
+      "demonstrated_count": 2,
+      "open_lift_count": 2,
+      "all_rows_have_required_fields": true,
+      "valid_classifications": true,
+      "local_witnesses_pass": true,
+      "all_lifts_demonstrated": false,
+      "local_witness_results": {
+        "LCR_TO_D4_AXIS_SHEET": {
+          "status": "pass",
+          "max_depth": 4096,
+          "trajectory_length": 4097,
+          "round_trip_mismatches": 0,
+          "label_counts": {
+            "2": 1014,
+            "0": 1038,
+            "1": 1035,
+            "3": 1010
+          },
+          "sheet_counts": {
+            "0": 2024,
+            "1": 2073
+          },
+          "axis_lengths": {
+            "0": 1038,
+            "1": 1035,
+            "2": 1014,
+            "3": 1010
+          }
+        },
+        "D4_TO_J3O_DIAGONAL_CARRIER": {
+          "status": "pass",
+          "errors": [],
+          "checks_passed": [
+            "diagonal_idempotents_are_idempotent",
+            "diagonal_idempotents_jordan_orthogonal",
+            "diagonal_idempotents_sum_to_identity",
+            "trace_2_idempotents_have_correct_trace",
+            "trace_2_idempotents_are_idempotent",
+            "weyl_13_fixes_chirality_balanced",
+            "weyl_13_swaps_chirality_broken_pair"
+          ]
+        },
+        "J3O_TO_G2_F4_T5A_ROUTE": {
+          "status": "pass",
+          "honesty": "bounded_route_classifier",
+          "max_depth_tested": 256,
+          "oracle_backed": true,
+          "depth_only_bridge": false,
+          "g2_e1_maps_to_e3": true,
+          "f4_chart_cycle_correct": true,
+          "resolution_depth_distribution": {
+            "0": 57,
+            "1": 60,
+            "2": 69,
+            "3": 70
+          },
+          "chart_axis_distribution": {
+            "0": 57,
+            "1": 60,
+            "2": 69,
+            "3": 70
+          },
+          "all_resolved_in_3_or_less": true,
+          "matches_enumeration_count": 256,
+          "matches_enumeration_rate": 1.0,
+          "proof_boundary": "oracle-backed route classifier; cold-start depth-only bridge remains open"
+        },
+        "EXCEPTIONAL_ROUTE_TO_NIEMEIER_LANDING_FORMS": {
+          "status": "registered_only",
+          "landing_form_count": 24,
+          "fingerprint_map_proved": false,
+          "proof_boundary": "registered terminal targets; no proved fingerprint-to-landing map"
+        }
+      },
+      "rows": [
+        {
+          "id": "LCR_TO_D4_AXIS_SHEET",
+          "source_object": "{0,1}^3 LCR chart state",
+          "target_object": "D4-style (axis, sheet) token",
+          "map": "ANTIPODAL_LABEL[state], SHEET_SIGN[state]",
+          "preserved_quantity": "lossless recovery of all eight chart states",
+          "failure_condition": "two chart states share one (axis, sheet) token",
+          "witness": "verify_chart_codec_d4",
+          "classification": "demonstrated",
+          "proof_boundary": "finite codec; does not derive a cold-start token from depth N"
+        },
+        {
+          "id": "D4_TO_J3O_DIAGONAL_CARRIER",
+          "source_object": "LCR diagonal chart state and shell strata",
+          "target_object": "J3(O) diagonal and trace-2 idempotent carrier",
+          "map": "(L,C,R) -> diag(L,C,R)",
+          "preserved_quantity": "trace strata, diagonal idempotency, LR/Weyl permutation",
+          "failure_condition": "Jordan idempotency or LR permutation preservation fails",
+          "witness": "verify_j3o_axioms",
+          "classification": "demonstrated",
+          "proof_boundary": "diagonal carrier is finite; broader F4 transport is not implied automatically"
+        },
+        {
+          "id": "J3O_TO_G2_F4_T5A_ROUTE",
+          "source_object": "J3(O) chart carrier",
+          "target_object": "G2 -> F4 -> T5A conjugate route",
+          "map": "conjugate_triple_route(N, enumeration_bit_fn)",
+          "preserved_quantity": "bounded paired route metadata across at most three named stages",
+          "failure_condition": "bounded route exceeds three stages or is mistaken for a depth-only readout",
+          "witness": "verify_conjugate_triple",
+          "classification": "bounded_local",
+          "proof_boundary": "local oracle-backed classifier exists; it does not derive the bit from depth N"
+        },
+        {
+          "id": "EXCEPTIONAL_ROUTE_TO_NIEMEIER_LANDING_FORMS",
+          "source_object": "exceptional-group route metadata",
+          "target_object": "rank-24 Niemeier and Leech landing-form registry",
+          "map": "registered terminal IDs and component product sheets",
+          "preserved_quantity": "named terminal root-system metadata",
+          "failure_condition": "landing form is treated as computation without a proved fingerprint map",
+          "witness": "ledger.build.NIEMEIER_FORMS and lookup cache registry",
+          "classification": "registered_landing_forms",
+          "proof_boundary": "landing forms are registered targets, not automatic proof closure"
+        }
+      ]
+    },
+    "registry_probe": {
+      "accepted": {
+        "status": "accepted",
+        "content_hash": "f2fa0beac4b026e9",
+        "validated_by": "classification_required",
+        "rationale": "classification field present"
+      },
+      "rejected": {
+        "status": "rejected",
+        "validated_by": "classification_required",
+        "rationale": "missing classification field"
+      },
+      "stats": {
+        "path": "C:\\Users\\nbark\\AppData\\Local\\Temp\\tmpkbcfwjts\\contrib.sqlite",
+        "accepted_count": 1,
+        "proposals_by_status": {
+          "accepted": 1,
+          "rejected": 1
+        },
+        "validators_registered": [
+          "classification_required"
+        ]
+      },
+      "lookup": {
+        "value": {
+          "classification": "demonstrated"
+        },
+        "provenance": "Paper 20 verifier probe",
+        "validated_by": "classification_required",
+        "rationale": "classification field present",
+        "validated_at": "2026-06-12T23:50:46+00:00",
+        "content_hash": "f2fa0beac4b026e9"
+      }
+    }
+  }
+}

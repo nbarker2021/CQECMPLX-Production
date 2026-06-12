@@ -99,7 +99,10 @@ Status meanings:
 | 19.25 | review-source | Observer face-selection toolkit supplement present. |
 | 19.50 | review-source | Observer face-selection claim contract supplement present. |
 | 19.75 | review-source | Observer face-selection next-state precondition supplement present. |
-| 20 | fallback-body | Promote from production body into strict scientific paper. |
+| 20 | review-source | Strict scientific rewrite present; companion supports drafted; local verifier promoted. |
+| 20.25 | review-source | Layer-2 synthesis ledger toolkit supplement present. |
+| 20.50 | review-source | Layer-2 synthesis ledger claim contract supplement present. |
+| 20.75 | review-source | Layer-2 synthesis ledger next-state precondition supplement present. |
 | 21 | fallback-body | Promote from production body into strict scientific paper. |
 | 22 | fallback-body | Promote from production body into strict scientific paper. |
 | 23 | fallback-body | Promote from production body into strict scientific paper. |
