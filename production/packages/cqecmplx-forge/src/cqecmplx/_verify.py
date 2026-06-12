@@ -59,6 +59,16 @@ def main() -> int:
         return v1.render(6)["video_hash"] == v2.render(6)["video_hash"]
     run("rgb=lcr: roundtrip+gluon+video determinism", _rgb_lcr_check)
 
+    def _genesis_check():
+        from cqecmplx.engines.pixel import Picture, GenesisField
+        target = Picture.rule30_texture(48, 27, (250, 180, 60), (8, 8, 30), seed=5)
+        g = GenesisField.from_picture(target)
+        exact = g.regenerate().content_hash() == target.content_hash()
+        d = g.density()["total"]
+        cont = g.regenerate(extra_rows=10).height == 37
+        return bool(exact and 0.0 <= d <= 1.0 and cont)
+    run("genesis: rule90+correction regenerates exactly", _genesis_check)
+
     width = max(len(n) for n, _, _ in checks)
     fails = 0
     for name, ok, note in checks:

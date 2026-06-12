@@ -14,6 +14,7 @@ map `N -> chart axis/sheet` or `N -> Weyl fingerprint` has been closed.
 from __future__ import annotations
 
 import json
+import os
 import sqlite3
 from dataclasses import dataclass
 from pathlib import Path
@@ -24,8 +25,29 @@ from .ledger.build import NIEMEIER_FORMS
 from .unipotent_orbits import closure_landing_candidates, get_unipotent_orbit
 
 
-CMPLX_R30_ROOT = Path(__file__).resolve().parents[3]
-DATA_ROOT = CMPLX_R30_ROOT / "DATA"
+def _find_data_root() -> Path:
+    module = Path(__file__).resolve()
+    packaged_data = module.parent / "data"
+    env_candidates = [
+        os.environ.get("CQECMPLX_DATA_ROOT"),
+        os.environ.get("CMPLX_R30_DATA_ROOT"),
+    ]
+    root_candidates = [
+        *(Path(value) for value in env_candidates if value),
+        packaged_data,
+        module.parents[3] / "DATA",
+        module.parents[2] / "DATA",
+        Path.cwd() / "DATA",
+        Path("D:/CQE_CMPLX/CMPLX-R30-main/DATA"),
+        Path("D:/CQE_CMPLX/g/CMPLX-R30/DATA"),
+    ]
+    for candidate in root_candidates:
+        if (candidate / "wolfram-rule30-center" / "wolfram_rule30_center_1m.json").exists():
+            return candidate
+    return packaged_data
+
+
+DATA_ROOT = _find_data_root()
 RULE30_JSON = DATA_ROOT / "wolfram-rule30-center" / "wolfram_rule30_center_1m.json"
 UMRK_SCHEMA = DATA_ROOT / "umrk" / "umrk_schema.json"
 LMFDB_SOURCES = DATA_ROOT / "lmfdb" / "lmfdb_sources.json"

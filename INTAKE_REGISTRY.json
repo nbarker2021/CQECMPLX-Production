@@ -113,6 +113,12 @@
       "date": "2026-06-12",
       "slice": "production/packages/cqecmplx-forge",
       "note": "SceneForge harvested from historical donors: worldforge.py (original P5->B_obs->Rrho->B_soft->B_higgs->B_ward->Bridge compose, receipt-trailed), intent.py (Scene8 Intent-as-Slice stdlib: 240-root E8 lattice walks, UNITY/TERNARY/ATTRACTOR actions, system scoring, keyword projection inference), imagedb.py (real saved pictures indexed + deterministic casting). PixelForge/images.py: stdlib PNG decoder (zlib+all 5 filters, 5 color types) + BMP reader. examples/live_video.py: request->world->intent->REAL Windows images->90 frames@30fps AVI, frame-perfect decode, 13.3s live. Mounted as cqecmplx.engines.scene."
+    },
+    {
+      "id": "CQECMPLX-Forge-Package-v0.8.0",
+      "date": "2026-06-12",
+      "slice": "production/packages/cqecmplx-forge",
+      "note": "Genesis: the layered rule90+correction INVERSION. correction(t,x)=target(t+1,x) XOR rule90(target(t))(x) solved locally per bit-plane -> every picture (incl. real images) = seed row + correction field, regenerated hash-exactly by evolution (0.1s for 160x90x24 planes, int-bitmask rows). Correction-space algebra: blend_xor superposition, masked structure-match (top planes corrected, detail free-runs), request-reseeded generation, extra_rows continuation (image continues itself -> video). density() = nonlinearity fingerprint per channel. Requests now GENERATE pictures; the printout/generation distinction collapsed. cqecmplx-verify 9/9."
     }
   ],
   "stray_roots_reconciled": [
