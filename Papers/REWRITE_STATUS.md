@@ -31,7 +31,10 @@ Status meanings:
 | 2.25 | review-source | Correction toolkit supplement present. |
 | 2.50 | review-source | Correction claim contract supplement present. |
 | 2.75 | review-source | Correction next-state precondition supplement present. |
-| 3 | promoted-formal | Rewrite to strict scientific paper form. |
+| 3 | review-source | Strict scientific rewrite present; companion supports drafted. |
+| 3.25 | review-source | Triality-surface toolkit supplement present. |
+| 3.50 | review-source | Triality-surface claim contract supplement present. |
+| 3.75 | review-source | Triality-surface next-state precondition supplement present. |
 | 4 | promoted-formal | Rewrite to strict scientific paper form. |
 | 5 | promoted-formal | Rewrite to strict scientific paper form. |
 | 6 | promoted-formal | Rewrite to strict scientific paper form. |

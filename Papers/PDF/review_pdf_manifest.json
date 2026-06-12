@@ -1,6 +1,6 @@
 {
   "built_on": "2026-06-12",
-  "paper_count": 42,
+  "paper_count": 45,
   "outputs": [
     {
       "paper": "CQE-paper-00",
@@ -76,9 +76,27 @@
     },
     {
       "paper": "CQE-paper-03",
-      "title": "Paper 03 - D4/J3 Triality Surface",
-      "pdf": "Papers\\PDF\\CQE-paper-03_paper-03-d4-j3-triality-surface.pdf",
-      "bytes": 8981
+      "title": "Paper 3 - D4/J3 Triality Surface",
+      "pdf": "Papers\\PDF\\CQE-paper-03_paper-3-d4-j3-triality-surface.pdf",
+      "bytes": 7209
+    },
+    {
+      "paper": "CQE-paper-03.25",
+      "title": "Paper 3.25 - Toolkit for the D4/J3 Triality Surface",
+      "pdf": "Papers\\PDF\\CQE-paper-03.25_paper-3-25-toolkit-for-the-d4-j3-triality-surface.pdf",
+      "bytes": 4632
+    },
+    {
+      "paper": "CQE-paper-03.50",
+      "title": "Paper 3.50 - Triality Surface Claim Contract",
+      "pdf": "Papers\\PDF\\CQE-paper-03.50_paper-3-50-triality-surface-claim-contract.pdf",
+      "bytes": 4614
+    },
+    {
+      "paper": "CQE-paper-03.75",
+      "title": "Paper 3.75 - Triality Surface as Next-State Precondition",
+      "pdf": "Papers\\PDF\\CQE-paper-03.75_paper-3-75-triality-surface-as-next-state-precondition.pdf",
+      "bytes": 4389
     },
     {
       "paper": "CQE-paper-04",
