@@ -23,8 +23,6 @@ ENGINE_REGISTRY: Dict[str, EngineRecord] = {
     "wireforge": EngineRecord("wireforge", "WireForge", "orientation wireframe templates", 8775, "reforge_wireforge"),
     "frameforge": EngineRecord("frameforge", "FrameForge", "dynamic movement over wireframes", 8775, "reforge_frameforge"),
     "pixl8forge": EngineRecord("pixl8forge", "PixL8Forge", "Rote8/Devi8/Concat8 frame transitions", 8776, "reforge_pixl8forge"),
-    "wireblock": EngineRecord("wireblock", "WireBlock Engine", "legal CAD template/attachment/variable kernel", None, "WireBlockEngine"),
-    "cadforge": EngineRecord("cadforge", "CADForge", "simple constrained CAD product builder", 8778, "CADForge"),
 }
 
 def list_engines() -> List[Dict[str, Any]]:
@@ -35,9 +33,7 @@ def layer_map() -> List[Dict[str, str]]:
         {"layer":"source", "engine":"GlyphForge / PixleForge / WireForge", "meaning":"convert user work/media/templates into state objects"},
         {"layer":"carrier", "engine":"Kimi/LCR Adapter", "meaning":"encode into LCR blocks, D4 labels, and correction receipts"},
         {"layer":"orientation", "engine":"WireForge / FrameForge", "meaning":"preplace internal/external boundaries and movement frames"},
-        {"layer":"cad-legality", "engine":"WireBlock", "meaning":"allow only initialized templates, legal attachables, and bounded variables"},
         {"layer":"media", "engine":"PixleForge / PixL8Forge", "meaning":"map pixels and frames into visible color dynamics"},
-        {"layer":"cad-product", "engine":"CADForge", "meaning":"turn legal wire blocks into CAD design graphs, receipts, and exports"},
         {"layer":"world", "engine":"WorldForge", "meaning":"render graph/world/readout interaction"},
         {"layer":"memory", "engine":"ResearchCraft", "meaning":"persist journal, nodes, edges, receipts, obligations"},
         {"layer":"product", "engine":"Rhenium", "meaning":"compose engines into ReForge product flows"},

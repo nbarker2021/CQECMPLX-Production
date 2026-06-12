@@ -8,11 +8,9 @@ One import root for the whole ring:
     cqecmplx.engines.graphstax  # GraphStax  (graph identity / PermForge)
     cqecmplx.engines.pixel      # PixelForge (surfaces / ink / frames)
     cqecmplx.engines.fridge     # FridgeForge
-    cqecmplx.engines.cad        # CADForge / WireBlock constrained CAD
     cqecmplx.engines.link       # LinkForge  (databases as lib items)
     cqecmplx.engines.mandle / .mani
     cqecmplx.reforge.contracts / .hardening / .glyph / .frame / .wire
-    cqecmplx.reforge.wireblock
     cqecmplx.reforge.pixl8 / .pixle / .researchcraft / .kimi
     cqecmplx.factory            # forgefactory
     cqecmplx.rhenium            # rhenium_engine
@@ -25,7 +23,7 @@ ring is stdlib-only; registration is eager so dotted imports
 import importlib
 import sys
 
-__version__ = "0.5.0"
+__version__ = "0.6.0"
 
 _RING = {
     "lattice": "lattice_forge",
@@ -35,14 +33,14 @@ _RING = {
 _ENGINES = {
     "chroma": "ChromaForge", "graphstax": "GraphStax", "pixel": "PixelForge",
     "fridge": "FridgeForge", "link": "LinkForge",
-    "mandle": "MandleForge", "mani": "ManiForge", "cad": "CADForge",
+    "mandle": "MandleForge", "mani": "ManiForge",
 }
 _REFORGE = {
     "contracts": "reforge_engine_contracts", "hardening": "reforge_engine_hardening",
     "glyph": "reforge_glyphforge", "frame": "reforge_frameforge",
     "wire": "reforge_wireforge", "pixl8": "reforge_pixl8forge",
     "pixle": "reforge_pixleforge", "researchcraft": "reforge_researchcraft",
-    "kimi": "reforge_kimi_adapter", "wireblock": "WireBlockEngine",
+    "kimi": "reforge_kimi_adapter",
 }
 
 def _mount(prefix: str, aliases: dict, container) -> None:

@@ -40,6 +40,12 @@ from PixelForge.projection import (
     digital_root, parity, entropy,
 )
 from PixelForge.frame import Frame, FrameStream
+from PixelForge.rgb import (
+    pixel_planes, planes_pixel, pixel_gluon, pixel_emission,
+    pixel_carry, blend_rgb, BITS,
+)
+from PixelForge.picture import Picture
+from PixelForge.video import VideoSynth, Layer, translate_toroidal
 
 
 class PixelForgeEngine:
@@ -109,4 +115,9 @@ __all__ = [
     "project_state", "digital_root", "parity", "entropy",
     # frames
     "Frame", "FrameStream",
+    # rgb = lcr (pixel as ribbon)
+    "pixel_planes", "planes_pixel", "pixel_gluon", "pixel_emission",
+    "pixel_carry", "blend_rgb", "BITS",
+    # pictures + video
+    "Picture", "VideoSynth", "Layer", "translate_toroidal",
 ]

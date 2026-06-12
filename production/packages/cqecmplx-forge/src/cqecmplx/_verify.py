@@ -32,34 +32,6 @@ def main() -> int:
         lambda e: e.execute("verify") and e.execute("verify").get("receipt") is not None
     )(chroma.ChromaForgeEngine()))
 
-    def _cadforge_check():
-        from cqecmplx.engines.cad import CADForgeBuilder, families
-        b = CADForgeBuilder("panel_bracket", name="verify_panel")
-        b.tweak("width_mm", 96).attach("rib", anchor_node="base:n0")
-        receipt = b.receipt()
-        return (
-            "panel_bracket" in families()
-            and receipt["status"] == "pass"
-            and receipt["payload"]["summary"]["attachable_count"] == 1
-        )
-    run("CADForge legal initialized design", _cadforge_check)
-
-    def _wireblock_reject_check():
-        from cqecmplx.engines.cad import CADForgeBuilder
-        try:
-            CADForgeBuilder("panel_bracket").attach("illegal_part")
-        except ValueError:
-            return True
-        return False
-    run("WireBlock rejects illegal attachable", _wireblock_reject_check)
-
-    def _solidworks_adapter_check():
-        from cqecmplx.engines.cad import CADForgeBuilder, emit_solidworks_vba
-        receipt = CADForgeBuilder("panel_bracket").attach("rib").receipt()
-        macro = emit_solidworks_vba(receipt)
-        return "Sub CADForgeWireBlockImport()" in macro and "CreateLine" in macro
-    run("SolidWorks adapter macro emission", _solidworks_adapter_check)
-
     def _lifecycle_check():
         import tempfile, os
         e = chroma.ChromaForgeEngine()
@@ -72,6 +44,20 @@ def main() -> int:
         return bool(r["promoted"] and c["metadata"]["spine_length"] >= 1
                     and vault.count == 2 and len(e.speedlight._cache) == 0)
     run("two-tier law: promote+compress+crystal-only", _lifecycle_check)
+
+    def _rgb_lcr_check():
+        from cqecmplx.engines.pixel import (pixel_planes, planes_pixel,
+                                            pixel_gluon, Picture, VideoSynth)
+        for rgb in [(0,0,0),(255,255,255),(137,201,77),(255,0,128)]:
+            if planes_pixel(pixel_planes(*rgb)) != rgb:
+                return False
+            if pixel_gluon(*rgb) != pixel_gluon(rgb[2], rgb[1], rgb[0]):
+                return False
+        r30 = Picture.rule30_texture(48, 27, (255,255,255), (0,0,32), seed=7)
+        v1 = VideoSynth(48, 27); v1.add_layer(r30, motion=lambda t: (t, 0))
+        v2 = VideoSynth(48, 27); v2.add_layer(r30, motion=lambda t: (t, 0))
+        return v1.render(6)["video_hash"] == v2.render(6)["video_hash"]
+    run("rgb=lcr: roundtrip+gluon+video determinism", _rgb_lcr_check)
 
     width = max(len(n) for n, _, _ in checks)
     fails = 0

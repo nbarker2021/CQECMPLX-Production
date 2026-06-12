@@ -16,7 +16,6 @@ pip install cqecmplx-forge[predictors]   # + numpy/scipy spectral predictors
 | `GraphStax`     | Graph identity: bit -> C-gluon resolution, AGRM routing, the superpermutation supervisor cursor (PermForge) |
 | `PixelForge`    | Display/input plane: adaptive-resolution surfaces, stylus/touch ink with pressure+tilt, E8 projection, deterministic frame streams |
 | `FridgeForge`   | Applied engine: inventory lexicon, kid/adult meal lanes with hard constraints, templated shopping lists |
-| `CADForge` / `WireBlockEngine` | Constrained CAD: initialized wireframe design families, legal attachables, bounded variable tweakers, design receipts |
 | `LinkForge`     | External databases as lib items: json/csv/ics linked once, receipted, reused |
 | `MandleForge` / `ManiForge` | Forge conventions for Mandelbrot/manifold surfaces |
 
@@ -26,12 +25,10 @@ pip install cqecmplx-forge[predictors]   # + numpy/scipy spectral predictors
 from lattice_forge.binary_boundary_adapter import adapt
 from ChromaForge import ChromaForgeEngine
 from GraphStax import coverage_check, SUPERPERM_N4
-from CADForge import CADForgeBuilder
 
 print(adapt(b"hello")["arc_type"])
 print(ChromaForgeEngine().execute("hello")["receipt"]["receipt_hash"][:12])
 print(coverage_check(SUPERPERM_N4, 4))   # True
-print(CADForgeBuilder("panel_bracket").attach("rib").receipt()["status"])
 ```
 
 Source of truth: https://github.com/nbarker2021/CQECMPLX-Production

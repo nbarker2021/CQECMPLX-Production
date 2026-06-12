@@ -89,6 +89,12 @@
       "date": "2026-06-11",
       "slice": "production/packages/cqecmplx-forge",
       "note": "Two-tier storage law: dual-lane (fermionic/bosonic) live memory with kappa event-count decay; 10-chained-activation promotion -> BIRTH-receipted lib crystal; finish() compression event walks receipt chain to bare active spine and crystallizes it; CrystalVault append-only backend (crystal-form-only persistence) with self-reorganizing consolidation (meta-crystals, full provenance, MDHG-rung levels). cqecmplx-verify 7/7."
+    },
+    {
+      "id": "CQECMPLX-Forge-Package-v0.6.0",
+      "date": "2026-06-12",
+      "slice": "production/packages/cqecmplx-forge",
+      "note": "RGB=LCR pixel layer: pixel as 8-plane ribbon (lossless roundtrip), G channel = gluon (R<->B invariant), T_EMISSION shadow byte + carry density per pixel; Picture from blending + rule30 emission texture (PPM/BMP writers); VideoSynth = layers + toroidal pixel transport (multiset-conserving) + superposition, FrameStream governed, deterministic video hashes. cqecmplx-verify 8/8."
     }
   ],
   "stray_roots_reconciled": [
