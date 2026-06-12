@@ -1,0 +1,373 @@
+{
+  "paper": "CQE Paper 19",
+  "title": "Observer Face-Selection",
+  "status": "pass",
+  "checks": {
+    "four_faces_exist": true,
+    "each_selection_retains_three_latent_faces": true,
+    "gluon_invariant_under_antipode": true,
+    "z4_face_template_passes": true,
+    "bounded_observer_route_evidence_passes": true,
+    "spinor_class_remains_open": true,
+    "consciousness_postulate_not_promoted": true
+  },
+  "closed_layers": [
+    "four selectable frame faces are defined",
+    "selecting one face retains three latent faces",
+    "gluon C is invariant under LR antipodal reversal over all eight states",
+    "static Z4 face template has 2 fixed points and 6 period-4 states",
+    "bounded observer-route evidence enumerates all eight chart states and preserves D4 lift after activation"
+  ],
+  "open_layers": [
+    "SPINOR signature observation",
+    "full frame-inversion Q(S) executable binding in the promoted paper layer",
+    "consciousness or measurement-collapse interpretation",
+    "global physical observer theorem"
+  ],
+  "falsifiers": [
+    "a selected face deletes rather than retains latent faces",
+    "gluon changes under LR antipodal reversal",
+    "Z4 face template contains period-2 states",
+    "bounded open-gap evidence is promoted as a completed theorem",
+    "SPINOR is claimed observed without a receipt"
+  ],
+  "source_receipts": {
+    "face_selections": [
+      {
+        "selected_face": "C-centroid",
+        "selected_index": 0,
+        "latent_faces": [
+          "R-centroid",
+          "C-flipped",
+          "L-centroid"
+        ],
+        "latent_count": 3
+      },
+      {
+        "selected_face": "R-centroid",
+        "selected_index": 1,
+        "latent_faces": [
+          "C-centroid",
+          "C-flipped",
+          "L-centroid"
+        ],
+        "latent_count": 3
+      },
+      {
+        "selected_face": "C-flipped",
+        "selected_index": 2,
+        "latent_faces": [
+          "C-centroid",
+          "R-centroid",
+          "L-centroid"
+        ],
+        "latent_count": 3
+      },
+      {
+        "selected_face": "L-centroid",
+        "selected_index": 3,
+        "latent_faces": [
+          "C-centroid",
+          "R-centroid",
+          "C-flipped"
+        ],
+        "latent_count": 3
+      }
+    ],
+    "face_table": {
+      "(0, 0, 0)": {
+        "gluon": 0,
+        "antipode": [
+          0,
+          0,
+          0
+        ],
+        "antipode_gluon": 0,
+        "four_frame_label": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "(0, 0, 1)": {
+        "gluon": 0,
+        "antipode": [
+          1,
+          0,
+          0
+        ],
+        "antipode_gluon": 0,
+        "four_frame_label": [
+          2,
+          0,
+          3,
+          3
+        ]
+      },
+      "(0, 1, 0)": {
+        "gluon": 1,
+        "antipode": [
+          0,
+          1,
+          0
+        ],
+        "antipode_gluon": 1,
+        "four_frame_label": [
+          0,
+          3,
+          0,
+          2
+        ]
+      },
+      "(0, 1, 1)": {
+        "gluon": 1,
+        "antipode": [
+          1,
+          1,
+          0
+        ],
+        "antipode_gluon": 1,
+        "four_frame_label": [
+          3,
+          2,
+          2,
+          0
+        ]
+      },
+      "(1, 0, 0)": {
+        "gluon": 0,
+        "antipode": [
+          0,
+          0,
+          1
+        ],
+        "antipode_gluon": 0,
+        "four_frame_label": [
+          3,
+          2,
+          2,
+          0
+        ]
+      },
+      "(1, 0, 1)": {
+        "gluon": 0,
+        "antipode": [
+          1,
+          0,
+          1
+        ],
+        "antipode_gluon": 0,
+        "four_frame_label": [
+          0,
+          3,
+          0,
+          2
+        ]
+      },
+      "(1, 1, 0)": {
+        "gluon": 1,
+        "antipode": [
+          0,
+          1,
+          1
+        ],
+        "antipode_gluon": 1,
+        "four_frame_label": [
+          2,
+          0,
+          3,
+          3
+        ]
+      },
+      "(1, 1, 1)": {
+        "gluon": 1,
+        "antipode": [
+          1,
+          1,
+          1
+        ],
+        "antipode_gluon": 1,
+        "four_frame_label": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "gluon_invariance": {
+      "status": "pass",
+      "errors": [],
+      "claim": "The Gluon \u0393(s) is the LR-podal-invariant centroid of the 3-bar window, equal to C for all 8 chart states under the explicitly defined LR-podal reversal. It is the framework's first local invariant.",
+      "states_checked": 8
+    },
+    "z4_face_template": {
+      "status": "pass",
+      "errors": [],
+      "periods": {
+        "(0, 0, 0)": 1,
+        "(0, 0, 1)": 4,
+        "(0, 1, 0)": 4,
+        "(0, 1, 1)": 4,
+        "(1, 0, 0)": 4,
+        "(1, 0, 1)": 4,
+        "(1, 1, 0)": 4,
+        "(1, 1, 1)": 1
+      },
+      "labels": {
+        "(0, 0, 0)": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "(0, 0, 1)": [
+          2,
+          0,
+          3,
+          3
+        ],
+        "(0, 1, 0)": [
+          0,
+          3,
+          0,
+          2
+        ],
+        "(0, 1, 1)": [
+          3,
+          2,
+          2,
+          0
+        ],
+        "(1, 0, 0)": [
+          3,
+          2,
+          2,
+          0
+        ],
+        "(1, 0, 1)": [
+          0,
+          3,
+          0,
+          2
+        ],
+        "(1, 1, 0)": [
+          2,
+          0,
+          3,
+          3
+        ],
+        "(1, 1, 1)": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "fixed_point_count": 2,
+      "period_2_count": 0,
+      "period_4_count": 6,
+      "claim": "The Z4 4-frame composite label (wrap steps in each of the 4 centroid frames C/R/C-flipped/L) produces exactly 2 fixed points (the true vacua (0,0,0) and (1,1,1), label (0,0,0,0)) and 6 period-4 states (all other states). No period-2 labels exist. D12 acts on D4 as blocks: the Z4 rotation is D12's order-4 subgroup acting on those D4 blocks, not D4 itself. This is a static Z4 coordinate-frame template; it does not prove temporal periodicity. It matches the D12 orbit structure: 2 singlets + 6 color-orbit members."
+    },
+    "monster_d4_lift": {
+      "claim_id": "monster.d4_lift.after_global_activation",
+      "status": "pass_with_open_gaps",
+      "honesty_label": "BOUNDED_EXEC",
+      "max_depth_tested": 128,
+      "eight_state_enumeration": {
+        "states_seen": 8,
+        "all_eight_seen": true,
+        "activation_depth_all_eight": 13,
+        "state_counts": {
+          "(0, 0, 0)": 16,
+          "(0, 0, 1)": 18,
+          "(0, 1, 0)": 17,
+          "(0, 1, 1)": 13,
+          "(1, 0, 0)": 15,
+          "(1, 0, 1)": 16,
+          "(1, 1, 0)": 17,
+          "(1, 1, 1)": 16
+        },
+        "missing_states": []
+      },
+      "shell2_triad_accounting": {
+        "shell2_visits": 46,
+        "sufficient": true,
+        "triad_fractions": {
+          "(1, 1, 0)": 0.3695652173913043,
+          "(1, 0, 1)": 0.34782608695652173,
+          "(0, 1, 1)": 0.2826086956521739
+        },
+        "triad_thirds_within_tolerance": true,
+        "bijection_symmetry": {
+          "pos": 17,
+          "neg": 13,
+          "null": 16,
+          "pos_frac": 0.3695652173913043,
+          "neg_frac": 0.2826086956521739,
+          "null_frac": 0.34782608695652173,
+          "symmetry_defect": 0.08695652173913043
+        },
+        "pos_neg_symmetry_ok": true
+      },
+      "cr_bond_observer": {
+        "readout0_fraction": 0.5078125,
+        "readout1_fraction": 0.4921875,
+        "distinct_states_at_readout0": 4,
+        "distinct_states_at_readout1": 4,
+        "cr_bond_active_fraction": 0.015625,
+        "cr_bond_implies_open_when_active": 0.5,
+        "note": "0-emission depths are a valid stratum; lane marginals L/C/R conflate shells. Use joint chart_state accounting at readout=0."
+      },
+      "three_by_three_resolution": {
+        "t4_status": "pass",
+        "s3_coefficients_one_third": {
+          "e": "0",
+          "(1 2)": "1/3",
+          "(1 3)": "1/3",
+          "(2 3)": "1/3",
+          "(1 2 3)": "0",
+          "(1 3 2)": "0"
+        },
+        "empirical_1step_vs_closed_max_abs_diff": 0.0,
+        "one_step_matrices_agree": true,
+        "n3_empirical_s3_residual_sq": 0.005185185185185185,
+        "n3_empirical_s3_closed": false,
+        "closed_form_labels": [
+          "C-",
+          "C0",
+          "C+"
+        ]
+      },
+      "d4_per_n": {
+        "n_start": 13,
+        "all_lift_ok": true,
+        "failures": []
+      },
+      "conjugate_routing": {
+        "all_within_3_moves": true,
+        "path_distribution": {
+          "identity": 29,
+          "G2": 25,
+          "G2/F4": 29,
+          "G2/F4/T5A": 33
+        }
+      },
+      "checks": {
+        "all_eight_chart_states_enumerated": true,
+        "shell2_triad_thirds_ok": true,
+        "shell2_pos_neg_bijection_symmetric": true,
+        "three_by_three_one_step_agrees": true,
+        "n3_empirical_s3_closed": false,
+        "s3_bond_one_third_proven": true,
+        "d4_lift_all_n_after_activation": true,
+        "g2_f4_route_within_3_moves": true,
+        "g2_f4_t5_verifier_pass": true,
+        "three_move_closure_pass": true
+      },
+      "deprecated_metric_warning": "Do not use marginal P(L=1),P(C=1),P(R=1) for this claim; they mix shells and undersample the bijective 3x3 triad.",
+      "interpretation": "After all 8 joint chart states appear, D4 lift and \u22643-step G2\u2192F4\u2192T5A routing hold. The 1/3 law is on the shell-2 bonded triad (3x3), aligned with T4 S3 coefficients \u2014 not independent lane bit frequencies."
+    }
+  }
+}

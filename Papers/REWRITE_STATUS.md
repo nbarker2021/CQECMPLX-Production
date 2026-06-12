@@ -95,7 +95,10 @@ Status meanings:
 | 18.25 | review-source | VOA/Moonshine route toolkit supplement present. |
 | 18.50 | review-source | VOA/Moonshine route claim contract supplement present. |
 | 18.75 | review-source | VOA/Moonshine route next-state precondition supplement present. |
-| 19 | fallback-body | Promote from production body into strict scientific paper. |
+| 19 | review-source | Strict scientific rewrite present; companion supports drafted; local verifier promoted. |
+| 19.25 | review-source | Observer face-selection toolkit supplement present. |
+| 19.50 | review-source | Observer face-selection claim contract supplement present. |
+| 19.75 | review-source | Observer face-selection next-state precondition supplement present. |
 | 20 | fallback-body | Promote from production body into strict scientific paper. |
 | 21 | fallback-body | Promote from production body into strict scientific paper. |
 | 22 | fallback-body | Promote from production body into strict scientific paper. |

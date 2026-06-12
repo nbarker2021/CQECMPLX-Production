@@ -1,6 +1,6 @@
 {
   "built_on": "2026-06-12",
-  "paper_count": 90,
+  "paper_count": 93,
   "outputs": [
     {
       "paper": "CQE-paper-00",
@@ -462,7 +462,25 @@
       "paper": "CQE-paper-19",
       "title": "Paper 19 - Observer Face-Selection",
       "pdf": "Papers\\PDF\\CQE-paper-19_paper-19-observer-face-selection.pdf",
-      "bytes": 7479
+      "bytes": 6205
+    },
+    {
+      "paper": "CQE-paper-19.25",
+      "title": "Paper 19.25 - Observer Face-Selection Toolkit",
+      "pdf": "Papers\\PDF\\CQE-paper-19.25_paper-19-25-observer-face-selection-toolkit.pdf",
+      "bytes": 3202
+    },
+    {
+      "paper": "CQE-paper-19.50",
+      "title": "Paper 19.50 - Observer Face-Selection Claim Contract",
+      "pdf": "Papers\\PDF\\CQE-paper-19.50_paper-19-50-observer-face-selection-claim-contract.pdf",
+      "bytes": 3905
+    },
+    {
+      "paper": "CQE-paper-19.75",
+      "title": "Paper 19.75 - Observer Face-Selection Next-State Bridge",
+      "pdf": "Papers\\PDF\\CQE-paper-19.75_paper-19-75-observer-face-selection-next-state-bridge.pdf",
+      "bytes": 3298
     },
     {
       "paper": "CQE-paper-20",
