@@ -1,0 +1,57 @@
+{
+  "item_id": "LeechForge",
+  "promotion_date": "2026-06-12",
+  "status": "forge_promoted",
+  "identity": {
+    "forge": "LeechForge",
+    "type": "engine",
+    "role": "Golay -> Leech error-correction tower with exact construction receipts",
+    "paper_ref": "CQE-paper-17",
+    "registry_version": "0.16.0"
+  },
+  "pattern": "complete-unformalized work -> formalization in paper-bound space -> Forge",
+  "source_work": {
+    "repo": "nbarker2021/CMPLX",
+    "local_clone": "D:/CQE_CMPLX/g/CMPLX",
+    "state_before": "VERIFICATION_REPORT.md records E8 roots 240, Weyl order 696729600, Leech kissing 196560 as asserted operational constants; no construction, no proof artifact, no forge",
+    "core_modules_distilled": [
+      "VERIFICATION_REPORT.md constants (computed from scratch here)"
+    ]
+  },
+  "adjudicated_divergence": [
+    "all three report constants are now computed, not cited: the Golay code is generated from a bordered QR(11) basis, the Steiner property verified by exact bijection, and all 196,560 minimal vectors constructed and membership-checked",
+    "construction detail surfaced during formalization: the bordered circulant requires the NON-residue convention — the residue convention produces a [24,12] code with weight-7 words (not Golay); the weight-enumerator check caught it on first run"
+  ],
+  "validated_claims": [
+    "The generator basis spans exactly 4096 distinct codewords ([24,12]).",
+    "Weight enumerator is exactly 1, 759@8, 2576@12, 759@16, 1@24.",
+    "The code is self-dual with minimum distance 8.",
+    "Steiner S(5,8,24): every 5-subset of 24 points lies in exactly one of the 759 octads (759*56 = 42,504 = C(24,5)).",
+    "The three minimal-vector shapes count 1,104 + 97,152 + 98,304 = 196,560 — all distinct, all norm^2 4, all lattice members under the exact membership predicate.",
+    "Minimal vectors close under negation.",
+    "Sampled sums of minimal vectors remain lattice members with even norms.",
+    "No lattice vector of norm^2 = 2 exists (exhaustive case analysis over candidate shapes).",
+    "Tower consistency: 196,560 = 240 * 819, with E8Forge computing the 240 on the level below.",
+    "The CMPLX report constants (240, 696729600, 196560) are reproduced by computation."
+  ],
+  "honesty_boundary": "Identification of the constructed lattice with THE Leech lattice rests on the uniqueness theorem (even unimodular, dim 24, min norm 4) — cited, not verified; closure is sampled, not exhaustive; 24D kissing optimality is cited mathematics.",
+  "artifacts": [
+    "production/packages/cqecmplx-forge/src/LeechForge/__init__.py",
+    "production/formal-papers/CQE-paper-17/verify_golay_leech_tower.py",
+    "production/formal-papers/CQE-paper-17/golay_leech_tower_receipt.json",
+    "FORGE_REGISTRY.json (v0.16.0, 26 forges)",
+    "production/packages/cqecmplx-forge/FORGE_REGISTRY.json",
+    "production/packages/cqekernel/FORGE_REGISTRY.json"
+  ],
+  "verification": {
+    "command": "python production/formal-papers/CQE-paper-17/verify_golay_leech_tower.py",
+    "result": "pass 10/10",
+    "receipt": "production/formal-papers/CQE-paper-17/golay_leech_tower_receipt.json"
+  },
+  "open_obligations": [
+    "Gram/unimodularity receipt for the constructed lattice basis.",
+    "Patch CMPLX VERIFICATION_REPORT upstream to reference the computed receipts instead of asserted constants.",
+    "Next profile-repo candidates: CMPLX-TMN-main kappa = ln(phi)/16 constant (already live in ChromaForge delta_phi receipts), CMPLXMCP AGRM controller, CMPLXDevKit MDHG cache laws."
+  ],
+  "notes": "Seventh instance of the promotion pattern; second from the profile-repo lane. With E8Forge (paper 08) and LeechForge (paper 17), the error-correction tower of the corpus is now computationally receipted end to end: LCR triads -> Hamming/E8 -> Golay/Leech."
+}

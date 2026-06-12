@@ -1,0 +1,30 @@
+{
+  "paper": "CQE-paper-17",
+  "theorem": "Golay -> Leech tower: [24,12,8] Steiner code lifts to a 24D even lattice with 196,560 minimal vectors of norm 4, all constructed and membership-verified",
+  "forge": "LeechForge",
+  "source_repo": "nbarker2021/CMPLX (VERIFICATION_REPORT.md constants), tower below: nbarker2021/CMPLXUNI via E8Forge",
+  "adjudicated_divergence": [
+    "CMPLX VERIFICATION_REPORT records E8 roots 240, Weyl 696729600, Leech kissing 196560 as asserted constants; LeechForge computes the Golay code, the Steiner property, and all 196,560 vectors from scratch in exact integer arithmetic",
+    "Golay B-matrix convention fixed during formalization: the bordered QR(11) circulant requires the NON-residue convention; the residue convention yields a non-Golay [24,12] code (weight enumerator check caught it)"
+  ],
+  "status": "pass",
+  "checks": {
+    "golay_4096_codewords": true,
+    "golay_weight_enumerator": true,
+    "golay_self_dual_min_distance_8": true,
+    "steiner_5_8_24": true,
+    "leech_minimal_vectors_196560": true,
+    "minimal_vectors_antipodal_closed": true,
+    "closure_and_evenness_sampled": true,
+    "minimum_norm2_is_4": true,
+    "tower_consistency_e8_to_leech": true,
+    "cmplx_report_constants_computed_not_cited": true
+  },
+  "passed": 10,
+  "total": 10,
+  "open_obligations": [
+    "Identification with THE Leech lattice is by the uniqueness theorem (even unimodular, dim 24, min norm 4) \u2014 cited, not verified; a Gram/unimodularity receipt is future work.",
+    "Closure is sampled, not exhaustive (196560^2 pairs).",
+    "Kissing optimality in 24D (Cohn-Kumar-Miller-Radchenko-Viazovska) is cited mathematics, not claimed."
+  ]
+}

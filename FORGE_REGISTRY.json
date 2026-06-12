@@ -1,5 +1,5 @@
 {
-  "version": "0.15.0",
+  "version": "0.16.0",
   "generated": "2026-06-12",
   "kernel": "cqekernel",
   "forge_ring": "cqecmplx-forge",
@@ -354,6 +354,24 @@
       "source_repo": "nbarker2021/CMPLXUNI (lfai/cona_e8.py surrogate adjudicated, lattice/e8.py made stdlib-exact)",
       "adjudicated_divergence": "lfai constructionA_E8_check surrogate provably rejects all 112 integer roots and cannot represent half-integer roots; replaced with exact membership",
       "receipt": "production/formal-papers/CQE-paper-08/e8_even_lattice_receipt.json",
+      "verify_status": "10/10"
+    },
+    "LeechForge": {
+      "type": "engine",
+      "role": "Golay -> Leech tower: extended Golay [24,12,8] code (Steiner S(5,8,24)), exact 24D lattice membership, all 196560 minimal vectors constructed",
+      "algebra_deps": [
+        "GolayCode",
+        "Steiner_5_8_24",
+        "LeechLattice",
+        "Kissing196560",
+        "TowerE8"
+      ],
+      "cli_entry": "LeechForge.verify",
+      "paper_ref": "CQE-paper-17",
+      "source": "production/packages/cqecmplx-forge/src/LeechForge/",
+      "source_repo": "nbarker2021/CMPLX (VERIFICATION_REPORT constants computed, not cited)",
+      "adjudicated_divergence": "report constants reproduced by construction; Golay B-matrix needs the NON-residue QR(11) convention (residue convention yields a non-Golay code, caught by the weight-enumerator check)",
+      "receipt": "production/formal-papers/CQE-paper-17/golay_leech_tower_receipt.json",
       "verify_status": "10/10"
     }
   },
