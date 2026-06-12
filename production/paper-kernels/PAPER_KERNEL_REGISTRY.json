@@ -1044,7 +1044,7 @@
       "n": "11",
       "title": "Theory Admission Gate",
       "slug": "theory-admission-gate",
-      "status": "Formal refinement draft for peer-review-facing development",
+      "status": "Promoted formal paper with executable theory-admission receipt",
       "role": "paper_body_work",
       "block": "block-01-papers-09-16",
       "block_title": "Time, Receipts, Admission, Physics Interfaces, and Continuum Edges",
@@ -1052,47 +1052,47 @@
       "suite_next": "CQE-paper-12",
       "block_previous": "CQE-paper-10",
       "block_next": "CQE-paper-12",
-      "central_thesis": "Admit external theories as transport candidates whose failures become boundary receipts rather than summary dismissals.",
+      "central_thesis": "Prove the T10-anchored admission Gluon as a Gluon mass filter at K=9, with Pariah/Happy-Family closure carried as a local Lattice Forge boundary receipt.",
       "components": {
         "claims": {
-          "status": "seeded",
-          "primary_content": "Admit external theories as transport candidates whose failures become boundary receipts rather than summary dismissals.",
-          "required_action": "Separate method claims from domain claims before peer-review promotion."
+          "status": "promoted",
+          "primary_content": "T_ADMISSION admits a candidate only when T10 signs the context, the candidate mass matches the trusted spectrum, and the mass is inside K_max=9; otherwise the candidate becomes a boundary or rejected datum receipt.",
+          "required_action": "Extend candidate-specific Gluon mass functions as new admitted theory families are promoted."
         },
         "math": {
-          "status": "source-bound",
-          "primary_content": "Use the paper body axioms, lemmas, and formalism as the math intake.",
-          "required_action": "Promote every symbolic statement into a normalized claim row with assumptions and receipts."
+          "status": "promoted",
+          "primary_content": "A(T) = signed_T10(T) and m(T) in S_T10 and m(T) <= 9, with exhaustive admitted, boundary, and rejected/rejected_as_datum outlets.",
+          "required_action": "Bind future candidate theories to explicit m(T) definitions before admission."
         },
         "formal_algebra_calculus": {
-          "status": "source-bound",
-          "primary_content": "Use 01-CQE-formal/FORMAL.md and recovered algebra/PDF evidence.",
-          "required_action": "Split normal form, closed form, algebraic operators, calculus/window operators, and open obligations."
+          "status": "promoted",
+          "primary_content": "Normal receipt form: (candidate_id, mass, trusted_match, K_max, T10_anchor, verdict). Closed gate: accepted iff signed_T10 and spectrum_match and K <= 9.",
+          "required_action": "Promote any later recentering into an explicit handoff equation from C00/E00_to_1."
         },
         "hand_work": {
-          "status": "source-bound",
-          "primary_content": "Use 03-CQE-workbook/WORKBOOK.md plus the analog toolkit guides.",
-          "required_action": "Write the physical reconstruction steps and boundary-collision handling for the paper."
+          "status": "supplemental",
+          "primary_content": "By-hand reconstruction validates the center, T10 anchor, trusted spectrum, K=9 boundary, and first outlet reached by the candidate.",
+          "required_action": "Keep workbook material proof-facing without letting it obscure the theorem."
         },
         "code_rebuild": {
-          "status": "source-bound",
-          "primary_content": "Use 02-CQE-tool/TOOL.md and run.py when present.",
-          "required_action": "Bind a replayable command or mark the missing executable as an obligation."
+          "status": "promoted",
+          "primary_content": "Run python production/formal-papers/CQE-paper-11/verify_theory_admission_gate.py to emit the theory admission gate receipt.",
+          "required_action": "Add candidate-specific adapters as new theory families are admitted."
         },
         "lib_bindings": {
-          "status": "seeded",
-          "primary_content": "forgefactory.paper11_theory_admission",
-          "required_action": "Resolve this binding into production/lib-forge or mark it as an adapter route."
+          "status": "promoted",
+          "primary_content": "T_ADMISSION; CMPLX-Kernel/lib-forge part1_constants.py and part2_steps.py; lattice_forge.ledger.build_seed_database for local Monster/Pariah ledger routes.",
+          "required_action": "Promote individual Happy-Family ledger nodes if finer-grained receipts require them."
         },
         "tests_and_receipts": {
-          "status": "seeded",
-          "primary_content": "Every validation and diagnostic must support hidden-guess ablation when training mode is enabled.",
-          "required_action": "Add positive, negative, boundary, and wrap tests with receipts."
+          "status": "promoted",
+          "primary_content": "Verifier checks T10 lineage, trusted spectrum, K=9, admitted/boundary/rejected mass-gate outlets, local Pariah objects/routes, and Pariah/Happy boundary signatures; hidden-guess ablation remains required for training-mode diagnostics.",
+          "required_action": "Add hidden-guess training wrappers around future candidate admission diagnostics."
         },
         "deployment_kernel": {
-          "status": "seeded",
-          "primary_content": "Deployable individually as CQE-paper-11 and selectable through the master suite.",
-          "required_action": "Expose paper, block, and suite selectors with no duplicate routing logic."
+          "status": "promoted",
+          "primary_content": "Deployable individually as CQE-paper-11 and selectable through the master suite using the promoted verifier and receipt.",
+          "required_action": "Expose the verifier through the master suite selector without duplicate routing logic."
         }
       },
       "sources": {
@@ -1122,6 +1122,18 @@
         },
         "recovered_output": {
           "path": "production\\lib-forge\\recovered\\papers_output\\CQE-paper-11.md",
+          "present": true
+        },
+        "formal_paper": {
+          "path": "production\\formal-papers\\CQE-paper-11\\FORMAL_PAPER.md",
+          "present": true
+        },
+        "verifier": {
+          "path": "production\\formal-papers\\CQE-paper-11\\verify_theory_admission_gate.py",
+          "present": true
+        },
+        "receipt": {
+          "path": "production\\formal-papers\\CQE-paper-11\\theory_admission_gate_receipt.json",
           "present": true
         }
       }

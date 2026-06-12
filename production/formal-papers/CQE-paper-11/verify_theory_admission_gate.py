@@ -6,6 +6,7 @@ from __future__ import annotations
 import json
 import math
 import sys
+import tempfile
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -15,7 +16,7 @@ SRC = ROOT / "packages" / "cqecmplx-forge" / "src"
 if str(SRC) not in sys.path:
     sys.path.insert(0, str(SRC))
 
-from lattice_forge.ledger.build import PARIAHS, parse_factorization  # noqa: E402
+from lattice_forge.ledger.build import build_seed_database, parse_factorization  # noqa: E402
 
 
 HAPPY_FAMILY_FACTORS = {
@@ -63,18 +64,65 @@ def _bit_length_parity(expr: str) -> int:
     return _order_from_factorization(expr).bit_length() % 2
 
 
-def _pariah_tape() -> list[dict]:
-    return [
-        {
-            "id": row["id"],
-            "name": row["name"],
-            "type": row["type"],
-            "order_factorization": row["order_factorization"],
-            "bit_length": _order_from_factorization(row["order_factorization"]).bit_length(),
-            "bit_length_parity": _bit_length_parity(row["order_factorization"]),
-        }
-        for row in PARIAHS
-    ]
+def _load_local_sporadic_ledger() -> dict:
+    ledger = None
+    with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as tempdir:
+        try:
+            ledger = build_seed_database(Path(tempdir) / "ledger.sqlite", overwrite=True)
+            pariah_objects = ledger.query(
+                "SELECT * FROM object_registry WHERE object_id LIKE 'Pariah:%' ORDER BY object_id"
+            )
+            monster = ledger.object("Monster:M") or {}
+            pariah_edges = ledger.query(
+                "SELECT * FROM admissibility_edges "
+                "WHERE target_id LIKE 'Pariah:%' ORDER BY source_id, target_id"
+            )
+            pariah_morphisms = ledger.query(
+                "SELECT * FROM morphism_registry "
+                "WHERE target_id LIKE 'Pariah:%' ORDER BY source_id, target_id"
+            )
+            prime_profiles = ledger.query(
+                "SELECT * FROM prime_factor_registry "
+                "WHERE object_id='Monster:M' OR object_id LIKE 'Pariah:%' "
+                "ORDER BY object_id"
+            )
+            construction_status = ledger.query(
+                "SELECT * FROM construction_status_registry "
+                "WHERE object_id='Monster:M' OR object_id LIKE 'Pariah:%' "
+                "ORDER BY object_id"
+            )
+            return {
+                "monster": monster,
+                "pariah_objects": pariah_objects,
+                "pariah_edges": pariah_edges,
+                "pariah_morphisms": pariah_morphisms,
+                "prime_profiles": prime_profiles,
+                "construction_status": construction_status,
+            }
+        finally:
+            if ledger is not None:
+                ledger.close()
+
+
+def _pariah_tape(pariah_objects: list[dict]) -> list[dict]:
+    rows = []
+    for row in pariah_objects:
+        metadata = json.loads(row["metadata_json"])
+        rows.append(
+            {
+                "id": row["object_id"],
+                "name": row["name"],
+                "type": metadata["type"],
+                "order_factorization": metadata["order_factorization"],
+                "bit_length": _order_from_factorization(
+                    metadata["order_factorization"]
+                ).bit_length(),
+                "bit_length_parity": _bit_length_parity(
+                    metadata["order_factorization"]
+                ),
+            }
+        )
+    return rows
 
 
 def _happy_family_tape() -> list[dict]:
@@ -143,7 +191,8 @@ def verify() -> dict:
         evidence_source="gate logic control",
     )
 
-    pariahs = _pariah_tape()
+    local_sporadic_ledger = _load_local_sporadic_ledger()
+    pariahs = _pariah_tape(local_sporadic_ledger["pariah_objects"])
     happy_family = _happy_family_tape()
     t10_receipt = ROOT / "formal-papers" / "CQE-paper-10" / "t10_master_receipt.json"
     t10_payload = json.loads(t10_receipt.read_text(encoding="utf-8")) if t10_receipt.exists() else {}
@@ -163,6 +212,19 @@ def verify() -> dict:
         "admitted_control": classify(admitted_control),
     }
     mass_gate_verdicts = {case["theory"]: case["result"] for case in admission_cases}
+    monster_metadata = json.loads(local_sporadic_ledger["monster"]["metadata_json"])
+    structural_exit_edges = [
+        edge
+        for edge in local_sporadic_ledger["pariah_edges"]
+        if edge["source_id"] == "Monster:M"
+        and "structural_pariah_exit_template" in edge["edge_id"]
+    ]
+    hard_wall_edges = [
+        edge
+        for edge in local_sporadic_ledger["pariah_edges"]
+        if edge["target_id"] in {"Pariah:J4", "Pariah:Ly"}
+        and "hard_wall_landing_template" in edge["edge_id"]
+    ]
 
     checks = {
         "inherits_t10_observer_center": (
@@ -182,6 +244,24 @@ def verify() -> dict:
         == "rejected",
         "encoder_declared": True,
         "pariah_count_is_six": len(pariahs) == 6,
+        "pariah_objects_are_local_lattice_forge_ledger": len(
+            local_sporadic_ledger["pariah_objects"]
+        )
+        == 6,
+        "monster_partition_metadata_is_local": monster_metadata.get(
+            "sporadic_partition"
+        )
+        == "20 Monster-involved + 4 structural pariahs + 2 hard pariahs",
+        "structural_pariah_exit_routes_are_local": len(structural_exit_edges) == 4,
+        "hard_pariah_landing_routes_are_local": len(hard_wall_edges) == 8,
+        "pariah_prime_profiles_are_local": len(
+            [
+                row
+                for row in local_sporadic_ledger["prime_profiles"]
+                if row["object_id"].startswith("Pariah:")
+            ]
+        )
+        == 6,
         "happy_family_count_is_twenty": len(happy_family) == 20,
         "pariah_signature_closed": (
             pariah_signature.residual_squared == 0.0
@@ -229,6 +309,15 @@ def verify() -> dict:
             "trust_anchor": "CQE-paper-10/t10_master_receipt.json",
             "cases": admission_cases,
         },
+        "local_sporadic_ledger": {
+            "monster_metadata": monster_metadata,
+            "pariah_object_count": len(local_sporadic_ledger["pariah_objects"]),
+            "structural_exit_edges": structural_exit_edges,
+            "hard_wall_edges": hard_wall_edges,
+            "pariah_morphism_count": len(local_sporadic_ledger["pariah_morphisms"]),
+            "prime_profile_count": len(local_sporadic_ledger["prime_profiles"]),
+            "construction_status_count": len(local_sporadic_ledger["construction_status"]),
+        },
         "checks": checks,
         "mass_gate_verdicts": mass_gate_verdicts,
         "boundary_case_verdicts": boundary_verdicts,
@@ -246,7 +335,10 @@ def verify() -> dict:
         },
         "falsifiers": [
             {
-                "claim": "Admission is encoder-independent",
+                "claim": (
+                    "A verdict from one declared encoder may be generalized "
+                    "without a new receipt"
+                ),
                 "accepted": False,
             },
             {
@@ -274,7 +366,7 @@ def verify() -> dict:
             "Paper 11 proves the T10-anchored Gluon mass admission gate at K=9 "
             "and includes the encoder-bound Pariah/Happy-Family boundary case. "
             "It does not permit unreceipted entry, erase K-boundary cases, or "
-            "turn a worked encoder into encoder independence."
+            "turn a worked encoder verdict into an untested universal verdict."
         ),
     }
 

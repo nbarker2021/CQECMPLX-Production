@@ -10,71 +10,104 @@ Suite edges: `CQE-paper-10` -> `CQE-paper-11` -> `CQE-paper-12`
 
 Block edges: `CQE-paper-10` -> `CQE-paper-11` -> `CQE-paper-12`
 
-Central thesis: Admit external theories as transport candidates whose failures become boundary receipts rather than summary dismissals.
+Central thesis: Prove the T10-anchored admission Gluon as a Gluon mass filter at `K=9`, with Pariah/Happy-Family closure carried as a local Lattice Forge boundary receipt.
 
 ## Claims
 
-Status: `seeded`
+Status: `promoted`
 
-Admit external theories as transport candidates whose failures become boundary receipts rather than summary dismissals.
+Paper 11 proves `T_ADMISSION`: a candidate theory is admitted only when the Paper 10 master receipt signs the context, the candidate Gluon mass matches the trusted spectrum, and the mass remains inside `K_max = 9`. Trusted matches beyond `K=9` become boundary receipts; nonmatches become rejected data rather than erased failures.
 
-Required next action: Separate method claims from domain claims before peer-review promotion.
+Required next action: Extend candidate-specific Gluon mass functions as new admitted theory families are promoted.
 
 ## Math
 
-Status: `source-bound`
+Status: `promoted`
 
-Use the paper body axioms, lemmas, and formalism as the math intake.
+Admission predicate:
 
-Required next action: Promote every symbolic statement into a normalized claim row with assumptions and receipts.
+```text
+A(T) = signed_T10(T) and m(T) in S_T10 and m(T) <= 9
+```
+
+with exhaustive outlets `admitted`, `boundary`, and `rejected/rejected_as_datum`.
+
+Required next action: Bind future candidate theories to explicit `m(T)` definitions before admission.
 
 ## Formal, Normal, Closed-Form Algebra and Calculus
 
-Status: `source-bound`
+Status: `promoted`
 
-Use 01-CQE-formal/FORMAL.md and recovered algebra/PDF evidence.
+Normal form:
 
-Required next action: Split normal form, closed form, algebraic operators, calculus/window operators, and open obligations.
+```text
+(candidate_id, mass, trusted_match, K_max, T10_anchor, verdict)
+```
+
+Closed-form gate:
+
+```text
+accepted iff signed_T10 and spectrum_match and K <= 9
+```
+
+Required next action: Promote any later recentering into an explicit handoff equation from `C00/E00_to_1`.
 
 ## By-Hand Reconstruction
 
-Status: `source-bound`
+Status: `supplemental`
 
-Use 03-CQE-workbook/WORKBOOK.md plus the analog toolkit guides.
+By-hand reconstruction is supplemental validation: draw the carried center, T10 anchor, trusted spectrum, `K=9` boundary, and candidate mass path; classify the candidate at the first outlet it reaches.
 
-Required next action: Write the physical reconstruction steps and boundary-collision handling for the paper.
+Required next action: Keep the workbook proof-facing but do not let it obscure the theorem.
 
 ## Code Rebuild
 
-Status: `source-bound`
+Status: `promoted`
 
-Use 02-CQE-tool/TOOL.md and run.py when present.
+Production verifier:
 
-Required next action: Bind a replayable command or mark the missing executable as an obligation.
+```text
+python production/formal-papers/CQE-paper-11/verify_theory_admission_gate.py
+```
+
+Receipt:
+
+```text
+production/formal-papers/CQE-paper-11/theory_admission_gate_receipt.json
+```
+
+Required next action: Add candidate-specific adapters as new theory families are admitted.
 
 ## Installable Lib Bindings
 
-Status: `seeded`
+Status: `promoted`
 
-forgefactory.paper11_theory_admission
+Bindings:
 
-Required next action: Resolve this binding into production/lib-forge or mark it as an adapter route.
+```text
+T_ADMISSION
+CMPLX-Kernel/lib-forge/part2_steps.py
+CMPLX-Kernel/lib-forge/part1_constants.py
+lattice_forge.ledger.build_seed_database
+```
+
+Required next action: Promote individual Happy-Family ledger nodes if they are needed for finer-grained receipts.
 
 ## Tests and Receipts
 
-Status: `seeded`
+Status: `promoted`
 
-Every validation and diagnostic must support hidden-guess ablation when training mode is enabled.
+Every validation and diagnostic must support hidden-guess ablation when training mode is enabled. Current receipt checks T10 lineage, trusted spectrum, `K=9`, three mass-gate outlets, local Pariah objects/routes, and the Pariah/Happy boundary signature.
 
-Required next action: Add positive, negative, boundary, and wrap tests with receipts.
+Required next action: Add hidden-guess training wrappers around future candidate admission diagnostics.
 
 ## Deployment Kernel
 
-Status: `seeded`
+Status: `promoted`
 
 Deployable individually as CQE-paper-11 and selectable through the master suite.
 
-Required next action: Expose paper, block, and suite selectors with no duplicate routing logic.
+Required next action: Expose the verifier through the master suite selector without duplicate routing logic.
 
 ## Source Binding
 
@@ -85,3 +118,6 @@ Required next action: Expose paper, block, and suite selectors with no duplicate
 - `tool_runner`: `production\papers\CQE-paper-11\02-CQE-tool\run.py` (missing)
 - `workbook`: `production\papers\CQE-paper-11\03-CQE-workbook\WORKBOOK.md` (present)
 - `recovered_output`: `production\lib-forge\recovered\papers_output\CQE-paper-11.md` (present)
+- `formal_paper`: `production\formal-papers\CQE-paper-11\FORMAL_PAPER.md` (present)
+- `verifier`: `production\formal-papers\CQE-paper-11\verify_theory_admission_gate.py` (present)
+- `receipt`: `production\formal-papers\CQE-paper-11\theory_admission_gate_receipt.json` (present)

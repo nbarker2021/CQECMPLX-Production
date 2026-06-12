@@ -11,21 +11,218 @@
   "encoder": {
     "name": "bit_length_parity",
     "definition": "for each group order |G|, emit bit_length(|G|) mod 2",
-    "encoder_bound": true
+    "encoder_bound": true,
+    "role": "worked boundary case; not the whole admission theorem"
+  },
+  "admission_gate": {
+    "theorem_id": "T_ADMISSION",
+    "definition": "accept(T) iff mass(T) in trusted_spectrum and mass(T) <= K_max",
+    "trusted_spectrum": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "K_max": 9,
+    "trust_anchor": "CQE-paper-10/t10_master_receipt.json",
+    "cases": [
+      {
+        "theory": "native_inside_window",
+        "mass": 5,
+        "trusted_match": true,
+        "K_max": 9,
+        "result": "admitted",
+        "receipt_rule": "mass in trusted_spectrum and mass <= K_max"
+      },
+      {
+        "theory": "trusted_k_boundary",
+        "mass": 10,
+        "trusted_match": true,
+        "K_max": 9,
+        "result": "boundary",
+        "receipt_rule": "mass in trusted_spectrum and mass <= K_max"
+      },
+      {
+        "theory": "untrusted_external",
+        "mass": 11,
+        "trusted_match": false,
+        "K_max": 9,
+        "result": "rejected",
+        "receipt_rule": "mass in trusted_spectrum and mass <= K_max"
+      }
+    ]
+  },
+  "local_sporadic_ledger": {
+    "monster_metadata": {
+      "role": "substrate/rules layer in this scaffold",
+      "sporadic_partition": "20 Monster-involved + 4 structural pariahs + 2 hard pariahs"
+    },
+    "pariah_object_count": 6,
+    "structural_exit_edges": [
+      {
+        "edge_id": "edge:Monster:M->Pariah:J1:structural_pariah_exit_template",
+        "source_id": "Monster:M",
+        "target_id": "Pariah:J1",
+        "via_morphism_id": "mor:Monster:M->Pariah:J1:structural_pariah_exit_template",
+        "status": "legal",
+        "condition_json": "{\"status\": \"conceptual scaffold\"}",
+        "obstruction_json": "{}",
+        "hash": "766811ec45f25609ccce7a7f58059ea6f02245722e7bf0c5d2ecd9532b00888f"
+      },
+      {
+        "edge_id": "edge:Monster:M->Pariah:J3:structural_pariah_exit_template",
+        "source_id": "Monster:M",
+        "target_id": "Pariah:J3",
+        "via_morphism_id": "mor:Monster:M->Pariah:J3:structural_pariah_exit_template",
+        "status": "legal",
+        "condition_json": "{\"status\": \"conceptual scaffold\"}",
+        "obstruction_json": "{}",
+        "hash": "19e3d7fbcd76bd59743b88b7715fa187c7ba745247c520102d84148e650cc571"
+      },
+      {
+        "edge_id": "edge:Monster:M->Pariah:ON:structural_pariah_exit_template",
+        "source_id": "Monster:M",
+        "target_id": "Pariah:ON",
+        "via_morphism_id": "mor:Monster:M->Pariah:ON:structural_pariah_exit_template",
+        "status": "legal",
+        "condition_json": "{\"status\": \"conceptual scaffold\"}",
+        "obstruction_json": "{}",
+        "hash": "1018d4c3d3d396e8276d32eb41c13cb6f070ec0985884db847e9361785294260"
+      },
+      {
+        "edge_id": "edge:Monster:M->Pariah:Ru:structural_pariah_exit_template",
+        "source_id": "Monster:M",
+        "target_id": "Pariah:Ru",
+        "via_morphism_id": "mor:Monster:M->Pariah:Ru:structural_pariah_exit_template",
+        "status": "legal",
+        "condition_json": "{\"status\": \"conceptual scaffold\"}",
+        "obstruction_json": "{}",
+        "hash": "049f4535aadf6bf10499aa0c09e758d73271a3646e001ed8fe989ca60e4b10ac"
+      }
+    ],
+    "hard_wall_edges": [
+      {
+        "edge_id": "edge:Pariah:J1->Pariah:J4:hard_wall_landing_template",
+        "source_id": "Pariah:J1",
+        "target_id": "Pariah:J4",
+        "via_morphism_id": "mor:Pariah:J1->Pariah:J4:hard_wall_landing_template",
+        "status": "legal",
+        "condition_json": "{\"status\": \"conceptual scaffold\"}",
+        "obstruction_json": "{}",
+        "hash": "2ace6921a8ccac455264e26b194398271f8839fc976c4bc24938fd3530bc18d2"
+      },
+      {
+        "edge_id": "edge:Pariah:J1->Pariah:Ly:hard_wall_landing_template",
+        "source_id": "Pariah:J1",
+        "target_id": "Pariah:Ly",
+        "via_morphism_id": "mor:Pariah:J1->Pariah:Ly:hard_wall_landing_template",
+        "status": "legal",
+        "condition_json": "{\"status\": \"conceptual scaffold\"}",
+        "obstruction_json": "{}",
+        "hash": "adfd26f2974055a4eda64268bb5d127977f5ea7a461301d79750858965ef0013"
+      },
+      {
+        "edge_id": "edge:Pariah:J3->Pariah:J4:hard_wall_landing_template",
+        "source_id": "Pariah:J3",
+        "target_id": "Pariah:J4",
+        "via_morphism_id": "mor:Pariah:J3->Pariah:J4:hard_wall_landing_template",
+        "status": "legal",
+        "condition_json": "{\"status\": \"conceptual scaffold\"}",
+        "obstruction_json": "{}",
+        "hash": "c746e017d164fb1e4c799ea9e8c400761aea3f00a8a3c38e5e4d809c229f5391"
+      },
+      {
+        "edge_id": "edge:Pariah:J3->Pariah:Ly:hard_wall_landing_template",
+        "source_id": "Pariah:J3",
+        "target_id": "Pariah:Ly",
+        "via_morphism_id": "mor:Pariah:J3->Pariah:Ly:hard_wall_landing_template",
+        "status": "legal",
+        "condition_json": "{\"status\": \"conceptual scaffold\"}",
+        "obstruction_json": "{}",
+        "hash": "5d8e9a08195733d89bbbd4e32277ce7d700ebe42df57d52f7ccc76cc9490dbf3"
+      },
+      {
+        "edge_id": "edge:Pariah:ON->Pariah:J4:hard_wall_landing_template",
+        "source_id": "Pariah:ON",
+        "target_id": "Pariah:J4",
+        "via_morphism_id": "mor:Pariah:ON->Pariah:J4:hard_wall_landing_template",
+        "status": "legal",
+        "condition_json": "{\"status\": \"conceptual scaffold\"}",
+        "obstruction_json": "{}",
+        "hash": "f52a932218184cf2490cee260503e696c3d74a7b73d298e9c001d1a5954ea941"
+      },
+      {
+        "edge_id": "edge:Pariah:ON->Pariah:Ly:hard_wall_landing_template",
+        "source_id": "Pariah:ON",
+        "target_id": "Pariah:Ly",
+        "via_morphism_id": "mor:Pariah:ON->Pariah:Ly:hard_wall_landing_template",
+        "status": "legal",
+        "condition_json": "{\"status\": \"conceptual scaffold\"}",
+        "obstruction_json": "{}",
+        "hash": "042aca485906405723fbab591ccce4840ac7a9e6d6ab4a9a3c828466a0b437ca"
+      },
+      {
+        "edge_id": "edge:Pariah:Ru->Pariah:J4:hard_wall_landing_template",
+        "source_id": "Pariah:Ru",
+        "target_id": "Pariah:J4",
+        "via_morphism_id": "mor:Pariah:Ru->Pariah:J4:hard_wall_landing_template",
+        "status": "legal",
+        "condition_json": "{\"status\": \"conceptual scaffold\"}",
+        "obstruction_json": "{}",
+        "hash": "5241aa76f8da27c6d3483e93d13886bcdd973477ed410564d38ee3052c4c28b9"
+      },
+      {
+        "edge_id": "edge:Pariah:Ru->Pariah:Ly:hard_wall_landing_template",
+        "source_id": "Pariah:Ru",
+        "target_id": "Pariah:Ly",
+        "via_morphism_id": "mor:Pariah:Ru->Pariah:Ly:hard_wall_landing_template",
+        "status": "legal",
+        "condition_json": "{\"status\": \"conceptual scaffold\"}",
+        "obstruction_json": "{}",
+        "hash": "dfbfeb1faa47bea4f33d7e93728ef54c01f43d7f1dc86a1fc22afa54a5d1e9fc"
+      }
+    ],
+    "pariah_morphism_count": 12,
+    "prime_profile_count": 7,
+    "construction_status_count": 7
   },
   "checks": {
     "inherits_t10_observer_center": true,
+    "t10_master_receipt_passes": true,
+    "trusted_spectrum_binds_p00_to_p10": true,
+    "k_max_is_nebe_bound": true,
+    "mass_gate_admits_inside_window": true,
+    "mass_gate_routes_trusted_k10_to_boundary": true,
+    "mass_gate_rejects_untrusted_mass": true,
     "encoder_declared": true,
     "pariah_count_is_six": true,
+    "pariah_objects_are_local_lattice_forge_ledger": true,
+    "monster_partition_metadata_is_local": true,
+    "structural_pariah_exit_routes_are_local": true,
+    "hard_pariah_landing_routes_are_local": true,
+    "pariah_prime_profiles_are_local": true,
     "happy_family_count_is_twenty": true,
     "pariah_signature_closed": true,
     "happy_family_signature_open": true,
     "three_outlet_gate_exercised": true,
+    "boundary_receipt_outlets_exercised": true,
     "pariahs_route_to_boundary": true,
     "happy_family_open_is_datum_not_dismissal": true,
     "proof_sources_present": true
   },
-  "verdicts": {
+  "mass_gate_verdicts": {
+    "native_inside_window": "admitted",
+    "trusted_k_boundary": "boundary",
+    "untrusted_external": "rejected"
+  },
+  "boundary_case_verdicts": {
     "pariah": "boundary",
     "happy_family": "rejected_as_datum",
     "admitted_control": "admitted"
@@ -48,22 +245,6 @@
       "bit_length_parity": 0
     },
     {
-      "id": "Pariah:ON",
-      "name": "O'Nan O'N",
-      "type": "structural",
-      "order_factorization": "2^9*3^4*5*7^3*11*19*31",
-      "bit_length": 39,
-      "bit_length_parity": 1
-    },
-    {
-      "id": "Pariah:Ru",
-      "name": "Rudvalis Ru",
-      "type": "structural",
-      "order_factorization": "2^14*3^3*5^3*7*13*29",
-      "bit_length": 38,
-      "bit_length_parity": 0
-    },
-    {
       "id": "Pariah:J4",
       "name": "Janko J4",
       "type": "hard",
@@ -77,6 +258,22 @@
       "type": "hard",
       "order_factorization": "2^8*3^7*5^6*7*11*31*37*67",
       "bit_length": 56,
+      "bit_length_parity": 0
+    },
+    {
+      "id": "Pariah:ON",
+      "name": "O'Nan O'N",
+      "type": "structural",
+      "order_factorization": "2^9*3^4*5*7^3*11*19*31",
+      "bit_length": 39,
+      "bit_length_parity": 1
+    },
+    {
+      "id": "Pariah:Ru",
+      "name": "Rudvalis Ru",
+      "type": "structural",
+      "order_factorization": "2^14*3^3*5^3*7*13*29",
+      "bit_length": 38,
       "bit_length_parity": 0
     }
   ],
@@ -267,7 +464,15 @@
   },
   "falsifiers": [
     {
-      "claim": "Admission is encoder-independent",
+      "claim": "A verdict from one declared encoder may be generalized without a new receipt",
+      "accepted": false
+    },
+    {
+      "claim": "A theory may enter without T10 trust-anchor receipt",
+      "accepted": false
+    },
+    {
+      "claim": "A trusted mass above K=9 is admitted without a boundary receipt",
       "accepted": false
     },
     {
@@ -283,5 +488,5 @@
       "accepted": false
     }
   ],
-  "scope_boundary": "Paper 11 proves the admission gate and the encoder-bound Pariah/Happy-Family classification receipt. It does not prove encoder independence or a new finite-group theorem."
+  "scope_boundary": "Paper 11 proves the T10-anchored Gluon mass admission gate at K=9 and includes the encoder-bound Pariah/Happy-Family boundary case. It does not permit unreceipted entry, erase K-boundary cases, or turn a worked encoder verdict into an untested universal verdict."
 }
