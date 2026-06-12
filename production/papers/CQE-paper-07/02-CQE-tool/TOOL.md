@@ -1,9 +1,11 @@
-# Paper 07 — Tool: Discrete-Continuous Bridge Verifier
+# Paper 07 - Tool: Discrete-Continuous Bridge Verifier
 
 ## Module
+
 `cqe_engine.bridge`
 
 ## Public Surface
+
 ```python
 from cqe_engine.bridge import (
     verify_bridge_exactness,
@@ -16,43 +18,81 @@ from cqe_engine.bridge import (
 ## Verifiers
 
 ### verify_bridge_exactness(max_depth=4096)
-Verifies the discrete→continuous interpolation at every depth ≤ max_depth.
-Returns: `{"status": "pass"|"fail", "total_depths": int, "max_error": Fraction, "claim": str}`
-At max_depth=4096: 4096 depths, max_error = 0 (exact).
+
+Verifies that the discrete-to-continuous bridge preserves every indexed sample
+point exactly. This is a sample-preservation theorem, not a proof of the unique
+physical dynamics between samples.
+
+Returns:
+
+```python
+{
+    "status": "pass" | "fail",
+    "max_sample_error": Fraction,
+    "between_sample_dynamics_closed": bool,
+    "claim": str,
+}
+```
+
+At indexed samples, `max_sample_error = 0`. Between-sample dynamics remain an
+explicit obligation unless a later theorem closes them.
 
 ### verify_rule90_linearization()
-Verifies Rule 30 = Rule 90 ⊕ correction at all 8 states + all depths.
-Returns: `{"status": "pass", "identity_holds": True, "lucas_matches": True}`
+
+Verifies the local identity:
+
+```text
+Rule30(L,C,R) = Rule90(L,R) xor (C and not R)
+```
+
+Returns:
+
+```python
+{"status": "pass", "identity_holds": True}
+```
 
 ### BridgeInterpolator
-Interpolates discrete causal edges to continuous transport fields:
+
+Interpolates indexed discrete edge states to a continuous presentation field.
+
 ```python
 interp = BridgeInterpolator()
 field = interp.interpolate(causal_edge, resolution=0.001)
-# field: continuous transport field
 ```
 
+The field is a view of the discrete receipt structure, not a replacement for
+the discrete proof.
+
 ## CLI
+
 ```bash
-python -m cqe_engine.bridge                          # runs verify_bridge_exactness
-python -m cqe_engine.bridge interpolate 128          # bridge at depth 128
-python -m cqe_engine.bridge l90                      # verifies R90 linearization
+python -m cqe_engine.bridge
+python -m cqe_engine.bridge interpolate 128
+python -m cqe_engine.bridge l90
 ```
 
 ## Receipts
-Written to `proof-receipts/CQE-paper-07/bridge-<timestamp>.json`
+
+Current polished receipt:
+
+```text
+production/formal-papers/CQE-paper-07/discrete_continuous_bridge_receipt.json
+```
 
 ## Example Result
+
 ```json
 {
   "paper_id": "CQE-paper-07",
-  "theorems": ["T_BRIDGE", "T_R90_LINEARIZATION", "T_R30_DECOMP"],
+  "theorems": ["T_SAMPLE_PRESERVING_BRIDGE", "T_R30_DECOMP"],
   "all_passed": true,
-  "max_interpolation_error": 0,
-  "lucas_exactness": true
+  "max_sample_error": 0,
+  "rule30_rule90_correction_identity_holds": true,
+  "between_sample_dynamics_closed": false
 }
 ```
 
 ---
 
-*This tool IS the proof of the bridge theorems. Running it discharges every Paper 07 obligation.*
+*This tool proves the indexed sample bridge and preserves the Rule 30 / Rule 90
+correction identity. It does not discharge every Paper 07 obligation.*

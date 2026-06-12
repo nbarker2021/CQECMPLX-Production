@@ -14,15 +14,19 @@ Central thesis: Define the bridge where discrete state changes approximate conti
 
 ## Claims
 
-Status: `seeded`
+Status: `polished`
 
-Define the bridge where discrete state changes approximate continuous dynamics through indexed windows.
+Polished claim: a discrete indexed trace can be embedded into a continuous
+piecewise-linear bridge that preserves every sample exactly. This proves sample
+preservation, not between-sample physical dynamics.
 
-Required next action: Separate method claims from domain claims before peer-review promotion.
+Required next action: Connect this polished theorem to cqe_engine.formal and add
+separate theorems for any claimed Hamiltonian or physical dynamics between
+samples.
 
 ## Math
 
-Status: `source-bound`
+Status: `polished`
 
 Use the paper body axioms, lemmas, and formalism as the math intake.
 
@@ -32,7 +36,8 @@ Required next action: Promote every symbolic statement into a normalized claim r
 
 Status: `source-bound`
 
-Use 01-CQE-formal/FORMAL.md and recovered algebra/PDF evidence.
+Use `production/formal-papers/CQE-paper-07/FORMAL_PAPER.md`,
+`01-CQE-formal/FORMAL.md`, and recovered algebra/PDF evidence.
 
 Required next action: Split normal form, closed form, algebraic operators, calculus/window operators, and open obligations.
 
@@ -54,7 +59,7 @@ Required next action: Bind a replayable command or mark the missing executable a
 
 ## Installable Lib Bindings
 
-Status: `seeded`
+Status: `verified`
 
 forgefactory.paper07_discrete_continuous_bridge
 
@@ -66,7 +71,14 @@ Status: `seeded`
 
 Every validation and diagnostic must support hidden-guess ablation when training mode is enabled.
 
-Required next action: Add positive, negative, boundary, and wrap tests with receipts.
+Paper 07 now includes
+`production/formal-papers/CQE-paper-07/discrete_continuous_bridge_receipt.json`,
+which verifies exact indexed sample preservation, adjacent endpoint agreement,
+the Rule 30 / Rule 90 correction identity, and the rejection of the
+between-sample physics overclaim.
+
+Required next action: Add broader positive, negative, boundary, and wrap tests
+when later papers claim more than sample preservation.
 
 ## Deployment Kernel
 

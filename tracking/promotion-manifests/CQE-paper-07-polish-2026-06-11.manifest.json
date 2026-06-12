@@ -1,0 +1,32 @@
+{
+  "paper_id": "CQE-paper-07",
+  "title": "Discrete-Continuous Bridge",
+  "promotion_date": "2026-06-11",
+  "status": "polished_with_open_obligations",
+  "validated_claims": [
+    "Every finite numeric discrete trace admits a continuous piecewise-linear bridge preserving indexed samples exactly.",
+    "Adjacent bridge segments share endpoints at integer samples.",
+    "The Rule 30 / Rule 90 correction identity remains valid on all eight local LCR states."
+  ],
+  "rejected_overclaims": [
+    "Sample-preserving interpolation proves all between-sample physical dynamics."
+  ],
+  "open_obligations": [
+    "Wire verify_discrete_continuous_bridge into cqe_engine.formal.",
+    "Add separate theorems for any Hamiltonian or physical dynamics claimed between samples.",
+    "Carry bridge residuals into later closure papers only as obligations until separately verified."
+  ],
+  "artifacts": [
+    "production/formal-papers/CQE-paper-07/FORMAL_PAPER.md",
+    "production/formal-papers/CQE-paper-07/verify_discrete_continuous_bridge.py",
+    "production/formal-papers/CQE-paper-07/discrete_continuous_bridge_receipt.json",
+    "production/paper-kernels/papers/CQE-paper-07/PAPER_KERNEL.md",
+    "production/papers/CQE-paper-07/02-CQE-tool/TOOL.md",
+    "production/papers/CQE-paper-07/03-CQE-workbook/WORKBOOK.md"
+  ],
+  "training_mode": {
+    "hidden_guess_ablation_required": true,
+    "default_when_training_mode_enabled": true
+  },
+  "notes": "Paper 07 is deliberately scoped to sample preservation. Between-sample physical interpretation is preserved as a black obligation until a later theorem closes it."
+}

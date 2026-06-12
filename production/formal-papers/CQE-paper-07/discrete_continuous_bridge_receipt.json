@@ -1,0 +1,67 @@
+{
+  "paper": "CQE-paper-07",
+  "theorem": "Sample-preserving discrete-continuous bridge",
+  "status": "pass",
+  "checks": {
+    "integer_samples_preserved": true,
+    "max_sample_error_is_zero": true,
+    "adjacent_segments_share_endpoints": true,
+    "rule30_rule90_correction_identity_holds": true,
+    "between_sample_physics_left_as_obligation": true
+  },
+  "trace": [
+    0,
+    1,
+    1,
+    0,
+    1,
+    0,
+    0,
+    1
+  ],
+  "sample_errors": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "midpoint_examples": [
+    {
+      "t": 0.5,
+      "value": 0.5
+    },
+    {
+      "t": 1.5,
+      "value": 1.0
+    },
+    {
+      "t": 2.5,
+      "value": 0.5
+    },
+    {
+      "t": 3.5,
+      "value": 0.5
+    },
+    {
+      "t": 4.5,
+      "value": 0.5
+    },
+    {
+      "t": 5.5,
+      "value": 0.0
+    },
+    {
+      "t": 6.5,
+      "value": 0.5
+    }
+  ],
+  "falsifier": {
+    "claim": "sample-preserving interpolation proves all between-sample physics",
+    "accepted": false
+  },
+  "scope_boundary": "Exact at indexed samples; between-sample physical dynamics require a separate theorem."
+}
