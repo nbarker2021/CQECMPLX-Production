@@ -23,7 +23,10 @@ Status meanings:
 | 0.25 | review-source | Toolkit draft present; expand as first-section support. |
 | 0.50 | review-source | Claim contract draft present; expand Merkle/link review rules. |
 | 0.75 | review-source | Application/precondition draft present; expand examples. |
-| 1 | promoted-formal | Rewrite to remove support-layer narration from the integer paper. |
+| 1 | review-source | Strict scientific rewrite present; companion supports drafted. |
+| 1.25 | review-source | LCR toolkit supplement present. |
+| 1.50 | review-source | LCR claim contract supplement present. |
+| 1.75 | review-source | LCR next-state precondition supplement present. |
 | 2 | promoted-formal | Rewrite to strict scientific paper form. |
 | 3 | promoted-formal | Rewrite to strict scientific paper form. |
 | 4 | promoted-formal | Rewrite to strict scientific paper form. |
@@ -66,5 +69,6 @@ N.50 claim contract / linked review
 N.75 application as next-state precondition
 ```
 
-The first interval has initial drafts for `0.25`, `0.50`, and `0.75`. Future
-interval companions remain `companion-needed` until drafted and built.
+The first interval has drafts for `0.25`, `0.50`, `0.75`, `1.25`, `1.50`,
+and `1.75`. Future interval companions remain `companion-needed` until
+drafted and built.

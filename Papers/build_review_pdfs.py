@@ -374,6 +374,11 @@ def main() -> None:
     if not papers:
         raise SystemExit("No promoted formal papers found.")
 
+    if not args.paper:
+        out_dir.mkdir(parents=True, exist_ok=True)
+        for stale in out_dir.glob("CQE-paper-*.pdf"):
+            stale.unlink()
+
     built = []
     for paper in papers:
         path = build_pdf(paper, out_dir)

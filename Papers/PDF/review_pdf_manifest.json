@@ -1,6 +1,6 @@
 {
   "built_on": "2026-06-12",
-  "paper_count": 36,
+  "paper_count": 39,
   "outputs": [
     {
       "paper": "CQE-paper-00",
@@ -28,9 +28,27 @@
     },
     {
       "paper": "CQE-paper-01",
-      "title": "Paper 01 - LCR Chain Carrier",
-      "pdf": "Papers\\PDF\\CQE-paper-01_paper-01-lcr-chain-carrier.pdf",
-      "bytes": 10829
+      "title": "Paper 1 - LCR Chain Carrier",
+      "pdf": "Papers\\PDF\\CQE-paper-01_paper-1-lcr-chain-carrier.pdf",
+      "bytes": 10493
+    },
+    {
+      "paper": "CQE-paper-01.25",
+      "title": "Paper 1.25 - Toolkit for the LCR Carrier",
+      "pdf": "Papers\\PDF\\CQE-paper-01.25_paper-1-25-toolkit-for-the-lcr-carrier.pdf",
+      "bytes": 4377
+    },
+    {
+      "paper": "CQE-paper-01.50",
+      "title": "Paper 1.50 - LCR Claim Contract",
+      "pdf": "Papers\\PDF\\CQE-paper-01.50_paper-1-50-lcr-claim-contract.pdf",
+      "bytes": 4151
+    },
+    {
+      "paper": "CQE-paper-01.75",
+      "title": "Paper 1.75 - LCR as Next-State Precondition",
+      "pdf": "Papers\\PDF\\CQE-paper-01.75_paper-1-75-lcr-as-next-state-precondition.pdf",
+      "bytes": 4055
     },
     {
       "paper": "CQE-paper-02",
