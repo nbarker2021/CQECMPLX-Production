@@ -1,5 +1,5 @@
 {
-  "version": "0.14.0",
+  "version": "0.15.0",
   "generated": "2026-06-12",
   "kernel": "cqekernel",
   "forge_ring": "cqecmplx-forge",
@@ -336,6 +336,24 @@
       "source_product": "historical_pastworks/product_authentica (core distilled)",
       "adjudicated_divergence": "global sequence counter removed (explicit param); check digit shown constant-2 (not independent); QR codec rewritten for unbounded d5; API/SDK stay product-side",
       "receipt": "production/formal-papers/CQE-paper-08/lattice_code_closure_receipt.json",
+      "verify_status": "10/10"
+    },
+    "E8Forge": {
+      "type": "engine",
+      "role": "Exact E8 lattice: membership in doubled integer coordinates, 240 roots (112+128), closure receipts, algorithmic simple system, Cartan/Dynkin verification",
+      "algebra_deps": [
+        "E8",
+        "EvenUnimodular",
+        "WeylE8",
+        "CartanMatrix",
+        "Dynkin"
+      ],
+      "cli_entry": "E8Forge.verify",
+      "paper_ref": "CQE-paper-08",
+      "source": "production/packages/cqecmplx-forge/src/E8Forge/",
+      "source_repo": "nbarker2021/CMPLXUNI (lfai/cona_e8.py surrogate adjudicated, lattice/e8.py made stdlib-exact)",
+      "adjudicated_divergence": "lfai constructionA_E8_check surrogate provably rejects all 112 integer roots and cannot represent half-integer roots; replaced with exact membership",
+      "receipt": "production/formal-papers/CQE-paper-08/e8_even_lattice_receipt.json",
       "verify_status": "10/10"
     }
   },

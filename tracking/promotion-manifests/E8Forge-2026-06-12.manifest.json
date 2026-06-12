@@ -1,0 +1,61 @@
+{
+  "item_id": "E8Forge",
+  "promotion_date": "2026-06-12",
+  "status": "forge_promoted",
+  "identity": {
+    "forge": "E8Forge",
+    "type": "engine",
+    "role": "Exact E8 lattice membership, roots, and closure receipts",
+    "paper_ref": "CQE-paper-08",
+    "registry_version": "0.15.0"
+  },
+  "pattern": "complete-unformalized work -> formalization in paper-bound space -> Forge",
+  "source_work": {
+    "repo": "nbarker2021/CMPLXUNI",
+    "local_clone": "D:/CQE_CMPLX/g/CMPLXUNI",
+    "state_before": "E8 structure split across lfai/cona_e8.py (self-declared surrogate legality check used by ingress and the OctetExecutor 8-lane) and src/cmplx/lattice/e8.py (real root system, numpy-bound, self-trusting); never formalized, no forge",
+    "core_modules_distilled": [
+      "lfai/cona_e8.py (adjudicated, replaced)",
+      "src/cmplx/lattice/e8.py (made stdlib-exact)"
+    ]
+  },
+  "adjudicated_divergence": [
+    "the lfai surrogate's conditions (sum even, sum of squares even, sum of squares mod 8 == 0) are provably NOT E8 membership: the mod-8 condition rejects all 112 integer roots (+-1,+-1,0^6) whose sum of squares is 2, and the integer-only API cannot represent the 128 half-integer roots — verified as check 10, every octet that passed through lfai ingress was judged by a non-E8 gate",
+    "e8.py's float/numpy norms replaced by exact doubled-integer coordinates (u = 2v): membership is u all-even or all-odd with sum(u) == 0 mod 4",
+    "lfai/ledger_merkle.py chain logic is sound but hardcodes /mnt/data; ledger receipts remain ChromaForge territory"
+  ],
+  "validated_claims": [
+    "Exactly 240 roots, split 112 integer + 128 half-integer, no duplicates.",
+    "Every root is an E8 member of norm^2 = 2.",
+    "Half-integer roots have an even number of minus signs.",
+    "|W(E8)| = 696,729,600 = 4!*6!*8! = 2^14 * 3^5 * 5^2 * 7.",
+    "Root inner products lie in {-2,-1,0,1,2}; -2 only at antipodes.",
+    "The lattice closes under root addition (all 57,600 pairs).",
+    "Root pair sums are even vectors with norm^2 in {0,2,4,6,8}.",
+    "The minimum norm^2 is 2 — no E8 vector of norm^2 = 1 (exhaustive in doubled coordinates).",
+    "An algorithmically derived simple system of 8 roots has Cartan diagonal 2, off-diagonal in {0,-1}, determinant 1, and degree sequence [1,1,1,2,2,2,2,3] — the E8 Dynkin diagram.",
+    "The CMPLXUNI surrogate rejects all 112 integer roots — it is not E8 membership."
+  ],
+  "honesty_boundary": "The Weyl order is verified as an arithmetic identity, not by group enumeration. Unimodularity is implied by the Cartan determinant but deserves a basis-level Gram receipt. Sphere-packing optimality (Viazovska) is cited mathematics, not claimed by this verifier.",
+  "artifacts": [
+    "production/packages/cqecmplx-forge/src/E8Forge/__init__.py",
+    "production/formal-papers/CQE-paper-08/verify_e8_even_lattice.py",
+    "production/formal-papers/CQE-paper-08/e8_even_lattice_receipt.json",
+    "FORGE_REGISTRY.json (v0.15.0, 25 forges)",
+    "production/packages/cqecmplx-forge/FORGE_REGISTRY.json",
+    "production/packages/cqekernel/FORGE_REGISTRY.json"
+  ],
+  "verification": {
+    "command": "python production/formal-papers/CQE-paper-08/verify_e8_even_lattice.py",
+    "result": "pass 10/10",
+    "receipt": "production/formal-papers/CQE-paper-08/e8_even_lattice_receipt.json"
+  },
+  "open_obligations": [
+    "Chamber-counting receipt for the Weyl order.",
+    "Basis-level Gram determinant receipt for unimodularity.",
+    "Patch CMPLXUNI lfai ingress/octet to call E8Forge exact membership instead of the surrogate (upstream fix in the source repo).",
+    "Leech lattice constants in CMPLX (kissing number 196560) as the next profile-repo candidate.",
+    "CMPLXUNI ledger_merkle path parameterization upstream."
+  ],
+  "notes": "Sixth instance of the promotion pattern; first from the profile repo lane (user directive 2026-06-12: focus on profile repos next). The surrogate finding matters operationally: CMPLXUNI's LFAI ingress and OctetExecutor judged octet legality with a gate that rejects every true integer E8 root."
+}
