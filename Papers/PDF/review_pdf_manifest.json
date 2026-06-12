@@ -1,6 +1,6 @@
 {
   "built_on": "2026-06-12",
-  "paper_count": 60,
+  "paper_count": 63,
   "outputs": [
     {
       "paper": "CQE-paper-00",
@@ -220,9 +220,27 @@
     },
     {
       "paper": "CQE-paper-09",
-      "title": "Paper 09 - Hamiltonian Window Emergence",
-      "pdf": "Papers\\PDF\\CQE-paper-09_paper-09-hamiltonian-window-emergence.pdf",
-      "bytes": 7147
+      "title": "Paper 9 - Hamiltonian Window Emergence",
+      "pdf": "Papers\\PDF\\CQE-paper-09_paper-9-hamiltonian-window-emergence.pdf",
+      "bytes": 6700
+    },
+    {
+      "paper": "CQE-paper-09.25",
+      "title": "Paper 9.25 - Toolkit for Hamiltonian Window Emergence",
+      "pdf": "Papers\\PDF\\CQE-paper-09.25_paper-9-25-toolkit-for-hamiltonian-window-emergence.pdf",
+      "bytes": 4543
+    },
+    {
+      "paper": "CQE-paper-09.50",
+      "title": "Paper 9.50 - Hamiltonian Window Claim Contract",
+      "pdf": "Papers\\PDF\\CQE-paper-09.50_paper-9-50-hamiltonian-window-claim-contract.pdf",
+      "bytes": 4506
+    },
+    {
+      "paper": "CQE-paper-09.75",
+      "title": "Paper 9.75 - Hamiltonian Window Emergence as Next-State Precondition",
+      "pdf": "Papers\\PDF\\CQE-paper-09.75_paper-9-75-hamiltonian-window-emergence-as-next-state-precondition.pdf",
+      "bytes": 4328
     },
     {
       "paper": "CQE-paper-10",

@@ -55,7 +55,10 @@ Status meanings:
 | 8.25 | review-source | Lattice-closure toolkit supplement present. |
 | 8.50 | review-source | Lattice-closure claim contract supplement present. |
 | 8.75 | review-source | Lattice-closure next-state precondition supplement present. |
-| 9 | promoted-formal | Rewrite to strict scientific paper form. |
+| 9 | review-source | Strict scientific rewrite present; companion supports drafted. |
+| 9.25 | review-source | Hamiltonian-window toolkit supplement present. |
+| 9.50 | review-source | Hamiltonian-window claim contract supplement present. |
+| 9.75 | review-source | Hamiltonian-window next-state precondition supplement present. |
 | 10 | promoted-formal | Rewrite to strict scientific paper form. |
 | 11 | promoted-formal | Rewrite to strict scientific paper form. |
 | 12 | fallback-body | Promote from production body into strict scientific paper. |
