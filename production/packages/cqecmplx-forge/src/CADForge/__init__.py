@@ -14,6 +14,7 @@ from WireBlockEngine import (
     initialize_design,
     tweak,
 )
+from CADForge.solidworks_adapter import emit_solidworks_vba, export_solidworks_adapter
 
 
 class CADForgeBuilder:
@@ -38,14 +39,17 @@ class CADForgeBuilder:
         out.mkdir(parents=True, exist_ok=True)
         design_path = out / "cadforge_design.json"
         receipt_path = out / "wireblock_receipt.json"
+        solidworks_path = out / "solidworks_wireblock_import.bas"
         walkthrough_path = out / "walkthrough.md"
         receipt = self.receipt()
         design_path.write_text(json.dumps(self.design, indent=2, sort_keys=True), encoding="utf-8")
         receipt_path.write_text(json.dumps(receipt, indent=2, sort_keys=True), encoding="utf-8")
+        export_solidworks_adapter(receipt, solidworks_path)
         walkthrough_path.write_text(render_walkthrough(self.design), encoding="utf-8")
         return {
             "design": str(design_path),
             "receipt": str(receipt_path),
+            "solidworks_macro": str(solidworks_path),
             "walkthrough": str(walkthrough_path),
         }
 
@@ -109,6 +113,8 @@ __all__ = [
     "CADForgeBuilder",
     "create_design",
     "demo_design",
+    "emit_solidworks_vba",
+    "export_solidworks_adapter",
     "families",
     "render_walkthrough",
 ]

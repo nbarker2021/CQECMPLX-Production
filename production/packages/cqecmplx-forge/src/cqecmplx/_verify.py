@@ -53,6 +53,13 @@ def main() -> int:
         return False
     run("WireBlock rejects illegal attachable", _wireblock_reject_check)
 
+    def _solidworks_adapter_check():
+        from cqecmplx.engines.cad import CADForgeBuilder, emit_solidworks_vba
+        receipt = CADForgeBuilder("panel_bracket").attach("rib").receipt()
+        macro = emit_solidworks_vba(receipt)
+        return "Sub CADForgeWireBlockImport()" in macro and "CreateLine" in macro
+    run("SolidWorks adapter macro emission", _solidworks_adapter_check)
+
     def _lifecycle_check():
         import tempfile, os
         e = chroma.ChromaForgeEngine()

@@ -65,6 +65,21 @@ receipt = builder.receipt()
 This produces a legal graph receipt. Illegal attachables, illegal anchor nodes,
 out-of-range variables, and uninitialized design states are rejected.
 
+## SolidWorks Wrapper Path
+
+CADForge is also designed as a wrapper around existing professional CAD tools,
+starting with SolidWorks. The first adapter exports a `.bas` VBA macro module
+from the WireBlock receipt. A SolidWorks user can import/run that macro to
+create a legal wire skeleton in a new part, then continue the normal SolidWorks
+workflow.
+
+```text
+CADForge design -> WireBlock receipt -> SolidWorks VBA macro -> SolidWorks part
+```
+
+This requires no custom SolidWorks add-in for the first stage: only this library
+and the generated adapter script.
+
 ## Product Ladder Context
 
 The same library supports simple and high-end products:
@@ -88,3 +103,5 @@ The same library supports simple and high-end products:
    stick as a small offline product.
 5. Add MetaForge bridge so `metamaterial_tile` designs can become physics
    candidates.
+6. Promote the SolidWorks macro adapter from wire skeleton import to named
+   dimensions, feature templates, and drawing/BOM metadata.

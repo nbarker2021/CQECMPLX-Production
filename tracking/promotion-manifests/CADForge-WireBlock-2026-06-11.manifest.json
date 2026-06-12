@@ -20,23 +20,27 @@
   ],
   "artifacts": [
     "production/packages/cqecmplx-forge/src/CADForge/__init__.py",
+    "production/packages/cqecmplx-forge/src/CADForge/solidworks_adapter.py",
     "production/packages/cqecmplx-forge/src/WireBlockEngine/__init__.py",
     "production/packages/cqecmplx-forge/src/cqecmplx/__init__.py",
     "production/packages/cqecmplx-forge/src/cqecmplx/_verify.py",
     "production/packages/cqecmplx-forge/src/rhenium_engine/registry.py",
     "production/packages/cqecmplx-forge/README.md",
-    "production/tool-families/CADForge-WireBlock/PROMOTION_SLICE_2026-06-11_CADFORGE_WIREBLOCK.md"
+    "production/tool-families/CADForge-WireBlock/PROMOTION_SLICE_2026-06-11_CADFORGE_WIREBLOCK.md",
+    "production/tool-families/CADForge-WireBlock/SOLIDWORKS_WRAPPER_ADAPTER.md"
   ],
   "verification": {
     "command": "PYTHONPATH=production/packages/cqecmplx-forge/src python -m cqecmplx._verify",
     "result": "9/9 passed",
     "cad_checks": [
       "CADForge legal initialized design",
-      "WireBlock rejects illegal attachable"
+      "WireBlock rejects illegal attachable",
+      "SolidWorks adapter macro emission"
     ]
   },
   "open_obligations": [
     "Add STEP/STL/DXF/SVG exporters.",
+    "Promote the SolidWorks adapter from sketch-skeleton macro generation to named dimension and feature-template generation.",
     "Add a visual web UI for family selection, anchor picking, attachable selection, and variable sliders.",
     "Resolve final CAD graph nodes through GraphStax.",
     "Bridge metamaterial_tile to MetaForge candidate evaluation.",
