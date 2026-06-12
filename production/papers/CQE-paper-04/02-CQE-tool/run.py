@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+
+## Proof/Exposure Hierarchy
+
+The proof-carrying content of this paper is the mathematics: the definitions, lemmas, constructions, examples, and receipts that establish the claimed transport. Paper 00, workbook sheets, analog tools, and open-obligation ledgers are supplemental validation and exposure layers. They exist to make the math inspectable, reproducible, and accessible without requiring a particular software stack. In the simplest case, the same state transitions can be marked with ordinary physical tokens, lines, or dirt; the point is not the material, but the preserved center, boundary, transform, residue, and receipt structure.
 """CQE-paper-04 Smoke Test — Boundary Repair Verifier."""
 from __future__ import annotations
 import os, sys
@@ -33,7 +37,7 @@ def main():
         SlotName.B: ("boundary repair rule", "paper04 spec", "binary+vector"),
         SlotName.L: ("left boundary", str(ROOT / "papers" / "CQE-paper-04" / "01-CQE-formal" / "FORMAL.md"), "binary"),
         SlotName.R: ("right boundary", str(ROOT / "papers" / "CQE-paper-04" / "03-CQE-workbook" / "WORKBOOK.md"), "binary"),
-        SlotName.W: ("workbook analogue", str(ROOT / "papers" / "CQE-paper-04" / "03-CQE-workbook" / "WORKBOOK.md"), "vector"),
+        SlotName.W: ("supplemental workbook analogue", str(ROOT / "papers" / "CQE-paper-04" / "03-CQE-workbook" / "WORKBOOK.md"), "vector"),
     }
     out_ribbon, receipt = transport(paper.ribbon, tool="paper04-boundary-repair", new_fills=new_fills, paper_id="CQE-paper-04")
     assert sorted(receipt.obligation_delta["closed"]) == ["B", "L", "R", "W"]

@@ -2,7 +2,11 @@
 
 ## Status
 
-Retrospective capstone / meta-walkthrough. It closes the corpus by showing that the entire presentation - every paper, tool, workbook sheet, and receipt - was one enacted `(L, C, R)` readout. It is explicitly NOT part of the proof stack: nothing in Papers 00-30 depends on it. It is the readout of the ribbon sweep prepared by Paper 30. Proof-facing in form for the LCR self-application; reflective in claim.
+Retrospective capstone / meta-walkthrough. It closes the corpus by showing that the entire presentation - every paper, tool, supplemental workbook sheet, and receipt - was one enacted `(L, C, R)` readout. It is explicitly NOT part of the proof stack: nothing in Papers 00-30 depends on it. It is the readout of the ribbon sweep prepared by Paper 30. Proof-facing in form for the LCR self-application; reflective in claim.
+
+## Proof/Exposure Hierarchy
+
+The proof-carrying content of this paper is the mathematics: the definitions, lemmas, constructions, examples, and receipts that establish the claimed transport. Paper 00, workbook sheets, analog tools, and open-obligation ledgers are supplemental validation and exposure layers. They exist to make the math inspectable, reproducible, and accessible without requiring a particular software stack. In the simplest case, the same state transitions can be marked with ordinary physical tokens, lines, or dirt; the point is not the material, but the preserved center, boundary, transform, residue, and receipt structure.
 
 ## Abstract
 
@@ -10,7 +14,7 @@ This is the closing reflection. The corpus began (Paper 00) by fixing a contract
 
 ## Central Thesis
 
-Retrospective walkthrough showing that the full presentation order, tools, papers, workbook sheets, and receipts were an enacted LCR process.
+Retrospective walkthrough showing that the full presentation order, tools, papers, supplemental workbook sheets, and receipts were an enacted LCR process.
 
 ## Scope Boundary
 
@@ -25,7 +29,7 @@ This paper claims only the retrospective identity: that the corpus presentation 
 - **Tool transform T**: the `cqe_engine` binding of each paper.
 - **Obligation set O / residue**: the open obligations and back-propagation targets carried forward.
 - **Enacted LCR process**: the corpus presentation read as a single chart sweep: thesis `C`, inherited `L`, forward `R`, same `B`, carried residue `O`.
-- **Receipt / Workbook sheet / Transport row**: as in Paper 00.
+- **Receipt / Supplemental workbook sheet / Transport row**: as in Paper 00.
 
 ## Axioms
 
@@ -35,7 +39,7 @@ Axiom 31.2 - Receipt Preservation: the corpus is replayable; every paper's recei
 
 Axiom 31.3 - Boundary Positivity: the corpus's open obligations are not failures of this paper; they are the right boundary `R` carried forward, exactly as the framework requires.
 
-Axiom 31.4 - Analog Equivalence: the corpus has one workbook analogue - the bound notebook of Paper 30's sweep, read once more from start to end.
+Axiom 31.4 - Analog Exposure Equivalence: the corpus has one supplemental workbook analogue - the bound notebook of Paper 30's sweep, read once more from start to end.
 
 ## Lemmas
 
@@ -79,7 +83,7 @@ claim (the corpus was one enacted LCR process)
 -> residue chain R_n -> L_{n+1}, never erased      [GROUNDED: every paper's back-prop]
 -> this paper is itself one such LCR window         [self-application]
 -> "the corpus is its own chart"                     [REFLECTION, not a new theorem]
--> workbook analogue (the bound notebook, re-walked)
+-> supplemental workbook analogue (the bound notebook, re-walked)
 -> receipt
 ```
 

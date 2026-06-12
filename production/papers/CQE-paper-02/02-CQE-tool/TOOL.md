@@ -1,5 +1,9 @@
 # Paper 02 — Tool: Correction Surface Verifier
 
+## Proof/Exposure Hierarchy
+
+The proof-carrying content of this paper is the mathematics: the definitions, lemmas, constructions, examples, and receipts that establish the claimed transport. Paper 00, workbook sheets, analog tools, and open-obligation ledgers are supplemental validation and exposure layers. They exist to make the math inspectable, reproducible, and accessible without requiring a particular software stack. In the simplest case, the same state transitions can be marked with ordinary physical tokens, lines, or dirt; the point is not the material, but the preserved center, boundary, transform, residue, and receipt structure.
+
 ## Tool Binding
 - Module: `forgefactory.paper02_correction_surface` (lineage)
 - CQE Engine: `cqe_engine.formal.verify_correction_surface` (white-room)

@@ -1,5 +1,13 @@
 # Paper 11 — Workbook: Theory Admission Gate Sheet
 
+## Workbook Role
+
+This workbook is supplemental validation and exposure material. It is not the paper's primary proof. It shows how the paper's mathematical state can be reconstructed with ordinary marks, tokens, strings, cards, or any equivalent physical substitute so that the proof remains inspectable even without software.
+
+## Proof/Exposure Hierarchy
+
+The proof-carrying content of this paper is the mathematics: the definitions, lemmas, constructions, examples, and receipts that establish the claimed transport. Paper 00, workbook sheets, analog tools, and open-obligation ledgers are supplemental validation and exposure layers. They exist to make the math inspectable, reproducible, and accessible without requiring a particular software stack. In the simplest case, the same state transitions can be marked with ordinary physical tokens, lines, or dirt; the point is not the material, but the preserved center, boundary, transform, residue, and receipt structure.
+
 ## Sheet ⇄ Tool Isomorphism
 
 | Analog Operation | Tool Function | Data Structure |
@@ -11,6 +19,7 @@
 | Batch verify | `gate.batch_verify()` | `List[result]` |
 
 ## Human Execution Protocol (Paper 11)
+
 ```
 1. Write theory's Gluon mass (compute from its transport)
 2. Look up trusted spectrum (from CmplxLookupCache)
@@ -21,16 +30,19 @@
 ```
 
 ## Tool Execution Protocol (identical)
+
 ```python
 gate = AdmissionGate(trusted_spectrum=CmplxLookupCache().load())
 result = gate.admit(theory_C)
 # result ∈ {"admitted", "boundary", "rejected"}
 
 # Batch
+
 results = gate.batch_verify([theory_A, theory_B, ...])
 ```
 
 ## Receipt (identical)
+
 ```
 admission-receipt =
   theory: <ID>

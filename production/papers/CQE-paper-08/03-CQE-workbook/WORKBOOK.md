@@ -1,5 +1,13 @@
 # Paper 08 — Workbook: E8/Niemeier/Leech Closure Sheet
 
+## Workbook Role
+
+This workbook is supplemental validation and exposure material. It is not the paper's primary proof. It shows how the paper's mathematical state can be reconstructed with ordinary marks, tokens, strings, cards, or any equivalent physical substitute so that the proof remains inspectable even without software.
+
+## Proof/Exposure Hierarchy
+
+The proof-carrying content of this paper is the mathematics: the definitions, lemmas, constructions, examples, and receipts that establish the claimed transport. Paper 00, workbook sheets, analog tools, and open-obligation ledgers are supplemental validation and exposure layers. They exist to make the math inspectable, reproducible, and accessible without requiring a particular software stack. In the simplest case, the same state transitions can be marked with ordinary physical tokens, lines, or dirt; the point is not the material, but the preserved center, boundary, transform, residue, and receipt structure.
+
 ## Sheet ⇄ Tool Isomorphism
 
 | Analog Operation | Tool Function | Data Structure |
@@ -14,6 +22,7 @@
 | Draw D72 Nebe | `NEBE_GENERATORS` | `Nebe_lattice (dim 72)` |
 
 ## Human Execution Protocol (Paper 08)
+
 ```
 1. Draw D1: 3-bit parity check matrix
 2. Draw D3: Hamming(7,4) ≡ Fano plane → octonion mult table
@@ -25,22 +34,27 @@
 ```
 
 ## Tool Execution Protocol (identical)
+
 ```python
 # 1. Verify each level
+
 verify_hamming_7_fano()
 verify_extended_hamming_8()
 verify_golay_24()
 
 # 2. Verify code chain
+
 verify_lattice_code_chain()
 
 # 3. Verify Nebe bound
+
 nebe = NebeLattice()
 assert nebe.A64_dim() == 64
 assert nebe.K_max() == 9
 ```
 
 ## Receipt (identical)
+
 ```
 closure-receipt =
   D1: parity_3 ✓

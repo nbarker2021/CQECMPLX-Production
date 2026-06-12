@@ -4,6 +4,10 @@
 
 HORIZON paper. Treats mass/residue as a carrier effect requiring local transport evidence and explicit obligations. The substrate-side constructions (the `F_2` Majorana-parity / Arf-invariant gluing, the `voa_weight` conformal-weight analog) are grounded in named modules. Every mass-generation / Higgs claim is a candidate hypothesis with a heavy obligation section. As in the umbrella's Discussion, this paper applies the substrate and does not claim to extend quantum field theory.
 
+## Proof/Exposure Hierarchy
+
+The proof-carrying content of this paper is the mathematics: the definitions, lemmas, constructions, examples, and receipts that establish the claimed transport. Paper 00, workbook sheets, analog tools, and open-obligation ledgers are supplemental validation and exposure layers. They exist to make the math inspectable, reproducible, and accessible without requiring a particular software stack. In the simplest case, the same state transitions can be marked with ordinary physical tokens, lines, or dirt; the point is not the material, but the preserved center, boundary, transform, residue, and receipt structure.
+
 ## Abstract
 
 In the transport contract, nothing is intrinsic until it is carried: a quantity exists for the corpus only as a *carrier effect* witnessed by a local readout and a receipt. This paper takes the candidate interpretation that *mass* — and more generally a *residue* surviving cancellation — is such a carrier effect, and demands local transport evidence plus explicit obligations before any physical reading. The substrate side is concrete. Rule 30's `GF(2)` transition `L + C + R + C·R` splits into a linear part `L+C+R` (Rule 90) and a bilinear obstruction `C·R`; that obstruction is, by definition, an `F_2` quadratic form, and `f2_majorana.py` attaches to it the Arf invariant, with the Majorana-parity `Z_2` grading of a Clifford algebra `Cl(n,0)` as its physical companion (fermion-parity superselection in spin chains / topological superconductors). The corpus's "mass" analog is the *correction residue*: the carry-firing term `C AND NOT R` that survives the skip-pad filter (PROOF Paper 16; `rule30_nth_bit.py`), and the `voa_weight` of `centroid_voa.py` provides a conformal-weight-like grading (`Z(q) = 2 q^0 + 6 q^5`: vacua at weight 0, excited states at weight 5). We read "mass = surviving residue weight" as the candidate carrier effect. The Higgs / mass-generation physics is a candidate hypothesis only; the obligation section is deliberately heavy. The contribution is a disciplined residue-as-carrier framing, not a claim about how particles acquire mass.
@@ -34,7 +38,7 @@ Axiom 15.2 - Receipt Preservation: every residue logs the cancellation it surviv
 
 Axiom 15.3 - Boundary Positivity: a residue that survives cancellation is data (a carrier effect), not noise to discard (Axiom 00.3).
 
-Axiom 15.4 - Analog Equivalence: the residue weight has a workbook analogue (a token whose color survives a fold-cancellation).
+Axiom 15.4 - Analog Exposure Equivalence: the residue weight has a supplemental workbook analogue (a token whose color survives a fold-cancellation).
 
 ## Lemmas
 
@@ -84,7 +88,7 @@ claim (mass/residue := surviving carrier effect, with obligations)
 -> mass := surviving residue weight (candidate carrier effect)
 -> physical mass / Higgs / EWSB => OBLIGATION (heavy) + falsifiers
 -> worked example (Rule 30 obstruction Arf + VOA weights)
--> workbook analogue (color surviving a fold-cancellation)
+-> supplemental workbook analogue (color surviving a fold-cancellation)
 -> receipt + obligation split
 ```
 

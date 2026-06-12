@@ -4,6 +4,10 @@
 
 Applied / constructive paper. It extends the board-game local-rule reading of Paper 24 (KnightForge) into arbitrary-dimensional lattices, using proven substrate objects as the chart operators. The local-rule and lattice-dimension content is grounded; the claim that any specific real game is "solved" by these operators is bounded to the demonstrated finite enumeration. Proof-facing in form.
 
+## Proof/Exposure Hierarchy
+
+The proof-carrying content of this paper is the mathematics: the definitions, lemmas, constructions, examples, and receipts that establish the claimed transport. Paper 00, workbook sheets, analog tools, and open-obligation ledgers are supplemental validation and exposure layers. They exist to make the math inspectable, reproducible, and accessible without requiring a particular software stack. In the simplest case, the same state transitions can be marked with ordinary physical tokens, lines, or dirt; the point is not the material, but the preserved center, boundary, transform, residue, and receipt structure.
+
 ## Abstract
 
 A board game is a local update rule on a lattice: a piece reads its neighborhood and writes a move. This is exactly the corpus chart: a center `C`, opposed boundary directions `L` and `R`, and a readout law selecting the next state. This paper builds N-dimensional local-rule games as chart operators over lattices whose dimensions are the *forced* code-tower parameters `1, 3, 7, 8, 24, 72` (`lattice_codes.verify_lattice_code_chain`). The move operator is an elementary cellular-automaton rule (`rule30._rule_emit`), the symmetry layer is the S_3 transposition group on `(L, C, R)` together with the four-frame Z4 attractor structure (`centroid_voa`), and the conjugate attractors are the four Lie-conjugate fixed states `{(0,0,0),(0,1,0),(1,0,1),(1,1,1)}` toward which every state anneals in at most three steps. The piece's "legal move set" is the orbit of its chart state under the S_3 / F_4 trace-2 action (`f4_action.S3_PERMUTATIONS`). We demonstrate the construction on a non-toy example - a robot under N-axis movement constraints with forbidden straight carriers - and bound the claim to the finite enumeration the tool can produce. We do not claim a general N-dimensional game-solving theorem; that is logged as obligation.
@@ -26,7 +30,7 @@ This paper claims (i) that a local-rule game on a lattice of one of the forced c
 - **Lattice dimension**: one of the forced code-tower values `1,3,7,8,24,72` (`lattice_codes`), each the unique perfect/extremal/self-dual code dimension at its scale.
 - **Conjugate attractor**: one of the four Lie conjugates `{(0,0,0),(0,1,0),(1,0,1),(1,1,1)}` (`centroid_voa.LIE_CONJUGATES`).
 - **Forbidden carrier**: a move direction excluded by the rule (e.g. a forbidden straight line), realized as a chart state outside the legal move orbit.
-- **Transport row / Receipt / Workbook sheet / Tool binding**: as in Paper 00.
+- **Transport row / Receipt / Supplemental workbook sheet / Tool binding**: as in Paper 00.
 
 ## Axioms
 
@@ -36,7 +40,7 @@ Axiom 28.2 - Receipt Preservation: every move logs its input neighborhood, outpu
 
 Axiom 28.3 - Boundary Positivity: an illegal or forbidden move is data; it becomes a logged constraint, not a silent deletion.
 
-Axiom 28.4 - Analog Equivalence: a main-corpus game has a physical workbook analogue (a board, tokens, and a move card).
+Axiom 28.4 - Analog Exposure Equivalence: a main-corpus game has a physical workbook analogue (a board, tokens, and a move card).
 
 ## Lemmas
 
@@ -78,7 +82,7 @@ claim (N-dim local-rule game as chart operator)
 -> admissible dimension forced (1,3,7,8,24,72)[PROVEN: verify_lattice_code_chain]
 -> worked example (N-axis robot, forbidden straights)
 -> "general N-dim game solver"                [OBLIGATION + falsifier]
--> workbook analogue (board + move card)
+-> supplemental workbook analogue (board + move card)
 -> receipt
 ```
 

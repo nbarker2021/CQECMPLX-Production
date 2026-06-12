@@ -4,6 +4,10 @@
 
 Horizon / speculative layer with explicit obligations. Connects a real scientific domain (protein structure and backbone topology) to the corpus substrate. The link (oloid winding number <-> backbone fold/knot invariant; chart sweep <-> contact map) is the contribution. No biological prediction is claimed as proven; predictive test against deposited structures is the central obligation, stated with a falsifier.
 
+## Proof/Exposure Hierarchy
+
+The proof-carrying content of this paper is the mathematics: the definitions, lemmas, constructions, examples, and receipts that establish the claimed transport. Paper 00, workbook sheets, analog tools, and open-obligation ledgers are supplemental validation and exposure layers. They exist to make the math inspectable, reproducible, and accessible without requiring a particular software stack. In the simplest case, the same state transitions can be marked with ordinary physical tokens, lines, or dirt; the point is not the material, but the preserved center, boundary, transform, residue, and receipt structure.
+
 ## Abstract
 
 A protein backbone is a one-dimensional chain that folds into a three-dimensional structure whose topology — including, rarely, genuine knots — is functionally significant. The corpus already carries a discrete topological invariant for a swept chain: the oloid winding number, computed by `rule30_oloid_winding_from_n` as the accumulated `2*pi` rotation of the rolling-oloid spinor frame along the chart, with an explicit `candidate_witness` status and an open all-`N` extraction gap. We propose registering a residue chain as a chart sweep, the residue-residue contact map as the receipt of that sweep, and the oloid winding / bifurcation trace as a *candidate topological descriptor* of the fold. The contribution is the registration map, not a folding engine: modern structure prediction (AlphaFold [AlphaFoldNature]) already attains high accuracy from sequence and coevolution, and predicts complex backbone knots [ProteinKnots]. The corpus does not compete with that; it asks a narrower, falsifiable question — does the substrate's winding/bifurcation trace correlate with topological features (contact order, knot type) of deposited structures? Every emitted fold descriptor is a candidate with a contact-map receipt and an obligation: validate against PDB structures or be rejected.
@@ -36,7 +40,7 @@ Axiom 23.2 - Receipt Preservation: no fold descriptor is accepted unless its con
 
 Axiom 23.3 - Boundary Positivity: a residue window that fails the contact threshold or the winding extractor is data — it becomes an obligation, never a silent deletion.
 
-Axiom 23.4 - Analog Equivalence: every accepted descriptor has a physical workbook analogue (a beaded string folded over a peg grid encoding contacts).
+Axiom 23.4 - Analog Exposure Equivalence: every accepted descriptor has a physical workbook analogue (a beaded string folded over a peg grid encoding contacts).
 
 ## Lemmas
 
@@ -76,7 +80,7 @@ claim (substrate emits candidate fold/topology descriptors)
 -> fold descriptor F (status: candidate_witness)
 -> PDB-validation obligation (OPEN, with falsifier)
 -> depth-only-extractor open gap (inherited)
--> workbook analogue (bead string + peg grid)
+-> supplemental workbook analogue (bead string + peg grid)
 -> receipt
 ```
 

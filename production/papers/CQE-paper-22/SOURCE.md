@@ -4,6 +4,10 @@
 
 Applied layer. Connects a real engineering domain (architected / mechanical metamaterials) to the corpus substrate. The link (substrate periodicity and fold geometry <-> metamaterial unit-cell design) is the contribution; physical fabrication and mechanical test of any proposed cell remain explicit obligations with falsifiers.
 
+## Proof/Exposure Hierarchy
+
+The proof-carrying content of this paper is the mathematics: the definitions, lemmas, constructions, examples, and receipts that establish the claimed transport. Paper 00, workbook sheets, analog tools, and open-obligation ledgers are supplemental validation and exposure layers. They exist to make the math inspectable, reproducible, and accessible without requiring a particular software stack. In the simplest case, the same state transitions can be marked with ordinary physical tokens, lines, or dirt; the point is not the material, but the preserved center, boundary, transform, residue, and receipt structure.
+
 ## Abstract
 
 Mechanical metamaterials derive bulk properties (stiffness, Poisson's ratio, wave dispersion) from the geometry of a repeated unit cell rather than from base-material chemistry. This is structurally the same move the corpus makes: a bulk readout is determined by a local `(L, C, R)` window swept across a periodic lattice. We propose using the corpus's morphonic machinery — the lattice ribbon as a periodic carrier, the bifurcation fold as a geometry-changing event, and the oloid as a curved scale-invariant structural element — as a *generator of candidate metamaterial unit cells* aimed at reducing material demand, waste, and extraction pressure relative to a solid-stock baseline. The contribution is the registration map from the substrate's fold taxonomy to standard metamaterial families (re-entrant / auxetic, chiral, beam-lattice). Each generated cell is a `candidate_witness`: it carries a receipt (predicted relative density, predicted Poisson-ratio sign, symmetry group) and an obligation (the cell has not been fabricated or load-tested). No claim is made that the corpus has solved metamaterial design; the claim is that the substrate supplies a disciplined candidate-enumeration channel whose outputs are falsifiable by finite-element simulation and laboratory test.
@@ -36,7 +40,7 @@ Axiom 22.2 - Receipt Preservation: no candidate cell is accepted unless its desc
 
 Axiom 22.3 - Boundary Positivity: a cell that fails a printability or connectivity check is data — it becomes an obligation or a correction-surface variant, never a silent deletion.
 
-Axiom 22.4 - Analog Equivalence: every accepted candidate has a physical workbook analogue (a folded-strip or tiled-token model that encodes the same wall orientations).
+Axiom 22.4 - Analog Exposure Equivalence: every accepted candidate has a physical workbook analogue (a folded-strip or tiled-token model that encodes the same wall orientations).
 
 ## Lemmas
 
@@ -76,7 +80,7 @@ claim (substrate enumerates lean metamaterial candidates)
 -> material-demand gate (rho_rel < solid baseline)
 -> FE-simulation obligation (OPEN)
 -> fabrication + load-test obligation (OPEN, with falsifier)
--> workbook analogue (folded strip / tiled tokens)
+-> supplemental workbook analogue (folded strip / tiled tokens)
 -> receipt
 ```
 

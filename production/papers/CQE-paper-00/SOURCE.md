@@ -4,6 +4,10 @@
 
 Foundational contract paper. Defines the corpus-wide substrate, vocabulary, and acceptance discipline that every later paper inherits. Proof-facing.
 
+## Proof/Exposure Hierarchy
+
+The proof-carrying content of this paper is the mathematics: the definitions, lemmas, constructions, examples, and receipts that establish the claimed transport. Paper 00, workbook sheets, analog tools, and open-obligation ledgers are supplemental validation and exposure layers. They exist to make the math inspectable, reproducible, and accessible without requiring a particular software stack. In the simplest case, the same state transitions can be marked with ordinary physical tokens, lines, or dirt; the point is not the material, but the preserved center, boundary, transform, residue, and receipt structure.
+
 ## Abstract
 
 This paper fixes the contract under which the entire corpus operates. Every claim in every later paper is a *transported state*: a local `(L, C, R)` readout window, an algebraic registration of that window into a known mathematical object, a transform that moves the registered state, and a replayable receipt that records the move together with any unresolved residue. The load-bearing object is the exceptional Jordan algebra `J_3(O)` of `3x3` Hermitian octonionic matrices and its automorphism group `F_4`; the load-bearing primitive is the chart-to-`J_3(O)` map `phi(L, C, R) = diag(L, C, R)`, under which the local readout law is exactly Wolfram's Rule 30. The contract's purpose is to make every downstream result a *transport of known theorems* onto a registered sequence, rather than a fresh claim requiring independent proof. Acceptance is local, receipts are mandatory, failures are data, and every main-corpus claim has a physical workbook analogue. Build-method details are retained only in appendices, receipts, and the Paper 31 meta-walkthrough.
@@ -14,7 +18,7 @@ Define the corpus-wide contract: every claim is a transported state with provena
 
 ## Scope Boundary
 
-This paper claims only the contract itself and the substrate definitions it rests on. It does not prove the downstream applications; it specifies the form every downstream proof or obligation must take. Any interpretation that exceeds what the tool, proof tree, citations, and workbook sheet can support is logged as an obligation rather than promoted to proof.
+This paper claims only the contract itself and the substrate definitions it rests on. It does not prove the downstream applications; it specifies the form every downstream proof result or audit residue must take. Any interpretation that exceeds what the math, proof tree, citations, tool receipts, and supplemental workbook evidence can support is logged as an obligation rather than promoted to proof.
 
 ## Definitions
 
@@ -26,7 +30,7 @@ This paper claims only the contract itself and the substrate definitions it rest
 - **C as the active center**: `C` is the center of the readout window — the local quantity preserved under the `L <-> R` reflection. `L` and `R` are the two opposed boundary directions read relative to `C`.
 - **Transport row**: a typed record carrying a claim, its source, the transform applied, the resulting state, and its obligation status.
 - **Receipt**: a replayable record of an operation — its inputs, output, and unresolved residue.
-- **Workbook sheet**: the analog (physical) realization of a proof state through color, token, string, page, and white/black follow-up.
+- **Supplemental workbook sheet**: the analog (physical) realization of a proof state through color, token, string, page, and white/black follow-up.
 - **Tool binding**: the ForgeFactory / lattice-forge module family that makes a paper executable and testable.
 
 ## Axioms
@@ -37,13 +41,13 @@ Axiom 00.2 - Receipt Preservation: no transform is accepted unless its inputs, o
 
 Axiom 00.3 - Boundary Positivity: failed, partial, or mismatched routes are data; they become obligations or correction surfaces, never silent deletions.
 
-Axiom 00.4 - Analog Equivalence: if a claim belongs to the main corpus, it must have a physical workbook analogue that encodes the same center, boundary, and obligation state.
+Axiom 00.4 - Analog Exposure Equivalence: if a claim belongs to the main corpus, it can be exposed through a physical workbook analogue that encodes the same center, boundary, and obligation state.
 
 ## Lemmas
 
 Lemma 00.1 - If a local state preserves `C` and records its `L/R` residue, it can be transported into a proof ledger without erasing unresolved alternatives. (Basis: the readout law depends only on `shell` and `side`, both reconstructible from `(L, C, R)`.)
 
-Lemma 00.2 - A tool output and a workbook sheet that encode the same center, boundary, and obligation state are equivalent receipts at different media layers.
+Lemma 00.2 - A tool output and a supplemental workbook sheet that encode the same center, boundary, and obligation state are equivalent receipts at different media layers.
 
 Lemma 00.3 - The readout law is Rule 30. (Verified by enumeration of all 8 chart states; see the truth table in Paper 01 and `IDENTITY_PAPER` Lemma 2.6.)
 
@@ -73,9 +77,9 @@ claim
 -> J_3(O) registration (phi)
 -> transported theorem (F_4 corollary) OR logged obligation
 -> worked example (non-toy)
--> workbook analogue
+-> supplemental workbook analogue
 -> receipt
--> proof / obligation split
+-> proof result / audit residue split
 ```
 
 ## Practical Solved Example

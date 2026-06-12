@@ -1,5 +1,9 @@
 # CQE Paper 32 — The Supervisor Cursor: Superpermutations as the Compressed Dimensional Action Graph
 
+## Proof/Exposure Hierarchy
+
+The proof-carrying content of this paper is the mathematics: the definitions, lemmas, constructions, examples, and receipts that establish the claimed transport. Paper 00, workbook sheets, analog tools, and open-obligation ledgers are supplemental validation and exposure layers. They exist to make the math inspectable, reproducible, and accessible without requiring a particular software stack. In the simplest case, the same state transitions can be marked with ordinary physical tokens, lines, or dirt; the point is not the material, but the preserved center, boundary, transform, residue, and receipt structure.
+
 **Series note.** Papers 00–31 built the substrate. Paper 32 opens the applied series: the methods of the corpus pointed at problems that look arbitrary from outside — and the demonstration that solving them produces working machinery (here: PermForge, the supervisor-cursor engine of ChromaBlend Studio) while the problem's own structure lands, term for term, inside the corpus mathematics.
 
 ## 1. The seemingly arbitrary application
@@ -79,6 +83,7 @@ Solving this "arbitrary" problem inside the corpus produced operational machiner
 - **O-32.4** — The ninth rung: formalize the universe-level asymptote of the ladder (lim log10 behavior) in the corpus's scale language.
 
 ## Citation chain
+
 - Chaffin, B. (2014): exhaustive minimality at n=5 — the octad.
 - Houston, R. (2014): SAT discovery 872 < 873 at n=6 — the chart walk is not minimal.
 - Houston, R., Pantone, J., Vatter, V. (2018): formalization of the lower bound n! + (n−1)! + (n−2)! + n − 3 (anonymous origin, 2011).

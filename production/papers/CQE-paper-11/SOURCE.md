@@ -4,6 +4,10 @@
 
 Admission-gate paper. Defines the discipline by which an external theory enters the corpus as a *transport candidate*, and how its closure result classifies it as admitted, boundary, or rejected - turning failures into boundary receipts rather than dismissals. Grounded in the Pariah/Happy-Family inversion (PROOF Paper 11). Proof-facing. Inherits the Paper 00 contract.
 
+## Proof/Exposure Hierarchy
+
+The proof-carrying content of this paper is the mathematics: the definitions, lemmas, constructions, examples, and receipts that establish the claimed transport. Paper 00, workbook sheets, analog tools, and open-obligation ledgers are supplemental validation and exposure layers. They exist to make the math inspectable, reproducible, and accessible without requiring a particular software stack. In the simplest case, the same state transitions can be marked with ordinary physical tokens, lines, or dirt; the point is not the material, but the preserved center, boundary, transform, residue, and receipt structure.
+
 ## Abstract
 
 This paper admits external theories as transport candidates whose failures become boundary receipts rather than summary dismissals. An external theory enters by an encoder that maps its objects to a binary tape (the worked case is *bit-length parity* of a group order), after which the same `n = 3` SU(3) Weyl test is applied. The admission gate has three outlets: *admitted* (closes, `res^2 = 0`, idempotent), *boundary* (closes where the established theory does not, marking a `-1` boundary state), and *rejected-as-datum* (does not close under the declared encoder, logged as an open-encoder obligation rather than a dismissal). The load-bearing empirical case is the Pariah/Happy-Family inversion from PROOF Paper 11: under bit-length parity, the 6 Pariah sporadic groups (`J_1, J_3, J_4, Ru, ON, Ly`) close (`res^2 = 0`, chain `e -> e -> e`) while the 20 Happy Family groups open (`res^2 ~ 0.444`). The Pariahs - outside the Monster's Happy Family - are thereby identified as the `-1` boundary states of the Monster expansion at the D4 closure level (`IDENTITY_PAPER` 6.7). The gate's discipline is that this is a *boundary receipt for a specific encoder*, not a new theorem in finite-group theory; an alternative encoder may classify differently, and that fact is itself recorded.
@@ -34,7 +38,7 @@ Axiom 11.2 - Receipt Preservation: the admission encoder is part of the receipt;
 
 Axiom 11.3 - Boundary Positivity: a failure to close is a boundary receipt (a `-1` state, or an open-encoder datum), never a summary dismissal of the theory.
 
-Axiom 11.4 - Analog Equivalence: the gate has a workbook analogue - a three-outlet sorter (admitted / boundary / rejected-as-datum) with the encoder written on each card.
+Axiom 11.4 - Analog Exposure Equivalence: the gate has a supplemental workbook analogue - a three-outlet sorter (admitted / boundary / rejected-as-datum) with the encoder written on each card.
 
 ## Lemmas
 
@@ -79,7 +83,7 @@ claim (external theories enter as candidates; failures become boundary receipts)
      does not close under E             -> rejected-as-datum -> open-encoder obligation
 -> Pariah/Happy-Family inversion (Lemma 11.2, T_D4_5)
 -> worked example (exp_pariah_boundary.py)
--> workbook analogue (three-outlet sorter)
+-> supplemental workbook analogue (three-outlet sorter)
 -> receipt (encoder + signature + classification)
 ```
 

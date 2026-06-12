@@ -4,6 +4,10 @@
 
 HORIZON paper. Frames curvature as a boundary-repair demand in the transport view. The substrate-side construction (boundary-repair as the obligation/correction operation, curved carriers via the oloid) is grounded in named modules and the corpus contract. Every General Relativity claim is a candidate interpretation carried as an explicit obligation with a falsifier. As in the umbrella's Discussion, this paper does not extend physics; it applies the substrate and is honest about the gap.
 
+## Proof/Exposure Hierarchy
+
+The proof-carrying content of this paper is the mathematics: the definitions, lemmas, constructions, examples, and receipts that establish the claimed transport. Paper 00, workbook sheets, analog tools, and open-obligation ledgers are supplemental validation and exposure layers. They exist to make the math inspectable, reproducible, and accessible without requiring a particular software stack. In the simplest case, the same state transitions can be marked with ordinary physical tokens, lines, or dirt; the point is not the material, but the preserved center, boundary, transform, residue, and receipt structure.
+
 ## Abstract
 
 In the transport contract, a route that fails to close locally is not deleted: its unresolved residue is logged as an obligation and becomes a *boundary-repair* demand — the explicit work needed to reconcile a local readout with its surrounding frame (Axiom 00.3; `transport_obligations.py`). This paper takes the candidate interpretation that *curvature*, in the General Relativity sense, plays the same role: a measure of how much a flat (geodesic, parallel-transport) closure must be repaired to match the actual neighborhood. We make the structural side precise and the physical side honest. On the substrate side: the corpus already carries a "boundary-repair" operation in the Paper 04 frame-inversion / correction apparatus and a *curved carrier* in the Cayley-Dickson oloid normal form (`cayley_dickson_oloid.py`), whose `N`-with-antipode-`-N`, `1+8+8+1` rolling structure provides a non-flat path on which the three `shell=2` dyads roll (`oloid_dual_path.py`). The transport-obligation ledger gives a typed `demonstrated / bounded_local / open` grading of repair demands. On the physics side: the identification "curvature = boundary-repair demand" and any connection to the Einstein field equations are candidate hypotheses, listed as obligations with falsifiers, not derived. The contribution is a disciplined framing, not a claim about gravity.
@@ -33,7 +37,7 @@ Axiom 14.2 - Receipt Preservation: every repair logs its input residue, the repa
 
 Axiom 14.3 - Boundary Positivity: a route that fails to close flat is data; its residue IS the repair demand, never a silent loss (Axiom 00.3 — this paper's load-bearing axiom).
 
-Axiom 14.4 - Analog Equivalence: the repair demand has a workbook analogue (a string that must be re-tensioned across a fold).
+Axiom 14.4 - Analog Exposure Equivalence: the repair demand has a supplemental workbook analogue (a string that must be re-tensioned across a fold).
 
 ## Lemmas
 
@@ -82,7 +86,7 @@ claim (curvature := boundary-repair demand, transport view)
 -> repair magnitude = ledger grade (scalar analog)
 -> physical curvature / Einstein field eq. => OBLIGATION + falsifier
 -> worked example (a closing route vs an opening route)
--> workbook analogue (re-tensioned string across a fold)
+-> supplemental workbook analogue (re-tensioned string across a fold)
 -> receipt + obligation split
 ```
 

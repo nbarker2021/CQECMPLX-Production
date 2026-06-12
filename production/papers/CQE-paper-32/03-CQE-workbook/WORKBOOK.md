@@ -1,5 +1,13 @@
 # Paper 32 — Workbook: The Cursor Sheet
 
+## Workbook Role
+
+This workbook is supplemental validation and exposure material. It is not the paper's primary proof. It shows how the paper's mathematical state can be reconstructed with ordinary marks, tokens, strings, cards, or any equivalent physical substitute so that the proof remains inspectable even without software.
+
+## Proof/Exposure Hierarchy
+
+The proof-carrying content of this paper is the mathematics: the definitions, lemmas, constructions, examples, and receipts that establish the claimed transport. Paper 00, workbook sheets, analog tools, and open-obligation ledgers are supplemental validation and exposure layers. They exist to make the math inspectable, reproducible, and accessible without requiring a particular software stack. In the simplest case, the same state transitions can be marked with ordinary physical tokens, lines, or dirt; the point is not the material, but the preserved center, boundary, transform, residue, and receipt structure.
+
 ## Sheet <-> Tool Isomorphism
 
 | Analog Operation | Tool Function | Data Structure |
@@ -14,6 +22,7 @@
 | Read a bit's C when (and only when) requested | `c_normal_form(L, C, R, cursor)` | `{expression, gluon, emission_bit}` |
 
 ## Human Execution Protocol (Paper 32)
+
 ```
 1. Write "1" on the sheet. This is the n=1 cursor (one chart, trivial).
 2. LIFT: for each permutation you have marked, in the order you marked
@@ -40,10 +49,12 @@
 ```
 
 ## Tool Execution Protocol (identical)
+
 ```python
 from GraphStax import permforge as pf
 
 # 1-5. The ladder
+
 s = "1"
 for k in range(1, 8):
     s = pf.recursive_step(s, k)
@@ -51,12 +62,14 @@ for k in range(1, 8):
     assert pf.coverage_check(s, k + 1)
 
 # 6-7. The split
+
 d = pf.dimensional_split()
 assert d["n4"]["solution_count"] == 1 and d["n4"]["palindromic"]
 assert d["n5"]["solution_count"] == 8
 assert d["n5"]["reversal_fixed"] == [0, 1, 4, 6]
 
 # 8. The n=8 attempt
+
 r = pf.n8_attempt()
 assert r["record"]["coverage_valid"]
 assert r["egan_construction"]["record_is_egan"]
@@ -64,6 +77,7 @@ assert r["open_window"]["gap"] == 120
 ```
 
 ## Receipt (identical for human and tool)
+
 ```
 cursor-receipt =
   rungs_walked: 8                       (1 → 8, all coverage-verified)

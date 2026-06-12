@@ -4,6 +4,10 @@
 
 Transport paper. Treats representation routes between the chart's VOA seed and the Monster Moonshine boundary as explicit upward/downward transport choices with strict receipt requirements. The finite VOA-sector seed is verified; the McKay-Thompson route (the modular-form fingerprint) is the open computational obligation O1'. Proof-facing for the seed, obligation-facing for the route.
 
+## Proof/Exposure Hierarchy
+
+The proof-carrying content of this paper is the mathematics: the definitions, lemmas, constructions, examples, and receipts that establish the claimed transport. Paper 00, workbook sheets, analog tools, and open-obligation ledgers are supplemental validation and exposure layers. They exist to make the math inspectable, reproducible, and accessible without requiring a particular software stack. In the simplest case, the same state transitions can be marked with ordinary physical tokens, lines, or dirt; the point is not the material, but the preserved center, boundary, transform, residue, and receipt structure.
+
 ## Abstract
 
 This paper organizes the corpus's contact with Monstrous Moonshine as a set of *representation routes*: directed transport choices that either climb (D2 vignette -> D4 Monster boundary) or descend (Monster representation -> chart-level correction tape), each requiring a replayable receipt and each carrying its unresolved residue explicitly. Two layers are surfaced. (1) A finite, verified seed: the 3-conjugate VOA sector decomposition of the 8 chart states yields the seed partition function `Z(q) = 2q^0 + 6q^5` (2 true vacua at weight 0, 6 excited states at weight 5), and the `Z4` 4-frame template gives exactly 2 fixed points and 6 period-4 states matching the D12 orbit structure. These are finite chart identities verified by `verify_centroid_voa_chain`. (2) The open route: the umbrella's load-bearing hypothesis (D4, IDENTITY 2.7) is that the Rule 30 correction tape factors through a McKay-Thompson series of the Monster, with the Monster scalar `196883 = 47 * 59 * 71` realized as the modular `S`-involution. The primitive `mckay_thompson_coefficient_parity(g, k)` is declared but raises `NotImplementedError` — it is open obligation O1'. The paper makes the strict-receipt discipline explicit: any "50% Bernoulli split" against a direct period test is logged not as a falsifier but as the signature that the bijective modular companion has not been brought into the comparison.
@@ -24,7 +28,7 @@ This paper claims the finite VOA-sector seed and `Z4` template exactly as `centr
 - **McKay-Thompson route**: the hypothesized factorization of the Rule 30 correction tape through `T_g(tau) = q^{-1} + sum a_n q^n` for a Monster conjugacy class `g`; its primitive is `mckay_thompson_coefficient_parity`.
 - **Monster scalar**: `196883 = 47 * 59 * 71`, the dimension of the smallest faithful Monster representation, realized as the modular `S`-involution `tau -> -1/tau`.
 - **Strict receipt requirement**: every route step records inputs, output, residue, and — for any direct period/modular test — whether the bijective companion was included.
-- **Receipt / Transport row / Workbook sheet / Tool binding**: as fixed in Paper 00.
+- **Receipt / Transport row / Supplemental workbook sheet / Tool binding**: as fixed in Paper 00.
 
 ## Axioms
 
@@ -34,7 +38,7 @@ Axiom 18.2 - Receipt Preservation: no route step is accepted unless its grading,
 
 Axiom 18.3 - Boundary Positivity: a 50% Bernoulli split in a direct period/modular test is data — the signature of a missing modular companion — not a silent failure or a falsifier.
 
-Axiom 18.4 - Analog Equivalence: the route has a physical workbook analogue (a graded card ladder with upward/downward string and a black "open route" card for O1').
+Axiom 18.4 - Analog Exposure Equivalence: the route has a physical workbook analogue (a graded card ladder with upward/downward string and a black "open route" card for O1').
 
 ## Lemmas
 
@@ -89,7 +93,7 @@ claim (representation routes = receipted upward/downward transport choices)
 -> downward route to correction tape (McKay-Thompson)
    -> primitive mckay_thompson_coefficient_parity  [OPEN: O1']
 -> worked example (seed verifier + architecture summary)
--> workbook analogue (graded card ladder)
+-> supplemental workbook analogue (graded card ladder)
 -> receipt (incl. companion-inclusion flag)
 -> proof (seed) / obligation (McKay-Thompson route, SPINOR signature)
 ```

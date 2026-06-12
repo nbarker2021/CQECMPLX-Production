@@ -4,6 +4,10 @@
 
 Temporal-emergence paper. Describes how a global temporal structure (the ordered corpus of papers, or the depth axis of a sequence) emerges as the readout of sliding local windows whose centers `C` are carried forward and back. Establishes the iterated 1-3 / 1-5 / 1-7 bar reading and ties it to the static/temporal separation of the chart. Proof-facing. Inherits the Paper 00 contract.
 
+## Proof/Exposure Hierarchy
+
+The proof-carrying content of this paper is the mathematics: the definitions, lemmas, constructions, examples, and receipts that establish the claimed transport. Paper 00, workbook sheets, analog tools, and open-obligation ledgers are supplemental validation and exposure layers. They exist to make the math inspectable, reproducible, and accessible without requiring a particular software stack. In the simplest case, the same state transitions can be marked with ordinary physical tokens, lines, or dirt; the point is not the material, but the preserved center, boundary, transform, residue, and receipt structure.
+
 ## Abstract
 
 This paper describes local-inside-global temporal emergence as Hamiltonian-window readout over transported states. A "Hamiltonian window" is a fixed-width sliding frame over an ordered sequence of already-transported states; reading the window forward (carry the centers `C` along) and backward (validate the reverse transport) produces a surviving composite center that is itself a new state at the next order. Iterating this readout - first with 1-3 bar (3-frame) windows, then 1-5 bar (5-frame), then 1-7 bar (7-frame) - emits successive higher-order states, exactly as `hamiltonian_windows.iterative_hamiltonian` emits Papers 6, 7, 8 from the base C-forms of Papers 0-5 (`BASE_C_FORMS`). The global temporal object (the paper sequence, or the depth-indexed trace) is therefore not assumed; it *emerges* as the fixed point of local window reads. We ground the local-center primitive in `IDENTITY_PAPER` Section 2 (the chart's center `C` is the quantity preserved under the `L <-> R` reflection) and the temporal subtlety in `temporal_z4_scope`: the static window template does not by itself dictate the temporal trace, so emergence must be read off the actual carried states, not inferred from the static frame.
@@ -34,7 +38,7 @@ Axiom 09.2 - Receipt Preservation: each `WindowRead` records its order, window s
 
 Axiom 09.3 - Boundary Positivity: a window that cannot be read (fewer source states than the window width, `hamiltonian_read` returns `[]`) is a recorded boundary - "not enough papers yet" - not an error.
 
-Axiom 09.4 - Analog Equivalence: the readout has a workbook analogue - a sliding cardboard frame of 3, 5, or 7 cells dragged across a row of center-tokens, with a forward and a flip-back trace.
+Axiom 09.4 - Analog Exposure Equivalence: the readout has a supplemental workbook analogue - a sliding cardboard frame of 3, 5, or 7 cells dragged across a row of center-tokens, with a forward and a flip-back trace.
 
 ## Lemmas
 
@@ -77,7 +81,7 @@ claim (global temporal order emerges from local window reads)
 -> static frame insufficiency (Lemma 09.3, verify_temporal_z4_scope)
 -> emergence = fixed point of iterated reads (Lemma 09.2)
 -> worked example (iterative_hamiltonian run)
--> workbook analogue (sliding frame over center-tokens)
+-> supplemental workbook analogue (sliding frame over center-tokens)
 -> receipt (per-WindowRead)
 ```
 

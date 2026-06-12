@@ -1,5 +1,13 @@
 # Paper 01 — Workbook: LCR Chain Carrier Sheet (v1 — isomorphic to tool)
 
+## Workbook Role
+
+This workbook is supplemental validation and exposure material. It is not the paper's primary proof. It shows how the paper's mathematical state can be reconstructed with ordinary marks, tokens, strings, cards, or any equivalent physical substitute so that the proof remains inspectable even without software.
+
+## Proof/Exposure Hierarchy
+
+The proof-carrying content of this paper is the mathematics: the definitions, lemmas, constructions, examples, and receipts that establish the claimed transport. Paper 00, workbook sheets, analog tools, and open-obligation ledgers are supplemental validation and exposure layers. They exist to make the math inspectable, reproducible, and accessible without requiring a particular software stack. In the simplest case, the same state transitions can be marked with ordinary physical tokens, lines, or dirt; the point is not the material, but the preserved center, boundary, transform, residue, and receipt structure.
+
 ## Sheet ⇄ Tool Isomorphism
 
 | Analog Operation | Tool Function | Data Structure |
@@ -14,6 +22,7 @@
 | Cross-mass check 9/8 | `verify_trace_block_ratio()` | `rational` |
 
 ## Human Execution Protocol (Paper 01)
+
 ```
 1. Roll 3d2 → (L,C,R)  [coin flip ×3 = chart state]
 2. Compute shell = L+C+R
@@ -30,36 +39,48 @@
 ```
 
 ## Tool Execution Protocol (identical)
+
 ```python
 # 1. Generate all 8 states (or sample depth window)
+
 states = [(L,C,R) for L in (0,1) for C in (0,1) for R in (0,1)]
 
 # 2. Shell = trace = L+C+R
+
 shells = {s: sum(s) for s in states}
 
 # 3. Partition by shell
+
 shell_strata = {k: [s for s,v in shells.items() if v==k] for k in range(4)}
 
 # 4. Center preservation under LR swap
+
 def gluon(s): return s[1]  # C
+
 def swap_LR(s): return (s[2], s[1], s[0])
 center_ok = all(gluon(s) == gluon(swap_LR(s)) for s in states)
 
 # 5. Opposed boundary addresses, with value inequality checked separately
+
 shell2 = shell_strata[2]  # the three SU(3) states
+
 opposed_ok = True  # L and R are distinct addresses in every LCR state
+
 value_inequality_counterexample = (1, 0, 1)
 assert value_inequality_counterexample in shell2
 assert value_inequality_counterexample[0] == value_inequality_counterexample[2]
 
 # 6. Chain binding L→C→R
+
 chains = [(s[0], s[1], s[2]) for s in shell2]
 
 # 7. Verify bijective carrier
+
 assert center_ok and opposed_ok
 ```
 
 ## Receipt (identical for human and tool)
+
 ```
 lcr-carrier-receipt =
   T_BIJECTIVE: center preserved under LR swap ✓

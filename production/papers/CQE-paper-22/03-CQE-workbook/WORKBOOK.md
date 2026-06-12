@@ -1,5 +1,13 @@
 # Paper 22 — Workbook: MetaForge Applied Materials Sheet
 
+## Workbook Role
+
+This workbook is supplemental validation and exposure material. It is not the paper's primary proof. It shows how the paper's mathematical state can be reconstructed with ordinary marks, tokens, strings, cards, or any equivalent physical substitute so that the proof remains inspectable even without software.
+
+## Proof/Exposure Hierarchy
+
+The proof-carrying content of this paper is the mathematics: the definitions, lemmas, constructions, examples, and receipts that establish the claimed transport. Paper 00, workbook sheets, analog tools, and open-obligation ledgers are supplemental validation and exposure layers. They exist to make the math inspectable, reproducible, and accessible without requiring a particular software stack. In the simplest case, the same state transitions can be marked with ordinary physical tokens, lines, or dirt; the point is not the material, but the preserved center, boundary, transform, residue, and receipt structure.
+
 ## Sheet ⇄ Tool Isomorphism
 
 | Analog Operation | Tool Function | Data Structure |
@@ -10,6 +18,7 @@
 | Compute energy | `formation_energy(material)` | `Gluon mass = energy` |
 
 ## Human Execution Protocol (Paper 22)
+
 ```
 1. Token (glyph/number/shape) from Paper 21
 2. Materialize: add physical properties
@@ -19,6 +28,7 @@
 ```
 
 ## Tool Execution Protocol (identical)
+
 ```python
 mf = MetaForge()
 material = mf.materialize(token)
@@ -28,6 +38,7 @@ energy = mf.formation_energy(best)
 ```
 
 ## Receipt (identical)
+
 ```
 metaforge-receipt =
   materials: 5 candidates

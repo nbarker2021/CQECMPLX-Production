@@ -1,5 +1,13 @@
 # Paper 17 — Workbook: E6-E8 Error-Correction Tower Sheet
 
+## Workbook Role
+
+This workbook is supplemental validation and exposure material. It is not the paper's primary proof. It shows how the paper's mathematical state can be reconstructed with ordinary marks, tokens, strings, cards, or any equivalent physical substitute so that the proof remains inspectable even without software.
+
+## Proof/Exposure Hierarchy
+
+The proof-carrying content of this paper is the mathematics: the definitions, lemmas, constructions, examples, and receipts that establish the claimed transport. Paper 00, workbook sheets, analog tools, and open-obligation ledgers are supplemental validation and exposure layers. They exist to make the math inspectable, reproducible, and accessible without requiring a particular software stack. In the simplest case, the same state transitions can be marked with ordinary physical tokens, lines, or dirt; the point is not the material, but the preserved center, boundary, transform, residue, and receipt structure.
+
 ## Sheet ⇄ Tool Isomorphism
 
 | Analog Operation | Tool Function | Data Structure |
@@ -12,6 +20,7 @@
 | Draw E8 top | `TowerGluon().C_E8_dim()` | `248` |
 
 ## Human Execution Protocol (Paper 17)
+
 ```
 1. Draw E6 Gluon (C_E6)
 2. Apply E6→E7 glue vector → C_E7 = C_E6 ⊕ corr_E6
@@ -21,6 +30,7 @@
 ```
 
 ## Tool Execution Protocol (identical)
+
 ```python
 tower = TowerGluon()
 assert tower.C_E8_dim() == 248
@@ -29,6 +39,7 @@ assert tower.transport_E7_E8().valid
 ```
 
 ## Receipt (identical)
+
 ```
 tower-receipt =
   E6: verified

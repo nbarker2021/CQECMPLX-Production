@@ -4,6 +4,10 @@
 
 Foundational paper. Establishes the correction surface: the discipline of treating failure, mismatch, and nonlinear residue as positive correction data rather than dismissal. Proof-facing.
 
+## Proof/Exposure Hierarchy
+
+The proof-carrying content of this paper is the mathematics: the definitions, lemmas, constructions, examples, and receipts that establish the claimed transport. Paper 00, workbook sheets, analog tools, and open-obligation ledgers are supplemental validation and exposure layers. They exist to make the math inspectable, reproducible, and accessible without requiring a particular software stack. In the simplest case, the same state transitions can be marked with ordinary physical tokens, lines, or dirt; the point is not the material, but the preserved center, boundary, transform, residue, and receipt structure.
+
 ## Abstract
 
 We define the corpus's *correction surface*: the typed object that absorbs the difference between a sequence's actual behavior and its nearest linear approximation, and converts that difference into reusable data. The load-bearing fact is the GF(2) linearization identity `Rule_30(L, C, R) = Rule_90(L, R) XOR correction(L, C, R)`, where `correction(L, C, R) = C AND NOT R`. Rule 90 is the linear part (a single XOR with a closed-form Lucas solution); the correction term is the exact, localized nonlinear residue that distinguishes Rule 30 from its linear shadow. We show that the correction tape is not noise to be discarded but a single-bit projection of the umbrella's `D_4` antipodal chart state, firing precisely on the two chart states `{(0,1,0), (1,1,0)}`. The same residue, lifted to the relational-frame layer, is the four-class closure taxonomy `{CLASSICAL, META_OPEN, SPINOR, VACUUM}` of Paper 04 of the PROOF set: each class is a record of *which observer frame the residue fails to close in*, never a verdict that the sequence is malformed. Correction data is therefore positive: it routes, it constrains the next legal move, and it is logged, not deleted.
@@ -34,7 +38,7 @@ Axiom 02.2 - Receipt Preservation: every correction firing is logged with the ch
 
 Axiom 02.3 - Boundary Positivity: a nonzero correction term, an open relational-closure class, and a crossing arc are all *data*. They constrain the next legal route; they are never grounds for rejecting the sequence.
 
-Axiom 02.4 - Analog Equivalence: a correction firing has a physical workbook analogue (a frustrated-bond token: gluon active, write channel silent).
+Axiom 02.4 - Analog Exposure Equivalence: a correction firing has a physical workbook analogue (a frustrated-bond token: gluon active, write channel silent).
 
 ## Lemmas
 
@@ -85,9 +89,9 @@ claim (residue is positive correction data, not error)
 -> cascade level / emission level typing                       (binary_boundary_adapter)
 -> relational closure class  {CLASSICAL, META_OPEN, SPINOR, VACUUM}
 -> worked example (Rule 30 center decomposition)
--> workbook analogue (frustrated-bond token)
+-> supplemental workbook analogue (frustrated-bond token)
 -> receipt (correction firing logged with state and depth)
--> proof / obligation split
+-> proof result / audit residue split
 ```
 
 ## Practical Solved Example

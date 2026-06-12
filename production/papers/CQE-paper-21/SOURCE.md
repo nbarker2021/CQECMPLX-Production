@@ -4,6 +4,10 @@
 
 Transport / applied-bridge paper. Reads glyphs, numbers, shapes, and tokens as grid-swept ribbons whose bifurcations define folds and continuations, backed by the executable `morphonics_model_v0_2` ledger, the `chart_codec` `S_3`-word ribbon, and the terminal composition tree. This is the bridge into the applied Forge papers 22-24. Proof-facing where the codec/model verifier exists; horizon-facing where the cross-medium bridges are open.
 
+## Proof/Exposure Hierarchy
+
+The proof-carrying content of this paper is the mathematics: the definitions, lemmas, constructions, examples, and receipts that establish the claimed transport. Paper 00, workbook sheets, analog tools, and open-obligation ledgers are supplemental validation and exposure layers. They exist to make the math inspectable, reproducible, and accessible without requiring a particular software stack. In the simplest case, the same state transitions can be marked with ordinary physical tokens, lines, or dirt; the point is not the material, but the preserved center, boundary, transform, residue, and receipt structure.
+
 ## Abstract
 
 This paper formalizes the Forge reading discipline: any source object — a glyph, a numeral, a shape, a token — is swept across the chart grid as a ribbon of overlapping `(L, C, R)` windows, and the ribbon's *bifurcations* (points where the local readout admits more than one continuation) are its fold points. Three real substrates back the reading. (1) The Morphonics State Closure model (`morphonics_model_v0_2`) is an executable ledger of *morphons* — bounded, projected, transformed, observed state packets — each with a primitive state, boundary, projections, transforms, invariants, reconstruction rule, accounting record, and residue; `verify_morphonics_model` returns `pass_with_open_gaps`, and the model's guiding rule is that no model is closed unless its presented state can be decomposed into primitive admissible states and reassembled while preserving declared invariants and accounting for all residue. (2) The chart codec (`chart_codec`) encodes a ribbon's `shell = 2` sub-trajectory as a word in `S_3` (the Weyl group of `SU(3) subset F_4`): each step is a named group element (`e` plus the three transpositions), the round trip is exact and lossless, and `verify_chart_codec` confirms zero mismatches to depth 4096. (3) The terminal composition tree (`terminal_tree`, via `Ledger.terminal_tree`) gives each ribbon a 24D landing form with component embeddings and a residue status. The fold = bifurcation reading is the bridge into the applied Forge papers 22-24; the cross-medium "unibeam" equivalence and the Mandelbrot-boundary chart are surfaced as explicit open obligations.
@@ -25,7 +29,7 @@ This paper claims the ribbon-reading discipline and the morphon-ledger / chart-c
 - **`S_3` ribbon word**: the lossless encoding of a `shell = 2` sub-trajectory as `(start_state, word)` over `S_3 = {e, (1 2), (1 3), (2 3), (1 2 3), (1 3 2)}` (`chart_codec.encode` / `decode`).
 - **Terminal landing**: the 24D Niemeier/Leech composition tree assigned to a ribbon (`terminal_tree.build_terminal_composition_tree`).
 - **Theta accounting**: the transition-defect functional `Theta(phi) = wN*N + wS*S + wL*L + wG*G + wO*O` (Noether/Shannon/Landauer/geometric/obstruction terms), with `Theta <= 0` closed, `0 < Theta <= eps` glue-resolvable, else obstructed (`morphonics` accounting record).
-- **Receipt / Transport row / Workbook sheet / Tool binding**: as fixed in Paper 00.
+- **Receipt / Transport row / Supplemental workbook sheet / Tool binding**: as fixed in Paper 00.
 
 ## Axioms
 
@@ -35,7 +39,7 @@ Axiom 21.2 - Receipt Preservation: every ribbon step logs its `S_3` element, its
 
 Axiom 21.3 - Boundary Positivity: an unselected continuation, a non-closing `Theta`, or a pending bridge is residue/obligation — classified, never discarded (`morphonics` failure labels).
 
-Axiom 21.4 - Analog Equivalence: ribbon reading has a physical workbook analogue (a string ribbon laid over the chart grid, knotted at each fold).
+Axiom 21.4 - Analog Exposure Equivalence: ribbon reading has a physical workbook analogue (a string ribbon laid over the chart grid, knotted at each fold).
 
 ## Lemmas
 
@@ -81,7 +85,7 @@ claim (glyphs/numbers/shapes/tokens = grid-swept ribbons with fold bifurcations)
 -> morphon ledger per segment (primitive/boundary/accounting/residue) [Lemma 21.3]
 -> terminal 24D landing form (composition tree)
 -> worked example (OCR/typography glyph ribbon)
--> workbook analogue (knotted string ribbon over the grid)
+-> supplemental workbook analogue (knotted string ribbon over the grid)
 -> receipt
 -> proof (codec + ledger schema) / obligation (unibeam, Mandelbrot, TF1)
 ```

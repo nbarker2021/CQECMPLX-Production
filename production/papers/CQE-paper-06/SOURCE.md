@@ -4,6 +4,10 @@
 
 Foundational paper. Casts every dependency between objects, proofs, tools, and papers as a typed causal edge with a receipt. Proof-facing; this is the corpus's dependency-graph layer.
 
+## Proof/Exposure Hierarchy
+
+The proof-carrying content of this paper is the mathematics: the definitions, lemmas, constructions, examples, and receipts that establish the claimed transport. Paper 00, workbook sheets, analog tools, and open-obligation ledgers are supplemental validation and exposure layers. They exist to make the math inspectable, reproducible, and accessible without requiring a particular software stack. In the simplest case, the same state transitions can be marked with ordinary physical tokens, lines, or dirt; the point is not the material, but the preserved center, boundary, transform, residue, and receipt structure.
+
 ## Abstract
 
 We define the corpus's *causal code*: the discipline of representing every dependency — between mathematical objects, proofs, executable tools, and papers — as a typed directed edge that carries a receipt. The edge types are `proves`, `uses`, `refines`, `obligates`, and `transports`. Each edge names its source, its target, the operator that produced it, and a deterministic witness: a verifier function, a content hash, or an explicit proof boundary. We ground this in two real mechanisms. First, the terminal composition tree (`build_terminal_composition_tree`) generates a canonical directed graph of typed action edges (`add_component`) and involution generators over an immutable seed ledger, attaching a SHA-256 content hash and a residue trace to every state and edge — a worked example of a fully typed causal graph with receipts. Second, the contributions registry persists every new fact as a row `(kind, key, value, provenance, validated_by, rationale, content_hash)`, admitting it only through an `F_2`-deterministic validation gate that records the witness identity. Together with the transport-obligation ledger's four layers (each carrying a classification and a named witness), these give every dependency in the corpus a type and a replayable receipt, so the corpus is itself a typed causal graph rather than a flat pile of claims.
@@ -34,7 +38,7 @@ Axiom 06.2 - Receipt Preservation: no edge is accepted without a deterministic r
 
 Axiom 06.3 - Boundary Positivity: an `obligates` edge is a first-class dependency, not a defect; an open lift is recorded with its proof boundary and carried forward, never deleted.
 
-Axiom 06.4 - Analog Equivalence: a causal edge has a physical workbook analogue (a string of a specific color binding a source token to a target token, tagged with its receipt).
+Axiom 06.4 - Analog Exposure Equivalence: a causal edge has a physical workbook analogue (a string of a specific color binding a source token to a target token, tagged with its receipt).
 
 ## Lemmas
 
@@ -95,9 +99,9 @@ claim (every dependency is a typed causal edge with a receipt)
 -> typed transport with explicit proof boundary                  (Lemma 06.3)
    |- demonstrated witnesses pass; open lifts stay visible
 -> worked example (terminal tree + transport ledger)
--> workbook analogue (colored receipt-tagged strings)
+-> supplemental workbook analogue (colored receipt-tagged strings)
 -> receipt (every edge carries verifier / hash / boundary)
--> proof / obligation split
+-> proof result / audit residue split
 ```
 
 ## Practical Solved Example

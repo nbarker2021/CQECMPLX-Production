@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+
+## Proof/Exposure Hierarchy
+
+The proof-carrying content of this paper is the mathematics: the definitions, lemmas, constructions, examples, and receipts that establish the claimed transport. Paper 00, workbook sheets, analog tools, and open-obligation ledgers are supplemental validation and exposure layers. They exist to make the math inspectable, reproducible, and accessible without requiring a particular software stack. In the simplest case, the same state transitions can be marked with ordinary physical tokens, lines, or dirt; the point is not the material, but the preserved center, boundary, transform, residue, and receipt structure.
 """CQE-paper-01 Smoke Test — LCR Chain Carrier Verifier.
 
 Self-contained. Uses only white-room lib-forge engine and its verifiers.
@@ -49,7 +53,7 @@ def main() -> None:
         SlotName.B: ("LCR chain carrier rule", "paper01 spec", "binary+vector"),
         SlotName.L: ("left boundary: L readout", str(ROOT / "papers" / "CQE-paper-01" / "01-CQE-formal" / "FORMAL.md"), "binary"),
         SlotName.R: ("right boundary: R readout", str(ROOT / "papers" / "CQE-paper-01" / "03-CQE-workbook" / "WORKBOOK.md"), "binary"),
-        SlotName.W: ("workbook analogue", str(ROOT / "papers" / "CQE-paper-01" / "03-CQE-workbook" / "WORKBOOK.md"), "vector"),
+        SlotName.W: ("supplemental workbook analogue", str(ROOT / "papers" / "CQE-paper-01" / "03-CQE-workbook" / "WORKBOOK.md"), "vector"),
     }
     out_ribbon, receipt = transport(paper.ribbon, tool="paper01-lcr-carrier", new_fills=new_fills, paper_id="CQE-paper-01")
     

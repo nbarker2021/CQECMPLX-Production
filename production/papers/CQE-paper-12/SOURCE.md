@@ -4,6 +4,10 @@
 
 Application paper. Converts digital-physics and cellular-automaton candidates into prediction surfaces tied to their local rules, using the chart-to-`J_3(O)` substrate as the registration layer. Proof-facing for the closure subset; empirical/obligation-facing for the open extraction step. Builds directly on Papers 00, 01, 03.
 
+## Proof/Exposure Hierarchy
+
+The proof-carrying content of this paper is the mathematics: the definitions, lemmas, constructions, examples, and receipts that establish the claimed transport. Paper 00, workbook sheets, analog tools, and open-obligation ledgers are supplemental validation and exposure layers. They exist to make the math inspectable, reproducible, and accessible without requiring a particular software stack. In the simplest case, the same state transitions can be marked with ordinary physical tokens, lines, or dirt; the point is not the material, but the preserved center, boundary, transform, residue, and receipt structure.
+
 ## Abstract
 
 A *prediction surface* for a deterministic binary system is a layered object that takes a depth `N` and returns the system's local readout at `N` together with a provenance receipt naming which layer produced it and at what cost. We build this surface for the elementary cellular automata (ECA), with Rule 30 as the canonical case. The surface has three layers, each grounded in a named tool routine: (1) an exact local-emission layer `T_EMISSION`, which reads any registered `(L, C, R)` chart state to its output bit in `O(1)` with zero defect; (2) a linear base layer `lucas_bit`, computable in `O(log N)`, which is exact on the symmetric subset and wrong on the chirality-broken subset; (3) an empirical spectral layer (`predict_rule30_bit`) that extrapolates the four-band `Z4` frame structure to guess the next chart state from center-column history alone. The surface's structural backbone is the substrate fact that exactly 64 of the 256 ECAs close exactly under the `n=3` `SU(3)` Weyl decomposition — precisely the silent-boundary subset `f(000)=0` and `f(111)=0` (`IDENTITY_PAPER` Section 6.1) — which partitions all 256 rules into "closes by transport" and "generates open states." Rule 30 lies in the open class; its center-bit extraction is closed at the `O(1)` local layer and at the `O(log N)` base layer, with the residual gap to full `O(log N)` carried as a named obligation (the McKay-Thompson correction parity, `IDENTITY_PAPER` Sections 7.3, 8.2).
@@ -33,7 +37,7 @@ Axiom 12.2 - Receipt Preservation: each layer emits a receipt naming itself, its
 
 Axiom 12.3 - Boundary Positivity: a layer that is wrong on a subset is not deleted; its failure subset is recorded as the next layer's obligation (Axiom 00.3 inherited).
 
-Axiom 12.4 - Analog Equivalence: the surface has a workbook analogue (a stacked-card readout where each card is a layer).
+Axiom 12.4 - Analog Exposure Equivalence: the surface has a supplemental workbook analogue (a stacked-card readout where each card is a layer).
 
 ## Lemmas
 
@@ -80,7 +84,7 @@ claim (CA system -> layered prediction surface)
 -> per-layer receipt (layer, cost class, defect)
 -> open: McKay-Thompson correction parity closes L1 chiral gap
 -> worked example (Rule 30 at a concrete N)
--> workbook analogue (stacked layer cards)
+-> supplemental workbook analogue (stacked layer cards)
 ```
 
 ## Practical Solved Example

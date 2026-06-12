@@ -4,9 +4,13 @@
 
 Applied-layer paper opening the 32+ series. Proof-facing draft with explicit obligations.
 
+## Proof/Exposure Hierarchy
+
+The proof-carrying content of this paper is the mathematics: the definitions, lemmas, constructions, examples, and receipts that establish the claimed transport. Paper 00, workbook sheets, analog tools, and open-obligation ledgers are supplemental validation and exposure layers. They exist to make the math inspectable, reproducible, and accessible without requiring a particular software stack. In the simplest case, the same state transitions can be marked with ordinary physical tokens, lines, or dirt; the point is not the material, but the preserved center, boundary, transform, residue, and receipt structure.
+
 ## Abstract
 
-This paper states a local transport problem, gives a formal vocabulary for it, binds it to a ForgeFactory/GraphStax tool surface, and supplies an analog workbook sheet. The paper is written as a proof-facing document rather than as a description of how the paper was produced. Build-method details are retained only in appendices, receipts, and the Paper 31 meta-walkthrough.
+This paper states a local transport problem, gives a formal vocabulary for it, binds it to a ForgeFactory/GraphStax tool surface, and records an analog workbook sheet as supplemental exposure and validation evidence. The paper is written as a proof-facing document rather than as a description of how the paper was produced. Build-method details are retained only in appendices, receipts, and the Paper 31 meta-walkthrough.
 
 ## Central Thesis
 
@@ -14,7 +18,7 @@ Read the shortest string that contains every permutation of n symbols (the minim
 
 ## Scope Boundary
 
-The paper claims only what its tool, proof tree, citations, and workbook sheet can presently support. The minimal lengths for n less than or equal to 5 are cited as established results; the n greater than or equal to 6 statements are bounds and construction records, not minimality proofs. Any interpretation that exceeds that support is logged as an obligation rather than silently promoted to proof.
+The paper claims only what its math, proof tree, citations, tool receipts, and supplemental workbook evidence can presently support. The minimal lengths for n less than or equal to 5 are cited as established results; the n greater than or equal to 6 statements are bounds and construction records, not minimality proofs. Any interpretation that exceeds that support is logged as an obligation rather than silently promoted to proof.
 
 ## Definitions
 
@@ -24,7 +28,7 @@ The paper claims only what its tool, proof tree, citations, and workbook sheet c
 - **Local chart**: a length-n window of the superpermutation string — the ordering currently visible at the cursor.
 - **Transport row**: a typed record that carries a claim, source, transform, state, and obligation status.
 - **Receipt**: a replayable record of an operation, its inputs, outputs, and unresolved obligations.
-- **Workbook sheet**: the analog version of the proof state, expressed through color, tokens, string, page, card, and white/black follow-up.
+- **Supplemental workbook sheet**: a supplemental physical version of the proof state, expressed through color, tokens, string, page, card, and white/black follow-up.
 - **Tool binding**: the GraphStax module that makes the paper executable or testable.
 
 ## Axioms
@@ -35,7 +39,7 @@ Axiom 32.2 - Receipt Preservation: no construction step is accepted unless its i
 
 Axiom 32.3 - Boundary Positivity: a length below the best known construction is not a failure; it is an open corridor recorded as an obligation.
 
-Axiom 32.4 - Analog Equivalence: the schedule must have a physical workbook analogue — a string drawn on a sheet with a sliding window.
+Axiom 32.4 - Analog Exposure Equivalence: the schedule can be exposed through a physical workbook analogue — a string drawn on a sheet with a sliding window.
 
 ## Lemmas
 
@@ -72,9 +76,9 @@ claim (minimal schedule at scale n)
 -> coverage read (all n! orderings appear)
 -> lift transform (n -> n+1, chart-threaded)
 -> practical example (n=4 services, n=8 ribbon)
--> workbook analogue (string + sliding window on a sheet)
+-> supplemental workbook analogue (string + sliding window on a sheet)
 -> receipt (lengths, coverage, corridor)
--> proof / obligation split (minimal for n<=5; corridor open for n>=6)
+-> proof result / audit residue split (minimal for n<=5; corridor open for n>=6)
 ```
 
 ## Practical Solved Example

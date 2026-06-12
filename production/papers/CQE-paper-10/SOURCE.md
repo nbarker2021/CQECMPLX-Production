@@ -4,6 +4,10 @@
 
 Master-receipt paper. Binds Papers 00-09 into one inspectable, replayable unit by certifying the ledger, the transport-obligation table, and the lookup-cache receipts that record every move and its proof boundary. Proof-facing meta-paper. Inherits the Paper 00 contract; it is the substack's accountability layer, not a new claim.
 
+## Proof/Exposure Hierarchy
+
+The proof-carrying content of this paper is the mathematics: the definitions, lemmas, constructions, examples, and receipts that establish the claimed transport. Paper 00, workbook sheets, analog tools, and open-obligation ledgers are supplemental validation and exposure layers. They exist to make the math inspectable, reproducible, and accessible without requiring a particular software stack. In the simplest case, the same state transitions can be marked with ordinary physical tokens, lines, or dirt; the point is not the material, but the preserved center, boundary, transform, residue, and receipt structure.
+
 ## Abstract
 
 This paper binds Papers 00-09 into a master receipt that proves the stack is inspectable and replayable. The corpus's accountability rests on three executable surfaces: the SQLite-backed `Ledger` (object/morphism/admissibility records, built by `build_seed_database`), the `transport_obligations` table (four typed transport rungs `LCR -> D4 -> J3(O) -> G2/F4 route -> Niemeier landing forms`, each carrying a witness, a classification, and an explicit proof boundary), and the `CmplxLookupCache` chain (`LookupReceipt` records over the Rule 30 million-bit dataset, Atlas unipotent-orbit tables, Niemeier forms, and UMRK/LMFDB source registers). The master receipt T10 is the single emission certifying that: every transport rung is classified as `demonstrated`, `bounded_local`, `bounded_external`, `registered_landing_forms`, or `open` (never silently); every lookup carries an `evidence_level` and a `complexity_claim`; and the overall status is `pass_with_open_lifts` - the honest verdict that local witnesses pass while wider lifts remain visibly open. The receipt is replayable: re-running `verify_transport_obligations` and re-materializing the cache reproduces the same classifications and the same recorded boundaries.
@@ -35,7 +39,7 @@ Axiom 10.2 - Receipt Preservation: every bound element (ledger object, transport
 
 Axiom 10.3 - Boundary Positivity: an open lift is a first-class entry in the master receipt with `classification != demonstrated` and an explicit `proof_boundary`, never an omission.
 
-Axiom 10.4 - Analog Equivalence: the master receipt has a workbook analogue - a bound index notebook whose tabs are the per-paper sheets and whose color codes are the classifications.
+Axiom 10.4 - Analog Exposure Equivalence: the master receipt has a supplemental workbook analogue - a bound index notebook whose tabs are the per-paper sheets and whose color codes are the classifications.
 
 ## Lemmas
 
@@ -85,7 +89,7 @@ claim (Papers 00-09 bind into one inspectable, replayable receipt)
 -> materialize CmplxLookupCache -> LookupReceipts (evidence + complexity)
 -> bind per-paper receipts P00..P09 under T10
 -> worked example (verify_transport_obligations + cache.status)
--> workbook analogue (bound index notebook, classification color tabs)
+-> supplemental workbook analogue (bound index notebook, classification color tabs)
 -> open lifts carried explicitly (Axiom 10.3)
 ```
 

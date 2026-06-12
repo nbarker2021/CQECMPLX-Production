@@ -4,6 +4,10 @@
 
 Application paper. Uses powers of ten and edge residuals as practical windows into unsolved continuum depth, grounded in the digit-rollout argument (PROOF Paper 16, "The Digit Rollout") and the carry/correction apparatus. Proof-facing for the local rollout and `T_WRAP` closure; obligation-facing for the global continuum depth that finer resolution keeps exposing. Builds on Papers 00, 01, 03, 12.
 
+## Proof/Exposure Hierarchy
+
+The proof-carrying content of this paper is the mathematics: the definitions, lemmas, constructions, examples, and receipts that establish the claimed transport. Paper 00, workbook sheets, analog tools, and open-obligation ledgers are supplemental validation and exposure layers. They exist to make the math inspectable, reproducible, and accessible without requiring a particular software stack. In the simplest case, the same state transitions can be marked with ordinary physical tokens, lines, or dirt; the point is not the material, but the preserved center, boundary, transform, residue, and receipt structure.
+
 ## Abstract
 
 A positional number is not a stored integer but a *dimensional state*: the symbol `1000` means position 3 active with positions 2, 1, 0 confirmed reset, and to mean that, a reader must in principle have rolled each lower bar from `0` to `9` and back to rest (PROOF Paper 16, "The Digit Rollout"). Each power of ten is the same rollout one level higher; refining resolution (adding a digit) does not finish the count, it exposes a new *edge residual* — the carry in flight at the boundary between the resolved interior and the not-yet-resolved next position. This paper makes that "local-inside-global" structure a practical instrument. The local side is closed: every 3-bit neighborhood anneals to one of the four Lie-conjugate rest states `{(0,0,0),(0,1,0),(1,0,1),(1,1,1)}` in at most three `S_3` transposition steps (`T_WRAP`, `centroid_voa.py` `verify_hamming_centroid_universality`), and the carry event is exactly the frustrated state `C=1, R=0`, with local correction `NOT(L)` (PROOF Paper 16 Sections III, V, VI). The global side is open: the propagating-correction sum over the light cone (the ~10% of carries that survive the skip-pad filter) requires the McKay-Thompson series parity to collapse from `O(N)` to `O(log N)` (PROOF Paper 16 Section VI; `IDENTITY_PAPER` 8.2). Powers of ten give the practical windowing scale; edge residuals are the readable trace of the continuum depth that each finer window re-exposes rather than removes.
@@ -34,7 +38,7 @@ Axiom 16.2 - Receipt Preservation: every rollout step logs the bar's extension, 
 
 Axiom 16.3 - Boundary Positivity: a carry in flight is the edge residual, not an error; finer resolution exposes more residual, never less (Axiom 00.3).
 
-Axiom 16.4 - Analog Equivalence: the rollout has a workbook analogue (a bar that extends and returns to rest before the next bar may begin).
+Axiom 16.4 - Analog Exposure Equivalence: the rollout has a supplemental workbook analogue (a bar that extends and returns to rest before the next bar may begin).
 
 ## Lemmas
 
@@ -80,7 +84,7 @@ claim (powers of ten + edge residuals = windows into continuum depth)
 -> global correction sum over light cone (O(N))
 -> continuum depth closure => OBLIGATION (McKay-Thompson parity)
 -> worked example (rollout windows on Rule 30 center column)
--> workbook analogue (bar extends, returns to rest, next bar begins)
+-> supplemental workbook analogue (bar extends, returns to rest, next bar begins)
 -> receipt + obligation split
 ```
 

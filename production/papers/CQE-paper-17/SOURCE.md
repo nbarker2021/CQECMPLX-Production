@@ -4,6 +4,10 @@
 
 Transport paper. Surfaces the lattice-code backbone `1 -> 3 -> 7 -> 8 -> 24 -> 72` as an error-correction tower from local roots to larger closure frames, with the `W(E_8)` lookup table carried as an explicit open obligation. Proof-facing where the verifier exists, obligation-facing otherwise.
 
+## Proof/Exposure Hierarchy
+
+The proof-carrying content of this paper is the mathematics: the definitions, lemmas, constructions, examples, and receipts that establish the claimed transport. Paper 00, workbook sheets, analog tools, and open-obligation ledgers are supplemental validation and exposure layers. They exist to make the math inspectable, reproducible, and accessible without requiring a particular software stack. In the simplest case, the same state transitions can be marked with ordinary physical tokens, lines, or dirt; the point is not the material, but the preserved center, boundary, transform, residue, and receipt structure.
+
 ## Abstract
 
 This paper registers error-correction candidates as towered lattice transitions: each step moves a local readout window into a strictly larger closure frame, and each frame is a *forced* code at its dimension. The backbone is the chain `1 -> 3 -> 7 -> 8 -> 24 -> 72`, in which `n=1` is the `Z/2` repetition code (D1 raw bit), `n=3` is the `S_3` neighborhood, `n=7` is the `(7,4,3)` Hamming code whose weight-3 codewords are the Fano-plane lines (= octonion multiplication triples), `n=8` is the `(8,4,4)` doubly-even self-dual extended Hamming code generating the `E_8` root lattice by Construction A, `n=24` is the `(24,12,8)` Golay code carrying the Leech construction's `3 x 8` geometry, and `n=72` is the Nebe extremal even unimodular lattice that terminates the chain at the sheet K-bound `K_max = 9 = 3^2`. The transitions `E_6 -> E_7 -> E_8` sit inside this tower as the exceptional rungs; `E_6` appears as a Niemeier component (e.g. `Niemeier:A11_D7_E6`) and `E_8^3` is the unique determinant-one direct-sum landing form. The executable verifier `verify_lattice_code_chain` confirms every code parameter and the powered shortcut `1 -> 9 -> 49 -> 72`; the `O(N)` -> sub-`O(N)` extraction at the `E_8` Weyl scale (the order-`696729600` `W(E_8)` lookup table) is NOT built here and is carried as the umbrella's open obligation O1.
@@ -24,7 +28,7 @@ This paper claims the code-parameter tower and its forced-step structure exactly
 - **Forced parameter**: a chain value (`1, 3, 7, 8, 24, 72`) determined by the previous value under the constraint of being the unique perfect / self-dual / extremal code at that dimension.
 - **Sheet K-bound**: `K_max = 9 = 3^2`, the maximum Hamming distance from the first enumerated anchor event at which a state still expresses on the current Nebe-72 sheet.
 - **Landing form**: a registered rank-24 Niemeier or Leech terminal target (e.g. `Niemeier:E8^3`, `Niemeier:Leech`).
-- **Receipt / Transport row / Workbook sheet / Tool binding**: as fixed in Paper 00.
+- **Receipt / Transport row / Supplemental workbook sheet / Tool binding**: as fixed in Paper 00.
 
 ## Axioms
 
@@ -34,7 +38,7 @@ Axiom 17.2 - Receipt Preservation: no tower transition is accepted unless the co
 
 Axiom 17.3 - Boundary Positivity: a rung whose closure (e.g. the Leech landing) is not yet constructed is data; it is logged as an obligation, never silently promoted to a proof.
 
-Axiom 17.4 - Analog Equivalence: each rung has a physical workbook analogue (a code-card laid at increasing dimension on the matching color sheet).
+Axiom 17.4 - Analog Exposure Equivalence: each rung has a physical workbook analogue (a code-card laid at increasing dimension on the matching color sheet).
 
 ## Lemmas
 
@@ -85,7 +89,7 @@ claim (error-correction candidates = towered lattice transitions)
 -> terminal n=72    (Nebe extremal, K_max=9, Lemma 17.3)
 -> E_6 -> E_7 -> E_8 exceptional rungs (Niemeier components / E_8^3 landing)
 -> worked example (full chain verifier)
--> workbook analogue (code-card stack)
+-> supplemental workbook analogue (code-card stack)
 -> receipt
 -> proof (parameters) / obligation (Leech landing, W(E_8) table)
 ```

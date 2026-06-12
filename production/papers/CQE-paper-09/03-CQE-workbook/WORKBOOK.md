@@ -1,5 +1,13 @@
 # Paper 09 — Workbook: Hamiltonian Window Sheet
 
+## Workbook Role
+
+This workbook is supplemental validation and exposure material. It is not the paper's primary proof. It shows how the paper's mathematical state can be reconstructed with ordinary marks, tokens, strings, cards, or any equivalent physical substitute so that the proof remains inspectable even without software.
+
+## Proof/Exposure Hierarchy
+
+The proof-carrying content of this paper is the mathematics: the definitions, lemmas, constructions, examples, and receipts that establish the claimed transport. Paper 00, workbook sheets, analog tools, and open-obligation ledgers are supplemental validation and exposure layers. They exist to make the math inspectable, reproducible, and accessible without requiring a particular software stack. In the simplest case, the same state transitions can be marked with ordinary physical tokens, lines, or dirt; the point is not the material, but the preserved center, boundary, transform, residue, and receipt structure.
+
 ## Sheet ⇄ Tool Isomorphism
 
 | Analog Operation | Tool Function | Data Structure |
@@ -12,6 +20,7 @@
 | Mark Z4 MORSR cycle | `OBS/REF/SYN/REC` | `Z4 cycle` |
 
 ## Human Execution Protocol (Paper 09)
+
 ```
 1. Write C-forms 0-5 as sequence: [C0, C1, C2, C3, C4, C5]
 2. For 1-3 bar: slide 3-frame window, carry forward, read back
@@ -22,27 +31,34 @@
 ```
 
 ## Tool Execution Protocol (identical)
+
 ```python
 # 1. Load base C-forms
+
 c_forms = BASE_C_FORMS  # Papers 0-5
 
 # 2. Run 2nd order (1-3 bar)
+
 r2 = iterative_hamiltonian(c_forms, order=2)
 # → 4 windows, each produces surviving C
 
 # 3. Run 3rd order (1-5 bar) 
+
 r3 = iterative_hamiltonian(c_forms, order=3)
 # → 2 windows
 
 # 4. Run 4th order (1-7 bar)
+
 r4 = iterative_hamiltonian(c_forms, order=4)
 # → 1 window
 
 # 5. Validate all
+
 assert all(r["validated"] for r in r2+r3+r4)
 ```
 
 ## Receipt (identical)
+
 ```
 hamiltonian-receipt =
   2nd_order: 4 windows, C_survives: [C0⋯C2, C1⋯C3, C2⋯C4, C3⋯C5]

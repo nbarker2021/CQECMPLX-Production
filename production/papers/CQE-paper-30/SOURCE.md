@@ -4,9 +4,13 @@
 
 Meta / framing paper. It presents the thirty-paper corpus (00-29) as a single ribboned local-rule presentation, using the actual 8-slot ribbon data structure as the framing object. It prepares Paper 31 without making Paper 31 part of the proof stack. Proof-facing in form for the ribbon structure; the corpus-as-ribbon reading is a framing claim, not a new theorem.
 
+## Proof/Exposure Hierarchy
+
+The proof-carrying content of this paper is the mathematics: the definitions, lemmas, constructions, examples, and receipts that establish the claimed transport. Paper 00, workbook sheets, analog tools, and open-obligation ledgers are supplemental validation and exposure layers. They exist to make the math inspectable, reproducible, and accessible without requiring a particular software stack. In the simplest case, the same state transitions can be marked with ordinary physical tokens, lines, or dirt; the point is not the material, but the preserved center, boundary, transform, residue, and receipt structure.
+
 ## Abstract
 
-The corpus engine carries an explicit 8-slot ribbon (`cqe_engine/ribbon.py`): each paper is a `Ribbon` with slots `C, L, R, B, T, O, W, A` - center, left and right boundary, boundary rule, tool transform, obligation set, workbook analogue, and IRL citation anchor (`SlotName`, `SLOT_NAMES`). A slot is *filled* only when both its value and its provenance are present (`Slot.filled`). This paper makes one structural observation: the thirty papers are not thirty separate objects but one ribbon swept across thirty positions, each position filling the same eight slots from a different paper's `(L, C, R)` window. The corpus's causal spine - the order in which obligations are discharged and back-propagated - is the terminal composition tree (`terminal_tree.build_terminal_composition_tree`), a generated view over an immutable seed, exactly as the corpus is a generated view over the substrate contract of Paper 00. The transport-obligation ledger (`transport_obligations`) supplies the four-stage boundary that every paper's lift must respect. The meta-claim: the corpus is one ribbon, swept; Paper 31 is the readout of that sweep. Paper 31 is prepared here but is NOT a proof dependency of any paper 00-29.
+The corpus engine carries an explicit 8-slot ribbon (`cqe_engine/ribbon.py`): each paper is a `Ribbon` with slots `C, L, R, B, T, O, W, A` - center, left and right boundary, boundary rule, tool transform, obligation set, supplemental workbook analogue, and IRL citation anchor (`SlotName`, `SLOT_NAMES`). A slot is *filled* only when both its value and its provenance are present (`Slot.filled`). This paper makes one structural observation: the thirty papers are not thirty separate objects but one ribbon swept across thirty positions, each position filling the same eight slots from a different paper's `(L, C, R)` window. The corpus's causal spine - the order in which obligations are discharged and back-propagated - is the terminal composition tree (`terminal_tree.build_terminal_composition_tree`), a generated view over an immutable seed, exactly as the corpus is a generated view over the substrate contract of Paper 00. The transport-obligation ledger (`transport_obligations`) supplies the four-stage boundary that every paper's lift must respect. The meta-claim: the corpus is one ribbon, swept; Paper 31 is the readout of that sweep. Paper 31 is prepared here but is NOT a proof dependency of any paper 00-29.
 
 ## Central Thesis
 
@@ -26,7 +30,7 @@ This paper claims (i) that the 8-slot ribbon (`Ribbon`, `Slot`, `SLOT_NAMES`) is
 - **Corpus sweep**: the ordered sequence of thirty ribbons (papers 00-29), one per presentation position.
 - **Causal spine**: the canonical composition route over the immutable seed, the order in which components are added and residue is emitted (`terminal_tree.build_terminal_composition_tree`, key `composition_route`).
 - **Transport boundary**: the four-stage ledger (LCR -> D4 -> J3(O) -> G2/F4 -> Niemeier) with explicit `proof_boundary` per stage (`transport_obligations`).
-- **Transport row / Receipt / Workbook sheet / Tool binding**: as in Paper 00.
+- **Transport row / Receipt / Supplemental workbook sheet / Tool binding**: as in Paper 00.
 
 ## Axioms
 
@@ -36,7 +40,7 @@ Axiom 30.2 - Receipt Preservation: a ribbon slot is accepted only when filled - 
 
 Axiom 30.3 - Boundary Positivity: an unfilled slot or an open lift is data; the ledger records it as `bounded_local`, `registered_landing_forms`, or `open`, never silently dropped.
 
-Axiom 30.4 - Analog Equivalence: each ribbon's `W` slot is the workbook analogue; the `source_kind` records whether the slot is read as binary, vector, or both.
+Axiom 30.4 - Analog Exposure Equivalence: each ribbon's `W` slot is the supplemental workbook analogue; the `source_kind` records whether the slot is read as binary, vector, or both.
 
 ## Lemmas
 
@@ -85,7 +89,7 @@ claim (corpus = one swept ribbon, preparing Paper 31)
 -> causal spine = canonical composition route    [GROUNDED: composition_route]
 -> every lift within a ledger stage boundary      [PROVEN: verify_transport_obligations]
 -> Paper 31 = readout of the sweep                [PREPARED, NOT a proof dependency]
--> workbook analogue (the bound corpus notebook)
+-> supplemental workbook analogue (the bound corpus notebook)
 -> receipt
 ```
 

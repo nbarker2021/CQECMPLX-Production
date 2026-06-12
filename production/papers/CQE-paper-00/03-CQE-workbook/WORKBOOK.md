@@ -1,5 +1,13 @@
 # Paper 00 — Workbook: Foundation Sheet (v2 — isomorphic to tool)
 
+## Workbook Role
+
+This workbook is supplemental validation and exposure material. It is not the paper's primary proof. It shows how the paper's mathematical state can be reconstructed with ordinary marks, tokens, strings, cards, or any equivalent physical substitute so that the proof remains inspectable even without software.
+
+## Proof/Exposure Hierarchy
+
+The proof-carrying content of this paper is the mathematics: the definitions, lemmas, constructions, examples, and receipts that establish the claimed transport. Paper 00, workbook sheets, analog tools, and open-obligation ledgers are supplemental validation and exposure layers. They exist to make the math inspectable, reproducible, and accessible without requiring a particular software stack. In the simplest case, the same state transitions can be marked with ordinary physical tokens, lines, or dirt; the point is not the material, but the preserved center, boundary, transform, residue, and receipt structure.
+
 ## Sheet ⇄ Tool Isomorphism
 
 | Analog Operation | Tool Function | Data Structure |
@@ -15,6 +23,7 @@
 | Write 8×8 entries {0,¼,½} | `verify_T7_8x8_transition_exact()` | `Matrix over ℚ` |
 
 ## Human Execution Protocol (Paper 00)
+
 ```
 1. Roll 3d2 → (L,C,R)  [coin flip ×3 = chart state]
 2. Compute shell = L+C+R  [sum of bits]
@@ -31,20 +40,26 @@
 ```
 
 ## Tool Execution Protocol (identical)
+
 ```python
 # 1. Generate all 8 states (or sample 4096 depth window)
+
 states = [(L,C,R) for L in (0,1) for C in (0,1) for R in (0,1)]
 
 # 2. Shell = trace = L+C+R
+
 shells = {s: sum(s) for s in states}
 
 # 3. Partition by shell
+
 shell_strata = {k: [s for s,v in shells.items() if v==k] for k in range(4)}
 
 # 4. φ: chart → J₃(O) diagonal
+
 def phi(s): return diag(*s)
 
 # 5. Verify T4: compute 3-step transitions on shell=2
+
 M3 = compute_M3(shell_strata[2])  # exactly ⅓(T₁₂+T₁₃+T₂₃)
 
 # 6. Verify T5: M3 @ M3 == M3 over ℚ
@@ -52,9 +67,11 @@ M3 = compute_M3(shell_strata[2])  # exactly ⅓(T₁₂+T₁₃+T₂₃)
 # 7. Verify T6: trace-1 block == trace-2 block
 
 # 8. Verify T7: 8×8 entries in {0, 1/4, 1/2}
+
 ```
 
 ## Receipt (identical for human and tool)
+
 ```
 foundation-receipt =
   T3: 8 states bijection ✓

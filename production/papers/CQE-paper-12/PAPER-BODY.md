@@ -4,9 +4,13 @@
 
 Formal refinement draft for peer-review-facing development
 
+## Proof/Exposure Hierarchy
+
+The proof-carrying content of this paper is the mathematics: the definitions, lemmas, constructions, examples, and receipts that establish the claimed transport. Paper 00, workbook sheets, analog tools, and open-obligation ledgers are supplemental validation and exposure layers. They exist to make the math inspectable, reproducible, and accessible without requiring a particular software stack. In the simplest case, the same state transitions can be marked with ordinary physical tokens, lines, or dirt; the point is not the material, but the preserved center, boundary, transform, residue, and receipt structure.
+
 ## Abstract
 
-This paper states a local transport problem, gives a formal vocabulary for it, binds it to a ForgeFactory/Rhenium tool surface, and supplies an analog workbook sheet. The paper is written as a proof-facing document rather than as a description of how the paper was produced. Build-method details are retained only in appendices, receipts, and the Paper 31 meta-walkthrough.
+This paper states a local transport problem, gives a formal vocabulary for it, binds it to a ForgeFactory/Rhenium tool surface, and records an analog workbook sheet as supplemental exposure and validation evidence. The paper is written as a proof-facing document rather than as a description of how the paper was produced. Build-method details are retained only in appendices, receipts, and the Paper 31 meta-walkthrough.
 
 ## Central Thesis
 
@@ -14,7 +18,7 @@ Convert digital-physics and cellular-automaton candidates into prediction surfac
 
 ## Scope Boundary
 
-The paper claims only what its tool, proof tree, citations, and workbook sheet can presently support. Any interpretation that exceeds that support is logged as an obligation rather than silently promoted to proof.
+The paper claims only what its math, proof tree, citations, tool receipts, and supplemental workbook evidence can presently support. Any interpretation that exceeds that support is logged as an obligation rather than silently promoted to proof.
 
 ## Definitions
 
@@ -22,7 +26,7 @@ The paper claims only what its tool, proof tree, citations, and workbook sheet c
 - **L/R**: the two opposed boundary directions read relative to C.
 - **Transport row**: a typed record that carries a claim, source, transform, state, and obligation status.
 - **Receipt**: a replayable record of an operation, its inputs, outputs, and unresolved obligations.
-- **Workbook sheet**: the analog version of the proof state, expressed through color, tokens, string, page, card, and white/black follow-up.
+- **Supplemental workbook sheet**: a supplemental physical version of the proof state, expressed through color, tokens, string, page, card, and white/black follow-up.
 - **Tool binding**: the ForgeFactory module or function family that makes the paper executable or testable.
 
 ## Axioms
@@ -33,13 +37,13 @@ Axiom 12.2 - Receipt Preservation: no transform is accepted unless its inputs, o
 
 Axiom 12.3 - Boundary Positivity: failed, partial, or mismatched routes are data. They become obligations or correction surfaces.
 
-Axiom 12.4 - Analog Equivalence: if the claim is part of the main corpus, it must have a physical workbook analogue.
+Axiom 12.4 - Analog Exposure Equivalence: if the claim is part of the main corpus, it can be exposed through a physical workbook analogue.
 
 ## Lemmas
 
 Lemma 12.1 - If a local state preserves C and records L/R residue, it can be transported into a proof ledger without erasing unresolved alternatives.
 
-Lemma 12.2 - If a tool output and workbook sheet encode the same center, boundary, and obligation state, they are equivalent receipts at different media layers.
+Lemma 12.2 - If a tool output and supplemental workbook sheet encode the same center, boundary, and obligation state, they are equivalent receipts at different media layers.
 
 Lemma 12.3 - A practical example is valid for this paper only when it demonstrates the same operation in a non-toy domain.
 
@@ -70,9 +74,9 @@ claim
 -> boundary read
 -> tool transform
 -> practical example
--> workbook analogue
+-> supplemental workbook analogue
 -> receipt
--> proof / obligation split
+-> proof result / audit residue split
 ```
 
 ## Practical Solved Example

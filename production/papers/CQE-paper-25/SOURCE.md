@@ -4,6 +4,10 @@
 
 Applied / horizon layer. Adds an energy-and-traversal ledger to the transforms used across the corpus (cross-language, figure, material, and fold transports of Papers 18-24). The provable content is the NSL conservation accounting (`ledger/nsl.py`) and the bounded transport-obligation layer (`transport_obligations.py`); the "energy" is the analog-math conservation quantity, not a physical joule count unless a domain calibrates it.
 
+## Proof/Exposure Hierarchy
+
+The proof-carrying content of this paper is the mathematics: the definitions, lemmas, constructions, examples, and receipts that establish the claimed transport. Paper 00, workbook sheets, analog tools, and open-obligation ledgers are supplemental validation and exposure layers. They exist to make the math inspectable, reproducible, and accessible without requiring a particular software stack. In the simplest case, the same state transitions can be marked with ordinary physical tokens, lines, or dirt; the point is not the material, but the preserved center, boundary, transform, residue, and receipt structure.
+
 ## Abstract
 
 Every transport in the corpus moves a registered state from a source object to a target object. This paper attaches an *energy and traversal ledger* to each such move so that a transport is accepted only if its boundary cost is accounted for. The load-bearing object is the Noether-Shannon-Landauer boundary term `NSLTerm` of `ledger/nsl.py`, whose conservation reading is `Theta = alpha*N + beta*S + gamma*L - absorption <= 0` (the unit-agnostic form; the Morphonics functional writes it as `Theta(phi) = wN*N + wS*S + wL*L + wG*G + wO*O`). Here `N` is the Noether / conservation mismatch, `S` the Shannon / information mismatch, `L` the Landauer / irreversible-execution cost, `G` the geometric glue mismatch, and `O` the obstruction penalty. A traversal map is the sequence of transports along a path, and its ledger is the running sum of these boundary terms, exactly the bounded four-layer transport ledger of `transport_obligations.py`. The "energy" weight per chart state is read from the corpus's own VOA weight `voa_weight` (the seed partition `Z(q) = 2q^0 + 6q^5`: vacua cost 0, excited states cost 5). The contribution is the ledger discipline: `DeltaPhi = DeltaN + DeltaI + DeltaL <= 0` over a traversal is the acceptance gate, and any traversal whose ledger does not close is carried as an open obligation with its boundary residue logged, not erased.
@@ -25,7 +29,7 @@ This paper claims (i) a typed energy ledger per transport built from the `NSLTer
 - **Traversal map**: an ordered path of transports; its ledger is the running sum of NSL terms.
 - **Conservation gate (NSL)**: a traversal is accepted iff `DeltaPhi = DeltaN + DeltaI + DeltaL <= 0` (the corpus conservation law, equivalently `Theta <= 0`).
 - **voa_weight**: the corpus's intrinsic per-state weight (`centroid_voa.voa_weight`), seed partition `Z(q) = 2q^0 + 6q^5`; used as the analog energy of a chart state.
-- **Transport row / Receipt / Workbook sheet / Tool binding**: as defined in Paper 00.
+- **Transport row / Receipt / Supplemental workbook sheet / Tool binding**: as defined in Paper 00.
 
 ## Axioms
 
@@ -35,7 +39,7 @@ Axiom 25.2 - Receipt Preservation: no transport is accepted unless its NSL term,
 
 Axiom 25.3 - Boundary Positivity: a non-closing transport (`theta > 0`) is data - it becomes an obligation with its residue recorded, never a silent deletion.
 
-Axiom 25.4 - Analog Equivalence: every accepted traversal has a physical workbook analogue (a weighted bead string whose bead sizes are the step costs).
+Axiom 25.4 - Analog Exposure Equivalence: every accepted traversal has a physical workbook analogue (a weighted bead string whose bead sizes are the step costs).
 
 Axiom 25.5 - Unit Honesty: the NSL terms are unit-agnostic; a physical-energy reading requires a calibration obligation and is never promoted from the analog ledger alone.
 
@@ -80,7 +84,7 @@ claim (every transport carries an accountable energy/traversal ledger)
 -> NSL conservation gate DeltaPhi <= 0
 -> default per-state cost voa_weight (Z(q)=2q^0+6q^5)
 -> worked example (two supply-chain paths)
--> workbook analogue (weighted bead string)
+-> supplemental workbook analogue (weighted bead string)
 -> receipt
 -> proof (ledger closes) / obligation (theta > 0, or unit calibration)
 ```

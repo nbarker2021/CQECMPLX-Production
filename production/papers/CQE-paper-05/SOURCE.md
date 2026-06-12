@@ -4,6 +4,10 @@
 
 Foundational paper. Establishes the oloid as a curved/rolling transport carrier that preserves continuity without straight-line motion. Proof-facing.
 
+## Proof/Exposure Hierarchy
+
+The proof-carrying content of this paper is the mathematics: the definitions, lemmas, constructions, examples, and receipts that establish the claimed transport. Paper 00, workbook sheets, analog tools, and open-obligation ledgers are supplemental validation and exposure layers. They exist to make the math inspectable, reproducible, and accessible without requiring a particular software stack. In the simplest case, the same state transitions can be marked with ordinary physical tokens, lines, or dirt; the point is not the material, but the preserved center, boundary, transform, residue, and receipt structure.
+
 ## Abstract
 
 We establish the oloid as the corpus's curved transport carrier and show that transport need not be straight-line to preserve continuity. The oloid (Bernoulli, Schatz) is the convex hull of two perpendicular equal-radius circles whose centers are separated by one radius; it is the unique smooth convex body that rolls on a plane while developing its entire surface, with a natural 4-period contact structure. As a binary-tape carrier, the oloid holds both members of every antipodal chart pair simultaneously: at each rolling step one circle is in contact (the current sheet) and the other is perpendicular (the antipodal sheet), so the implicit spin partner of each tape bit is carried geometrically without ever being recorded separately. We give the algebraic rolling state `(sheet, phase, parity)` and its octonion-grounded form (rolls as right-multiplication by `e_4`/`e_5`, where `e_4^2 = -1` gives the 180-degree gauge inversion and `e_4^4 = +1` gives the 4-period). We register the Cayley-Dickson oloid normal form: an enumerated `N` resolves with its antipode `-N`, the generative is indexed by `N+1` doublings, and the network grows as `1 + 8 + 8 + 1`. We give the dual-path oloid, where three head|tail dyads (podal, antipodal, shared contact-edge) carry the same `S_3 = W(SU(3))` action that Paper 03 proves on the trace-2 idempotents. The carrier is scale-invariant: the `N | -N` dyad has a midpoint, and the rolling motion is curved, continuous, and reversible — straightness is not required for continuity of transport.
@@ -34,7 +38,7 @@ Axiom 05.2 - Receipt Preservation: each rolling step logs the sheet, phase, and 
 
 Axiom 05.3 - Boundary Positivity: an enumerated `N` and its antipode `-N` are a single dyad with a midpoint; neither pole is a failure, and the curved path between them is the carrier.
 
-Axiom 05.4 - Analog Equivalence: the oloid has a physical workbook analogue (a rolling two-circle body whose contact sheet is the tape bit and whose perpendicular circle is the spin partner).
+Axiom 05.4 - Analog Exposure Equivalence: the oloid has a physical workbook analogue (a rolling two-circle body whose contact sheet is the tape bit and whose perpendicular circle is the spin partner).
 
 ## Lemmas
 
@@ -87,9 +91,9 @@ claim (curved rolling carrier preserves continuity, no straight line)
 -> dual-path carrier: 3 dyads with S_3 = W(SU(3)) action               (Lemma 05.3)
    |- involution^3 = identity
 -> worked example (verify normal form + dual-path involution)
--> workbook analogue (rolling two-circle body)
+-> supplemental workbook analogue (rolling two-circle body)
 -> receipt (sheet/phase/parity transitions logged)
--> proof / obligation split (E-tower escape is open)
+-> proof result / audit residue split (E-tower escape is open)
 ```
 
 ## Practical Solved Example

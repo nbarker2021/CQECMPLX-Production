@@ -1,5 +1,13 @@
 # Paper 20 — Workbook: Layer-2 Synthesis Ledger Sheet
 
+## Workbook Role
+
+This workbook is supplemental validation and exposure material. It is not the paper's primary proof. It shows how the paper's mathematical state can be reconstructed with ordinary marks, tokens, strings, cards, or any equivalent physical substitute so that the proof remains inspectable even without software.
+
+## Proof/Exposure Hierarchy
+
+The proof-carrying content of this paper is the mathematics: the definitions, lemmas, constructions, examples, and receipts that establish the claimed transport. Paper 00, workbook sheets, analog tools, and open-obligation ledgers are supplemental validation and exposure layers. They exist to make the math inspectable, reproducible, and accessible without requiring a particular software stack. In the simplest case, the same state transitions can be marked with ordinary physical tokens, lines, or dirt; the point is not the material, but the preserved center, boundary, transform, residue, and receipt structure.
+
 ## Sheet ⇄ Tool Isomorphism
 
 | Analog Operation | Tool Function | Data Structure |
@@ -10,6 +18,7 @@
 | List obligations | `ledger.obligations` | `List[Obligation]` |
 
 ## Human Execution Protocol (Paper 20)
+
 ```
 1. List C₀ through C₁₉ as 20 beads
 2. XOR compose: C₀ ⊕ C₁ ⊕ ... ⊕ C₁₉
@@ -19,6 +28,7 @@
 ```
 
 ## Tool Execution Protocol (identical)
+
 ```python
 ledger = SynthesisLedger()
 for i in range(20):
@@ -29,6 +39,7 @@ hash = ledger.root_hash()
 ```
 
 ## Receipt (identical)
+
 ```
 synthesis-receipt =
   papers: 20

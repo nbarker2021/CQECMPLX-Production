@@ -1,5 +1,13 @@
 # Paper 16 — Workbook: Continuum Edge Residuals Sheet
 
+## Workbook Role
+
+This workbook is supplemental validation and exposure material. It is not the paper's primary proof. It shows how the paper's mathematical state can be reconstructed with ordinary marks, tokens, strings, cards, or any equivalent physical substitute so that the proof remains inspectable even without software.
+
+## Proof/Exposure Hierarchy
+
+The proof-carrying content of this paper is the mathematics: the definitions, lemmas, constructions, examples, and receipts that establish the claimed transport. Paper 00, workbook sheets, analog tools, and open-obligation ledgers are supplemental validation and exposure layers. They exist to make the math inspectable, reproducible, and accessible without requiring a particular software stack. In the simplest case, the same state transitions can be marked with ordinary physical tokens, lines, or dirt; the point is not the material, but the preserved center, boundary, transform, residue, and receipt structure.
+
 ## Sheet ⇄ Tool Isomorphism
 
 | Analog Operation | Tool Function | Data Structure |
@@ -11,6 +19,7 @@
 | Compute skip fraction | `mean_skip_fraction` | `0.849` |
 
 ## Human Execution Protocol (Paper 16)
+
 ```
 1. For K=10: compute C ∧ ¬R at K-window boundary
 2. For K=100: same at K=100 boundary
@@ -21,6 +30,7 @@
 ```
 
 ## Tool Execution Protocol (identical)
+
 ```python
 erg = EdgeResidualGluon()
 residuals = [erg.residual_at_K(K) for K in [10, 100, 1000, 10000]]
@@ -29,6 +39,7 @@ assert erg.skip_fraction() == 0.849
 ```
 
 ## Receipt (identical)
+
 ```
 edge-residual-receipt =
   K=10: residual=1

@@ -4,6 +4,10 @@
 
 Transport / aggregation paper. Defines the Layer-2 ledger that aggregates prediction and theory-admission results into typed routes — solved, open, failed, and transported — backed by the executable `lattice_forge.ledger` substrate, the `transport_obligations` layer, and the `contributions_registry` governance gate. Proof-facing: the ledger machinery is executable; the aggregate verdicts it carries inherit each row's own status.
 
+## Proof/Exposure Hierarchy
+
+The proof-carrying content of this paper is the mathematics: the definitions, lemmas, constructions, examples, and receipts that establish the claimed transport. Paper 00, workbook sheets, analog tools, and open-obligation ledgers are supplemental validation and exposure layers. They exist to make the math inspectable, reproducible, and accessible without requiring a particular software stack. In the simplest case, the same state transitions can be marked with ordinary physical tokens, lines, or dirt; the point is not the material, but the preserved center, boundary, transform, residue, and receipt structure.
+
 ## Abstract
 
 This paper specifies the synthesis ledger that sits one layer above the individual results: it aggregates the outputs of the admission papers (theory-admission, Paper 11) and the prediction papers (Paper 12) into a single auditable record of typed routes. Each route is classified into one of the corpus's standing buckets — `demonstrated` (solved), `open`, `bounded_local` / `registered_landing_forms` (transported but not closed), and `forbidden` / failed — so that no result is silently promoted and no obstruction is silently dropped. Three real substrates back the ledger. (1) The SQLite morphism/admissibility ledger (`lattice_forge.ledger.Ledger`) holds objects, exact root vectors, admissibility edges, terminal 24D forms, glue requirements, and closure obstructions, with `Ledger.can_close` answering reachability queries (`yes`, `yes_with_template_glue`, `no`, `unknown`) and `Ledger.verify` checking seeded invariants (e.g. `E_8` = 240 roots, all 24 Niemeier terminals at rank 24, Leech root-rank 0). (2) The transport-obligation layer (`transport_obligations`) declares the four named transport edges with explicit classifications and proof boundaries, verified by `verify_transport_obligations` with overall status `pass_with_open_lifts`. (3) The contributions registry (`contributions_registry.Registry`) is the governance gate: every new fact must pass a named deterministic validator before becoming durable, with `(validated_by, rationale, timestamp)` recorded. The ledger is the corpus's honest scoreboard: it reports what is solved, what is open, what failed, and what was transported without closure.
@@ -24,7 +28,7 @@ This paper claims the ledger's structure, query surface, and governance discipli
 - **Terminal form**: a registered rank-24 Niemeier or Leech destination (`terminal_24d_forms`), with discriminant profile and composition tree.
 - **Closure obstruction**: a recorded reason a route does not close (`closure_obstruction_registry`).
 - **Governance gate**: the `contributions_registry.Registry.propose` path — a named validator runs a deterministic boolean check and records `(validated_by, rationale, validated_at)` before any new fact is committed.
-- **Receipt / Transport row / Workbook sheet / Tool binding**: as fixed in Paper 00.
+- **Receipt / Transport row / Supplemental workbook sheet / Tool binding**: as fixed in Paper 00.
 
 ## Axioms
 
@@ -34,7 +38,7 @@ Axiom 20.2 - Receipt Preservation: every committed row records its validator, ra
 
 Axiom 20.3 - Boundary Positivity: `open`, `unknown`, `forbidden`, and `pass_with_open_lifts` are first-class ledger states — failures and obstructions are stored, not discarded.
 
-Axiom 20.4 - Analog Equivalence: the ledger has a physical workbook analogue (a four-column board: solved / open / failed / transported, bound by route string).
+Axiom 20.4 - Analog Exposure Equivalence: the ledger has a physical workbook analogue (a four-column board: solved / open / failed / transported, bound by route string).
 
 ## Lemmas
 
@@ -84,7 +88,7 @@ claim (Layer-2 ledger aggregates solved/open/failed/transported routes)
 -> governance gate (validator + rationale + timestamp) [Lemma 20.3]
 -> aggregate of Paper 11 (admission) + Paper 12 (prediction) statuses
 -> worked example (verify + can_close + transport verdict)
--> workbook analogue (four-column board)
+-> supplemental workbook analogue (four-column board)
 -> receipt
 -> per-row proof / open / failed / transported (no silent upgrade)
 ```

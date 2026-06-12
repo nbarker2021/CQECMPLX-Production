@@ -4,6 +4,10 @@
 
 Lattice-template paper. Establishes the `(1, 3, 7, 8, 24)` code chain and its powered extension to dimension 72 (the Nebe lattice) as the combinatorial backbone for transport, with each step's claim explicitly classified as *demonstrated locally* or *open obligation*. Local derivation precedes any universality assertion. Proof-facing. Inherits the Paper 00 contract.
 
+## Proof/Exposure Hierarchy
+
+The proof-carrying content of this paper is the mathematics: the definitions, lemmas, constructions, examples, and receipts that establish the claimed transport. Paper 00, workbook sheets, analog tools, and open-obligation ledgers are supplemental validation and exposure layers. They exist to make the math inspectable, reproducible, and accessible without requiring a particular software stack. In the simplest case, the same state transitions can be marked with ordinary physical tokens, lines, or dirt; the point is not the material, but the preserved center, boundary, transform, residue, and receipt structure.
+
 ## Abstract
 
 This paper uses high-dimensional lattice analogs as closure templates for transport without claiming global universality before local derivation. The corpus already registers the 3-cell chart into `J_3(O)`; here we surface the discrete code chain that the chart's parameters trace as scale increases: `1` (the `Z/2` raw bit), `3` (the `S_3` neighborhood / three trace-2 idempotents), `7` (the Fano plane `PG(2,2)` = the 7 imaginary octonion units), `8` (the `(8,4,4)` extended Hamming code = the `E_8` root lattice via Construction A), `24` (the `(24,12,8)` binary Golay code, an ingredient of the Leech lattice), and the powered terminal `72 = 8 x 9` (the Nebe extremal even unimodular lattice). Each parameter is the unique self-orthogonal doubly-even perfect or extremal code at its dimension. We verify the *local* facts that the modules certify - the Fano-line/Hamming-codeword identity, `E_8` self-duality and double-evenness, Golay self-orthogonality and the `24 = 3 x 8` carrier geometry, and the `72`-dimensional sheet bound - and we keep the *global* lift (the rootless Leech landing, the `Gamma_72` glue action, and the cold-start fingerprint map) explicitly open. The discipline is local-derivation-first: a verifier that returns `pass` certifies only the combinatorial fact it tests, never the universality it is a template for.
@@ -36,7 +40,7 @@ Axiom 08.2 - Receipt Preservation: each verifier emits a status (`pass`/`fail`),
 
 Axiom 08.3 - Boundary Positivity: an unproved global lift (Leech landing, `Gamma_72` glue) is a recorded obligation with a named witness, never a silent gap nor an inflated claim.
 
-Axiom 08.4 - Analog Equivalence: the chain has a workbook analogue - nested frames of `1 / 3 / 7 / 8 / 24 / 72` tokens, with a black follow-up at the sheet bound `K = 9`.
+Axiom 08.4 - Analog Exposure Equivalence: the chain has a supplemental workbook analogue - nested frames of `1 / 3 / 7 / 8 / 24 / 72` tokens, with a black follow-up at the sheet bound `K = 9`.
 
 ## Axioms (chain-uniqueness, as obligations)
 
@@ -85,7 +89,7 @@ claim (lattice chain is the closure template; local first, global open)
 -> n=72 Nebe extremal dim; sheet K bound = 9 (verify_powered_chain)
    -> Gamma_72 glue: gamma72_landing_proved = False     -> OBLIGATION
 -> worked example (verify_lattice_code_chain)
--> workbook analogue (nested-frame tokens, K=9 black follow-up)
+-> supplemental workbook analogue (nested-frame tokens, K=9 black follow-up)
 -> receipt (per-dimension status + proof_boundary)
 ```
 

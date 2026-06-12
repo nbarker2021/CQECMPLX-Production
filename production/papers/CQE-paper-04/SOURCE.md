@@ -4,6 +4,10 @@
 
 Foundational paper. Defines boundary repair as the transport operation that converts a failed join into a typed constraint for the next legal route. Proof-facing.
 
+## Proof/Exposure Hierarchy
+
+The proof-carrying content of this paper is the mathematics: the definitions, lemmas, constructions, examples, and receipts that establish the claimed transport. Paper 00, workbook sheets, analog tools, and open-obligation ledgers are supplemental validation and exposure layers. They exist to make the math inspectable, reproducible, and accessible without requiring a particular software stack. In the simplest case, the same state transitions can be marked with ordinary physical tokens, lines, or dirt; the point is not the material, but the preserved center, boundary, transform, residue, and receipt structure.
+
 ## Abstract
 
 We define *boundary repair*: the operation that takes a join which failed to close — a sequence window whose head and tail do not land on the same carrier circle — and converts that failure into a typed constraint that names the exact tail needed to make a legal route. The Binary Boundary Adapter reads the last `window` bits of any binary sequence, unaltered, and computes the head and tail Lie-conjugate rest states that bound it. When head and tail lie on the same oloid circle (`F` or `P`), the arc is *closed*; when they do not, the arc is *crossing*, and the adapter emits the `matching_tail` — the specific rest state the tail would need for closure. This matching tail is the repair: it is not a correction of the data (the input is never modified) but a typed constraint on the next legal continuation. We tie boundary repair to the correction surface of Paper 02 (the frustrated-bond carry, `C=1, R=0`, that no linear rule resolves) and to the dual-path oloid carrier (Paper 05), where a failed join on one path is routed onto the antipodal or shared contact-edge path rather than dropped. Boundary repair is the corpus's ErrorWall discipline: failures become routing data classified into a small set of transport layers, each with a named witness and an explicit proof boundary.
@@ -34,7 +38,7 @@ Axiom 04.2 - Receipt Preservation: a failed join emits a receipt naming its head
 
 Axiom 04.3 - Boundary Positivity: a crossing arc is not an error — it is a typed constraint (the matching tail) that the next legal route must satisfy. A repair routes; it does not delete.
 
-Axiom 04.4 - Analog Equivalence: a boundary repair has a physical workbook analogue (two tokens on a circle strip; a crossing pair names the token the tail must become to close).
+Axiom 04.4 - Analog Exposure Equivalence: a boundary repair has a physical workbook analogue (two tokens on a circle strip; a crossing pair names the token the tail must become to close).
 
 ## Lemmas
 
@@ -89,9 +93,9 @@ claim (failed join -> typed constraint for next legal route)
    |- bounded / registered layers stay visibly open
 -> tie to correction surface: frustrated bond C=1,R=0 (Paper 02)
 -> worked example (boundary adapt of a real bit window)
--> workbook analogue (circle-strip token repair)
+-> supplemental workbook analogue (circle-strip token repair)
 -> receipt (head/tail/arc/matching_tail logged, input unmodified)
--> proof / obligation split
+-> proof result / audit residue split
 ```
 
 ## Practical Solved Example

@@ -4,6 +4,10 @@
 
 Horizon / interpretation layer, explicitly beyond the proof stack. The proof-bearing content is the static four-frame Z4 chart template and the *demonstrated negative result* that the Rule 30 trace does not inherit its periods. The "observer delay" and "shared reality" readings are interpretation, recorded with falsifiers. Proof-facing in form, interpretive in claim.
 
+## Proof/Exposure Hierarchy
+
+The proof-carrying content of this paper is the mathematics: the definitions, lemmas, constructions, examples, and receipts that establish the claimed transport. Paper 00, workbook sheets, analog tools, and open-obligation ledgers are supplemental validation and exposure layers. They exist to make the math inspectable, reproducible, and accessible without requiring a particular software stack. In the simplest case, the same state transitions can be marked with ordinary physical tokens, lines, or dirt; the point is not the material, but the preserved center, boundary, transform, residue, and receipt structure.
+
 ## Abstract
 
 This paper asks whether observer delay, sampling buffers, and shared-state constraints can be read off the corpus substrate without leaving the proven layer hollow. The honest answer is a *negative* proof plus an interpretation. The substrate supplies a static four-frame Z4 label on the eight chart states (`centroid_voa.four_frame_label`), with exactly two fixed points and six period-4 states (`verify_z4_period_template`). The natural temptation is to read this Z4 period as a temporal sampling window. We resist it: `temporal_z4_scope.verify_temporal_z4_scope` tests whether the actual Rule 30 label trace and center column inherit periods 1, 2, or 4, and returns `status = "static_template_only"` - the periods do NOT extend to time. The frame-inversion operator `F` (Paper 04) and the observer lattice chain (Paper 15) supply the language for an observer who reads a window, anneals to an attractor, and writes the predicted state before arrival. We frame "observer delay" as the lag between reading the current `(L, C, R)` window and committing its annealed attractor - a sampling-window lag - and "shared reality" as the agreement of two observers on the gluon-invariant center `C`. Both are interpretation beyond the proof stack. No claim is made that the substrate models conscious observers, relativistic simultaneity, or measurement collapse.
@@ -26,7 +30,7 @@ This paper claims only (i) the static four-frame Z4 template (`verify_z4_period_
 - **Observer delay (interpretation)**: the lag between reading a window and committing the annealed attractor `anneal_to_lie_conjugate(s)` - at most 3 S_3 steps (Paper 15 Theorem C).
 - **Shared reality (interpretation)**: agreement of two observers on `C` for the same window; `C` is the only coordinate fixed by the LR reflection, so it is the natural shared invariant.
 - **Sampling buffer**: a finite window of recently-read chart states held before commitment.
-- **Transport row / Receipt / Workbook sheet / Tool binding**: as in Paper 00.
+- **Transport row / Receipt / Supplemental workbook sheet / Tool binding**: as in Paper 00.
 
 ## Axioms
 
@@ -36,7 +40,7 @@ Axiom 27.2 - Receipt Preservation: no transform is accepted unless inputs, outpu
 
 Axiom 27.3 - Boundary Positivity: failed, partial, or mismatched routes are data. The negative result (no temporal period) is the central *positive* datum of this paper.
 
-Axiom 27.4 - Analog Equivalence: a main-corpus claim has a physical workbook analogue. The observer-delay reading is interpretive; its sheet records it as a timed but unwitnessed follow-up.
+Axiom 27.4 - Analog Exposure Equivalence: a main-corpus claim has a physical workbook analogue. The observer-delay reading is interpretive; its sheet records it as a timed but unwitnessed follow-up.
 
 ## Lemmas
 
@@ -83,7 +87,7 @@ claim (observer delay, shared reality as interpretation)
 -> shared invariant = C (gluon)                 [PROVEN: verify_gluon_invariance]
 -> "observer delay models human latency"        [INTERPRETATION + falsifier]
 -> "shared reality = consensus on C"            [INTERPRETATION + falsifier]
--> workbook analogue (timed follow-up)
+-> supplemental workbook analogue (timed follow-up)
 -> receipt
 ```
 

@@ -4,6 +4,10 @@
 
 Transport paper. Models observation as the selection of one face of a registered state, with the unselected faces retained as obligations rather than deleted. The frame-inversion operator `F`, the relational-qubit signature `Q(S)`, and the four signature classes are surfaced from the PROOF set; the SPINOR class remains an open obligation. Proof-facing for the finite signature machinery, obligation-facing for the unobserved class.
 
+## Proof/Exposure Hierarchy
+
+The proof-carrying content of this paper is the mathematics: the definitions, lemmas, constructions, examples, and receipts that establish the claimed transport. Paper 00, workbook sheets, analog tools, and open-obligation ledgers are supplemental validation and exposure layers. They exist to make the math inspectable, reproducible, and accessible without requiring a particular software stack. In the simplest case, the same state transitions can be marked with ordinary physical tokens, lines, or dirt; the point is not the material, but the preserved center, boundary, transform, residue, and receipt structure.
+
 ## Abstract
 
 This paper formalizes observation as *face selection*: an observer reads one face of a registered chart state (a chirality, a frame, or one term of an `N | -N` dyad), and the corpus's discipline requires that the faces not selected are retained as live obligations, never silently erased. The mechanism is the frame-inversion operator `F` of Paper 04: `F` re-encodes the `S_3` group-ring coefficients of a sequence's `shell = 2` transition matrix into a new binary sequence, and iterating it yields the relational-qubit signature `Q(S) = (r_0, r_1, r_2)`, the residual-squared closure at three nested observer levels (system, meta-observer, meta-meta-observer). The four signature classes — `CLASSICAL (0,0,0)`, `META_OPEN (0,0,eps)`, `SPINOR (0,eps,0)`, `VACUUM (eps,eps,eps)` — classify which faces close and which stay open. The Paper 15 resolution algorithm makes the retention explicit: the unselected antipodal face (`-N`) is the "phase midpoint" whose `C`-coordinate (the gluon) is invariant under the `L <-> R` reversal, so the unselected face is always reconstructible rather than lost. Observation selects a face; the latent alternatives are logged as obligations, and the `SPINOR (0,eps,0)` class — never yet observed in tested sequences up to length 14 — is the standing example of a retained, unfilled face.
@@ -25,7 +29,7 @@ This paper claims the face-selection model and the finite signature machinery ex
 - **Relational-qubit signature**: `Q(S) = (r_0, r_1, r_2)`, the residual-squared closures of `S`, `F(c_0)`, and `F(c_1)`; a residual is *closed* iff `< 10^{-6}` (in practice exactly 0 over the rationals). (IDENTITY Def. 2.16; PROOF Paper 04.)
 - **Signature classes**: `CLASSICAL (0,0,0)`, `META_OPEN (0,0,eps)`, `SPINOR (0,eps,0)`, `VACUUM (eps,eps,eps)`. (IDENTITY Def. 2.17.)
 - **Gluon `C`**: the centroid coordinate fixed by the `L <-> R` reversal; the invariant phase midpoint of `(N, -N)` (`centroid_voa.gluon`).
-- **Receipt / Transport row / Workbook sheet / Tool binding**: as fixed in Paper 00.
+- **Receipt / Transport row / Supplemental workbook sheet / Tool binding**: as fixed in Paper 00.
 
 ## Axioms
 
@@ -35,7 +39,7 @@ Axiom 19.2 - Receipt Preservation: every observation logs the selected face, its
 
 Axiom 19.3 - Boundary Positivity: an unselected face is a retained obligation with a recovery rule, never a deletion; an unobserved signature class (SPINOR) is logged, not assumed absent.
 
-Axiom 19.4 - Analog Equivalence: face selection has a physical workbook analogue (turning a multi-face token to one face while pinning the others as black follow-ups).
+Axiom 19.4 - Analog Exposure Equivalence: face selection has a physical workbook analogue (turning a multi-face token to one face while pinning the others as black follow-ups).
 
 ## Lemmas
 
@@ -86,7 +90,7 @@ claim (observation = face selection with retained latent faces)
 -> chiral doublet faces resolved by side axis (Lemma 19.2)
 -> frame inversion F ; signature Q(S) ; four classes (Lemma 19.3)
 -> worked example (Wow signal CLASSICAL ; Rule 30 bar VACUUM)
--> workbook analogue (multi-face token, pinned alternatives)
+-> supplemental workbook analogue (multi-face token, pinned alternatives)
 -> receipt (selected face + reconstruction rules)
 -> proof (finite signatures) / obligation (SPINOR, consciousness postulate)
 ```

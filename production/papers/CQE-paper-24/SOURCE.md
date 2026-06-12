@@ -4,6 +4,10 @@
 
 Applied / horizon layer. Connects a real combinatorial domain (greedy non-attacking piece placement on numbered boards) to the corpus substrate. The contribution is the registration of greedy red/black knight placement as an L-conjugate cellular automaton and its generalization to N-dimensional chart operators. The provable content is about the local-rule CA and its L-conjugate attractors (`centroid_voa.py`); the chessboard is the illustration that gives the CA a concrete shadow.
 
+## Proof/Exposure Hierarchy
+
+The proof-carrying content of this paper is the mathematics: the definitions, lemmas, constructions, examples, and receipts that establish the claimed transport. Paper 00, workbook sheets, analog tools, and open-obligation ledgers are supplemental validation and exposure layers. They exist to make the math inspectable, reproducible, and accessible without requiring a particular software stack. In the simplest case, the same state transitions can be marked with ordinary physical tokens, lines, or dirt; the point is not the material, but the preserved center, boundary, transform, residue, and receipt structure.
+
 ## Abstract
 
 A knight placed on a numbered board under a greedy non-attacking rule generates an integer sequence whose pattern (stripes, islands) is determined entirely by a local exclusion neighborhood - the L-shaped `(+-1, +-2)/(+-2, +-1)` move set [Knight], in the same spirit as the greedy queens-in-exile construction [QueensInExile] cataloged in [OEIS]. This is structurally the corpus move: a global pattern fixed by a local `(L, C, R)` window. We register greedy knight placement as a local-rule cellular automaton whose update is read through the chart and whose closure is governed by the L-conjugate (Lie-conjugate) attractor structure proven in `centroid_voa.py`: every chart state anneals to one of the four `L = R` attractors `{(0,0,0),(0,1,0),(1,0,1),(1,1,1)}` in at most three S3-transposition steps (`verify_hamming_centroid_universality`). The "L-conjugate" of the thesis is exactly this `L = R` conjugate plane; the "greedy knight" is the local exclusion rule that the chart reads. We then lift the CA to N-dimensional chess operators by treating each board axis as one of the S3 centroid frames (`three_conjugate_label`) and the move set as a chart operator acting on the joint label. No claim is made that an N-dimensional chess game is "solved"; the claim is that greedy placement is an L-conjugate CA whose attractor count and orbit split are the same finite chart identities the corpus already verifies, and that the N-dimensional generalization is a frame-indexed chart operator.
@@ -24,7 +28,7 @@ This paper claims (i) that greedy red/black knight placement can be written as a
 - **L-conjugate (Lie-conjugate) attractor**: a chart state with `L = R`; the four such states `{(0,0,0),(0,1,0),(1,0,1),(1,1,1)}` are `LIE_CONJUGATES` in `centroid_voa.py`.
 - **Anneal step**: one S3 transposition (`swap_LR`, `swap_LC`, `swap_CR`); `anneal_to_lie_conjugate` reaches an attractor in `<= 3` steps.
 - **N-dimensional chess operator**: a chart operator indexed by which S3 centroid frame plays the role of "board axis" (`three_conjugate_label` / `four_frame_label`).
-- **Transport row / Receipt / Workbook sheet / Tool binding**: as defined in Paper 00.
+- **Transport row / Receipt / Supplemental workbook sheet / Tool binding**: as defined in Paper 00.
 
 ## Axioms
 
@@ -34,7 +38,7 @@ Axiom 24.2 - Receipt Preservation: no CA update is accepted unless its input win
 
 Axiom 24.3 - Boundary Positivity: a blocked cell (a greedy rejection) is data - it becomes an exclusion record, never a silent deletion.
 
-Axiom 24.4 - Analog Equivalence: the CA has a physical workbook analogue (a numbered token grid with red/black markers and a flip operation).
+Axiom 24.4 - Analog Exposure Equivalence: the CA has a physical workbook analogue (a numbered token grid with red/black markers and a flip operation).
 
 ## Lemmas
 
@@ -76,7 +80,7 @@ claim (greedy knight placement is an L-conjugate CA; N-dim chess = frame operato
 -> 2+6 vacuum/excited orbit split (verify_voa_sector_decomposition)
 -> N-dim lift: three_conjugate_label frame operator
 -> worked example (greedy knight stripes/islands)
--> workbook analogue (numbered token grid + flip)
+-> supplemental workbook analogue (numbered token grid + flip)
 -> receipt
 -> proof (CA + attractors) / obligation (OEIS identity, N-dim playability)
 ```

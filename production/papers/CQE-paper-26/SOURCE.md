@@ -4,6 +4,10 @@
 
 Horizon / high-speculation layer with heavy obligation accounting. The proof-bearing content is the carrier-residue algebra of the Oloid rolling model; every plasma-physical reading is an explicitly flagged candidate hypothesis. Strictly separated from the proven layers (Papers 00-16). Proof-facing in form, horizon in claim.
 
+## Proof/Exposure Hierarchy
+
+The proof-carrying content of this paper is the mathematics: the definitions, lemmas, constructions, examples, and receipts that establish the claimed transport. Paper 00, workbook sheets, analog tools, and open-obligation ledgers are supplemental validation and exposure layers. They exist to make the math inspectable, reproducible, and accessible without requiring a particular software stack. In the simplest case, the same state transitions can be marked with ordinary physical tokens, lines, or dirt; the point is not the material, but the preserved center, boundary, transform, residue, and receipt structure.
+
 ## Abstract
 
 This paper isolates a single proof-bearing object - the Oloid rolling carrier and its octonionic grounding - and asks what, if anything, can be said about *first-shear*, *pinch*, and *friction-like generation* as analog readings of that carrier. The Oloid is the unique convex body that rolls without slipping while sweeping its entire surface, with a natural 4-period contact structure (`oloid_rolling.py`); its octonion grounding replaces the integer phase counter with right-multiplication by `e_4` (bit 0) and `e_5` (bit 1), where `e_4^2 = -1` is the 180-degree gauge inversion and `e_4^4 = +1` is the rolling period (`oloid_octonionic.py`). The carrier produces a *residue* - the cumulative Arf parity and the non-associative orient bit - that survives the visible-tape projection. We treat "shear" as the analog of the orient-bit divergence between the `e_4` and `e_5` generators, and "pinch" as the analog of a residue-grade collapse in the transport ledger (`transport_obligations.py`). We make no plasma-physics claim. The plasma reading is recorded as a candidate hypothesis carrying its own falsifier. The proven content is exactly the finite carrier algebra and its verifier; everything past that is obligation.
@@ -25,7 +29,7 @@ This paper claims only (i) the carrier-residue algebra established by `verify_ol
 - **First-shear (analog)**: the orient-bit divergence between two carriers driven by the same tape but distinct generators - a path-history feature that pure parity counting misses (`orient_bit`, `dominant_basis_index`).
 - **Pinch (analog)**: a residue-grade collapse - the event in which a transport row's preserved quantity drops a grade and the lift is reclassified from `bounded_local` to `open` (`transport_obligations`).
 - **Carrier residue**: the part of the carrier state not recoverable from the visible head bit alone - the Arf parity and the octonion dominant-component index.
-- **Transport row / Receipt / Workbook sheet / Tool binding**: as fixed in Paper 00.
+- **Transport row / Receipt / Supplemental workbook sheet / Tool binding**: as fixed in Paper 00.
 
 ## Axioms
 
@@ -35,7 +39,7 @@ Axiom 26.2 - Receipt Preservation: no transform is accepted unless its inputs, o
 
 Axiom 26.3 - Boundary Positivity: failed, partial, or mismatched routes are data; they become obligations or correction surfaces, never silent deletions. For a horizon paper this axiom dominates: a physical reading that cannot be witnessed is logged, not promoted.
 
-Axiom 26.4 - Analog Equivalence: if a claim belongs to the main corpus it must have a physical workbook analogue. The shear/pinch readings here are analog *only*; their workbook sheet records them as black-follow-up (unresolved) until a witness exists.
+Axiom 26.4 - Analog Exposure Equivalence: if a claim belongs to the main corpus it can be exposed through a physical workbook analogue. The shear/pinch readings here are analog *only*; their supplemental workbook sheet records them as black-follow-up (unresolved) until a witness exists.
 
 ## Lemmas
 
@@ -86,7 +90,7 @@ claim (carrier residue + analog shear/pinch)
 -> shear analog = orient-bit divergence          [PROVEN as carrier identity]
 -> pinch analog = ledger reclassification         [PROVEN as ledger structure]
 -> plasma / friction physical reading             [OBLIGATION + falsifier]
--> workbook analogue (black follow-up until witnessed)
+-> supplemental workbook analogue (black follow-up until witnessed)
 -> receipt
 ```
 
@@ -135,4 +139,4 @@ claim (carrier residue + analog shear/pinch)
 - Paper 01 receives the note that the Oloid carrier is the rolling realization of the minimal `(L, C, R)` carrier.
 - Paper 16 (the digit rollout) receives the orient-bit as the path-history feature on the rollout.
 - The analog workbook manual receives the rolling-strip + shear-knot sheet rule.
-- Paper 31 records how this horizon paper's strict proof/obligation split is itself an enacted `(L, C, R)` boundary read.
+- Paper 31 records how this horizon paper's strict proof result / audit residue split is itself an enacted `(L, C, R)` boundary read.

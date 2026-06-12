@@ -1,6 +1,11 @@
 # Paper 10 — C-Form: T10 Master Receipt Gluon
 
+## Proof/Exposure Hierarchy
+
+The proof-carrying content of this paper is the mathematics: the definitions, lemmas, constructions, examples, and receipts that establish the claimed transport. Paper 00, workbook sheets, analog tools, and open-obligation ledgers are supplemental validation and exposure layers. They exist to make the math inspectable, reproducible, and accessible without requiring a particular software stack. In the simplest case, the same state transitions can be marked with ordinary physical tokens, lines, or dirt; the point is not the material, but the preserved center, boundary, transform, residue, and receipt structure.
+
 ## What C Is at This Dimension
+
 **C = the master receipt Gluon** — the `LookupReceipt` that binds Papers 00-09 into a single inspectable, replayable causal unit. In the lattice_forge substrate, C is realized as the **master receipt** that:
 
 - Composes all 10 paper receipts into a single `LookupReceipt` via `CmplxLookupCache`
@@ -10,20 +15,24 @@
 C is the **master receipt Gluon** — the binding Gluon that makes the stack inspectable.
 
 ## How C Ports UP (to larger frames)
+
 - **Paper 11 (Theory Admission Gate):** The master receipt Gluon is the admission authority — only theories with matching Gluon mass are admitted.
 - **Paper 20 (Layer-2 Synthesis Ledger):** The master receipt Gluon becomes the synthesis ledger's root hash.
 - **Paper 31 (Meta LCR):** The master receipt Gluon = the meta-walkthrough's enacted LCR certificate.
 
 ## How C Ports DOWN (to finer detail)
+
 - **Paper 00-09:** Each paper's C-form is a component of the master receipt Gluon.
 - **Paper 06 (Causal Code):** The master receipt Gluon = the causal edge that binds all 10 papers.
 - **Paper 04 (Boundary Repair):** The master receipt Gluon = the repair certificate for the entire stack.
 
 ## How C Ports SIDEWAYS (adjacent papers, same scale)
+
 - **Paper 11 (Theory Admission Gate):** The master receipt Gluon is the admission filter's trust anchor.
 - **Paper 11 (Theory Admission Gate):** Theories with non-matching Gluon mass are rejected at the gate.
 
 ## How C WRAPS (S₃ transposition / frame inversion)
+
 - **Frame 0 (C-centroid):** C = the composed receipt (all 10 papers)
 - **Frame 1 (R-centroid):** C = the receipt reflected — the verification witness
 - **Frame 2 (C-flipped):** C = the receipt's negation (the adversarial audit)
@@ -32,14 +41,17 @@ C is the **master receipt Gluon** — the binding Gluon that makes the stack ins
 The master receipt Gluon wraps in the **receipt composition Z4 cycle** — each composition is a frame rotation.
 
 ## How C FOLDS (oloid/antipode/oloid operations)
+
 - **Antipode:** The audit trail = the master receipt's negation
 - **Oloid:** The master receipt's N|-N midpoint = the composition operator `⊕`
 - **Rotate90:** The receipt's rotation = the frame-shifted audit
 
 ## The C-Form Statement
+
 > **The master receipt Gluon IS the composed receipt binding Papers 00-09.** C = `C₀ ⊕ C₁ ⊕ ... ⊕ C₉`. It certifies the entire stack as inspectable, replayable, and causally complete. The master receipt is the trust anchor for all higher papers.
 
 ## Lattice_forge Primitives
+
 - `CmplxLookupCache` — the receipt index
 - `LookupReceipt` — the edge certificate
 - `verify_cmplx_lookup_cache` — the cache integrity verifier

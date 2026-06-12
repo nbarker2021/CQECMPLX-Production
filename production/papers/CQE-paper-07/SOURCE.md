@@ -4,6 +4,10 @@
 
 Bridge paper. Establishes the discrete-to-continuous interface of the corpus: the conditions under which a sampled continuous signal enters the same `(L, C, R)` chart machinery as a deterministic binary sequence, and the n=3 closure that the two share. Proof-facing, with explicit separation of static-template results from temporal-trace results. Inherits the Paper 00 contract.
 
+## Proof/Exposure Hierarchy
+
+The proof-carrying content of this paper is the mathematics: the definitions, lemmas, constructions, examples, and receipts that establish the claimed transport. Paper 00, workbook sheets, analog tools, and open-obligation ledgers are supplemental validation and exposure layers. They exist to make the math inspectable, reproducible, and accessible without requiring a particular software stack. In the simplest case, the same state transitions can be marked with ordinary physical tokens, lines, or dirt; the point is not the material, but the preserved center, boundary, transform, residue, and receipt structure.
+
 ## Abstract
 
 This paper defines the bridge where discrete state changes approximate continuous dynamics through indexed windows. The corpus registers binary sequences via the chart `(L_n, C_n, R_n) = (c_{n-1}, c_n, c_{n+1})`; a continuous signal enters the same machinery by *indexed discretization* - sampling, thresholding, and parity encoding into a binary tape, after which the identical `shell = 2` conditional transition matrix is computed. The load-bearing claim is that the `n = 3` SU(3) Weyl closure (`IDENTITY_PAPER` Theorem T4) is the *shared* signature across both regimes: it holds for purely discrete sequences (cellular automata, number-theoretic parities) and for discretized continuous measurements (the Planck 2018 cosmic-microwave-background TT spectrum evaluated cumulatively, the Hawking thermal Planck spectrum across mass scales). The bridge is conditional, not universal: closure depends on how the continuous signal is windowed (cumulative versus raw), and the static chart-label template must be distinguished from the actual temporal trace. We surface the closure as an empirical signature catalogued in `IDENTITY_PAPER` Section 6 and verified by the experiment harness, and we carry the universality of the bridge itself as an open obligation.
@@ -33,7 +37,7 @@ Axiom 07.2 - Receipt Preservation: the discretization encoder (sampling rate, th
 
 Axiom 07.3 - Boundary Positivity: a signal that fails to close under one encoding but closes under another (raw vs cumulative) is recorded as an encoder-boundary datum, not discarded.
 
-Axiom 07.4 - Analog Equivalence: the bridge has a workbook analogue - a strip whose cells are filled by reading a physical gauge (sampling) and a black/white follow-up for closed/open.
+Axiom 07.4 - Analog Exposure Equivalence: the bridge has a supplemental workbook analogue - a strip whose cells are filled by reading a physical gauge (sampling) and a black/white follow-up for closed/open.
 
 ## Lemmas
 
@@ -75,7 +79,7 @@ claim (discrete windows bridge to sampled continuous dynamics via n=3 closure)
    -> yes: bridge holds for (signal, encoder) (CMB cumulative, Hawking)
    -> no : encoder-boundary datum (raw CMB) -> obligation
 -> worked example (CMB cumulative TT spectrum)
--> workbook analogue (gauge-read strip)
+-> supplemental workbook analogue (gauge-read strip)
 -> receipt (encoder + residual)
 ```
 

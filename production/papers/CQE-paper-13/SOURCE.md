@@ -4,6 +4,10 @@
 
 Physics-application paper. Maps color-state and interaction analogs into a disciplined quark-face transport read over the `J_3(O)` / `F_4` substrate, without overclaiming physical proof. The algebraic transport (chart states to trace-2 idempotents to `S_3`/`SU(3)` Weyl action) is proof-facing; every physical identification is an explicit obligation. Builds on Papers 01, 03, 13 (PROOF set) and `IDENTITY_PAPER` Sections 3, 6.4.
 
+## Proof/Exposure Hierarchy
+
+The proof-carrying content of this paper is the mathematics: the definitions, lemmas, constructions, examples, and receipts that establish the claimed transport. Paper 00, workbook sheets, analog tools, and open-obligation ledgers are supplemental validation and exposure layers. They exist to make the math inspectable, reproducible, and accessible without requiring a particular software stack. In the simplest case, the same state transitions can be marked with ordinary physical tokens, lines, or dirt; the point is not the material, but the preserved center, boundary, transform, residue, and receipt structure.
+
 ## Abstract
 
 The substrate registers a sequence's local `(L, C, R)` chart state into the diagonal of `J_3(O)`, the natural 3-position Hermitian-octonion algebra whose automorphism group is `F_4` (PROOF Paper 13). On the `shell=2` stratum the three states `{(1,1,0),(1,0,1),(0,1,1)}` are exactly the three trace-2 idempotents `{E11+E22, E11+E33, E22+E33}` on which the `SU(3)` Weyl group `S_3` acts by permuting diagonal indices (`f4_action.py`). This paper reads that structure as a *quark-face transport*: the three diagonal positions are treated as the three color faces, the `shell=2` doublet carries the `SU(2)` spin-1/2 structure on a single tape (Paper 01, `T_BIJECTIVE`), and the bounded `G_2 -> F_4 -> T5A` conjugate route (`g2_f4_t5_conjugate.py`) classifies an already-enumerated bit through at most three named exceptional-group stages. We catalogue the framework's color/interaction analogs — the three trace-2 idempotents as a color triple, the side-flip `b` as a chirality (weak-parity) operation, and the umbrella's map of the CKM CP-violating phase and weak parity violation to "closed worldsheets" (`IDENTITY_PAPER` 6.4). Every one of these is an *algebraic correspondence in the substrate*, not a derivation of Standard Model physics. The physical claims are marked as obligations with falsifiers; the substrate's role, as in the umbrella's Discussion, is to apply classified mathematics to registered sequences, not to extend physics.
@@ -33,7 +37,7 @@ Axiom 13.2 - Receipt Preservation: every transport step (idempotent assignment, 
 
 Axiom 13.3 - Boundary Positivity: a physical identification that the substrate cannot derive is recorded as an obligation, never asserted as proof (Axiom 00.3, sharpened for physics).
 
-Axiom 13.4 - Analog Equivalence: the color triple has a physical workbook analogue (a three-face token with a swap operation).
+Axiom 13.4 - Analog Exposure Equivalence: the color triple has a physical workbook analogue (a three-face token with a swap operation).
 
 ## Lemmas
 
@@ -78,7 +82,7 @@ claim (color-state + interaction analogs -> disciplined quark-face read)
 -> bounded G2/F4/T5A route classifies enumerated bit (Lemma 13.3)
 -> physical identifications (color, CKM, weak parity) => OBLIGATION
 -> worked example (Rule 30 shell=2 color faces)
--> workbook analogue (three-face token + swap)
+-> supplemental workbook analogue (three-face token + swap)
 -> receipt + obligation split
 ```
 

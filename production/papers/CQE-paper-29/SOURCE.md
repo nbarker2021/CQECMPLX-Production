@@ -4,6 +4,10 @@
 
 Horizon / highest-speculation layer. This paper carries the heaviest obligation section in the corpus. The only proof-bearing content is (i) the exact arithmetic identity `196883 = 47 x 59 x 71` and McKay's `196884 = 1 + 196883`, and (ii) the finite VOA-weight partition function `Z(q) = 2q^0 + 6q^5` (`centroid_voa.verify_voa_sector_decomposition`). Every "energy bound" is a candidate hypothesis with an explicit falsifier. Proof-facing in form, horizon in claim.
 
+## Proof/Exposure Hierarchy
+
+The proof-carrying content of this paper is the mathematics: the definitions, lemmas, constructions, examples, and receipts that establish the claimed transport. Paper 00, workbook sheets, analog tools, and open-obligation ledgers are supplemental validation and exposure layers. They exist to make the math inspectable, reproducible, and accessible without requiring a particular software stack. In the simplest case, the same state transitions can be marked with ordinary physical tokens, lines, or dirt; the point is not the material, but the preserved center, boundary, transform, residue, and receipt structure.
+
 ## Abstract
 
 This paper records high-speculation finite-group and energy-bound ideas as candidate horizons, with falsifier obligations attached to each. The substrate supplies two facts that are genuinely proven and two readings that are not. PROVEN: the Monster's smallest faithful complex representation has dimension `196883 = 47 x 59 x 71` (the product of the three largest supersingular primes), with McKay's `196884 = 1 + 196883` (PROOF Paper 05); and the finite VOA-weight label partitions the eight chart states as `Z(q) = 2q^0 + 6q^5` - two weight-0 vacua and six weight-5 excited states (`centroid_voa.verify_voa_sector_decomposition`). NOT PROVEN: that the VOA weight is a physical energy; that the Monster representation dimension is an energy ceiling; that the Pariah / Happy Family closure inversion (PROOF Paper 11) bounds anything physical. We treat the VOA weight as an *energy analog* and the Monster dimension as a *combinatorial ceiling analog*, and we make no physical-energy claim. The corpus's existing caution governs: per `centroid_voa`, "any VOA or Moonshine identification requires an additional transport theorem", and per IDENTITY_PAPER Section 8 the universality across native-state spaces is structural, not proven. This paper exists to *quarantine* the energy-bound speculation behind explicit falsifiers, not to advance it.
@@ -26,7 +30,7 @@ This paper claims ONLY the two proven facts: the supersingular-prime identity fo
 - **McKay decomposition**: `196884 = 1 + 196883` (trivial observer + D4-closed Monster representation).
 - **Pariah boundary (cited)**: the 6 Pariah sporadic groups close (`res^2 = 0`) under the n=3 SU(3) Weyl test while the 20 Happy Family groups open (`res^2 ~ 0.444`) - the framework's identification of Pariahs as `-1` boundary states (PROOF Paper 11, T_D4_5).
 - **Energy bound (candidate hypothesis)**: any proposed inequality reading a VOA weight or a Monster number as a physical energy ceiling. Unproven by construction.
-- **Transport row / Receipt / Workbook sheet / Tool binding**: as in Paper 00.
+- **Transport row / Receipt / Supplemental workbook sheet / Tool binding**: as in Paper 00.
 
 ## Axioms
 
@@ -36,7 +40,7 @@ Axiom 29.2 - Receipt Preservation: no transform is accepted unless inputs, outpu
 
 Axiom 29.3 - Boundary Positivity: failed, partial, or mismatched routes are data. For this paper the dominant data are the *unwitnessed* energy readings, logged as obligations.
 
-Axiom 29.4 - Analog Equivalence: a main-corpus claim has a physical workbook analogue. The energy readings here are analog only; their sheet records them as black follow-up until a witness exists.
+Axiom 29.4 - Analog Exposure Equivalence: a main-corpus claim has a physical workbook analogue. The energy readings here are analog only; their sheet records them as black follow-up until a witness exists.
 
 ## Lemmas
 
@@ -87,7 +91,7 @@ claim (energy-bound horizons)
 -> "VOA weight is energy"                      [H1: OBLIGATION + falsifier]
 -> "196883 is an energy/state ceiling"         [H2: OBLIGATION + falsifier]
 -> "Pariah closure is a physical bound"         [H3: OBLIGATION + falsifier]
--> workbook analogue (black follow-up)
+-> supplemental workbook analogue (black follow-up)
 -> receipt
 ```
 

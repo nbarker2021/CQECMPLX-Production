@@ -46,6 +46,7 @@ from PixelForge.rgb import (
 )
 from PixelForge.picture import Picture
 from PixelForge.video import VideoSynth, Layer, translate_toroidal
+from PixelForge.avi import write_avi, decode_avi
 
 
 class PixelForgeEngine:
@@ -120,4 +121,5 @@ __all__ = [
     "pixel_carry", "blend_rgb", "BITS",
     # pictures + video
     "Picture", "VideoSynth", "Layer", "translate_toroidal",
+    "write_avi", "decode_avi",
 ]

@@ -4,6 +4,10 @@
 
 Core proof paper. Establishes the first explicit triality surface: axis/sheet labeling, rotation/reflection equivalence, and Jordan carrier behavior, anchored on the rigorous chart-to-`J_3(O)` isomorphism (T3) and the n=3 SU(3) Weyl closure (T4/T5). Proof-facing; this is the corpus's rigorous spine.
 
+## Proof/Exposure Hierarchy
+
+The proof-carrying content of this paper is the mathematics: the definitions, lemmas, constructions, examples, and receipts that establish the claimed transport. Paper 00, workbook sheets, analog tools, and open-obligation ledgers are supplemental validation and exposure layers. They exist to make the math inspectable, reproducible, and accessible without requiring a particular software stack. In the simplest case, the same state transitions can be marked with ordinary physical tokens, lines, or dirt; the point is not the material, but the preserved center, boundary, transform, residue, and receipt structure.
+
 ## Abstract
 
 We make the corpus's triality structure explicit and prove it on three coupled surfaces. First, the chart map `phi(L, C, R) = diag(L, C, R)` is a structure-preserving bijection between the 8 chart states and 8 distinguished diagonal elements of the exceptional Jordan algebra `J_3(O)`: shell equals trace, the `L <-> R` reflection equals the `(1 3)` permutation, the `shell = 2` stratum equals the three trace-2 idempotents, and the readout law equals the diagonal-emission projection (Theorem T3, verified with zero mismatches across 6,272 individual checks at depth 4096). Second, the `D_4` antipodal codec partitions the 8 chart states into four axes carrying an `(axis, sheet)` label, losslessly recovering the full chart trajectory and exposing the `D_4` diagram's triality of order-2 transpositions. Third, the 3-step conditional transition on the `shell = 2` stratum closes exactly as `M_3 = (1/3)(T_(1,2) + T_(1,3) + T_(2,3))` over the rationals, with `M_3^2 = M_3` (rank-1 idempotent), identifying `n = 3` as the exact mixing time — the `S_3 = W(SU(3))` Weyl action restricted to the diagonal, which is the zero-weight space of the `F_4` fundamental representation. The three surfaces share one permutation group, `S_3`, acting as: a relabeling of axes (`D_4`), a rotation/reflection equivalence on idempotents (`J_3(O)`), and the exact Weyl mixing of the carrier (transition matrix). That shared `S_3` is the triality.
@@ -35,7 +39,7 @@ Axiom 03.2 - Receipt Preservation: every isomorphism and closure check emits a c
 
 Axiom 03.3 - Boundary Positivity: the `D_4` sheet sequence's residual structure (the "second sheet" the triadic `S_3` codec collapses away) is data carried by the codec, not discarded.
 
-Axiom 03.4 - Analog Equivalence: the triality has a physical workbook analogue (a three-vertex token whose rotation/reflection moves are the `S_3` permutations on the trace-2 idempotents).
+Axiom 03.4 - Analog Exposure Equivalence: the triality has a physical workbook analogue (a three-vertex token whose rotation/reflection moves are the `S_3` permutations on the trace-2 idempotents).
 
 ## Lemmas
 
@@ -83,9 +87,9 @@ claim (one S_3 triality across D_4 / J_3(O) / carrier)
    |- M_3^2 = M_3  (rank-1 idempotent, exact mixing time 3)
 -> zero-weight-space bridge (Paper 03a) makes transport exact
 -> worked example (Rule 30 chart at depth 4096)
--> workbook analogue (three-vertex S_3 token)
+-> supplemental workbook analogue (three-vertex S_3 token)
 -> receipt
--> proof / obligation split
+-> proof result / audit residue split
 ```
 
 ## Practical Solved Example

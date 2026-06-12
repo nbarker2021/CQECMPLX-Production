@@ -4,6 +4,10 @@
 
 Foundational paper. Establishes the `(L, C, R)` chain as the smallest carrier that preserves a center while admitting two opposed boundary directions, and proves the single-tape bijective doublet. Proof-facing.
 
+## Proof/Exposure Hierarchy
+
+The proof-carrying content of this paper is the mathematics: the definitions, lemmas, constructions, examples, and receipts that establish the claimed transport. Paper 00, workbook sheets, analog tools, and open-obligation ledgers are supplemental validation and exposure layers. They exist to make the math inspectable, reproducible, and accessible without requiring a particular software stack. In the simplest case, the same state transitions can be marked with ordinary physical tokens, lines, or dirt; the point is not the material, but the preserved center, boundary, transform, residue, and receipt structure.
+
 ## Abstract
 
 We establish the Left-Center-Right readout window as the minimal chain carrier of the corpus: the smallest local object that preserves a center `C` while admitting two opposed boundary directions `L` and `R`. We prove that the three `shell = 2` chart states `(1,1,0)`, `(1,0,1)`, `(0,1,1)` carry the complete SU(2) spin-1/2 doublet within a single forward tape, via the side-flip bijection `(1,1,0) <-> (0,1,1)` fixing `(1,0,1)`. The negative-chirality state is structurally present in the forward tape; no antipodal counter-sheet, second tape, or inverted-frame construction is required. This obviates the cross-page `-N` mechanism of earlier framework drafts and explains why the `shell = 2` transition matrix carries the full doublet as a single object. The construction is verified at machine precision against Rule 30's canonical center column.
@@ -33,7 +37,7 @@ Axiom 01.2 - Receipt Preservation: every carrier transition logs its input state
 
 Axiom 01.3 - Boundary Positivity: a chirality flip is information (a spin direction), not an error.
 
-Axiom 01.4 - Analog Equivalence: the doublet has a physical workbook analogue (a three-token strip with a flip operation).
+Axiom 01.4 - Analog Exposure Equivalence: the doublet has a physical workbook analogue (a three-token strip with a flip operation).
 
 ## Lemmas
 
@@ -83,7 +87,7 @@ claim (LCR is the minimal carrier; shell=2 = single-tape SU(2) doublet)
 -> side-flip involution b (Lemma 01.3)
 -> doublet assignment (+spin / null / -spin)
 -> worked example (Rule 30 center column)
--> workbook analogue (three-token flip strip)
+-> supplemental workbook analogue (three-token flip strip)
 -> receipt
 ```
 
