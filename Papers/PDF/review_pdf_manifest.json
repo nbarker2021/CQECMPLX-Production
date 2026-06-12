@@ -1,6 +1,6 @@
 {
   "built_on": "2026-06-12",
-  "paper_count": 81,
+  "paper_count": 84,
   "outputs": [
     {
       "paper": "CQE-paper-00",
@@ -390,7 +390,25 @@
       "paper": "CQE-paper-16",
       "title": "Paper 16 - Continuum Edge Residuals",
       "pdf": "Papers\\PDF\\CQE-paper-16_paper-16-continuum-edge-residuals.pdf",
-      "bytes": 7453
+      "bytes": 5539
+    },
+    {
+      "paper": "CQE-paper-16.25",
+      "title": "Paper 16.25 - Toolkit for Continuum Edge Residuals",
+      "pdf": "Papers\\PDF\\CQE-paper-16.25_paper-16-25-toolkit-for-continuum-edge-residuals.pdf",
+      "bytes": 3189
+    },
+    {
+      "paper": "CQE-paper-16.50",
+      "title": "Paper 16.50 - Continuum Edge Residual Claim Contract",
+      "pdf": "Papers\\PDF\\CQE-paper-16.50_paper-16-50-continuum-edge-residual-claim-contract.pdf",
+      "bytes": 3339
+    },
+    {
+      "paper": "CQE-paper-16.75",
+      "title": "Paper 16.75 - Continuum Edge Residuals as Next-State Precondition",
+      "pdf": "Papers\\PDF\\CQE-paper-16.75_paper-16-75-continuum-edge-residuals-as-next-state-precondition.pdf",
+      "bytes": 3197
     },
     {
       "paper": "CQE-paper-17",

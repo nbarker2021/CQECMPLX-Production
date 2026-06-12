@@ -1,0 +1,133 @@
+{
+  "paper": "CQE-paper-16",
+  "theorem": "continuum edge residual local window layer",
+  "status": "pass",
+  "checks": {
+    "hamming_centroid_universality_passes": true,
+    "all_states_close_in_at_most_3_steps": true,
+    "lie_conjugate_rest_count_is_4": true,
+    "edge_residue_states_are_c_and_not_r": true,
+    "decade_windows_are_receipted": true,
+    "nth_layers_pass_with_open_global_collapse": true,
+    "continuum_solution_left_as_obligation": true
+  },
+  "hamming_summary": {
+    "status": "pass",
+    "lie_conjugate_count": 4,
+    "step_distribution": {
+      "d=0": [
+        0,
+        0
+      ],
+      "d=1": [
+        2,
+        3,
+        3,
+        2
+      ],
+      "d=2": [
+        0,
+        0
+      ]
+    }
+  },
+  "edge_residue_states": [
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      0
+    ]
+  ],
+  "decade_windows": [
+    {
+      "window": 10,
+      "state": [
+        0,
+        1,
+        0
+      ],
+      "edge_residue": 1,
+      "anneal_steps": 0,
+      "anneal_final": [
+        0,
+        1,
+        0
+      ],
+      "anneal_closed": true
+    },
+    {
+      "window": 100,
+      "state": [
+        1,
+        0,
+        0
+      ],
+      "edge_residue": 0,
+      "anneal_steps": 3,
+      "anneal_final": [
+        0,
+        1,
+        0
+      ],
+      "anneal_closed": true
+    },
+    {
+      "window": 1000,
+      "state": [
+        0,
+        0,
+        0
+      ],
+      "edge_residue": 0,
+      "anneal_steps": 0,
+      "anneal_final": [
+        0,
+        0,
+        0
+      ],
+      "anneal_closed": true
+    }
+  ],
+  "nth_bit_summary": {
+    "status": "pass",
+    "max_depth": 256,
+    "oracle_accuracy": 1.0,
+    "lucas_correction_accuracy": 1.0,
+    "lucas_only_accuracy": 0.47265625,
+    "correction_firing_fraction": 0.28515625,
+    "open_step_O2prime": "Implement mckay_thompson_coefficient_parity(g, k) for g in {2A, 3A}. This gives correction(t,x) in O(log N) without the grid. Combined with Lucas base, gives full O(log N) Rule 30 center bit extractor. Transport: Conway-Norton (1979) McKay-Thompson series + O2' axes/sheets."
+  },
+  "closed_layers": [
+    "every local chart state anneals to a Lie-conjugate rest state in <=3 S3 steps",
+    "there are four Lie-conjugate rest states",
+    "edge residue is exactly C and not R",
+    "sample decade windows carry local receipts",
+    "local/oracle nth-bit layer passes with correction included"
+  ],
+  "open_layers": [
+    "global continuum closure",
+    "O(N) to O(log N) propagating-correction collapse",
+    "closed McKay-Thompson correction parity",
+    "claim that adding digits terminates continuum depth"
+  ],
+  "falsifiers": [
+    {
+      "claim": "A local chart state needs more than 3 anneal steps",
+      "accepted": false
+    },
+    {
+      "claim": "Edge residue fires outside C=1,R=0",
+      "accepted": false
+    },
+    {
+      "claim": "Power-of-ten windows solve the continuum limit",
+      "accepted": false
+    }
+  ],
+  "scope_boundary": "Paper 16 proves local rollout closure and edge-residue windowing. The global continuum collapse remains an explicit McKay-Thompson obligation."
+}

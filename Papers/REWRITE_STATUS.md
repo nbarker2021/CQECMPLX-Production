@@ -83,7 +83,10 @@ Status meanings:
 | 15.25 | review-source | Mass-residue carrier toolkit supplement present. |
 | 15.50 | review-source | Mass-residue carrier claim contract supplement present. |
 | 15.75 | review-source | Mass-residue carrier next-state precondition supplement present. |
-| 16 | fallback-body | Promote from production body into strict scientific paper. |
+| 16 | review-source | Strict scientific rewrite present; companion supports drafted; local verifier promoted. |
+| 16.25 | review-source | Continuum edge-residual toolkit supplement present. |
+| 16.50 | review-source | Continuum edge-residual claim contract supplement present. |
+| 16.75 | review-source | Continuum edge-residual next-state precondition supplement present. |
 | 17 | fallback-body | Promote from production body into strict scientific paper. |
 | 18 | fallback-body | Promote from production body into strict scientific paper. |
 | 19 | fallback-body | Promote from production body into strict scientific paper. |
