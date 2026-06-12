@@ -1,6 +1,6 @@
 {
   "built_on": "2026-06-12",
-  "paper_count": 57,
+  "paper_count": 60,
   "outputs": [
     {
       "paper": "CQE-paper-00",
@@ -196,9 +196,27 @@
     },
     {
       "paper": "CQE-paper-08",
-      "title": "Paper 08 - Lattice Closure Template",
-      "pdf": "Papers\\PDF\\CQE-paper-08_paper-08-lattice-closure-template.pdf",
-      "bytes": 8259
+      "title": "Paper 8 - Lattice Closure Template",
+      "pdf": "Papers\\PDF\\CQE-paper-08_paper-8-lattice-closure-template.pdf",
+      "bytes": 7499
+    },
+    {
+      "paper": "CQE-paper-08.25",
+      "title": "Paper 8.25 - Toolkit for the Lattice Closure Template",
+      "pdf": "Papers\\PDF\\CQE-paper-08.25_paper-8-25-toolkit-for-the-lattice-closure-template.pdf",
+      "bytes": 4738
+    },
+    {
+      "paper": "CQE-paper-08.50",
+      "title": "Paper 8.50 - Lattice Closure Claim Contract",
+      "pdf": "Papers\\PDF\\CQE-paper-08.50_paper-8-50-lattice-closure-claim-contract.pdf",
+      "bytes": 4599
+    },
+    {
+      "paper": "CQE-paper-08.75",
+      "title": "Paper 8.75 - Lattice Closure as Next-State Precondition",
+      "pdf": "Papers\\PDF\\CQE-paper-08.75_paper-8-75-lattice-closure-as-next-state-precondition.pdf",
+      "bytes": 4359
     },
     {
       "paper": "CQE-paper-09",

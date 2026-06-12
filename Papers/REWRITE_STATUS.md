@@ -51,7 +51,10 @@ Status meanings:
 | 7.25 | review-source | Discrete-continuous bridge toolkit supplement present. |
 | 7.50 | review-source | Discrete-continuous bridge claim contract supplement present. |
 | 7.75 | review-source | Discrete-continuous bridge next-state precondition supplement present. |
-| 8 | promoted-formal | Rewrite to strict scientific paper form. |
+| 8 | review-source | Strict scientific rewrite present; companion supports drafted. |
+| 8.25 | review-source | Lattice-closure toolkit supplement present. |
+| 8.50 | review-source | Lattice-closure claim contract supplement present. |
+| 8.75 | review-source | Lattice-closure next-state precondition supplement present. |
 | 9 | promoted-formal | Rewrite to strict scientific paper form. |
 | 10 | promoted-formal | Rewrite to strict scientific paper form. |
 | 11 | promoted-formal | Rewrite to strict scientific paper form. |
