@@ -1,0 +1,72 @@
+{
+  "built_on": "2026-06-12",
+  "paper_count": 11,
+  "outputs": [
+    {
+      "paper": "CQE-paper-01",
+      "title": "Paper 01 - LCR Chain Carrier",
+      "pdf": "Papers\\PDF\\CQE-paper-01_paper-01-lcr-chain-carrier.pdf",
+      "bytes": 10824
+    },
+    {
+      "paper": "CQE-paper-02",
+      "title": "Paper 02 - Correction Surface",
+      "pdf": "Papers\\PDF\\CQE-paper-02_paper-02-correction-surface.pdf",
+      "bytes": 7754
+    },
+    {
+      "paper": "CQE-paper-03",
+      "title": "Paper 03 - D4/J3 Triality Surface",
+      "pdf": "Papers\\PDF\\CQE-paper-03_paper-03-d4-j3-triality-surface.pdf",
+      "bytes": 8979
+    },
+    {
+      "paper": "CQE-paper-04",
+      "title": "Paper 04 - Boundary Repair",
+      "pdf": "Papers\\PDF\\CQE-paper-04_paper-04-boundary-repair.pdf",
+      "bytes": 7364
+    },
+    {
+      "paper": "CQE-paper-05",
+      "title": "Paper 05 - Oloid Path Carrier",
+      "pdf": "Papers\\PDF\\CQE-paper-05_paper-05-oloid-path-carrier.pdf",
+      "bytes": 7526
+    },
+    {
+      "paper": "CQE-paper-06",
+      "title": "Paper 06 - Causal Code",
+      "pdf": "Papers\\PDF\\CQE-paper-06_paper-06-causal-code.pdf",
+      "bytes": 7241
+    },
+    {
+      "paper": "CQE-paper-07",
+      "title": "Paper 07 - Discrete-Continuous Bridge",
+      "pdf": "Papers\\PDF\\CQE-paper-07_paper-07-discrete-continuous-bridge.pdf",
+      "bytes": 5909
+    },
+    {
+      "paper": "CQE-paper-08",
+      "title": "Paper 08 - Lattice Closure Template",
+      "pdf": "Papers\\PDF\\CQE-paper-08_paper-08-lattice-closure-template.pdf",
+      "bytes": 8255
+    },
+    {
+      "paper": "CQE-paper-09",
+      "title": "Paper 09 - Hamiltonian Window Emergence",
+      "pdf": "Papers\\PDF\\CQE-paper-09_paper-09-hamiltonian-window-emergence.pdf",
+      "bytes": 7141
+    },
+    {
+      "paper": "CQE-paper-10",
+      "title": "Paper 10 - T10 Master Receipt",
+      "pdf": "Papers\\PDF\\CQE-paper-10_paper-10-t10-master-receipt.pdf",
+      "bytes": 10200
+    },
+    {
+      "paper": "CQE-paper-11",
+      "title": "Paper 11 - Theory Admission Gate",
+      "pdf": "Papers\\PDF\\CQE-paper-11_paper-11-theory-admission-gate.pdf",
+      "bytes": 11890
+    }
+  ]
+}
