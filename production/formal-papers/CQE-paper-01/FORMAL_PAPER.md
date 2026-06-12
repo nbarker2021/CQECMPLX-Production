@@ -18,6 +18,10 @@ trace-2 state `(1, 0, 1)` has equal boundary values while still having two
 opposed boundary positions. This correction is essential for a rigorous
 presentation.
 
+## Proof/Exposure Hierarchy
+
+The proof-carrying content of this paper is the mathematics: the definitions, lemmas, constructions, examples, and receipts that establish the claimed result. Paper 00, hand routes, analog tools, workbook language, and obligation ledgers are supplemental validation and exposure layers. They exist to make the math inspectable, reproducible, and accessible without requiring a particular software stack. The hand route is not the purpose of the paper; it is a way to expose the same state transitions with ordinary marks, tokens, lines, or any equivalent physical substitute.
+
 ## Role in the Suite
 
 Paper 00 is the inherited minimum information contract. Paper 01 is the first
@@ -190,7 +194,7 @@ theorems can be transported through a verified structure-preserving map.
 
 ## Hand Reconstruction
 
-The hand method is intentionally simple:
+The supplemental hand exposure is intentionally simple:
 
 1. Draw three ordered cells labeled `L`, `C`, and `R`.
 2. Place the center token in `C`.
@@ -202,7 +206,7 @@ The hand method is intentionally simple:
 8. If a diagnostic claims `L != R`, test it against `(1,0,1)` before accepting
    it.
 
-This hand method is the analog twin of the finite verifier. It is not a
+This hand exposure is the analog twin of the finite verifier. It is supplemental, not a
 metaphor for the verifier; it is the same finite enumeration performed with
 physical tokens.
 
@@ -249,7 +253,7 @@ to confuse structural direction with observed value.
 
 1. Connect this finite verifier to the installable `cqe_engine.formal`
    interface rather than leaving it as a standalone production verifier.
-2. Update older workbook language that equates opposed directions with
+2. Update older supplemental workbook language that equates opposed directions with
    unequal boundary values.
 3. Carry the corrected distinction into Paper 03, where left-right reversal is
    compared with diagonal permutation and triality language.

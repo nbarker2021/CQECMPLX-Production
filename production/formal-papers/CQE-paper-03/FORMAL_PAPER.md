@@ -18,6 +18,10 @@ surface needed by this corpus: a lossless axis/sheet encoding of the eight LCR
 states, together with a diagonal carrier whose trace equals the LCR shell and
 whose trace-2 states are idempotent under coordinate-wise diagonal product.
 
+## Proof/Exposure Hierarchy
+
+The proof-carrying content of this paper is the mathematics: the definitions, lemmas, constructions, examples, and receipts that establish the claimed result. Paper 00, hand routes, analog tools, workbook language, and obligation ledgers are supplemental validation and exposure layers. They exist to make the math inspectable, reproducible, and accessible without requiring a particular software stack. The hand route is not the purpose of the paper; it is a way to expose the same state transitions with ordinary marks, tokens, lines, or any equivalent physical substitute.
+
 ## Role in the Suite
 
 Paper 03 is the first bridge paper. It lets later work move between three

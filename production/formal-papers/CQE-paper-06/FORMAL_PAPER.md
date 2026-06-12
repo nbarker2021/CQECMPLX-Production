@@ -12,6 +12,10 @@ a source, target, edge type, receipt, and status. A causal graph is usable only
 when its active proof dependencies are acyclic or when cycles are explicitly
 typed as review/feedback loops rather than hidden proof dependencies.
 
+## Proof/Exposure Hierarchy
+
+The proof-carrying content of this paper is the mathematics: the definitions, lemmas, constructions, examples, and receipts that establish the claimed result. Paper 00, hand routes, analog tools, workbook language, and obligation ledgers are supplemental validation and exposure layers. They exist to make the math inspectable, reproducible, and accessible without requiring a particular software stack. The hand route is not the purpose of the paper; it is a way to expose the same state transitions with ordinary marks, tokens, lines, or any equivalent physical substitute.
+
 ## Definitions
 
 A **causal vertex** is a paper, proof, tool, receipt, obligation, or product
