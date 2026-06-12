@@ -1,6 +1,6 @@
 {
   "built_on": "2026-06-12",
-  "paper_count": 87,
+  "paper_count": 90,
   "outputs": [
     {
       "paper": "CQE-paper-00",
@@ -436,9 +436,27 @@
     },
     {
       "paper": "CQE-paper-18",
-      "title": "Paper 18 - VOA/Moonshine Representation Routes",
+      "title": "Paper 18 - VOA / Moonshine Representation Routes",
       "pdf": "Papers\\PDF\\CQE-paper-18_paper-18-voa-moonshine-representation-routes.pdf",
-      "bytes": 7481
+      "bytes": 7156
+    },
+    {
+      "paper": "CQE-paper-18.25",
+      "title": "Paper 18.25 - VOA / Moonshine Route Toolkit",
+      "pdf": "Papers\\PDF\\CQE-paper-18.25_paper-18-25-voa-moonshine-route-toolkit.pdf",
+      "bytes": 3951
+    },
+    {
+      "paper": "CQE-paper-18.50",
+      "title": "Paper 18.50 - VOA / Moonshine Route Claim Contract",
+      "pdf": "Papers\\PDF\\CQE-paper-18.50_paper-18-50-voa-moonshine-route-claim-contract.pdf",
+      "bytes": 4128
+    },
+    {
+      "paper": "CQE-paper-18.75",
+      "title": "Paper 18.75 - VOA / Moonshine Route Next-State Bridge",
+      "pdf": "Papers\\PDF\\CQE-paper-18.75_paper-18-75-voa-moonshine-route-next-state-bridge.pdf",
+      "bytes": 4160
     },
     {
       "paper": "CQE-paper-19",

@@ -1,0 +1,448 @@
+{
+  "paper": "CQE Paper 18",
+  "title": "VOA / Moonshine Representation Routes",
+  "status": "pass",
+  "checks": {
+    "centroid_voa_chain_passes": true,
+    "seed_partition_is_2q0_plus_6q5": true,
+    "z4_template_is_2_fixed_6_period4": true,
+    "monster_scalar_is_196883": true,
+    "bounded_mckay_matrix_bootstrap_passes": true,
+    "lookup_harness_is_bounded_and_deferred": true,
+    "correction_class_hypothesis_registered": true,
+    "correction_via_voa_remains_open": true,
+    "monster_d4_lift_bounded_open_gap_passes": true
+  },
+  "closed_layers": [
+    "finite centroid VOA sector decomposition 2q^0 + 6q^5",
+    "static Z4 route template with 2 fixed points and 6 period-4 states",
+    "Monster scalar 196883 factorization 47 * 59 * 71",
+    "bounded McKay matrix bootstrap for 1A,2A,3A,5A,7A",
+    "registered correction-class hypothesis for (2,0)->2A and (3,1)->3A",
+    "bounded Monster-D4 lift after all eight chart states activate"
+  ],
+  "open_layers": [
+    "correction_via_voa implementation",
+    "full McKay-Thompson arithmetic beyond bounded tables",
+    "Rule 30 O(log N) extractor through the route",
+    "full Moonshine identification of the finite chart seed",
+    "physical representation theorem beyond the route receipts"
+  ],
+  "falsifiers": [
+    "seed partition differs from 2q^0 + 6q^5",
+    "Z4 template has period-2 states or does not split 2+6",
+    "bounded McKay matrix bootstrap fails",
+    "lookup harness is promoted despite WP-MOONSHINE-DEFERRED",
+    "correction_via_voa is claimed complete"
+  ],
+  "source_receipts": {
+    "sector": {
+      "status": "pass",
+      "errors": [],
+      "labels": {
+        "(0, 0, 0)": [
+          0,
+          0,
+          0
+        ],
+        "(0, 0, 1)": [
+          2,
+          3,
+          0
+        ],
+        "(0, 1, 0)": [
+          0,
+          2,
+          3
+        ],
+        "(0, 1, 1)": [
+          3,
+          0,
+          2
+        ],
+        "(1, 0, 0)": [
+          3,
+          0,
+          2
+        ],
+        "(1, 0, 1)": [
+          0,
+          2,
+          3
+        ],
+        "(1, 1, 0)": [
+          2,
+          3,
+          0
+        ],
+        "(1, 1, 1)": [
+          0,
+          0,
+          0
+        ]
+      },
+      "weights": {
+        "(0, 0, 0)": 0,
+        "(0, 0, 1)": 5,
+        "(0, 1, 0)": 5,
+        "(0, 1, 1)": 5,
+        "(1, 0, 0)": 5,
+        "(1, 0, 1)": 5,
+        "(1, 1, 0)": 5,
+        "(1, 1, 1)": 0
+      },
+      "weight_distribution": {
+        "0": 2,
+        "5": 6
+      },
+      "seed_partition_function": "Z(q) = 2q^0 + 6q^5",
+      "vacua": [
+        "(0, 0, 0)",
+        "(1, 1, 1)"
+      ],
+      "non_vacua_count": 6,
+      "claim": "The 3-conjugate wrap-step label partitions the 8 (L,C,R) states into 2 true vacua (weight 0: (0,0,0) and (1,1,1) \u2014 the gluon C holds the color for every setting simultaneously) and 6 excited states (weight 5). Each excited state has one setting already at its attractor (0 steps) and needs 2+3=5 steps in the other two settings. C is the gluon: it holds the color assignment. The true vacua are the states where C agrees with both quarks L and R in every centroid setting. The 6 excited states split into 2 color-triple orbits under the Z3 cyclic frame rotation \u2014 matching the D12 color-orbit structure."
+    },
+    "z4": {
+      "status": "pass",
+      "errors": [],
+      "periods": {
+        "(0, 0, 0)": 1,
+        "(0, 0, 1)": 4,
+        "(0, 1, 0)": 4,
+        "(0, 1, 1)": 4,
+        "(1, 0, 0)": 4,
+        "(1, 0, 1)": 4,
+        "(1, 1, 0)": 4,
+        "(1, 1, 1)": 1
+      },
+      "labels": {
+        "(0, 0, 0)": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "(0, 0, 1)": [
+          2,
+          0,
+          3,
+          3
+        ],
+        "(0, 1, 0)": [
+          0,
+          3,
+          0,
+          2
+        ],
+        "(0, 1, 1)": [
+          3,
+          2,
+          2,
+          0
+        ],
+        "(1, 0, 0)": [
+          3,
+          2,
+          2,
+          0
+        ],
+        "(1, 0, 1)": [
+          0,
+          3,
+          0,
+          2
+        ],
+        "(1, 1, 0)": [
+          2,
+          0,
+          3,
+          3
+        ],
+        "(1, 1, 1)": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "fixed_point_count": 2,
+      "period_2_count": 0,
+      "period_4_count": 6,
+      "claim": "The Z4 4-frame composite label (wrap steps in each of the 4 centroid frames C/R/C-flipped/L) produces exactly 2 fixed points (the true vacua (0,0,0) and (1,1,1), label (0,0,0,0)) and 6 period-4 states (all other states). No period-2 labels exist. D12 acts on D4 as blocks: the Z4 rotation is D12's order-4 subgroup acting on those D4 blocks, not D4 itself. This is a static Z4 coordinate-frame template; it does not prove temporal periodicity. It matches the D12 orbit structure: 2 singlets + 6 color-orbit members."
+    },
+    "chain": {
+      "status": "pass",
+      "hamming_centroid_universality": "pass",
+      "voa_sector_decomposition": "pass",
+      "z4_period_template": "pass",
+      "seed_partition_function": "Z(q) = 2q^0 + 6q^5",
+      "fixed_points": 2,
+      "period_4_states": 6,
+      "chain_conclusion": "The one-light-cone / centroid constraint forces closure: (1) every state anneals to a Lie conjugate in \u22643 S3 steps; (2) the 3-conjugate weight partitions the 8 states into the VOA vacuum + excited sectors matching D12 singlet/color-orbit split; (3) the Z4 period template has exactly 2 fixed points + 6 period-4 states, identical to the D12 orbit structure. These are finite chart identities. Any VOA or Moonshine identification requires an additional transport theorem."
+    },
+    "mckay_matrix_bootstrap": {
+      "catalog_error_count": 0,
+      "all_five_classes_have_9x9": true,
+      "7A_has_7x7": true,
+      "5A_has_5x5": true,
+      "3A_9x9_a1_is_783": true,
+      "2A_9x9_a1_is_4372": true,
+      "nesting_7_in_9": {
+        "1A": true,
+        "2A": true,
+        "3A": true,
+        "5A": true,
+        "7A": true
+      },
+      "parity_rows_k1_to_k9": {
+        "1A": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "2A": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "3A": [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "5A": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "7A": [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      "status": "pass",
+      "honesty_label": "BOUNDED_EXEC",
+      "proof_key": "MCKAY_MATRIX_BOOTSTRAP"
+    },
+    "voa_lookup_harness": {
+      "status": "pass",
+      "honesty_label": "BOUNDED_EXEC",
+      "harness_honesty": "CONJ",
+      "open_obligation": "O1' (mckay_thompson_coefficient_parity)",
+      "mckay_thompson_implemented": true,
+      "mckay_matrix_bootstrap": "lattice_forge.mckay_matrix_tables",
+      "correction_via_voa_implemented": false,
+      "best_hypothesis": "k=firing_count",
+      "best_min_rate": 0.0625,
+      "trigger_status": "WP-MOONSHINE-DEFERRED",
+      "not_in_ring1": true
+    },
+    "monster_d4_lift": {
+      "claim_id": "monster.d4_lift.after_global_activation",
+      "status": "pass_with_open_gaps",
+      "honesty_label": "BOUNDED_EXEC",
+      "max_depth_tested": 128,
+      "eight_state_enumeration": {
+        "states_seen": 8,
+        "all_eight_seen": true,
+        "activation_depth_all_eight": 13,
+        "state_counts": {
+          "(0, 0, 0)": 16,
+          "(0, 0, 1)": 18,
+          "(0, 1, 0)": 17,
+          "(0, 1, 1)": 13,
+          "(1, 0, 0)": 15,
+          "(1, 0, 1)": 16,
+          "(1, 1, 0)": 17,
+          "(1, 1, 1)": 16
+        },
+        "missing_states": []
+      },
+      "shell2_triad_accounting": {
+        "shell2_visits": 46,
+        "sufficient": true,
+        "triad_fractions": {
+          "(1, 1, 0)": 0.3695652173913043,
+          "(1, 0, 1)": 0.34782608695652173,
+          "(0, 1, 1)": 0.2826086956521739
+        },
+        "triad_thirds_within_tolerance": true,
+        "bijection_symmetry": {
+          "pos": 17,
+          "neg": 13,
+          "null": 16,
+          "pos_frac": 0.3695652173913043,
+          "neg_frac": 0.2826086956521739,
+          "null_frac": 0.34782608695652173,
+          "symmetry_defect": 0.08695652173913043
+        },
+        "pos_neg_symmetry_ok": true
+      },
+      "cr_bond_observer": {
+        "readout0_fraction": 0.5078125,
+        "readout1_fraction": 0.4921875,
+        "distinct_states_at_readout0": 4,
+        "distinct_states_at_readout1": 4,
+        "cr_bond_active_fraction": 0.015625,
+        "cr_bond_implies_open_when_active": 0.5,
+        "note": "0-emission depths are a valid stratum; lane marginals L/C/R conflate shells. Use joint chart_state accounting at readout=0."
+      },
+      "three_by_three_resolution": {
+        "t4_status": "pass",
+        "s3_coefficients_one_third": {
+          "e": "0",
+          "(1 2)": "1/3",
+          "(1 3)": "1/3",
+          "(2 3)": "1/3",
+          "(1 2 3)": "0",
+          "(1 3 2)": "0"
+        },
+        "empirical_1step_vs_closed_max_abs_diff": 0.0,
+        "one_step_matrices_agree": true,
+        "n3_empirical_s3_residual_sq": 0.005185185185185185,
+        "n3_empirical_s3_closed": false,
+        "closed_form_labels": [
+          "C-",
+          "C0",
+          "C+"
+        ]
+      },
+      "d4_per_n": {
+        "n_start": 13,
+        "all_lift_ok": true,
+        "failures": []
+      },
+      "conjugate_routing": {
+        "all_within_3_moves": true,
+        "path_distribution": {
+          "identity": 29,
+          "G2": 25,
+          "G2/F4": 29,
+          "G2/F4/T5A": 33
+        }
+      },
+      "checks": {
+        "all_eight_chart_states_enumerated": true,
+        "shell2_triad_thirds_ok": true,
+        "shell2_pos_neg_bijection_symmetric": true,
+        "three_by_three_one_step_agrees": true,
+        "n3_empirical_s3_closed": false,
+        "s3_bond_one_third_proven": true,
+        "d4_lift_all_n_after_activation": true,
+        "g2_f4_route_within_3_moves": true,
+        "g2_f4_t5_verifier_pass": true,
+        "three_move_closure_pass": true
+      },
+      "deprecated_metric_warning": "Do not use marginal P(L=1),P(C=1),P(R=1) for this claim; they mix shells and undersample the bijective 3x3 triad.",
+      "interpretation": "After all 8 joint chart states appear, D4 lift and \u22643-step G2\u2192F4\u2192T5A routing hold. The 1/3 law is on the shell-2 bonded triad (3x3), aligned with T4 S3 coefficients \u2014 not independent lane bit frequencies."
+    },
+    "architecture": {
+      "module": "voa_lookup",
+      "monster_scalar": 196883,
+      "monster_scalar_factorization": "47 * 59 * 71",
+      "correction_firing_classes": {
+        "(2, 0)": "2A",
+        "(3, 1)": "3A"
+      },
+      "open_obligation": "O1' (mckay_thompson_coefficient_parity)",
+      "umbrella_references": [
+        "papers/05_monster_moonshine_d4.md",
+        "papers/11_pariah_monster_boundary.md",
+        "src/lattice_forge/chart_codec_d4.py",
+        "src/lattice_forge/rule90_linearization.py"
+      ],
+      "meta_pattern": "A 50% Bernoulli split in any direct period/modular test indicates the bijective modular companion has not been brought into the comparison. Adding the SL(2,Z) companion converts the split into a structured agreement.",
+      "log_time_path": "Rule_30_center(N) = LucasBit(N, 0) XOR sum_over_Lucas_sparse_cone of mckay_thompson_coefficient_parity(g(axis,sheet), k(t,x)). With McKay-Thompson primitive, this is O(log N)."
+    },
+    "parity_rows_k1_to_k9": {
+      "1A": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "2A": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "3A": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "5A": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "7A": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    "correction_via_voa_exception": "NotImplementedError"
+  }
+}

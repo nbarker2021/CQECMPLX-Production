@@ -91,7 +91,10 @@ Status meanings:
 | 17.25 | review-source | Error-correction tower toolkit supplement present. |
 | 17.50 | review-source | Error-correction tower claim contract supplement present. |
 | 17.75 | review-source | Error-correction tower next-state precondition supplement present. |
-| 18 | fallback-body | Promote from production body into strict scientific paper. |
+| 18 | review-source | Strict scientific rewrite present; companion supports drafted; local verifier promoted. |
+| 18.25 | review-source | VOA/Moonshine route toolkit supplement present. |
+| 18.50 | review-source | VOA/Moonshine route claim contract supplement present. |
+| 18.75 | review-source | VOA/Moonshine route next-state precondition supplement present. |
 | 19 | fallback-body | Promote from production body into strict scientific paper. |
 | 20 | fallback-body | Promote from production body into strict scientific paper. |
 | 21 | fallback-body | Promote from production body into strict scientific paper. |
