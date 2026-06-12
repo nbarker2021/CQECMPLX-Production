@@ -33,3 +33,9 @@ oloid-path-carrier-receipt =
 ---
 
 This is the pattern for ALL papers: **the workbook IS the tool spec**. Every analog operation has its exact digital twin.
+
+## Scope Note
+
+This workbook verifies structural rolling continuity. It does not prove that
+the Oloid carrier predicts Rule 30 future bits without enumeration. Prediction
+remains a separate open obligation until its own verifier closes it.

@@ -13,7 +13,15 @@ Smoke test producing at least one proof-like row and one obligation-like row.
 ## Verifier Specification
 ```python
 def verify_oloid_path() -> dict:
-    """Verify T_OLOID_PATH: Curved/rolling carriers preserve continuity without straight-line transport.."""
+    """Verify structural rolling path continuity.
+
+    Checks:
+    1. Valid binary input produces a legal adjacent rolling trace.
+    2. Every state has a binary head/tail dyad.
+    3. Paper 04 constraint payloads can be carried without changing the path rule.
+    4. Invalid bits and discontinuous jumps are rejected.
+    5. Rule 30 prediction remains out of scope until separately verified.
+    """
     pass
 ```
 

@@ -18,7 +18,9 @@ Status: `seeded`
 
 Use curved/rolling carriers to show that transport need not be straight-line to preserve continuity.
 
-Required next action: Separate method claims from domain claims before peer-review promotion.
+Polished claim: a finite rolling-state carrier preserves path continuity by legal adjacent steps, emits head/tail dyads, and carries Paper 04 constraint payloads without requiring straight-line transport. It does not prove Rule 30 prediction.
+
+Required next action: Connect this polished theorem to cqe_engine.formal and keep prediction claims as explicit open obligations.
 
 ## Math
 
@@ -32,7 +34,7 @@ Required next action: Promote every symbolic statement into a normalized claim r
 
 Status: `source-bound`
 
-Use 01-CQE-formal/FORMAL.md and recovered algebra/PDF evidence.
+Use `production/formal-papers/CQE-paper-05/FORMAL_PAPER.md`, `01-CQE-formal/FORMAL.md`, and recovered algebra/PDF evidence.
 
 Required next action: Split normal form, closed form, algebraic operators, calculus/window operators, and open obligations.
 
@@ -64,7 +66,7 @@ Required next action: Resolve this binding into production/lib-forge or mark it 
 
 Status: `seeded`
 
-Every validation and diagnostic must support hidden-guess ablation when training mode is enabled.
+Every validation and diagnostic must support hidden-guess ablation when training mode is enabled. Paper 05 now includes `production/formal-papers/CQE-paper-05/oloid_path_carrier_receipt.json`, which verifies rolling continuity, dyad validity, payload carrying, and rejection of discontinuous/invalid paths.
 
 Required next action: Add positive, negative, boundary, and wrap tests with receipts.
 
