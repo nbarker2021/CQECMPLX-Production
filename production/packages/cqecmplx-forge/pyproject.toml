@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "cqecmplx-forge"
-version = "0.6.1"
+version = "0.6.2"
 description = "The CQE/CMPLX Forge ring: merged lattice_forge substrate (PROOF + PartsFactory union), the ForgeFactory/ReForge/Rhenium engine lineage, and the ChromaForge, GraphStax, PixelForge, FridgeForge, LinkForge, MandleForge, ManiForge engines. Every event computed, saved, validated, receipted - then reused for free."
 readme = "README.md"
 requires-python = ">=3.10"

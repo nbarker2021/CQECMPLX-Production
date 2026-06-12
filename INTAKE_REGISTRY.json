@@ -101,6 +101,12 @@
       "date": "2026-06-12",
       "slice": "production/packages/cqecmplx-forge",
       "note": "Request-to-video demo + AVI codec: write_avi/decode_avi (stdlib uncompressed RGB24 RIFF, plays anywhere); examples/request_to_video.py runs the full chain (request -> Event Law receipt -> BBA-derived palette/seed -> pictures -> superperm-cursor-driven motion -> 90 frames @ 30fps -> AVI -> decoded back to exact request text -> run crystal). Verified live in 10.4s."
+    },
+    {
+      "id": "CQECMPLX-Forge-Package-v0.6.2",
+      "date": "2026-06-12",
+      "slice": "production/packages/cqecmplx-forge",
+      "note": "paint.py: color as the paint-by-numbers machine. Numbering = any system tool assigning each cell a small int (chart state 0-7, carry 0-8, anneal steps 0-3, VOA weight, digital root); Palette = number->paint lookup. paint(w,h,numbering,palette) unifies all picture constructors; deterministic. Demo BMPs: emission-law numbering under three different pots."
     }
   ],
   "stray_roots_reconciled": [
