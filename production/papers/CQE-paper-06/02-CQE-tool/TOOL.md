@@ -21,11 +21,12 @@ Returns: `{"status": "pass"|"fail", "total_edges": int, "mismatches": int, "clai
 At max_depth=4096: 12,544 edges checked, 0 mismatches.
 
 ### verify_causal_coherence()
-Verifies causal transport coherence across all 32 papers:
-- Every `proves` edge has matching `uses` edge
-- Every `obligates` edge has corresponding `resolves` edge
-- No circular causal chains
-Returns: `{"status": "pass", "total_edges": int, "coherent": True}`
+Verifies causal transport coherence for the currently promoted graph:
+- Every edge has source, target, type, receipt, and status
+- Every edge uses an allowed type and status
+- Closed proof-support edges have no hidden circular proof chain
+- Open obligations remain explicitly open rather than counted as proof closure
+Returns: `{"status": "pass"|"fail", "total_edges": int, "coherent": bool}`
 
 ### CausalIndex
 Human-readable index of all causal edges:
@@ -50,13 +51,13 @@ Written to `proof-receipts/CQE-paper-06/causal-<theorem>/receipt-<timestamp>.jso
 ```json
 {
   "paper_id": "CQE-paper-06",
-  "theorems": ["T_CAUSAL", "T_BIJECTIVE", "T_TERMINAL"],
+  "theorems": ["T_CAUSAL_EDGE_CONTRACT"],
   "all_passed": true,
-  "total_edges": 12544,
-  "coherent": true
+  "coherent": true,
+  "open_obligations_tracked": true
 }
 ```
 
 ---
 
-*This tool IS the proof of the causal code theorems. Running it discharges every Paper 06 obligation.*
+*This tool verifies the causal edge contract. It does not discharge every Paper 06 obligation; it keeps open obligations visible.*

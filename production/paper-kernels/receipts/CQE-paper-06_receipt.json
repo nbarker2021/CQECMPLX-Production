@@ -1,0 +1,33 @@
+{
+  "suite": "CQECMPLX 32-Paper Kernel Suite",
+  "selector": "CQE-paper-06",
+  "generated_at_utc": "2026-06-12T03:30:37.606114+00:00",
+  "paper_00_contract": "CQE-paper-00",
+  "paper_00_role": "past_burden_minimum_information_contract",
+  "training_mode": true,
+  "selected_count": 1,
+  "pass_count": 1,
+  "needs_work_count": 0,
+  "results": [
+    {
+      "paper": "CQE-paper-06",
+      "title": "Causal Code",
+      "block": "block-00-papers-01-08",
+      "component_count": 8,
+      "component_ok": true,
+      "required_sources_missing": [],
+      "optional_sources_missing": [
+        "tool_runner"
+      ],
+      "kernel_file_present": true,
+      "manifest_file_present": true,
+      "suite_previous": "CQE-paper-05",
+      "suite_next": "CQE-paper-07",
+      "block_previous": "CQE-paper-05",
+      "block_next": "CQE-paper-07",
+      "hidden_guess_ready": true,
+      "training_mode": true,
+      "status": "pass"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "paper": "CQE-paper-06",
+  "theorem": "Typed causal edge contract",
+  "status": "pass",
+  "checks": {
+    "all_edges_have_required_fields": true,
+    "all_edges_have_allowed_type_and_status": true,
+    "closed_proof_support_graph_is_acyclic": true,
+    "open_obligations_remain_open": true,
+    "missing_receipt_rejected": true,
+    "unknown_type_rejected": true,
+    "hidden_proof_cycle_rejected": true
+  },
+  "edges": [
+    {
+      "source": "CQE-paper-00",
+      "target": "CQE-paper-01",
+      "edge_type": "uses",
+      "receipt": "paper00-contract",
+      "status": "closed"
+    },
+    {
+      "source": "CQE-paper-01",
+      "target": "CQE-paper-02",
+      "edge_type": "uses",
+      "receipt": "lcr-carrier-receipt",
+      "status": "closed"
+    },
+    {
+      "source": "CQE-paper-02",
+      "target": "CQE-paper-03",
+      "edge_type": "transports",
+      "receipt": "correction-surface-receipt",
+      "status": "closed"
+    },
+    {
+      "source": "CQE-paper-03",
+      "target": "CQE-paper-04",
+      "edge_type": "constrains",
+      "receipt": "triality-surface-receipt",
+      "status": "closed"
+    },
+    {
+      "source": "CQE-paper-04",
+      "target": "CQE-paper-05",
+      "edge_type": "repairs",
+      "receipt": "boundary-repair-receipt",
+      "status": "closed"
+    },
+    {
+      "source": "CQE-paper-05",
+      "target": "CQE-paper-06",
+      "edge_type": "transports",
+      "receipt": "oloid-path-carrier-receipt",
+      "status": "closed"
+    },
+    {
+      "source": "CQE-paper-06",
+      "target": "cqe_engine.formal",
+      "edge_type": "obligates",
+      "receipt": "paper06-open-obligation",
+      "status": "open"
+    }
+  ],
+  "falsifiers": {
+    "missing_receipt_accepted": false,
+    "unknown_type_accepted": false,
+    "hidden_cycle_detected": true
+  },
+  "corrected_claim": "Causal code tracks open obligations explicitly; it does not declare the corpus fully resolved."
+}

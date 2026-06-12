@@ -18,7 +18,9 @@ Status: `seeded`
 
 Cast every dependency between objects, proofs, tools, and papers as a typed causal edge.
 
-Required next action: Separate method claims from domain claims before peer-review promotion.
+Polished claim: every production dependency must be represented as a typed causal edge with source, target, edge type, receipt, and status. Closed proof-support edges must be acyclic; open obligations remain open rather than being counted as proof closure.
+
+Required next action: Connect this polished theorem to cqe_engine.formal and populate the full 32-paper graph from formal receipts.
 
 ## Math
 
@@ -32,7 +34,7 @@ Required next action: Promote every symbolic statement into a normalized claim r
 
 Status: `source-bound`
 
-Use 01-CQE-formal/FORMAL.md and recovered algebra/PDF evidence.
+Use `production/formal-papers/CQE-paper-06/FORMAL_PAPER.md`, `01-CQE-formal/FORMAL.md`, and recovered algebra/PDF evidence.
 
 Required next action: Split normal form, closed form, algebraic operators, calculus/window operators, and open obligations.
 
@@ -64,7 +66,7 @@ Required next action: Resolve this binding into production/lib-forge or mark it 
 
 Status: `seeded`
 
-Every validation and diagnostic must support hidden-guess ablation when training mode is enabled.
+Every validation and diagnostic must support hidden-guess ablation when training mode is enabled. Paper 06 now includes `production/formal-papers/CQE-paper-06/causal_code_receipt.json`, which verifies typed edges, allowed statuses, acyclic proof support, open obligation tracking, and rejection of invalid edges.
 
 Required next action: Add positive, negative, boundary, and wrap tests with receipts.
 
