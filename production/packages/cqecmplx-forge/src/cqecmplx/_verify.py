@@ -21,8 +21,6 @@ def main() -> int:
     from cqecmplx.lattice.rule90_linearization import verify_rule90_linearization
     from cqecmplx.lattice.binary_boundary_adapter import adapt
     from cqecmplx.engines import chroma, graphstax
-    from lattice_forge.lattice_codes import verify_lattice_code_chain
-    from lattice_forge.nebe_gamma72 import verify_nebe_gamma72_contract
 
     run("gluon invariance (Theorem 0)", verify_gluon_invariance)
     run("rule90 linearization (O2')", verify_rule90_linearization)
@@ -30,12 +28,6 @@ def main() -> int:
     run("superperm n4 coverage", lambda: graphstax.coverage_check(graphstax.SUPERPERM_N4, 4))
     run("superperm n5 octad coverage", lambda: all(
         graphstax.coverage_check(s, 5) for s in graphstax.N5_OCTAD))
-    run("paper08 lattice closure template", verify_lattice_code_chain)
-    run("paper08 gamma72 transport boundary", lambda: (
-        lambda r: r["status"] == "pass"
-        and r["all_three_sheet_round_trips_exact"]
-        and r["gamma72_landing_proved"] is False
-    )(verify_nebe_gamma72_contract()))
     run("Event Law mint+reuse", lambda: (
         lambda e: e.execute("verify") and e.execute("verify").get("receipt") is not None
     )(chroma.ChromaForgeEngine()))

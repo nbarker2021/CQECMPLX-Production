@@ -23,7 +23,7 @@ ring is stdlib-only; registration is eager so dotted imports
 import importlib
 import sys
 
-__version__ = "0.6.2"
+__version__ = "0.7.0"
 
 _RING = {
     "lattice": "lattice_forge",
@@ -34,6 +34,7 @@ _ENGINES = {
     "chroma": "ChromaForge", "graphstax": "GraphStax", "pixel": "PixelForge",
     "fridge": "FridgeForge", "link": "LinkForge",
     "mandle": "MandleForge", "mani": "ManiForge",
+    "scene": "SceneForge",
 }
 _REFORGE = {
     "contracts": "reforge_engine_contracts", "hardening": "reforge_engine_hardening",

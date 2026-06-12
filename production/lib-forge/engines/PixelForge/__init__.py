@@ -47,6 +47,7 @@ from PixelForge.rgb import (
 from PixelForge.picture import Picture
 from PixelForge.video import VideoSynth, Layer, translate_toroidal
 from PixelForge.avi import write_avi, decode_avi
+from PixelForge.images import read_png, read_bmp, load_image
 from PixelForge.paint import (paint, chart_numbering, anneal_numbering,
                               carry_numbering, CHART_PALETTE,
                               CARRY_PALETTE, ANNEAL_PALETTE, VOA_PALETTE,
@@ -126,6 +127,7 @@ __all__ = [
     # pictures + video
     "Picture", "VideoSynth", "Layer", "translate_toroidal",
     "write_avi", "decode_avi",
+    "read_png", "read_bmp", "load_image",
     # paint-by-numbers machine
     "paint", "chart_numbering", "anneal_numbering", "carry_numbering",
     "CHART_PALETTE", "CARRY_PALETTE", "ANNEAL_PALETTE", "VOA_PALETTE",

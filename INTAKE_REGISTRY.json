@@ -107,6 +107,12 @@
       "date": "2026-06-12",
       "slice": "production/packages/cqecmplx-forge",
       "note": "paint.py: color as the paint-by-numbers machine. Numbering = any system tool assigning each cell a small int (chart state 0-7, carry 0-8, anneal steps 0-3, VOA weight, digital root); Palette = number->paint lookup. paint(w,h,numbering,palette) unifies all picture constructors; deterministic. Demo BMPs: emission-law numbering under three different pots."
+    },
+    {
+      "id": "CQECMPLX-Forge-Package-v0.7.0",
+      "date": "2026-06-12",
+      "slice": "production/packages/cqecmplx-forge",
+      "note": "SceneForge harvested from historical donors: worldforge.py (original P5->B_obs->Rrho->B_soft->B_higgs->B_ward->Bridge compose, receipt-trailed), intent.py (Scene8 Intent-as-Slice stdlib: 240-root E8 lattice walks, UNITY/TERNARY/ATTRACTOR actions, system scoring, keyword projection inference), imagedb.py (real saved pictures indexed + deterministic casting). PixelForge/images.py: stdlib PNG decoder (zlib+all 5 filters, 5 color types) + BMP reader. examples/live_video.py: request->world->intent->REAL Windows images->90 frames@30fps AVI, frame-perfect decode, 13.3s live. Mounted as cqecmplx.engines.scene."
     }
   ],
   "stray_roots_reconciled": [
