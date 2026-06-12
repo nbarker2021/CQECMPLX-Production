@@ -35,7 +35,10 @@ Status meanings:
 | 3.25 | review-source | Triality-surface toolkit supplement present. |
 | 3.50 | review-source | Triality-surface claim contract supplement present. |
 | 3.75 | review-source | Triality-surface next-state precondition supplement present. |
-| 4 | promoted-formal | Rewrite to strict scientific paper form. |
+| 4 | review-source | Strict scientific rewrite present; companion supports drafted. |
+| 4.25 | review-source | Boundary-repair toolkit supplement present. |
+| 4.50 | review-source | Boundary-repair claim contract supplement present. |
+| 4.75 | review-source | Boundary-repair next-state precondition supplement present. |
 | 5 | promoted-formal | Rewrite to strict scientific paper form. |
 | 6 | promoted-formal | Rewrite to strict scientific paper form. |
 | 7 | promoted-formal | Rewrite to strict scientific paper form. |

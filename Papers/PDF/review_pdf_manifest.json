@@ -1,6 +1,6 @@
 {
   "built_on": "2026-06-12",
-  "paper_count": 45,
+  "paper_count": 48,
   "outputs": [
     {
       "paper": "CQE-paper-00",
@@ -100,9 +100,27 @@
     },
     {
       "paper": "CQE-paper-04",
-      "title": "Paper 04 - Boundary Repair",
-      "pdf": "Papers\\PDF\\CQE-paper-04_paper-04-boundary-repair.pdf",
-      "bytes": 7369
+      "title": "Paper 4 - Boundary Repair",
+      "pdf": "Papers\\PDF\\CQE-paper-04_paper-4-boundary-repair.pdf",
+      "bytes": 6855
+    },
+    {
+      "paper": "CQE-paper-04.25",
+      "title": "Paper 4.25 - Toolkit for Boundary Repair",
+      "pdf": "Papers\\PDF\\CQE-paper-04.25_paper-4-25-toolkit-for-boundary-repair.pdf",
+      "bytes": 4513
+    },
+    {
+      "paper": "CQE-paper-04.50",
+      "title": "Paper 4.50 - Boundary Repair Claim Contract",
+      "pdf": "Papers\\PDF\\CQE-paper-04.50_paper-4-50-boundary-repair-claim-contract.pdf",
+      "bytes": 4553
+    },
+    {
+      "paper": "CQE-paper-04.75",
+      "title": "Paper 4.75 - Boundary Repair as Next-State Precondition",
+      "pdf": "Papers\\PDF\\CQE-paper-04.75_paper-4-75-boundary-repair-as-next-state-precondition.pdf",
+      "bytes": 4249
     },
     {
       "paper": "CQE-paper-05",
