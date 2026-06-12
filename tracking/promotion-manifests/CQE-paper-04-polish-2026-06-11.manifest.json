@@ -1,0 +1,41 @@
+{
+  "artifact": "CQE-paper-04 formal polish pass",
+  "date": "2026-06-11",
+  "paper": "CQE-paper-04",
+  "title": "Boundary Repair",
+  "status": "formal manuscript and finite verifier promoted",
+  "core_claim": {
+    "repair_operation": "failed join -> typed constraint for next legal route",
+    "consumes": [
+      "Paper 02 correction residues",
+      "Paper 03 axis/sheet coordinates"
+    ],
+    "verified": [
+      "two Paper 02 correction states consumed",
+      "Paper 03 coordinates preserved",
+      "all required constraint fields present",
+      "constraints are not proofs",
+      "repair is idempotent",
+      "untyped failures are rejected"
+    ]
+  },
+  "new_artifacts": [
+    "production/formal-papers/CQE-paper-04/FORMAL_PAPER.md",
+    "production/formal-papers/CQE-paper-04/verify_boundary_repair.py",
+    "production/formal-papers/CQE-paper-04/boundary_repair_receipt.json"
+  ],
+  "updated_artifacts": [
+    "production/papers/CQE-paper-04/02-CQE-tool/TOOL.md",
+    "production/papers/CQE-paper-04/03-CQE-workbook/WORKBOOK.md",
+    "production/paper-kernels/papers/CQE-paper-04/PAPER_KERNEL.md"
+  ],
+  "validation": {
+    "formal_verifier": "pass",
+    "paper_kernel_selector_training_mode": "1 pass / 0 needs-work"
+  },
+  "next_obligations": [
+    "Wire verify_boundary_repair into cqe_engine.formal.",
+    "Connect repaired constraints to Paper 05 path carriers.",
+    "Promote a shared obligation-ledger schema across the paper suite."
+  ]
+}

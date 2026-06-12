@@ -13,7 +13,17 @@ Smoke test producing at least one proof-like row and one obligation-like row.
 ## Verifier Specification
 ```python
 def verify_boundary_repair() -> dict:
-    """Verify T_BOUNDARY_REPAIR: Failed joins become typed constraints for the next legal route.."""
+    """Verify typed boundary repair.
+
+    Checks:
+    1. Paper 02 correction states are consumed.
+    2. Paper 03 axis/sheet coordinates are preserved.
+    3. Repaired rows contain state, coordinate, reason, status, source, target,
+       and next legal routes.
+    4. Repaired rows are constraints, not proofs.
+    5. Repair is idempotent.
+    6. Untyped failures are rejected.
+    """
     pass
 ```
 

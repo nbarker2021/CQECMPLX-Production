@@ -18,7 +18,9 @@ Status: `seeded`
 
 Define boundary repair as the transport operation that converts failed joins into typed constraints for the next legal route.
 
-Required next action: Separate method claims from domain claims before peer-review promotion.
+Polished claim: boundary repair converts Paper 02 correction residues plus Paper 03 coordinates into typed, idempotent constraints for the next legal route. A repaired row is a constraint, not proof; untyped failures are rejected.
+
+Required next action: Connect this polished theorem to the installable cqe_engine formal interface and then route constraints into Paper 05 path carriers.
 
 ## Math
 
@@ -32,7 +34,7 @@ Required next action: Promote every symbolic statement into a normalized claim r
 
 Status: `source-bound`
 
-Use 01-CQE-formal/FORMAL.md and recovered algebra/PDF evidence.
+Use `production/formal-papers/CQE-paper-04/FORMAL_PAPER.md`, `01-CQE-formal/FORMAL.md`, and recovered algebra/PDF evidence.
 
 Required next action: Split normal form, closed form, algebraic operators, calculus/window operators, and open obligations.
 
@@ -64,7 +66,7 @@ Required next action: Resolve this binding into production/lib-forge or mark it 
 
 Status: `seeded`
 
-Every validation and diagnostic must support hidden-guess ablation when training mode is enabled.
+Every validation and diagnostic must support hidden-guess ablation when training mode is enabled. Paper 04 now includes `production/formal-papers/CQE-paper-04/boundary_repair_receipt.json`, which verifies typed constraints, idempotent repair, Paper 02/Paper 03 preservation, and rejection of untyped failures.
 
 Required next action: Add positive, negative, boundary, and wrap tests with receipts.
 

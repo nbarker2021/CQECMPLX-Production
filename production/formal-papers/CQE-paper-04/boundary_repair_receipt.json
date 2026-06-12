@@ -1,0 +1,61 @@
+{
+  "paper": "CQE-paper-04",
+  "theorem": "Typed boundary repair",
+  "status": "pass",
+  "checks": {
+    "consumes_two_paper02_correction_states": true,
+    "preserves_paper03_coordinates": true,
+    "all_required_fields_present": true,
+    "constraints_not_proofs": true,
+    "next_legal_routes_nonempty": true,
+    "repair_is_idempotent": true,
+    "untyped_failure_rejected": true
+  },
+  "repaired_constraints": [
+    {
+      "state": [
+        0,
+        1,
+        0
+      ],
+      "axis_sheet": [
+        2,
+        0
+      ],
+      "reason": "Paper 02 correction fired: C and not R",
+      "status": "constraint",
+      "next_legal_routes": [
+        "CQE-paper-05 path-carrier intake",
+        "CQE-paper-03 stronger theorem intake"
+      ],
+      "source_paper": "CQE-paper-04",
+      "target_paper": "CQE-paper-05"
+    },
+    {
+      "state": [
+        1,
+        1,
+        0
+      ],
+      "axis_sheet": [
+        3,
+        1
+      ],
+      "reason": "Paper 02 correction fired: C and not R",
+      "status": "constraint",
+      "next_legal_routes": [
+        "CQE-paper-05 path-carrier intake",
+        "CQE-paper-03 stronger theorem intake"
+      ],
+      "source_paper": "CQE-paper-04",
+      "target_paper": "CQE-paper-05"
+    }
+  ],
+  "falsifier": {
+    "input": {
+      "status": "failed"
+    },
+    "accepted": false
+  },
+  "corrected_claim": "Boundary repair converts failed joins into typed constraints; it does not promote them directly to proof."
+}

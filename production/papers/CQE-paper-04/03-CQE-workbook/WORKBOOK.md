@@ -34,3 +34,9 @@ boundary-repair-receipt =
 ---
 
 This is the pattern for ALL papers: **the workbook IS the tool spec**. Every analog operation has its exact digital twin.
+
+## Correction Note
+
+Boundary repair does not mean "the failure is now proven." A repaired boundary
+row is a typed constraint with state, axis/sheet coordinate, reason, status,
+source, target, and next legal route. Untyped failures remain rejected.
