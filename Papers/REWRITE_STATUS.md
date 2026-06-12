@@ -59,7 +59,10 @@ Status meanings:
 | 9.25 | review-source | Hamiltonian-window toolkit supplement present. |
 | 9.50 | review-source | Hamiltonian-window claim contract supplement present. |
 | 9.75 | review-source | Hamiltonian-window next-state precondition supplement present. |
-| 10 | promoted-formal | Rewrite to strict scientific paper form. |
+| 10 | review-source | Strict scientific rewrite present; companion supports drafted. |
+| 10.25 | review-source | T10 master-receipt toolkit supplement present. |
+| 10.50 | review-source | T10 master-receipt claim contract supplement present. |
+| 10.75 | review-source | T10 master-receipt next-state precondition supplement present. |
 | 11 | promoted-formal | Rewrite to strict scientific paper form. |
 | 12 | fallback-body | Promote from production body into strict scientific paper. |
 | 13 | fallback-body | Promote from production body into strict scientific paper. |

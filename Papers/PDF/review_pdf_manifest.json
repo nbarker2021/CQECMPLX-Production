@@ -1,6 +1,6 @@
 {
   "built_on": "2026-06-12",
-  "paper_count": 63,
+  "paper_count": 66,
   "outputs": [
     {
       "paper": "CQE-paper-00",
@@ -246,7 +246,25 @@
       "paper": "CQE-paper-10",
       "title": "Paper 10 - T10 Master Receipt",
       "pdf": "Papers\\PDF\\CQE-paper-10_paper-10-t10-master-receipt.pdf",
-      "bytes": 10204
+      "bytes": 9188
+    },
+    {
+      "paper": "CQE-paper-10.25",
+      "title": "Paper 10.25 - Toolkit for the T10 Master Receipt",
+      "pdf": "Papers\\PDF\\CQE-paper-10.25_paper-10-25-toolkit-for-the-t10-master-receipt.pdf",
+      "bytes": 4522
+    },
+    {
+      "paper": "CQE-paper-10.50",
+      "title": "Paper 10.50 - T10 Master Receipt Claim Contract",
+      "pdf": "Papers\\PDF\\CQE-paper-10.50_paper-10-50-t10-master-receipt-claim-contract.pdf",
+      "bytes": 4629
+    },
+    {
+      "paper": "CQE-paper-10.75",
+      "title": "Paper 10.75 - T10 Master Receipt as Next-State Precondition",
+      "pdf": "Papers\\PDF\\CQE-paper-10.75_paper-10-75-t10-master-receipt-as-next-state-precondition.pdf",
+      "bytes": 4123
     },
     {
       "paper": "CQE-paper-11",
