@@ -39,7 +39,10 @@ Status meanings:
 | 4.25 | review-source | Boundary-repair toolkit supplement present. |
 | 4.50 | review-source | Boundary-repair claim contract supplement present. |
 | 4.75 | review-source | Boundary-repair next-state precondition supplement present. |
-| 5 | promoted-formal | Rewrite to strict scientific paper form. |
+| 5 | review-source | Strict scientific rewrite present; companion supports drafted. |
+| 5.25 | review-source | Oloid path-carrier toolkit supplement present. |
+| 5.50 | review-source | Oloid path-carrier claim contract supplement present. |
+| 5.75 | review-source | Oloid path-carrier next-state precondition supplement present. |
 | 6 | promoted-formal | Rewrite to strict scientific paper form. |
 | 7 | promoted-formal | Rewrite to strict scientific paper form. |
 | 8 | promoted-formal | Rewrite to strict scientific paper form. |

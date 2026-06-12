@@ -1,6 +1,6 @@
 {
   "built_on": "2026-06-12",
-  "paper_count": 48,
+  "paper_count": 51,
   "outputs": [
     {
       "paper": "CQE-paper-00",
@@ -124,9 +124,27 @@
     },
     {
       "paper": "CQE-paper-05",
-      "title": "Paper 05 - Oloid Path Carrier",
-      "pdf": "Papers\\PDF\\CQE-paper-05_paper-05-oloid-path-carrier.pdf",
-      "bytes": 7530
+      "title": "Paper 5 - Oloid Path Carrier",
+      "pdf": "Papers\\PDF\\CQE-paper-05_paper-5-oloid-path-carrier.pdf",
+      "bytes": 7270
+    },
+    {
+      "paper": "CQE-paper-05.25",
+      "title": "Paper 5.25 - Toolkit for the Oloid Path Carrier",
+      "pdf": "Papers\\PDF\\CQE-paper-05.25_paper-5-25-toolkit-for-the-oloid-path-carrier.pdf",
+      "bytes": 4625
+    },
+    {
+      "paper": "CQE-paper-05.50",
+      "title": "Paper 5.50 - Oloid Path Carrier Claim Contract",
+      "pdf": "Papers\\PDF\\CQE-paper-05.50_paper-5-50-oloid-path-carrier-claim-contract.pdf",
+      "bytes": 4569
+    },
+    {
+      "paper": "CQE-paper-05.75",
+      "title": "Paper 5.75 - Oloid Path Carrier as Next-State Precondition",
+      "pdf": "Papers\\PDF\\CQE-paper-05.75_paper-5-75-oloid-path-carrier-as-next-state-precondition.pdf",
+      "bytes": 4325
     },
     {
       "paper": "CQE-paper-06",
