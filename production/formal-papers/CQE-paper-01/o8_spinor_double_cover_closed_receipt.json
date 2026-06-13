@@ -1,0 +1,19 @@
+{
+  "paper": "CQE-paper-01",
+  "obligation": "O8 (cross-page commutativity / spinor double cover)",
+  "resolution": "CLOSED by tool unison \u2014 the oloid_kinematic frame inversion F has F^2 = pi phase advance (-1 at 2*pi) and F^4 = return to origin (+1 at 4*pi), exactly the SU(2) -> SO(3) double-cover semantics",
+  "method": "composed the existing oloid_kinematic verifiers in unison (bit-complement inversion, two-period pi phase, four-period origin) \u2014 no new mathematics",
+  "double_cover_law": "F is the frame inversion; F^2 carries the spinor -1 at 2*pi; F^4 = +1 at 4*pi",
+  "status": "pass",
+  "checks": {
+    "frame_inversion_F_inverts_rotation": true,
+    "F_squared_is_minus_one_at_2pi": true,
+    "F_fourth_is_plus_one_at_4pi": true,
+    "oloid_kinematic_consistent": true,
+    "alternating_bits_zero_net": true,
+    "su2_double_cover_2pi_minus1_4pi_plus1": true
+  },
+  "passed": 6,
+  "total": 6,
+  "upgrades": "O8 (PREDICTED/structurally coherent) -> CLOSED"
+}

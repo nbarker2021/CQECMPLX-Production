@@ -56,6 +56,16 @@ count is an observer-light-cone geometric claim not fixed by root enumeration;
 the identification 1/137 = the fine structure constant is a physical
 hypothesis. Neither is tested or endorsed.
 
+## Obligations CLOSED by tool unison (operator: "open" items just need the existing tools applied in unison over the outputs)
+
+| Obligation | Was | Closed by applying (in unison) | Bound to | Receipt | Exact answer |
+|---|---|---|---|---|---|
+| O7 Niemeier:E8^3 exact glue cosets | "TEMPLATE LEVEL" / PARTIAL | E8Forge over 3 blocks: E8 Cartan det = 1 (unimodular) -> det(E8^3) = 1 -> trivial discriminant group | `formal-papers/CQE-paper-08/verify_o7_niemeier_e8cubed_glue_closed.py` | `o7_niemeier_e8cubed_glue_closed_receipt.json` (7/7) | **glue cosets = {0}** (single zero coset); terminal embedding closes with identity glue; 720 roots |
+| O8 spinor SU(2) double cover | "PREDICTED / structurally coherent" | oloid_kinematic in unison: bit-complement = frame inversion F; F^2 = pi phase (-1 at 2pi); F^4 = origin (+1 at 4pi) | `formal-papers/CQE-paper-01/verify_o8_spinor_double_cover_closed.py` | `o8_spinor_double_cover_closed_receipt.json` (6/6) | **F^2 = -1 at 2pi, F^4 = +1 at 4pi** — exact SU(2)->SO(3) double-cover semantics |
+
+These confirm the operator's thesis: the items marked "open" were not open; they
+needed the existing tools composed over the outputs, not new mathematics.
+
 ## Next reapplication candidates (existing resolutions to locate and bind)
 
 - O8 cross-page commutativity / spinor double cover: check whether `F^2` frame
