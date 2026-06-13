@@ -1,0 +1,979 @@
+{
+  "paper": "CQE-paper-24",
+  "title": "KnightForge / N-Dimensional Chess Automata",
+  "status": "pass_with_open_obligations",
+  "closed_claim": "Greedy knight placement can be represented as a finite local-rule CA receipt whose chart states close under L-conjugate centroid annealing; the N-dimensional extension is a frame operator, not a solved game.",
+  "centroid_substrate": {
+    "hamming": {
+      "status": "pass",
+      "lie_conjugate_count": 4,
+      "step_distribution": {
+        "d=0": [
+          0,
+          0
+        ],
+        "d=1": [
+          2,
+          3,
+          3,
+          2
+        ],
+        "d=2": [
+          0,
+          0
+        ]
+      }
+    },
+    "voa": {
+      "status": "pass",
+      "weight_distribution": {
+        "0": 2,
+        "5": 6
+      },
+      "seed_partition_function": "Z(q) = 2q^0 + 6q^5"
+    },
+    "chain": {
+      "status": "pass",
+      "hamming_centroid_universality": "pass",
+      "voa_sector_decomposition": "pass",
+      "z4_period_template": "pass",
+      "seed_partition_function": "Z(q) = 2q^0 + 6q^5",
+      "fixed_points": 2,
+      "period_4_states": 6,
+      "chain_conclusion": "The one-light-cone / centroid constraint forces closure: (1) every state anneals to a Lie conjugate in \u22643 S3 steps; (2) the 3-conjugate weight partitions the 8 states into the VOA vacuum + excited sectors matching D12 singlet/color-orbit split; (3) the Z4 period template has exactly 2 fixed points + 6 period-4 states, identical to the D12 orbit structure. These are finite chart identities. Any VOA or Moonshine identification requires an additional transport theorem."
+    }
+  },
+  "greedy_knight": {
+    "board_size": 8,
+    "cell_count": 64,
+    "occupied_count": 24,
+    "rejected_count": 40,
+    "occupied_cells": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        6,
+        0
+      ],
+      [
+        7,
+        0
+      ],
+      [
+        7,
+        3
+      ],
+      [
+        6,
+        3
+      ],
+      [
+        5,
+        3
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        6
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        3,
+        6
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        6,
+        6
+      ],
+      [
+        7,
+        6
+      ]
+    ],
+    "non_attacking": true,
+    "attacked_pairs": [],
+    "receipt_rows_sample": [
+      {
+        "cell": [
+          0,
+          0
+        ],
+        "number": 1,
+        "L": 0,
+        "C": 1,
+        "R": 0,
+        "blocked": false,
+        "decision": "occupy",
+        "side": 0,
+        "state": [
+          0,
+          1,
+          0
+        ],
+        "anneal_steps": 0,
+        "attractor": [
+          0,
+          1,
+          0
+        ],
+        "is_lie_conjugate": true,
+        "frame_label": [
+          0,
+          2,
+          3
+        ],
+        "voa_weight": 5
+      },
+      {
+        "cell": [
+          1,
+          0
+        ],
+        "number": 2,
+        "L": 0,
+        "C": 1,
+        "R": 0,
+        "blocked": false,
+        "decision": "occupy",
+        "side": 0,
+        "state": [
+          0,
+          1,
+          0
+        ],
+        "anneal_steps": 0,
+        "attractor": [
+          0,
+          1,
+          0
+        ],
+        "is_lie_conjugate": true,
+        "frame_label": [
+          0,
+          2,
+          3
+        ],
+        "voa_weight": 5
+      },
+      {
+        "cell": [
+          2,
+          0
+        ],
+        "number": 3,
+        "L": 0,
+        "C": 1,
+        "R": 0,
+        "blocked": false,
+        "decision": "occupy",
+        "side": 0,
+        "state": [
+          0,
+          1,
+          0
+        ],
+        "anneal_steps": 0,
+        "attractor": [
+          0,
+          1,
+          0
+        ],
+        "is_lie_conjugate": true,
+        "frame_label": [
+          0,
+          2,
+          3
+        ],
+        "voa_weight": 5
+      },
+      {
+        "cell": [
+          3,
+          0
+        ],
+        "number": 4,
+        "L": 0,
+        "C": 1,
+        "R": 0,
+        "blocked": false,
+        "decision": "occupy",
+        "side": 0,
+        "state": [
+          0,
+          1,
+          0
+        ],
+        "anneal_steps": 0,
+        "attractor": [
+          0,
+          1,
+          0
+        ],
+        "is_lie_conjugate": true,
+        "frame_label": [
+          0,
+          2,
+          3
+        ],
+        "voa_weight": 5
+      },
+      {
+        "cell": [
+          4,
+          0
+        ],
+        "number": 5,
+        "L": 0,
+        "C": 1,
+        "R": 0,
+        "blocked": false,
+        "decision": "occupy",
+        "side": 0,
+        "state": [
+          0,
+          1,
+          0
+        ],
+        "anneal_steps": 0,
+        "attractor": [
+          0,
+          1,
+          0
+        ],
+        "is_lie_conjugate": true,
+        "frame_label": [
+          0,
+          2,
+          3
+        ],
+        "voa_weight": 5
+      },
+      {
+        "cell": [
+          5,
+          0
+        ],
+        "number": 6,
+        "L": 0,
+        "C": 1,
+        "R": 0,
+        "blocked": false,
+        "decision": "occupy",
+        "side": 0,
+        "state": [
+          0,
+          1,
+          0
+        ],
+        "anneal_steps": 0,
+        "attractor": [
+          0,
+          1,
+          0
+        ],
+        "is_lie_conjugate": true,
+        "frame_label": [
+          0,
+          2,
+          3
+        ],
+        "voa_weight": 5
+      },
+      {
+        "cell": [
+          6,
+          0
+        ],
+        "number": 7,
+        "L": 0,
+        "C": 1,
+        "R": 0,
+        "blocked": false,
+        "decision": "occupy",
+        "side": 0,
+        "state": [
+          0,
+          1,
+          0
+        ],
+        "anneal_steps": 0,
+        "attractor": [
+          0,
+          1,
+          0
+        ],
+        "is_lie_conjugate": true,
+        "frame_label": [
+          0,
+          2,
+          3
+        ],
+        "voa_weight": 5
+      },
+      {
+        "cell": [
+          7,
+          0
+        ],
+        "number": 8,
+        "L": 0,
+        "C": 1,
+        "R": 0,
+        "blocked": false,
+        "decision": "occupy",
+        "side": 0,
+        "state": [
+          0,
+          1,
+          0
+        ],
+        "anneal_steps": 0,
+        "attractor": [
+          0,
+          1,
+          0
+        ],
+        "is_lie_conjugate": true,
+        "frame_label": [
+          0,
+          2,
+          3
+        ],
+        "voa_weight": 5
+      },
+      {
+        "cell": [
+          7,
+          1
+        ],
+        "number": 9,
+        "L": 1,
+        "C": 0,
+        "R": 0,
+        "blocked": true,
+        "decision": "reject",
+        "side": -1,
+        "state": [
+          1,
+          0,
+          0
+        ],
+        "anneal_steps": 3,
+        "attractor": [
+          0,
+          1,
+          0
+        ],
+        "is_lie_conjugate": true,
+        "frame_label": [
+          3,
+          0,
+          2
+        ],
+        "voa_weight": 5
+      },
+      {
+        "cell": [
+          6,
+          1
+        ],
+        "number": 10,
+        "L": 1,
+        "C": 0,
+        "R": 0,
+        "blocked": true,
+        "decision": "reject",
+        "side": -1,
+        "state": [
+          1,
+          0,
+          0
+        ],
+        "anneal_steps": 3,
+        "attractor": [
+          0,
+          1,
+          0
+        ],
+        "is_lie_conjugate": true,
+        "frame_label": [
+          3,
+          0,
+          2
+        ],
+        "voa_weight": 5
+      },
+      {
+        "cell": [
+          5,
+          1
+        ],
+        "number": 11,
+        "L": 1,
+        "C": 0,
+        "R": 0,
+        "blocked": true,
+        "decision": "reject",
+        "side": -1,
+        "state": [
+          1,
+          0,
+          0
+        ],
+        "anneal_steps": 3,
+        "attractor": [
+          0,
+          1,
+          0
+        ],
+        "is_lie_conjugate": true,
+        "frame_label": [
+          3,
+          0,
+          2
+        ],
+        "voa_weight": 5
+      },
+      {
+        "cell": [
+          4,
+          1
+        ],
+        "number": 12,
+        "L": 1,
+        "C": 0,
+        "R": 0,
+        "blocked": true,
+        "decision": "reject",
+        "side": -1,
+        "state": [
+          1,
+          0,
+          0
+        ],
+        "anneal_steps": 3,
+        "attractor": [
+          0,
+          1,
+          0
+        ],
+        "is_lie_conjugate": true,
+        "frame_label": [
+          3,
+          0,
+          2
+        ],
+        "voa_weight": 5
+      },
+      {
+        "cell": [
+          3,
+          1
+        ],
+        "number": 13,
+        "L": 1,
+        "C": 0,
+        "R": 0,
+        "blocked": true,
+        "decision": "reject",
+        "side": -1,
+        "state": [
+          1,
+          0,
+          0
+        ],
+        "anneal_steps": 3,
+        "attractor": [
+          0,
+          1,
+          0
+        ],
+        "is_lie_conjugate": true,
+        "frame_label": [
+          3,
+          0,
+          2
+        ],
+        "voa_weight": 5
+      },
+      {
+        "cell": [
+          2,
+          1
+        ],
+        "number": 14,
+        "L": 1,
+        "C": 0,
+        "R": 0,
+        "blocked": true,
+        "decision": "reject",
+        "side": -1,
+        "state": [
+          1,
+          0,
+          0
+        ],
+        "anneal_steps": 3,
+        "attractor": [
+          0,
+          1,
+          0
+        ],
+        "is_lie_conjugate": true,
+        "frame_label": [
+          3,
+          0,
+          2
+        ],
+        "voa_weight": 5
+      },
+      {
+        "cell": [
+          1,
+          1
+        ],
+        "number": 15,
+        "L": 0,
+        "C": 0,
+        "R": 0,
+        "blocked": true,
+        "decision": "reject",
+        "side": 0,
+        "state": [
+          0,
+          0,
+          0
+        ],
+        "anneal_steps": 0,
+        "attractor": [
+          0,
+          0,
+          0
+        ],
+        "is_lie_conjugate": true,
+        "frame_label": [
+          0,
+          0,
+          0
+        ],
+        "voa_weight": 0
+      },
+      {
+        "cell": [
+          0,
+          1
+        ],
+        "number": 16,
+        "L": 0,
+        "C": 0,
+        "R": 0,
+        "blocked": true,
+        "decision": "reject",
+        "side": 0,
+        "state": [
+          0,
+          0,
+          0
+        ],
+        "anneal_steps": 0,
+        "attractor": [
+          0,
+          0,
+          0
+        ],
+        "is_lie_conjugate": true,
+        "frame_label": [
+          0,
+          0,
+          0
+        ],
+        "voa_weight": 0
+      }
+    ],
+    "all_rows_close_to_lie_conjugate": true,
+    "max_anneal_steps": 3,
+    "weight_counts": {
+      "0": 8,
+      "5": 56
+    },
+    "state_counts": {
+      "(0, 1, 0)": 24,
+      "(1, 0, 0)": 32,
+      "(0, 0, 0)": 8
+    },
+    "side_counts": {
+      "-1": 32,
+      "0": 32
+    },
+    "frame_labels_sample": {
+      "(0, 0)": [
+        0,
+        2,
+        3
+      ],
+      "(1, 0)": [
+        0,
+        2,
+        3
+      ],
+      "(2, 0)": [
+        0,
+        2,
+        3
+      ],
+      "(3, 0)": [
+        0,
+        2,
+        3
+      ],
+      "(4, 0)": [
+        0,
+        2,
+        3
+      ],
+      "(5, 0)": [
+        0,
+        2,
+        3
+      ],
+      "(6, 0)": [
+        0,
+        2,
+        3
+      ],
+      "(7, 0)": [
+        0,
+        2,
+        3
+      ],
+      "(7, 1)": [
+        3,
+        0,
+        2
+      ],
+      "(6, 1)": [
+        3,
+        0,
+        2
+      ],
+      "(5, 1)": [
+        3,
+        0,
+        2
+      ],
+      "(4, 1)": [
+        3,
+        0,
+        2
+      ],
+      "(3, 1)": [
+        3,
+        0,
+        2
+      ],
+      "(2, 1)": [
+        3,
+        0,
+        2
+      ],
+      "(1, 1)": [
+        0,
+        0,
+        0
+      ],
+      "(0, 1)": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "n_dimensional_frame_operator": {
+    "dimensions": 4,
+    "status": "frame_operator_defined",
+    "axis_states": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        1
+      ]
+    ],
+    "axis_labels": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        3,
+        0
+      ],
+      [
+        0,
+        2,
+        3
+      ],
+      [
+        3,
+        0,
+        2
+      ]
+    ],
+    "composite_weight": 15,
+    "closed_game_claim": false
+  },
+  "checks": [
+    {
+      "name": "centroid annealing universality closes",
+      "pass": true,
+      "detail": {
+        "status": "pass",
+        "lie_conjugate_count": 4,
+        "step_distribution": {
+          "d=0": [
+            0,
+            0
+          ],
+          "d=1": [
+            2,
+            3,
+            3,
+            2
+          ],
+          "d=2": [
+            0,
+            0
+          ]
+        },
+        "lie_conjugates": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "name": "VOA sector decomposition is 2 plus 6",
+      "pass": true,
+      "detail": {
+        "status": "pass",
+        "weight_distribution": {
+          "0": 2,
+          "5": 6
+        },
+        "seed_partition_function": "Z(q) = 2q^0 + 6q^5",
+        "non_vacua_count": 6
+      }
+    },
+    {
+      "name": "centroid VOA chain passes",
+      "pass": true,
+      "detail": {
+        "status": "pass",
+        "hamming_centroid_universality": "pass",
+        "voa_sector_decomposition": "pass",
+        "z4_period_template": "pass",
+        "seed_partition_function": "Z(q) = 2q^0 + 6q^5",
+        "fixed_points": 2,
+        "period_4_states": 6,
+        "chain_conclusion": "The one-light-cone / centroid constraint forces closure: (1) every state anneals to a Lie conjugate in \u22643 S3 steps; (2) the 3-conjugate weight partitions the 8 states into the VOA vacuum + excited sectors matching D12 singlet/color-orbit split; (3) the Z4 period template has exactly 2 fixed points + 6 period-4 states, identical to the D12 orbit structure. These are finite chart identities. Any VOA or Moonshine identification requires an additional transport theorem."
+      }
+    },
+    {
+      "name": "finite greedy knight placement is deterministic and non-attacking",
+      "pass": true,
+      "detail": {
+        "board_size": 8,
+        "cell_count": 64,
+        "occupied_count": 24,
+        "rejected_count": 40,
+        "attacked_pairs": []
+      }
+    },
+    {
+      "name": "greedy placement rows close under L-conjugate annealing",
+      "pass": true,
+      "detail": {
+        "max_anneal_steps": 3,
+        "weight_counts": {
+          "0": 8,
+          "5": 56
+        },
+        "state_counts": {
+          "(0, 1, 0)": 24,
+          "(1, 0, 0)": 32,
+          "(0, 0, 0)": 8
+        },
+        "side_counts": {
+          "-1": 32,
+          "0": 32
+        }
+      }
+    },
+    {
+      "name": "N-dimensional lift is only a frame operator",
+      "pass": true,
+      "detail": {
+        "dimensions": 4,
+        "status": "frame_operator_defined",
+        "axis_states": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "axis_labels": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            3,
+            0
+          ],
+          [
+            0,
+            2,
+            3
+          ],
+          [
+            3,
+            0,
+            2
+          ]
+        ],
+        "composite_weight": 15,
+        "closed_game_claim": false
+      }
+    }
+  ],
+  "open_obligations": [
+    {
+      "obligation": "OEIS identity",
+      "status": "open",
+      "reason": "the finite sequence is not claimed identical to any OEIS entry"
+    },
+    {
+      "obligation": "N-dimensional playability",
+      "status": "open",
+      "reason": "the frame operator is defined, but a complete game is not proven well-posed"
+    },
+    {
+      "obligation": "placement-class to 2+6 orbit validation",
+      "status": "open",
+      "reason": "the 2+6 sector split is proven for chart states, not every board-pattern class"
+    },
+    {
+      "obligation": "combinatorial game theory review",
+      "status": "open",
+      "reason": "no domain expert critique is included in the receipt"
+    }
+  ]
+}

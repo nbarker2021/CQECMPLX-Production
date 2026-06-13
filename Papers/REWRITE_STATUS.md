@@ -115,7 +115,10 @@ Status meanings:
 | 23.25 | review-source | FoldForge toolkit supplement present. |
 | 23.50 | review-source | FoldForge claim contract supplement present. |
 | 23.75 | review-source | FoldForge next-state precondition supplement present. |
-| 24 | fallback-body | Promote from production body into strict scientific paper. |
+| 24 | review-source | Strict scientific rewrite present; companion supports drafted; local verifier promoted. |
+| 24.25 | review-source | KnightForge toolkit supplement present. |
+| 24.50 | review-source | KnightForge claim contract supplement present. |
+| 24.75 | review-source | KnightForge next-state precondition supplement present. |
 | 25 | fallback-body | Promote from production body into strict scientific paper. |
 | 26 | fallback-body | Promote from production body into strict scientific paper. |
 | 27 | fallback-body | Promote from production body into strict scientific paper. |
