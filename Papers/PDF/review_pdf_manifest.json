@@ -1,6 +1,6 @@
 {
   "built_on": "2026-06-12",
-  "paper_count": 111,
+  "paper_count": 114,
   "outputs": [
     {
       "paper": "CQE-paper-00",
@@ -630,7 +630,25 @@
       "paper": "CQE-paper-26",
       "title": "Paper 26 - Z-Pinch and Shear Horizon",
       "pdf": "Papers\\PDF\\CQE-paper-26_paper-26-z-pinch-and-shear-horizon.pdf",
-      "bytes": 7506
+      "bytes": 7213
+    },
+    {
+      "paper": "CQE-paper-26.25",
+      "title": "Paper 26.25 - Z-Pinch and Shear Toolkit Supplement",
+      "pdf": "Papers\\PDF\\CQE-paper-26.25_paper-26-25-z-pinch-and-shear-toolkit-supplement.pdf",
+      "bytes": 3086
+    },
+    {
+      "paper": "CQE-paper-26.50",
+      "title": "Paper 26.50 - Z-Pinch and Shear Claim Contract",
+      "pdf": "Papers\\PDF\\CQE-paper-26.50_paper-26-50-z-pinch-and-shear-claim-contract.pdf",
+      "bytes": 3072
+    },
+    {
+      "paper": "CQE-paper-26.75",
+      "title": "Paper 26.75 - Z-Pinch and Shear Next-State Precondition",
+      "pdf": "Papers\\PDF\\CQE-paper-26.75_paper-26-75-z-pinch-and-shear-next-state-precondition.pdf",
+      "bytes": 2940
     },
     {
       "paper": "CQE-paper-27",

@@ -123,7 +123,10 @@ Status meanings:
 | 25.25 | review-source | Energetic traversal toolkit supplement present. |
 | 25.50 | review-source | Energetic traversal claim contract supplement present. |
 | 25.75 | review-source | Energetic traversal next-state precondition supplement present. |
-| 26 | fallback-body | Promote from production body into strict scientific paper. |
+| 26 | review-source | Strict scientific rewrite present; companion supports drafted; local verifier promoted. |
+| 26.25 | review-source | Z-pinch/shear toolkit supplement present. |
+| 26.50 | review-source | Z-pinch/shear claim contract supplement present. |
+| 26.75 | review-source | Z-pinch/shear next-state precondition supplement present. |
 | 27 | fallback-body | Promote from production body into strict scientific paper. |
 | 28 | fallback-body | Promote from production body into strict scientific paper. |
 | 29 | fallback-body | Promote from production body into strict scientific paper. |
