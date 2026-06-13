@@ -1,0 +1,544 @@
+{
+  "paper": "CQE-paper-22",
+  "title": "MetaForge Applied Materials",
+  "status": "pass_with_open_obligations",
+  "closed_claim": "MetaForge supplies a replayable candidate-generation ledger for material pair selection, ten-fold evaluation, seam proposal, and production-estimate accounting.",
+  "package_root": "D:\\CQE_CMPLX\\git-hosted-roots\\CQECMPLX-Production\\production\\lib-forge\\CQECMPLX-MetaMaterial-Designer\\meta_material_system",
+  "graphene_hbn_candidate": {
+    "base": "Graphene",
+    "partner": "Hexagonal Boron Nitride",
+    "partner_rank": 1,
+    "pareto_score": 0.8899999999999999,
+    "pareto_components": {
+      "lattice_match": 0.8,
+      "property_synergy": 1.0,
+      "gluon_coherence": 0.8,
+      "oloid_compatibility": 1.0,
+      "interface_energy": 0.001083845846645368,
+      "strain_tolerance": 19.41176470588235
+    },
+    "fold": {
+      "fold_count": 10,
+      "final_tensile": 77154.38465926095,
+      "final_composite": 43872.54210843101,
+      "final_gluon_mass": 1.1904449999999998,
+      "total_formation_energy": 9.990582824125001,
+      "error_wall_summary": {
+        "CapacityExceeded": 2,
+        "InvariantViolation": 2,
+        "BondFailure": 0,
+        "MirrorRequired": 3,
+        "NoAntipode": 1,
+        "CNotPreserved": 3
+      }
+    },
+    "seams": [
+      {
+        "material": "MXene (Ti\u2083C\u2082T\u2093)",
+        "role": "healing",
+        "placement": "interface",
+        "effectiveness": 0.85,
+        "required_thickness_nm": 2.0
+      },
+      {
+        "material": "Hexagonal Boron Nitride",
+        "role": "electrical",
+        "placement": "interface",
+        "effectiveness": 0.85,
+        "required_thickness_nm": 1.0
+      },
+      {
+        "material": "MoWSe\u2082 Alloy",
+        "role": "gradient",
+        "placement": "midlayer",
+        "effectiveness": 0.75,
+        "required_thickness_nm": 5.0
+      },
+      {
+        "material": "Black Phosphorus",
+        "role": "compliance",
+        "placement": "interface",
+        "effectiveness": 0.75,
+        "required_thickness_nm": 2.0
+      },
+      {
+        "material": "Strontium Titanate",
+        "role": "barrier",
+        "placement": "surface",
+        "effectiveness": 0.7,
+        "required_thickness_nm": 10.0
+      }
+    ],
+    "production_plan": {
+      "total_energy_joules_per_cm2": 84883.16454787043,
+      "total_time_hours": 55.5,
+      "max_temperature_K": 1000,
+      "max_pressure_atm": 1,
+      "estimated_cost_usd_per_cm2": 105.00353679852283,
+      "scalability_score": 0.48,
+      "step_count": 10,
+      "notes": [
+        "Gluon mass target: 1.190 (formation energy: 9.99 eV)",
+        "Target tensile: 77154 MPa, Composite: 43873 MPa",
+        "Error walls encountered: 11",
+        "Seam layers required: 5"
+      ]
+    }
+  },
+  "additional_pairs": [
+    {
+      "base": "Graphene",
+      "partner": "Twisted Bilayer Graphene @ 1.1\u00b0",
+      "partner_rank": null,
+      "pareto_score": null,
+      "pareto_components": {
+        "lattice_match": null,
+        "property_synergy": null,
+        "gluon_coherence": null,
+        "oloid_compatibility": null,
+        "interface_energy": null,
+        "strain_tolerance": null
+      },
+      "fold": {
+        "fold_count": 10,
+        "final_tensile": 118647.45141780376,
+        "final_composite": 64189.3598994197,
+        "final_gluon_mass": 1.9121600000000003,
+        "total_formation_energy": 22.6208982252,
+        "error_wall_summary": {
+          "CapacityExceeded": 4,
+          "InvariantViolation": 2,
+          "BondFailure": 0,
+          "MirrorRequired": 3,
+          "NoAntipode": 1,
+          "CNotPreserved": 3
+        }
+      },
+      "seams": [
+        {
+          "material": "MXene (Ti\u2083C\u2082T\u2093)",
+          "role": "healing",
+          "placement": "interface",
+          "effectiveness": 0.85,
+          "required_thickness_nm": 2.0
+        },
+        {
+          "material": "MoWSe\u2082 Alloy",
+          "role": "gradient",
+          "placement": "midlayer",
+          "effectiveness": 0.75,
+          "required_thickness_nm": 5.0
+        },
+        {
+          "material": "Strontium Titanate",
+          "role": "barrier",
+          "placement": "surface",
+          "effectiveness": 0.7,
+          "required_thickness_nm": 10.0
+        }
+      ],
+      "production_plan": {
+        "total_energy_joules_per_cm2": 82295.90964590965,
+        "total_time_hours": 32.5,
+        "max_temperature_K": 1300,
+        "max_pressure_atm": 1,
+        "estimated_cost_usd_per_cm2": 105.00342899623524,
+        "scalability_score": 0.4,
+        "step_count": 8,
+        "notes": [
+          "Gluon mass target: 1.912 (formation energy: 22.62 eV)",
+          "Target tensile: 118647 MPa, Composite: 64189 MPa",
+          "Error walls encountered: 13",
+          "Seam layers required: 3"
+        ]
+      }
+    },
+    {
+      "base": "Molybdenum Disulfide",
+      "partner": "Hexagonal Boron Nitride",
+      "partner_rank": 11,
+      "pareto_score": 0.64,
+      "pareto_components": {
+        "lattice_match": 0.2,
+        "property_synergy": 0.6,
+        "gluon_coherence": 0.8,
+        "oloid_compatibility": 1.0,
+        "interface_energy": 0.0017225316455696208,
+        "strain_tolerance": 19.41176470588235
+      },
+      "fold": {
+        "fold_count": 10,
+        "final_tensile": 22720.3095929112,
+        "final_composite": 14585.323456997598,
+        "final_gluon_mass": 0.07961,
+        "total_formation_energy": 7.707116580325,
+        "error_wall_summary": {
+          "CapacityExceeded": 2,
+          "InvariantViolation": 2,
+          "BondFailure": 0,
+          "MirrorRequired": 3,
+          "NoAntipode": 1,
+          "CNotPreserved": 3
+        }
+      },
+      "seams": [
+        {
+          "material": "MXene (Ti\u2083C\u2082T\u2093)",
+          "role": "healing",
+          "placement": "interface",
+          "effectiveness": 0.85,
+          "required_thickness_nm": 2.0
+        },
+        {
+          "material": "MoWSe\u2082 Alloy",
+          "role": "gradient",
+          "placement": "midlayer",
+          "effectiveness": 0.75,
+          "required_thickness_nm": 5.0
+        },
+        {
+          "material": "Black Phosphorus",
+          "role": "compliance",
+          "placement": "interface",
+          "effectiveness": 0.75,
+          "required_thickness_nm": 2.0
+        },
+        {
+          "material": "Strontium Titanate",
+          "role": "barrier",
+          "placement": "surface",
+          "effectiveness": 0.7,
+          "required_thickness_nm": 10.0
+        }
+      ],
+      "production_plan": {
+        "total_energy_joules_per_cm2": 87655.64820800115,
+        "total_time_hours": 55.0,
+        "max_temperature_K": 1050,
+        "max_pressure_atm": 1,
+        "estimated_cost_usd_per_cm2": 105.00365231867534,
+        "scalability_score": 0.48,
+        "step_count": 9,
+        "notes": [
+          "Gluon mass target: 0.080 (formation energy: 7.71 eV)",
+          "Target tensile: 22720 MPa, Composite: 14585 MPa",
+          "Error walls encountered: 11",
+          "Seam layers required: 4"
+        ]
+      }
+    },
+    {
+      "base": "Black Phosphorus",
+      "partner": "MXene (Ti\u2083C\u2082T\u2093)",
+      "partner_rank": 14,
+      "pareto_score": 0.5775,
+      "pareto_components": {
+        "lattice_match": 0.5,
+        "property_synergy": 0.45,
+        "gluon_coherence": 0.8,
+        "oloid_compatibility": 0.5,
+        "interface_energy": 0.0003132099697885196,
+        "strain_tolerance": 11.11111111111111
+      },
+      "fold": {
+        "fold_count": 10,
+        "final_tensile": 4260.44842817085,
+        "final_composite": 3068.10581234002,
+        "final_gluon_mass": 0.7224749999999999,
+        "total_formation_energy": 8.560971736525,
+        "error_wall_summary": {
+          "CapacityExceeded": 2,
+          "InvariantViolation": 2,
+          "BondFailure": 0,
+          "MirrorRequired": 3,
+          "NoAntipode": 1,
+          "CNotPreserved": 4
+        }
+      },
+      "seams": [
+        {
+          "material": "MXene (Ti\u2083C\u2082T\u2093)",
+          "role": "healing",
+          "placement": "interface",
+          "effectiveness": 0.85,
+          "required_thickness_nm": 2.0
+        },
+        {
+          "material": "MoWSe\u2082 Alloy",
+          "role": "gradient",
+          "placement": "midlayer",
+          "effectiveness": 0.75,
+          "required_thickness_nm": 5.0
+        },
+        {
+          "material": "Strontium Titanate",
+          "role": "barrier",
+          "placement": "surface",
+          "effectiveness": 0.7,
+          "required_thickness_nm": 10.0
+        }
+      ],
+      "production_plan": {
+        "total_energy_joules_per_cm2": 83304.6398046398,
+        "total_time_hours": 78.0,
+        "max_temperature_K": 1000,
+        "max_pressure_atm": 1,
+        "estimated_cost_usd_per_cm2": 105.00347102665853,
+        "scalability_score": 0.48,
+        "step_count": 8,
+        "notes": [
+          "Gluon mass target: 0.722 (formation energy: 8.56 eV)",
+          "Target tensile: 4260 MPa, Composite: 3068 MPa",
+          "Error walls encountered: 12",
+          "Seam layers required: 3"
+        ]
+      }
+    },
+    {
+      "base": "Strontium Titanate",
+      "partner": "MoWSe\u2082 Alloy",
+      "partner_rank": 19,
+      "pareto_score": 0.6,
+      "pareto_components": {
+        "lattice_match": 0.2,
+        "property_synergy": 0.6,
+        "gluon_coherence": 1.0,
+        "oloid_compatibility": 0.5,
+        "interface_energy": 0.000643096670934699,
+        "strain_tolerance": 0.7490636704119851
+      },
+      "fold": {
+        "fold_count": 10,
+        "final_tensile": 5869.951167702061,
+        "final_composite": 4349.397630500961,
+        "final_gluon_mass": 1.3424449999999999,
+        "total_formation_energy": 10.023752082249999,
+        "error_wall_summary": {
+          "CapacityExceeded": 2,
+          "InvariantViolation": 2,
+          "BondFailure": 0,
+          "MirrorRequired": 3,
+          "NoAntipode": 1,
+          "CNotPreserved": 4
+        }
+      },
+      "seams": [
+        {
+          "material": "MXene (Ti\u2083C\u2082T\u2093)",
+          "role": "healing",
+          "placement": "interface",
+          "effectiveness": 0.85,
+          "required_thickness_nm": 2.0
+        },
+        {
+          "material": "Graphene",
+          "role": "electrical",
+          "placement": "interface",
+          "effectiveness": 0.85,
+          "required_thickness_nm": 1.0
+        },
+        {
+          "material": "MoWSe\u2082 Alloy",
+          "role": "gradient",
+          "placement": "midlayer",
+          "effectiveness": 0.75,
+          "required_thickness_nm": 5.0
+        },
+        {
+          "material": "Strontium Titanate",
+          "role": "barrier",
+          "placement": "surface",
+          "effectiveness": 0.7,
+          "required_thickness_nm": 10.0
+        }
+      ],
+      "production_plan": {
+        "total_energy_joules_per_cm2": 128655.31135531137,
+        "total_time_hours": 35.5,
+        "max_temperature_K": 1000,
+        "max_pressure_atm": 1,
+        "estimated_cost_usd_per_cm2": 105.00536063797313,
+        "scalability_score": 0.52,
+        "step_count": 9,
+        "notes": [
+          "Gluon mass target: 1.342 (formation energy: 10.02 eV)",
+          "Target tensile: 5870 MPa, Composite: 4349 MPa",
+          "Error walls encountered: 12",
+          "Seam layers required: 4"
+        ]
+      }
+    }
+  ],
+  "checks": [
+    {
+      "name": "material database has a finite replayable inventory",
+      "pass": true,
+      "detail": {
+        "material_count": 23,
+        "sample": [
+          "Graphene",
+          "Molybdenum Disulfide",
+          "Black Phosphorus",
+          "Hexagonal Boron Nitride",
+          "MoWSe\u2082 Alloy"
+        ]
+      }
+    },
+    {
+      "name": "graphene selects hBN as top Pareto partner",
+      "pass": true,
+      "detail": {
+        "partner": "Hexagonal Boron Nitride",
+        "rank": 1,
+        "pareto_score": 0.8899999999999999,
+        "components": {
+          "lattice_match": 0.8,
+          "property_synergy": 1.0,
+          "gluon_coherence": 0.8,
+          "oloid_compatibility": 1.0,
+          "interface_energy": 0.001083845846645368,
+          "strain_tolerance": 19.41176470588235
+        }
+      }
+    },
+    {
+      "name": "fold engine emits a deterministic ten-fold candidate receipt",
+      "pass": true,
+      "detail": {
+        "fold_count": 10,
+        "final_tensile": 77154.38465926095,
+        "final_composite": 43872.54210843101,
+        "final_gluon_mass": 1.1904449999999998,
+        "total_formation_energy": 9.990582824125001,
+        "error_wall_summary": {
+          "CapacityExceeded": 2,
+          "InvariantViolation": 2,
+          "BondFailure": 0,
+          "MirrorRequired": 3,
+          "NoAntipode": 1,
+          "CNotPreserved": 3
+        }
+      }
+    },
+    {
+      "name": "seam detector emits explicit mitigation candidates",
+      "pass": true,
+      "detail": [
+        {
+          "material": "MXene (Ti\u2083C\u2082T\u2093)",
+          "role": "healing",
+          "placement": "interface",
+          "effectiveness": 0.85,
+          "required_thickness_nm": 2.0
+        },
+        {
+          "material": "Hexagonal Boron Nitride",
+          "role": "electrical",
+          "placement": "interface",
+          "effectiveness": 0.85,
+          "required_thickness_nm": 1.0
+        },
+        {
+          "material": "MoWSe\u2082 Alloy",
+          "role": "gradient",
+          "placement": "midlayer",
+          "effectiveness": 0.75,
+          "required_thickness_nm": 5.0
+        },
+        {
+          "material": "Black Phosphorus",
+          "role": "compliance",
+          "placement": "interface",
+          "effectiveness": 0.75,
+          "required_thickness_nm": 2.0
+        },
+        {
+          "material": "Strontium Titanate",
+          "role": "barrier",
+          "placement": "surface",
+          "effectiveness": 0.7,
+          "required_thickness_nm": 10.0
+        }
+      ]
+    },
+    {
+      "name": "production estimator emits positive bounded accounting",
+      "pass": true,
+      "detail": {
+        "total_energy_joules_per_cm2": 84883.16454787043,
+        "total_time_hours": 55.5,
+        "max_temperature_K": 1000,
+        "max_pressure_atm": 1,
+        "estimated_cost_usd_per_cm2": 105.00353679852283,
+        "scalability_score": 0.48,
+        "step_count": 10,
+        "notes": [
+          "Gluon mass target: 1.190 (formation energy: 9.99 eV)",
+          "Target tensile: 77154 MPa, Composite: 43873 MPa",
+          "Error walls encountered: 11",
+          "Seam layers required: 5"
+        ]
+      }
+    },
+    {
+      "name": "additional material pairs run through the same pipeline",
+      "pass": true,
+      "detail": [
+        {
+          "base": "Graphene",
+          "partner": "Twisted Bilayer Graphene @ 1.1\u00b0",
+          "fold_count": 10,
+          "seam_count": 3,
+          "energy": 82295.90964590965,
+          "cost": 105.00342899623524
+        },
+        {
+          "base": "Molybdenum Disulfide",
+          "partner": "Hexagonal Boron Nitride",
+          "fold_count": 10,
+          "seam_count": 4,
+          "energy": 87655.64820800115,
+          "cost": 105.00365231867534
+        },
+        {
+          "base": "Black Phosphorus",
+          "partner": "MXene (Ti\u2083C\u2082T\u2093)",
+          "fold_count": 10,
+          "seam_count": 3,
+          "energy": 83304.6398046398,
+          "cost": 105.00347102665853
+        },
+        {
+          "base": "Strontium Titanate",
+          "partner": "MoWSe\u2082 Alloy",
+          "fold_count": 10,
+          "seam_count": 4,
+          "energy": 128655.31135531137,
+          "cost": 105.00536063797313
+        }
+      ]
+    }
+  ],
+  "open_obligations": [
+    {
+      "obligation": "finite-element validation",
+      "status": "open",
+      "reason": "the receipt estimates properties but does not solve continuum mechanics"
+    },
+    {
+      "obligation": "fabrication and load testing",
+      "status": "open",
+      "reason": "no printed or deposited candidate has a measured stress-strain receipt here"
+    },
+    {
+      "obligation": "manufacturability constraints",
+      "status": "open",
+      "reason": "minimum feature size, overhang, tooling, and defect tolerances are not closed by the candidate ledger"
+    },
+    {
+      "obligation": "relative-density and Poisson-ratio measurement",
+      "status": "open",
+      "reason": "the package emits a candidate stack and estimates, not a measured auxetic unit cell"
+    }
+  ]
+}

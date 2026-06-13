@@ -1,6 +1,6 @@
 {
   "built_on": "2026-06-12",
-  "paper_count": 99,
+  "paper_count": 102,
   "outputs": [
     {
       "paper": "CQE-paper-00",
@@ -534,7 +534,25 @@
       "paper": "CQE-paper-22",
       "title": "Paper 22 - MetaForge Applied Materials",
       "pdf": "Papers\\PDF\\CQE-paper-22_paper-22-metaforge-applied-materials.pdf",
-      "bytes": 7555
+      "bytes": 7290
+    },
+    {
+      "paper": "CQE-paper-22.25",
+      "title": "Paper 22.25 - MetaForge Toolkit Supplement",
+      "pdf": "Papers\\PDF\\CQE-paper-22.25_paper-22-25-metaforge-toolkit-supplement.pdf",
+      "bytes": 3354
+    },
+    {
+      "paper": "CQE-paper-22.50",
+      "title": "Paper 22.50 - MetaForge Claim Contract",
+      "pdf": "Papers\\PDF\\CQE-paper-22.50_paper-22-50-metaforge-claim-contract.pdf",
+      "bytes": 3256
+    },
+    {
+      "paper": "CQE-paper-22.75",
+      "title": "Paper 22.75 - MetaForge Next-State Bridge",
+      "pdf": "Papers\\PDF\\CQE-paper-22.75_paper-22-75-metaforge-next-state-bridge.pdf",
+      "bytes": 2997
     },
     {
       "paper": "CQE-paper-23",
