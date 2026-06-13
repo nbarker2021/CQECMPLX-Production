@@ -139,7 +139,10 @@ Status meanings:
 | 29.25 | review-source | Monster horizon toolkit supplement present. |
 | 29.50 | review-source | Monster horizon claim contract supplement present. |
 | 29.75 | review-source | Monster horizon next-state precondition supplement present. |
-| 30 | fallback-body | Promote from production body into strict scientific paper. |
+| 30 | review-source | Strict scientific rewrite present; companion supports drafted; local verifier promoted. |
+| 30.25 | review-source | Grand ribbon toolkit supplement present. |
+| 30.50 | review-source | Grand ribbon claim contract supplement present. |
+| 30.75 | review-source | Grand ribbon next-state precondition supplement present. |
 | 31 | fallback-body | Promote from production body into strict scientific paper. |
 | 32 | fallback-body | Promote from production body into strict scientific paper. |
 

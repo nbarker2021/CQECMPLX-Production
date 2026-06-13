@@ -1,6 +1,6 @@
 {
   "built_on": "2026-06-13",
-  "paper_count": 123,
+  "paper_count": 126,
   "outputs": [
     {
       "paper": "CQE-paper-00",
@@ -726,7 +726,25 @@
       "paper": "CQE-paper-30",
       "title": "Paper 30 - Grand Ribbon Meta-Framer",
       "pdf": "Papers\\PDF\\CQE-paper-30_paper-30-grand-ribbon-meta-framer.pdf",
-      "bytes": 7576
+      "bytes": 7837
+    },
+    {
+      "paper": "CQE-paper-30.25",
+      "title": "Paper 30.25 - Grand Ribbon Toolkit Supplement",
+      "pdf": "Papers\\PDF\\CQE-paper-30.25_paper-30-25-grand-ribbon-toolkit-supplement.pdf",
+      "bytes": 3203
+    },
+    {
+      "paper": "CQE-paper-30.50",
+      "title": "Paper 30.50 - Grand Ribbon Claim Contract",
+      "pdf": "Papers\\PDF\\CQE-paper-30.50_paper-30-50-grand-ribbon-claim-contract.pdf",
+      "bytes": 3269
+    },
+    {
+      "paper": "CQE-paper-30.75",
+      "title": "Paper 30.75 - Grand Ribbon Next-State Preconditions",
+      "pdf": "Papers\\PDF\\CQE-paper-30.75_paper-30-75-grand-ribbon-next-state-preconditions.pdf",
+      "bytes": 3138
     },
     {
       "paper": "CQE-paper-31",

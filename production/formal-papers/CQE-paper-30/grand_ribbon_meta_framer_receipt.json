@@ -1,0 +1,1944 @@
+{
+  "checks": [
+    {
+      "detail": [
+        "C",
+        "L",
+        "R",
+        "B",
+        "T",
+        "O",
+        "W",
+        "A"
+      ],
+      "name": "slot_schema_has_eight_slots",
+      "pass": true
+    },
+    {
+      "detail": [
+        "binary",
+        "vector",
+        "binary+vector"
+      ],
+      "name": "source_kinds_are_bounded",
+      "pass": true
+    },
+    {
+      "detail": 30,
+      "name": "paper_00_to_29_sweep_has_30_positions",
+      "pass": true
+    },
+    {
+      "detail": [
+        {
+          "all_slots_filled": true,
+          "filled_slots": [
+            "C",
+            "L",
+            "R",
+            "B",
+            "T",
+            "O",
+            "W",
+            "A"
+          ],
+          "index": 0,
+          "paper_id": "CQE-paper-00",
+          "provenance": {
+            "A": "Papers\\Source\\CQE-paper-00.md",
+            "B": "Papers\\Source\\CQE-paper-00.md",
+            "C": "Papers\\Source\\CQE-paper-00.md",
+            "L": "Papers\\Source\\CQE-paper-00.md",
+            "O": "Papers\\Source\\CQE-paper-00.md",
+            "R": "Papers\\Source\\CQE-paper-00.md",
+            "T": "Papers\\Source\\CQE-paper-00.md",
+            "W": "Papers\\Source\\CQE-paper-00.md"
+          },
+          "slot_count": 8
+        },
+        {
+          "all_slots_filled": true,
+          "filled_slots": [
+            "C",
+            "L",
+            "R",
+            "B",
+            "T",
+            "O",
+            "W",
+            "A"
+          ],
+          "index": 1,
+          "paper_id": "CQE-paper-01",
+          "provenance": {
+            "A": "production\\formal-papers\\CQE-paper-01\\FORMAL_PAPER.md",
+            "B": "production\\formal-papers\\CQE-paper-01\\FORMAL_PAPER.md",
+            "C": "production\\formal-papers\\CQE-paper-01\\FORMAL_PAPER.md",
+            "L": "production\\formal-papers\\CQE-paper-01\\FORMAL_PAPER.md",
+            "O": "production\\formal-papers\\CQE-paper-01\\FORMAL_PAPER.md",
+            "R": "production\\formal-papers\\CQE-paper-01\\FORMAL_PAPER.md",
+            "T": "production\\formal-papers\\CQE-paper-01\\FORMAL_PAPER.md",
+            "W": "production\\formal-papers\\CQE-paper-01\\FORMAL_PAPER.md"
+          },
+          "slot_count": 8
+        },
+        {
+          "all_slots_filled": true,
+          "filled_slots": [
+            "C",
+            "L",
+            "R",
+            "B",
+            "T",
+            "O",
+            "W",
+            "A"
+          ],
+          "index": 2,
+          "paper_id": "CQE-paper-02",
+          "provenance": {
+            "A": "production\\formal-papers\\CQE-paper-02\\FORMAL_PAPER.md",
+            "B": "production\\formal-papers\\CQE-paper-02\\FORMAL_PAPER.md",
+            "C": "production\\formal-papers\\CQE-paper-02\\FORMAL_PAPER.md",
+            "L": "production\\formal-papers\\CQE-paper-02\\FORMAL_PAPER.md",
+            "O": "production\\formal-papers\\CQE-paper-02\\FORMAL_PAPER.md",
+            "R": "production\\formal-papers\\CQE-paper-02\\FORMAL_PAPER.md",
+            "T": "production\\formal-papers\\CQE-paper-02\\FORMAL_PAPER.md",
+            "W": "production\\formal-papers\\CQE-paper-02\\FORMAL_PAPER.md"
+          },
+          "slot_count": 8
+        },
+        {
+          "all_slots_filled": true,
+          "filled_slots": [
+            "C",
+            "L",
+            "R",
+            "B",
+            "T",
+            "O",
+            "W",
+            "A"
+          ],
+          "index": 3,
+          "paper_id": "CQE-paper-03",
+          "provenance": {
+            "A": "production\\formal-papers\\CQE-paper-03\\FORMAL_PAPER.md",
+            "B": "production\\formal-papers\\CQE-paper-03\\FORMAL_PAPER.md",
+            "C": "production\\formal-papers\\CQE-paper-03\\FORMAL_PAPER.md",
+            "L": "production\\formal-papers\\CQE-paper-03\\FORMAL_PAPER.md",
+            "O": "production\\formal-papers\\CQE-paper-03\\FORMAL_PAPER.md",
+            "R": "production\\formal-papers\\CQE-paper-03\\FORMAL_PAPER.md",
+            "T": "production\\formal-papers\\CQE-paper-03\\FORMAL_PAPER.md",
+            "W": "production\\formal-papers\\CQE-paper-03\\FORMAL_PAPER.md"
+          },
+          "slot_count": 8
+        },
+        {
+          "all_slots_filled": true,
+          "filled_slots": [
+            "C",
+            "L",
+            "R",
+            "B",
+            "T",
+            "O",
+            "W",
+            "A"
+          ],
+          "index": 4,
+          "paper_id": "CQE-paper-04",
+          "provenance": {
+            "A": "production\\formal-papers\\CQE-paper-04\\FORMAL_PAPER.md",
+            "B": "production\\formal-papers\\CQE-paper-04\\FORMAL_PAPER.md",
+            "C": "production\\formal-papers\\CQE-paper-04\\FORMAL_PAPER.md",
+            "L": "production\\formal-papers\\CQE-paper-04\\FORMAL_PAPER.md",
+            "O": "production\\formal-papers\\CQE-paper-04\\FORMAL_PAPER.md",
+            "R": "production\\formal-papers\\CQE-paper-04\\FORMAL_PAPER.md",
+            "T": "production\\formal-papers\\CQE-paper-04\\FORMAL_PAPER.md",
+            "W": "production\\formal-papers\\CQE-paper-04\\FORMAL_PAPER.md"
+          },
+          "slot_count": 8
+        },
+        {
+          "all_slots_filled": true,
+          "filled_slots": [
+            "C",
+            "L",
+            "R",
+            "B",
+            "T",
+            "O",
+            "W",
+            "A"
+          ],
+          "index": 5,
+          "paper_id": "CQE-paper-05",
+          "provenance": {
+            "A": "production\\formal-papers\\CQE-paper-05\\FORMAL_PAPER.md",
+            "B": "production\\formal-papers\\CQE-paper-05\\FORMAL_PAPER.md",
+            "C": "production\\formal-papers\\CQE-paper-05\\FORMAL_PAPER.md",
+            "L": "production\\formal-papers\\CQE-paper-05\\FORMAL_PAPER.md",
+            "O": "production\\formal-papers\\CQE-paper-05\\FORMAL_PAPER.md",
+            "R": "production\\formal-papers\\CQE-paper-05\\FORMAL_PAPER.md",
+            "T": "production\\formal-papers\\CQE-paper-05\\FORMAL_PAPER.md",
+            "W": "production\\formal-papers\\CQE-paper-05\\FORMAL_PAPER.md"
+          },
+          "slot_count": 8
+        },
+        {
+          "all_slots_filled": true,
+          "filled_slots": [
+            "C",
+            "L",
+            "R",
+            "B",
+            "T",
+            "O",
+            "W",
+            "A"
+          ],
+          "index": 6,
+          "paper_id": "CQE-paper-06",
+          "provenance": {
+            "A": "production\\formal-papers\\CQE-paper-06\\FORMAL_PAPER.md",
+            "B": "production\\formal-papers\\CQE-paper-06\\FORMAL_PAPER.md",
+            "C": "production\\formal-papers\\CQE-paper-06\\FORMAL_PAPER.md",
+            "L": "production\\formal-papers\\CQE-paper-06\\FORMAL_PAPER.md",
+            "O": "production\\formal-papers\\CQE-paper-06\\FORMAL_PAPER.md",
+            "R": "production\\formal-papers\\CQE-paper-06\\FORMAL_PAPER.md",
+            "T": "production\\formal-papers\\CQE-paper-06\\FORMAL_PAPER.md",
+            "W": "production\\formal-papers\\CQE-paper-06\\FORMAL_PAPER.md"
+          },
+          "slot_count": 8
+        },
+        {
+          "all_slots_filled": true,
+          "filled_slots": [
+            "C",
+            "L",
+            "R",
+            "B",
+            "T",
+            "O",
+            "W",
+            "A"
+          ],
+          "index": 7,
+          "paper_id": "CQE-paper-07",
+          "provenance": {
+            "A": "production\\formal-papers\\CQE-paper-07\\FORMAL_PAPER.md",
+            "B": "production\\formal-papers\\CQE-paper-07\\FORMAL_PAPER.md",
+            "C": "production\\formal-papers\\CQE-paper-07\\FORMAL_PAPER.md",
+            "L": "production\\formal-papers\\CQE-paper-07\\FORMAL_PAPER.md",
+            "O": "production\\formal-papers\\CQE-paper-07\\FORMAL_PAPER.md",
+            "R": "production\\formal-papers\\CQE-paper-07\\FORMAL_PAPER.md",
+            "T": "production\\formal-papers\\CQE-paper-07\\FORMAL_PAPER.md",
+            "W": "production\\formal-papers\\CQE-paper-07\\FORMAL_PAPER.md"
+          },
+          "slot_count": 8
+        },
+        {
+          "all_slots_filled": true,
+          "filled_slots": [
+            "C",
+            "L",
+            "R",
+            "B",
+            "T",
+            "O",
+            "W",
+            "A"
+          ],
+          "index": 8,
+          "paper_id": "CQE-paper-08",
+          "provenance": {
+            "A": "production\\formal-papers\\CQE-paper-08\\FORMAL_PAPER.md",
+            "B": "production\\formal-papers\\CQE-paper-08\\FORMAL_PAPER.md",
+            "C": "production\\formal-papers\\CQE-paper-08\\FORMAL_PAPER.md",
+            "L": "production\\formal-papers\\CQE-paper-08\\FORMAL_PAPER.md",
+            "O": "production\\formal-papers\\CQE-paper-08\\FORMAL_PAPER.md",
+            "R": "production\\formal-papers\\CQE-paper-08\\FORMAL_PAPER.md",
+            "T": "production\\formal-papers\\CQE-paper-08\\FORMAL_PAPER.md",
+            "W": "production\\formal-papers\\CQE-paper-08\\FORMAL_PAPER.md"
+          },
+          "slot_count": 8
+        },
+        {
+          "all_slots_filled": true,
+          "filled_slots": [
+            "C",
+            "L",
+            "R",
+            "B",
+            "T",
+            "O",
+            "W",
+            "A"
+          ],
+          "index": 9,
+          "paper_id": "CQE-paper-09",
+          "provenance": {
+            "A": "production\\formal-papers\\CQE-paper-09\\FORMAL_PAPER.md",
+            "B": "production\\formal-papers\\CQE-paper-09\\FORMAL_PAPER.md",
+            "C": "production\\formal-papers\\CQE-paper-09\\FORMAL_PAPER.md",
+            "L": "production\\formal-papers\\CQE-paper-09\\FORMAL_PAPER.md",
+            "O": "production\\formal-papers\\CQE-paper-09\\FORMAL_PAPER.md",
+            "R": "production\\formal-papers\\CQE-paper-09\\FORMAL_PAPER.md",
+            "T": "production\\formal-papers\\CQE-paper-09\\FORMAL_PAPER.md",
+            "W": "production\\formal-papers\\CQE-paper-09\\FORMAL_PAPER.md"
+          },
+          "slot_count": 8
+        },
+        {
+          "all_slots_filled": true,
+          "filled_slots": [
+            "C",
+            "L",
+            "R",
+            "B",
+            "T",
+            "O",
+            "W",
+            "A"
+          ],
+          "index": 10,
+          "paper_id": "CQE-paper-10",
+          "provenance": {
+            "A": "production\\formal-papers\\CQE-paper-10\\FORMAL_PAPER.md",
+            "B": "production\\formal-papers\\CQE-paper-10\\FORMAL_PAPER.md",
+            "C": "production\\formal-papers\\CQE-paper-10\\FORMAL_PAPER.md",
+            "L": "production\\formal-papers\\CQE-paper-10\\FORMAL_PAPER.md",
+            "O": "production\\formal-papers\\CQE-paper-10\\FORMAL_PAPER.md",
+            "R": "production\\formal-papers\\CQE-paper-10\\FORMAL_PAPER.md",
+            "T": "production\\formal-papers\\CQE-paper-10\\FORMAL_PAPER.md",
+            "W": "production\\formal-papers\\CQE-paper-10\\FORMAL_PAPER.md"
+          },
+          "slot_count": 8
+        },
+        {
+          "all_slots_filled": true,
+          "filled_slots": [
+            "C",
+            "L",
+            "R",
+            "B",
+            "T",
+            "O",
+            "W",
+            "A"
+          ],
+          "index": 11,
+          "paper_id": "CQE-paper-11",
+          "provenance": {
+            "A": "production\\formal-papers\\CQE-paper-11\\FORMAL_PAPER.md",
+            "B": "production\\formal-papers\\CQE-paper-11\\FORMAL_PAPER.md",
+            "C": "production\\formal-papers\\CQE-paper-11\\FORMAL_PAPER.md",
+            "L": "production\\formal-papers\\CQE-paper-11\\FORMAL_PAPER.md",
+            "O": "production\\formal-papers\\CQE-paper-11\\FORMAL_PAPER.md",
+            "R": "production\\formal-papers\\CQE-paper-11\\FORMAL_PAPER.md",
+            "T": "production\\formal-papers\\CQE-paper-11\\FORMAL_PAPER.md",
+            "W": "production\\formal-papers\\CQE-paper-11\\FORMAL_PAPER.md"
+          },
+          "slot_count": 8
+        },
+        {
+          "all_slots_filled": true,
+          "filled_slots": [
+            "C",
+            "L",
+            "R",
+            "B",
+            "T",
+            "O",
+            "W",
+            "A"
+          ],
+          "index": 12,
+          "paper_id": "CQE-paper-12",
+          "provenance": {
+            "A": "production\\formal-papers\\CQE-paper-12\\FORMAL_PAPER.md",
+            "B": "production\\formal-papers\\CQE-paper-12\\FORMAL_PAPER.md",
+            "C": "production\\formal-papers\\CQE-paper-12\\FORMAL_PAPER.md",
+            "L": "production\\formal-papers\\CQE-paper-12\\FORMAL_PAPER.md",
+            "O": "production\\formal-papers\\CQE-paper-12\\FORMAL_PAPER.md",
+            "R": "production\\formal-papers\\CQE-paper-12\\FORMAL_PAPER.md",
+            "T": "production\\formal-papers\\CQE-paper-12\\FORMAL_PAPER.md",
+            "W": "production\\formal-papers\\CQE-paper-12\\FORMAL_PAPER.md"
+          },
+          "slot_count": 8
+        },
+        {
+          "all_slots_filled": true,
+          "filled_slots": [
+            "C",
+            "L",
+            "R",
+            "B",
+            "T",
+            "O",
+            "W",
+            "A"
+          ],
+          "index": 13,
+          "paper_id": "CQE-paper-13",
+          "provenance": {
+            "A": "production\\formal-papers\\CQE-paper-13\\FORMAL_PAPER.md",
+            "B": "production\\formal-papers\\CQE-paper-13\\FORMAL_PAPER.md",
+            "C": "production\\formal-papers\\CQE-paper-13\\FORMAL_PAPER.md",
+            "L": "production\\formal-papers\\CQE-paper-13\\FORMAL_PAPER.md",
+            "O": "production\\formal-papers\\CQE-paper-13\\FORMAL_PAPER.md",
+            "R": "production\\formal-papers\\CQE-paper-13\\FORMAL_PAPER.md",
+            "T": "production\\formal-papers\\CQE-paper-13\\FORMAL_PAPER.md",
+            "W": "production\\formal-papers\\CQE-paper-13\\FORMAL_PAPER.md"
+          },
+          "slot_count": 8
+        },
+        {
+          "all_slots_filled": true,
+          "filled_slots": [
+            "C",
+            "L",
+            "R",
+            "B",
+            "T",
+            "O",
+            "W",
+            "A"
+          ],
+          "index": 14,
+          "paper_id": "CQE-paper-14",
+          "provenance": {
+            "A": "production\\formal-papers\\CQE-paper-14\\FORMAL_PAPER.md",
+            "B": "production\\formal-papers\\CQE-paper-14\\FORMAL_PAPER.md",
+            "C": "production\\formal-papers\\CQE-paper-14\\FORMAL_PAPER.md",
+            "L": "production\\formal-papers\\CQE-paper-14\\FORMAL_PAPER.md",
+            "O": "production\\formal-papers\\CQE-paper-14\\FORMAL_PAPER.md",
+            "R": "production\\formal-papers\\CQE-paper-14\\FORMAL_PAPER.md",
+            "T": "production\\formal-papers\\CQE-paper-14\\FORMAL_PAPER.md",
+            "W": "production\\formal-papers\\CQE-paper-14\\FORMAL_PAPER.md"
+          },
+          "slot_count": 8
+        },
+        {
+          "all_slots_filled": true,
+          "filled_slots": [
+            "C",
+            "L",
+            "R",
+            "B",
+            "T",
+            "O",
+            "W",
+            "A"
+          ],
+          "index": 15,
+          "paper_id": "CQE-paper-15",
+          "provenance": {
+            "A": "production\\formal-papers\\CQE-paper-15\\FORMAL_PAPER.md",
+            "B": "production\\formal-papers\\CQE-paper-15\\FORMAL_PAPER.md",
+            "C": "production\\formal-papers\\CQE-paper-15\\FORMAL_PAPER.md",
+            "L": "production\\formal-papers\\CQE-paper-15\\FORMAL_PAPER.md",
+            "O": "production\\formal-papers\\CQE-paper-15\\FORMAL_PAPER.md",
+            "R": "production\\formal-papers\\CQE-paper-15\\FORMAL_PAPER.md",
+            "T": "production\\formal-papers\\CQE-paper-15\\FORMAL_PAPER.md",
+            "W": "production\\formal-papers\\CQE-paper-15\\FORMAL_PAPER.md"
+          },
+          "slot_count": 8
+        },
+        {
+          "all_slots_filled": true,
+          "filled_slots": [
+            "C",
+            "L",
+            "R",
+            "B",
+            "T",
+            "O",
+            "W",
+            "A"
+          ],
+          "index": 16,
+          "paper_id": "CQE-paper-16",
+          "provenance": {
+            "A": "production\\formal-papers\\CQE-paper-16\\FORMAL_PAPER.md",
+            "B": "production\\formal-papers\\CQE-paper-16\\FORMAL_PAPER.md",
+            "C": "production\\formal-papers\\CQE-paper-16\\FORMAL_PAPER.md",
+            "L": "production\\formal-papers\\CQE-paper-16\\FORMAL_PAPER.md",
+            "O": "production\\formal-papers\\CQE-paper-16\\FORMAL_PAPER.md",
+            "R": "production\\formal-papers\\CQE-paper-16\\FORMAL_PAPER.md",
+            "T": "production\\formal-papers\\CQE-paper-16\\FORMAL_PAPER.md",
+            "W": "production\\formal-papers\\CQE-paper-16\\FORMAL_PAPER.md"
+          },
+          "slot_count": 8
+        },
+        {
+          "all_slots_filled": true,
+          "filled_slots": [
+            "C",
+            "L",
+            "R",
+            "B",
+            "T",
+            "O",
+            "W",
+            "A"
+          ],
+          "index": 17,
+          "paper_id": "CQE-paper-17",
+          "provenance": {
+            "A": "production\\formal-papers\\CQE-paper-17\\FORMAL_PAPER.md",
+            "B": "production\\formal-papers\\CQE-paper-17\\FORMAL_PAPER.md",
+            "C": "production\\formal-papers\\CQE-paper-17\\FORMAL_PAPER.md",
+            "L": "production\\formal-papers\\CQE-paper-17\\FORMAL_PAPER.md",
+            "O": "production\\formal-papers\\CQE-paper-17\\FORMAL_PAPER.md",
+            "R": "production\\formal-papers\\CQE-paper-17\\FORMAL_PAPER.md",
+            "T": "production\\formal-papers\\CQE-paper-17\\FORMAL_PAPER.md",
+            "W": "production\\formal-papers\\CQE-paper-17\\FORMAL_PAPER.md"
+          },
+          "slot_count": 8
+        },
+        {
+          "all_slots_filled": true,
+          "filled_slots": [
+            "C",
+            "L",
+            "R",
+            "B",
+            "T",
+            "O",
+            "W",
+            "A"
+          ],
+          "index": 18,
+          "paper_id": "CQE-paper-18",
+          "provenance": {
+            "A": "production\\formal-papers\\CQE-paper-18\\FORMAL_PAPER.md",
+            "B": "production\\formal-papers\\CQE-paper-18\\FORMAL_PAPER.md",
+            "C": "production\\formal-papers\\CQE-paper-18\\FORMAL_PAPER.md",
+            "L": "production\\formal-papers\\CQE-paper-18\\FORMAL_PAPER.md",
+            "O": "production\\formal-papers\\CQE-paper-18\\FORMAL_PAPER.md",
+            "R": "production\\formal-papers\\CQE-paper-18\\FORMAL_PAPER.md",
+            "T": "production\\formal-papers\\CQE-paper-18\\FORMAL_PAPER.md",
+            "W": "production\\formal-papers\\CQE-paper-18\\FORMAL_PAPER.md"
+          },
+          "slot_count": 8
+        },
+        {
+          "all_slots_filled": true,
+          "filled_slots": [
+            "C",
+            "L",
+            "R",
+            "B",
+            "T",
+            "O",
+            "W",
+            "A"
+          ],
+          "index": 19,
+          "paper_id": "CQE-paper-19",
+          "provenance": {
+            "A": "production\\formal-papers\\CQE-paper-19\\FORMAL_PAPER.md",
+            "B": "production\\formal-papers\\CQE-paper-19\\FORMAL_PAPER.md",
+            "C": "production\\formal-papers\\CQE-paper-19\\FORMAL_PAPER.md",
+            "L": "production\\formal-papers\\CQE-paper-19\\FORMAL_PAPER.md",
+            "O": "production\\formal-papers\\CQE-paper-19\\FORMAL_PAPER.md",
+            "R": "production\\formal-papers\\CQE-paper-19\\FORMAL_PAPER.md",
+            "T": "production\\formal-papers\\CQE-paper-19\\FORMAL_PAPER.md",
+            "W": "production\\formal-papers\\CQE-paper-19\\FORMAL_PAPER.md"
+          },
+          "slot_count": 8
+        },
+        {
+          "all_slots_filled": true,
+          "filled_slots": [
+            "C",
+            "L",
+            "R",
+            "B",
+            "T",
+            "O",
+            "W",
+            "A"
+          ],
+          "index": 20,
+          "paper_id": "CQE-paper-20",
+          "provenance": {
+            "A": "production\\formal-papers\\CQE-paper-20\\FORMAL_PAPER.md",
+            "B": "production\\formal-papers\\CQE-paper-20\\FORMAL_PAPER.md",
+            "C": "production\\formal-papers\\CQE-paper-20\\FORMAL_PAPER.md",
+            "L": "production\\formal-papers\\CQE-paper-20\\FORMAL_PAPER.md",
+            "O": "production\\formal-papers\\CQE-paper-20\\FORMAL_PAPER.md",
+            "R": "production\\formal-papers\\CQE-paper-20\\FORMAL_PAPER.md",
+            "T": "production\\formal-papers\\CQE-paper-20\\FORMAL_PAPER.md",
+            "W": "production\\formal-papers\\CQE-paper-20\\FORMAL_PAPER.md"
+          },
+          "slot_count": 8
+        },
+        {
+          "all_slots_filled": true,
+          "filled_slots": [
+            "C",
+            "L",
+            "R",
+            "B",
+            "T",
+            "O",
+            "W",
+            "A"
+          ],
+          "index": 21,
+          "paper_id": "CQE-paper-21",
+          "provenance": {
+            "A": "production\\formal-papers\\CQE-paper-21\\FORMAL_PAPER.md",
+            "B": "production\\formal-papers\\CQE-paper-21\\FORMAL_PAPER.md",
+            "C": "production\\formal-papers\\CQE-paper-21\\FORMAL_PAPER.md",
+            "L": "production\\formal-papers\\CQE-paper-21\\FORMAL_PAPER.md",
+            "O": "production\\formal-papers\\CQE-paper-21\\FORMAL_PAPER.md",
+            "R": "production\\formal-papers\\CQE-paper-21\\FORMAL_PAPER.md",
+            "T": "production\\formal-papers\\CQE-paper-21\\FORMAL_PAPER.md",
+            "W": "production\\formal-papers\\CQE-paper-21\\FORMAL_PAPER.md"
+          },
+          "slot_count": 8
+        },
+        {
+          "all_slots_filled": true,
+          "filled_slots": [
+            "C",
+            "L",
+            "R",
+            "B",
+            "T",
+            "O",
+            "W",
+            "A"
+          ],
+          "index": 22,
+          "paper_id": "CQE-paper-22",
+          "provenance": {
+            "A": "production\\formal-papers\\CQE-paper-22\\FORMAL_PAPER.md",
+            "B": "production\\formal-papers\\CQE-paper-22\\FORMAL_PAPER.md",
+            "C": "production\\formal-papers\\CQE-paper-22\\FORMAL_PAPER.md",
+            "L": "production\\formal-papers\\CQE-paper-22\\FORMAL_PAPER.md",
+            "O": "production\\formal-papers\\CQE-paper-22\\FORMAL_PAPER.md",
+            "R": "production\\formal-papers\\CQE-paper-22\\FORMAL_PAPER.md",
+            "T": "production\\formal-papers\\CQE-paper-22\\FORMAL_PAPER.md",
+            "W": "production\\formal-papers\\CQE-paper-22\\FORMAL_PAPER.md"
+          },
+          "slot_count": 8
+        },
+        {
+          "all_slots_filled": true,
+          "filled_slots": [
+            "C",
+            "L",
+            "R",
+            "B",
+            "T",
+            "O",
+            "W",
+            "A"
+          ],
+          "index": 23,
+          "paper_id": "CQE-paper-23",
+          "provenance": {
+            "A": "production\\formal-papers\\CQE-paper-23\\FORMAL_PAPER.md",
+            "B": "production\\formal-papers\\CQE-paper-23\\FORMAL_PAPER.md",
+            "C": "production\\formal-papers\\CQE-paper-23\\FORMAL_PAPER.md",
+            "L": "production\\formal-papers\\CQE-paper-23\\FORMAL_PAPER.md",
+            "O": "production\\formal-papers\\CQE-paper-23\\FORMAL_PAPER.md",
+            "R": "production\\formal-papers\\CQE-paper-23\\FORMAL_PAPER.md",
+            "T": "production\\formal-papers\\CQE-paper-23\\FORMAL_PAPER.md",
+            "W": "production\\formal-papers\\CQE-paper-23\\FORMAL_PAPER.md"
+          },
+          "slot_count": 8
+        },
+        {
+          "all_slots_filled": true,
+          "filled_slots": [
+            "C",
+            "L",
+            "R",
+            "B",
+            "T",
+            "O",
+            "W",
+            "A"
+          ],
+          "index": 24,
+          "paper_id": "CQE-paper-24",
+          "provenance": {
+            "A": "production\\formal-papers\\CQE-paper-24\\FORMAL_PAPER.md",
+            "B": "production\\formal-papers\\CQE-paper-24\\FORMAL_PAPER.md",
+            "C": "production\\formal-papers\\CQE-paper-24\\FORMAL_PAPER.md",
+            "L": "production\\formal-papers\\CQE-paper-24\\FORMAL_PAPER.md",
+            "O": "production\\formal-papers\\CQE-paper-24\\FORMAL_PAPER.md",
+            "R": "production\\formal-papers\\CQE-paper-24\\FORMAL_PAPER.md",
+            "T": "production\\formal-papers\\CQE-paper-24\\FORMAL_PAPER.md",
+            "W": "production\\formal-papers\\CQE-paper-24\\FORMAL_PAPER.md"
+          },
+          "slot_count": 8
+        },
+        {
+          "all_slots_filled": true,
+          "filled_slots": [
+            "C",
+            "L",
+            "R",
+            "B",
+            "T",
+            "O",
+            "W",
+            "A"
+          ],
+          "index": 25,
+          "paper_id": "CQE-paper-25",
+          "provenance": {
+            "A": "production\\formal-papers\\CQE-paper-25\\FORMAL_PAPER.md",
+            "B": "production\\formal-papers\\CQE-paper-25\\FORMAL_PAPER.md",
+            "C": "production\\formal-papers\\CQE-paper-25\\FORMAL_PAPER.md",
+            "L": "production\\formal-papers\\CQE-paper-25\\FORMAL_PAPER.md",
+            "O": "production\\formal-papers\\CQE-paper-25\\FORMAL_PAPER.md",
+            "R": "production\\formal-papers\\CQE-paper-25\\FORMAL_PAPER.md",
+            "T": "production\\formal-papers\\CQE-paper-25\\FORMAL_PAPER.md",
+            "W": "production\\formal-papers\\CQE-paper-25\\FORMAL_PAPER.md"
+          },
+          "slot_count": 8
+        },
+        {
+          "all_slots_filled": true,
+          "filled_slots": [
+            "C",
+            "L",
+            "R",
+            "B",
+            "T",
+            "O",
+            "W",
+            "A"
+          ],
+          "index": 26,
+          "paper_id": "CQE-paper-26",
+          "provenance": {
+            "A": "production\\formal-papers\\CQE-paper-26\\FORMAL_PAPER.md",
+            "B": "production\\formal-papers\\CQE-paper-26\\FORMAL_PAPER.md",
+            "C": "production\\formal-papers\\CQE-paper-26\\FORMAL_PAPER.md",
+            "L": "production\\formal-papers\\CQE-paper-26\\FORMAL_PAPER.md",
+            "O": "production\\formal-papers\\CQE-paper-26\\FORMAL_PAPER.md",
+            "R": "production\\formal-papers\\CQE-paper-26\\FORMAL_PAPER.md",
+            "T": "production\\formal-papers\\CQE-paper-26\\FORMAL_PAPER.md",
+            "W": "production\\formal-papers\\CQE-paper-26\\FORMAL_PAPER.md"
+          },
+          "slot_count": 8
+        },
+        {
+          "all_slots_filled": true,
+          "filled_slots": [
+            "C",
+            "L",
+            "R",
+            "B",
+            "T",
+            "O",
+            "W",
+            "A"
+          ],
+          "index": 27,
+          "paper_id": "CQE-paper-27",
+          "provenance": {
+            "A": "production\\formal-papers\\CQE-paper-27\\FORMAL_PAPER.md",
+            "B": "production\\formal-papers\\CQE-paper-27\\FORMAL_PAPER.md",
+            "C": "production\\formal-papers\\CQE-paper-27\\FORMAL_PAPER.md",
+            "L": "production\\formal-papers\\CQE-paper-27\\FORMAL_PAPER.md",
+            "O": "production\\formal-papers\\CQE-paper-27\\FORMAL_PAPER.md",
+            "R": "production\\formal-papers\\CQE-paper-27\\FORMAL_PAPER.md",
+            "T": "production\\formal-papers\\CQE-paper-27\\FORMAL_PAPER.md",
+            "W": "production\\formal-papers\\CQE-paper-27\\FORMAL_PAPER.md"
+          },
+          "slot_count": 8
+        },
+        {
+          "all_slots_filled": true,
+          "filled_slots": [
+            "C",
+            "L",
+            "R",
+            "B",
+            "T",
+            "O",
+            "W",
+            "A"
+          ],
+          "index": 28,
+          "paper_id": "CQE-paper-28",
+          "provenance": {
+            "A": "production\\formal-papers\\CQE-paper-28\\FORMAL_PAPER.md",
+            "B": "production\\formal-papers\\CQE-paper-28\\FORMAL_PAPER.md",
+            "C": "production\\formal-papers\\CQE-paper-28\\FORMAL_PAPER.md",
+            "L": "production\\formal-papers\\CQE-paper-28\\FORMAL_PAPER.md",
+            "O": "production\\formal-papers\\CQE-paper-28\\FORMAL_PAPER.md",
+            "R": "production\\formal-papers\\CQE-paper-28\\FORMAL_PAPER.md",
+            "T": "production\\formal-papers\\CQE-paper-28\\FORMAL_PAPER.md",
+            "W": "production\\formal-papers\\CQE-paper-28\\FORMAL_PAPER.md"
+          },
+          "slot_count": 8
+        },
+        {
+          "all_slots_filled": true,
+          "filled_slots": [
+            "C",
+            "L",
+            "R",
+            "B",
+            "T",
+            "O",
+            "W",
+            "A"
+          ],
+          "index": 29,
+          "paper_id": "CQE-paper-29",
+          "provenance": {
+            "A": "production\\formal-papers\\CQE-paper-29\\FORMAL_PAPER.md",
+            "B": "production\\formal-papers\\CQE-paper-29\\FORMAL_PAPER.md",
+            "C": "production\\formal-papers\\CQE-paper-29\\FORMAL_PAPER.md",
+            "L": "production\\formal-papers\\CQE-paper-29\\FORMAL_PAPER.md",
+            "O": "production\\formal-papers\\CQE-paper-29\\FORMAL_PAPER.md",
+            "R": "production\\formal-papers\\CQE-paper-29\\FORMAL_PAPER.md",
+            "T": "production\\formal-papers\\CQE-paper-29\\FORMAL_PAPER.md",
+            "W": "production\\formal-papers\\CQE-paper-29\\FORMAL_PAPER.md"
+          },
+          "slot_count": 8
+        }
+      ],
+      "name": "every_sweep_position_has_eight_filled_slots",
+      "pass": true
+    },
+    {
+      "detail": {
+        "action_edge_count": 12,
+        "passes": true,
+        "residue_trace_count": 12,
+        "route_length": 13,
+        "summary": {
+          "ambient_dimension": 24,
+          "compact_involution_count": 36,
+          "component_action_count": 12,
+          "composition_model": "component_action_tree_with_emergent_residue",
+          "evidence_level": "template",
+          "name": "A2^12",
+          "residue_status": "residue_closes_by_required_index",
+          "root_rank": 24,
+          "root_system": "A2^12",
+          "route_uniqueness": "single_canonical_route_after_component_ordering_and_orbit_quotient",
+          "status": "generated_canonical_composition_tree",
+          "terminal_id": "Niemeier:A2^12"
+        }
+      },
+      "name": "terminal_route_is_single_canonical_route",
+      "pass": true
+    },
+    {
+      "detail": {
+        "all_lifts_demonstrated": false,
+        "all_rows_have_required_fields": true,
+        "demonstrated_count": 2,
+        "local_witness_results": {
+          "D4_TO_J3O_DIAGONAL_CARRIER": {
+            "checks_passed": [
+              "diagonal_idempotents_are_idempotent",
+              "diagonal_idempotents_jordan_orthogonal",
+              "diagonal_idempotents_sum_to_identity",
+              "trace_2_idempotents_have_correct_trace",
+              "trace_2_idempotents_are_idempotent",
+              "weyl_13_fixes_chirality_balanced",
+              "weyl_13_swaps_chirality_broken_pair"
+            ],
+            "errors": [],
+            "status": "pass"
+          },
+          "EXCEPTIONAL_ROUTE_TO_NIEMEIER_LANDING_FORMS": {
+            "fingerprint_map_proved": false,
+            "landing_form_count": 24,
+            "proof_boundary": "registered terminal targets; no proved fingerprint-to-landing map",
+            "status": "registered_only"
+          },
+          "J3O_TO_G2_F4_T5A_ROUTE": {
+            "all_resolved_in_3_or_less": true,
+            "chart_axis_distribution": {
+              "0": 57,
+              "1": 60,
+              "2": 69,
+              "3": 70
+            },
+            "depth_only_bridge": false,
+            "f4_chart_cycle_correct": true,
+            "g2_e1_maps_to_e3": true,
+            "honesty": "bounded_route_classifier",
+            "matches_enumeration_count": 256,
+            "matches_enumeration_rate": 1.0,
+            "max_depth_tested": 256,
+            "oracle_backed": true,
+            "proof_boundary": "oracle-backed route classifier; cold-start depth-only bridge remains open",
+            "resolution_depth_distribution": {
+              "0": 57,
+              "1": 60,
+              "2": 69,
+              "3": 70
+            },
+            "status": "pass"
+          },
+          "LCR_TO_D4_AXIS_SHEET": {
+            "axis_lengths": {
+              "0": 126,
+              "1": 123,
+              "2": 131,
+              "3": 133
+            },
+            "label_counts": {
+              "0": 126,
+              "1": 123,
+              "2": 131,
+              "3": 133
+            },
+            "max_depth": 512,
+            "round_trip_mismatches": 0,
+            "sheet_counts": {
+              "0": 256,
+              "1": 257
+            },
+            "status": "pass",
+            "trajectory_length": 513
+          }
+        },
+        "local_witnesses_pass": true,
+        "open_lift_count": 2,
+        "row_count": 4,
+        "rows": [
+          {
+            "classification": "demonstrated",
+            "failure_condition": "two chart states share one (axis, sheet) token",
+            "id": "LCR_TO_D4_AXIS_SHEET",
+            "map": "ANTIPODAL_LABEL[state], SHEET_SIGN[state]",
+            "preserved_quantity": "lossless recovery of all eight chart states",
+            "proof_boundary": "finite codec; does not derive a cold-start token from depth N",
+            "source_object": "{0,1}^3 LCR chart state",
+            "target_object": "D4-style (axis, sheet) token",
+            "witness": "verify_chart_codec_d4"
+          },
+          {
+            "classification": "demonstrated",
+            "failure_condition": "Jordan idempotency or LR permutation preservation fails",
+            "id": "D4_TO_J3O_DIAGONAL_CARRIER",
+            "map": "(L,C,R) -> diag(L,C,R)",
+            "preserved_quantity": "trace strata, diagonal idempotency, LR/Weyl permutation",
+            "proof_boundary": "diagonal carrier is finite; broader F4 transport is not implied automatically",
+            "source_object": "LCR diagonal chart state and shell strata",
+            "target_object": "J3(O) diagonal and trace-2 idempotent carrier",
+            "witness": "verify_j3o_axioms"
+          },
+          {
+            "classification": "bounded_local",
+            "failure_condition": "bounded route exceeds three stages or is mistaken for a depth-only readout",
+            "id": "J3O_TO_G2_F4_T5A_ROUTE",
+            "map": "conjugate_triple_route(N, enumeration_bit_fn)",
+            "preserved_quantity": "bounded paired route metadata across at most three named stages",
+            "proof_boundary": "local oracle-backed classifier exists; it does not derive the bit from depth N",
+            "source_object": "J3(O) chart carrier",
+            "target_object": "G2 -> F4 -> T5A conjugate route",
+            "witness": "verify_conjugate_triple"
+          },
+          {
+            "classification": "registered_landing_forms",
+            "failure_condition": "landing form is treated as computation without a proved fingerprint map",
+            "id": "EXCEPTIONAL_ROUTE_TO_NIEMEIER_LANDING_FORMS",
+            "map": "registered terminal IDs and component product sheets",
+            "preserved_quantity": "named terminal root-system metadata",
+            "proof_boundary": "landing forms are registered targets, not automatic proof closure",
+            "source_object": "exceptional-group route metadata",
+            "target_object": "rank-24 Niemeier and Leech landing-form registry",
+            "witness": "ledger.build.NIEMEIER_FORMS and lookup cache registry"
+          }
+        ],
+        "status": "pass_with_open_lifts",
+        "valid_classifications": true
+      },
+      "name": "transport_ledger_passes_with_visible_open_lifts",
+      "pass": true
+    },
+    {
+      "detail": {
+        "readout": "CQE-paper-31 prepared only",
+        "sweep": "CQE-paper-00 through CQE-paper-29"
+      },
+      "name": "paper_31_not_a_dependency",
+      "pass": true
+    }
+  ],
+  "closed_scope": [
+    "8-slot ribbon fill discipline",
+    "30-position sweep for papers 00-29",
+    "terminal composition route is single canonical route",
+    "transport ledger passes while preserving open lifts",
+    "Paper 31 is prepared as readout, not used as dependency"
+  ],
+  "not_claimed": [
+    "a new mathematical theorem beyond the cited receipts",
+    "31-paper proof dependency including Paper 31",
+    "all transport lifts fully demonstrated",
+    "a packaged production cqe_engine.ribbon module in this git root"
+  ],
+  "open_obligations": [
+    "Promote the reusable cqe_engine.ribbon module from neighboring kernel/production copies into this production package.",
+    "Keep Paper 31 as a retrospective readout until a later contract explicitly changes dependency order.",
+    "Resolve transport ledger open lifts before claiming complete route closure.",
+    "Reconcile legacy 31-bead workbook wording with the production 00-29 proof sweep plus Paper 31 readout."
+  ],
+  "paper": "CQE-paper-30",
+  "slot_schema": {
+    "filled_definition": "value is not None and provenance is not None",
+    "slots": [
+      "C",
+      "L",
+      "R",
+      "B",
+      "T",
+      "O",
+      "W",
+      "A"
+    ],
+    "source_kinds": [
+      "binary",
+      "vector",
+      "binary+vector"
+    ]
+  },
+  "status": "pass_with_open_packaging_obligations",
+  "sweep_rows": [
+    {
+      "all_slots_filled": true,
+      "filled_slots": [
+        "C",
+        "L",
+        "R",
+        "B",
+        "T",
+        "O",
+        "W",
+        "A"
+      ],
+      "index": 0,
+      "paper_id": "CQE-paper-00",
+      "provenance": {
+        "A": "Papers\\Source\\CQE-paper-00.md",
+        "B": "Papers\\Source\\CQE-paper-00.md",
+        "C": "Papers\\Source\\CQE-paper-00.md",
+        "L": "Papers\\Source\\CQE-paper-00.md",
+        "O": "Papers\\Source\\CQE-paper-00.md",
+        "R": "Papers\\Source\\CQE-paper-00.md",
+        "T": "Papers\\Source\\CQE-paper-00.md",
+        "W": "Papers\\Source\\CQE-paper-00.md"
+      },
+      "slot_count": 8
+    },
+    {
+      "all_slots_filled": true,
+      "filled_slots": [
+        "C",
+        "L",
+        "R",
+        "B",
+        "T",
+        "O",
+        "W",
+        "A"
+      ],
+      "index": 1,
+      "paper_id": "CQE-paper-01",
+      "provenance": {
+        "A": "production\\formal-papers\\CQE-paper-01\\FORMAL_PAPER.md",
+        "B": "production\\formal-papers\\CQE-paper-01\\FORMAL_PAPER.md",
+        "C": "production\\formal-papers\\CQE-paper-01\\FORMAL_PAPER.md",
+        "L": "production\\formal-papers\\CQE-paper-01\\FORMAL_PAPER.md",
+        "O": "production\\formal-papers\\CQE-paper-01\\FORMAL_PAPER.md",
+        "R": "production\\formal-papers\\CQE-paper-01\\FORMAL_PAPER.md",
+        "T": "production\\formal-papers\\CQE-paper-01\\FORMAL_PAPER.md",
+        "W": "production\\formal-papers\\CQE-paper-01\\FORMAL_PAPER.md"
+      },
+      "slot_count": 8
+    },
+    {
+      "all_slots_filled": true,
+      "filled_slots": [
+        "C",
+        "L",
+        "R",
+        "B",
+        "T",
+        "O",
+        "W",
+        "A"
+      ],
+      "index": 2,
+      "paper_id": "CQE-paper-02",
+      "provenance": {
+        "A": "production\\formal-papers\\CQE-paper-02\\FORMAL_PAPER.md",
+        "B": "production\\formal-papers\\CQE-paper-02\\FORMAL_PAPER.md",
+        "C": "production\\formal-papers\\CQE-paper-02\\FORMAL_PAPER.md",
+        "L": "production\\formal-papers\\CQE-paper-02\\FORMAL_PAPER.md",
+        "O": "production\\formal-papers\\CQE-paper-02\\FORMAL_PAPER.md",
+        "R": "production\\formal-papers\\CQE-paper-02\\FORMAL_PAPER.md",
+        "T": "production\\formal-papers\\CQE-paper-02\\FORMAL_PAPER.md",
+        "W": "production\\formal-papers\\CQE-paper-02\\FORMAL_PAPER.md"
+      },
+      "slot_count": 8
+    },
+    {
+      "all_slots_filled": true,
+      "filled_slots": [
+        "C",
+        "L",
+        "R",
+        "B",
+        "T",
+        "O",
+        "W",
+        "A"
+      ],
+      "index": 3,
+      "paper_id": "CQE-paper-03",
+      "provenance": {
+        "A": "production\\formal-papers\\CQE-paper-03\\FORMAL_PAPER.md",
+        "B": "production\\formal-papers\\CQE-paper-03\\FORMAL_PAPER.md",
+        "C": "production\\formal-papers\\CQE-paper-03\\FORMAL_PAPER.md",
+        "L": "production\\formal-papers\\CQE-paper-03\\FORMAL_PAPER.md",
+        "O": "production\\formal-papers\\CQE-paper-03\\FORMAL_PAPER.md",
+        "R": "production\\formal-papers\\CQE-paper-03\\FORMAL_PAPER.md",
+        "T": "production\\formal-papers\\CQE-paper-03\\FORMAL_PAPER.md",
+        "W": "production\\formal-papers\\CQE-paper-03\\FORMAL_PAPER.md"
+      },
+      "slot_count": 8
+    },
+    {
+      "all_slots_filled": true,
+      "filled_slots": [
+        "C",
+        "L",
+        "R",
+        "B",
+        "T",
+        "O",
+        "W",
+        "A"
+      ],
+      "index": 4,
+      "paper_id": "CQE-paper-04",
+      "provenance": {
+        "A": "production\\formal-papers\\CQE-paper-04\\FORMAL_PAPER.md",
+        "B": "production\\formal-papers\\CQE-paper-04\\FORMAL_PAPER.md",
+        "C": "production\\formal-papers\\CQE-paper-04\\FORMAL_PAPER.md",
+        "L": "production\\formal-papers\\CQE-paper-04\\FORMAL_PAPER.md",
+        "O": "production\\formal-papers\\CQE-paper-04\\FORMAL_PAPER.md",
+        "R": "production\\formal-papers\\CQE-paper-04\\FORMAL_PAPER.md",
+        "T": "production\\formal-papers\\CQE-paper-04\\FORMAL_PAPER.md",
+        "W": "production\\formal-papers\\CQE-paper-04\\FORMAL_PAPER.md"
+      },
+      "slot_count": 8
+    },
+    {
+      "all_slots_filled": true,
+      "filled_slots": [
+        "C",
+        "L",
+        "R",
+        "B",
+        "T",
+        "O",
+        "W",
+        "A"
+      ],
+      "index": 5,
+      "paper_id": "CQE-paper-05",
+      "provenance": {
+        "A": "production\\formal-papers\\CQE-paper-05\\FORMAL_PAPER.md",
+        "B": "production\\formal-papers\\CQE-paper-05\\FORMAL_PAPER.md",
+        "C": "production\\formal-papers\\CQE-paper-05\\FORMAL_PAPER.md",
+        "L": "production\\formal-papers\\CQE-paper-05\\FORMAL_PAPER.md",
+        "O": "production\\formal-papers\\CQE-paper-05\\FORMAL_PAPER.md",
+        "R": "production\\formal-papers\\CQE-paper-05\\FORMAL_PAPER.md",
+        "T": "production\\formal-papers\\CQE-paper-05\\FORMAL_PAPER.md",
+        "W": "production\\formal-papers\\CQE-paper-05\\FORMAL_PAPER.md"
+      },
+      "slot_count": 8
+    },
+    {
+      "all_slots_filled": true,
+      "filled_slots": [
+        "C",
+        "L",
+        "R",
+        "B",
+        "T",
+        "O",
+        "W",
+        "A"
+      ],
+      "index": 6,
+      "paper_id": "CQE-paper-06",
+      "provenance": {
+        "A": "production\\formal-papers\\CQE-paper-06\\FORMAL_PAPER.md",
+        "B": "production\\formal-papers\\CQE-paper-06\\FORMAL_PAPER.md",
+        "C": "production\\formal-papers\\CQE-paper-06\\FORMAL_PAPER.md",
+        "L": "production\\formal-papers\\CQE-paper-06\\FORMAL_PAPER.md",
+        "O": "production\\formal-papers\\CQE-paper-06\\FORMAL_PAPER.md",
+        "R": "production\\formal-papers\\CQE-paper-06\\FORMAL_PAPER.md",
+        "T": "production\\formal-papers\\CQE-paper-06\\FORMAL_PAPER.md",
+        "W": "production\\formal-papers\\CQE-paper-06\\FORMAL_PAPER.md"
+      },
+      "slot_count": 8
+    },
+    {
+      "all_slots_filled": true,
+      "filled_slots": [
+        "C",
+        "L",
+        "R",
+        "B",
+        "T",
+        "O",
+        "W",
+        "A"
+      ],
+      "index": 7,
+      "paper_id": "CQE-paper-07",
+      "provenance": {
+        "A": "production\\formal-papers\\CQE-paper-07\\FORMAL_PAPER.md",
+        "B": "production\\formal-papers\\CQE-paper-07\\FORMAL_PAPER.md",
+        "C": "production\\formal-papers\\CQE-paper-07\\FORMAL_PAPER.md",
+        "L": "production\\formal-papers\\CQE-paper-07\\FORMAL_PAPER.md",
+        "O": "production\\formal-papers\\CQE-paper-07\\FORMAL_PAPER.md",
+        "R": "production\\formal-papers\\CQE-paper-07\\FORMAL_PAPER.md",
+        "T": "production\\formal-papers\\CQE-paper-07\\FORMAL_PAPER.md",
+        "W": "production\\formal-papers\\CQE-paper-07\\FORMAL_PAPER.md"
+      },
+      "slot_count": 8
+    },
+    {
+      "all_slots_filled": true,
+      "filled_slots": [
+        "C",
+        "L",
+        "R",
+        "B",
+        "T",
+        "O",
+        "W",
+        "A"
+      ],
+      "index": 8,
+      "paper_id": "CQE-paper-08",
+      "provenance": {
+        "A": "production\\formal-papers\\CQE-paper-08\\FORMAL_PAPER.md",
+        "B": "production\\formal-papers\\CQE-paper-08\\FORMAL_PAPER.md",
+        "C": "production\\formal-papers\\CQE-paper-08\\FORMAL_PAPER.md",
+        "L": "production\\formal-papers\\CQE-paper-08\\FORMAL_PAPER.md",
+        "O": "production\\formal-papers\\CQE-paper-08\\FORMAL_PAPER.md",
+        "R": "production\\formal-papers\\CQE-paper-08\\FORMAL_PAPER.md",
+        "T": "production\\formal-papers\\CQE-paper-08\\FORMAL_PAPER.md",
+        "W": "production\\formal-papers\\CQE-paper-08\\FORMAL_PAPER.md"
+      },
+      "slot_count": 8
+    },
+    {
+      "all_slots_filled": true,
+      "filled_slots": [
+        "C",
+        "L",
+        "R",
+        "B",
+        "T",
+        "O",
+        "W",
+        "A"
+      ],
+      "index": 9,
+      "paper_id": "CQE-paper-09",
+      "provenance": {
+        "A": "production\\formal-papers\\CQE-paper-09\\FORMAL_PAPER.md",
+        "B": "production\\formal-papers\\CQE-paper-09\\FORMAL_PAPER.md",
+        "C": "production\\formal-papers\\CQE-paper-09\\FORMAL_PAPER.md",
+        "L": "production\\formal-papers\\CQE-paper-09\\FORMAL_PAPER.md",
+        "O": "production\\formal-papers\\CQE-paper-09\\FORMAL_PAPER.md",
+        "R": "production\\formal-papers\\CQE-paper-09\\FORMAL_PAPER.md",
+        "T": "production\\formal-papers\\CQE-paper-09\\FORMAL_PAPER.md",
+        "W": "production\\formal-papers\\CQE-paper-09\\FORMAL_PAPER.md"
+      },
+      "slot_count": 8
+    },
+    {
+      "all_slots_filled": true,
+      "filled_slots": [
+        "C",
+        "L",
+        "R",
+        "B",
+        "T",
+        "O",
+        "W",
+        "A"
+      ],
+      "index": 10,
+      "paper_id": "CQE-paper-10",
+      "provenance": {
+        "A": "production\\formal-papers\\CQE-paper-10\\FORMAL_PAPER.md",
+        "B": "production\\formal-papers\\CQE-paper-10\\FORMAL_PAPER.md",
+        "C": "production\\formal-papers\\CQE-paper-10\\FORMAL_PAPER.md",
+        "L": "production\\formal-papers\\CQE-paper-10\\FORMAL_PAPER.md",
+        "O": "production\\formal-papers\\CQE-paper-10\\FORMAL_PAPER.md",
+        "R": "production\\formal-papers\\CQE-paper-10\\FORMAL_PAPER.md",
+        "T": "production\\formal-papers\\CQE-paper-10\\FORMAL_PAPER.md",
+        "W": "production\\formal-papers\\CQE-paper-10\\FORMAL_PAPER.md"
+      },
+      "slot_count": 8
+    },
+    {
+      "all_slots_filled": true,
+      "filled_slots": [
+        "C",
+        "L",
+        "R",
+        "B",
+        "T",
+        "O",
+        "W",
+        "A"
+      ],
+      "index": 11,
+      "paper_id": "CQE-paper-11",
+      "provenance": {
+        "A": "production\\formal-papers\\CQE-paper-11\\FORMAL_PAPER.md",
+        "B": "production\\formal-papers\\CQE-paper-11\\FORMAL_PAPER.md",
+        "C": "production\\formal-papers\\CQE-paper-11\\FORMAL_PAPER.md",
+        "L": "production\\formal-papers\\CQE-paper-11\\FORMAL_PAPER.md",
+        "O": "production\\formal-papers\\CQE-paper-11\\FORMAL_PAPER.md",
+        "R": "production\\formal-papers\\CQE-paper-11\\FORMAL_PAPER.md",
+        "T": "production\\formal-papers\\CQE-paper-11\\FORMAL_PAPER.md",
+        "W": "production\\formal-papers\\CQE-paper-11\\FORMAL_PAPER.md"
+      },
+      "slot_count": 8
+    },
+    {
+      "all_slots_filled": true,
+      "filled_slots": [
+        "C",
+        "L",
+        "R",
+        "B",
+        "T",
+        "O",
+        "W",
+        "A"
+      ],
+      "index": 12,
+      "paper_id": "CQE-paper-12",
+      "provenance": {
+        "A": "production\\formal-papers\\CQE-paper-12\\FORMAL_PAPER.md",
+        "B": "production\\formal-papers\\CQE-paper-12\\FORMAL_PAPER.md",
+        "C": "production\\formal-papers\\CQE-paper-12\\FORMAL_PAPER.md",
+        "L": "production\\formal-papers\\CQE-paper-12\\FORMAL_PAPER.md",
+        "O": "production\\formal-papers\\CQE-paper-12\\FORMAL_PAPER.md",
+        "R": "production\\formal-papers\\CQE-paper-12\\FORMAL_PAPER.md",
+        "T": "production\\formal-papers\\CQE-paper-12\\FORMAL_PAPER.md",
+        "W": "production\\formal-papers\\CQE-paper-12\\FORMAL_PAPER.md"
+      },
+      "slot_count": 8
+    },
+    {
+      "all_slots_filled": true,
+      "filled_slots": [
+        "C",
+        "L",
+        "R",
+        "B",
+        "T",
+        "O",
+        "W",
+        "A"
+      ],
+      "index": 13,
+      "paper_id": "CQE-paper-13",
+      "provenance": {
+        "A": "production\\formal-papers\\CQE-paper-13\\FORMAL_PAPER.md",
+        "B": "production\\formal-papers\\CQE-paper-13\\FORMAL_PAPER.md",
+        "C": "production\\formal-papers\\CQE-paper-13\\FORMAL_PAPER.md",
+        "L": "production\\formal-papers\\CQE-paper-13\\FORMAL_PAPER.md",
+        "O": "production\\formal-papers\\CQE-paper-13\\FORMAL_PAPER.md",
+        "R": "production\\formal-papers\\CQE-paper-13\\FORMAL_PAPER.md",
+        "T": "production\\formal-papers\\CQE-paper-13\\FORMAL_PAPER.md",
+        "W": "production\\formal-papers\\CQE-paper-13\\FORMAL_PAPER.md"
+      },
+      "slot_count": 8
+    },
+    {
+      "all_slots_filled": true,
+      "filled_slots": [
+        "C",
+        "L",
+        "R",
+        "B",
+        "T",
+        "O",
+        "W",
+        "A"
+      ],
+      "index": 14,
+      "paper_id": "CQE-paper-14",
+      "provenance": {
+        "A": "production\\formal-papers\\CQE-paper-14\\FORMAL_PAPER.md",
+        "B": "production\\formal-papers\\CQE-paper-14\\FORMAL_PAPER.md",
+        "C": "production\\formal-papers\\CQE-paper-14\\FORMAL_PAPER.md",
+        "L": "production\\formal-papers\\CQE-paper-14\\FORMAL_PAPER.md",
+        "O": "production\\formal-papers\\CQE-paper-14\\FORMAL_PAPER.md",
+        "R": "production\\formal-papers\\CQE-paper-14\\FORMAL_PAPER.md",
+        "T": "production\\formal-papers\\CQE-paper-14\\FORMAL_PAPER.md",
+        "W": "production\\formal-papers\\CQE-paper-14\\FORMAL_PAPER.md"
+      },
+      "slot_count": 8
+    },
+    {
+      "all_slots_filled": true,
+      "filled_slots": [
+        "C",
+        "L",
+        "R",
+        "B",
+        "T",
+        "O",
+        "W",
+        "A"
+      ],
+      "index": 15,
+      "paper_id": "CQE-paper-15",
+      "provenance": {
+        "A": "production\\formal-papers\\CQE-paper-15\\FORMAL_PAPER.md",
+        "B": "production\\formal-papers\\CQE-paper-15\\FORMAL_PAPER.md",
+        "C": "production\\formal-papers\\CQE-paper-15\\FORMAL_PAPER.md",
+        "L": "production\\formal-papers\\CQE-paper-15\\FORMAL_PAPER.md",
+        "O": "production\\formal-papers\\CQE-paper-15\\FORMAL_PAPER.md",
+        "R": "production\\formal-papers\\CQE-paper-15\\FORMAL_PAPER.md",
+        "T": "production\\formal-papers\\CQE-paper-15\\FORMAL_PAPER.md",
+        "W": "production\\formal-papers\\CQE-paper-15\\FORMAL_PAPER.md"
+      },
+      "slot_count": 8
+    },
+    {
+      "all_slots_filled": true,
+      "filled_slots": [
+        "C",
+        "L",
+        "R",
+        "B",
+        "T",
+        "O",
+        "W",
+        "A"
+      ],
+      "index": 16,
+      "paper_id": "CQE-paper-16",
+      "provenance": {
+        "A": "production\\formal-papers\\CQE-paper-16\\FORMAL_PAPER.md",
+        "B": "production\\formal-papers\\CQE-paper-16\\FORMAL_PAPER.md",
+        "C": "production\\formal-papers\\CQE-paper-16\\FORMAL_PAPER.md",
+        "L": "production\\formal-papers\\CQE-paper-16\\FORMAL_PAPER.md",
+        "O": "production\\formal-papers\\CQE-paper-16\\FORMAL_PAPER.md",
+        "R": "production\\formal-papers\\CQE-paper-16\\FORMAL_PAPER.md",
+        "T": "production\\formal-papers\\CQE-paper-16\\FORMAL_PAPER.md",
+        "W": "production\\formal-papers\\CQE-paper-16\\FORMAL_PAPER.md"
+      },
+      "slot_count": 8
+    },
+    {
+      "all_slots_filled": true,
+      "filled_slots": [
+        "C",
+        "L",
+        "R",
+        "B",
+        "T",
+        "O",
+        "W",
+        "A"
+      ],
+      "index": 17,
+      "paper_id": "CQE-paper-17",
+      "provenance": {
+        "A": "production\\formal-papers\\CQE-paper-17\\FORMAL_PAPER.md",
+        "B": "production\\formal-papers\\CQE-paper-17\\FORMAL_PAPER.md",
+        "C": "production\\formal-papers\\CQE-paper-17\\FORMAL_PAPER.md",
+        "L": "production\\formal-papers\\CQE-paper-17\\FORMAL_PAPER.md",
+        "O": "production\\formal-papers\\CQE-paper-17\\FORMAL_PAPER.md",
+        "R": "production\\formal-papers\\CQE-paper-17\\FORMAL_PAPER.md",
+        "T": "production\\formal-papers\\CQE-paper-17\\FORMAL_PAPER.md",
+        "W": "production\\formal-papers\\CQE-paper-17\\FORMAL_PAPER.md"
+      },
+      "slot_count": 8
+    },
+    {
+      "all_slots_filled": true,
+      "filled_slots": [
+        "C",
+        "L",
+        "R",
+        "B",
+        "T",
+        "O",
+        "W",
+        "A"
+      ],
+      "index": 18,
+      "paper_id": "CQE-paper-18",
+      "provenance": {
+        "A": "production\\formal-papers\\CQE-paper-18\\FORMAL_PAPER.md",
+        "B": "production\\formal-papers\\CQE-paper-18\\FORMAL_PAPER.md",
+        "C": "production\\formal-papers\\CQE-paper-18\\FORMAL_PAPER.md",
+        "L": "production\\formal-papers\\CQE-paper-18\\FORMAL_PAPER.md",
+        "O": "production\\formal-papers\\CQE-paper-18\\FORMAL_PAPER.md",
+        "R": "production\\formal-papers\\CQE-paper-18\\FORMAL_PAPER.md",
+        "T": "production\\formal-papers\\CQE-paper-18\\FORMAL_PAPER.md",
+        "W": "production\\formal-papers\\CQE-paper-18\\FORMAL_PAPER.md"
+      },
+      "slot_count": 8
+    },
+    {
+      "all_slots_filled": true,
+      "filled_slots": [
+        "C",
+        "L",
+        "R",
+        "B",
+        "T",
+        "O",
+        "W",
+        "A"
+      ],
+      "index": 19,
+      "paper_id": "CQE-paper-19",
+      "provenance": {
+        "A": "production\\formal-papers\\CQE-paper-19\\FORMAL_PAPER.md",
+        "B": "production\\formal-papers\\CQE-paper-19\\FORMAL_PAPER.md",
+        "C": "production\\formal-papers\\CQE-paper-19\\FORMAL_PAPER.md",
+        "L": "production\\formal-papers\\CQE-paper-19\\FORMAL_PAPER.md",
+        "O": "production\\formal-papers\\CQE-paper-19\\FORMAL_PAPER.md",
+        "R": "production\\formal-papers\\CQE-paper-19\\FORMAL_PAPER.md",
+        "T": "production\\formal-papers\\CQE-paper-19\\FORMAL_PAPER.md",
+        "W": "production\\formal-papers\\CQE-paper-19\\FORMAL_PAPER.md"
+      },
+      "slot_count": 8
+    },
+    {
+      "all_slots_filled": true,
+      "filled_slots": [
+        "C",
+        "L",
+        "R",
+        "B",
+        "T",
+        "O",
+        "W",
+        "A"
+      ],
+      "index": 20,
+      "paper_id": "CQE-paper-20",
+      "provenance": {
+        "A": "production\\formal-papers\\CQE-paper-20\\FORMAL_PAPER.md",
+        "B": "production\\formal-papers\\CQE-paper-20\\FORMAL_PAPER.md",
+        "C": "production\\formal-papers\\CQE-paper-20\\FORMAL_PAPER.md",
+        "L": "production\\formal-papers\\CQE-paper-20\\FORMAL_PAPER.md",
+        "O": "production\\formal-papers\\CQE-paper-20\\FORMAL_PAPER.md",
+        "R": "production\\formal-papers\\CQE-paper-20\\FORMAL_PAPER.md",
+        "T": "production\\formal-papers\\CQE-paper-20\\FORMAL_PAPER.md",
+        "W": "production\\formal-papers\\CQE-paper-20\\FORMAL_PAPER.md"
+      },
+      "slot_count": 8
+    },
+    {
+      "all_slots_filled": true,
+      "filled_slots": [
+        "C",
+        "L",
+        "R",
+        "B",
+        "T",
+        "O",
+        "W",
+        "A"
+      ],
+      "index": 21,
+      "paper_id": "CQE-paper-21",
+      "provenance": {
+        "A": "production\\formal-papers\\CQE-paper-21\\FORMAL_PAPER.md",
+        "B": "production\\formal-papers\\CQE-paper-21\\FORMAL_PAPER.md",
+        "C": "production\\formal-papers\\CQE-paper-21\\FORMAL_PAPER.md",
+        "L": "production\\formal-papers\\CQE-paper-21\\FORMAL_PAPER.md",
+        "O": "production\\formal-papers\\CQE-paper-21\\FORMAL_PAPER.md",
+        "R": "production\\formal-papers\\CQE-paper-21\\FORMAL_PAPER.md",
+        "T": "production\\formal-papers\\CQE-paper-21\\FORMAL_PAPER.md",
+        "W": "production\\formal-papers\\CQE-paper-21\\FORMAL_PAPER.md"
+      },
+      "slot_count": 8
+    },
+    {
+      "all_slots_filled": true,
+      "filled_slots": [
+        "C",
+        "L",
+        "R",
+        "B",
+        "T",
+        "O",
+        "W",
+        "A"
+      ],
+      "index": 22,
+      "paper_id": "CQE-paper-22",
+      "provenance": {
+        "A": "production\\formal-papers\\CQE-paper-22\\FORMAL_PAPER.md",
+        "B": "production\\formal-papers\\CQE-paper-22\\FORMAL_PAPER.md",
+        "C": "production\\formal-papers\\CQE-paper-22\\FORMAL_PAPER.md",
+        "L": "production\\formal-papers\\CQE-paper-22\\FORMAL_PAPER.md",
+        "O": "production\\formal-papers\\CQE-paper-22\\FORMAL_PAPER.md",
+        "R": "production\\formal-papers\\CQE-paper-22\\FORMAL_PAPER.md",
+        "T": "production\\formal-papers\\CQE-paper-22\\FORMAL_PAPER.md",
+        "W": "production\\formal-papers\\CQE-paper-22\\FORMAL_PAPER.md"
+      },
+      "slot_count": 8
+    },
+    {
+      "all_slots_filled": true,
+      "filled_slots": [
+        "C",
+        "L",
+        "R",
+        "B",
+        "T",
+        "O",
+        "W",
+        "A"
+      ],
+      "index": 23,
+      "paper_id": "CQE-paper-23",
+      "provenance": {
+        "A": "production\\formal-papers\\CQE-paper-23\\FORMAL_PAPER.md",
+        "B": "production\\formal-papers\\CQE-paper-23\\FORMAL_PAPER.md",
+        "C": "production\\formal-papers\\CQE-paper-23\\FORMAL_PAPER.md",
+        "L": "production\\formal-papers\\CQE-paper-23\\FORMAL_PAPER.md",
+        "O": "production\\formal-papers\\CQE-paper-23\\FORMAL_PAPER.md",
+        "R": "production\\formal-papers\\CQE-paper-23\\FORMAL_PAPER.md",
+        "T": "production\\formal-papers\\CQE-paper-23\\FORMAL_PAPER.md",
+        "W": "production\\formal-papers\\CQE-paper-23\\FORMAL_PAPER.md"
+      },
+      "slot_count": 8
+    },
+    {
+      "all_slots_filled": true,
+      "filled_slots": [
+        "C",
+        "L",
+        "R",
+        "B",
+        "T",
+        "O",
+        "W",
+        "A"
+      ],
+      "index": 24,
+      "paper_id": "CQE-paper-24",
+      "provenance": {
+        "A": "production\\formal-papers\\CQE-paper-24\\FORMAL_PAPER.md",
+        "B": "production\\formal-papers\\CQE-paper-24\\FORMAL_PAPER.md",
+        "C": "production\\formal-papers\\CQE-paper-24\\FORMAL_PAPER.md",
+        "L": "production\\formal-papers\\CQE-paper-24\\FORMAL_PAPER.md",
+        "O": "production\\formal-papers\\CQE-paper-24\\FORMAL_PAPER.md",
+        "R": "production\\formal-papers\\CQE-paper-24\\FORMAL_PAPER.md",
+        "T": "production\\formal-papers\\CQE-paper-24\\FORMAL_PAPER.md",
+        "W": "production\\formal-papers\\CQE-paper-24\\FORMAL_PAPER.md"
+      },
+      "slot_count": 8
+    },
+    {
+      "all_slots_filled": true,
+      "filled_slots": [
+        "C",
+        "L",
+        "R",
+        "B",
+        "T",
+        "O",
+        "W",
+        "A"
+      ],
+      "index": 25,
+      "paper_id": "CQE-paper-25",
+      "provenance": {
+        "A": "production\\formal-papers\\CQE-paper-25\\FORMAL_PAPER.md",
+        "B": "production\\formal-papers\\CQE-paper-25\\FORMAL_PAPER.md",
+        "C": "production\\formal-papers\\CQE-paper-25\\FORMAL_PAPER.md",
+        "L": "production\\formal-papers\\CQE-paper-25\\FORMAL_PAPER.md",
+        "O": "production\\formal-papers\\CQE-paper-25\\FORMAL_PAPER.md",
+        "R": "production\\formal-papers\\CQE-paper-25\\FORMAL_PAPER.md",
+        "T": "production\\formal-papers\\CQE-paper-25\\FORMAL_PAPER.md",
+        "W": "production\\formal-papers\\CQE-paper-25\\FORMAL_PAPER.md"
+      },
+      "slot_count": 8
+    },
+    {
+      "all_slots_filled": true,
+      "filled_slots": [
+        "C",
+        "L",
+        "R",
+        "B",
+        "T",
+        "O",
+        "W",
+        "A"
+      ],
+      "index": 26,
+      "paper_id": "CQE-paper-26",
+      "provenance": {
+        "A": "production\\formal-papers\\CQE-paper-26\\FORMAL_PAPER.md",
+        "B": "production\\formal-papers\\CQE-paper-26\\FORMAL_PAPER.md",
+        "C": "production\\formal-papers\\CQE-paper-26\\FORMAL_PAPER.md",
+        "L": "production\\formal-papers\\CQE-paper-26\\FORMAL_PAPER.md",
+        "O": "production\\formal-papers\\CQE-paper-26\\FORMAL_PAPER.md",
+        "R": "production\\formal-papers\\CQE-paper-26\\FORMAL_PAPER.md",
+        "T": "production\\formal-papers\\CQE-paper-26\\FORMAL_PAPER.md",
+        "W": "production\\formal-papers\\CQE-paper-26\\FORMAL_PAPER.md"
+      },
+      "slot_count": 8
+    },
+    {
+      "all_slots_filled": true,
+      "filled_slots": [
+        "C",
+        "L",
+        "R",
+        "B",
+        "T",
+        "O",
+        "W",
+        "A"
+      ],
+      "index": 27,
+      "paper_id": "CQE-paper-27",
+      "provenance": {
+        "A": "production\\formal-papers\\CQE-paper-27\\FORMAL_PAPER.md",
+        "B": "production\\formal-papers\\CQE-paper-27\\FORMAL_PAPER.md",
+        "C": "production\\formal-papers\\CQE-paper-27\\FORMAL_PAPER.md",
+        "L": "production\\formal-papers\\CQE-paper-27\\FORMAL_PAPER.md",
+        "O": "production\\formal-papers\\CQE-paper-27\\FORMAL_PAPER.md",
+        "R": "production\\formal-papers\\CQE-paper-27\\FORMAL_PAPER.md",
+        "T": "production\\formal-papers\\CQE-paper-27\\FORMAL_PAPER.md",
+        "W": "production\\formal-papers\\CQE-paper-27\\FORMAL_PAPER.md"
+      },
+      "slot_count": 8
+    },
+    {
+      "all_slots_filled": true,
+      "filled_slots": [
+        "C",
+        "L",
+        "R",
+        "B",
+        "T",
+        "O",
+        "W",
+        "A"
+      ],
+      "index": 28,
+      "paper_id": "CQE-paper-28",
+      "provenance": {
+        "A": "production\\formal-papers\\CQE-paper-28\\FORMAL_PAPER.md",
+        "B": "production\\formal-papers\\CQE-paper-28\\FORMAL_PAPER.md",
+        "C": "production\\formal-papers\\CQE-paper-28\\FORMAL_PAPER.md",
+        "L": "production\\formal-papers\\CQE-paper-28\\FORMAL_PAPER.md",
+        "O": "production\\formal-papers\\CQE-paper-28\\FORMAL_PAPER.md",
+        "R": "production\\formal-papers\\CQE-paper-28\\FORMAL_PAPER.md",
+        "T": "production\\formal-papers\\CQE-paper-28\\FORMAL_PAPER.md",
+        "W": "production\\formal-papers\\CQE-paper-28\\FORMAL_PAPER.md"
+      },
+      "slot_count": 8
+    },
+    {
+      "all_slots_filled": true,
+      "filled_slots": [
+        "C",
+        "L",
+        "R",
+        "B",
+        "T",
+        "O",
+        "W",
+        "A"
+      ],
+      "index": 29,
+      "paper_id": "CQE-paper-29",
+      "provenance": {
+        "A": "production\\formal-papers\\CQE-paper-29\\FORMAL_PAPER.md",
+        "B": "production\\formal-papers\\CQE-paper-29\\FORMAL_PAPER.md",
+        "C": "production\\formal-papers\\CQE-paper-29\\FORMAL_PAPER.md",
+        "L": "production\\formal-papers\\CQE-paper-29\\FORMAL_PAPER.md",
+        "O": "production\\formal-papers\\CQE-paper-29\\FORMAL_PAPER.md",
+        "R": "production\\formal-papers\\CQE-paper-29\\FORMAL_PAPER.md",
+        "T": "production\\formal-papers\\CQE-paper-29\\FORMAL_PAPER.md",
+        "W": "production\\formal-papers\\CQE-paper-29\\FORMAL_PAPER.md"
+      },
+      "slot_count": 8
+    }
+  ],
+  "terminal_route": {
+    "action_edge_count": 12,
+    "passes": true,
+    "residue_trace_count": 12,
+    "route_length": 13,
+    "summary": {
+      "ambient_dimension": 24,
+      "compact_involution_count": 36,
+      "component_action_count": 12,
+      "composition_model": "component_action_tree_with_emergent_residue",
+      "evidence_level": "template",
+      "name": "A2^12",
+      "residue_status": "residue_closes_by_required_index",
+      "root_rank": 24,
+      "root_system": "A2^12",
+      "route_uniqueness": "single_canonical_route_after_component_ordering_and_orbit_quotient",
+      "status": "generated_canonical_composition_tree",
+      "terminal_id": "Niemeier:A2^12"
+    }
+  },
+  "title": "Grand Ribbon Meta-Framer",
+  "transport_obligations": {
+    "all_lifts_demonstrated": false,
+    "all_rows_have_required_fields": true,
+    "demonstrated_count": 2,
+    "local_witness_results": {
+      "D4_TO_J3O_DIAGONAL_CARRIER": {
+        "checks_passed": [
+          "diagonal_idempotents_are_idempotent",
+          "diagonal_idempotents_jordan_orthogonal",
+          "diagonal_idempotents_sum_to_identity",
+          "trace_2_idempotents_have_correct_trace",
+          "trace_2_idempotents_are_idempotent",
+          "weyl_13_fixes_chirality_balanced",
+          "weyl_13_swaps_chirality_broken_pair"
+        ],
+        "errors": [],
+        "status": "pass"
+      },
+      "EXCEPTIONAL_ROUTE_TO_NIEMEIER_LANDING_FORMS": {
+        "fingerprint_map_proved": false,
+        "landing_form_count": 24,
+        "proof_boundary": "registered terminal targets; no proved fingerprint-to-landing map",
+        "status": "registered_only"
+      },
+      "J3O_TO_G2_F4_T5A_ROUTE": {
+        "all_resolved_in_3_or_less": true,
+        "chart_axis_distribution": {
+          "0": 57,
+          "1": 60,
+          "2": 69,
+          "3": 70
+        },
+        "depth_only_bridge": false,
+        "f4_chart_cycle_correct": true,
+        "g2_e1_maps_to_e3": true,
+        "honesty": "bounded_route_classifier",
+        "matches_enumeration_count": 256,
+        "matches_enumeration_rate": 1.0,
+        "max_depth_tested": 256,
+        "oracle_backed": true,
+        "proof_boundary": "oracle-backed route classifier; cold-start depth-only bridge remains open",
+        "resolution_depth_distribution": {
+          "0": 57,
+          "1": 60,
+          "2": 69,
+          "3": 70
+        },
+        "status": "pass"
+      },
+      "LCR_TO_D4_AXIS_SHEET": {
+        "axis_lengths": {
+          "0": 126,
+          "1": 123,
+          "2": 131,
+          "3": 133
+        },
+        "label_counts": {
+          "0": 126,
+          "1": 123,
+          "2": 131,
+          "3": 133
+        },
+        "max_depth": 512,
+        "round_trip_mismatches": 0,
+        "sheet_counts": {
+          "0": 256,
+          "1": 257
+        },
+        "status": "pass",
+        "trajectory_length": 513
+      }
+    },
+    "local_witnesses_pass": true,
+    "open_lift_count": 2,
+    "row_count": 4,
+    "rows": [
+      {
+        "classification": "demonstrated",
+        "failure_condition": "two chart states share one (axis, sheet) token",
+        "id": "LCR_TO_D4_AXIS_SHEET",
+        "map": "ANTIPODAL_LABEL[state], SHEET_SIGN[state]",
+        "preserved_quantity": "lossless recovery of all eight chart states",
+        "proof_boundary": "finite codec; does not derive a cold-start token from depth N",
+        "source_object": "{0,1}^3 LCR chart state",
+        "target_object": "D4-style (axis, sheet) token",
+        "witness": "verify_chart_codec_d4"
+      },
+      {
+        "classification": "demonstrated",
+        "failure_condition": "Jordan idempotency or LR permutation preservation fails",
+        "id": "D4_TO_J3O_DIAGONAL_CARRIER",
+        "map": "(L,C,R) -> diag(L,C,R)",
+        "preserved_quantity": "trace strata, diagonal idempotency, LR/Weyl permutation",
+        "proof_boundary": "diagonal carrier is finite; broader F4 transport is not implied automatically",
+        "source_object": "LCR diagonal chart state and shell strata",
+        "target_object": "J3(O) diagonal and trace-2 idempotent carrier",
+        "witness": "verify_j3o_axioms"
+      },
+      {
+        "classification": "bounded_local",
+        "failure_condition": "bounded route exceeds three stages or is mistaken for a depth-only readout",
+        "id": "J3O_TO_G2_F4_T5A_ROUTE",
+        "map": "conjugate_triple_route(N, enumeration_bit_fn)",
+        "preserved_quantity": "bounded paired route metadata across at most three named stages",
+        "proof_boundary": "local oracle-backed classifier exists; it does not derive the bit from depth N",
+        "source_object": "J3(O) chart carrier",
+        "target_object": "G2 -> F4 -> T5A conjugate route",
+        "witness": "verify_conjugate_triple"
+      },
+      {
+        "classification": "registered_landing_forms",
+        "failure_condition": "landing form is treated as computation without a proved fingerprint map",
+        "id": "EXCEPTIONAL_ROUTE_TO_NIEMEIER_LANDING_FORMS",
+        "map": "registered terminal IDs and component product sheets",
+        "preserved_quantity": "named terminal root-system metadata",
+        "proof_boundary": "landing forms are registered targets, not automatic proof closure",
+        "source_object": "exceptional-group route metadata",
+        "target_object": "rank-24 Niemeier and Leech landing-form registry",
+        "witness": "ledger.build.NIEMEIER_FORMS and lookup cache registry"
+      }
+    ],
+    "status": "pass_with_open_lifts",
+    "valid_classifications": true
+  }
+}
