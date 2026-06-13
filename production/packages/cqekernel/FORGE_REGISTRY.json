@@ -1,5 +1,5 @@
 {
-  "version": "0.21.0",
+  "version": "0.22.0",
   "generated": "2026-06-13",
   "kernel": "cqekernel",
   "forge_ring": "cqecmplx-forge",
@@ -435,6 +435,25 @@
       "architecture": "the whole lib reapplied to the readout; tables built DURING enumeration before any state uses the data",
       "receipt": "production/formal-papers/CQE-paper-10/ologn_readout_architecture_receipt.json",
       "honesty_boundary": "bounds READOUT not enumeration; cold extraction remains open Wolfram Problem 3",
+      "verify_status": "10/10"
+    },
+    "TriadForge": {
+      "type": "engine",
+      "role": "The 3-fold keystone: 2^k Rule90 rows = 3^k live cells (Sierpinski), Lucas already generalizes 3, triad recurs at every stage; census across all bound forges",
+      "algebra_deps": [
+        "Sierpinski3k",
+        "LucasTriad",
+        "S3",
+        "SU3",
+        "J3O",
+        "ThreeMoveClosure"
+      ],
+      "cli_entry": "TriadForge.verify",
+      "paper_ref": "CQE-paper-06",
+      "source": "production/packages/cqecmplx-forge/src/TriadForge/",
+      "keystone": "2^k rows = 3^k live cells; why Lucas is O(log N) and the triad recurs below",
+      "wolfram_arguments": "structural transport for problems 1/2/3 with honest epistemic status",
+      "receipt": "production/formal-papers/CQE-paper-06/triadic_keystone_receipt.json",
       "verify_status": "10/10"
     }
   },
