@@ -1,0 +1,20 @@
+{
+  "paper": "CQE-paper-08",
+  "theorem": "Lattice code chain (T8 family): 1->3->7->8->24->72 (repetition, Fano/Hamming(7,4,3), ext Hamming(8,4,4)/E8, Golay(24,12,8)/Leech, Nebe 72), with the powered shortcut",
+  "forge": "lattice_forge.lattice_codes (reapplied)",
+  "reapplication": true,
+  "closes": "paper-binding gap for the lattice code chain verifiers (PROVEN, lattice_forge/lattice_codes.py, bound to no paper)",
+  "ties_to": "E8Forge + LeechForge (p08, p17), PFC-1 chain structure",
+  "source_module": "lattice_forge/lattice_codes.py",
+  "status": "pass",
+  "checks": {
+    "extended_hamming_8_e8": true,
+    "hamming_7_fano": true,
+    "golay_24": true,
+    "lattice_code_chain": true,
+    "parameter_chain": true,
+    "powered_chain": true
+  },
+  "passed": 6,
+  "total": 6
+}

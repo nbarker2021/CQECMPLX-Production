@@ -1,0 +1,19 @@
+{
+  "paper": "CQE-paper-18",
+  "theorem": "Centroid / VOA sector chain: VOA partition Z(q)=2q^0+6q^5 (2 vacua weight-0, 6 excited weight-5), gluon invariance, Hamming-centroid universality, Z4 period template",
+  "forge": "lattice_forge.centroid_voa (reapplied)",
+  "reapplication": true,
+  "closes": "paper-binding gap for the substrate centroid/VOA verifiers (PROVEN, lattice_forge/centroid_voa.py)",
+  "ties_to": "EntropyForge + SentinelForge (VOA partition, p12/p02), ChromaForge conservation sectors (p09)",
+  "source_module": "lattice_forge/centroid_voa.py",
+  "status": "pass",
+  "checks": {
+    "centroid_voa_chain": true,
+    "voa_sector_decomposition": true,
+    "gluon_invariance": true,
+    "hamming_centroid_universality": true,
+    "z4_period_template": true
+  },
+  "passed": 5,
+  "total": 5
+}
