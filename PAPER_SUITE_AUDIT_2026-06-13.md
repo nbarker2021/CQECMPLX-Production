@@ -99,9 +99,10 @@ language.
 - Several old `production/papers/*/02-CQE-tool/run.py` paths remain missing,
   especially for `06-08` and `25-32`. The promoted formal verifiers are present;
   the missing `run.py` files are adapter/packaging obligations.
-- Paper 12's `production/formal-papers/CQE-paper-12/FORMAL_PAPER.md` is a thin
-  pointer to `Papers/Source/CQE-paper-12.md`. It works with the current review
-  builder but is weaker than the surrounding formal directories.
+- Paper 12's formal body has been promoted from a thin pointer into a full
+  formal paper body. It now includes the finite CA prediction-surface proof and
+  the bounded EntropyForge extension, while preserving the infinite
+  non-periodicity and product-statistics obligations.
 
 ## Package And Lib Promotion Obligations
 
