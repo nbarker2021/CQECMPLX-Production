@@ -55,4 +55,4 @@ Written to `proof-receipts/CQE-paper-27/observer-delay-<timestamp>.json`
 
 ---
 
-*This tool IS the proof of the observer delay/shared reality. Running it discharges every Paper 27 obligation.*
+*This tool is a supplemental verifier and exposure route. The formal paper and receipt carry the proof; running the tool can reproduce evidence and may leave obligations open when the receipt says so.*

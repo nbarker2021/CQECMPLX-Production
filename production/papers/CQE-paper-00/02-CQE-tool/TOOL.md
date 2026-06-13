@@ -81,4 +81,4 @@ Written to `proof-receipts/CQE-paper-00/foundation-<theorem>/receipt-<timestamp>
 
 ---
 
-*This tool IS the proof of the foundation theorems. Running it discharges every Paper 00 obligation.*
+*This tool is a supplemental verifier and exposure route. The formal paper and receipt carry the proof; running the tool can reproduce evidence and may leave obligations open when the receipt says so.*

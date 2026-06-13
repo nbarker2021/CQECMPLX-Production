@@ -55,4 +55,4 @@ morphonix-receipt =
 
 ---
 
-*This IS the algorithm. The workbook IS the code spec. Every analog operation has its exact digital twin.*
+*This workbook is a supplemental exposure route. The formal paper and receipt carry the proof; the workbook preserves an analog twin for review and boundary-collision practice.*

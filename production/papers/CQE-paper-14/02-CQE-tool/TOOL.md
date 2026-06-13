@@ -64,4 +64,4 @@ Written to `proof-receipts/CQE-paper-14/gr-curvature-<verification>/receipt-<tim
 
 ---
 
-*This tool IS the proof of the GR curvature theorems. Running it discharges every Paper 14 obligation.*
+*This tool is a supplemental verifier and exposure route. The formal paper and receipt carry the proof; running the tool can reproduce evidence and may leave obligations open when the receipt says so.*

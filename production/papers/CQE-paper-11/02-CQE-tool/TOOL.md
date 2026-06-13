@@ -64,4 +64,4 @@ Written to `proof-receipts/CQE-paper-11/admission-<theory>/receipt-<timestamp>.j
 
 ---
 
-*This tool IS the proof of the admission gate. Running it discharges every Paper 11 obligation.*
+*This tool is a supplemental verifier and exposure route. The formal paper and receipt carry the proof; running the tool can reproduce evidence and may leave obligations open when the receipt says so.*

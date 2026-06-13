@@ -74,6 +74,35 @@ PDFs exist. The next cleanup pass should mirror these formal bodies into
 `Papers/Source` or update the repository convention so formal main bodies are
 declared canonical.
 
+## Subagent Audit Rollup
+
+Four read-only audit lanes checked `01-08`, `09-16`, `17-24`, and `25-32`.
+Their common finding is that review-facing paper coverage is strong, while old
+support scaffolds still need cleanup so they cannot be mistaken for final proof
+language.
+
+- Papers `01-24`: top-level main sources and companion sources exist in
+  `Papers/Source`; matching PDFs exist under `Papers/PDF`; integer formal
+  paper directories have verifier/receipt evidence.
+- Papers `25-32`: PDFs, formal bodies, receipts, and companions exist; main
+  `Papers/Source/CQE-paper-25.md` through `CQE-paper-32.md` mirrors are still
+  absent by convention/fallback.
+- All `.25`, `.50`, and `.75` companions currently operate as source/PDF
+  supplements tied to their integer-paper receipt. They do not have independent
+  `production/formal-papers/CQE-paper-N.25` directories. This is acceptable if
+  supplements remain support layers; it should be changed only if companions are
+  promoted into independent proof-bearing papers.
+- Older `production/papers/*/02-CQE-tool/TOOL.md` and
+  `production/papers/*/03-CQE-workbook/WORKBOOK.md` files had stale language
+  saying the tool or workbook was itself the proof. Those lines have been
+  demoted to supplemental verifier/exposure language.
+- Several old `production/papers/*/02-CQE-tool/run.py` paths remain missing,
+  especially for `06-08` and `25-32`. The promoted formal verifiers are present;
+  the missing `run.py` files are adapter/packaging obligations.
+- Paper 12's `production/formal-papers/CQE-paper-12/FORMAL_PAPER.md` is a thin
+  pointer to `Papers/Source/CQE-paper-12.md`. It works with the current review
+  builder but is weaker than the surrounding formal directories.
+
 ## Package And Lib Promotion Obligations
 
 The installable surface is split between:

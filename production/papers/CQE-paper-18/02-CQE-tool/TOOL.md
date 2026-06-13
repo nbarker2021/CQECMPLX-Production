@@ -64,4 +64,4 @@ Written to `proof-receipts/CQE-paper-18/moonshine-<verification>/receipt-<timest
 
 ---
 
-*This tool IS the proof of the Moonshine theorems. Running it discharges every Paper 18 obligation.*
+*This tool is a supplemental verifier and exposure route. The formal paper and receipt carry the proof; running the tool can reproduce evidence and may leave obligations open when the receipt says so.*

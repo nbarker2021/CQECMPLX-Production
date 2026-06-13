@@ -64,4 +64,4 @@ Written to `proof-receipts/CQE-paper-16/edge-<K>/receipt-<timestamp>.json`
 
 ---
 
-*This tool IS the proof of the continuum edge residual theorems. Running it discharges every Paper 16 obligation.*
+*This tool is a supplemental verifier and exposure route. The formal paper and receipt carry the proof; running the tool can reproduce evidence and may leave obligations open when the receipt says so.*

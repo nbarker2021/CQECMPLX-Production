@@ -60,4 +60,4 @@ Written to `proof-receipts/CQE-paper-30/grand-ribbon-<timestamp>.json`
 
 ---
 
-*This tool IS the proof of the grand ribbon meta-framer. Running it discharges every Paper 30 obligation.*
+*This tool is a supplemental verifier and exposure route. The formal paper and receipt carry the proof; running the tool can reproduce evidence and may leave obligations open when the receipt says so.*
