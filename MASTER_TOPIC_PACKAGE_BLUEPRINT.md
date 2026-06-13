@@ -81,6 +81,26 @@ only as replay mechanisms after the formal object is stated.
 | Monster correction-class link | speculative | later correlation tests falsified | keep as falsified branch in supplement |
 | Weyl orbit correction clustering | speculative/open | later tests not supported | keep as falsified/disproven branch |
 
+## Existing Package Precedents
+
+`CQECMPLX-ProofValidatedSuite.zip` contains useful prior structure for this
+blueprint:
+
+- `EXPOSE-2-Three-Prizes-One-Algebra.md` frames the three Wolfram Rule 30 prize
+  problems as projections of one algebra: eight chart states under `S3` subset
+  `F4` action on `J3(O)`.
+- `EXPOSE-4-Centroid-VOA.md` restores `C` as the local observable/Gluon fixed
+  by LR reversal.
+- `kernel/MASTER-DELIVERY-INDEX.md` gives a sidecar validation architecture
+  with Docker hierarchy, deterministic receipts, falsifier, workbook, and
+  paper validators.
+- `kernel/modules/README.md` gives the ring structure: `lib_kernel`,
+  `lattice_kernel`, and `reforge_kernel`.
+
+These are structural precedents, not final wording. Later closure reports must
+control claim boundaries, especially for Prize 3 and for anything called VOA or
+Moonshine.
+
 ## Proof-First Constraint
 
 The proof-carrying paper owns the topic. Everything else is supporting
@@ -94,4 +114,3 @@ The final suite must restore the observer term as a primary formal object:
 the chosen enumeration event at step 00, the center `C`, the linked `N` and
 `N|-N` accounting substrate, and the fact that later state evolution is an
 effect of that initial selection plus recorded validation.
-
