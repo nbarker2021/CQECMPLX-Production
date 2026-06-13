@@ -1,0 +1,953 @@
+{
+  "paper": "CQE-paper-23",
+  "title": "FoldForge Protein Folding",
+  "status": "pass_with_open_obligations",
+  "closed_claim": "FoldForge supplies a replayable residue-window, contact-map, winding-trace, and bifurcation-descriptor receipt for protein fold candidates without claiming native-structure prediction.",
+  "candidate_descriptor": {
+    "sequence": "MKTFFVLLLCTFTVLA",
+    "chart_sample": [
+      {
+        "index": 0,
+        "residue": "M",
+        "L": null,
+        "C": 1,
+        "R": 0,
+        "window_complete": false
+      },
+      {
+        "index": 1,
+        "residue": "K",
+        "L": 1,
+        "C": 0,
+        "R": 0,
+        "window_complete": true
+      },
+      {
+        "index": 2,
+        "residue": "T",
+        "L": 0,
+        "C": 0,
+        "R": 1,
+        "window_complete": true
+      },
+      {
+        "index": 3,
+        "residue": "F",
+        "L": 0,
+        "C": 1,
+        "R": 1,
+        "window_complete": true
+      },
+      {
+        "index": 4,
+        "residue": "F",
+        "L": 1,
+        "C": 1,
+        "R": 1,
+        "window_complete": true
+      },
+      {
+        "index": 5,
+        "residue": "V",
+        "L": 1,
+        "C": 1,
+        "R": 1,
+        "window_complete": true
+      }
+    ],
+    "contact_map": {
+      "sequence_length": 16,
+      "contact_count": 42,
+      "total_pairs": 120,
+      "contact_density": 0.35,
+      "contact_order": 0.4479166666666667,
+      "contacts": [
+        {
+          "i": 0,
+          "j": 3
+        },
+        {
+          "i": 0,
+          "j": 4
+        },
+        {
+          "i": 0,
+          "j": 5
+        },
+        {
+          "i": 0,
+          "j": 6
+        },
+        {
+          "i": 0,
+          "j": 7
+        },
+        {
+          "i": 0,
+          "j": 8
+        },
+        {
+          "i": 0,
+          "j": 11
+        },
+        {
+          "i": 0,
+          "j": 13
+        },
+        {
+          "i": 0,
+          "j": 14
+        },
+        {
+          "i": 0,
+          "j": 15
+        },
+        {
+          "i": 3,
+          "j": 6
+        },
+        {
+          "i": 3,
+          "j": 7
+        },
+        {
+          "i": 3,
+          "j": 8
+        },
+        {
+          "i": 3,
+          "j": 11
+        },
+        {
+          "i": 3,
+          "j": 13
+        },
+        {
+          "i": 3,
+          "j": 14
+        },
+        {
+          "i": 3,
+          "j": 15
+        },
+        {
+          "i": 4,
+          "j": 7
+        },
+        {
+          "i": 4,
+          "j": 8
+        },
+        {
+          "i": 4,
+          "j": 11
+        },
+        {
+          "i": 4,
+          "j": 13
+        },
+        {
+          "i": 4,
+          "j": 14
+        },
+        {
+          "i": 4,
+          "j": 15
+        },
+        {
+          "i": 5,
+          "j": 8
+        },
+        {
+          "i": 5,
+          "j": 11
+        },
+        {
+          "i": 5,
+          "j": 13
+        },
+        {
+          "i": 5,
+          "j": 14
+        },
+        {
+          "i": 5,
+          "j": 15
+        },
+        {
+          "i": 6,
+          "j": 11
+        },
+        {
+          "i": 6,
+          "j": 13
+        },
+        {
+          "i": 6,
+          "j": 14
+        },
+        {
+          "i": 6,
+          "j": 15
+        },
+        {
+          "i": 7,
+          "j": 11
+        },
+        {
+          "i": 7,
+          "j": 13
+        },
+        {
+          "i": 7,
+          "j": 14
+        },
+        {
+          "i": 7,
+          "j": 15
+        },
+        {
+          "i": 8,
+          "j": 11
+        },
+        {
+          "i": 8,
+          "j": 13
+        },
+        {
+          "i": 8,
+          "j": 14
+        },
+        {
+          "i": 8,
+          "j": 15
+        },
+        {
+          "i": 11,
+          "j": 14
+        },
+        {
+          "i": 11,
+          "j": 15
+        }
+      ],
+      "symmetric": true,
+      "diagonal_zero": true
+    },
+    "local_bifurcations": [
+      {
+        "index": 2,
+        "residue": "T",
+        "previous_side": -1,
+        "side": 1,
+        "event": "side_change"
+      },
+      {
+        "index": 4,
+        "residue": "F",
+        "previous_side": 1,
+        "side": 0,
+        "event": "side_change"
+      },
+      {
+        "index": 8,
+        "residue": "L",
+        "previous_side": 0,
+        "side": -1,
+        "event": "side_change"
+      },
+      {
+        "index": 10,
+        "residue": "T",
+        "previous_side": -1,
+        "side": 1,
+        "event": "side_change"
+      },
+      {
+        "index": 11,
+        "residue": "F",
+        "previous_side": 1,
+        "side": 0,
+        "event": "side_change"
+      },
+      {
+        "index": 13,
+        "residue": "V",
+        "previous_side": 0,
+        "side": 1,
+        "event": "side_change"
+      },
+      {
+        "index": 14,
+        "residue": "L",
+        "previous_side": 1,
+        "side": 0,
+        "event": "side_change"
+      }
+    ]
+  },
+  "substrate": {
+    "winding_proof": {
+      "status": "pass_with_open_gaps",
+      "verification": {
+        "status": "pass_with_open_gaps",
+        "schema_status": "pass",
+        "errors": [],
+        "warnings": [],
+        "open_gap_count": 1
+      },
+      "operator_stability": {
+        "stable_across_pages": true,
+        "relative_table_hash": "94e9bc793b56f37972f17a51fc3c2a748ded0545ee5ddf6ffa1e0d142bbc459c",
+        "state_count": 8
+      },
+      "winding_trace_sample": [
+        {
+          "depth": 1,
+          "winding_number": 0,
+          "state": "0"
+        },
+        {
+          "depth": 2,
+          "winding_number": 0,
+          "state": "0",
+          "is_open": false,
+          "bit": 0
+        },
+        {
+          "depth": 3,
+          "winding_number": 0.5,
+          "state": "-",
+          "is_open": true,
+          "bit": 1
+        },
+        {
+          "depth": 4,
+          "winding_number": 1.5,
+          "state": "+",
+          "is_open": 1,
+          "bit": 1
+        },
+        {
+          "depth": 5,
+          "winding_number": 2.0,
+          "state": "0",
+          "is_open": 1,
+          "bit": 1
+        },
+        {
+          "depth": 6,
+          "winding_number": 2.0,
+          "state": "0",
+          "is_open": false,
+          "bit": 0
+        },
+        {
+          "depth": 7,
+          "winding_number": 2.0,
+          "state": "0",
+          "is_open": 0,
+          "bit": 0
+        },
+        {
+          "depth": 8,
+          "winding_number": 2.5,
+          "state": "-",
+          "is_open": true,
+          "bit": 1
+        },
+        {
+          "depth": 9,
+          "winding_number": 3.5,
+          "state": "+",
+          "is_open": 1,
+          "bit": 1
+        },
+        {
+          "depth": 10,
+          "winding_number": 4.5,
+          "state": "-",
+          "is_open": false,
+          "bit": 0
+        },
+        {
+          "depth": 11,
+          "winding_number": 5.0,
+          "state": "0",
+          "is_open": false,
+          "bit": 0
+        },
+        {
+          "depth": 12,
+          "winding_number": 5.0,
+          "state": "0",
+          "is_open": false,
+          "bit": 0
+        },
+        {
+          "depth": 13,
+          "winding_number": 5.5,
+          "state": "+",
+          "is_open": 1,
+          "bit": 1
+        },
+        {
+          "depth": 14,
+          "winding_number": 6.0,
+          "state": "0",
+          "is_open": false,
+          "bit": 0
+        },
+        {
+          "depth": 15,
+          "winding_number": 6.5,
+          "state": "-",
+          "is_open": true,
+          "bit": 1
+        },
+        {
+          "depth": 16,
+          "winding_number": 7.0,
+          "state": "0",
+          "is_open": 1,
+          "bit": 1
+        }
+      ],
+      "open_gaps": [
+        {
+          "label": "DEPTH_ONLY_WINDING_EXTRACTOR_PENDING",
+          "meaning": "the winding state is currently read from the spinor trace; a modular/McKay-Thompson or continuous Oloid extractor must compute it from N directly"
+        }
+      ]
+    },
+    "oloid_predictor_check": {
+      "model_id": "rule30_oloid_winding_verifier_v0_1",
+      "status": "pass_with_open_gaps",
+      "max_depth": 128,
+      "config": {},
+      "correct": 66,
+      "total": 128,
+      "accuracy": 0.515625,
+      "defect_count": 62,
+      "first_defects": [
+        {
+          "n": 5,
+          "predicted_bit": 0,
+          "canonical_bit": 1,
+          "shell": 3,
+          "side": 0
+        },
+        {
+          "n": 6,
+          "predicted_bit": 1,
+          "canonical_bit": 0,
+          "shell": 2,
+          "side": 1
+        },
+        {
+          "n": 7,
+          "predicted_bit": 1,
+          "canonical_bit": 0,
+          "shell": 2,
+          "side": 1
+        },
+        {
+          "n": 8,
+          "predicted_bit": 0,
+          "canonical_bit": 1,
+          "shell": 0,
+          "side": 0
+        },
+        {
+          "n": 10,
+          "predicted_bit": 1,
+          "canonical_bit": 0,
+          "shell": 1,
+          "side": 0
+        },
+        {
+          "n": 12,
+          "predicted_bit": 1,
+          "canonical_bit": 0,
+          "shell": 2,
+          "side": 1
+        },
+        {
+          "n": 18,
+          "predicted_bit": 1,
+          "canonical_bit": 0,
+          "shell": 2,
+          "side": 1
+        },
+        {
+          "n": 21,
+          "predicted_bit": 1,
+          "canonical_bit": 0,
+          "shell": 1,
+          "side": 0
+        },
+        {
+          "n": 23,
+          "predicted_bit": 0,
+          "canonical_bit": 1,
+          "shell": 3,
+          "side": 0
+        },
+        {
+          "n": 25,
+          "predicted_bit": 1,
+          "canonical_bit": 0,
+          "shell": 2,
+          "side": 1
+        },
+        {
+          "n": 26,
+          "predicted_bit": 0,
+          "canonical_bit": 1,
+          "shell": 0,
+          "side": 0
+        },
+        {
+          "n": 27,
+          "predicted_bit": 1,
+          "canonical_bit": 0,
+          "shell": 1,
+          "side": 0
+        },
+        {
+          "n": 29,
+          "predicted_bit": 0,
+          "canonical_bit": 1,
+          "shell": 3,
+          "side": 0
+        },
+        {
+          "n": 31,
+          "predicted_bit": 1,
+          "canonical_bit": 0,
+          "shell": 2,
+          "side": 1
+        },
+        {
+          "n": 35,
+          "predicted_bit": 0,
+          "canonical_bit": 1,
+          "shell": 3,
+          "side": 0
+        },
+        {
+          "n": 36,
+          "predicted_bit": 1,
+          "canonical_bit": 0,
+          "shell": 2,
+          "side": 1
+        }
+      ],
+      "claim": {
+        "bounded_exec_at_window": false,
+        "interpretation": "MVP discrete kinematic does not yet reach zero defect; the search harness reports the best config achievable in the parameter grid and scopes the derivation work"
+      }
+    },
+    "bifurcation_detector": {
+      "status": "pass_with_open_gaps",
+      "verification": {
+        "status": "pass_with_open_gaps",
+        "schema_status": "pass",
+        "errors": [],
+        "warnings": [],
+        "open_gap_count": 1,
+        "complete_sheet_count": 2,
+        "detected_clean_climb_count": 0
+      },
+      "defect_count": 40,
+      "complete_sheet_count": 2,
+      "tail_defect_count": 8,
+      "detected_clean_climb_count": 0,
+      "open_gaps": [
+        {
+          "label": "MIGRATION_DIRECTION_FORCED_BY_PARITY_PENDING",
+          "meaning": "the +1/-1 direction of the migration is constrained by the readout law's broken parity; deriving the closed-form direction from the chart's symmetry-violation structure is the next bridge"
+        }
+      ]
+    }
+  },
+  "checks": [
+    {
+      "name": "residue chain maps to complete local windows",
+      "pass": true,
+      "detail": {
+        "sequence": "MKTFFVLLLCTFTVLA",
+        "length": 16,
+        "complete_windows": 14,
+        "hydrophobic_count": 11
+      }
+    },
+    {
+      "name": "contact map is replayable and symmetric",
+      "pass": true,
+      "detail": {
+        "sequence_length": 16,
+        "contact_count": 42,
+        "total_pairs": 120,
+        "contact_density": 0.35,
+        "contact_order": 0.4479166666666667,
+        "contacts": [
+          {
+            "i": 0,
+            "j": 3
+          },
+          {
+            "i": 0,
+            "j": 4
+          },
+          {
+            "i": 0,
+            "j": 5
+          },
+          {
+            "i": 0,
+            "j": 6
+          },
+          {
+            "i": 0,
+            "j": 7
+          },
+          {
+            "i": 0,
+            "j": 8
+          },
+          {
+            "i": 0,
+            "j": 11
+          },
+          {
+            "i": 0,
+            "j": 13
+          },
+          {
+            "i": 0,
+            "j": 14
+          },
+          {
+            "i": 0,
+            "j": 15
+          },
+          {
+            "i": 3,
+            "j": 6
+          },
+          {
+            "i": 3,
+            "j": 7
+          },
+          {
+            "i": 3,
+            "j": 8
+          },
+          {
+            "i": 3,
+            "j": 11
+          },
+          {
+            "i": 3,
+            "j": 13
+          },
+          {
+            "i": 3,
+            "j": 14
+          },
+          {
+            "i": 3,
+            "j": 15
+          },
+          {
+            "i": 4,
+            "j": 7
+          },
+          {
+            "i": 4,
+            "j": 8
+          },
+          {
+            "i": 4,
+            "j": 11
+          },
+          {
+            "i": 4,
+            "j": 13
+          },
+          {
+            "i": 4,
+            "j": 14
+          },
+          {
+            "i": 4,
+            "j": 15
+          },
+          {
+            "i": 5,
+            "j": 8
+          },
+          {
+            "i": 5,
+            "j": 11
+          },
+          {
+            "i": 5,
+            "j": 13
+          },
+          {
+            "i": 5,
+            "j": 14
+          },
+          {
+            "i": 5,
+            "j": 15
+          },
+          {
+            "i": 6,
+            "j": 11
+          },
+          {
+            "i": 6,
+            "j": 13
+          },
+          {
+            "i": 6,
+            "j": 14
+          },
+          {
+            "i": 6,
+            "j": 15
+          },
+          {
+            "i": 7,
+            "j": 11
+          },
+          {
+            "i": 7,
+            "j": 13
+          },
+          {
+            "i": 7,
+            "j": 14
+          },
+          {
+            "i": 7,
+            "j": 15
+          },
+          {
+            "i": 8,
+            "j": 11
+          },
+          {
+            "i": 8,
+            "j": 13
+          },
+          {
+            "i": 8,
+            "j": 14
+          },
+          {
+            "i": 8,
+            "j": 15
+          },
+          {
+            "i": 11,
+            "j": 14
+          },
+          {
+            "i": 11,
+            "j": 15
+          }
+        ],
+        "symmetric": true,
+        "diagonal_zero": true
+      }
+    },
+    {
+      "name": "local LCR side changes emit candidate bifurcation marks",
+      "pass": true,
+      "detail": [
+        {
+          "index": 2,
+          "residue": "T",
+          "previous_side": -1,
+          "side": 1,
+          "event": "side_change"
+        },
+        {
+          "index": 4,
+          "residue": "F",
+          "previous_side": 1,
+          "side": 0,
+          "event": "side_change"
+        },
+        {
+          "index": 8,
+          "residue": "L",
+          "previous_side": 0,
+          "side": -1,
+          "event": "side_change"
+        },
+        {
+          "index": 10,
+          "residue": "T",
+          "previous_side": -1,
+          "side": 1,
+          "event": "side_change"
+        },
+        {
+          "index": 11,
+          "residue": "F",
+          "previous_side": 1,
+          "side": 0,
+          "event": "side_change"
+        },
+        {
+          "index": 13,
+          "residue": "V",
+          "previous_side": 0,
+          "side": 1,
+          "event": "side_change"
+        },
+        {
+          "index": 14,
+          "residue": "L",
+          "previous_side": 1,
+          "side": 0,
+          "event": "side_change"
+        }
+      ]
+    },
+    {
+      "name": "winding number proof verifies as bounded trace witness",
+      "pass": true,
+      "detail": {
+        "model_status": "pass_with_open_gaps",
+        "verify": {
+          "status": "pass_with_open_gaps",
+          "schema_status": "pass",
+          "errors": [],
+          "warnings": [],
+          "open_gap_count": 1
+        },
+        "operator_stability": {
+          "stable_across_pages": true,
+          "relative_table_hash": "94e9bc793b56f37972f17a51fc3c2a748ded0545ee5ddf6ffa1e0d142bbc459c",
+          "state_count": 8
+        },
+        "complexity_proof": {
+          "claim_status": "BOUNDED_TRACE_WITNESS",
+          "theorem": "If the topological/spinor state at depth n is available, the stable sheet operator emits the center bit with O(1) table effort.",
+          "mechanism": "The 8-state sheet operator acts as a stationary finite-state machine over the local spinor state (shell, side, C*R bond).",
+          "topological_invariant": "The operator hash is stable across tested page extensions; this is evidence for a stationary rule, not yet an all-N extraction proof.",
+          "winding_number_tracking": "The state transitions track the winding number of the spinor field (the rolling Oloid).",
+          "causal_cone_simulation_required_for_this_witness": true,
+          "depth_only_extractor_status": "pending_modular_or_continuous_kinematic_derivation",
+          "per_step_complexity": "O(1)",
+          "defect_count": 0
+        },
+        "open_gaps": [
+          {
+            "label": "DEPTH_ONLY_WINDING_EXTRACTOR_PENDING",
+            "meaning": "the winding state is currently read from the spinor trace; a modular/McKay-Thompson or continuous Oloid extractor must compute it from N directly"
+          }
+        ]
+      }
+    },
+    {
+      "name": "direct oloid predictor defects remain explicit",
+      "pass": true,
+      "detail": {
+        "status": "pass_with_open_gaps",
+        "accuracy": 0.515625,
+        "defect_count": 62,
+        "first_defects": [
+          {
+            "n": 5,
+            "predicted_bit": 0,
+            "canonical_bit": 1,
+            "shell": 3,
+            "side": 0
+          },
+          {
+            "n": 6,
+            "predicted_bit": 1,
+            "canonical_bit": 0,
+            "shell": 2,
+            "side": 1
+          },
+          {
+            "n": 7,
+            "predicted_bit": 1,
+            "canonical_bit": 0,
+            "shell": 2,
+            "side": 1
+          },
+          {
+            "n": 8,
+            "predicted_bit": 0,
+            "canonical_bit": 1,
+            "shell": 0,
+            "side": 0
+          }
+        ],
+        "interpretation": "MVP discrete kinematic does not yet reach zero defect; the search harness reports the best config achievable in the parameter grid and scopes the derivation work"
+      }
+    },
+    {
+      "name": "substrate bifurcation detector schema passes with gap carried",
+      "pass": true,
+      "detail": {
+        "model_status": "pass_with_open_gaps",
+        "verify": {
+          "status": "pass_with_open_gaps",
+          "schema_status": "pass",
+          "errors": [],
+          "warnings": [],
+          "open_gap_count": 1,
+          "complete_sheet_count": 2,
+          "detected_clean_climb_count": 0
+        },
+        "defect_count": 40,
+        "complete_sheet_count": 2,
+        "tail_defect_count": 8,
+        "detected_clean_climb_count": 0,
+        "open_gaps": [
+          {
+            "label": "MIGRATION_DIRECTION_FORCED_BY_PARITY_PENDING",
+            "meaning": "the +1/-1 direction of the migration is constrained by the readout law's broken parity; deriving the closed-form direction from the chart's symmetry-violation structure is the next bridge"
+          }
+        ]
+      }
+    }
+  ],
+  "open_obligations": [
+    {
+      "obligation": "PDB validation",
+      "status": "open",
+      "reason": "the descriptor has not been tested against deposited structures"
+    },
+    {
+      "obligation": "native structure prediction",
+      "status": "not_claimed",
+      "reason": "the receipt emits descriptors, not coordinates or free-energy minima"
+    },
+    {
+      "obligation": "depth-only winding extractor",
+      "status": "open",
+      "reason": "the winding state is still read from a bounded trace witness"
+    },
+    {
+      "obligation": "biological encoding",
+      "status": "open",
+      "reason": "the demonstration uses a simple hydrophobic/polar encoding"
+    },
+    {
+      "obligation": "fold-rate or thermodynamic validation",
+      "status": "open",
+      "reason": "no kinetic or experimental energy receipt is included"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "built_on": "2026-06-12",
-  "paper_count": 102,
+  "paper_count": 105,
   "outputs": [
     {
       "paper": "CQE-paper-00",
@@ -558,7 +558,25 @@
       "paper": "CQE-paper-23",
       "title": "Paper 23 - FoldForge Protein Folding",
       "pdf": "Papers\\PDF\\CQE-paper-23_paper-23-foldforge-protein-folding.pdf",
-      "bytes": 7596
+      "bytes": 7031
+    },
+    {
+      "paper": "CQE-paper-23.25",
+      "title": "Paper 23.25 - FoldForge Toolkit Supplement",
+      "pdf": "Papers\\PDF\\CQE-paper-23.25_paper-23-25-foldforge-toolkit-supplement.pdf",
+      "bytes": 3169
+    },
+    {
+      "paper": "CQE-paper-23.50",
+      "title": "Paper 23.50 - FoldForge Claim Contract",
+      "pdf": "Papers\\PDF\\CQE-paper-23.50_paper-23-50-foldforge-claim-contract.pdf",
+      "bytes": 3234
+    },
+    {
+      "paper": "CQE-paper-23.75",
+      "title": "Paper 23.75 - FoldForge Next-State Bridge",
+      "pdf": "Papers\\PDF\\CQE-paper-23.75_paper-23-75-foldforge-next-state-bridge.pdf",
+      "bytes": 2939
     },
     {
       "paper": "CQE-paper-24",
