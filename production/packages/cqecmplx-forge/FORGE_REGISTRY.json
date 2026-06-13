@@ -1,5 +1,5 @@
 {
-  "version": "0.19.0",
+  "version": "0.20.0",
   "generated": "2026-06-13",
   "kernel": "cqekernel",
   "forge_ring": "cqecmplx-forge",
@@ -322,7 +322,12 @@
       "source_product": "historical_pastworks/product_converge (core distilled)",
       "adjudicated_divergence": "source docstring named (1,1,0) as the 3-swap witness; exhaustive verification shows the tight states are (0,1,1) and (1,0,0); gRPC/REST/consensus layers stay product-side",
       "receipt": "production/formal-papers/CQE-paper-03/triality_annealing_receipt.json",
-      "verify_status": "10/10"
+      "verify_status": "10/10 + d4_atlas 10/10",
+      "modules": [
+        "__init__ (S3 triality annealing)",
+        "d4_atlas (D4 chart bijectivity)"
+      ],
+      "d4_atlas_receipt": "production/formal-papers/CQE-paper-03/d4_atlas_bijectivity_receipt.json"
     },
     "AuthenticaForge": {
       "type": "engine",

@@ -1,0 +1,53 @@
+{
+  "item_id": "ConvergeForge-D4Atlas",
+  "promotion_date": "2026-06-13",
+  "status": "obligation_closed",
+  "identity": {
+    "forge": "ConvergeForge",
+    "module": "d4_atlas",
+    "role": "8-chart dihedral atlas, proven bijective",
+    "paper_ref": "CQE-paper-03",
+    "registry_version": "0.20.0"
+  },
+  "pattern": "complete-unformalized work -> formalization in paper-bound space -> Forge",
+  "closes_obligation": {
+    "from_manifest": "ConvergeForge-2026-06-12",
+    "text": "The D4 chart8 cluster atlas (chart8.py) needs its own bijectivity receipt before promotion."
+  },
+  "source_work": {
+    "repos": ["product_converge/src/state/chart8.py", "nbarker2021/CMPLX-TMN-main board atlases"],
+    "state_before": "chart8 ViewType enumerated the 8 dihedral views with rotation/mirror tables and asserted in a docstring 'all 8 views are bijective; view(view_inverse(state)) == state', but never verified it",
+    "core_modules_distilled": [
+      "product_converge/src/state/chart8.py (ViewType, _VIEW_MIRROR)"
+    ]
+  },
+  "adjudicated_divergence": [
+    "the source asserted bijectivity in prose only; the forge generates the group exhaustively from the two generators r (rotation) and s (reflection) and verifies every property, asserting nothing by name",
+    "the cluster-state to-triplet encoding (utilization -> 3-bit) is a lossy projection by design and is explicitly NOT claimed bijective"
+  ],
+  "validated_claims": [
+    "Exactly 8 distinct views (|D4| = 8 = 2*4).",
+    "Every view is a bijection of the square's four corners.",
+    "The group is closed under composition (8x8 table).",
+    "Identity is present and acts as a unit.",
+    "Every view has an inverse in the group, and view(view_inverse(state)) == state exactly.",
+    "The four rotations form a cyclic subgroup of order 4.",
+    "The four mirrors are involutions (order 2).",
+    "D4 is non-abelian (rotation and reflection do not commute).",
+    "Views preserve information (no symbol lost or gained).",
+    "The atlas exposes exactly 8 named views matching the group order."
+  ],
+  "honesty_boundary": "The to-triplet utilization encoding is lossy and not claimed bijective; only the D4 view atlas is.",
+  "artifacts": [
+    "production/packages/cqecmplx-forge/src/ConvergeForge/d4_atlas.py",
+    "production/formal-papers/CQE-paper-03/verify_d4_atlas_bijectivity.py",
+    "production/formal-papers/CQE-paper-03/d4_atlas_bijectivity_receipt.json",
+    "FORGE_REGISTRY.json (v0.20.0; ConvergeForge gains the d4_atlas module)"
+  ],
+  "verification": {
+    "command": "python production/formal-papers/CQE-paper-03/verify_d4_atlas_bijectivity.py",
+    "result": "pass 10/10",
+    "receipt": "production/formal-papers/CQE-paper-03/d4_atlas_bijectivity_receipt.json"
+  },
+  "notes": "Eleventh promotion of the loop; first obligation-closure (a forge resolving its own earlier open obligation). ConvergeForge now carries both halves of paper 03's D4/J3 triality surface: S3 annealing (the triality group permuting LCR lanes) and the D4 chart atlas (the dihedral view group), both verified."
+}

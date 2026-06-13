@@ -1,0 +1,25 @@
+{
+  "paper": "CQE-paper-03",
+  "theorem": "D4 chart atlas bijectivity: 8 dihedral views (order 8), each a bijection of the square's corners, closed group with identity and inverses, view(view_inverse(x)) == x",
+  "forge": "ConvergeForge (d4_atlas)",
+  "closes_obligation": "ConvergeForge-2026-06-12: 'the D4 chart8 cluster atlas needs its own bijectivity receipt before promotion'",
+  "source_repo": "product_converge/src/state/chart8.py; nbarker2021/CMPLX-TMN-main board atlases",
+  "status": "pass",
+  "checks": {
+    "eight_distinct_views": true,
+    "every_view_is_bijection": true,
+    "group_closed_under_composition": true,
+    "identity_present_and_unit": true,
+    "inverses_present_and_roundtrip_identity": true,
+    "rotations_cyclic_order_4": true,
+    "mirrors_are_involutions": true,
+    "non_abelian": true,
+    "views_preserve_information": true,
+    "named_views_match_group": true
+  },
+  "passed": 10,
+  "total": 10,
+  "open_obligations": [
+    "The cluster-state to-triplet encoding (utilization -> 3-bit) is a lossy projection, not a bijection; that is by design and is not claimed bijective."
+  ]
+}
