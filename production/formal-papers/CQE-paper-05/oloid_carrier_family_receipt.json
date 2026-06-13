@@ -1,0 +1,23 @@
+{
+  "paper": "CQE-paper-05",
+  "theorem": "Oloid carrier family: rolling-contact kinematics, octonionic grounding, four-oloid D4 ring, dual-path read-then-verify flow",
+  "forge": "lattice_forge oloid modules (reapplied)",
+  "reapplication": true,
+  "closes": "paper-binding gap for the substrate oloid mechanism verifiers (PROVEN, lattice_forge/oloid_*.py)",
+  "source_modules": [
+    "oloid_rolling",
+    "oloid_octonionic",
+    "quad_oloid",
+    "oloid_dual_path"
+  ],
+  "status": "pass",
+  "checks": {
+    "oloid_rolling": true,
+    "octonionic_oloid": true,
+    "quad_oloid": true,
+    "dual_path_oloid": true
+  },
+  "passed": 4,
+  "total": 4,
+  "still_open": "the E6->E7->E8 dyadic lift (O2''') \u2014 oloid_model_selection returns pass_with_open_bridge; NOT claimed here"
+}

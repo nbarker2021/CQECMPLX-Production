@@ -1,0 +1,40 @@
+{
+  "paper": "CQE-paper-08",
+  "theorem": "Niemeier / Leech enumeration: deterministic glue selectors, E8^3 carriers, Leech landing + type-1/2/3 orbits, Nebe 72 contract",
+  "forge": "lattice_forge.{enumerated_glue, nebe_gamma72} (reapplied)",
+  "reapplication": true,
+  "advances_obligation": {
+    "obligation": "O7 (Niemeier:E8^3 exact glue cosets), CMPLX-R30-main/PROOF/theorems/OPEN_OBLIGATIONS.md",
+    "proven_now": "E8^3 carrier structure, deterministic selectors, Leech landing, type-1/2/3 orbits, Nebe 72 contract",
+    "still_pending": "the exact integer-vector glue-coset representatives at the final edge (the glue verifier's pending_invariants) \u2014 NOT claimed",
+    "status": "O7 PARTIALLY resolved"
+  },
+  "glue_contract_fields": {
+    "all_selectors_deterministic": true,
+    "all_block_orders_are_permutations": true,
+    "all_carriers_are_e8_cubed": true,
+    "leech_landing_proved": false,
+    "pending_invariants": [
+      "rank_24",
+      "even",
+      "unimodular",
+      "root_count_norm2_zero",
+      "minimum_norm_4"
+    ]
+  },
+  "source_modules": [
+    "enumerated_glue",
+    "nebe_gamma72"
+  ],
+  "status": "pass",
+  "checks": {
+    "enumerated_glue_selector_contract": true,
+    "leech_minimal_landings": true,
+    "leech_type1_orbit": true,
+    "leech_type2_orbit": true,
+    "leech_type3_orbit": true,
+    "nebe_gamma72_contract": true
+  },
+  "passed": 6,
+  "total": 6
+}
