@@ -1,6 +1,6 @@
 {
-  "version": "0.16.0",
-  "generated": "2026-06-12",
+  "version": "0.17.0",
+  "generated": "2026-06-13",
   "kernel": "cqekernel",
   "forge_ring": "cqecmplx-forge",
   "namespace": "cqecmplx",
@@ -42,7 +42,11 @@
       ],
       "cli_entry": "ChromaForge.ChromaForgeEngine",
       "source": "production/packages/cqecmplx-forge/src/ChromaForge/",
-      "verify_status": "10/10"
+      "verify_status": "10/10",
+      "paper_ref": "CQE-paper-09",
+      "conservation_law": "kappa = ln(phi)/16; morphon delta <= 0 Hamiltonian descent; sectors N/I/L; Event Law delta = -kappa",
+      "source_repo_conservation": "nbarker2021/CMPLX-TMN-main (sign contradiction adjudicated)",
+      "receipt": "production/formal-papers/CQE-paper-09/kappa_conservation_law_receipt.json"
     },
     "GraphStax": {
       "type": "engine",

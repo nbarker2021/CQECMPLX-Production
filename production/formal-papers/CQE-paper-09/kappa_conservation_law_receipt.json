@@ -1,0 +1,31 @@
+{
+  "paper": "CQE-paper-09",
+  "theorem": "kappa = ln(phi)/16 conservation law: morphon potential delta <= 0 is a Hamiltonian descent whose ordered ledger is the emergent timeline; per-event Event Law delta = -kappa",
+  "forge": "ChromaForge (conservation + morphon)",
+  "source_repo": "nbarker2021/CMPLX-TMN-main (src/conservation/conservation.py, src/engine/engine.py)",
+  "adjudicated_divergence": [
+    "TMN-main internal sign contradiction: conservation.py flags delta_phi > 0 as a violation and /surplus treats cumulative < 0 as spendable (conserved = negative), but engine.py emits a strictly positive morphon_delta labeled 'conserved surplus' \u2014 backwards. The live ChromaForge/PaneForge receipt mints -kappa, confirming the conservation.py convention; the forge emits the conserved negative delta",
+    "FastAPI/psycopg2/PG-ledger service layers stay product-side; the forge carries the stdlib conservation core"
+  ],
+  "cross_repo_confirmation": "EVENT_LAW_DELTA == -kappa == -0.030075739066225217, the exact delta_phi minted in every PaneForge Event Law receipt (production/products/PaneForge-Stick)",
+  "status": "pass",
+  "checks": {
+    "kappa_is_ln_phi_over_16": true,
+    "golden_ratio_identities": true,
+    "e8_embed_norm_is_kappa": true,
+    "morphon_delta_conserved_and_bounded": true,
+    "sector_split_additive": true,
+    "event_law_delta_is_minus_kappa": true,
+    "cumulative_monotone_non_increasing": true,
+    "positive_delta_flagged_violation": true,
+    "audit_chain_zero_drift": true,
+    "surplus_is_spendable_when_negative": true
+  },
+  "passed": 10,
+  "total": 10,
+  "open_obligations": [
+    "Patch CMPLX-TMN-main engine.py morphon_delta sign upstream to match the conservation service and the live receipt.",
+    "The three-sector split is modeled as equal thirds; a derivation of unequal Noether/Shannon/Landauer weights from content is future work and is not claimed.",
+    "Palindromic-closure equivalence ('the law IS the stop condition IS palindromic closure') is asserted in the source prose and not yet given its own receipt."
+  ]
+}

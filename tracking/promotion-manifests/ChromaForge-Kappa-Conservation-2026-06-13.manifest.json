@@ -1,0 +1,60 @@
+{
+  "item_id": "ChromaForge-Kappa-Conservation",
+  "promotion_date": "2026-06-13",
+  "status": "forge_paper_bound",
+  "identity": {
+    "forge": "ChromaForge",
+    "module": "morphon (joins conservation)",
+    "role": "kappa = ln(phi)/16 conservation law and conserved morphon potential",
+    "paper_ref": "CQE-paper-09",
+    "registry_version": "0.17.0"
+  },
+  "pattern": "complete-unformalized work -> formalization in paper-bound space -> Forge",
+  "note_on_pattern": "Here the Forge already existed (ChromaForge.conservation held the kappa ledger) but was bound only to a stale memory-DB ref. This promotion supplies the missing half: the repo-paper formalization (verifier + receipt in formal-papers/CQE-paper-09) plus the morphon coupling/embedding module, and rebinds the registry entry to the live repo paper.",
+  "source_work": {
+    "repo": "nbarker2021/CMPLX-TMN-main",
+    "local_clone": "D:/CQE_CMPLX/g/CMPLX-TMN-main",
+    "state_before": "conservation law live across services (conservation.py ledger, engine.py morphon embedding, portal/glyph/atlas constants) but never bound to a repo proof paper; ChromaForge carried the ledger with paper_ref pointing at a stale memory-DB markdown",
+    "core_modules_distilled": [
+      "src/conservation/conservation.py (already in ChromaForge.conservation)",
+      "src/engine/engine.py (morphon embedding -> ChromaForge.morphon)"
+    ]
+  },
+  "adjudicated_divergence": [
+    "CMPLX-TMN-main contains an internal sign contradiction: src/conservation/conservation.py flags delta_phi > 0 as a violation and /surplus treats cumulative_dphi < 0 as spendable (conserved = negative), while src/engine/engine.py emits a strictly POSITIVE morphon_delta and comments it as 'conserved surplus' — backwards. The live ChromaForge/PaneForge Event Law receipt mints delta_phi = -kappa (negative), confirming the conservation.py convention. ChromaForge.morphon emits the conserved negative delta.",
+    "FastAPI/psycopg2/PG-backed ledger service layers stay product-side; the forge carries the stdlib conservation core"
+  ],
+  "validated_claims": [
+    "kappa = ln(phi)/16 numerically (= 0.030075739066...), matching the source constant 0.030076.",
+    "Golden-ratio identities phi^2 = phi+1 and e^(16 kappa) = phi.",
+    "The E8 embedding sits on the kappa-sphere: norm exactly kappa, deterministic from content hash.",
+    "The morphon potential delta is conserved (<= 0) and bounded by kappa*affinity.",
+    "The sector split delta_n + delta_i + delta_l = delta_phi (Noether / Shannon / Landauer).",
+    "The Event Law per-event emission is exactly -kappa, the value minted in every live ChromaForge/PaneForge receipt (cross-repo confirmation).",
+    "A stream of conserved deltas keeps the cumulative non-increasing with zero violations (Hamiltonian descent).",
+    "A single positive delta is flagged as a violation; only positive deltas are.",
+    "The audit chain recomputes the cumulative with zero drift.",
+    "Surplus is the spendable magnitude when the cumulative is negative."
+  ],
+  "honesty_boundary": "The three-sector split is modeled as equal thirds; deriving unequal Noether/Shannon/Landauer weights from content is not claimed. The 'law IS the stop condition IS palindromic closure' equivalence asserted in the source prose is not yet given its own receipt.",
+  "artifacts": [
+    "production/packages/cqecmplx-forge/src/ChromaForge/morphon.py",
+    "production/formal-papers/CQE-paper-09/verify_kappa_conservation_law.py",
+    "production/formal-papers/CQE-paper-09/kappa_conservation_law_receipt.json",
+    "FORGE_REGISTRY.json (v0.17.0; ChromaForge rebound to CQE-paper-09)",
+    "production/packages/cqecmplx-forge/FORGE_REGISTRY.json",
+    "production/packages/cqekernel/FORGE_REGISTRY.json"
+  ],
+  "verification": {
+    "command": "python production/formal-papers/CQE-paper-09/verify_kappa_conservation_law.py",
+    "result": "pass 10/10",
+    "receipt": "production/formal-papers/CQE-paper-09/kappa_conservation_law_receipt.json"
+  },
+  "open_obligations": [
+    "Patch CMPLX-TMN-main engine.py morphon_delta sign upstream to match the conservation service and the live receipt.",
+    "Receipt for the palindromic-closure equivalence claim.",
+    "Content-derived sector weights instead of equal thirds.",
+    "Next profile-repo candidates: CMPLXMCP AGRM controller (auto-escalate inline->MDHG), CMPLXDevKit MDHG golden-ratio sweep cache, chart8 D4 atlas bijectivity (ConvergeForge obligation)."
+  ],
+  "notes": "Eighth promotion of the loop; third from the profile-repo lane. Ties the geometric-computer conservation law of CMPLX-TMN-main to the Event Law already running in the kernel: kappa = ln(phi)/16 is simultaneously TMN's universal coupling and the magnitude of the per-event delta_phi the kernel mints. The sign adjudication resolves which of TMN's two contradictory conventions the corpus actually uses."
+}
