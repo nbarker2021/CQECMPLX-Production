@@ -1,0 +1,20 @@
+{
+  "paper": "CQE-paper-06",
+  "theorem": "Rule 30 = Rule 90 XOR (C AND NOT R); Rule 90 has the Lucas closed-form (Pascal mod 2 = Sierpinski); Rule 30 center bit decomposes exactly over the Lucas-sparse light cone",
+  "reapplication": true,
+  "closes": "verifiable core of O2' (CMPLX-R30-main/PROOF/theorems/OPEN_OBLIGATIONS.md) \u2014 the decomposition and Lucas closed-form, which were PROVEN in lattice_forge/rule90_linearization.py and vendored into the production substrate but never bound to a production paper",
+  "source_module": "lattice_forge/rule90_linearization.py (from nbarker2021/CMPLX-R30, PROOF/src)",
+  "status": "pass",
+  "checks": {
+    "rule30_equals_rule90_xor_correction": true,
+    "lucas_matches_direct_rule90_depth_64": true,
+    "center_decomposition_matches_to_1024": true,
+    "lucas_is_pascal_mod_2": true,
+    "correction_fires_on_010_and_110": true,
+    "correction_d4_codec_agrees": true,
+    "sierpinski_power_of_two_rows": true
+  },
+  "passed": 7,
+  "total": 7,
+  "still_open_in_O2_prime": "the O(log N) collapse of the correction sum via the McKay-Thompson coefficient-parity primitive \u2014 NOT claimed here"
+}

@@ -1,0 +1,20 @@
+{
+  "paper": "CQE-paper-08",
+  "theorem": "E8 root enumeration (240 roots, 120 antipodal pairs, clean hemisphere split) \u2014 the lattice-arithmetic substrate PFC-2 names as its closing computation",
+  "reapplication": true,
+  "advances": "PFC-2 (CMPLX-R30-main/PROOF/theorems/OPEN_OBLIGATIONS.md): the named root enumeration is now built (E8Forge) and the countable lattice facts are confirmed",
+  "status": "pass",
+  "checks": {
+    "e8_root_enumeration_is_240": true,
+    "roots_antipodally_paired": true,
+    "hemisphere_is_120_pairs": true,
+    "pfc2_decomposition_arithmetic": true,
+    "clean_hemisphere_split_120_120": true
+  },
+  "passed": 5,
+  "total": 5,
+  "explicitly_not_claimed": [
+    "the '13 boundary half-vignettes' geometric count (an observer light-cone claim, not fixed by root enumeration) \u2014 remains OPEN",
+    "the identification 1/137 = fine structure constant (a physical hypothesis) \u2014 NOT tested or endorsed"
+  ]
+}
