@@ -119,7 +119,10 @@ Status meanings:
 | 24.25 | review-source | KnightForge toolkit supplement present. |
 | 24.50 | review-source | KnightForge claim contract supplement present. |
 | 24.75 | review-source | KnightForge next-state precondition supplement present. |
-| 25 | fallback-body | Promote from production body into strict scientific paper. |
+| 25 | review-source | Strict scientific rewrite present; companion supports drafted; local verifier promoted. |
+| 25.25 | review-source | Energetic traversal toolkit supplement present. |
+| 25.50 | review-source | Energetic traversal claim contract supplement present. |
+| 25.75 | review-source | Energetic traversal next-state precondition supplement present. |
 | 26 | fallback-body | Promote from production body into strict scientific paper. |
 | 27 | fallback-body | Promote from production body into strict scientific paper. |
 | 28 | fallback-body | Promote from production body into strict scientific paper. |

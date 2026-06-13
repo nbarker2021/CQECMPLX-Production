@@ -1,6 +1,6 @@
 {
   "built_on": "2026-06-12",
-  "paper_count": 108,
+  "paper_count": 111,
   "outputs": [
     {
       "paper": "CQE-paper-00",
@@ -606,7 +606,25 @@
       "paper": "CQE-paper-25",
       "title": "Paper 25 - Energetic Traversal Maps",
       "pdf": "Papers\\PDF\\CQE-paper-25_paper-25-energetic-traversal-maps.pdf",
-      "bytes": 7489
+      "bytes": 7740
+    },
+    {
+      "paper": "CQE-paper-25.25",
+      "title": "Paper 25.25 - Energetic Traversal Toolkit Supplement",
+      "pdf": "Papers\\PDF\\CQE-paper-25.25_paper-25-25-energetic-traversal-toolkit-supplement.pdf",
+      "bytes": 3209
+    },
+    {
+      "paper": "CQE-paper-25.50",
+      "title": "Paper 25.50 - Energetic Traversal Claim Contract",
+      "pdf": "Papers\\PDF\\CQE-paper-25.50_paper-25-50-energetic-traversal-claim-contract.pdf",
+      "bytes": 3173
+    },
+    {
+      "paper": "CQE-paper-25.75",
+      "title": "Paper 25.75 - Energetic Traversal Next-State Precondition",
+      "pdf": "Papers\\PDF\\CQE-paper-25.75_paper-25-75-energetic-traversal-next-state-precondition.pdf",
+      "bytes": 3004
     },
     {
       "paper": "CQE-paper-26",

@@ -1,0 +1,318 @@
+{
+  "paper": "CQE-paper-25",
+  "title": "Energetic Traversal Maps",
+  "status": "pass_with_open_obligations",
+  "closed_claim": "A CQE traversal can carry a replayable unit-agnostic NSL ledger; step theta values add along the path, closed paths satisfy theta_path <= 0, and non-closing or uncalibrated rows are emitted as obligations.",
+  "transport_spine": {
+    "status": "pass_with_open_lifts",
+    "row_count": 4,
+    "demonstrated_count": 2,
+    "open_lift_count": 2,
+    "rows": [
+      {
+        "id": "LCR_TO_D4_AXIS_SHEET",
+        "source_object": "{0,1}^3 LCR chart state",
+        "target_object": "D4-style (axis, sheet) token",
+        "map": "ANTIPODAL_LABEL[state], SHEET_SIGN[state]",
+        "preserved_quantity": "lossless recovery of all eight chart states",
+        "failure_condition": "two chart states share one (axis, sheet) token",
+        "witness": "verify_chart_codec_d4",
+        "classification": "demonstrated",
+        "proof_boundary": "finite codec; does not derive a cold-start token from depth N"
+      },
+      {
+        "id": "D4_TO_J3O_DIAGONAL_CARRIER",
+        "source_object": "LCR diagonal chart state and shell strata",
+        "target_object": "J3(O) diagonal and trace-2 idempotent carrier",
+        "map": "(L,C,R) -> diag(L,C,R)",
+        "preserved_quantity": "trace strata, diagonal idempotency, LR/Weyl permutation",
+        "failure_condition": "Jordan idempotency or LR permutation preservation fails",
+        "witness": "verify_j3o_axioms",
+        "classification": "demonstrated",
+        "proof_boundary": "diagonal carrier is finite; broader F4 transport is not implied automatically"
+      },
+      {
+        "id": "J3O_TO_G2_F4_T5A_ROUTE",
+        "source_object": "J3(O) chart carrier",
+        "target_object": "G2 -> F4 -> T5A conjugate route",
+        "map": "conjugate_triple_route(N, enumeration_bit_fn)",
+        "preserved_quantity": "bounded paired route metadata across at most three named stages",
+        "failure_condition": "bounded route exceeds three stages or is mistaken for a depth-only readout",
+        "witness": "verify_conjugate_triple",
+        "classification": "bounded_local",
+        "proof_boundary": "local oracle-backed classifier exists; it does not derive the bit from depth N"
+      },
+      {
+        "id": "EXCEPTIONAL_ROUTE_TO_NIEMEIER_LANDING_FORMS",
+        "source_object": "exceptional-group route metadata",
+        "target_object": "rank-24 Niemeier and Leech landing-form registry",
+        "map": "registered terminal IDs and component product sheets",
+        "preserved_quantity": "named terminal root-system metadata",
+        "failure_condition": "landing form is treated as computation without a proved fingerprint map",
+        "witness": "ledger.build.NIEMEIER_FORMS and lookup cache registry",
+        "classification": "registered_landing_forms",
+        "proof_boundary": "landing forms are registered targets, not automatic proof closure"
+      }
+    ]
+  },
+  "voa_default_cost": {
+    "status": "pass",
+    "weight_distribution": {
+      "0": 2,
+      "5": 6
+    },
+    "seed_partition_function": "Z(q) = 2q^0 + 6q^5"
+  },
+  "traversals": {
+    "paths": [
+      {
+        "path_id": "closing_normalized_spine",
+        "step_count": 3,
+        "rows": [
+          {
+            "step_id": "c1",
+            "transport_id": "LCR_TO_D4_AXIS_SHEET",
+            "source": "{0,1}^3",
+            "target": "D4 axis/sheet",
+            "state": [
+              0,
+              0,
+              0
+            ],
+            "voa_weight": 0,
+            "unit_policy": "normalized_analog_units",
+            "nsl": {
+              "noether_residue": 0.1,
+              "shannon_residue": 0.2,
+              "landauer_cost": 0.1,
+              "absorption_capacity": 0.6,
+              "alpha": 1.0,
+              "beta": 1.0,
+              "gamma": 1.0,
+              "theta": -0.19999999999999996,
+              "closes_internally": true
+            },
+            "theta": -0.19999999999999996,
+            "closes_internally": true,
+            "obligation": null
+          },
+          {
+            "step_id": "c2",
+            "transport_id": "D4_TO_J3O_DIAGONAL_CARRIER",
+            "source": "D4 axis/sheet",
+            "target": "J3(O) diagonal carrier",
+            "state": [
+              0,
+              1,
+              0
+            ],
+            "voa_weight": 5,
+            "unit_policy": "normalized_analog_units",
+            "nsl": {
+              "noether_residue": 0.2,
+              "shannon_residue": 0.1,
+              "landauer_cost": 0.2,
+              "absorption_capacity": 0.55,
+              "alpha": 1.0,
+              "beta": 1.0,
+              "gamma": 1.0,
+              "theta": -0.050000000000000044,
+              "closes_internally": true
+            },
+            "theta": -0.050000000000000044,
+            "closes_internally": true,
+            "obligation": null
+          },
+          {
+            "step_id": "c3",
+            "transport_id": "J3O_TO_G2_F4_T5A_ROUTE",
+            "source": "J3(O) carrier",
+            "target": "G2/F4/T5A route",
+            "state": [
+              1,
+              1,
+              1
+            ],
+            "voa_weight": 0,
+            "unit_policy": "normalized_analog_units",
+            "nsl": {
+              "noether_residue": 0.05,
+              "shannon_residue": 0.05,
+              "landauer_cost": 0.1,
+              "absorption_capacity": 0.3,
+              "alpha": 1.0,
+              "beta": 1.0,
+              "gamma": 1.0,
+              "theta": -0.09999999999999998,
+              "closes_internally": true
+            },
+            "theta": -0.09999999999999998,
+            "closes_internally": true,
+            "obligation": null
+          }
+        ],
+        "theta_path": -0.35,
+        "closes_as_path": true,
+        "open_steps": [],
+        "accepted_as_physical_energy": false
+      },
+      {
+        "path_id": "open_uncalibrated_lift",
+        "step_count": 2,
+        "rows": [
+          {
+            "step_id": "o1",
+            "transport_id": "LCR_TO_D4_AXIS_SHEET",
+            "source": "{0,1}^3",
+            "target": "D4 axis/sheet",
+            "state": [
+              0,
+              0,
+              1
+            ],
+            "voa_weight": 5,
+            "unit_policy": "normalized_analog_units",
+            "nsl": {
+              "noether_residue": 0.25,
+              "shannon_residue": 0.25,
+              "landauer_cost": 0.25,
+              "absorption_capacity": 0.5,
+              "alpha": 1.0,
+              "beta": 1.0,
+              "gamma": 1.0,
+              "theta": 0.25,
+              "closes_internally": false
+            },
+            "theta": 0.25,
+            "closes_internally": false,
+            "obligation": "boundary_residue_exceeds_absorption"
+          },
+          {
+            "step_id": "o2",
+            "transport_id": "EXCEPTIONAL_ROUTE_TO_NIEMEIER_LANDING_FORMS",
+            "source": "exceptional route metadata",
+            "target": "Niemeier landing form",
+            "state": [
+              1,
+              0,
+              0
+            ],
+            "voa_weight": 5,
+            "unit_policy": "uncalibrated_domain_units",
+            "nsl": {
+              "noether_residue": 0.4,
+              "shannon_residue": 0.3,
+              "landauer_cost": 0.2,
+              "absorption_capacity": 0.25,
+              "alpha": 1.0,
+              "beta": 1.0,
+              "gamma": 1.0,
+              "theta": 0.6499999999999999,
+              "closes_internally": false
+            },
+            "theta": 0.6499999999999999,
+            "closes_internally": false,
+            "obligation": "boundary_residue_exceeds_absorption"
+          }
+        ],
+        "theta_path": 0.8999999999999999,
+        "closes_as_path": false,
+        "open_steps": [
+          "o1",
+          "o2"
+        ],
+        "accepted_as_physical_energy": false
+      }
+    ]
+  },
+  "checks": [
+    {
+      "name": "NSLTerm computes weighted theta and closure gate",
+      "pass": true,
+      "detail": {
+        "sample_theta": 2.4,
+        "expected_theta": 2.4,
+        "sample_closes": false
+      }
+    },
+    {
+      "name": "transport obligation spine verifies with open lifts carried",
+      "pass": true,
+      "detail": {
+        "status": "pass_with_open_lifts",
+        "row_count": 4,
+        "demonstrated_count": 2,
+        "open_lift_count": 2
+      }
+    },
+    {
+      "name": "VOA default analog cost is 2 plus 6",
+      "pass": true,
+      "detail": {
+        "status": "pass",
+        "weight_distribution": {
+          "0": 2,
+          "5": 6
+        },
+        "seed_partition_function": "Z(q) = 2q^0 + 6q^5"
+      }
+    },
+    {
+      "name": "traversal additivity holds for normalized rows",
+      "pass": true,
+      "detail": [
+        {
+          "path_id": "closing_normalized_spine",
+          "theta_path": -0.35
+        },
+        {
+          "path_id": "open_uncalibrated_lift",
+          "theta_path": 0.8999999999999999
+        }
+      ]
+    },
+    {
+      "name": "receipt includes one closed path and one carried obligation",
+      "pass": true,
+      "detail": {
+        "closing_paths": [
+          "closing_normalized_spine"
+        ],
+        "open_step_ids": [
+          "o1",
+          "o2"
+        ]
+      }
+    },
+    {
+      "name": "unit honesty blocks physical energy promotion",
+      "pass": true,
+      "detail": {
+        "physical_energy_claim": false,
+        "calibration_required_before_joule_claim": true
+      }
+    }
+  ],
+  "open_obligations": [
+    {
+      "obligation": "physical unit calibration",
+      "status": "open",
+      "reason": "NSL rows are normalized analog accounting terms, not joules"
+    },
+    {
+      "obligation": "absorption measurement",
+      "status": "open",
+      "reason": "absorption_capacity must be supplied by a domain measurement or declared policy"
+    },
+    {
+      "obligation": "least-action or geodesic reading",
+      "status": "not_claimed",
+      "reason": "a smaller theta_path is leaner only inside the analog ledger"
+    },
+    {
+      "obligation": "NSL physical-law unification",
+      "status": "not_claimed",
+      "reason": "Noether, Shannon, and Landauer anchors remain inspirations and components, not subsumed laws"
+    }
+  ]
+}
