@@ -1,6 +1,6 @@
 {
   "built_on": "2026-06-13",
-  "paper_count": 129,
+  "paper_count": 132,
   "outputs": [
     {
       "paper": "CQE-paper-00",
@@ -772,9 +772,27 @@
     },
     {
       "paper": "CQE-paper-32",
-      "title": "CQE Paper 32 \u2014 The Supervisor Cursor: Superpermutations as the Compressed Dimensional Action Graph",
-      "pdf": "Papers\\PDF\\CQE-paper-32_cqe-paper-32-the-supervisor-cursor-superpermutations-as-the-compressed-dimensional-action-graph.pdf",
-      "bytes": 9883
+      "title": "Paper 32 - The Supervisor Cursor",
+      "pdf": "Papers\\PDF\\CQE-paper-32_paper-32-the-supervisor-cursor.pdf",
+      "bytes": 7398
+    },
+    {
+      "paper": "CQE-paper-32.25",
+      "title": "Paper 32.25 - Supervisor Cursor Toolkit Supplement",
+      "pdf": "Papers\\PDF\\CQE-paper-32.25_paper-32-25-supervisor-cursor-toolkit-supplement.pdf",
+      "bytes": 3277
+    },
+    {
+      "paper": "CQE-paper-32.50",
+      "title": "Paper 32.50 - Supervisor Cursor Claim Contract",
+      "pdf": "Papers\\PDF\\CQE-paper-32.50_paper-32-50-supervisor-cursor-claim-contract.pdf",
+      "bytes": 3086
+    },
+    {
+      "paper": "CQE-paper-32.75",
+      "title": "Paper 32.75 - Supervisor Cursor Next-State Preconditions",
+      "pdf": "Papers\\PDF\\CQE-paper-32.75_paper-32-75-supervisor-cursor-next-state-preconditions.pdf",
+      "bytes": 3037
     }
   ]
 }

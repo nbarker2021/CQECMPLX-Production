@@ -147,7 +147,10 @@ Status meanings:
 | 31.25 | review-source | Meta LCR readout toolkit supplement present. |
 | 31.50 | review-source | Meta LCR readout claim contract supplement present. |
 | 31.75 | review-source | Meta LCR readout next-state precondition supplement present. |
-| 32 | fallback-body | Promote from production body into strict scientific paper. |
+| 32 | review-source | Strict scientific rewrite present; companion supports drafted; local verifier promoted. |
+| 32.25 | review-source | Supervisor cursor toolkit supplement present. |
+| 32.50 | review-source | Supervisor cursor claim contract supplement present. |
+| 32.75 | review-source | Supervisor cursor next-state precondition supplement present. |
 
 ## Companion Paper Requirement
 
@@ -159,6 +162,8 @@ N.50 claim contract / linked review
 N.75 application as next-state precondition
 ```
 
-The first interval has drafts for `0.25`, `0.50`, `0.75`, `1.25`, `1.50`,
-and `1.75`. Future interval companions remain `companion-needed` until
-drafted and built.
+All intervals currently tracked in this production paper set have `.25`,
+`.50`, and `.75` companion drafts built into the review PDF manifest. The
+remaining work is polish, proof tightening, cross-paper citation repair, and
+promotion of supporting package obligations into the installable kernel/lib
+surface where the receipts identify them.

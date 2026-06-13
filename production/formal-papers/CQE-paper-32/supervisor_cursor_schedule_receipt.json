@@ -1,0 +1,521 @@
+{
+  "checks": [
+    {
+      "detail": [
+        {
+          "chart_walk": 33,
+          "coverage_valid": true,
+          "egan_upper": 34,
+          "gap_to_lower": 0,
+          "length": 33,
+          "lower_bound": 33,
+          "meets_egan": true,
+          "minimality_claim": "closed",
+          "n": 4,
+          "provenance": "minimal",
+          "schedule_claim": "coverage_validated",
+          "status": "validated"
+        },
+        {
+          "chart_walk": 153,
+          "coverage_valid": true,
+          "egan_upper": 154,
+          "gap_to_lower": 1,
+          "length": 153,
+          "lower_bound": 152,
+          "meets_egan": true,
+          "minimality_claim": "closed",
+          "n": 5,
+          "provenance": "minimal",
+          "schedule_claim": "coverage_validated",
+          "status": "validated"
+        },
+        {
+          "chart_walk": 873,
+          "coverage_valid": true,
+          "egan_upper": 873,
+          "gap_to_lower": 6,
+          "length": 873,
+          "lower_bound": 867,
+          "meets_egan": true,
+          "minimality_claim": "not_claimed",
+          "n": 6,
+          "provenance": "record",
+          "schedule_claim": "coverage_validated",
+          "status": "validated"
+        },
+        {
+          "chart_walk": 5913,
+          "coverage_valid": true,
+          "egan_upper": 5908,
+          "gap_to_lower": 24,
+          "length": 5908,
+          "lower_bound": 5884,
+          "meets_egan": true,
+          "minimality_claim": "not_claimed",
+          "n": 7,
+          "provenance": "record",
+          "schedule_claim": "coverage_validated",
+          "status": "validated"
+        },
+        {
+          "chart_walk": 46233,
+          "coverage_valid": true,
+          "egan_upper": 46205,
+          "gap_to_lower": 120,
+          "length": 46205,
+          "lower_bound": 46085,
+          "meets_egan": true,
+          "minimality_claim": "not_claimed",
+          "n": 8,
+          "provenance": "record",
+          "schedule_claim": "coverage_validated",
+          "status": "validated"
+        }
+      ],
+      "name": "records_4_to_8_validate_coverage",
+      "pass": true
+    },
+    {
+      "detail": [
+        {
+          "chart_walk": 33,
+          "coverage_valid": true,
+          "egan_upper": 34,
+          "gap_to_lower": 0,
+          "length": 33,
+          "lower_bound": 33,
+          "meets_egan": true,
+          "minimality_claim": "closed",
+          "n": 4,
+          "provenance": "minimal",
+          "schedule_claim": "coverage_validated",
+          "status": "validated"
+        },
+        {
+          "chart_walk": 153,
+          "coverage_valid": true,
+          "egan_upper": 154,
+          "gap_to_lower": 1,
+          "length": 153,
+          "lower_bound": 152,
+          "meets_egan": true,
+          "minimality_claim": "closed",
+          "n": 5,
+          "provenance": "minimal",
+          "schedule_claim": "coverage_validated",
+          "status": "validated"
+        },
+        {
+          "chart_walk": 873,
+          "coverage_valid": true,
+          "egan_upper": 873,
+          "gap_to_lower": 6,
+          "length": 873,
+          "lower_bound": 867,
+          "meets_egan": true,
+          "minimality_claim": "not_claimed",
+          "n": 6,
+          "provenance": "record",
+          "schedule_claim": "coverage_validated",
+          "status": "validated"
+        },
+        {
+          "chart_walk": 5913,
+          "coverage_valid": true,
+          "egan_upper": 5908,
+          "gap_to_lower": 24,
+          "length": 5908,
+          "lower_bound": 5884,
+          "meets_egan": true,
+          "minimality_claim": "not_claimed",
+          "n": 7,
+          "provenance": "record",
+          "schedule_claim": "coverage_validated",
+          "status": "validated"
+        },
+        {
+          "chart_walk": 46233,
+          "coverage_valid": true,
+          "egan_upper": 46205,
+          "gap_to_lower": 120,
+          "length": 46205,
+          "lower_bound": 46085,
+          "meets_egan": true,
+          "minimality_claim": "not_claimed",
+          "n": 8,
+          "provenance": "record",
+          "schedule_claim": "coverage_validated",
+          "status": "validated"
+        }
+      ],
+      "name": "minimality_only_claimed_for_4_and_5",
+      "pass": true
+    },
+    {
+      "detail": {
+        "chart_walk": 46233,
+        "coverage_valid": true,
+        "egan_upper": 46205,
+        "gap_to_lower": 120,
+        "length": 46205,
+        "lower_bound": 46085,
+        "meets_egan": true,
+        "minimality_claim": "not_claimed",
+        "n": 8,
+        "provenance": "record",
+        "schedule_claim": "coverage_validated",
+        "status": "validated"
+      },
+      "name": "n8_record_matches_egan_upper",
+      "pass": true
+    },
+    {
+      "detail": {
+        "coverage_valid": true,
+        "egan_upper": 46205,
+        "expected_chart_walk_length": 46233,
+        "length": 46233,
+        "lower_bound": 46085,
+        "n": 8,
+        "open_corridor": 120
+      },
+      "name": "n8_open_corridor_is_120",
+      "pass": true
+    },
+    {
+      "detail": {
+        "coverage_valid": true,
+        "egan_upper": 46205,
+        "expected_chart_walk_length": 46233,
+        "length": 46233,
+        "lower_bound": 46085,
+        "n": 8,
+        "open_corridor": 120
+      },
+      "name": "recursive_n8_chart_walk_covers",
+      "pass": true
+    },
+    {
+      "detail": {
+        "octad_count": 8
+      },
+      "name": "n5_octad_has_eight_schedules",
+      "pass": true
+    },
+    {
+      "detail": {
+        "fixed": [
+          0,
+          1,
+          4,
+          6
+        ],
+        "pairs": [
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            7
+          ]
+        ]
+      },
+      "name": "n5_reversal_orbit_4_fixed_2_pairs",
+      "pass": true
+    },
+    {
+      "detail": {
+        "cursor_is_content": false,
+        "first_dispatch_rows": [
+          {
+            "cursor": 0,
+            "item": "C"
+          },
+          {
+            "cursor": 1,
+            "item": "L"
+          },
+          {
+            "cursor": 2,
+            "item": "R"
+          },
+          {
+            "cursor": 3,
+            "item": "B"
+          },
+          {
+            "cursor": 4,
+            "item": "C"
+          },
+          {
+            "cursor": 5,
+            "item": "L"
+          },
+          {
+            "cursor": 6,
+            "item": "R"
+          },
+          {
+            "cursor": 7,
+            "item": "C"
+          },
+          {
+            "cursor": 8,
+            "item": "B"
+          },
+          {
+            "cursor": 9,
+            "item": "L"
+          },
+          {
+            "cursor": 10,
+            "item": "R"
+          },
+          {
+            "cursor": 11,
+            "item": "C"
+          }
+        ],
+        "item_count": 4,
+        "items": [
+          "C",
+          "L",
+          "R",
+          "B"
+        ],
+        "normal_form": "No request, no C: C is produced only by an enumeration request.",
+        "status": {
+          "cursor": 0,
+          "length": 33,
+          "n": 4,
+          "palindrome": true
+        }
+      },
+      "name": "supervisor_cursor_dispatches_requests_not_content",
+      "pass": true
+    },
+    {
+      "detail": {
+        "block": "block-03-papers-25-32",
+        "block_next": "CQE-paper-25",
+        "block_papers": [
+          "CQE-paper-25",
+          "CQE-paper-26",
+          "CQE-paper-27",
+          "CQE-paper-28",
+          "CQE-paper-29",
+          "CQE-paper-30",
+          "CQE-paper-31",
+          "CQE-paper-32"
+        ],
+        "block_previous": "CQE-paper-31",
+        "has_deployment_kernel_component": true,
+        "paper": "CQE-paper-32",
+        "paper_00_contract": "CQE-paper-00",
+        "suite": "CQECMPLX 32-Paper Kernel Suite",
+        "suite_next": "CQE-paper-01",
+        "suite_previous": "CQE-paper-31",
+        "suite_wrap": "CQE-paper-32 -> CQE-paper-01",
+        "title": "The Supervisor Cursor"
+      },
+      "name": "kernel_selector_wraps_to_paper01",
+      "pass": true
+    }
+  ],
+  "closed_scope": [
+    "superpermutation coverage records for n=4..8 validate",
+    "n=4 length 33 and n=5 length 153 are treated as closed minimality rows",
+    "n=6..8 are validated schedules and bounds rows, not minimality proofs",
+    "n=8 Egan upper row is 46205 and lower-bound corridor is 120",
+    "supervisor cursor dispatches enumeration requests rather than replacing proof content",
+    "paper-kernel selector wraps Paper 32 forward to Paper 01 for active-suite retest"
+  ],
+  "kernel_selector": {
+    "block": "block-03-papers-25-32",
+    "block_next": "CQE-paper-25",
+    "block_papers": [
+      "CQE-paper-25",
+      "CQE-paper-26",
+      "CQE-paper-27",
+      "CQE-paper-28",
+      "CQE-paper-29",
+      "CQE-paper-30",
+      "CQE-paper-31",
+      "CQE-paper-32"
+    ],
+    "block_previous": "CQE-paper-31",
+    "has_deployment_kernel_component": true,
+    "paper": "CQE-paper-32",
+    "paper_00_contract": "CQE-paper-00",
+    "suite": "CQECMPLX 32-Paper Kernel Suite",
+    "suite_next": "CQE-paper-01",
+    "suite_previous": "CQE-paper-31",
+    "suite_wrap": "CQE-paper-32 -> CQE-paper-01",
+    "title": "The Supervisor Cursor"
+  },
+  "not_claimed": [
+    "minimality for n >= 6",
+    "the cursor as ribbon content",
+    "closure of all suite obligations",
+    "a final metaphysical observation theorem"
+  ],
+  "open_obligations": [
+    "Ship independent n=6 and n=7 field-record receipts if shorter records are promoted.",
+    "Close or narrow the n=8 corridor below 46205 before claiming minimality.",
+    "Keep Paper 32 selectors from hiding proof/open/readout status.",
+    "Replace citation anchors with final bibliography entries and external review."
+  ],
+  "paper": "CQE-paper-32",
+  "records": [
+    {
+      "chart_walk": 33,
+      "coverage_valid": true,
+      "egan_upper": 34,
+      "gap_to_lower": 0,
+      "length": 33,
+      "lower_bound": 33,
+      "meets_egan": true,
+      "minimality_claim": "closed",
+      "n": 4,
+      "provenance": "minimal",
+      "schedule_claim": "coverage_validated",
+      "status": "validated"
+    },
+    {
+      "chart_walk": 153,
+      "coverage_valid": true,
+      "egan_upper": 154,
+      "gap_to_lower": 1,
+      "length": 153,
+      "lower_bound": 152,
+      "meets_egan": true,
+      "minimality_claim": "closed",
+      "n": 5,
+      "provenance": "minimal",
+      "schedule_claim": "coverage_validated",
+      "status": "validated"
+    },
+    {
+      "chart_walk": 873,
+      "coverage_valid": true,
+      "egan_upper": 873,
+      "gap_to_lower": 6,
+      "length": 873,
+      "lower_bound": 867,
+      "meets_egan": true,
+      "minimality_claim": "not_claimed",
+      "n": 6,
+      "provenance": "record",
+      "schedule_claim": "coverage_validated",
+      "status": "validated"
+    },
+    {
+      "chart_walk": 5913,
+      "coverage_valid": true,
+      "egan_upper": 5908,
+      "gap_to_lower": 24,
+      "length": 5908,
+      "lower_bound": 5884,
+      "meets_egan": true,
+      "minimality_claim": "not_claimed",
+      "n": 7,
+      "provenance": "record",
+      "schedule_claim": "coverage_validated",
+      "status": "validated"
+    },
+    {
+      "chart_walk": 46233,
+      "coverage_valid": true,
+      "egan_upper": 46205,
+      "gap_to_lower": 120,
+      "length": 46205,
+      "lower_bound": 46085,
+      "meets_egan": true,
+      "minimality_claim": "not_claimed",
+      "n": 8,
+      "provenance": "record",
+      "schedule_claim": "coverage_validated",
+      "status": "validated"
+    }
+  ],
+  "recursive_n8": {
+    "coverage_valid": true,
+    "egan_upper": 46205,
+    "expected_chart_walk_length": 46233,
+    "length": 46233,
+    "lower_bound": 46085,
+    "n": 8,
+    "open_corridor": 120
+  },
+  "scheduler": {
+    "cursor_is_content": false,
+    "first_dispatch_rows": [
+      {
+        "cursor": 0,
+        "item": "C"
+      },
+      {
+        "cursor": 1,
+        "item": "L"
+      },
+      {
+        "cursor": 2,
+        "item": "R"
+      },
+      {
+        "cursor": 3,
+        "item": "B"
+      },
+      {
+        "cursor": 4,
+        "item": "C"
+      },
+      {
+        "cursor": 5,
+        "item": "L"
+      },
+      {
+        "cursor": 6,
+        "item": "R"
+      },
+      {
+        "cursor": 7,
+        "item": "C"
+      },
+      {
+        "cursor": 8,
+        "item": "B"
+      },
+      {
+        "cursor": 9,
+        "item": "L"
+      },
+      {
+        "cursor": 10,
+        "item": "R"
+      },
+      {
+        "cursor": 11,
+        "item": "C"
+      }
+    ],
+    "item_count": 4,
+    "items": [
+      "C",
+      "L",
+      "R",
+      "B"
+    ],
+    "normal_form": "No request, no C: C is produced only by an enumeration request.",
+    "status": {
+      "cursor": 0,
+      "length": 33,
+      "n": 4,
+      "palindrome": true
+    }
+  },
+  "status": "pass_with_open_minimality_obligations",
+  "title": "The Supervisor Cursor"
+}
