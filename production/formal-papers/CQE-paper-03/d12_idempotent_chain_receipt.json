@@ -1,0 +1,20 @@
+{
+  "paper": "CQE-paper-03",
+  "theorem": "D12 idempotent chain (T_D12_CHAIN): the D12 group acts on the D4 chart by idempotents, matches the Weyl (1,3) involution, preserves the trace-2 idempotent stratum, and permutes the D4 antipodal axis classes",
+  "forge": "lattice_forge.d12_action (reapplied)",
+  "reapplication": true,
+  "closes": "paper-binding gap for THEOREM_REGISTRY T_D12_CHAIN (PROVEN, verifiers in lattice_forge/d12_action.py, bound to no production paper)",
+  "ties_to": "GroundingForge p00 (idempotence as binding invariant), ConvergeForge p03 (S3 annealing + D4 atlas)",
+  "source_module": "lattice_forge/d12_action.py",
+  "status": "pass",
+  "checks": {
+    "d12_group_axioms": true,
+    "d12_idempotent_chain": true,
+    "d12_action_matches_weyl_13": true,
+    "d12_color_action_preserves_trace2": true,
+    "d12_conjugation_permutes_d4_axis_classes": true,
+    "d12_orbit_on_d4_states": true
+  },
+  "passed": 6,
+  "total": 6
+}
