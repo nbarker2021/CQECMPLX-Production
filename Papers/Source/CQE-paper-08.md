@@ -49,6 +49,10 @@ a closed Gamma72 landing proof.
 E8^3 carriers, Leech type-1/2/3 orbit checks, and the Nebe 72 contract, while
 leaving exact final glue-coset representatives as pending invariants.
 
+**Claim 8.7a.** O7 is closed for `Niemeier:E8^3`: the exact Construction A
+glue code is the single zero coset `{0}`, and the terminal embedding closes
+with identity glue.
+
 **Claim 8.8.** The rebuilt seed ledger contains the eight canonical T8 `F4` to
 Niemeier terminal paths, each returning `yes_with_template_glue`.
 
@@ -90,6 +94,14 @@ carrier, Leech type-1/2/3 orbit, and Nebe 72 contract checks. It advances O7
 as a partial resolution. It does not close the exact integer-vector glue-coset
 representatives at the final edge and does not claim the rootless Leech landing
 as proved.
+
+## Theorem 8.2a - O7 Exact E8^3 Glue Closure
+
+The exact `Niemeier:E8^3` glue-coset obligation is closed for the E8-cubed
+terminal. Since E8 is even unimodular with determinant 1, `E8^3` is even
+unimodular in dimension 24 with trivial discriminant group. Therefore the
+exact Construction A glue code is `{0}`, the single zero coset, and the
+terminal embedding closes with identity glue.
 
 ## Theorem 8.3 - T8 Commutability Tree
 
@@ -166,6 +178,13 @@ Nebe 72 contract. These checks paper-bind the finite enumeration layer. The
 receipt also records pending invariants and `leech_landing_proved = false`,
 so the proof cannot silently promote the stronger landing.
 
+The O7 exact E8-cubed verifier applies E8Forge over three E8 blocks. E8 has
+Cartan determinant 1, so the direct sum has determinant `1^3 = 1`. A trivial
+discriminant group has one coset, the zero coset. The verifier also checks the
+expected 720 roots of `E8^3`, distinguishing the terminal from rootless Leech.
+This closes O7 exactly for `Niemeier:E8^3` while leaving nontrivial Leech and
+Gamma72 claims outside the theorem.
+
 The T8 verifier builds a temporary seed database and queries
 `Forge.can_close("F4", target)` for the eight named Niemeier terminals. It
 checks the returned path, terminal uniqueness, trunk nodes, and
@@ -180,6 +199,8 @@ The primary executable receipt is:
 ```text
 production/formal-papers/CQE-paper-08/verify_lattice_closure_template.py
 production/formal-papers/CQE-paper-08/lattice_closure_template_receipt.json
+production/formal-papers/CQE-paper-08/verify_o7_niemeier_e8cubed_glue_closed.py
+production/formal-papers/CQE-paper-08/o7_niemeier_e8cubed_glue_closed_receipt.json
 production/formal-papers/CQE-paper-08/verify_niemeier_leech_enumeration.py
 production/formal-papers/CQE-paper-08/niemeier_leech_enumeration_receipt.json
 production/formal-papers/CQE-paper-08/verify_t8_commutability_tree.py
@@ -203,6 +224,8 @@ leech_type2_orbit                                 = true
 leech_type3_orbit                                 = true
 nebe_gamma72_contract                             = true
 exact_final_glue_coset_representatives_pending    = true
+o7_e8cubed_exact_glue_cosets_are_zero_coset       = true
+o7_e8cubed_terminal_embedding_identity_glue       = true
 t8_paths_count_is_8                               = true
 t8_all_paths_match_historical_report              = true
 t8_answers_are_yes_with_template_glue             = true
@@ -241,14 +264,16 @@ unclosed global landing.
 
 ## Open Audit Boundaries
 
-1. Exact integer-vector glue-coset representatives for the final Niemeier:E8^3
-   edge remain pending.
-2. A rootless Leech landing proof requires an explicit glue-action verifier
+1. O7 is closed for `Niemeier:E8^3` as the exact zero-coset/identity-glue
+   terminal embedding.
+2. Exact glue representatives for nontrivial Niemeier or Leech-facing
+   terminals remain separate obligations.
+3. A rootless Leech landing proof requires an explicit glue-action verifier
    that sets `leech_landing_proved = true`.
-3. A Gamma72 landing proof requires selected Hermitian polarization matrices.
-4. A cold-start map from arbitrary depth to a Niemeier/Leech fingerprint
+4. A Gamma72 landing proof requires selected Hermitian polarization matrices.
+5. A cold-start map from arbitrary depth to a Niemeier/Leech fingerprint
    remains outside this paper.
-5. The claim that this is the only possible closure chain is not part of the
+6. The claim that this is the only possible closure chain is not part of the
    theorem.
 
 ## Conclusion

@@ -82,6 +82,14 @@ E8^3 carrier, Leech type-1/2/3 orbit, and Nebe 72 contract checks. It advances
 O7, but it does not close the exact integer-vector glue-coset representatives
 at the final edge and does not promote a rootless Leech landing as proved.
 
+**Theorem 8.2a, O7 Exact E8^3 Glue Closure.** The exact
+`Niemeier:E8^3` glue-coset obligation is closed for the E8-cubed terminal:
+E8 is even unimodular with determinant 1, so `E8^3` is even unimodular in
+dimension 24 with trivial discriminant group. The exact Construction A glue
+cosets are the single zero coset `{0}`, and the terminal embedding closes with
+identity glue. This does not promote the rootless Leech landing or Gamma72
+polarization.
+
 **Theorem 8.3, T8 Commutability Tree.** A rebuilt lattice-forge seed ledger
 contains the eight canonical `F4` to Niemeier terminal paths recorded by T8.
 Each queried target returns `yes_with_template_glue`, the path matches the
@@ -131,6 +139,14 @@ invariants for the stronger glue-coset claim and leaves `leech_landing_proved`
 false. Therefore the enumeration layer is paper-bound as a partial O7
 resolution, not as a hidden proof of the full landing. QED.
 
+For Theorem 8.2a, the E8-cubed glue verifier applies E8Forge over three E8
+blocks. The E8 Cartan determinant is 1, so each E8 block is unimodular and
+self-dual; the direct sum has determinant `1^3 = 1`. A trivial discriminant
+group has exactly one coset, the zero coset, so the exact Construction A glue
+for `Niemeier:E8^3` is `{0}` and the embedding closes with identity glue. The
+verifier also checks the expected 720-root count, distinguishing this terminal
+from the rootless Leech case. QED.
+
 For Theorem 8.3, the verifier builds a temporary seed database, queries
 `Forge.can_close("F4", target)` for the eight named terminals, and checks that
 every answer is `yes_with_template_glue`. It also checks that each returned
@@ -179,6 +195,7 @@ The production verifier is:
 
 ```text
 production/formal-papers/CQE-paper-08/verify_lattice_closure_template.py
+production/formal-papers/CQE-paper-08/verify_o7_niemeier_e8cubed_glue_closed.py
 production/formal-papers/CQE-paper-08/verify_niemeier_leech_enumeration.py
 production/formal-papers/CQE-paper-08/verify_t8_commutability_tree.py
 ```
@@ -205,21 +222,26 @@ It verifies:
 6. Leech and Gamma72 overclaims are rejected.
 7. Niemeier/Leech enumeration passes for deterministic selectors, E8^3
    carriers, Leech type-1/2/3 orbits, and the Nebe 72 contract.
-8. Exact integer-vector glue-coset representatives remain pending invariants.
-9. The rebuilt seed ledger returns the eight T8 `F4` to Niemeier terminal
+8. O7 exact `Niemeier:E8^3` glue closes as the single zero coset `{0}` with
+   identity glue.
+9. Broader exact glue representatives beyond the E8-cubed zero-coset case
+   remain outside this theorem.
+10. The rebuilt seed ledger returns the eight T8 `F4` to Niemeier terminal
    paths with `yes_with_template_glue`.
 ```
 
 ## Open Audit Boundaries
 
-1. Exact integer-vector glue-coset representatives for the final Niemeier:E8^3
-   edge remain pending.
-2. A rootless Leech landing proof requires an explicit glue-action verifier
+1. O7 is closed for `Niemeier:E8^3` as the exact zero-coset/identity-glue
+   terminal embedding.
+2. Exact glue representatives for nontrivial Niemeier or Leech-facing
+   terminals remain separate obligations.
+3. A rootless Leech landing proof requires an explicit glue-action verifier
    that sets `leech_landing_proved = true`.
-3. A Gamma72 landing proof requires selected Hermitian polarization matrices.
-4. A cold-start map from arbitrary depth to a Niemeier/Leech fingerprint
+4. A Gamma72 landing proof requires selected Hermitian polarization matrices.
+5. A cold-start map from arbitrary depth to a Niemeier/Leech fingerprint
    remains outside this paper.
-5. The claim that this is the only possible closure chain is not part of the
+6. The claim that this is the only possible closure chain is not part of the
    theorem; Paper 08 proves this chain as the suite's active closure template.
 
 ## Conclusion

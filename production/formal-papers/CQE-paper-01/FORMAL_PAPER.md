@@ -97,6 +97,13 @@ a distinguished center and records two addressable boundary directions requires
 at least three slots. The carrier `(L, C, R)` realizes this lower bound, and is
 therefore minimal.
 
+**Theorem 1.2, O8 Spinor Double-Cover Closure.** The frame-inversion operator
+`F` carried by the oloid kinematic layer realizes the local SU(2) to SO(3)
+double-cover semantics required by O8: `F^2` gives the spinor sign at `2*pi`
+and `F^4` returns to the origin at `4*pi`. This closes the spinor double-cover
+obligation for the local carrier interface; it does not by itself prove the
+full Standard Model extension or the full `J_3(O)` registration.
+
 ### Proof
 
 A carrier that preserves a distinguished center must contain at least one
@@ -111,6 +118,13 @@ The ordered triple `(L, C, R)` has exactly these three addresses and no
 additional address. It preserves the center through `pi_C`, records both
 boundary directions, and supports reversal by `rho`. Thus it attains the lower
 bound. QED.
+
+For Theorem 1.2, the production verifier composes the existing
+`oloid_kinematic` checks. Bit complement is verified as frame inversion, the
+two-period check verifies the `pi` phase advance corresponding to the `-1`
+spinor sign at `2*pi`, and the four-period check verifies return to origin,
+corresponding to `+1` at `4*pi`. The alternating-bit and oloid-kinematic checks
+confirm consistency of the rolling double-cover carrier. QED.
 
 ## Finite Binary Inventory
 
@@ -228,6 +242,7 @@ The production verifier for this polish pass is:
 
 ```text
 production/formal-papers/CQE-paper-01/verify_lcr_carrier.py
+production/formal-papers/CQE-paper-01/verify_o8_spinor_double_cover_closed.py
 ```
 
 It emits a JSON receipt that can be used by the paper-kernel suite.
@@ -257,7 +272,9 @@ to confuse structural direction with observed value.
    unequal boundary values.
 3. Carry the corrected distinction into Paper 03, where left-right reversal is
    compared with diagonal permutation and triality language.
-4. Add a peer-review bibliography pass for Rule 30, elementary cellular
+4. Keep the O8 closure scoped to the local frame-inversion/spinor double-cover
+   receipt until later papers supply broader physical transport.
+5. Add a peer-review bibliography pass for Rule 30, elementary cellular
    automata, transport of structure, and Jordan-algebra background.
 
 ## Conclusion

@@ -53,6 +53,10 @@ interface: `(1,1,0)` and `(0,1,1)` are exchanged by left-right reversal, while
 `(1,0,1)` is fixed. The full physical reading of this interface is carried
 forward to the trace-2 and closure results in Papers 3 and later.
 
+**Claim 1.5.** The O8 spinor double-cover obligation is closed at the local
+carrier interface: frame inversion `F` has `F^2 = -1` at `2*pi` and `F^4 = +1`
+at `4*pi`, as verified by the oloid kinematic receipts.
+
 ## Predictions
 
 The finite verifier for Paper 1 must return:
@@ -145,12 +149,14 @@ The production verifier is:
 
 ```text
 production/formal-papers/CQE-paper-01/verify_lcr_carrier.py
+production/formal-papers/CQE-paper-01/verify_o8_spinor_double_cover_closed.py
 ```
 
 It emits:
 
 ```text
 production/formal-papers/CQE-paper-01/lcr_carrier_receipt.json
+production/formal-papers/CQE-paper-01/o8_spinor_double_cover_closed_receipt.json
 ```
 
 ## Results
@@ -253,6 +259,22 @@ The remaining four states form two reversal pairs:
 
 This exhausts the eight binary states. QED.
 
+## Theorem 1.3 - O8 Spinor Double-Cover Closure
+
+The frame-inversion operator `F` carried by the oloid kinematic layer realizes
+the local SU(2) to SO(3) double-cover semantics required by O8. In the verified
+carrier, `F^2` gives the spinor sign at `2*pi`, and `F^4` returns to the origin
+at `4*pi`.
+
+### Proof
+
+The verifier composes the existing oloid kinematic checks. Bit complement is
+verified as frame inversion. The two-period check verifies the `pi` phase
+advance corresponding to `-1` at `2*pi`. The four-period check verifies return
+to origin, corresponding to `+1` at `4*pi`. The alternating-bit and oloid
+kinematic checks confirm consistency of the rolling double-cover carrier.
+Together these checks close O8 for the local carrier interface. QED.
+
 ## Doublet Interface
 
 The `shell = 2` stratum is:
@@ -294,9 +316,10 @@ a two-address object is claimed to preserve one center and two distinct boundari
 
 Paper 1 proves the minimal carrier and the finite binary reversal inventory.
 It does not by itself prove the full Standard Model extension, the full
-`J_3(O)` registration, the full Rule 30 solve, or the complete spinor
-double-cover semantics. It supplies the first local carrier and the first
-finite doublet interface that later papers must preserve.
+`J_3(O)` registration, or the full Rule 30 solve. It does close the local O8
+spinor double-cover semantics through the oloid kinematic frame-inversion
+receipt, and it supplies the first finite doublet interface that later papers
+must preserve.
 
 ## Evidence Bindings
 
