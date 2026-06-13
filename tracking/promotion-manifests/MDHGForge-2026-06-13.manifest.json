@@ -1,0 +1,58 @@
+{
+  "item_id": "MDHGForge",
+  "promotion_date": "2026-06-13",
+  "status": "forge_promoted",
+  "identity": {
+    "forge": "MDHGForge",
+    "type": "engine",
+    "role": "Multi-scale geometric hash cache with SpeedLight idempotence",
+    "paper_ref": "CQE-paper-07",
+    "registry_version": "0.18.0"
+  },
+  "pattern": "complete-unformalized work -> formalization in paper-bound space -> Forge",
+  "source_work": {
+    "repo": "nbarker2021/CMPLXDevKit",
+    "local_clone": "D:/CQE_CMPLX/g/CMPLXDevKit",
+    "state_before": "MDHG multi-scale geometric cache + self-regulating CA field live in mcp_os/agrm_mdhg_integration/mdhg_ca.py; never formalized, no forge, no proof artifact",
+    "core_modules_distilled": [
+      "mcp_os/agrm_mdhg_integration/mdhg_ca.py (MDHGCache, MDHGMultiScale, quantize, slot_of)"
+    ]
+  },
+  "adjudicated_divergence": [
+    "quantize() made total on all reals: the normalized coordinate is clamped into [0,1) before floor, so the bridge is defined on every input (source assumed inputs already in [0,1) and floor of a negative value would underflow before the min-clamp)",
+    "eviction made deterministic and replayable via a monotonic admission sequence; the source SlotEntry.last used wall-clock time, making eviction order non-deterministic under equal hit counts",
+    "the CA-field self-regulating dynamics (CAField, kernel_step, Wolfram-class assignments, neighborhood relaxation) stay product-side; the forge carries only the proven cache + idempotence core"
+  ],
+  "validated_claims": [
+    "The bridge dimension is the Leech dimension 24.",
+    "Quantize is total on all reals and lands in [0, bins).",
+    "Quantize is an idempotent retraction: re-quantizing bin-centered reconstructions is a fixed point.",
+    "Slot assignment is deterministic (double SHA-256) and lands on the grid_side x grid_side torus.",
+    "SpeedLight idempotence f(f(x)) = f(x): re-admitting the same content is a hit with distance 0 and no admission growth.",
+    "Per-slot capacity is never exceeded under heavy load (500 admits, cap 3).",
+    "Eviction is deterministic LRU by (hits, seq) and a replay produces the identical final key set.",
+    "The admission distance is the minimum Hamming distance over the slot's existing quantized vectors.",
+    "The three multi-scale layers (fast/med/slow) are independent.",
+    "Occupancy conservation: the grid sum equals the total number of live entries."
+  ],
+  "honesty_boundary": "The CA-field self-regulating dynamics are NOT bound; they need their own stability receipt. Slot collision rate against the double-hash distribution is an empirical product diagnostic, not a paper claim.",
+  "artifacts": [
+    "production/packages/cqecmplx-forge/src/MDHGForge/__init__.py",
+    "production/formal-papers/CQE-paper-07/verify_mdhg_speedlight_bridge.py",
+    "production/formal-papers/CQE-paper-07/mdhg_speedlight_bridge_receipt.json",
+    "FORGE_REGISTRY.json (v0.18.0, 27 forges)",
+    "production/packages/cqecmplx-forge/FORGE_REGISTRY.json",
+    "production/packages/cqekernel/FORGE_REGISTRY.json"
+  ],
+  "verification": {
+    "command": "python production/formal-papers/CQE-paper-07/verify_mdhg_speedlight_bridge.py",
+    "result": "pass 10/10",
+    "receipt": "production/formal-papers/CQE-paper-07/mdhg_speedlight_bridge_receipt.json"
+  },
+  "tower_link": "The 24 dimensions are the Leech dimension; the bridge addresses points of the continuous Leech space constructed exactly in LeechForge (CQE-paper-17). SpeedLight idempotence is the reuse half of the Event Law whose conserved descent is in ChromaForge morphon (CQE-paper-09).",
+  "open_obligations": [
+    "Stability receipt for the CA-field Wolfram-class kernels before promoting the dynamics.",
+    "Next profile-repo candidates: CMPLXMCP AGRM controller (auto-escalate inline->MDHG, pairs with this cache), chart8 D4 atlas bijectivity (ConvergeForge obligation), CMPLX-PartsFactory PermForge superpermutation."
+  ],
+  "notes": "Ninth promotion of the loop; fourth from the profile-repo lane. Completes a tight triangle in the corpus: LeechForge builds the 24D space (paper 17), MDHGForge addresses it as a discrete-continuous bridge with idempotent reuse (paper 07), and ChromaForge morphon supplies the conserved descent the Event Law mints on each admission (paper 09)."
+}

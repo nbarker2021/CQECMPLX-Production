@@ -1,0 +1,31 @@
+{
+  "paper": "CQE-paper-07",
+  "theorem": "MDHG geometric cache as discrete-continuous bridge: quantize retraction of the continuous 24D Leech space onto a discrete slot lattice, stabilized by SpeedLight idempotence f(f(x)) = f(x)",
+  "forge": "MDHGForge",
+  "source_repo": "nbarker2021/CMPLXDevKit (mcp_os/agrm_mdhg_integration/mdhg_ca.py)",
+  "adjudicated_divergence": [
+    "quantize() made total on all reals (input clamped into [0,1) before floor); source assumed inputs already in [0,1)",
+    "eviction made deterministic via a monotonic admission sequence (source used wall-clock time, non-deterministic under equal hits)",
+    "CA-field self-regulating dynamics (CAField, kernel_step, Wolfram assignments) stay product-side; the forge carries the proven cache + idempotence core"
+  ],
+  "tower_link": "the 24 dimensions are the Leech dimension; the bridge addresses points of the continuous Leech space constructed exactly in LeechForge (CQE-paper-17)",
+  "status": "pass",
+  "checks": {
+    "bridge_dimension_is_24": true,
+    "quantize_total_and_bounded": true,
+    "quantize_retraction_idempotent": true,
+    "slot_deterministic_on_torus": true,
+    "speedlight_admission_idempotent": true,
+    "capacity_invariant_holds": true,
+    "eviction_deterministic_replayable": true,
+    "distance_is_min_hamming": true,
+    "multiscale_layers_independent": true,
+    "occupancy_grid_conserves_entries": true
+  },
+  "passed": 10,
+  "total": 10,
+  "open_obligations": [
+    "The CA-field dynamics need their own stability receipt before promotion (Wolfram-class kernels).",
+    "Slot collision rate vs the double-hash distribution is an empirical product diagnostic, not a paper claim."
+  ]
+}

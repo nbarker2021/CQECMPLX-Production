@@ -1,5 +1,5 @@
 {
-  "version": "0.17.0",
+  "version": "0.18.0",
   "generated": "2026-06-13",
   "kernel": "cqekernel",
   "forge_ring": "cqecmplx-forge",
@@ -376,6 +376,24 @@
       "source_repo": "nbarker2021/CMPLX (VERIFICATION_REPORT constants computed, not cited)",
       "adjudicated_divergence": "report constants reproduced by construction; Golay B-matrix needs the NON-residue QR(11) convention (residue convention yields a non-Golay code, caught by the weight-enumerator check)",
       "receipt": "production/formal-papers/CQE-paper-17/golay_leech_tower_receipt.json",
+      "verify_status": "10/10"
+    },
+    "MDHGForge": {
+      "type": "engine",
+      "role": "Multi-scale geometric hash cache: 24D Leech-space quantize->2D slot retraction, SpeedLight idempotence f(f(x))=f(x), deterministic LRU eviction, fast/med/slow layers",
+      "algebra_deps": [
+        "LeechDim24",
+        "Quantize",
+        "DoubleHash",
+        "Idempotence",
+        "Hamming"
+      ],
+      "cli_entry": "MDHGForge.verify",
+      "paper_ref": "CQE-paper-07",
+      "source": "production/packages/cqecmplx-forge/src/MDHGForge/",
+      "source_repo": "nbarker2021/CMPLXDevKit (mcp_os/agrm_mdhg_integration/mdhg_ca.py)",
+      "adjudicated_divergence": "quantize made total on all reals; eviction made deterministic via monotonic seq (source used wall clock); CA-field dynamics stay product-side",
+      "receipt": "production/formal-papers/CQE-paper-07/mdhg_speedlight_bridge_receipt.json",
       "verify_status": "10/10"
     }
   },
