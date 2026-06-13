@@ -1,0 +1,241 @@
+{
+  "paper": "CQE-paper-08",
+  "theorem": "T8 F4 to Niemeier commutability tree",
+  "status": "pass",
+  "source": "rebuilt temporary lattice_forge seed ledger",
+  "build_info": {
+    "temporary_seed_db_built": true,
+    "temporary_seed_db_bytes": 5398528
+  },
+  "checks": {
+    "temporary_seed_db_built": true,
+    "paths_count_is_8": true,
+    "all_targets_found_in_order": true,
+    "all_paths_match_historical_report": true,
+    "all_answers_are_yes_with_template_glue": true,
+    "all_terminals_are_distinct": true,
+    "every_path_starts_at_F4": true,
+    "every_path_ends_at_requested_target": true,
+    "trunk_nodes_are_expected": true
+  },
+  "paths": [
+    {
+      "target": "Niemeier:E8^3",
+      "answer": "yes_with_template_glue",
+      "path": [
+        "F4",
+        "G2xF4",
+        "E8",
+        "Niemeier:E8^3"
+      ],
+      "expected_path": [
+        "F4",
+        "G2xF4",
+        "E8",
+        "Niemeier:E8^3"
+      ],
+      "path_matches_expected": true,
+      "edge_count": 3,
+      "edge_ids": [
+        "edge:F4->G2xF4:pair_with_G2",
+        "edge:G2xF4->E8:exceptional_dual_pair_closure",
+        "edge:E8->Niemeier:E8^3:component_terminal_embedding_template"
+      ],
+      "glue_statuses": [
+        "template",
+        "computed_exact_index_cosets_pending"
+      ],
+      "discriminant_glue_status": "computed_profile_glue_template"
+    },
+    {
+      "target": "Niemeier:D16_E8",
+      "answer": "yes_with_template_glue",
+      "path": [
+        "F4",
+        "G2xF4",
+        "E8",
+        "Niemeier:D16_E8"
+      ],
+      "expected_path": [
+        "F4",
+        "G2xF4",
+        "E8",
+        "Niemeier:D16_E8"
+      ],
+      "path_matches_expected": true,
+      "edge_count": 3,
+      "edge_ids": [
+        "edge:F4->G2xF4:pair_with_G2",
+        "edge:G2xF4->E8:exceptional_dual_pair_closure",
+        "edge:E8->Niemeier:D16_E8:component_terminal_embedding_template"
+      ],
+      "glue_statuses": [
+        "computed_exact_index_cosets_pending"
+      ],
+      "discriminant_glue_status": "computed_profile_glue_template"
+    },
+    {
+      "target": "Niemeier:A17_E7",
+      "answer": "yes_with_template_glue",
+      "path": [
+        "F4",
+        "E6",
+        "E7",
+        "Niemeier:A17_E7"
+      ],
+      "expected_path": [
+        "F4",
+        "E6",
+        "E7",
+        "Niemeier:A17_E7"
+      ],
+      "path_matches_expected": true,
+      "edge_count": 3,
+      "edge_ids": [
+        "edge:F4->E6:fixed_subalgebra_extension_template",
+        "edge:E6->E7:exceptional_rank_extension",
+        "edge:E7->Niemeier:A17_E7:component_terminal_embedding_template"
+      ],
+      "glue_statuses": [
+        "computed_exact_index_cosets_pending"
+      ],
+      "discriminant_glue_status": "computed_profile_glue_template"
+    },
+    {
+      "target": "Niemeier:D10_E7^2",
+      "answer": "yes_with_template_glue",
+      "path": [
+        "F4",
+        "E6",
+        "E7",
+        "Niemeier:D10_E7^2"
+      ],
+      "expected_path": [
+        "F4",
+        "E6",
+        "E7",
+        "Niemeier:D10_E7^2"
+      ],
+      "path_matches_expected": true,
+      "edge_count": 3,
+      "edge_ids": [
+        "edge:F4->E6:fixed_subalgebra_extension_template",
+        "edge:E6->E7:exceptional_rank_extension",
+        "edge:E7->Niemeier:D10_E7^2:component_terminal_embedding_template"
+      ],
+      "glue_statuses": [
+        "computed_exact_index_cosets_pending"
+      ],
+      "discriminant_glue_status": "computed_profile_glue_template"
+    },
+    {
+      "target": "Niemeier:A11_D7_E6",
+      "answer": "yes_with_template_glue",
+      "path": [
+        "F4",
+        "E6",
+        "Niemeier:A11_D7_E6"
+      ],
+      "expected_path": [
+        "F4",
+        "E6",
+        "Niemeier:A11_D7_E6"
+      ],
+      "path_matches_expected": true,
+      "edge_count": 2,
+      "edge_ids": [
+        "edge:F4->E6:fixed_subalgebra_extension_template",
+        "edge:E6->Niemeier:A11_D7_E6:component_terminal_embedding_template"
+      ],
+      "glue_statuses": [
+        "computed_exact_index_cosets_pending"
+      ],
+      "discriminant_glue_status": "computed_profile_glue_template"
+    },
+    {
+      "target": "Niemeier:E6^4",
+      "answer": "yes_with_template_glue",
+      "path": [
+        "F4",
+        "E6",
+        "Niemeier:E6^4"
+      ],
+      "expected_path": [
+        "F4",
+        "E6",
+        "Niemeier:E6^4"
+      ],
+      "path_matches_expected": true,
+      "edge_count": 2,
+      "edge_ids": [
+        "edge:F4->E6:fixed_subalgebra_extension_template",
+        "edge:E6->Niemeier:E6^4:component_terminal_embedding_template"
+      ],
+      "glue_statuses": [
+        "computed_exact_index_cosets_pending"
+      ],
+      "discriminant_glue_status": "computed_profile_glue_template"
+    },
+    {
+      "target": "Niemeier:A5^4_D4",
+      "answer": "yes_with_template_glue",
+      "path": [
+        "F4",
+        "D4",
+        "Niemeier:A5^4_D4"
+      ],
+      "expected_path": [
+        "F4",
+        "D4",
+        "Niemeier:A5^4_D4"
+      ],
+      "path_matches_expected": true,
+      "edge_count": 2,
+      "edge_ids": [
+        "edge:F4->D4:long_root_D4_projection",
+        "edge:D4->Niemeier:A5^4_D4:component_terminal_embedding_template"
+      ],
+      "glue_statuses": [
+        "computed_exact_index_cosets_pending"
+      ],
+      "discriminant_glue_status": "computed_profile_glue_template"
+    },
+    {
+      "target": "Niemeier:D4^6",
+      "answer": "yes_with_template_glue",
+      "path": [
+        "F4",
+        "D4",
+        "Niemeier:D4^6"
+      ],
+      "expected_path": [
+        "F4",
+        "D4",
+        "Niemeier:D4^6"
+      ],
+      "path_matches_expected": true,
+      "edge_count": 2,
+      "edge_ids": [
+        "edge:F4->D4:long_root_D4_projection",
+        "edge:D4->Niemeier:D4^6:component_terminal_embedding_template"
+      ],
+      "glue_statuses": [
+        "template",
+        "template",
+        "computed_exact_index_cosets_pending"
+      ],
+      "discriminant_glue_status": "computed_profile_glue_template"
+    }
+  ],
+  "closed_scope": [
+    "the eight canonical F4-to-Niemeier terminal paths are present",
+    "each queried path returns yes_with_template_glue",
+    "each path matches the historical CMPLX-R30 T8 path table"
+  ],
+  "not_claimed": [
+    "exact integer-vector glue-coset representatives",
+    "rootless Leech landing",
+    "Gamma72 polarization or landing",
+    "uniqueness of all possible closure templates"
+  ]
+}

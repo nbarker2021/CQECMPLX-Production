@@ -82,6 +82,13 @@ E8^3 carrier, Leech type-1/2/3 orbit, and Nebe 72 contract checks. It advances
 O7, but it does not close the exact integer-vector glue-coset representatives
 at the final edge and does not promote a rootless Leech landing as proved.
 
+**Theorem 8.3, T8 Commutability Tree.** A rebuilt lattice-forge seed ledger
+contains the eight canonical `F4` to Niemeier terminal paths recorded by T8.
+Each queried target returns `yes_with_template_glue`, the path matches the
+historical path table, and all eight terminal targets are distinct. This binds
+the seed-ledger path theorem while preserving the exact-glue and landing
+boundaries.
+
 ### Proof
 
 The verifier establishes the following local facts.
@@ -124,6 +131,15 @@ invariants for the stronger glue-coset claim and leaves `leech_landing_proved`
 false. Therefore the enumeration layer is paper-bound as a partial O7
 resolution, not as a hidden proof of the full landing. QED.
 
+For Theorem 8.3, the verifier builds a temporary seed database, queries
+`Forge.can_close("F4", target)` for the eight named terminals, and checks that
+every answer is `yes_with_template_glue`. It also checks that each returned
+path starts at `F4`, ends at the requested terminal, matches the historical T8
+path table, and uses the expected trunk nodes `G2xF4`, `E8`, `E6`, `E7`, and
+`D4`. The resulting theorem is a finite seed-ledger path theorem. Because every
+answer is template-glue, exact glue representatives remain outside the claim.
+QED.
+
 ## Relation to Earlier Papers
 
 Papers 01-07 build the local carrier, correction surface, coordinate surface,
@@ -164,6 +180,7 @@ The production verifier is:
 ```text
 production/formal-papers/CQE-paper-08/verify_lattice_closure_template.py
 production/formal-papers/CQE-paper-08/verify_niemeier_leech_enumeration.py
+production/formal-papers/CQE-paper-08/verify_t8_commutability_tree.py
 ```
 
 It imports the package verifiers:
@@ -189,6 +206,8 @@ It verifies:
 7. Niemeier/Leech enumeration passes for deterministic selectors, E8^3
    carriers, Leech type-1/2/3 orbits, and the Nebe 72 contract.
 8. Exact integer-vector glue-coset representatives remain pending invariants.
+9. The rebuilt seed ledger returns the eight T8 `F4` to Niemeier terminal
+   paths with `yes_with_template_glue`.
 ```
 
 ## Open Audit Boundaries

@@ -37,7 +37,7 @@ changes as substantive proof changes without review.
 | T5 Rank-1 Idempotency of M3 | `paper_bound` | `g/CMPLX-R30/PROOF/src/lattice_forge/f4_action.py` | Paper 03 `verify_su3_closure_T5_T7.py` | None; keep as closed exact rational identity. |
 | T6 Trace-Block Closure | `paper_bound` | `g/CMPLX-R30/PROOF/src/lattice_forge/f4_action.py` | Paper 03 `verify_su3_closure_T5_T7.py` | None; keep as closed exact rational decomposition. |
 | T7 Closed-Form 8x8 Transition | `paper_bound` | `g/CMPLX-R30/PROOF/src/lattice_forge/f4_action.py` | Paper 03 `verify_su3_closure_T5_T7.py` | None; keep as closed transition theorem. |
-| T8 F4 to Niemeier Commutability Tree | `substrate_proven` | `g/CMPLX-R30/proofs_report.json` lists 8 F4 terminal paths | Papers 08/20 bind general lattice closure/ledger semantics | Add direct formal-paper receipt for the exact 8 terminal paths. |
+| T8 F4 to Niemeier Commutability Tree | `paper_bound` | rebuilt temporary lattice-forge seed ledger; `g/CMPLX-R30/proofs_report.json` lists the same 8 F4 terminal paths | Paper 08 `verify_t8_commutability_tree.py` | Closed as template-glue path theorem; exact glue representatives remain outside scope. |
 | T_BIJECTIVE | `paper_bound` | `lattice_forge/core.py :: SHELL2_STATES` | Paper 01 `verify_bijective_shell2_doublet.py` | None; use as shell-2 doublet binding. |
 | T_D12_CHAIN | `paper_bound` | `g/CMPLX-R30/PROOF/src/lattice_forge/d12_action.py` | Paper 03 `verify_d12_idempotent_chain.py`, pass 6/6 | None; closed. |
 | O7 Niemeier:E8^3 | `paper_bound` plus `quarantined` for stronger claims | `transport_obligations.py`; Paper 17 rerun passes | Paper 17 `verify_error_correction_tower.py` | State exactly: determinant-one/root-shell direct-sum landing closed; exact general glue cosets and semantic landing from `N` not promoted. |
@@ -62,8 +62,15 @@ F4 -> D4 -> Niemeier:A5^4_D4
 F4 -> D4 -> Niemeier:D4^6
 ```
 
-This is likely the cleanest next reapplication task because the substrate
-claim is already finite and named; it just needs a production paper receipt.
+This reapplication task is now paper-bound in:
+
+```text
+production/formal-papers/CQE-paper-08/verify_t8_commutability_tree.py
+production/formal-papers/CQE-paper-08/t8_commutability_tree_receipt.json
+```
+
+The receipt closes the finite path table with `yes_with_template_glue` and
+preserves exact glue representatives as a separate obligation.
 
 ## Missing Artifact Search Targets
 
@@ -79,4 +86,3 @@ results_monster_moonshine.json
 If these are recovered from archives or another agent's workspace, bind them
 into the paper suite through small, deterministic verifiers rather than relying
 on registry prose alone.
-
