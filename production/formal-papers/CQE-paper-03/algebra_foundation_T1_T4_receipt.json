@@ -1,0 +1,64 @@
+{
+  "paper": "CQE-paper-03",
+  "theorem": "Algebra foundation T1-T4 reapplied: octonion axioms, J3(O) Jordan axioms, chart->J3(O) isomorphism, exact n=3 SU(3) Weyl closure",
+  "reapplication": true,
+  "closes": "the paper-binding gap for THEOREM_REGISTRY T1, T2, T3, T4 (PROVEN with verifiers, vendored in the substrate, but bound to no production paper)",
+  "source_modules": [
+    "lattice_forge/octonion.py :: verify_octonion_axioms",
+    "lattice_forge/jordan_j3.py :: verify_j3o_axioms",
+    "lattice_forge/rule30.py :: verify_chart_j3o_isomorphism",
+    "lattice_forge/f4_action.py :: verify_n3_su3_closure_exact"
+  ],
+  "status": "pass",
+  "checks": {
+    "T1_octonion_axioms": true,
+    "T2_j3o_jordan_axioms": true,
+    "T3_chart_j3o_isomorphism": true,
+    "T3_zero_bijection_failures": true,
+    "T3_shell2_is_trace2_idempotent_stratum": true,
+    "T4_su3_closure_exact": true,
+    "T4_is_exact_group_ring_element": true,
+    "T4_residual_squared_zero": true
+  },
+  "passed": 8,
+  "total": 8,
+  "verifier_receipts": {
+    "T1": {
+      "checks_passed": [
+        "identity_action",
+        "imaginary_square_minus_one",
+        "fano_triples_positive",
+        "fano_reverse_negative",
+        "norm_composition_hurwitz",
+        "left_alternativity"
+      ]
+    },
+    "T2": {
+      "checks_passed": [
+        "diagonal_idempotents_are_idempotent",
+        "diagonal_idempotents_jordan_orthogonal",
+        "diagonal_idempotents_sum_to_identity",
+        "trace_2_idempotents_have_correct_trace",
+        "trace_2_idempotents_are_idempotent",
+        "weyl_13_fixes_chirality_balanced",
+        "weyl_13_swaps_chirality_broken_pair"
+      ]
+    },
+    "T3": {
+      "max_depth": 512,
+      "bijection_failures": 0,
+      "trace_2_stratum_count": 198
+    },
+    "T4": {
+      "s3_coefficients": {
+        "e": "0",
+        "(1 2)": "1/3",
+        "(1 3)": "1/3",
+        "(2 3)": "1/3",
+        "(1 2 3)": "0",
+        "(1 3 2)": "0"
+      },
+      "coefficient_sum_exact": "1"
+    }
+  }
+}
