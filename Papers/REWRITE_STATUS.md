@@ -135,7 +135,10 @@ Status meanings:
 | 28.25 | review-source | N-dimensional game lattice toolkit supplement present. |
 | 28.50 | review-source | N-dimensional game lattice claim contract supplement present. |
 | 28.75 | review-source | N-dimensional game lattice next-state precondition supplement present. |
-| 29 | fallback-body | Promote from production body into strict scientific paper. |
+| 29 | review-source | Strict scientific rewrite present; companion supports drafted; local verifier promoted. |
+| 29.25 | review-source | Monster horizon toolkit supplement present. |
+| 29.50 | review-source | Monster horizon claim contract supplement present. |
+| 29.75 | review-source | Monster horizon next-state precondition supplement present. |
 | 30 | fallback-body | Promote from production body into strict scientific paper. |
 | 31 | fallback-body | Promote from production body into strict scientific paper. |
 | 32 | fallback-body | Promote from production body into strict scientific paper. |

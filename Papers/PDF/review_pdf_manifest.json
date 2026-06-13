@@ -1,6 +1,6 @@
 {
-  "built_on": "2026-06-12",
-  "paper_count": 120,
+  "built_on": "2026-06-13",
+  "paper_count": 123,
   "outputs": [
     {
       "paper": "CQE-paper-00",
@@ -24,7 +24,7 @@
       "paper": "CQE-paper-00.75",
       "title": "Paper 0.75 - Applying Tools as Next-State Preconditions",
       "pdf": "Papers\\PDF\\CQE-paper-00.75_paper-0-75-applying-tools-as-next-state-preconditions.pdf",
-      "bytes": 4210
+      "bytes": 4211
     },
     {
       "paper": "CQE-paper-01",
@@ -78,7 +78,7 @@
       "paper": "CQE-paper-03",
       "title": "Paper 3 - D4/J3 Triality Surface",
       "pdf": "Papers\\PDF\\CQE-paper-03_paper-3-d4-j3-triality-surface.pdf",
-      "bytes": 7209
+      "bytes": 7208
     },
     {
       "paper": "CQE-paper-03.25",
@@ -174,7 +174,7 @@
       "paper": "CQE-paper-07",
       "title": "Paper 7 - Discrete-Continuous Bridge",
       "pdf": "Papers\\PDF\\CQE-paper-07_paper-7-discrete-continuous-bridge.pdf",
-      "bytes": 6295
+      "bytes": 6294
     },
     {
       "paper": "CQE-paper-07.25",
@@ -192,7 +192,7 @@
       "paper": "CQE-paper-07.75",
       "title": "Paper 7.75 - Discrete-Continuous Bridge as Next-State Precondition",
       "pdf": "Papers\\PDF\\CQE-paper-07.75_paper-7-75-discrete-continuous-bridge-as-next-state-precondition.pdf",
-      "bytes": 3458
+      "bytes": 3459
     },
     {
       "paper": "CQE-paper-08",
@@ -270,7 +270,7 @@
       "paper": "CQE-paper-11",
       "title": "Paper 11 - Theory Admission Gate",
       "pdf": "Papers\\PDF\\CQE-paper-11_paper-11-theory-admission-gate.pdf",
-      "bytes": 8938
+      "bytes": 8939
     },
     {
       "paper": "CQE-paper-11.25",
@@ -294,19 +294,19 @@
       "paper": "CQE-paper-12",
       "title": "Paper 12 - CA Prediction Surface",
       "pdf": "Papers\\PDF\\CQE-paper-12_paper-12-ca-prediction-surface.pdf",
-      "bytes": 6884
+      "bytes": 6885
     },
     {
       "paper": "CQE-paper-12.25",
       "title": "Paper 12.25 - Toolkit for the CA Prediction Surface",
       "pdf": "Papers\\PDF\\CQE-paper-12.25_paper-12-25-toolkit-for-the-ca-prediction-surface.pdf",
-      "bytes": 4554
+      "bytes": 4555
     },
     {
       "paper": "CQE-paper-12.50",
       "title": "Paper 12.50 - CA Prediction Surface Claim Contract",
       "pdf": "Papers\\PDF\\CQE-paper-12.50_paper-12-50-ca-prediction-surface-claim-contract.pdf",
-      "bytes": 4550
+      "bytes": 4551
     },
     {
       "paper": "CQE-paper-12.75",
@@ -318,13 +318,13 @@
       "paper": "CQE-paper-13",
       "title": "Paper 13 - Standard-Model Quark-Face Transport",
       "pdf": "Papers\\PDF\\CQE-paper-13_paper-13-standard-model-quark-face-transport.pdf",
-      "bytes": 7890
+      "bytes": 7889
     },
     {
       "paper": "CQE-paper-13.25",
       "title": "Paper 13.25 - Toolkit for Quark-Face Transport",
       "pdf": "Papers\\PDF\\CQE-paper-13.25_paper-13-25-toolkit-for-quark-face-transport.pdf",
-      "bytes": 4595
+      "bytes": 4594
     },
     {
       "paper": "CQE-paper-13.50",
@@ -336,7 +336,7 @@
       "paper": "CQE-paper-13.75",
       "title": "Paper 13.75 - Quark-Face Transport as Next-State Precondition",
       "pdf": "Papers\\PDF\\CQE-paper-13.75_paper-13-75-quark-face-transport-as-next-state-precondition.pdf",
-      "bytes": 4309
+      "bytes": 4308
     },
     {
       "paper": "CQE-paper-14",
@@ -360,7 +360,7 @@
       "paper": "CQE-paper-14.75",
       "title": "Paper 14.75 - Boundary-Repair Curvature as Next-State Precondition",
       "pdf": "Papers\\PDF\\CQE-paper-14.75_paper-14-75-boundary-repair-curvature-as-next-state-precondition.pdf",
-      "bytes": 3312
+      "bytes": 3313
     },
     {
       "paper": "CQE-paper-15",
@@ -438,7 +438,7 @@
       "paper": "CQE-paper-18",
       "title": "Paper 18 - VOA / Moonshine Representation Routes",
       "pdf": "Papers\\PDF\\CQE-paper-18_paper-18-voa-moonshine-representation-routes.pdf",
-      "bytes": 7156
+      "bytes": 7155
     },
     {
       "paper": "CQE-paper-18.25",
@@ -498,7 +498,7 @@
       "paper": "CQE-paper-20.50",
       "title": "Paper 20.50 - Layer-2 Synthesis Ledger Claim Contract",
       "pdf": "Papers\\PDF\\CQE-paper-20.50_paper-20-50-layer-2-synthesis-ledger-claim-contract.pdf",
-      "bytes": 3859
+      "bytes": 3860
     },
     {
       "paper": "CQE-paper-20.75",
@@ -516,7 +516,7 @@
       "paper": "CQE-paper-21.25",
       "title": "Paper 21.25 - MorphForge Toolkit Supplement",
       "pdf": "Papers\\PDF\\CQE-paper-21.25_paper-21-25-morphforge-toolkit-supplement.pdf",
-      "bytes": 4228
+      "bytes": 4229
     },
     {
       "paper": "CQE-paper-21.50",
@@ -648,7 +648,7 @@
       "paper": "CQE-paper-26.75",
       "title": "Paper 26.75 - Z-Pinch and Shear Next-State Precondition",
       "pdf": "Papers\\PDF\\CQE-paper-26.75_paper-26-75-z-pinch-and-shear-next-state-precondition.pdf",
-      "bytes": 2940
+      "bytes": 2941
     },
     {
       "paper": "CQE-paper-27",
@@ -690,7 +690,7 @@
       "paper": "CQE-paper-28.50",
       "title": "Paper 28.50 - N-Dimensional Game Lattice Claim Contract",
       "pdf": "Papers\\PDF\\CQE-paper-28.50_paper-28-50-n-dimensional-game-lattice-claim-contract.pdf",
-      "bytes": 3082
+      "bytes": 3083
     },
     {
       "paper": "CQE-paper-28.75",
@@ -702,7 +702,25 @@
       "paper": "CQE-paper-29",
       "title": "Paper 29 - Monster/Universal Energy-Bound Hypotheses",
       "pdf": "Papers\\PDF\\CQE-paper-29_paper-29-monster-universal-energy-bound-hypotheses.pdf",
-      "bytes": 7630
+      "bytes": 8033
+    },
+    {
+      "paper": "CQE-paper-29.25",
+      "title": "Paper 29.25 - Monster Horizon Toolkit Supplement",
+      "pdf": "Papers\\PDF\\CQE-paper-29.25_paper-29-25-monster-horizon-toolkit-supplement.pdf",
+      "bytes": 3286
+    },
+    {
+      "paper": "CQE-paper-29.50",
+      "title": "Paper 29.50 - Monster Horizon Claim Contract",
+      "pdf": "Papers\\PDF\\CQE-paper-29.50_paper-29-50-monster-horizon-claim-contract.pdf",
+      "bytes": 4046
+    },
+    {
+      "paper": "CQE-paper-29.75",
+      "title": "Paper 29.75 - Monster Horizon Next-State Preconditions",
+      "pdf": "Papers\\PDF\\CQE-paper-29.75_paper-29-75-monster-horizon-next-state-preconditions.pdf",
+      "bytes": 3368
     },
     {
       "paper": "CQE-paper-30",
