@@ -1,0 +1,245 @@
+{
+  "paper": "CQE-paper-21",
+  "title": "MorphForge / PolyForge / MorphoniX",
+  "status": "pass_with_open_obligations",
+  "closed_claim": "A grid-swept ribbon can be encoded as a lossless S3 word, accounted as morphon records, and landed in the 24-dimensional E8^3 terminal template without silently closing cross-domain bridges.",
+  "chart_codec": {
+    "status": "pass",
+    "max_depth": 4096,
+    "trajectory_length": 4097,
+    "shell2_length": 1569,
+    "shell2_fraction": 0.3829631437637296,
+    "word_length": 1568,
+    "round_trip_mismatches": 0,
+    "first_mismatch": null,
+    "element_counts": {
+      "e": 494,
+      "(1 2)": 197,
+      "(1 3)": 594,
+      "(2 3)": 283,
+      "(1 2 3)": 0,
+      "(1 3 2)": 0
+    },
+    "identity_self_loops": 494,
+    "non_identity_steps": 1074,
+    "bits_per_shell2_step_raw": 1.585,
+    "bits_per_step_codec": 2.0
+  },
+  "morphonics": {
+    "status": "pass_with_open_gaps",
+    "schema_status": "pass",
+    "open_gap_count": 3,
+    "errors": [],
+    "warnings": [],
+    "counts": {
+      "morphons": 5,
+      "transforms": 5,
+      "projections": 5,
+      "accounting": 3,
+      "bridges": 3,
+      "claims": 11,
+      "failures": 3,
+      "closure_tests": 5
+    },
+    "closure_tests": [
+      {
+        "morphon_id": "morphon:core",
+        "status": "pass",
+        "missing": [],
+        "closure_rule": "primitive fields present and accounting record linked"
+      },
+      {
+        "morphon_id": "morphon:rule30_center",
+        "status": "pass",
+        "missing": [],
+        "closure_rule": "primitive fields present and accounting record linked"
+      },
+      {
+        "morphon_id": "morphon:ai_response",
+        "status": "pass",
+        "missing": [],
+        "closure_rule": "primitive fields present and accounting record linked"
+      },
+      {
+        "morphon_id": "morphon:ns_tf1",
+        "status": "pass",
+        "missing": [],
+        "closure_rule": "primitive fields present and accounting record linked"
+      },
+      {
+        "morphon_id": "morphon:niemeier_terminal_tree",
+        "status": "pass",
+        "missing": [],
+        "closure_rule": "primitive fields present and accounting record linked"
+      }
+    ],
+    "lattice_forge_check": {
+      "terminal_tree_verification_status": "not_checked",
+      "terminal_count": null,
+      "test_status": "pending"
+    }
+  },
+  "terminal_tree": {
+    "terminal_id": "Niemeier:E8^3",
+    "name": "E8^3",
+    "root_system": "E8^3",
+    "status": "generated_canonical_composition_tree",
+    "composition_model": "component_action_tree_with_emergent_residue",
+    "route_uniqueness": "single_canonical_route_after_component_ordering_and_orbit_quotient",
+    "ambient_dimension": 24,
+    "root_rank": 24,
+    "component_action_count": 3,
+    "compact_involution_count": 24,
+    "residue_status": "residue_closes_by_required_index",
+    "evidence_level": "template"
+  },
+  "checks": [
+    {
+      "name": "chart codec round trip is lossless",
+      "pass": true,
+      "detail": {
+        "status": "pass",
+        "round_trip_mismatches": 0,
+        "first_mismatch": null
+      }
+    },
+    {
+      "name": "shell-2 ribbon produces an S3 word",
+      "pass": true,
+      "detail": {
+        "trajectory_length": 4097,
+        "shell2_length": 1569,
+        "word_length": 1568,
+        "identity_self_loops": 494,
+        "non_identity_steps": 1074
+      }
+    },
+    {
+      "name": "observed folds are transposition-class steps",
+      "pass": true,
+      "detail": {
+        "e": 494,
+        "(1 2)": 197,
+        "(1 3)": 594,
+        "(2 3)": 283,
+        "(1 2 3)": 0,
+        "(1 3 2)": 0
+      }
+    },
+    {
+      "name": "morphonics ledger schema closes with carried gaps",
+      "pass": true,
+      "detail": {
+        "status": "pass_with_open_gaps",
+        "schema_status": "pass",
+        "open_gap_count": 3,
+        "errors": [],
+        "warnings": []
+      }
+    },
+    {
+      "name": "morphon closure tests all pass",
+      "pass": true,
+      "detail": [
+        {
+          "morphon_id": "morphon:core",
+          "status": "pass",
+          "missing": [],
+          "closure_rule": "primitive fields present and accounting record linked"
+        },
+        {
+          "morphon_id": "morphon:rule30_center",
+          "status": "pass",
+          "missing": [],
+          "closure_rule": "primitive fields present and accounting record linked"
+        },
+        {
+          "morphon_id": "morphon:ai_response",
+          "status": "pass",
+          "missing": [],
+          "closure_rule": "primitive fields present and accounting record linked"
+        },
+        {
+          "morphon_id": "morphon:ns_tf1",
+          "status": "pass",
+          "missing": [],
+          "closure_rule": "primitive fields present and accounting record linked"
+        },
+        {
+          "morphon_id": "morphon:niemeier_terminal_tree",
+          "status": "pass",
+          "missing": [],
+          "closure_rule": "primitive fields present and accounting record linked"
+        }
+      ]
+    },
+    {
+      "name": "morphonics table counts match the declared model",
+      "pass": true,
+      "detail": {
+        "morphons": 5,
+        "transforms": 5,
+        "projections": 5,
+        "accounting": 3,
+        "bridges": 3,
+        "claims": 11,
+        "failures": 3,
+        "closure_tests": 5
+      }
+    },
+    {
+      "name": "open failure labels are explicit and non-silent",
+      "pass": true,
+      "detail": [
+        "MISSING_MORPHISM",
+        "PENDING_IMPORT",
+        "PENDING_MEASUREMENT"
+      ]
+    },
+    {
+      "name": "terminal landing template is 24-dimensional E8^3",
+      "pass": true,
+      "detail": {
+        "terminal_id": "Niemeier:E8^3",
+        "name": "E8^3",
+        "root_system": "E8^3",
+        "status": "generated_canonical_composition_tree",
+        "composition_model": "component_action_tree_with_emergent_residue",
+        "route_uniqueness": "single_canonical_route_after_component_ordering_and_orbit_quotient",
+        "ambient_dimension": 24,
+        "root_rank": 24,
+        "component_action_count": 3,
+        "compact_involution_count": 24,
+        "residue_status": "residue_closes_by_required_index",
+        "evidence_level": "template"
+      }
+    }
+  ],
+  "open_obligations": [
+    {
+      "obligation": "cross-medium equivalence / unibeam",
+      "status": "open_until_measurement",
+      "reason": "the morphonics model accounts the bridge but does not close a medium-invariant proof"
+    },
+    {
+      "obligation": "Mandelbrot or fractal-boundary chart",
+      "status": "open_until_semiconjugacy",
+      "reason": "no formal semiconjugacy witness is included in the closed receipt"
+    },
+    {
+      "obligation": "Leech construction import",
+      "status": "open_until_Golay_or_Construction_A_import",
+      "reason": "terminal E8^3 template is not a Leech lattice construction"
+    },
+    {
+      "obligation": "expanded involution witnesses",
+      "status": "open_until_action_orbit_quotient_witnesses",
+      "reason": "the morphonics bridge carries the missing-morphism label"
+    },
+    {
+      "obligation": "TF1, biological, material, CAD, or product claims",
+      "status": "open_until_domain_verifier",
+      "reason": "Paper 21 supplies the reading/accounting substrate, not a domain closure"
+    }
+  ]
+}

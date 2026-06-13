@@ -1,6 +1,6 @@
 {
   "built_on": "2026-06-12",
-  "paper_count": 96,
+  "paper_count": 99,
   "outputs": [
     {
       "paper": "CQE-paper-00",
@@ -510,7 +510,25 @@
       "paper": "CQE-paper-21",
       "title": "Paper 21 - MorphForge / PolyForge / MorphoniX",
       "pdf": "Papers\\PDF\\CQE-paper-21_paper-21-morphforge-polyforge-morphonix.pdf",
-      "bytes": 7665
+      "bytes": 7657
+    },
+    {
+      "paper": "CQE-paper-21.25",
+      "title": "Paper 21.25 - MorphForge Toolkit Supplement",
+      "pdf": "Papers\\PDF\\CQE-paper-21.25_paper-21-25-morphforge-toolkit-supplement.pdf",
+      "bytes": 4228
+    },
+    {
+      "paper": "CQE-paper-21.50",
+      "title": "Paper 21.50 - MorphForge Claim Contract",
+      "pdf": "Papers\\PDF\\CQE-paper-21.50_paper-21-50-morphforge-claim-contract.pdf",
+      "bytes": 3406
+    },
+    {
+      "paper": "CQE-paper-21.75",
+      "title": "Paper 21.75 - MorphForge Next-State Bridge",
+      "pdf": "Papers\\PDF\\CQE-paper-21.75_paper-21-75-morphforge-next-state-bridge.pdf",
+      "bytes": 3237
     },
     {
       "paper": "CQE-paper-22",

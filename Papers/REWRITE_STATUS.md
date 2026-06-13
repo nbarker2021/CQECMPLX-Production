@@ -103,7 +103,10 @@ Status meanings:
 | 20.25 | review-source | Layer-2 synthesis ledger toolkit supplement present. |
 | 20.50 | review-source | Layer-2 synthesis ledger claim contract supplement present. |
 | 20.75 | review-source | Layer-2 synthesis ledger next-state precondition supplement present. |
-| 21 | fallback-body | Promote from production body into strict scientific paper. |
+| 21 | review-source | Strict scientific rewrite present; companion supports drafted; local verifier promoted. |
+| 21.25 | review-source | MorphForge toolkit supplement present. |
+| 21.50 | review-source | MorphForge claim contract supplement present. |
+| 21.75 | review-source | MorphForge next-state precondition supplement present. |
 | 22 | fallback-body | Promote from production body into strict scientific paper. |
 | 23 | fallback-body | Promote from production body into strict scientific paper. |
 | 24 | fallback-body | Promote from production body into strict scientific paper. |
