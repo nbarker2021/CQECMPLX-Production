@@ -53,26 +53,15 @@ Cursor success is schedule coverage, not proof of the selected item.
 
 ## Source Mirror Gap
 
-`Papers/Source` currently has 124 markdown files. The review PDF set has 132
-PDFs because Papers 25-32 use `production/formal-papers/*/FORMAL_PAPER.md` as
-their main body source while their `.25`, `.50`, and `.75` companions live in
-`Papers/Source`.
+`Papers/Source` now contains main-source mirrors for `CQE-paper-25.md` through
+`CQE-paper-32.md`. These mirrors were copied from the promoted formal bodies so
+the review-facing paper bodies are visible at the top level instead of relying
+on fallback discovery from `production/formal-papers`.
 
-Missing main-source mirrors:
-
-- `Papers/Source/CQE-paper-25.md`
-- `Papers/Source/CQE-paper-26.md`
-- `Papers/Source/CQE-paper-27.md`
-- `Papers/Source/CQE-paper-28.md`
-- `Papers/Source/CQE-paper-29.md`
-- `Papers/Source/CQE-paper-30.md`
-- `Papers/Source/CQE-paper-31.md`
-- `Papers/Source/CQE-paper-32.md`
-
-This is an organization gap, not a proof gap. The formal bodies, receipts, and
-PDFs exist. The next cleanup pass should mirror these formal bodies into
-`Papers/Source` or update the repository convention so formal main bodies are
-declared canonical.
+The PDF builder has also been updated so top-level sources still inherit
+verifier and receipt evidence from matching `production/formal-papers`
+directories. This preserves the top-level paper convention without losing the
+formal evidence lines on generated PDFs.
 
 ## Subagent Audit Rollup
 
@@ -84,9 +73,8 @@ language.
 - Papers `01-24`: top-level main sources and companion sources exist in
   `Papers/Source`; matching PDFs exist under `Papers/PDF`; integer formal
   paper directories have verifier/receipt evidence.
-- Papers `25-32`: PDFs, formal bodies, receipts, and companions exist; main
-  `Papers/Source/CQE-paper-25.md` through `CQE-paper-32.md` mirrors are still
-  absent by convention/fallback.
+- Papers `25-32`: PDFs, formal bodies, receipts, companions, and main
+  `Papers/Source/CQE-paper-25.md` through `CQE-paper-32.md` mirrors exist.
 - All `.25`, `.50`, and `.75` companions currently operate as source/PDF
   supplements tied to their integer-paper receipt. They do not have independent
   `production/formal-papers/CQE-paper-N.25` directories. This is acceptable if

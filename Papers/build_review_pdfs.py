@@ -246,14 +246,15 @@ def discover_papers(selected: list[str] | None = None) -> list[PaperInput]:
         title_match = re.search(r"^#\s+(.+)$", raw, flags=re.MULTILINE)
         title = title_match.group(1).strip() if title_match else paper_id
         manifest_path = KERNEL_ROOT / paper_id / "paper_kernel_manifest.json"
+        formal_dir = FORMAL_ROOT / paper_id
         papers_by_id[paper_id] = PaperInput(
             paper_id=paper_id,
             title=title,
             formal_path=source_path,
             source_label="top-level review source",
             manifest_path=manifest_path if manifest_path.exists() else None,
-            verifier_paths=[],
-            receipt_paths=[],
+            verifier_paths=sorted(formal_dir.glob("verify_*.py")) if formal_dir.exists() else [],
+            receipt_paths=sorted(formal_dir.glob("*.json")) if formal_dir.exists() else [],
         )
 
     for formal_path in sorted(FORMAL_ROOT.glob("CQE-paper-*/FORMAL_PAPER.md")):
