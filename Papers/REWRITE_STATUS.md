@@ -143,7 +143,10 @@ Status meanings:
 | 30.25 | review-source | Grand ribbon toolkit supplement present. |
 | 30.50 | review-source | Grand ribbon claim contract supplement present. |
 | 30.75 | review-source | Grand ribbon next-state precondition supplement present. |
-| 31 | fallback-body | Promote from production body into strict scientific paper. |
+| 31 | review-source | Strict scientific rewrite present; companion supports drafted; local verifier promoted. |
+| 31.25 | review-source | Meta LCR readout toolkit supplement present. |
+| 31.50 | review-source | Meta LCR readout claim contract supplement present. |
+| 31.75 | review-source | Meta LCR readout next-state precondition supplement present. |
 | 32 | fallback-body | Promote from production body into strict scientific paper. |
 
 ## Companion Paper Requirement

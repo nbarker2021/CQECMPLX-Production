@@ -1,6 +1,6 @@
 {
   "built_on": "2026-06-13",
-  "paper_count": 126,
+  "paper_count": 129,
   "outputs": [
     {
       "paper": "CQE-paper-00",
@@ -750,7 +750,25 @@
       "paper": "CQE-paper-31",
       "title": "Paper 31 - It Was Still Just LCR",
       "pdf": "Papers\\PDF\\CQE-paper-31_paper-31-it-was-still-just-lcr.pdf",
-      "bytes": 7723
+      "bytes": 7281
+    },
+    {
+      "paper": "CQE-paper-31.25",
+      "title": "Paper 31.25 - Meta LCR Readout Toolkit Supplement",
+      "pdf": "Papers\\PDF\\CQE-paper-31.25_paper-31-25-meta-lcr-readout-toolkit-supplement.pdf",
+      "bytes": 3082
+    },
+    {
+      "paper": "CQE-paper-31.50",
+      "title": "Paper 31.50 - Meta LCR Claim Contract",
+      "pdf": "Papers\\PDF\\CQE-paper-31.50_paper-31-50-meta-lcr-claim-contract.pdf",
+      "bytes": 3111
+    },
+    {
+      "paper": "CQE-paper-31.75",
+      "title": "Paper 31.75 - Meta LCR Next-State Preconditions",
+      "pdf": "Papers\\PDF\\CQE-paper-31.75_paper-31-75-meta-lcr-next-state-preconditions.pdf",
+      "bytes": 2987
     },
     {
       "paper": "CQE-paper-32",

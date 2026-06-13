@@ -1,0 +1,1058 @@
+{
+  "center_rows": [
+    {
+      "antipode": [
+        0,
+        0,
+        0
+      ],
+      "antipode_gluon": 0,
+      "center": 0,
+      "gluon": 0,
+      "invariant": true,
+      "state": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "antipode": [
+        1,
+        0,
+        0
+      ],
+      "antipode_gluon": 0,
+      "center": 0,
+      "gluon": 0,
+      "invariant": true,
+      "state": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "antipode": [
+        0,
+        1,
+        0
+      ],
+      "antipode_gluon": 1,
+      "center": 1,
+      "gluon": 1,
+      "invariant": true,
+      "state": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "antipode": [
+        1,
+        1,
+        0
+      ],
+      "antipode_gluon": 1,
+      "center": 1,
+      "gluon": 1,
+      "invariant": true,
+      "state": [
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "antipode": [
+        0,
+        0,
+        1
+      ],
+      "antipode_gluon": 0,
+      "center": 0,
+      "gluon": 0,
+      "invariant": true,
+      "state": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "antipode": [
+        1,
+        0,
+        1
+      ],
+      "antipode_gluon": 0,
+      "center": 0,
+      "gluon": 0,
+      "invariant": true,
+      "state": [
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "antipode": [
+        0,
+        1,
+        1
+      ],
+      "antipode_gluon": 1,
+      "center": 1,
+      "gluon": 1,
+      "invariant": true,
+      "state": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "antipode": [
+        1,
+        1,
+        1
+      ],
+      "antipode_gluon": 1,
+      "center": 1,
+      "gluon": 1,
+      "invariant": true,
+      "state": [
+        1,
+        1,
+        1
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "detail": {
+        "claim": "The Gluon \u0393(s) is the LR-podal-invariant centroid of the 3-bar window, equal to C for all 8 chart states under the explicitly defined LR-podal reversal. It is the framework's first local invariant.",
+        "errors": [],
+        "states_checked": 8,
+        "status": "pass"
+      },
+      "name": "gluon_invariance_passes",
+      "pass": true
+    },
+    {
+      "detail": [
+        {
+          "antipode": [
+            0,
+            0,
+            0
+          ],
+          "antipode_gluon": 0,
+          "center": 0,
+          "gluon": 0,
+          "invariant": true,
+          "state": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "antipode": [
+            1,
+            0,
+            0
+          ],
+          "antipode_gluon": 0,
+          "center": 0,
+          "gluon": 0,
+          "invariant": true,
+          "state": [
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "antipode": [
+            0,
+            1,
+            0
+          ],
+          "antipode_gluon": 1,
+          "center": 1,
+          "gluon": 1,
+          "invariant": true,
+          "state": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "antipode": [
+            1,
+            1,
+            0
+          ],
+          "antipode_gluon": 1,
+          "center": 1,
+          "gluon": 1,
+          "invariant": true,
+          "state": [
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "antipode": [
+            0,
+            0,
+            1
+          ],
+          "antipode_gluon": 0,
+          "center": 0,
+          "gluon": 0,
+          "invariant": true,
+          "state": [
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "antipode": [
+            1,
+            0,
+            1
+          ],
+          "antipode_gluon": 0,
+          "center": 0,
+          "gluon": 0,
+          "invariant": true,
+          "state": [
+            1,
+            0,
+            1
+          ]
+        },
+        {
+          "antipode": [
+            0,
+            1,
+            1
+          ],
+          "antipode_gluon": 1,
+          "center": 1,
+          "gluon": 1,
+          "invariant": true,
+          "state": [
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "antipode": [
+            1,
+            1,
+            1
+          ],
+          "antipode_gluon": 1,
+          "center": 1,
+          "gluon": 1,
+          "invariant": true,
+          "state": [
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "name": "all_center_rows_invariant",
+      "pass": true
+    },
+    {
+      "detail": [
+        {
+          "C": 0,
+          "L": 0,
+          "R": 0,
+          "anf_bit": 0,
+          "rule30_bit": 0
+        },
+        {
+          "C": 0,
+          "L": 0,
+          "R": 1,
+          "anf_bit": 1,
+          "rule30_bit": 1
+        },
+        {
+          "C": 1,
+          "L": 0,
+          "R": 0,
+          "anf_bit": 1,
+          "rule30_bit": 1
+        },
+        {
+          "C": 1,
+          "L": 0,
+          "R": 1,
+          "anf_bit": 1,
+          "rule30_bit": 1
+        },
+        {
+          "C": 0,
+          "L": 1,
+          "R": 0,
+          "anf_bit": 1,
+          "rule30_bit": 1
+        },
+        {
+          "C": 0,
+          "L": 1,
+          "R": 1,
+          "anf_bit": 0,
+          "rule30_bit": 0
+        },
+        {
+          "C": 1,
+          "L": 1,
+          "R": 0,
+          "anf_bit": 0,
+          "rule30_bit": 0
+        },
+        {
+          "C": 1,
+          "L": 1,
+          "R": 1,
+          "anf_bit": 0,
+          "rule30_bit": 0
+        }
+      ],
+      "name": "rule30_truth_table_matches_anf",
+      "pass": true
+    },
+    {
+      "detail": {
+        "paper30_confirms_31_not_dependency": true,
+        "paper30_open_obligations": [
+          "Promote the reusable cqe_engine.ribbon module from neighboring kernel/production copies into this production package.",
+          "Keep Paper 31 as a retrospective readout until a later contract explicitly changes dependency order.",
+          "Resolve transport ledger open lifts before claiming complete route closure.",
+          "Reconcile legacy 31-bead workbook wording with the production 00-29 proof sweep plus Paper 31 readout."
+        ],
+        "paper30_readout_rule": {
+          "readout": "CQE-paper-31 prepared only",
+          "sweep": "CQE-paper-00 through CQE-paper-29"
+        },
+        "paper30_status": "pass_with_open_packaging_obligations",
+        "paper30_sweep_count": 30
+      },
+      "name": "paper30_receipt_available",
+      "pass": true
+    },
+    {
+      "detail": {
+        "paper30_confirms_31_not_dependency": true,
+        "paper30_open_obligations": [
+          "Promote the reusable cqe_engine.ribbon module from neighboring kernel/production copies into this production package.",
+          "Keep Paper 31 as a retrospective readout until a later contract explicitly changes dependency order.",
+          "Resolve transport ledger open lifts before claiming complete route closure.",
+          "Reconcile legacy 31-bead workbook wording with the production 00-29 proof sweep plus Paper 31 readout."
+        ],
+        "paper30_readout_rule": {
+          "readout": "CQE-paper-31 prepared only",
+          "sweep": "CQE-paper-00 through CQE-paper-29"
+        },
+        "paper30_status": "pass_with_open_packaging_obligations",
+        "paper30_sweep_count": 30
+      },
+      "name": "paper31_is_not_upstream_dependency",
+      "pass": true
+    },
+    {
+      "detail": [
+        {
+          "C": "CQE-paper-00 center readout",
+          "L": null,
+          "R": "CQE-paper-01",
+          "dependency_status": "ordinary_sweep_context",
+          "index": 0,
+          "paper_id": "CQE-paper-00",
+          "role": "proof_stack_position"
+        },
+        {
+          "C": "CQE-paper-01 center readout",
+          "L": "CQE-paper-00",
+          "R": "CQE-paper-02",
+          "dependency_status": "ordinary_sweep_context",
+          "index": 1,
+          "paper_id": "CQE-paper-01",
+          "role": "proof_stack_position"
+        },
+        {
+          "C": "CQE-paper-02 center readout",
+          "L": "CQE-paper-01",
+          "R": "CQE-paper-03",
+          "dependency_status": "ordinary_sweep_context",
+          "index": 2,
+          "paper_id": "CQE-paper-02",
+          "role": "proof_stack_position"
+        },
+        {
+          "C": "CQE-paper-03 center readout",
+          "L": "CQE-paper-02",
+          "R": "CQE-paper-04",
+          "dependency_status": "ordinary_sweep_context",
+          "index": 3,
+          "paper_id": "CQE-paper-03",
+          "role": "proof_stack_position"
+        },
+        {
+          "C": "CQE-paper-04 center readout",
+          "L": "CQE-paper-03",
+          "R": "CQE-paper-05",
+          "dependency_status": "ordinary_sweep_context",
+          "index": 4,
+          "paper_id": "CQE-paper-04",
+          "role": "proof_stack_position"
+        },
+        {
+          "C": "CQE-paper-05 center readout",
+          "L": "CQE-paper-04",
+          "R": "CQE-paper-06",
+          "dependency_status": "ordinary_sweep_context",
+          "index": 5,
+          "paper_id": "CQE-paper-05",
+          "role": "proof_stack_position"
+        },
+        {
+          "C": "CQE-paper-06 center readout",
+          "L": "CQE-paper-05",
+          "R": "CQE-paper-07",
+          "dependency_status": "ordinary_sweep_context",
+          "index": 6,
+          "paper_id": "CQE-paper-06",
+          "role": "proof_stack_position"
+        },
+        {
+          "C": "CQE-paper-07 center readout",
+          "L": "CQE-paper-06",
+          "R": "CQE-paper-08",
+          "dependency_status": "ordinary_sweep_context",
+          "index": 7,
+          "paper_id": "CQE-paper-07",
+          "role": "proof_stack_position"
+        },
+        {
+          "C": "CQE-paper-08 center readout",
+          "L": "CQE-paper-07",
+          "R": "CQE-paper-09",
+          "dependency_status": "ordinary_sweep_context",
+          "index": 8,
+          "paper_id": "CQE-paper-08",
+          "role": "proof_stack_position"
+        },
+        {
+          "C": "CQE-paper-09 center readout",
+          "L": "CQE-paper-08",
+          "R": "CQE-paper-10",
+          "dependency_status": "ordinary_sweep_context",
+          "index": 9,
+          "paper_id": "CQE-paper-09",
+          "role": "proof_stack_position"
+        },
+        {
+          "C": "CQE-paper-10 center readout",
+          "L": "CQE-paper-09",
+          "R": "CQE-paper-11",
+          "dependency_status": "ordinary_sweep_context",
+          "index": 10,
+          "paper_id": "CQE-paper-10",
+          "role": "proof_stack_position"
+        },
+        {
+          "C": "CQE-paper-11 center readout",
+          "L": "CQE-paper-10",
+          "R": "CQE-paper-12",
+          "dependency_status": "ordinary_sweep_context",
+          "index": 11,
+          "paper_id": "CQE-paper-11",
+          "role": "proof_stack_position"
+        },
+        {
+          "C": "CQE-paper-12 center readout",
+          "L": "CQE-paper-11",
+          "R": "CQE-paper-13",
+          "dependency_status": "ordinary_sweep_context",
+          "index": 12,
+          "paper_id": "CQE-paper-12",
+          "role": "proof_stack_position"
+        },
+        {
+          "C": "CQE-paper-13 center readout",
+          "L": "CQE-paper-12",
+          "R": "CQE-paper-14",
+          "dependency_status": "ordinary_sweep_context",
+          "index": 13,
+          "paper_id": "CQE-paper-13",
+          "role": "proof_stack_position"
+        },
+        {
+          "C": "CQE-paper-14 center readout",
+          "L": "CQE-paper-13",
+          "R": "CQE-paper-15",
+          "dependency_status": "ordinary_sweep_context",
+          "index": 14,
+          "paper_id": "CQE-paper-14",
+          "role": "proof_stack_position"
+        },
+        {
+          "C": "CQE-paper-15 center readout",
+          "L": "CQE-paper-14",
+          "R": "CQE-paper-16",
+          "dependency_status": "ordinary_sweep_context",
+          "index": 15,
+          "paper_id": "CQE-paper-15",
+          "role": "proof_stack_position"
+        },
+        {
+          "C": "CQE-paper-16 center readout",
+          "L": "CQE-paper-15",
+          "R": "CQE-paper-17",
+          "dependency_status": "ordinary_sweep_context",
+          "index": 16,
+          "paper_id": "CQE-paper-16",
+          "role": "proof_stack_position"
+        },
+        {
+          "C": "CQE-paper-17 center readout",
+          "L": "CQE-paper-16",
+          "R": "CQE-paper-18",
+          "dependency_status": "ordinary_sweep_context",
+          "index": 17,
+          "paper_id": "CQE-paper-17",
+          "role": "proof_stack_position"
+        },
+        {
+          "C": "CQE-paper-18 center readout",
+          "L": "CQE-paper-17",
+          "R": "CQE-paper-19",
+          "dependency_status": "ordinary_sweep_context",
+          "index": 18,
+          "paper_id": "CQE-paper-18",
+          "role": "proof_stack_position"
+        },
+        {
+          "C": "CQE-paper-19 center readout",
+          "L": "CQE-paper-18",
+          "R": "CQE-paper-20",
+          "dependency_status": "ordinary_sweep_context",
+          "index": 19,
+          "paper_id": "CQE-paper-19",
+          "role": "proof_stack_position"
+        },
+        {
+          "C": "CQE-paper-20 center readout",
+          "L": "CQE-paper-19",
+          "R": "CQE-paper-21",
+          "dependency_status": "ordinary_sweep_context",
+          "index": 20,
+          "paper_id": "CQE-paper-20",
+          "role": "proof_stack_position"
+        },
+        {
+          "C": "CQE-paper-21 center readout",
+          "L": "CQE-paper-20",
+          "R": "CQE-paper-22",
+          "dependency_status": "ordinary_sweep_context",
+          "index": 21,
+          "paper_id": "CQE-paper-21",
+          "role": "proof_stack_position"
+        },
+        {
+          "C": "CQE-paper-22 center readout",
+          "L": "CQE-paper-21",
+          "R": "CQE-paper-23",
+          "dependency_status": "ordinary_sweep_context",
+          "index": 22,
+          "paper_id": "CQE-paper-22",
+          "role": "proof_stack_position"
+        },
+        {
+          "C": "CQE-paper-23 center readout",
+          "L": "CQE-paper-22",
+          "R": "CQE-paper-24",
+          "dependency_status": "ordinary_sweep_context",
+          "index": 23,
+          "paper_id": "CQE-paper-23",
+          "role": "proof_stack_position"
+        },
+        {
+          "C": "CQE-paper-24 center readout",
+          "L": "CQE-paper-23",
+          "R": "CQE-paper-25",
+          "dependency_status": "ordinary_sweep_context",
+          "index": 24,
+          "paper_id": "CQE-paper-24",
+          "role": "proof_stack_position"
+        },
+        {
+          "C": "CQE-paper-25 center readout",
+          "L": "CQE-paper-24",
+          "R": "CQE-paper-26",
+          "dependency_status": "ordinary_sweep_context",
+          "index": 25,
+          "paper_id": "CQE-paper-25",
+          "role": "proof_stack_position"
+        },
+        {
+          "C": "CQE-paper-26 center readout",
+          "L": "CQE-paper-25",
+          "R": "CQE-paper-27",
+          "dependency_status": "ordinary_sweep_context",
+          "index": 26,
+          "paper_id": "CQE-paper-26",
+          "role": "proof_stack_position"
+        },
+        {
+          "C": "CQE-paper-27 center readout",
+          "L": "CQE-paper-26",
+          "R": "CQE-paper-28",
+          "dependency_status": "ordinary_sweep_context",
+          "index": 27,
+          "paper_id": "CQE-paper-27",
+          "role": "proof_stack_position"
+        },
+        {
+          "C": "CQE-paper-28 center readout",
+          "L": "CQE-paper-27",
+          "R": "CQE-paper-29",
+          "dependency_status": "ordinary_sweep_context",
+          "index": 28,
+          "paper_id": "CQE-paper-28",
+          "role": "proof_stack_position"
+        },
+        {
+          "C": "CQE-paper-29 center readout",
+          "L": "CQE-paper-28",
+          "R": "CQE-paper-30",
+          "dependency_status": "ordinary_sweep_context",
+          "index": 29,
+          "paper_id": "CQE-paper-29",
+          "role": "proof_stack_position"
+        },
+        {
+          "C": "CQE-paper-30 center readout",
+          "L": "CQE-paper-29",
+          "R": "CQE-paper-32",
+          "dependency_status": "downstream_readout_only",
+          "index": 30,
+          "paper_id": "CQE-paper-30",
+          "role": "retrospective_readout"
+        }
+      ],
+      "name": "readout_chain_has_31_positions_00_to_30",
+      "pass": true
+    },
+    {
+      "detail": {
+        "C": "CQE-paper-30 center readout",
+        "L": "CQE-paper-29",
+        "R": "CQE-paper-32",
+        "dependency_status": "downstream_readout_only",
+        "index": 30,
+        "paper_id": "CQE-paper-30",
+        "role": "retrospective_readout"
+      },
+      "name": "paper32_is_forward_package_target",
+      "pass": true
+    }
+  ],
+  "closed_scope": [
+    "C is the LR-invariant gluon coordinate on the eight chart states",
+    "Rule 30 boundary table matches its algebraic normal form",
+    "Paper 30 receipt confirms Paper 31 is readout, not upstream dependency",
+    "Papers 00-30 can be walked as a retrospective LCR readout chain",
+    "Paper 32 remains the forward package/deployment target"
+  ],
+  "gluon_invariance": {
+    "claim": "The Gluon \u0393(s) is the LR-podal-invariant centroid of the 3-bar window, equal to C for all 8 chart states under the explicitly defined LR-podal reversal. It is the framework's first local invariant.",
+    "errors": [],
+    "states_checked": 8,
+    "status": "pass"
+  },
+  "not_claimed": [
+    "a new theorem that changes papers 00-30",
+    "closure of standing open obligations",
+    "Paper 31 as a premise for earlier papers",
+    "replacement of Paper 32"
+  ],
+  "open_obligations": [
+    "Standing proof obligations from earlier papers remain open unless their own receipts close them.",
+    "Paper 31 must remain downstream of Paper 30 in dependency direction.",
+    "Paper 32 must preserve this readout as packaging/deployment metadata rather than hidden proof support.",
+    "Replace citation anchors with final bibliography entries."
+  ],
+  "paper": "CQE-paper-31",
+  "paper30_readout": {
+    "paper30_confirms_31_not_dependency": true,
+    "paper30_open_obligations": [
+      "Promote the reusable cqe_engine.ribbon module from neighboring kernel/production copies into this production package.",
+      "Keep Paper 31 as a retrospective readout until a later contract explicitly changes dependency order.",
+      "Resolve transport ledger open lifts before claiming complete route closure.",
+      "Reconcile legacy 31-bead workbook wording with the production 00-29 proof sweep plus Paper 31 readout."
+    ],
+    "paper30_readout_rule": {
+      "readout": "CQE-paper-31 prepared only",
+      "sweep": "CQE-paper-00 through CQE-paper-29"
+    },
+    "paper30_status": "pass_with_open_packaging_obligations",
+    "paper30_sweep_count": 30
+  },
+  "readout_chain": [
+    {
+      "C": "CQE-paper-00 center readout",
+      "L": null,
+      "R": "CQE-paper-01",
+      "dependency_status": "ordinary_sweep_context",
+      "index": 0,
+      "paper_id": "CQE-paper-00",
+      "role": "proof_stack_position"
+    },
+    {
+      "C": "CQE-paper-01 center readout",
+      "L": "CQE-paper-00",
+      "R": "CQE-paper-02",
+      "dependency_status": "ordinary_sweep_context",
+      "index": 1,
+      "paper_id": "CQE-paper-01",
+      "role": "proof_stack_position"
+    },
+    {
+      "C": "CQE-paper-02 center readout",
+      "L": "CQE-paper-01",
+      "R": "CQE-paper-03",
+      "dependency_status": "ordinary_sweep_context",
+      "index": 2,
+      "paper_id": "CQE-paper-02",
+      "role": "proof_stack_position"
+    },
+    {
+      "C": "CQE-paper-03 center readout",
+      "L": "CQE-paper-02",
+      "R": "CQE-paper-04",
+      "dependency_status": "ordinary_sweep_context",
+      "index": 3,
+      "paper_id": "CQE-paper-03",
+      "role": "proof_stack_position"
+    },
+    {
+      "C": "CQE-paper-04 center readout",
+      "L": "CQE-paper-03",
+      "R": "CQE-paper-05",
+      "dependency_status": "ordinary_sweep_context",
+      "index": 4,
+      "paper_id": "CQE-paper-04",
+      "role": "proof_stack_position"
+    },
+    {
+      "C": "CQE-paper-05 center readout",
+      "L": "CQE-paper-04",
+      "R": "CQE-paper-06",
+      "dependency_status": "ordinary_sweep_context",
+      "index": 5,
+      "paper_id": "CQE-paper-05",
+      "role": "proof_stack_position"
+    },
+    {
+      "C": "CQE-paper-06 center readout",
+      "L": "CQE-paper-05",
+      "R": "CQE-paper-07",
+      "dependency_status": "ordinary_sweep_context",
+      "index": 6,
+      "paper_id": "CQE-paper-06",
+      "role": "proof_stack_position"
+    },
+    {
+      "C": "CQE-paper-07 center readout",
+      "L": "CQE-paper-06",
+      "R": "CQE-paper-08",
+      "dependency_status": "ordinary_sweep_context",
+      "index": 7,
+      "paper_id": "CQE-paper-07",
+      "role": "proof_stack_position"
+    },
+    {
+      "C": "CQE-paper-08 center readout",
+      "L": "CQE-paper-07",
+      "R": "CQE-paper-09",
+      "dependency_status": "ordinary_sweep_context",
+      "index": 8,
+      "paper_id": "CQE-paper-08",
+      "role": "proof_stack_position"
+    },
+    {
+      "C": "CQE-paper-09 center readout",
+      "L": "CQE-paper-08",
+      "R": "CQE-paper-10",
+      "dependency_status": "ordinary_sweep_context",
+      "index": 9,
+      "paper_id": "CQE-paper-09",
+      "role": "proof_stack_position"
+    },
+    {
+      "C": "CQE-paper-10 center readout",
+      "L": "CQE-paper-09",
+      "R": "CQE-paper-11",
+      "dependency_status": "ordinary_sweep_context",
+      "index": 10,
+      "paper_id": "CQE-paper-10",
+      "role": "proof_stack_position"
+    },
+    {
+      "C": "CQE-paper-11 center readout",
+      "L": "CQE-paper-10",
+      "R": "CQE-paper-12",
+      "dependency_status": "ordinary_sweep_context",
+      "index": 11,
+      "paper_id": "CQE-paper-11",
+      "role": "proof_stack_position"
+    },
+    {
+      "C": "CQE-paper-12 center readout",
+      "L": "CQE-paper-11",
+      "R": "CQE-paper-13",
+      "dependency_status": "ordinary_sweep_context",
+      "index": 12,
+      "paper_id": "CQE-paper-12",
+      "role": "proof_stack_position"
+    },
+    {
+      "C": "CQE-paper-13 center readout",
+      "L": "CQE-paper-12",
+      "R": "CQE-paper-14",
+      "dependency_status": "ordinary_sweep_context",
+      "index": 13,
+      "paper_id": "CQE-paper-13",
+      "role": "proof_stack_position"
+    },
+    {
+      "C": "CQE-paper-14 center readout",
+      "L": "CQE-paper-13",
+      "R": "CQE-paper-15",
+      "dependency_status": "ordinary_sweep_context",
+      "index": 14,
+      "paper_id": "CQE-paper-14",
+      "role": "proof_stack_position"
+    },
+    {
+      "C": "CQE-paper-15 center readout",
+      "L": "CQE-paper-14",
+      "R": "CQE-paper-16",
+      "dependency_status": "ordinary_sweep_context",
+      "index": 15,
+      "paper_id": "CQE-paper-15",
+      "role": "proof_stack_position"
+    },
+    {
+      "C": "CQE-paper-16 center readout",
+      "L": "CQE-paper-15",
+      "R": "CQE-paper-17",
+      "dependency_status": "ordinary_sweep_context",
+      "index": 16,
+      "paper_id": "CQE-paper-16",
+      "role": "proof_stack_position"
+    },
+    {
+      "C": "CQE-paper-17 center readout",
+      "L": "CQE-paper-16",
+      "R": "CQE-paper-18",
+      "dependency_status": "ordinary_sweep_context",
+      "index": 17,
+      "paper_id": "CQE-paper-17",
+      "role": "proof_stack_position"
+    },
+    {
+      "C": "CQE-paper-18 center readout",
+      "L": "CQE-paper-17",
+      "R": "CQE-paper-19",
+      "dependency_status": "ordinary_sweep_context",
+      "index": 18,
+      "paper_id": "CQE-paper-18",
+      "role": "proof_stack_position"
+    },
+    {
+      "C": "CQE-paper-19 center readout",
+      "L": "CQE-paper-18",
+      "R": "CQE-paper-20",
+      "dependency_status": "ordinary_sweep_context",
+      "index": 19,
+      "paper_id": "CQE-paper-19",
+      "role": "proof_stack_position"
+    },
+    {
+      "C": "CQE-paper-20 center readout",
+      "L": "CQE-paper-19",
+      "R": "CQE-paper-21",
+      "dependency_status": "ordinary_sweep_context",
+      "index": 20,
+      "paper_id": "CQE-paper-20",
+      "role": "proof_stack_position"
+    },
+    {
+      "C": "CQE-paper-21 center readout",
+      "L": "CQE-paper-20",
+      "R": "CQE-paper-22",
+      "dependency_status": "ordinary_sweep_context",
+      "index": 21,
+      "paper_id": "CQE-paper-21",
+      "role": "proof_stack_position"
+    },
+    {
+      "C": "CQE-paper-22 center readout",
+      "L": "CQE-paper-21",
+      "R": "CQE-paper-23",
+      "dependency_status": "ordinary_sweep_context",
+      "index": 22,
+      "paper_id": "CQE-paper-22",
+      "role": "proof_stack_position"
+    },
+    {
+      "C": "CQE-paper-23 center readout",
+      "L": "CQE-paper-22",
+      "R": "CQE-paper-24",
+      "dependency_status": "ordinary_sweep_context",
+      "index": 23,
+      "paper_id": "CQE-paper-23",
+      "role": "proof_stack_position"
+    },
+    {
+      "C": "CQE-paper-24 center readout",
+      "L": "CQE-paper-23",
+      "R": "CQE-paper-25",
+      "dependency_status": "ordinary_sweep_context",
+      "index": 24,
+      "paper_id": "CQE-paper-24",
+      "role": "proof_stack_position"
+    },
+    {
+      "C": "CQE-paper-25 center readout",
+      "L": "CQE-paper-24",
+      "R": "CQE-paper-26",
+      "dependency_status": "ordinary_sweep_context",
+      "index": 25,
+      "paper_id": "CQE-paper-25",
+      "role": "proof_stack_position"
+    },
+    {
+      "C": "CQE-paper-26 center readout",
+      "L": "CQE-paper-25",
+      "R": "CQE-paper-27",
+      "dependency_status": "ordinary_sweep_context",
+      "index": 26,
+      "paper_id": "CQE-paper-26",
+      "role": "proof_stack_position"
+    },
+    {
+      "C": "CQE-paper-27 center readout",
+      "L": "CQE-paper-26",
+      "R": "CQE-paper-28",
+      "dependency_status": "ordinary_sweep_context",
+      "index": 27,
+      "paper_id": "CQE-paper-27",
+      "role": "proof_stack_position"
+    },
+    {
+      "C": "CQE-paper-28 center readout",
+      "L": "CQE-paper-27",
+      "R": "CQE-paper-29",
+      "dependency_status": "ordinary_sweep_context",
+      "index": 28,
+      "paper_id": "CQE-paper-28",
+      "role": "proof_stack_position"
+    },
+    {
+      "C": "CQE-paper-29 center readout",
+      "L": "CQE-paper-28",
+      "R": "CQE-paper-30",
+      "dependency_status": "ordinary_sweep_context",
+      "index": 29,
+      "paper_id": "CQE-paper-29",
+      "role": "proof_stack_position"
+    },
+    {
+      "C": "CQE-paper-30 center readout",
+      "L": "CQE-paper-29",
+      "R": "CQE-paper-32",
+      "dependency_status": "downstream_readout_only",
+      "index": 30,
+      "paper_id": "CQE-paper-30",
+      "role": "retrospective_readout"
+    }
+  ],
+  "rule30_truth_table": [
+    {
+      "C": 0,
+      "L": 0,
+      "R": 0,
+      "anf_bit": 0,
+      "rule30_bit": 0
+    },
+    {
+      "C": 0,
+      "L": 0,
+      "R": 1,
+      "anf_bit": 1,
+      "rule30_bit": 1
+    },
+    {
+      "C": 1,
+      "L": 0,
+      "R": 0,
+      "anf_bit": 1,
+      "rule30_bit": 1
+    },
+    {
+      "C": 1,
+      "L": 0,
+      "R": 1,
+      "anf_bit": 1,
+      "rule30_bit": 1
+    },
+    {
+      "C": 0,
+      "L": 1,
+      "R": 0,
+      "anf_bit": 1,
+      "rule30_bit": 1
+    },
+    {
+      "C": 0,
+      "L": 1,
+      "R": 1,
+      "anf_bit": 0,
+      "rule30_bit": 0
+    },
+    {
+      "C": 1,
+      "L": 1,
+      "R": 0,
+      "anf_bit": 0,
+      "rule30_bit": 0
+    },
+    {
+      "C": 1,
+      "L": 1,
+      "R": 1,
+      "anf_bit": 0,
+      "rule30_bit": 0
+    }
+  ],
+  "status": "pass_as_retrospective_readout",
+  "title": "It Was Still Just LCR"
+}
