@@ -1,0 +1,935 @@
+{
+  "paper": "CQE-paper-27",
+  "title": "Observer Delay and Shared Reality",
+  "status": "pass_with_interpretive_obligations",
+  "closed_claim": "The static four-frame Z4 template is exact, opposite-boundary observers share the same center C, and read-then-anneal delay is bounded in the finite chart. The Z4 template is explicitly refuted as a temporal Rule 30 period over the tested trace.",
+  "static_template_table": {
+    "(0, 0, 0)": {
+      "four_frame_label": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "z4_period": 1,
+      "gluon": 0,
+      "opposite_boundary_gluon": 0,
+      "anneal_delay_steps": 0
+    },
+    "(0, 0, 1)": {
+      "four_frame_label": [
+        2,
+        0,
+        3,
+        3
+      ],
+      "z4_period": 4,
+      "gluon": 0,
+      "opposite_boundary_gluon": 0,
+      "anneal_delay_steps": 2
+    },
+    "(0, 1, 0)": {
+      "four_frame_label": [
+        0,
+        3,
+        0,
+        2
+      ],
+      "z4_period": 4,
+      "gluon": 1,
+      "opposite_boundary_gluon": 1,
+      "anneal_delay_steps": 0
+    },
+    "(0, 1, 1)": {
+      "four_frame_label": [
+        3,
+        2,
+        2,
+        0
+      ],
+      "z4_period": 4,
+      "gluon": 1,
+      "opposite_boundary_gluon": 1,
+      "anneal_delay_steps": 3
+    },
+    "(1, 0, 0)": {
+      "four_frame_label": [
+        3,
+        2,
+        2,
+        0
+      ],
+      "z4_period": 4,
+      "gluon": 0,
+      "opposite_boundary_gluon": 0,
+      "anneal_delay_steps": 3
+    },
+    "(1, 0, 1)": {
+      "four_frame_label": [
+        0,
+        3,
+        0,
+        2
+      ],
+      "z4_period": 4,
+      "gluon": 0,
+      "opposite_boundary_gluon": 0,
+      "anneal_delay_steps": 0
+    },
+    "(1, 1, 0)": {
+      "four_frame_label": [
+        2,
+        0,
+        3,
+        3
+      ],
+      "z4_period": 4,
+      "gluon": 1,
+      "opposite_boundary_gluon": 1,
+      "anneal_delay_steps": 2
+    },
+    "(1, 1, 1)": {
+      "four_frame_label": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "z4_period": 1,
+      "gluon": 1,
+      "opposite_boundary_gluon": 1,
+      "anneal_delay_steps": 0
+    }
+  },
+  "z4_template": {
+    "status": "pass",
+    "fixed_point_count": 2,
+    "period_2_count": 0,
+    "period_4_count": 6
+  },
+  "temporal_scope": {
+    "status": "static_template_only",
+    "max_depth_tested": 512,
+    "static_template": {
+      "status": "pass",
+      "errors": [],
+      "periods": {
+        "(0, 0, 0)": 1,
+        "(0, 0, 1)": 4,
+        "(0, 1, 0)": 4,
+        "(0, 1, 1)": 4,
+        "(1, 0, 0)": 4,
+        "(1, 0, 1)": 4,
+        "(1, 1, 0)": 4,
+        "(1, 1, 1)": 1
+      },
+      "labels": {
+        "(0, 0, 0)": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "(0, 0, 1)": [
+          2,
+          0,
+          3,
+          3
+        ],
+        "(0, 1, 0)": [
+          0,
+          3,
+          0,
+          2
+        ],
+        "(0, 1, 1)": [
+          3,
+          2,
+          2,
+          0
+        ],
+        "(1, 0, 0)": [
+          3,
+          2,
+          2,
+          0
+        ],
+        "(1, 0, 1)": [
+          0,
+          3,
+          0,
+          2
+        ],
+        "(1, 1, 0)": [
+          2,
+          0,
+          3,
+          3
+        ],
+        "(1, 1, 1)": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "fixed_point_count": 2,
+      "period_2_count": 0,
+      "period_4_count": 6,
+      "claim": "The Z4 4-frame composite label (wrap steps in each of the 4 centroid frames C/R/C-flipped/L) produces exactly 2 fixed points (the true vacua (0,0,0) and (1,1,1), label (0,0,0,0)) and 6 period-4 states (all other states). No period-2 labels exist. D12 acts on D4 as blocks: the Z4 rotation is D12's order-4 subgroup acting on those D4 blocks, not D4 itself. This is a static Z4 coordinate-frame template; it does not prove temporal periodicity. It matches the D12 orbit structure: 2 singlets + 6 color-orbit members."
+    },
+    "temporal_label_trace_periodic": {
+      "1": false,
+      "2": false,
+      "4": false
+    },
+    "center_column_periodic": {
+      "1": false,
+      "2": false,
+      "4": false
+    },
+    "label_counterexamples": {
+      "1": {
+        "period": 1,
+        "index": 1,
+        "current": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "prior": [
+          0,
+          3,
+          0,
+          2
+        ]
+      },
+      "2": {
+        "period": 2,
+        "index": 2,
+        "current": [
+          3,
+          2,
+          2,
+          0
+        ],
+        "prior": [
+          0,
+          3,
+          0,
+          2
+        ]
+      },
+      "4": {
+        "period": 4,
+        "index": 6,
+        "current": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "prior": [
+          3,
+          2,
+          2,
+          0
+        ]
+      }
+    },
+    "center_counterexamples": {
+      "1": {
+        "period": 1,
+        "index": 1,
+        "current": 0,
+        "prior": 1
+      },
+      "2": {
+        "period": 2,
+        "index": 3,
+        "current": 1,
+        "prior": 0
+      },
+      "4": {
+        "period": 4,
+        "index": 6,
+        "current": 0,
+        "prior": 1
+      }
+    },
+    "temporal_period_claim_supported": false,
+    "proof_boundary": "The static four-frame label has a Z4 orbit template. The tested Rule 30 label trace and center column do not inherit periods 1, 2, or 4."
+  },
+  "gluon_invariance": {
+    "status": "pass",
+    "errors": [],
+    "claim": "The Gluon \u0393(s) is the LR-podal-invariant centroid of the 3-bar window, equal to C for all 8 chart states under the explicitly defined LR-podal reversal. It is the framework's first local invariant.",
+    "states_checked": 8
+  },
+  "observer_rows": {
+    "max_depth": 64,
+    "rows_sample": [
+      {
+        "depth": 1,
+        "state": [
+          0,
+          1,
+          0
+        ],
+        "opposite_boundary_state": [
+          0,
+          1,
+          0
+        ],
+        "observer_a_center": 1,
+        "observer_b_center": 1,
+        "shared_center": true,
+        "side_disagrees": false,
+        "anneal_delay_steps": 0,
+        "anneal_final": [
+          0,
+          1,
+          0
+        ],
+        "four_frame_label": [
+          0,
+          3,
+          0,
+          2
+        ],
+        "z4_period": 4,
+        "emitted_center_bit": 1
+      },
+      {
+        "depth": 2,
+        "state": [
+          1,
+          1,
+          1
+        ],
+        "opposite_boundary_state": [
+          1,
+          1,
+          1
+        ],
+        "observer_a_center": 1,
+        "observer_b_center": 1,
+        "shared_center": true,
+        "side_disagrees": false,
+        "anneal_delay_steps": 0,
+        "anneal_final": [
+          1,
+          1,
+          1
+        ],
+        "four_frame_label": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "z4_period": 1,
+        "emitted_center_bit": 0
+      },
+      {
+        "depth": 3,
+        "state": [
+          1,
+          0,
+          0
+        ],
+        "opposite_boundary_state": [
+          0,
+          0,
+          1
+        ],
+        "observer_a_center": 0,
+        "observer_b_center": 0,
+        "shared_center": true,
+        "side_disagrees": true,
+        "anneal_delay_steps": 3,
+        "anneal_final": [
+          0,
+          1,
+          0
+        ],
+        "four_frame_label": [
+          3,
+          2,
+          2,
+          0
+        ],
+        "z4_period": 4,
+        "emitted_center_bit": 1
+      },
+      {
+        "depth": 4,
+        "state": [
+          0,
+          1,
+          1
+        ],
+        "opposite_boundary_state": [
+          1,
+          1,
+          0
+        ],
+        "observer_a_center": 1,
+        "observer_b_center": 1,
+        "shared_center": true,
+        "side_disagrees": true,
+        "anneal_delay_steps": 3,
+        "anneal_final": [
+          1,
+          0,
+          1
+        ],
+        "four_frame_label": [
+          3,
+          2,
+          2,
+          0
+        ],
+        "z4_period": 4,
+        "emitted_center_bit": 1
+      },
+      {
+        "depth": 5,
+        "state": [
+          0,
+          1,
+          0
+        ],
+        "opposite_boundary_state": [
+          0,
+          1,
+          0
+        ],
+        "observer_a_center": 1,
+        "observer_b_center": 1,
+        "shared_center": true,
+        "side_disagrees": false,
+        "anneal_delay_steps": 0,
+        "anneal_final": [
+          0,
+          1,
+          0
+        ],
+        "four_frame_label": [
+          0,
+          3,
+          0,
+          2
+        ],
+        "z4_period": 4,
+        "emitted_center_bit": 1
+      },
+      {
+        "depth": 6,
+        "state": [
+          1,
+          1,
+          1
+        ],
+        "opposite_boundary_state": [
+          1,
+          1,
+          1
+        ],
+        "observer_a_center": 1,
+        "observer_b_center": 1,
+        "shared_center": true,
+        "side_disagrees": false,
+        "anneal_delay_steps": 0,
+        "anneal_final": [
+          1,
+          1,
+          1
+        ],
+        "four_frame_label": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "z4_period": 1,
+        "emitted_center_bit": 0
+      },
+      {
+        "depth": 7,
+        "state": [
+          0,
+          0,
+          0
+        ],
+        "opposite_boundary_state": [
+          0,
+          0,
+          0
+        ],
+        "observer_a_center": 0,
+        "observer_b_center": 0,
+        "shared_center": true,
+        "side_disagrees": false,
+        "anneal_delay_steps": 0,
+        "anneal_final": [
+          0,
+          0,
+          0
+        ],
+        "four_frame_label": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "z4_period": 1,
+        "emitted_center_bit": 0
+      },
+      {
+        "depth": 8,
+        "state": [
+          1,
+          0,
+          0
+        ],
+        "opposite_boundary_state": [
+          0,
+          0,
+          1
+        ],
+        "observer_a_center": 0,
+        "observer_b_center": 0,
+        "shared_center": true,
+        "side_disagrees": true,
+        "anneal_delay_steps": 3,
+        "anneal_final": [
+          0,
+          1,
+          0
+        ],
+        "four_frame_label": [
+          3,
+          2,
+          2,
+          0
+        ],
+        "z4_period": 4,
+        "emitted_center_bit": 1
+      },
+      {
+        "depth": 9,
+        "state": [
+          0,
+          1,
+          1
+        ],
+        "opposite_boundary_state": [
+          1,
+          1,
+          0
+        ],
+        "observer_a_center": 1,
+        "observer_b_center": 1,
+        "shared_center": true,
+        "side_disagrees": true,
+        "anneal_delay_steps": 3,
+        "anneal_final": [
+          1,
+          0,
+          1
+        ],
+        "four_frame_label": [
+          3,
+          2,
+          2,
+          0
+        ],
+        "z4_period": 4,
+        "emitted_center_bit": 1
+      },
+      {
+        "depth": 10,
+        "state": [
+          1,
+          1,
+          0
+        ],
+        "opposite_boundary_state": [
+          0,
+          1,
+          1
+        ],
+        "observer_a_center": 1,
+        "observer_b_center": 1,
+        "shared_center": true,
+        "side_disagrees": true,
+        "anneal_delay_steps": 2,
+        "anneal_final": [
+          1,
+          0,
+          1
+        ],
+        "four_frame_label": [
+          2,
+          0,
+          3,
+          3
+        ],
+        "z4_period": 4,
+        "emitted_center_bit": 0
+      },
+      {
+        "depth": 11,
+        "state": [
+          1,
+          0,
+          1
+        ],
+        "opposite_boundary_state": [
+          1,
+          0,
+          1
+        ],
+        "observer_a_center": 0,
+        "observer_b_center": 0,
+        "shared_center": true,
+        "side_disagrees": false,
+        "anneal_delay_steps": 0,
+        "anneal_final": [
+          1,
+          0,
+          1
+        ],
+        "four_frame_label": [
+          0,
+          3,
+          0,
+          2
+        ],
+        "z4_period": 4,
+        "emitted_center_bit": 0
+      },
+      {
+        "depth": 12,
+        "state": [
+          1,
+          0,
+          1
+        ],
+        "opposite_boundary_state": [
+          1,
+          0,
+          1
+        ],
+        "observer_a_center": 0,
+        "observer_b_center": 0,
+        "shared_center": true,
+        "side_disagrees": false,
+        "anneal_delay_steps": 0,
+        "anneal_final": [
+          1,
+          0,
+          1
+        ],
+        "four_frame_label": [
+          0,
+          3,
+          0,
+          2
+        ],
+        "z4_period": 4,
+        "emitted_center_bit": 0
+      },
+      {
+        "depth": 13,
+        "state": [
+          0,
+          0,
+          1
+        ],
+        "opposite_boundary_state": [
+          1,
+          0,
+          0
+        ],
+        "observer_a_center": 0,
+        "observer_b_center": 0,
+        "shared_center": true,
+        "side_disagrees": true,
+        "anneal_delay_steps": 2,
+        "anneal_final": [
+          0,
+          1,
+          0
+        ],
+        "four_frame_label": [
+          2,
+          0,
+          3,
+          3
+        ],
+        "z4_period": 4,
+        "emitted_center_bit": 1
+      },
+      {
+        "depth": 14,
+        "state": [
+          1,
+          1,
+          1
+        ],
+        "opposite_boundary_state": [
+          1,
+          1,
+          1
+        ],
+        "observer_a_center": 1,
+        "observer_b_center": 1,
+        "shared_center": true,
+        "side_disagrees": false,
+        "anneal_delay_steps": 0,
+        "anneal_final": [
+          1,
+          1,
+          1
+        ],
+        "four_frame_label": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "z4_period": 1,
+        "emitted_center_bit": 0
+      },
+      {
+        "depth": 15,
+        "state": [
+          1,
+          0,
+          0
+        ],
+        "opposite_boundary_state": [
+          0,
+          0,
+          1
+        ],
+        "observer_a_center": 0,
+        "observer_b_center": 0,
+        "shared_center": true,
+        "side_disagrees": true,
+        "anneal_delay_steps": 3,
+        "anneal_final": [
+          0,
+          1,
+          0
+        ],
+        "four_frame_label": [
+          3,
+          2,
+          2,
+          0
+        ],
+        "z4_period": 4,
+        "emitted_center_bit": 1
+      },
+      {
+        "depth": 16,
+        "state": [
+          0,
+          1,
+          0
+        ],
+        "opposite_boundary_state": [
+          0,
+          1,
+          0
+        ],
+        "observer_a_center": 1,
+        "observer_b_center": 1,
+        "shared_center": true,
+        "side_disagrees": false,
+        "anneal_delay_steps": 0,
+        "anneal_final": [
+          0,
+          1,
+          0
+        ],
+        "four_frame_label": [
+          0,
+          3,
+          0,
+          2
+        ],
+        "z4_period": 4,
+        "emitted_center_bit": 1
+      }
+    ],
+    "all_rows_share_center": true,
+    "max_delay_steps": 3,
+    "delay_counts": {
+      "0": 27,
+      "2": 20,
+      "3": 17
+    },
+    "side_disagreement_count": 37,
+    "row_count": 64
+  },
+  "checks": [
+    {
+      "name": "static Z4 template passes",
+      "pass": true,
+      "detail": {
+        "status": "pass",
+        "fixed_point_count": 2,
+        "period_2_count": 0,
+        "period_4_count": 6
+      }
+    },
+    {
+      "name": "temporal Z4 promotion is refuted over tested trace",
+      "pass": true,
+      "detail": {
+        "status": "static_template_only",
+        "max_depth_tested": 512,
+        "temporal_label_trace_periodic": {
+          "1": false,
+          "2": false,
+          "4": false
+        },
+        "center_column_periodic": {
+          "1": false,
+          "2": false,
+          "4": false
+        },
+        "label_counterexamples": {
+          "1": {
+            "period": 1,
+            "index": 1,
+            "current": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "prior": [
+              0,
+              3,
+              0,
+              2
+            ]
+          },
+          "2": {
+            "period": 2,
+            "index": 2,
+            "current": [
+              3,
+              2,
+              2,
+              0
+            ],
+            "prior": [
+              0,
+              3,
+              0,
+              2
+            ]
+          },
+          "4": {
+            "period": 4,
+            "index": 6,
+            "current": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "prior": [
+              3,
+              2,
+              2,
+              0
+            ]
+          }
+        },
+        "center_counterexamples": {
+          "1": {
+            "period": 1,
+            "index": 1,
+            "current": 0,
+            "prior": 1
+          },
+          "2": {
+            "period": 2,
+            "index": 3,
+            "current": 1,
+            "prior": 0
+          },
+          "4": {
+            "period": 4,
+            "index": 6,
+            "current": 0,
+            "prior": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "gluon center is shared under opposite-boundary reads",
+      "pass": true,
+      "detail": {
+        "gluon_status": "pass",
+        "states_checked": 8,
+        "rows_checked": 64,
+        "side_disagreement_count": 37
+      }
+    },
+    {
+      "name": "anneal delay remains bounded by three steps",
+      "pass": true,
+      "detail": {
+        "max_delay_steps": 3,
+        "delay_counts": {
+          "0": 27,
+          "2": 20,
+          "3": 17
+        }
+      }
+    },
+    {
+      "name": "observer interpretations are not promoted",
+      "pass": true,
+      "detail": {
+        "consciousness_claim": false,
+        "measurement_collapse_claim": false,
+        "relativistic_simultaneity_claim": false,
+        "human_latency_claim": false
+      }
+    }
+  ],
+  "open_obligations": [
+    {
+      "obligation": "human latency model",
+      "status": "not_claimed",
+      "reason": "anneal steps are finite chart steps, not measured response times",
+      "falsifier": "a latency experiment whose timing distribution cannot be mapped to the 0/1/2/3-step receipt"
+    },
+    {
+      "obligation": "shared reality interpretation",
+      "status": "interpretive",
+      "reason": "shared C is a center invariant, not a proof of physical simultaneity"
+    },
+    {
+      "obligation": "consciousness or collapse reading",
+      "status": "not_claimed",
+      "reason": "the static frame and shared-center receipts do not imply consciousness or measurement collapse"
+    },
+    {
+      "obligation": "temporal Z4 period",
+      "status": "refuted_for_tested_trace",
+      "reason": "Rule 30 label trace and center column do not inherit periods 1, 2, or 4 over the tested window"
+    }
+  ]
+}

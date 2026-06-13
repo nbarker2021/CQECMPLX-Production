@@ -1,6 +1,6 @@
 {
   "built_on": "2026-06-12",
-  "paper_count": 114,
+  "paper_count": 117,
   "outputs": [
     {
       "paper": "CQE-paper-00",
@@ -654,7 +654,25 @@
       "paper": "CQE-paper-27",
       "title": "Paper 27 - Observer Delay and Shared Reality",
       "pdf": "Papers\\PDF\\CQE-paper-27_paper-27-observer-delay-and-shared-reality.pdf",
-      "bytes": 7542
+      "bytes": 7279
+    },
+    {
+      "paper": "CQE-paper-27.25",
+      "title": "Paper 27.25 - Observer Delay Toolkit Supplement",
+      "pdf": "Papers\\PDF\\CQE-paper-27.25_paper-27-25-observer-delay-toolkit-supplement.pdf",
+      "bytes": 3142
+    },
+    {
+      "paper": "CQE-paper-27.50",
+      "title": "Paper 27.50 - Observer Delay Claim Contract",
+      "pdf": "Papers\\PDF\\CQE-paper-27.50_paper-27-50-observer-delay-claim-contract.pdf",
+      "bytes": 3063
+    },
+    {
+      "paper": "CQE-paper-27.75",
+      "title": "Paper 27.75 - Observer Delay Next-State Precondition",
+      "pdf": "Papers\\PDF\\CQE-paper-27.75_paper-27-75-observer-delay-next-state-precondition.pdf",
+      "bytes": 2938
     },
     {
       "paper": "CQE-paper-28",

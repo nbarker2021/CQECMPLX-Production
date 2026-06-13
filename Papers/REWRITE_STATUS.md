@@ -127,7 +127,10 @@ Status meanings:
 | 26.25 | review-source | Z-pinch/shear toolkit supplement present. |
 | 26.50 | review-source | Z-pinch/shear claim contract supplement present. |
 | 26.75 | review-source | Z-pinch/shear next-state precondition supplement present. |
-| 27 | fallback-body | Promote from production body into strict scientific paper. |
+| 27 | review-source | Strict scientific rewrite present; companion supports drafted; local verifier promoted. |
+| 27.25 | review-source | Observer delay toolkit supplement present. |
+| 27.50 | review-source | Observer delay claim contract supplement present. |
+| 27.75 | review-source | Observer delay next-state precondition supplement present. |
 | 28 | fallback-body | Promote from production body into strict scientific paper. |
 | 29 | fallback-body | Promote from production body into strict scientific paper. |
 | 30 | fallback-body | Promote from production body into strict scientific paper. |
