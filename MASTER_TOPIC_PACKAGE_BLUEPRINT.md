@@ -74,7 +74,7 @@ only as replay mechanisms after the formal object is stated.
 | At-most-3 wrap | Kimi theorem candidate | all 8 states close in 0, 2, or 3 steps | proven chart-state closure |
 | `M_3` idempotency | Kimi theorem candidate | exact rational `M_3^2 = M_3` | proven algebraic identity |
 | Wolfram Problems 1/2 | Kimi transport proof | final submission and proof cards | proof-facing core topic |
-| O3 universality | historically open | Hamming-centroid all-256 CA result and Game of Life generalization | closed by exhaustive finite/state tests |
+| O3 universality | historically open | Hamming-centroid all-256 CA result; 256/256 close in <=3 steps; 4 universal attractors; Game of Life generalization | closed by exhaustive finite/state tests |
 | O1' MT parity primitive | historically not implemented | closure report says implemented and verified for 1A/2A/3A/4A | closed as computational primitive |
 | O2 VOA transport | historically not implemented | closure report says closed with caveats | closed as combinatorial transport, not full VOA algebra unless strengthened |
 | O2' nth-bit extraction | partial/open in Kimi | Lucas skip, dyadic periodicity, compiled lookup, final Problem 3 claim | reconciliation required |
@@ -100,6 +100,14 @@ blueprint:
 These are structural precedents, not final wording. Later closure reports must
 control claim boundaries, especially for Prize 3 and for anything called VOA or
 Moonshine.
+
+Top-level result files add compact evidence tables:
+
+- `hamming_centroid_results.json`: state-by-state wrap table and attractors.
+- `voa_moonshine_results.json`: older 8-state label/weight/Z3-orbit table,
+  to reconcile against the later `2q^0 + 6q^5` simplification.
+- `digital_root_results.json`: 1000-case digital-root closure, one-bijection
+  maximum, and `1+8+8+1` tree accounting.
 
 ## Proof-First Constraint
 
