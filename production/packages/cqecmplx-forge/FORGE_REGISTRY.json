@@ -1,5 +1,5 @@
 {
-  "version": "0.20.0",
+  "version": "0.21.0",
   "generated": "2026-06-13",
   "kernel": "cqekernel",
   "forge_ring": "cqecmplx-forge",
@@ -417,6 +417,24 @@
       "source_repo": "nbarker2021/CMPLXMCP (agrm_mdhg_integration/agrm_router.py)",
       "adjudicated_divergence": "pure order-stable golden sweep separated from heuristic density bonus; route cache made idempotent; resonance/random heuristics product-side",
       "receipt": "production/formal-papers/CQE-paper-21/agrm_golden_sweep_receipt.json",
+      "verify_status": "10/10"
+    },
+    "ReadoutForge": {
+      "type": "engine",
+      "role": "O(log N) Rule 30 readout: aggregate-during-enumeration lib, readout(N)=Lucas(N) XOR lib[N], bounded frontier repair (3-move closure), idempotent reuse",
+      "algebra_deps": [
+        "LucasClosedForm",
+        "CorrectionTape",
+        "EventLawIdempotence",
+        "ThreeMoveClosure",
+        "AddressedLib"
+      ],
+      "cli_entry": "ReadoutForge.verify",
+      "paper_ref": "CQE-paper-10",
+      "source": "production/packages/cqecmplx-forge/src/ReadoutForge/",
+      "architecture": "the whole lib reapplied to the readout; tables built DURING enumeration before any state uses the data",
+      "receipt": "production/formal-papers/CQE-paper-10/ologn_readout_architecture_receipt.json",
+      "honesty_boundary": "bounds READOUT not enumeration; cold extraction remains open Wolfram Problem 3",
       "verify_status": "10/10"
     }
   },

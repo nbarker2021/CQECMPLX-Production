@@ -30,5 +30,6 @@
     "exact_decomposition_remains_closed": true
   },
   "passed": 5,
-  "total": 5
+  "total": 5,
+  "SUPERSEDED_NOTE": "This verdict answered COLD single-bit extraction (no enumeration) and is correct for that question (Wolfram Problem 3, open). It was the WRONG question for the actual architecture. The streaming aggregate-during-enumeration readout achieves O(log N) bit-exact readout: see ReadoutForge and formal-papers/CQE-paper-10/ologn_readout_architecture_receipt.json. The two oracle-free 'mechanisms' retired here were attempts to compute the correction COLD; the architecture instead aggregates it DURING enumeration and addresses it at readout."
 }

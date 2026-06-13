@@ -1,0 +1,35 @@
+{
+  "paper": "CQE-paper-10",
+  "theorem": "O(log N) Rule 30 readout by aggregate-during-enumeration: readout(N) = LucasBit(N,0) XOR lib[N], one log-N addressing plus one addressed lookup, bit-exact, bounded (<=1) frontier repair window, free idempotent reuse",
+  "forge": "ReadoutForge",
+  "corrects_prior_verdict": {
+    "prior": "formal-papers/CQE-paper-06/correction_extraction_verdict_receipt.json",
+    "what_prior_answered": "cold single-bit extraction with no enumeration \u2014 found open (Wolfram Problem 3)",
+    "why_it_was_the_wrong_question": "the architecture aggregates the correction into the lib DURING enumeration; readout addresses what is already built, it does not recompute it cold"
+  },
+  "status": "pass",
+  "checks": {
+    "readout_bit_exact_all_N": true,
+    "readout_is_log_n": true,
+    "readout_single_lookup": true,
+    "frontier_repair_window_le_1": true,
+    "idempotent_reread_is_free_hit": true,
+    "lucas_base_addresses_in_log_n": true,
+    "aggregation_precedes_readout": true,
+    "lib_addressed_by_N": true,
+    "deterministic_build_and_read": true,
+    "readout_cost_independent_of_depth": true
+  },
+  "passed": 10,
+  "total": 10,
+  "measured": {
+    "depth": 512,
+    "readout_ops_at_N_511": {
+      "lucas_bit_ops": 9,
+      "lib_lookups": 1,
+      "total": 10
+    },
+    "frontier_repair_window_max": 1
+  },
+  "still_open": "cold O(log N) single-bit extraction with no prior enumeration = Wolfram Rule 30 Problem 3 \u2014 NOT claimed; the enumeration/aggregation pass is the amortized cost"
+}
