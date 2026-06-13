@@ -1,5 +1,5 @@
 {
-  "version": "0.22.0",
+  "version": "0.23.0",
   "generated": "2026-06-13",
   "kernel": "cqekernel",
   "forge_ring": "cqecmplx-forge",
@@ -454,6 +454,23 @@
       "keystone": "2^k rows = 3^k live cells; why Lucas is O(log N) and the triad recurs below",
       "wolfram_arguments": "structural transport for problems 1/2/3 with honest epistemic status",
       "receipt": "production/formal-papers/CQE-paper-06/triadic_keystone_receipt.json",
+      "verify_status": "10/10"
+    },
+    "GroundingForge": {
+      "type": "engine",
+      "role": "The grounding: the only outside inclusions are proven daily-use theorems (Lucas 1878 origin, idempotent AND-submask dual to OR); the only addition is the verified chart->J3(O) connection",
+      "algebra_deps": [
+        "Lucas1878",
+        "BooleDeMorgan",
+        "IdempotentDual",
+        "CharterT3"
+      ],
+      "cli_entry": "GroundingForge.verify",
+      "paper_ref": "CQE-paper-00",
+      "source": "production/packages/cqecmplx-forge/src/GroundingForge/",
+      "origin_theorem": "Lucas' theorem (1878) \u2014 idempotent AND-submask base dual to OR",
+      "the_only_addition": "chart->J3(O) isomorphism (T3), verified",
+      "receipt": "production/formal-papers/CQE-paper-00/established_grounding_receipt.json",
       "verify_status": "10/10"
     }
   },
