@@ -1,0 +1,58 @@
+{
+  "item_id": "AGRMForge",
+  "promotion_date": "2026-06-13",
+  "status": "forge_promoted",
+  "identity": {
+    "forge": "AGRMForge",
+    "type": "engine",
+    "role": "Golden-ratio low-discrepancy sweep over 24D space (optimal grid reader)",
+    "paper_ref": "CQE-paper-21",
+    "registry_version": "0.19.0"
+  },
+  "pattern": "complete-unformalized work -> formalization in paper-bound space -> Forge",
+  "source_work": {
+    "repo": "nbarker2021/CMPLXMCP",
+    "local_clone": "D:/CQE_CMPLX/g/CMPLXMCP",
+    "state_before": "AGRM (Adaptive Geometric Resonance Matrix) router live in agrm_mdhg_integration/agrm_router.py with golden-ratio sweep scoring, zone classification, shell assignment, midpoint path building, route cache; never formalized, no forge, no proof artifact",
+    "core_modules_distilled": [
+      "agrm_mdhg_integration/agrm_router.py (AGRMSweepScanner, AGRMZoneClassifier, AGRMRouter)"
+    ]
+  },
+  "adjudicated_divergence": [
+    "the source spiral score mixed the sweep index with a per-node distance term and a SPARSE-zone 1.2x bonus, so identical geometry could rank differently by insertion order; the forge separates the pure, order-stable golden-ratio sweep (provable) from the heuristic density bonus (optional re-rank)",
+    "the route cache had no idempotence guarantee across rebuilds; the forge makes route reuse explicitly idempotent",
+    "find_nearest / midpoint-unlocking heuristics that call random or wall-clock stay product-side; the forge carries the proven sweep + classification core"
+  ],
+  "validated_claims": [
+    "phi identity phi^2 = phi + 1 and phi = (1+sqrt 5)/2.",
+    "phi is the most irrational number: Fibonacci-ratio convergents converge monotonically to phi.",
+    "Three-gap theorem: for every N < 400, {k phi mod 1} cuts the circle into at most three distinct gap lengths.",
+    "Steinhaus relation: when there are exactly three gaps, the largest equals the sum of the other two.",
+    "Low discrepancy: the golden sweep's star discrepancy beats a rational rotation and decreases with N.",
+    "The sweep order is a permutation of the nodes (a lossless swept ribbon).",
+    "The sweep order is deterministic and independent of node registration order.",
+    "Zone-density thresholds partition the neighbor counts into sparse (<3), medium (<8), dense (>=8).",
+    "Shell assignment is a total, radius-monotone partition into concentric shells.",
+    "Euclidean distance is a metric (identity, symmetry, triangle inequality) and cached route reuse is idempotent."
+  ],
+  "honesty_boundary": "Resonance-signature similarity routing and midpoint-unlocking path quality are heuristics, not proved optima; they stay product-side and need their own receipts before promotion.",
+  "artifacts": [
+    "production/packages/cqecmplx-forge/src/AGRMForge/__init__.py",
+    "production/formal-papers/CQE-paper-21/verify_agrm_golden_sweep.py",
+    "production/formal-papers/CQE-paper-21/agrm_golden_sweep_receipt.json",
+    "FORGE_REGISTRY.json (v0.19.0, 28 forges)",
+    "production/packages/cqecmplx-forge/FORGE_REGISTRY.json",
+    "production/packages/cqekernel/FORGE_REGISTRY.json"
+  ],
+  "verification": {
+    "command": "python production/formal-papers/CQE-paper-21/verify_agrm_golden_sweep.py",
+    "result": "pass 10/10",
+    "receipt": "production/formal-papers/CQE-paper-21/agrm_golden_sweep_receipt.json"
+  },
+  "tower_link": "The 24 sweep dimensions are the Leech dimension (LeechForge, paper 17), the same space MDHGForge addresses (paper 07); phi is the same golden ratio whose log/16 is the conservation coupling kappa (ChromaForge morphon, paper 09). AGRMForge supplies the proven reason a golden-ratio reader sweeps that space optimally.",
+  "open_obligations": [
+    "Receipt for resonance-signature similarity routing.",
+    "Next profile-repo candidates: chart8 D4 atlas bijectivity (ConvergeForge obligation), CMPLX-PartsFactory PermForge superpermutation, CMPLXUNI ThinkTank, CMPLX SNAP canonicalization."
+  ],
+  "notes": "Tenth promotion of the loop; fifth from the profile-repo lane. The three-gap theorem makes AGRMForge the most classically-grounded forge so far: a textbook equidistribution result (Steinhaus) is the formal reason the corpus's golden-ratio reader exists. Ties phi (the sweep), kappa = ln(phi)/16 (the coupling), and dim 24 (the Leech space) into one number-theoretic core."
+}

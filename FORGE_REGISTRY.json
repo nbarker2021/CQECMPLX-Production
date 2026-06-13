@@ -1,5 +1,5 @@
 {
-  "version": "0.18.0",
+  "version": "0.19.0",
   "generated": "2026-06-13",
   "kernel": "cqekernel",
   "forge_ring": "cqecmplx-forge",
@@ -394,6 +394,24 @@
       "source_repo": "nbarker2021/CMPLXDevKit (mcp_os/agrm_mdhg_integration/mdhg_ca.py)",
       "adjudicated_divergence": "quantize made total on all reals; eviction made deterministic via monotonic seq (source used wall clock); CA-field dynamics stay product-side",
       "receipt": "production/formal-papers/CQE-paper-07/mdhg_speedlight_bridge_receipt.json",
+      "verify_status": "10/10"
+    },
+    "AGRMForge": {
+      "type": "engine",
+      "role": "Golden-ratio low-discrepancy sweep over 24D space: three-gap theorem optimal reader, zone density, radial shells, idempotent route cache",
+      "algebra_deps": [
+        "GoldenRatio",
+        "ThreeGapTheorem",
+        "LowDiscrepancy",
+        "LeechDim24",
+        "Equidistribution"
+      ],
+      "cli_entry": "AGRMForge.verify",
+      "paper_ref": "CQE-paper-21",
+      "source": "production/packages/cqecmplx-forge/src/AGRMForge/",
+      "source_repo": "nbarker2021/CMPLXMCP (agrm_mdhg_integration/agrm_router.py)",
+      "adjudicated_divergence": "pure order-stable golden sweep separated from heuristic density bonus; route cache made idempotent; resonance/random heuristics product-side",
+      "receipt": "production/formal-papers/CQE-paper-21/agrm_golden_sweep_receipt.json",
       "verify_status": "10/10"
     }
   },

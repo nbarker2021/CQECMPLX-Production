@@ -1,0 +1,31 @@
+{
+  "paper": "CQE-paper-21",
+  "theorem": "Golden-ratio low-discrepancy sweep as the optimal grid reader: three-gap theorem on {k phi mod 1}, phi the most irrational, lossless swept ribbon over 24D nodes",
+  "forge": "AGRMForge",
+  "source_repo": "nbarker2021/CMPLXMCP (agrm_mdhg_integration/agrm_router.py)",
+  "adjudicated_divergence": [
+    "source spiral score mixed sweep index with per-node distance and a SPARSE-zone 1.2x bonus, so identical geometry could rank by insertion order; the forge separates the pure order-stable golden-ratio sweep from the heuristic density bonus",
+    "route cache made explicitly idempotent (source dict had no reuse guarantee across rebuilds)",
+    "resonance-similarity routing and random/wall-clock heuristics stay product-side"
+  ],
+  "tower_link": "the 24 sweep dimensions are the Leech dimension (LeechForge, paper 17); phi is the same golden ratio whose log/16 is the conservation coupling kappa (ChromaForge morphon, paper 09)",
+  "status": "pass",
+  "checks": {
+    "phi_identity": true,
+    "fibonacci_convergents_to_phi": true,
+    "three_gap_theorem_all_N": true,
+    "steinhaus_largest_is_sum_of_two": true,
+    "golden_sweep_low_discrepancy": true,
+    "sweep_is_permutation": true,
+    "sweep_deterministic_insertion_independent": true,
+    "density_thresholds_partition": true,
+    "shell_assignment_partition_monotone": true,
+    "distance_metric_and_route_idempotent": true
+  },
+  "passed": 10,
+  "total": 10,
+  "open_obligations": [
+    "Resonance-signature similarity routing needs its own receipt before promotion.",
+    "Midpoint-unlocking path quality is a heuristic, not a proved optimum; it stays product-side."
+  ]
+}
