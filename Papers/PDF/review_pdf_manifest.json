@@ -1,6 +1,6 @@
 {
   "built_on": "2026-06-12",
-  "paper_count": 117,
+  "paper_count": 120,
   "outputs": [
     {
       "paper": "CQE-paper-00",
@@ -678,7 +678,25 @@
       "paper": "CQE-paper-28",
       "title": "Paper 28 - N-Dimensional Game Lattices",
       "pdf": "Papers\\PDF\\CQE-paper-28_paper-28-n-dimensional-game-lattices.pdf",
-      "bytes": 7632
+      "bytes": 7006
+    },
+    {
+      "paper": "CQE-paper-28.25",
+      "title": "Paper 28.25 - N-Dimensional Game Lattice Toolkit Supplement",
+      "pdf": "Papers\\PDF\\CQE-paper-28.25_paper-28-25-n-dimensional-game-lattice-toolkit-supplement.pdf",
+      "bytes": 3158
+    },
+    {
+      "paper": "CQE-paper-28.50",
+      "title": "Paper 28.50 - N-Dimensional Game Lattice Claim Contract",
+      "pdf": "Papers\\PDF\\CQE-paper-28.50_paper-28-50-n-dimensional-game-lattice-claim-contract.pdf",
+      "bytes": 3082
+    },
+    {
+      "paper": "CQE-paper-28.75",
+      "title": "Paper 28.75 - N-Dimensional Game Lattice Next-State Precondition",
+      "pdf": "Papers\\PDF\\CQE-paper-28.75_paper-28-75-n-dimensional-game-lattice-next-state-precondition.pdf",
+      "bytes": 2994
     },
     {
       "paper": "CQE-paper-29",

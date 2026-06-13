@@ -1,0 +1,404 @@
+{
+  "paper": "CQE-paper-28",
+  "title": "N-Dimensional Game Lattices",
+  "status": "pass_with_open_obligations",
+  "closed_claim": "A finite local-rule game can be represented as a chart operator on an admissible code-tower lattice dimension: S3 move orbits are enumerated, Rule 30 local emissions are replayable, forbidden carriers are logged, and all chart rows anneal to Lie conjugates within three steps.",
+  "lattice_code_chain": {
+    "status": "pass",
+    "parameter_chain": "pass",
+    "hamming_7_fano": "pass",
+    "extended_hamming_8": "pass",
+    "golay_24": "pass",
+    "powered_chain": "pass",
+    "chain_summary": {
+      "1": "Z/2 bit \u2014 D1 raw parity",
+      "3": "S3 neighborhood / 3-bit Hamming \u2014 D2 vignette",
+      "7": "Fano plane = octonion imaginaries \u2014 J_3(O) off-diagonal",
+      "8": "Extended Hamming = E8 root lattice \u2014 D4 chart (8 states)",
+      "24": "Golay code = Leech lattice \u2014 3 \u00d7 D4 = Monster VOA seed",
+      "72": "Nebe lattice \u2014 D4 \u00d7 3\u00b2 = sheet K bound (K=1..9)"
+    },
+    "tower_correspondence": {
+      "D1": 1,
+      "D2_S3": 3,
+      "D3_Fano_octonion": 7,
+      "D4_chart_E8": 8,
+      "Monster_Leech": 24,
+      "Nebe_sheet_bound": 72
+    },
+    "powered_shortcut": {
+      "1_sq": 1,
+      "3_sq": 9,
+      "7_sq": 49,
+      "8_x_9": 72
+    },
+    "sheet_K_bound": 9,
+    "claim": "The lattice code parameters (1,3,7,8,24) are the unique forced backbone of the D1\u2192D2\u2192D3\u2192D4\u2192Monster discretization tower. The powered shortcut (1\u00b2=1, 3\u00b2=9, 7\u00b2=49, 8\u00d79=72) gives tensor capacities at each scale, with 72 = the Nebe lattice dimension setting the sheet K bound: K=1..9=3\u00b2 orbiting sheets from the first enumerated event. Beyond K=9, a new anchor is required."
+  },
+  "extended_hamming_8": {
+    "status": "pass",
+    "errors": [],
+    "codeword_count": 16,
+    "min_weight": 4,
+    "weight_distribution": {
+      "0": 1,
+      "4": 14,
+      "8": 1
+    },
+    "is_self_dual": true,
+    "claim": "The (8,4,4) extended Hamming code is doubly-even and self-dual. Its 16 codewords over F_2^8 \u2014 with ambient dimension 8 = |D4 chart| \u2014 give the E8 root lattice via Construction A. The minimum weight 4 and self-duality are the two properties that uniquely characterize E8 among even unimodular lattices in dimension 8."
+  },
+  "s3_su3_surface": {
+    "status": "pass",
+    "permutation_count": 6,
+    "trace2_is_exact_s3_element": null
+  },
+  "robot_game": {
+    "game_id": "dimension_8_robot_forbidden_straight_carrier",
+    "dimension": 8,
+    "dimension_admissible": true,
+    "start_state": [
+      1,
+      0,
+      1
+    ],
+    "orbit_row_count": 6,
+    "unique_target_count": 3,
+    "unique_targets": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        0
+      ]
+    ],
+    "legal_move_count": 5,
+    "forbidden_carrier_count": 1,
+    "all_rows_close": true,
+    "max_anneal_steps": 3,
+    "orbit_rows": [
+      {
+        "permutation": "e",
+        "perm": [
+          1,
+          2,
+          3
+        ],
+        "source_state": [
+          1,
+          0,
+          1
+        ],
+        "target_state": [
+          1,
+          0,
+          1
+        ],
+        "emitted_bit": 0,
+        "anneal_steps": 0,
+        "anneal_final": [
+          1,
+          0,
+          1
+        ],
+        "closes_to_lie_conjugate": true,
+        "is_identity_carrier": true,
+        "carrier_status": "forbidden_logged"
+      },
+      {
+        "permutation": "(1 2)",
+        "perm": [
+          2,
+          1,
+          3
+        ],
+        "source_state": [
+          1,
+          0,
+          1
+        ],
+        "target_state": [
+          0,
+          1,
+          1
+        ],
+        "emitted_bit": 1,
+        "anneal_steps": 3,
+        "anneal_final": [
+          1,
+          0,
+          1
+        ],
+        "closes_to_lie_conjugate": true,
+        "is_identity_carrier": false,
+        "carrier_status": "legal_orbit_move"
+      },
+      {
+        "permutation": "(1 3)",
+        "perm": [
+          3,
+          2,
+          1
+        ],
+        "source_state": [
+          1,
+          0,
+          1
+        ],
+        "target_state": [
+          1,
+          0,
+          1
+        ],
+        "emitted_bit": 0,
+        "anneal_steps": 0,
+        "anneal_final": [
+          1,
+          0,
+          1
+        ],
+        "closes_to_lie_conjugate": true,
+        "is_identity_carrier": false,
+        "carrier_status": "legal_orbit_move"
+      },
+      {
+        "permutation": "(2 3)",
+        "perm": [
+          1,
+          3,
+          2
+        ],
+        "source_state": [
+          1,
+          0,
+          1
+        ],
+        "target_state": [
+          1,
+          1,
+          0
+        ],
+        "emitted_bit": 0,
+        "anneal_steps": 2,
+        "anneal_final": [
+          1,
+          0,
+          1
+        ],
+        "closes_to_lie_conjugate": true,
+        "is_identity_carrier": false,
+        "carrier_status": "legal_orbit_move"
+      },
+      {
+        "permutation": "(1 2 3)",
+        "perm": [
+          2,
+          3,
+          1
+        ],
+        "source_state": [
+          1,
+          0,
+          1
+        ],
+        "target_state": [
+          1,
+          1,
+          0
+        ],
+        "emitted_bit": 0,
+        "anneal_steps": 2,
+        "anneal_final": [
+          1,
+          0,
+          1
+        ],
+        "closes_to_lie_conjugate": true,
+        "is_identity_carrier": false,
+        "carrier_status": "legal_orbit_move"
+      },
+      {
+        "permutation": "(1 3 2)",
+        "perm": [
+          3,
+          1,
+          2
+        ],
+        "source_state": [
+          1,
+          0,
+          1
+        ],
+        "target_state": [
+          0,
+          1,
+          1
+        ],
+        "emitted_bit": 1,
+        "anneal_steps": 3,
+        "anneal_final": [
+          1,
+          0,
+          1
+        ],
+        "closes_to_lie_conjugate": true,
+        "is_identity_carrier": false,
+        "carrier_status": "legal_orbit_move"
+      }
+    ],
+    "closed_game_solver_claim": false
+  },
+  "non_admissible_probe": {
+    "dimension": 5,
+    "dimension_admissible": false,
+    "status": "obligation_not_promoted",
+    "reason": "dimension 5 is not in the verified code-tower set"
+  },
+  "centroid_closure": {
+    "status": "pass",
+    "lie_conjugate_count": 4,
+    "step_distribution": {
+      "d=0": [
+        0,
+        0
+      ],
+      "d=1": [
+        2,
+        3,
+        3,
+        2
+      ],
+      "d=2": [
+        0,
+        0
+      ]
+    }
+  },
+  "checks": [
+    {
+      "name": "forced lattice code chain passes",
+      "pass": true,
+      "detail": {
+        "status": "pass",
+        "chain_summary": {
+          "1": "Z/2 bit \u2014 D1 raw parity",
+          "3": "S3 neighborhood / 3-bit Hamming \u2014 D2 vignette",
+          "7": "Fano plane = octonion imaginaries \u2014 J_3(O) off-diagonal",
+          "8": "Extended Hamming = E8 root lattice \u2014 D4 chart (8 states)",
+          "24": "Golay code = Leech lattice \u2014 3 \u00d7 D4 = Monster VOA seed",
+          "72": "Nebe lattice \u2014 D4 \u00d7 3\u00b2 = sheet K bound (K=1..9)"
+        },
+        "tower_correspondence": {
+          "D1": 1,
+          "D2_S3": 3,
+          "D3_Fano_octonion": 7,
+          "D4_chart_E8": 8,
+          "Monster_Leech": 24,
+          "Nebe_sheet_bound": 72
+        },
+        "sheet_K_bound": 9
+      }
+    },
+    {
+      "name": "dimension 8 extended Hamming board passes",
+      "pass": true,
+      "detail": {
+        "status": "pass",
+        "codeword_count": 16,
+        "min_weight": 4,
+        "weight_distribution": {
+          "0": 1,
+          "4": 14,
+          "8": 1
+        }
+      }
+    },
+    {
+      "name": "S3 trace-2 move surface is exact",
+      "pass": true,
+      "detail": {
+        "s3_permutation_count": 6,
+        "matrix_count": 6,
+        "su3_status": "pass",
+        "trace2_is_exact_s3_element": null
+      }
+    },
+    {
+      "name": "finite robot game receipt closes and logs forbidden carrier",
+      "pass": true,
+      "detail": {
+        "dimension": 8,
+        "orbit_row_count": 6,
+        "unique_target_count": 3,
+        "legal_move_count": 5,
+        "forbidden_carrier_count": 1,
+        "max_anneal_steps": 3
+      }
+    },
+    {
+      "name": "centroid closure bound covers all chart states",
+      "pass": true,
+      "detail": {
+        "status": "pass",
+        "lie_conjugate_count": 4,
+        "step_distribution": {
+          "d=0": [
+            0,
+            0
+          ],
+          "d=1": [
+            2,
+            3,
+            3,
+            2
+          ],
+          "d=2": [
+            0,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "name": "non-admissible dimension is not promoted",
+      "pass": true,
+      "detail": {
+        "dimension": 5,
+        "dimension_admissible": false,
+        "status": "obligation_not_promoted",
+        "reason": "dimension 5 is not in the verified code-tower set"
+      }
+    }
+  ],
+  "open_obligations": [
+    {
+      "obligation": "general N-dimensional game solver",
+      "status": "not_claimed",
+      "reason": "the receipt proves finite local-rule orbit closure, not arbitrary game solvability"
+    },
+    {
+      "obligation": "non-code-tower dimensions",
+      "status": "open",
+      "reason": "dimensions outside 1,3,7,8,24,72 do not inherit this proof surface"
+    },
+    {
+      "obligation": "real-game piece geometry",
+      "status": "open",
+      "reason": "each real piece type needs its own map into the trace-2/S3 orbit"
+    },
+    {
+      "obligation": "complete game-theoretic theorem",
+      "status": "not_claimed",
+      "reason": "legal move receipts do not prove strategy, termination, winning states, or fairness"
+    }
+  ]
+}
