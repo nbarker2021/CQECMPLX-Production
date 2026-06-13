@@ -1,0 +1,55 @@
+{
+  "paper": "CQE-paper-01",
+  "theorem": "T_BIJECTIVE: the shell=2 stratum carries the SU(2) doublet via the side-flip bijection \u2014 (1,1,0)<->(0,1,1) exchanged, (1,0,1) fixed \u2014 encoding both spin states on one forward tape",
+  "reapplication": true,
+  "closes": "paper-binding gap for THEOREM_REGISTRY T_BIJECTIVE (PROVEN by structural identification; SHELL2_STATES in lattice_forge/core.py; bound to no production paper)",
+  "source_module": "lattice_forge/core.py :: SHELL2_STATES",
+  "status": "pass",
+  "checks": {
+    "shell2_is_popcount_2_set": true,
+    "reversal_is_involution": true,
+    "reversal_exchanges_chiral_pair": true,
+    "reversal_fixes_balanced_state": true,
+    "orbit_is_doublet_plus_singlet": true,
+    "reversal_preserves_center": true,
+    "shell_invariant_under_reversal_all_8": true
+  },
+  "passed": 7,
+  "total": 7,
+  "shell2_states": [
+    [
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      1
+    ]
+  ],
+  "doublet": [
+    [
+      1,
+      1,
+      0
+    ],
+    [
+      0,
+      1,
+      1
+    ]
+  ],
+  "singlet": [
+    [
+      1,
+      0,
+      1
+    ]
+  ]
+}
