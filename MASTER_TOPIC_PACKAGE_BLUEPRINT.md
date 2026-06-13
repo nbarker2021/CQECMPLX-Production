@@ -109,6 +109,30 @@ Top-level result files add compact evidence tables:
 - `digital_root_results.json`: 1000-case digital-root closure, one-bijection
   maximum, and `1+8+8+1` tree accounting.
 
+## Hermes Runtime/Test Additions
+
+Hermes memory/memos add two important production-facing sources:
+
+- `D:\CQE_CMPLX\CQECMPLX-ProofValidatedSuite\` should be treated as a live
+  verified proof corpus where P00-P08 have strong verifier status and later
+  papers are obligation/claim terrain.
+- `D:\CQE_CMPLX\g\CMPLX\src\cmplx_build_unified\` is the live unified runtime
+  surface, with `cli.py`, `server.py`, `api_server.py`, and
+  `core_CQEMasterBootstrap.py`.
+
+Hermes also reports a completed real-world event test against actual Wolfram
+Rule 30 1M-bit data:
+
+- `cqekernel`, `cqecmplx.r30`, entropy, security, analog workbench, morphon,
+  color chirality, moving frame, and vignette algebra all ran.
+- Entropy evidence included chart density `0.479`, VOA partition `{0:2,5:6}`,
+  and Monster scalar `196883`.
+- Moving frame requires order 4 for saturation; order 3 is an expected
+  insufficient boundary, not the accepted passing configuration.
+
+This belongs in master supplements as runtime/real-data evidence, not as a
+replacement for the formal proof body.
+
 ## Proof-First Constraint
 
 The proof-carrying paper owns the topic. Everything else is supporting
