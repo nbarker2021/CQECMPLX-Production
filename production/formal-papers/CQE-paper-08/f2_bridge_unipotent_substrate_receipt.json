@@ -1,0 +1,24 @@
+{
+  "paper": "CQE-paper-08",
+  "theorem": "F2 Majorana Arf bridge + E8 unipotent orbits + substrate map: the F2 quadratic-form governance core, the unipotent orbit tables, and the substrate identity map",
+  "forge": "lattice_forge.{f2_majorana,unipotent_orbits,substrate_map} (reapplied)",
+  "reapplication": true,
+  "advances_obligation": {
+    "obligation": "O2'' (T_F2_BRIDGE governance), CMPLX-R30-main/PROOF/theorems/OPEN_OBLIGATIONS.md",
+    "proven_now": "the algebraic core (Arf invariants, edge-glue isometry) via verify_f2_majorana",
+    "still_open": "full population of the contributions registry across the umbrella's surface \u2014 NOT claimed"
+  },
+  "source_modules": [
+    "f2_majorana",
+    "unipotent_orbits",
+    "substrate_map"
+  ],
+  "status": "pass",
+  "checks": {
+    "f2_majorana_arf_bridge": true,
+    "unipotent_orbit_tables": true,
+    "substrate_map": true
+  },
+  "passed": 3,
+  "total": 3
+}

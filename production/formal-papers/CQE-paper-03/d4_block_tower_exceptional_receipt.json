@@ -1,0 +1,20 @@
+{
+  "paper": "CQE-paper-03",
+  "theorem": "D4 block tower + G2->F4 exceptional conjugate: the D4 chart block, its tower, and the G2->F4 T5 conjugate triple",
+  "forge": "lattice_forge.{block_d4,block_tower,g2_f4_t5_conjugate} (reapplied)",
+  "reapplication": true,
+  "closes": "paper-binding gap for the D4 block tower and exceptional conjugate verifiers (PROVEN, bound to no paper)",
+  "source_modules": [
+    "block_d4",
+    "block_tower",
+    "g2_f4_t5_conjugate"
+  ],
+  "status": "pass",
+  "checks": {
+    "d4_block": true,
+    "block_tower": true,
+    "g2_f4_t5_conjugate_triple": true
+  },
+  "passed": 3,
+  "total": 3
+}
