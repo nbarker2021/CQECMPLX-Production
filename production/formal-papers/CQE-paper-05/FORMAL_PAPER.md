@@ -74,6 +74,13 @@ trace preserves input order, maintains a binary head/tail dyad at every state,
 and can carry Paper 04 constraints as receipt payloads without treating the
 path as a straight-line jump.
 
+**Theorem 5.2, Oloid Carrier Family Reapplication.** The substrate oloid
+mechanisms bound to this paper - rolling-contact kinematics, single-oloid
+octonionic grounding, the four-oloid D4 ring, and dual-path read-then-verify
+flow - each pass their finite verifier. This theorem binds those mechanism
+receipts as the base carrier family for Paper 05. It does not close the
+E6-to-E7-to-E8 dyadic lift or any Rule 30 prediction claim.
+
 ### Proof
 
 The step rule is total on the finite state space:
@@ -93,6 +100,13 @@ defined at every position in the trace. A Paper 04 constraint can be attached
 to a trace position as payload because the carrier state and input index are
 replayable. The payload does not alter the rolling step rule, so carrying it
 does not break continuity. QED.
+
+For Theorem 5.2, the reapplication verifier imports the substrate oloid
+modules and executes their declared finite checks. The rolling-contact,
+octonionic, quad-oloid, and dual-path verifiers all return `pass`. Since these
+checks operate on the mechanism family and not on an E6/E7/E8 lift, the proof
+closes only the carrier-family base. The verifier records the dyadic lift as a
+named open bridge rather than using it as a hidden assumption. QED.
 
 ## What This Paper Does Not Prove
 
@@ -125,6 +139,7 @@ The production verifier is:
 
 ```text
 production/formal-papers/CQE-paper-05/verify_oloid_path_carrier.py
+production/formal-papers/CQE-paper-05/verify_oloid_carrier_family.py
 ```
 
 It verifies:
@@ -136,6 +151,10 @@ It verifies:
 4. Paper 04 constraints can be attached as payloads without changing the path.
 5. Invalid bits and discontinuous jumps are rejected.
 6. Prediction claims remain out of scope.
+7. The oloid carrier family verifiers pass for rolling-contact kinematics,
+   octonionic grounding, four-oloid D4 ring, and dual-path read-then-verify
+   flow.
+8. The E6-to-E7-to-E8 dyadic lift remains outside this theorem.
 ```
 
 ## Validation and Hidden-Guess Layer
@@ -162,8 +181,10 @@ no
 
 1. Wire `verify_oloid_path_carrier` into `cqe_engine.formal`.
 2. Connect Paper 04 constraint payloads to a shared route ledger.
-3. Separate physical Oloid geometry claims from finite rolling-state claims.
-4. Keep Rule 30 prediction as an explicit open problem until a verifier proves
+3. Keep the E6-to-E7-to-E8 dyadic lift as an explicit bridge obligation until
+   a verifier closes it.
+4. Separate physical Oloid geometry claims from finite rolling-state claims.
+5. Keep Rule 30 prediction as an explicit open problem until a verifier proves
    it.
 
 ## Conclusion

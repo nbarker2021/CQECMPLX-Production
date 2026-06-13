@@ -32,6 +32,10 @@ a payload without changing the rolling rule.
 
 **Claim 5.4.** Invalid bits and discontinuous jumps are rejected.
 
+**Claim 5.5.** The substrate oloid carrier family verifies the base mechanism
+set used by Paper 5: rolling-contact kinematics, octonionic grounding,
+four-oloid D4 ring, and dual-path read-then-verify flow.
+
 ## Definitions
 
 A **rolling carrier state** is:
@@ -67,6 +71,14 @@ maintains a binary head/tail dyad at every state, and can carry Paper 4
 constraints as receipt payloads without treating the path as a straight-line
 jump.
 
+## Theorem 5.2 - Oloid Carrier Family
+
+The substrate oloid carrier family passes its finite mechanism checks for
+rolling-contact kinematics, octonionic grounding, four-oloid D4 transport, and
+dual-path read-then-verify flow. The theorem binds those mechanisms to Paper 5
+as carrier evidence. It does not claim the E6-to-E7-to-E8 dyadic lift or a Rule
+30 prediction theorem.
+
 ## Proof
 
 The carrier state space is finite:
@@ -88,6 +100,11 @@ A Paper 4 repair constraint can be attached to a state as payload because the
 state and input index are replayable. The payload does not enter the `roll`
 definition, so it cannot alter the legal successor relation. Thus payload
 transport preserves the path rule.
+
+The oloid carrier family verifier runs the four substrate mechanism checks and
+requires every one to return `pass`. Since those checks are mechanism-level
+claims, the proof closes the carrier-family base and leaves the E6-to-E7-to-E8
+dyadic lift visible as a separate bridge obligation.
 
 ## Worked Trace
 
@@ -121,6 +138,8 @@ The primary executable receipt is:
 ```text
 production/formal-papers/CQE-paper-05/verify_oloid_path_carrier.py
 production/formal-papers/CQE-paper-05/oloid_path_carrier_receipt.json
+production/formal-papers/CQE-paper-05/verify_oloid_carrier_family.py
+production/formal-papers/CQE-paper-05/oloid_carrier_family_receipt.json
 ```
 
 The receipt status is `pass`. It verifies:
@@ -133,6 +152,10 @@ payload_does_not_alter_path_rule      = true
 invalid_bit_rejected                  = true
 discontinuous_jump_rejected           = true
 prediction_claim_left_out_of_scope    = true
+oloid_rolling                         = true
+octonionic_oloid                      = true
+quad_oloid                            = true
+dual_path_oloid                       = true
 ```
 
 ## Scope Boundary
@@ -143,6 +166,7 @@ This paper does not prove:
 that the Oloid carrier predicts Rule 30 future bits
 that physical Oloid geometry has been fully formalized here
 that every curved path is a valid carrier
+that the E6-to-E7-to-E8 dyadic lift is closed by the carrier-family receipt
 ```
 
 Those claims require separate receipts.
@@ -178,9 +202,11 @@ between repair, path, and receipt becomes a typed causal edge.
 1. Expose `verify_oloid_path_carrier` through the installable kernel/API
    interface.
 2. Bind Paper 4 repair payloads to the shared route ledger.
-3. Keep finite rolling-state claims separate from physical Oloid geometry
+3. Add a separate verifier for the E6-to-E7-to-E8 dyadic lift before using it
+   as a theorem in Paper 5 or later papers.
+4. Keep finite rolling-state claims separate from physical Oloid geometry
    claims until the latter have their own verifiers.
-4. Keep Rule 30 prediction open until a verifier closes it.
+5. Keep Rule 30 prediction open until a verifier closes it.
 
 ## Conclusion
 

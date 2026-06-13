@@ -21,9 +21,12 @@ dimensional lattice forms. The paper proves the local combinatorial facts
 that the verifiers certify: Fano/Hamming identity at dimension 7, extended
 Hamming self-duality and double-evenness at dimension 8, Golay ingredients
 and the `24 = 3 x 8` carrier at dimension 24, and the `72 = 8 x 9` powered
-sheet bound. It does not promote the rootless Leech landing, Gamma72 glue
-action, or cold-start fingerprint map as closed theorems; those are recorded
-as explicit audit boundaries.
+sheet bound. It also binds the current Niemeier/Leech enumeration receipt:
+deterministic selectors, E8^3 carrier structure, Leech type-1/2/3 orbit
+enumerations, and the Nebe 72 contract pass. It does not promote exact
+integer-vector glue-coset representatives, the rootless Leech landing,
+Gamma72 glue action, or cold-start fingerprint map as closed theorems; those
+are recorded as explicit audit boundaries.
 
 ## Proof/Exposure Hierarchy
 
@@ -73,6 +76,12 @@ closure template for CQECMPLX transport: every admitted rung is backed by a
 finite combinatorial check, and every unproved global landing is preserved as
 an explicit proof boundary rather than erased.
 
+**Theorem 8.2, Niemeier/Leech Enumeration Boundary.** The current
+Niemeier/Leech reapplication verifier closes the deterministic selector,
+E8^3 carrier, Leech type-1/2/3 orbit, and Nebe 72 contract checks. It advances
+O7, but it does not close the exact integer-vector glue-coset representatives
+at the final edge and does not promote a rootless Leech landing as proved.
+
 ### Proof
 
 The verifier establishes the following local facts.
@@ -106,6 +115,14 @@ Together these checks prove the local closure template and its audit boundary.
 The theorem does not require the global Leech or Gamma72 landing to be closed;
 instead, it proves that the local lattice closure surface is valid and that
 unproved landings remain visible. QED.
+
+For Theorem 8.2, the reapplication verifier runs the enumerated-glue and
+Nebe-72 substrate checks. The selector contract is deterministic, block orders
+are permutations, all carriers are E8^3, the Leech type-1/2/3 orbit checks
+pass, and the Nebe 72 contract passes. The same receipt records pending
+invariants for the stronger glue-coset claim and leaves `leech_landing_proved`
+false. Therefore the enumeration layer is paper-bound as a partial O7
+resolution, not as a hidden proof of the full landing. QED.
 
 ## Relation to Earlier Papers
 
@@ -146,6 +163,7 @@ The production verifier is:
 
 ```text
 production/formal-papers/CQE-paper-08/verify_lattice_closure_template.py
+production/formal-papers/CQE-paper-08/verify_niemeier_leech_enumeration.py
 ```
 
 It imports the package verifiers:
@@ -168,15 +186,21 @@ It verifies:
 4. Powered 72 sheet-bound checks pass.
 5. Gamma72 three-sheet transport passes while landing proof remains false.
 6. Leech and Gamma72 overclaims are rejected.
+7. Niemeier/Leech enumeration passes for deterministic selectors, E8^3
+   carriers, Leech type-1/2/3 orbits, and the Nebe 72 contract.
+8. Exact integer-vector glue-coset representatives remain pending invariants.
 ```
 
 ## Open Audit Boundaries
 
-1. A rootless Leech landing proof requires an explicit glue-action verifier.
-2. A Gamma72 landing proof requires selected Hermitian polarization matrices.
-3. A cold-start map from arbitrary depth to a Niemeier/Leech fingerprint
+1. Exact integer-vector glue-coset representatives for the final Niemeier:E8^3
+   edge remain pending.
+2. A rootless Leech landing proof requires an explicit glue-action verifier
+   that sets `leech_landing_proved = true`.
+3. A Gamma72 landing proof requires selected Hermitian polarization matrices.
+4. A cold-start map from arbitrary depth to a Niemeier/Leech fingerprint
    remains outside this paper.
-4. The claim that this is the only possible closure chain is not part of the
+5. The claim that this is the only possible closure chain is not part of the
    theorem; Paper 08 proves this chain as the suite's active closure template.
 
 ## Conclusion

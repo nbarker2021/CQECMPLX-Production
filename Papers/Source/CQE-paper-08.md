@@ -20,9 +20,12 @@ with powered terminal:
 8 x 9 = 72
 ```
 
-The theorem proves the local combinatorial scaffold. It does not promote the
-rootless Leech landing, Gamma72 polarization action, or uniqueness of all
-possible closure chains as closed theorems.
+The theorem proves the local combinatorial scaffold and binds the current
+Niemeier/Leech enumeration receipt: deterministic selectors, E8^3 carriers,
+Leech type-1/2/3 orbit checks, and the Nebe 72 contract. It does not promote
+exact integer-vector glue-coset representatives, the rootless Leech landing,
+Gamma72 polarization action, or uniqueness of all possible closure chains as
+closed theorems.
 
 ## Claims
 
@@ -41,6 +44,10 @@ template for transporting local states into larger code/lattice frames.
 
 **Claim 8.6.** Gamma72 three-sheet transport is verified as transport, not as
 a closed Gamma72 landing proof.
+
+**Claim 8.7.** Niemeier/Leech enumeration verifies deterministic selectors,
+E8^3 carriers, Leech type-1/2/3 orbit checks, and the Nebe 72 contract, while
+leaving exact final glue-coset representatives as pending invariants.
 
 ## Definitions
 
@@ -72,6 +79,14 @@ The finite code chain `(1,3,7,8,24)` and powered terminal `72 = 8 x 9` provide
 a verified local closure template for CQECMPLX transport. Every admitted rung
 is backed by a finite combinatorial check, and every unproved global landing
 is preserved as an explicit proof boundary.
+
+## Theorem 8.2 - Niemeier/Leech Enumeration Boundary
+
+The Niemeier/Leech enumeration receipt closes deterministic selector, E8^3
+carrier, Leech type-1/2/3 orbit, and Nebe 72 contract checks. It advances O7
+as a partial resolution. It does not close the exact integer-vector glue-coset
+representatives at the final edge and does not claim the rootless Leech landing
+as proved.
 
 ## Proof
 
@@ -134,6 +149,12 @@ gamma72_landing_proved = false
 
 Together these checks prove the local closure template and its audit boundary.
 
+The Niemeier/Leech enumeration verifier separately runs the enumerated-glue
+selector contract, Leech minimal/type-1/type-2/type-3 orbit checks, and the
+Nebe 72 contract. These checks paper-bind the finite enumeration layer. The
+receipt also records pending invariants and `leech_landing_proved = false`,
+so the proof cannot silently promote the stronger landing.
+
 ## Receipt
 
 The primary executable receipt is:
@@ -141,6 +162,8 @@ The primary executable receipt is:
 ```text
 production/formal-papers/CQE-paper-08/verify_lattice_closure_template.py
 production/formal-papers/CQE-paper-08/lattice_closure_template_receipt.json
+production/formal-papers/CQE-paper-08/verify_niemeier_leech_enumeration.py
+production/formal-papers/CQE-paper-08/niemeier_leech_enumeration_receipt.json
 ```
 
 The receipt status is `pass`. It verifies:
@@ -154,6 +177,12 @@ powered_72_sheet_bound_passes                     = true
 gamma72_transport_passes_without_landing_overclaim = true
 leech_landing_overclaim_rejected                  = true
 gamma72_landing_overclaim_rejected                = true
+enumerated_glue_selector_contract                 = true
+leech_type1_orbit                                 = true
+leech_type2_orbit                                 = true
+leech_type3_orbit                                 = true
+nebe_gamma72_contract                             = true
+exact_final_glue_coset_representatives_pending    = true
 ```
 
 ## Falsifiers
@@ -189,11 +218,14 @@ unclosed global landing.
 
 ## Open Audit Boundaries
 
-1. A rootless Leech landing proof requires an explicit glue-action verifier.
-2. A Gamma72 landing proof requires selected Hermitian polarization matrices.
-3. A cold-start map from arbitrary depth to a Niemeier/Leech fingerprint
+1. Exact integer-vector glue-coset representatives for the final Niemeier:E8^3
+   edge remain pending.
+2. A rootless Leech landing proof requires an explicit glue-action verifier
+   that sets `leech_landing_proved = true`.
+3. A Gamma72 landing proof requires selected Hermitian polarization matrices.
+4. A cold-start map from arbitrary depth to a Niemeier/Leech fingerprint
    remains outside this paper.
-4. The claim that this is the only possible closure chain is not part of the
+5. The claim that this is the only possible closure chain is not part of the
    theorem.
 
 ## Conclusion
